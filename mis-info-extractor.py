@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# title           : mis-info-extractory.py
+# description     : Extract LUA and XML files from Miscreated PAK files
+# author          : Chris Snow (a.k.a. Spafbi)
+# usage           : see ./mis-info-extractory.py -h for usage
+# python_version  : 3.6.7
+# ==============================================================================
 import argparse
 import os
 from zipfile import ZipFile
