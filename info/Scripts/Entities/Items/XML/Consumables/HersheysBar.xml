@@ -1,0 +1,26 @@
+<item name="HersheysBar" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="display_name" value="@HersheysBar"/>
+		<param name="description" value="@HersheysBarDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/HersheysBar/HersheysBar.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="210"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

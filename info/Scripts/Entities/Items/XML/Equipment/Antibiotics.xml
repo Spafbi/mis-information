@@ -1,0 +1,39 @@
+<item name="Antibiotics" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@Antibiotics"/>
+		<param name="description" value="@AntibioticsDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/antibiotics/antibiotics.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="antibiotics"/>
+		<param name="soundUsed" value="Play_pills_eat"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Medical"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Antibiotics_200.png?crc=DF148885"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70002"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Medical"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Antibiotics_2048.png?crc=DF148885"/>
+	</steam>
+</item>

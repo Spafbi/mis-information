@@ -1,0 +1,41 @@
+<item name="dws_candle_animal_fat_large" class="Placeable" category="any">
+
+	<params>
+		<param name="mass" value="1.0"/>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="static" type="243" name="dws_candle_animal_fat_large" max_health="600">
+		<static filename="objects/basebuilding/other/candle/dws_candle_large.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="light" light_bulb_size="0.05" light_radius="7" light_cast_shadows="0" light_view_dist_ratio="1"
+					light_color="0.8,0.6,0.3" light_diff_mul="0.1" light_style="50" light_anim_speed="1" 
+					light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.05,-0.05,0.25" bb2="0.05,0.05,0.5" temperature="15"/>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-1.5,-1.5,-1.5" bb2="1.5,1.5,1.5" temperature="4" humidity="-0.1" light="0.4"/>
+				</envareas>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="particle" effect="fire.flame.candle"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="lightable_light">
+				<lightable_light sound_on_trigger="" sound_off_trigger=""/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/candle/candle_large.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

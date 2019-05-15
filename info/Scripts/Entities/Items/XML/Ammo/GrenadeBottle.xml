@@ -1,0 +1,50 @@
+<ammo name="GrenadeBottle" class="Grenade">
+	<geometry>
+		<firstperson name="objects/craftingmats/glassbottle/bottle.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="18" />
+		<param name="max_logged_collisions" value="1" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_glass_bottle" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="1" />
+		<param name="torpidity" value="5" />
+		<param name="stamina" value="5" />
+		<param name="min_radius" value="0" />
+		<param name="max_radius" value="1" />
+		<param name="min_phys_radius" value="0" />
+		<param name="max_phys_radius" value="1" />
+		<param name="sound_radius" value="25" />
+		<param name="hole_size" value="2" />
+		<param name="terrain_hole_size" value="3" />
+		<param name="radialblurdist" value="5" />
+		<param name="type" value="frag" />
+		<param name="effect" value="weapon_fx.glass_bottle.shatter" />
+		<param name="effect_scale" value="1" />
+	</explosion>
+
+	<params>
+		<param name="lifetime" value="8.0" />
+		<param name="showtime" value="0.05" />
+		<param name="aitype" value="grenade" />
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0.0" />
+		<param name="detonateOnImpact" value="1" />
+		<param name="detonateOnActorImpact" value="1" />
+		<param name="allowDetonationDelay" value="0" />
+	</grenade>
+</ammo>

@@ -1,0 +1,78 @@
+<item name="dws_acid_barrel" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="static" type="240" name="dws_acid_barrel" max_health="35">
+		<static filename="objects/basebuilding/explosive/barrel/dws_barrel_acid.cgf"/>
+		<damage_multipliers>
+			<!-- standard hit types -->
+			<damage_multiplier damage_type="default"   multiplier="1.0" />
+			<damage_multiplier damage_type="collision" multiplier="0.1" />
+			<damage_multiplier damage_type="explosion" multiplier="1.0" />
+			<damage_multiplier damage_type="frag"      multiplier="1.0" />
+			<damage_multiplier damage_type="fire"      multiplier="1.0" />
+			<damage_multiplier damage_type="melee"     multiplier="0.0" />
+			<damage_multiplier damage_type="repair"    multiplier="0.0" /> <!-- repair weapons do nothing -->
+			<!-- miscreated hit types -->
+			<damage_multiplier damage_type="ammo_10mm"              multiplier="1.0" /> <!-- projectiles do normal damage -->
+			<damage_multiplier damage_type="ammo_12_gauge_beanbag"  multiplier="0.0" /> <!-- blunt objects don't do anything, no sparks -->
+			<damage_multiplier damage_type="ammo_12_gauge_pellet"   multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_12_gauge_slug"     multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_22"                multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_223"               multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_308"               multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_357"               multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_5_56x45"           multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_7_62x39"           multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_7_62x51"           multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_9mm"               multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_acp_45"            multiplier="1.0" />
+			<damage_multiplier damage_type="ammo_rock_lge"          multiplier="0.0" /> <!-- ai rocks do nothing -->
+			<damage_multiplier damage_type="ammo_rock_sml"          multiplier="0.0" /> <!-- ai rocks do nothing -->
+			<damage_multiplier damage_type="ammo_tranquilizer_dart" multiplier="0.0" /> <!-- not going to hit hard enough to puncture metal -->
+			<damage_multiplier damage_type="arrow"                  multiplier="1.0" />
+			<damage_multiplier damage_type="blunt"                  multiplier="0.0" /> <!-- blunt objects don't do anything, no sparks -->
+			<damage_multiplier damage_type="flare"                  multiplier="1.0" />
+			<damage_multiplier damage_type="hammer"                 multiplier="1.0" />
+			<damage_multiplier damage_type="hatchet"                multiplier="1.0" />
+			<damage_multiplier damage_type="knife"                  multiplier="1.0" />
+			<damage_multiplier damage_type="pickaxe"                multiplier="1.0" />
+			<damage_multiplier damage_type="torch"                  multiplier="1.0" />
+		</damage_multipliers>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/explosive/barrel/dws_barrel_acid.cgf"/>
+	</geometry>
+
+	<explosion>
+		<param name="damage" value="10"/> <!-- max damage from explosion -->
+		<param name="acid" value="45"/> <!-- max damage from explosion -->
+		<param name="pressure" value="100"/> <!-- pressure wave force -->
+		<param name="min_radius" value="1"/> <!-- full damage up to this radius -->
+		<param name="max_radius" value="3"/> <!-- linear damage falloff from min to max -->
+		<param name="min_phys_radius" value="1"/> <!-- full pressure wave up to this radius -->
+		<param name="max_phys_radius" value="3"/> <!-- linear pressure wave falloff from min to max -->
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="explosions.acid.explosion"/>
+		<param name="radial_blur_dist" value="65"/>
+		<param name="hit_type" value="acid"/>
+	</explosion>
+
+	<!-- System is hardcoded to cause fire damage and needs improving -->
+	<damage_area>
+		<param name="ground_particle_path" value="explosions.acid.pool_active"/>
+		<param name="ground_particle_duration" value="25"/>
+		<param name="ground_particle_effect_slot" value="5"/>
+		<param name="area_id" value="-5"/>
+		<param name="radius" value="0"/>
+		<param name="fire_duration" value="0.0"/>
+		<param name="fire_damage" value="0.0"/>
+		<param name="fire_incremental_duration" value="0.0"/>
+		<param name="body_fire_start_time" value="999.0"/>
+	</damage_area>
+
+</item>

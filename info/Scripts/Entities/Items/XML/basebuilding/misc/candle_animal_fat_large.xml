@@ -1,0 +1,56 @@
+<item name="candle_animal_fat_large" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.6"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@candle_animal_fat_large"/>
+		<param name="description" value="@candle_animal_fat_largeDescription"/>
+	</params>
+
+	<base_part class="static" type="137" name="candle_animal_fat_large" max_health="600" repair_with="AnimalFat">
+		<static filename="objects/basebuilding/other/candle/candle_large_bases.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="light" light_bulb_size="0.1" light_radius="7" light_color="0.73,0.57,0.41" light_diff_mul="1" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.05,-0.05,0.25" bb2="0.05,0.05,0.5" temperature="15"/>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-1.5,-1.5,-1.5" bb2="1.5,1.5,1.5" temperature="4" humidity="-0.1" light="0.7"/>
+				</envareas>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="particle" effect="fire.flame.candle"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="lightable_light">
+				<lightable_light sound_on_trigger="" sound_off_trigger=""/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/candle/candle_large.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/candle_animal_fat_large_200.png?crc=996E590D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30005"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/candle_animal_fat_large_2048.png?crc=996E590D"/>
+	</steam>
+</item>

@@ -1,0 +1,120 @@
+<skin name="TshirtLoboBlack">
+
+	<params>
+		<param name="display_name" value="T-Shirt LoboStylez"/>
+		<param name="description" value="A Black LoboStylez T-Shirt"/>
+		<param name="material" value="objects/characters/players/male/torso/short/tshirt/tshirt_lobostylez_black"/>
+	</params>
+
+	<items>
+		<item name="TshirtAmalgamatedBlack"/>
+		<item name="TshirtAmalgamatedBlue"/>
+		<item name="TshirtAmalgamatedGreen"/>
+		<item name="TshirtAmalgamatedGrey"/>
+		<item name="TshirtAmalgamatedPink"/>
+		<item name="TshirtAmalgamatedRed"/>
+		<item name="TshirtBBGBlack"/>
+		<item name="TshirtBBGBlue"/>
+		<item name="TshirtBBGGreen"/>
+		<item name="TshirtBBGGrey"/>
+		<item name="TshirtBBGPink"/>
+		<item name="TshirtBBGRed"/>
+		<item name="TshirtCamo1"/>
+		<item name="TshirtCamo2"/>
+		<item name="TshirtCamo3"/>
+		<item name="TshirtCamo4"/>
+		<item name="TshirtCatBlack"/>
+		<item name="TshirtCatBlue"/>
+		<item name="TshirtCatGreen"/>
+		<item name="TshirtCatGrey"/>
+		<item name="TshirtCatPink"/>
+		<item name="TshirtCatRed"/>
+		<item name="TshirtCryengineBlack"/>
+		<item name="TshirtCryengineBlue"/>
+		<item name="TshirtCryengineGreen"/>
+		<item name="TshirtCryengineGrey"/>
+		<item name="TshirtCryenginePink"/>
+		<item name="TshirtCryengineRed"/>
+		<item name="TshirtEntradaBlack"/>
+		<item name="TshirtEntradaBlue"/>
+		<item name="TshirtEntradaGreen"/>
+		<item name="TshirtEntradaGrey"/>
+		<item name="TshirtEntradaPink"/>
+		<item name="TshirtEntradaRed"/>
+		<item name="TshirtFirefighterBlack"/>
+		<item name="TshirtFirefighterBlue"/>
+		<item name="TshirtFlipflopBlack"/>
+		<item name="TshirtFlipflopBlue"/>
+		<item name="TshirtFlipflopGreen"/>
+		<item name="TshirtFlipflopGrey"/>
+		<item name="TshirtFlipflopPink"/>
+		<item name="TshirtFlipflopRed"/>
+		<item name="TshirtKstarBlack"/>
+		<item name="TshirtKstarBlue"/>
+		<item name="TshirtKstarGreen"/>
+		<item name="TshirtKstarGrey"/>
+		<item name="TshirtKstarPink"/>
+		<item name="TshirtKstarRed"/>
+		<item name="TshirtMaskBlack"/>
+		<item name="TshirtMaskBlue"/>
+		<item name="TshirtMaskGreen"/>
+		<item name="TshirtMaskGrey"/>
+		<item name="TshirtMaskPink"/>
+		<item name="TshirtMaskRed"/>
+		<item name="TshirtNoImageBlack"/>
+		<item name="TshirtNoImageBlue"/>
+		<item name="TshirtNoImageGreen"/>
+		<item name="TshirtNoImageGrey"/>
+		<item name="TshirtNoImagePink"/>
+		<item name="TshirtNoImageRed"/>
+		<item name="TshirtNuclearBlack"/>
+		<item name="TshirtNuclearBlue"/>
+		<item name="TshirtNuclearGreen"/>
+		<item name="TshirtNuclearGrey"/>
+		<item name="TshirtNuclearPink"/>
+		<item name="TshirtNuclearRed"/>
+		<item name="TshirtPlebsiBlack"/>
+		<item name="TshirtPlebsiBlue"/>
+		<item name="TshirtPlebsiGreen"/>
+		<item name="TshirtPlebsiGrey"/>
+		<item name="TshirtPlebsiPink"/>
+		<item name="TshirtPlebsiRed"/>
+		<item name="TshirtPoliceBlack"/>
+		<item name="TshirtPoliceBlue"/>
+		<item name="TshirtPolycountBlack"/>
+		<item name="TshirtPolycountBlue"/>
+		<item name="TshirtPolycountGreen"/>
+		<item name="TshirtPolycountGrey"/>
+		<item name="TshirtPolycountPink"/>
+		<item name="TshirtPolycountRed"/>
+		<item name="TshirtSecurityBlack"/>
+		<item name="TshirtSecurityBlue"/>
+		<item name="TshirtSuckersBlack"/>
+		<item name="TshirtSuckersBlue"/>
+		<item name="TshirtSuckersGreen"/>
+		<item name="TshirtSuckersGrey"/>
+		<item name="TshirtSuckersPink"/>
+		<item name="TshirtSuckersRed"/>
+		<item name="TshirtTargetBlack"/>
+		<item name="TshirtTargetBlue"/>
+		<item name="TshirtTargetGreen"/>
+		<item name="TshirtTargetGrey"/>
+		<item name="TshirtTargetPink"/>
+		<item name="TshirtTargetRed"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/TshirtLoboBlack_200.png?crc=61DBFB86"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="99AAB5"/>
+		<param name="itemdefid" value="200147"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/TshirtLoboBlack_2048.png?crc=61DBFB86"/>
+	</steam>
+</skin>

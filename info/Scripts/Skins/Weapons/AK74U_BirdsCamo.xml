@@ -1,0 +1,27 @@
+<skin name="AK74U_BirdsCamo">
+ 
+    <params>
+        <param name="display_name" value="AK74U Birds Camo Skin"/>
+        <param name="description" value="AK74U Birds Camo Skin"/>
+        <param name="material" value="Objects/weapons/ak74u/ak74u_birds_camo"/>
+    </params>
+ 
+    <items>
+        <item name="AK74U"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AK74U_BirdsCamo_200.png?crc=5469D685"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200039"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AK74U_BirdsCamo_2048.png?crc=5469D685"/>
+	</steam>
+</skin>

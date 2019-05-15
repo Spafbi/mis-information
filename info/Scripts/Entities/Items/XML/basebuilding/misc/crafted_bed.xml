@@ -1,0 +1,24 @@
+<item name="crafted_bed" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@crafted_bed"/>
+		<param name="description" value="@crafted_bedDescription"/>
+	</params>
+
+	<base_part class="static" type="5070" name="crafted_bed" max_health="2000" limit="1">
+		<static filename="Objects/basebuilding/other/crafted_bed/crafted_bed.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

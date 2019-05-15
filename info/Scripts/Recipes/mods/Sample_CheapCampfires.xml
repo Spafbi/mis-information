@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Sample Cheaper campfire mod -->
+<recipes>
+<!-- remove comment to enable
+	<guide name="default" id="0">
+		<cats>
+			<cat name="Structures">
+				<subcats>
+					<subcat name="Rock">
+						<types>
+							<type name="Campfires">
+								<items>
+									<item class="CampfirePacked" time="20">
+										<materials>
+											<material class="Rocks" count="1" />
+										</materials>
+									</item>
+								</items>
+							</type>
+						</types>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+-->
+</recipes>

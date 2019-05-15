@@ -1,0 +1,42 @@
+<item name="water_purifier" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@water_purifier"/>
+		<param name="description" value="@water_purifierDescription"/>
+	</params>
+
+	<base_part class="water_purifier" type="258" name="water_purifier" max_health="2000">
+		<water_purifier filename="objects/basebuilding/other/water_purifier/crafted_water_purifier.cgf" helper_wood="wood" model_wood="objects/basebuilding/other/water_purifier/crafted_water_purifier_wood.cgf" helper_propane="propane_tank" helper_propane_rotation="0,0,0" model_propane="Objects/props/propanetank_small/propanetank_small.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="wood" light_bulb_size="0.2" light_radius="10" light_cast_shadows="1" light_view_dist_ratio="5" light_color="1,0.6,0.2" light_diff_mul="1" light_style="50" light_anim_speed="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.campfire.fire_medium" lens_flare_fov="360"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-3,-3,-1" bb2="3,3,3.0" temperature="6" light="0.7"/>
+				</envareas>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="wood" effect="fire.bpart.dws.water_purifier"/>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="water_exit" effect="fire.bpart.dws.water_purifier_drip"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="water_purifier">
+				<water_purifier fluid_capacity="14000" purify_rate="100"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+</item>

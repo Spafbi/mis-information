@@ -1,0 +1,22 @@
+<item name="AmcoinLedger" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="100"/>
+		<param name="stack_size_spawned" value="5"/>
+		<param name="display_name" value="@AmcoinLedger"/>
+		<param name="description" value="@AmcoinLedgerDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/amcoin_ledger/amcoin_ledger.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,25 @@
+<item name="DryingRackPacked" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="4.0"/>
+		<param name="display_name" value="@DryingRackPacked"/>
+		<param name="description" value="@DryingRackPackedDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="DryingRack"/>
+		<param name="placed_sound" value=""/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/props/campfire/woodpile.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,54 @@
+<item name="HockeyMask" class="Item" category="any">
+	<params>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@HockeyMask"/>
+		<param name="description" value="@HockeyMaskDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="Objects/characters/players/male/face/hockey_mask/hockey_mask.skin"/>
+		<param name="mtl" value="Objects/characters/players/male/face/hockey_mask/hockey_mask.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="face"/>
+	</wearable>
+
+	<geometry>
+		<thirdperson name="Objects/characters/players/male/face/hockey_mask/hockey_mask_tp.cgf" material="Objects/characters/players/male/face/hockey_mask/hockey_mask"/>
+	</geometry>
+
+	<protection level="0"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="physical" percentage="1.0"/>
+            <protection_amount type="cold" percentage="2.0"/>
+			<protection_amount type="rain_acid" percentage="4"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="face"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Face"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/HockeyMask_200.png?crc=897AC1F6"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40070"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Face"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/HockeyMask_2048.png?crc=897AC1F6"/>
+	</steam>
+</item>

@@ -1,0 +1,47 @@
+<item name="stone_fireplace" class="BaseBuildingItemFurnace" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="-1" />
+		<param name="no_icon" value="1"/>
+		<param name="display_name" value="@stone_fireplace" />
+		<param name="description" value="@stone_fireplaceDescription"/>
+	</params>
+
+	<campfire>
+		<fire name="fire.placeable.campfire_med"/>
+		<light	light_radius="4" 
+				light_bulb_size="0"
+				light_color="2,0.75,0.25" 
+				light_diff_mul="4d" 
+				light_spec_mul="1.0" 
+				light_hdr_dyn="0" 
+				light_offset="0,0,0.5" 
+				light_style="49" 
+				light_anim_speed="1" 
+				light_cast_shadows="1" 
+				light_view_dist_ratio="20"
+				light_material="materials/lights/lens_flares/generic/lens_optics"
+				lens_flare_name="miscreated.campfire.fire_medium"
+				lens_flare_fov="360"/>
+		<sound start_trigger="Play_campfire" end_trigger="Stop_campfire"/>
+		<wood helper="wood" obj="objects/basebuilding/other/fireplace/wood_fireplace.cgf"/>
+	</campfire>
+
+	<envareas>
+		<!-- dynamic envareas (all get enabled by campfire lit state) -->
+		<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.25,-0.25,0.0" bb2="0.25,0.25,1.5" fire="5" temperature="80"/>
+		<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-4,-4,-2" bb2="4,4,3.0" temperature="45" light="1" humidity="-0.5" rain="-0.1"/>
+	</envareas>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/fireplace/stone_fireplace.cgf" />
+	</geometry>
+	
+	<storage>
+		<types>
+			<type category="any" capacity="10" />
+		</types>
+	</storage>
+
+</item>

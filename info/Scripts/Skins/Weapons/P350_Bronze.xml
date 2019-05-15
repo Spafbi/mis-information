@@ -1,0 +1,13 @@
+<skin name="P350_Bronze">
+ 
+    <params>
+        <param name="display_name" value="P350 Bronze Skin"/>
+        <param name="description" value="P350 Bronze Skin"/>
+        <param name="material" value="Objects/weapons/P350/p350_bronze"/>
+    </params>
+ 
+    <items>
+        <item name="P350"/>
+    </items>
+
+</skin>

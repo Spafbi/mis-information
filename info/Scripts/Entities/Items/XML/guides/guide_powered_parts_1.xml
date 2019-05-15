@@ -1,0 +1,40 @@
+<item name="guide_powered_parts_1" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@guide_powered_parts_1"/>
+		<param name="description" value="@guide_powered_parts_1Description"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/crafting_guides/guide_basic.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="guide"/>
+		<param name="param" value="19"/> <!-- the guide number from the Recipes.xml file -->
+		<param name="soundUsed" value="Play_book_page_turn"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Guide"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/guide_powered_parts_1_200.png?crc=61087943"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="0070DD"/>
+		<param name="itemdefid" value="120001"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Guide"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/guide_powered_parts_1_2048.png?crc=61087943"/>
+	</steam>
+</item>

@@ -1,0 +1,35 @@
+<item name="C4Bricks" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.25"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@C4Bricks"/>
+		<param name="description" value="@C4BricksDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/c4_bricks/c4_bricks.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Crafting"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/C4Bricks_200.png?crc=94F37BB1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="60001"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Crafting"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/C4Bricks_2048.png?crc=94F37BB1"/>
+	</steam>
+</item>

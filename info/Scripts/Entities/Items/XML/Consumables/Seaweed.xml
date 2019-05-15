@@ -1,0 +1,27 @@
+<item name="Seaweed" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@Seaweed"/>
+		<param name="description" value="@SeaweedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/seaweed/seaweed_pile.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="60"/>
+		<param name="drinkAmount" value="20"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

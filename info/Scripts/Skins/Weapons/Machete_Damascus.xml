@@ -1,0 +1,13 @@
+<skin name="Machete_Damascus">
+ 
+    <params>
+        <param name="display_name" value="Machete Damascus Skin"/>
+        <param name="description" value="Machete Damascus Skin"/>
+        <param name="material" value="Objects/weapons/machete/machete_damas"/>
+    </params>
+ 
+    <items>
+        <item name="Machete"/>
+    </items>
+
+</skin>

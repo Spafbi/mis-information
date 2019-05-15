@@ -1,0 +1,17 @@
+<Tags>
+  <Kyt>
+    <Character />
+	
+	<Cover>
+	  <Point />
+	  <Area />
+    </Cover>
+	
+	<ControlType>
+	  <Player />
+	  <AI />
+    </ControlType>
+  </Kyt>
+   
+  <AI />
+</Tags>

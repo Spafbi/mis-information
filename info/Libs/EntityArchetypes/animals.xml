@@ -1,0 +1,552 @@
+<EntityPrototypeLibrary Name="animals">
+ <EntityPrototype Name="Butterflies" Id="{B87842B2-F815-4F8D-B6E3-1E3C0493E731}" Library="animals" Class="Bugs" Description="">
+  <Properties>
+   <Boid Animation="" nBehaviour="0" nCount="10" bInvulnerable="0" object_Model1="objects/characters/animals/insects/butterfly/butterfly_blue.cdf" object_Model2="objects/characters/animals/insects/butterfly/butterfly_brown.cdf" object_Model3="objects/characters/animals/insects/butterfly/butterfly_fly.cdf" object_Model4="objects/characters/animals/insects/butterfly/butterfly_green.cdf" object_Model5="objects/characters/animals/insects/butterfly/butterfly_yellow.cdf"/>
+   <Movement FactorOrigin="1" HeightMax="5" HeightMin="1" MaxAnimSpeed="1" RandomMovement="1" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="1" Radius="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Frogs" Id="{839A0AD5-F60D-441A-A727-B52688977DBF}" Library="animals" Class="Frogs" Description="">
+  <Properties>
+   <Boid nCount="10" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/amphibians/toad/toad.cdf"/>
+   <Movement MaxAnimSpeed="1" SpeedMax="4" SpeedMin="4"/>
+   <Options bActivate="1" bFollowPlayer="0" bObstacleAvoidance="1" Radius="10" VisibilityDist="100"/>
+   <ParticleEffects fEffectScale="0.5" waterJumpSplash="collisions.small.water"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Crows" Id="{35EBE234-B520-452C-B30F-D29BA7FCB8BD}" Library="animals" Class="Crows" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/crow/crow.cdf"/>
+   <Flocking AttractDistMax="30" AttractDistMin="10" bEnableFlocking="1" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="10" FactorTakeOff="10" FlightTime="20" HeightMax="20" HeightMin="10" LandDecelerationHeight="2" MaxAnimSpeed="2" SpeedMax="6" SpeedMin="1"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="8" bSpawnFromPoint="0" bStartOnGround="1" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Squirrel" Id="{F24D79B9-A141-4BBD-95E2-9B8CA5E1E260}" Library="animals" Class="Squirrels" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/squirrel/squirrel.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="0.1" HeightMax="1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="5" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="10" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Pigeons" Id="{1208B48F-8E1B-4457-904E-0CC9F1937C8D}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
+   <Flocking AttractDistMax="30" AttractDistMin="10" bEnableFlocking="1" FactorAlign="3" FactorCohesion="2" FactorSeparation="2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="4" FactorTakeOff="10" FlightTime="20" HeightMax="20" HeightMin="10" LandDecelerationHeight="5" MaxAnimSpeed="2" SpeedMax="3" SpeedMin="2"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="8" bSpawnFromPoint="0" bStartOnGround="1" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Turtles" Id="{BB20727C-A2D3-49F5-89FC-05DC9416C249}" Library="animals" Class="Turtles" Description="">
+  <Properties>
+   <Boid nCount="4" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="Objects/characters/animals/reptiles/turtle/red_eared_slider.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="0.1" HeightMax="1" HeightMin="0" MaxAnimSpeed="2" SpeedMax="0.5" SpeedMin="0.2"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="10" VisibilityDist="30"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Spiders" Id="{51B66F01-F0A3-409C-A186-3C7F7D5BCF32}" Library="animals" Class="Chickens" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/spider/spider_wolf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="1" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="20" SpeedMax="2" SpeedMin="0.5"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="1" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="BaldEagle" Id="{D2469A29-B314-4A4A-A36B-27EAA59466AF}" Library="animals" Class="Eagle" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/bald_eagle/bald_eagle.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="0" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="0.01" FactorTakeOff="10" FlightTime="20" HeightMax="50" HeightMin="30" LandDecelerationHeight="2" MaxAnimSpeed="1" SpeedMax="3" SpeedMin="1"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="50" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Rats" Id="{EF052B0C-B193-451C-9EFE-C2741A3B66D2}" Library="animals" Class="Rats" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/rat/rat.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="0.1" HeightMax="1" HeightMin="0" MaxAnimSpeed="5" SpeedMax="3" SpeedMin="2"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="10" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Seagulls" Id="{8AFDD1DB-EF45-4978-A773-C538999E3F4D}" Library="animals" Class="Seagulls" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/seagull/seagull.cdf"/>
+   <Flocking AttractDistMax="4" AttractDistMin="1" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="1" FactorTakeOff="10" FlightTime="20" HeightMax="20" HeightMin="10" LandDecelerationHeight="2" MaxAnimSpeed="1" SpeedMax="7" SpeedMin="4"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="10" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Fish_trout_a" Id="{C759B931-AD37-4B84-9E5C-C7BA603E3B08}" Library="animals" Class="Fish" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="0" object_Model="objects/characters/animals/fish/trout/trout_a.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0" FactorCohesion="1" FactorSeparation="10" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="0.1" FactorRandomAcceleration="2" HeightMax="20" HeightMin="1" MaxAnimSpeed="1.7" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="0" Radius="20" VisibilityDist="30"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Fish_trout_b" Id="{B2DC9A02-80F5-4C70-ACB3-0EEF47A40572}" Library="animals" Class="Fish" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="0" object_Model="objects/characters/animals/fish/trout/trout_b.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0" FactorCohesion="1" FactorSeparation="10" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="0.1" FactorRandomAcceleration="2" HeightMax="20" HeightMin="1" MaxAnimSpeed="1.7" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="0" Radius="20" VisibilityDist="30"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Fish_trout_c" Id="{13E487AB-5CD2-411C-88E4-6DCAC01BBA5A}" Library="animals" Class="Fish" Description="">
+  <Properties>
+   <Boid nCount="10" gravity_at_death="-9.81" bInvulnerable="0" Mass="0" object_Model="objects/characters/animals/fish/trout/trout_c.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0" FactorCohesion="1" FactorSeparation="10" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="0.1" FactorRandomAcceleration="2" HeightMax="20" HeightMin="1" MaxAnimSpeed="1.7" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="0" Radius="20" VisibilityDist="30"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.pigeons_12m_area" Id="{5255E777-C6D1-4742-9CC5-1CEBC13D8208}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="4" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
+   <Flocking AttractDistMax="8" AttractDistMin="2" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="4" FactorTakeOff="1" FlightTime="20" HeightMax="5" HeightMin="1" LandDecelerationHeight="5" MaxAnimSpeed="3" SpeedMax="6" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.eagle_30m_area" Id="{32500337-8366-46B0-AB94-3C09BC813C11}" Library="animals" Class="Eagle" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/bald_eagle/bald_eagle.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="0" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="0.01" FactorTakeOff="10" FlightTime="20" HeightMax="30" HeightMin="20" LandDecelerationHeight="2" MaxAnimSpeed="1" SpeedMax="3" SpeedMin="1"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="4" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Frog.frogs_6m_area" Id="{6948352F-0896-4788-BDA9-CBB0E3F40CE7}" Library="animals" Class="Frogs" Description="">
+  <Properties>
+   <Boid nCount="2" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/amphibians/toad/toad.cdf"/>
+   <Movement MaxAnimSpeed="1" SpeedMax="4" SpeedMin="4"/>
+   <Options bActivate="1" bFollowPlayer="0" bObstacleAvoidance="1" Radius="6" VisibilityDist="100"/>
+   <ParticleEffects fEffectScale="0.5" waterJumpSplash="collisions.small.water"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Rat.rats_6m_area" Id="{12B8ED20-6F9E-42D3-87DE-73BEB1305604}" Library="animals" Class="Rats" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/rat/rat.cdf"/>
+   <Flocking AttractDistMax="3" AttractDistMin="0.1" bEnableFlocking="1" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="0.5" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="2" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="5" SpeedMax="3" SpeedMin="2"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_blue" Id="{8C3301BF-AD49-4FB9-8A7B-0F9875BD9513}" Library="animals" Class="Bugs" Description="">
+  <Properties>
+   <Boid Animation="" nBehaviour="0" nCount="3" bInvulnerable="0" object_Model1="objects/characters/animals/insects/butterfly/butterfly_blue.cdf" object_Model2="" object_Model3="" object_Model4="" object_Model5=""/>
+   <Movement FactorOrigin="1" HeightMax="5" HeightMin="1" MaxAnimSpeed="1" RandomMovement="1" SpeedMax="7" SpeedMin="3"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="1" Radius="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_brown" Id="{C77C6A36-9721-403C-BF05-FA0AD654CEBB}" Library="animals" Class="Bugs" Description="">
+  <Properties>
+   <Boid Animation="" nBehaviour="0" nCount="3" bInvulnerable="0" object_Model1="objects/characters/animals/insects/butterfly/butterfly_brown.cdf" object_Model2="" object_Model3="" object_Model4="" object_Model5=""/>
+   <Movement FactorOrigin="1" HeightMax="5" HeightMin="1" MaxAnimSpeed="1" RandomMovement="1" SpeedMax="7" SpeedMin="3"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="1" Radius="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_green" Id="{49ED0482-B94F-4BBA-B250-FCE568627836}" Library="animals" Class="Bugs" Description="">
+  <Properties>
+   <Boid Animation="" nBehaviour="0" nCount="3" bInvulnerable="0" object_Model1="objects/characters/animals/insects/butterfly/butterfly_green.cdf" object_Model2="" object_Model3="" object_Model4="" object_Model5=""/>
+   <Movement FactorOrigin="1" HeightMax="5" HeightMin="1" MaxAnimSpeed="1" RandomMovement="1" SpeedMax="7" SpeedMin="3"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="1" Radius="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_yellow" Id="{47B2BB83-844E-468A-B0BB-6F102E93C2BE}" Library="animals" Class="Bugs" Description="">
+  <Properties>
+   <Boid Animation="" nBehaviour="0" nCount="3" bInvulnerable="0" object_Model1="objects/characters/animals/insects/butterfly/butterfly_yellow.cdf" object_Model2="" object_Model3="" object_Model4="" object_Model5=""/>
+   <Movement FactorOrigin="1" HeightMax="5" HeightMin="1" MaxAnimSpeed="1" RandomMovement="1" SpeedMax="7" SpeedMin="3"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="1" Radius="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.Particle_flies" Id="{73410832-2FDE-4C91-838E-FA0B9D71168E}" Library="animals" Class="ParticleEffect" Description="">
+  <Properties bActive="1" esAttachForm="Surface" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.environment.flies" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+   <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="5" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.Particle_cockroaches" Id="{98212B11-74E9-4EC8-B63C-EA44F4BDC9BC}" Library="animals" Class="ParticleEffect" Description="">
+  <Properties bActive="1" esAttachForm="Surface" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.environment.cockroaches" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+   <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="50" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.bats_12m_area" Id="{3ED8F87C-2184-416A-98AB-A4395704FEDE}" Library="animals" Class="Bats" Description="">
+  <Properties>
+   <Boid nCount="8" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/bat/bat.cdf"/>
+   <Flocking AttractDistMax="5.6" AttractDistMin="0" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="200"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="1" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="0" FactorHeight="0.4" FactorOrigin="1" FactorTakeOff="1" FlightTime="0.001" HeightMax="6" HeightMin="1" LandDecelerationHeight="5" MaxAnimSpeed="3.5" SpeedMax="7.5" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Rat.rats_12m_area" Id="{C562ACB9-1010-4B9B-8864-3DA52EB70669}" Library="animals" Class="Rats" Description="">
+  <Properties>
+   <Boid nCount="6" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/rat/rat.cdf"/>
+   <Flocking AttractDistMax="6" AttractDistMin="0.1" bEnableFlocking="1" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="0.5" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="2" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="5" SpeedMax="3" SpeedMin="2"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Frog.frogs_12m_area" Id="{4FCCA7FC-04BC-410A-B57D-D3A7DBC1CC53}" Library="animals" Class="Frogs" Description="">
+  <Properties>
+   <Boid nCount="4" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/amphibians/toad/toad.cdf"/>
+   <Movement MaxAnimSpeed="1" SpeedMax="4" SpeedMin="4"/>
+   <Options bActivate="1" bFollowPlayer="0" bObstacleAvoidance="1" Radius="12" VisibilityDist="100"/>
+   <ParticleEffects fEffectScale="0.5" waterJumpSplash="collisions.small.water"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.bats_6m_area" Id="{4F3D491C-ABD9-461F-B710-49A89021B3DC}" Library="animals" Class="Bats" Description="">
+  <Properties>
+   <Boid nCount="4" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/bat/bat.cdf"/>
+   <Flocking AttractDistMax="5.6" AttractDistMin="0" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="1" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="0" FactorHeight="0.4" FactorOrigin="4" FactorTakeOff="1" FlightTime="0.001" HeightMax="6" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="3.5" SpeedMax="7.5" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.bats_20m_cluster" Id="{20AB1226-D94E-45C5-BD6D-C82FCD263AAB}" Library="animals" Class="Bats" Description="">
+  <Properties>
+   <Boid nCount="35" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/bat/bat.cdf"/>
+   <Flocking AttractDistMax="10" AttractDistMin="1" bEnableFlocking="1" FactorAlign="0.9" FactorCohesion="0.9" FactorSeparation="9" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0.6" FactorCohesion="5" FactorOrigin="0.1" FactorSeparation="0.01" HeightOffset="1" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="0" FactorHeight="0.4" FactorOrigin="10" FactorTakeOff="1" FlightTime="0.001" HeightMax="6" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="3.5" SpeedMax="8" SpeedMin="3.75"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="0.1" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.pigeons_30m_area" Id="{AF68598A-387B-4948-B51B-2266D48AB231}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="6" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="999" FactorOrigin="2" FactorTakeOff="10" FlightTime="30" HeightMax="20" HeightMin="10" LandDecelerationHeight="5" MaxAnimSpeed="3" SpeedMax="6" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="8" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.pigeon_12m_takeoff" Id="{C845B71B-9289-495D-89EC-24CA5C76CFB5}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="0" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="10" FactorTakeOff="10" FlightTime="10" HeightMax="20" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="4" SpeedMax="8" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="4" bSpawnFromPoint="1" bStartOnGround="1" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_land_multi" Id="{DC955FBC-26B9-4CD6-AC9A-29150C745290}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="0" Mass="5" object_Model="objects/characters/animals/insects/butterfly/butterfly_yellow.cdf"/>
+   <Flocking AttractDistMax="2" AttractDistMin="1" bEnableFlocking="1" FactorAlign="3" FactorCohesion="10" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="0.1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="10" FactorHeight="10" FactorOrigin="0.1" FactorTakeOff="10" FlightTime="10" HeightMax="20" HeightMin="1" LandDecelerationHeight="0.5" MaxAnimSpeed="6" SpeedMax="4.5" SpeedMin="2"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="4" bSpawnFromPoint="1" bStartOnGround="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Snakes.Snake_6m_area" Id="{C92946EE-AE55-427B-88D9-14596F3B74FA}" Library="animals" Class="Snake" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/snake/snake.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="100" FactorHeight="1" FactorOrigin="0.1" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Snakes.Snakes_12m_area" Id="{4382519E-628F-4FB0-B36A-F7AFDCA05A3D}" Library="animals" Class="Snake" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/snake/snake.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="100" FactorHeight="1" FactorOrigin="0.1" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Turtle.Turtles_6m_area" Id="{5B73D8B1-DEFE-4966-8F0D-5B456E5A39BC}" Library="animals" Class="Turtles" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="15" object_Model="objects/characters/animals/reptiles/turtle/red_eared_slider.cdf"/>
+   <Flocking AttractDistMax="2.75" AttractDistMin="0.1" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="2" SpeedMax="0.75" SpeedMin="0.45"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="5" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Turtle.Turtles_12m_area" Id="{472649C1-A6C5-4AF5-8C4A-C7F43679967D}" Library="animals" Class="Turtles" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="0" Mass="15" object_Model="objects/characters/animals/reptiles/turtle/red_eared_slider.cdf"/>
+   <Flocking AttractDistMax="5.5" AttractDistMin="0.1" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="2" SpeedMax="0.75" SpeedMin="0.45"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Fishes.trouts_10m_area" Id="{9D065097-568F-45BE-8FBC-9A6CF1780F98}" Library="animals" Class="Fish" Description="">
+  <Properties>
+   <Boid nCount="6" gravity_at_death="-9.81" bInvulnerable="0" Mass="0" object_Model="objects/characters/animals/fish/fresh_water/trout_a.cgf"/>
+   <Flocking AttractDistMax="0" AttractDistMin="0" bEnableFlocking="0" FactorAlign="0" FactorCohesion="0" FactorSeparation="0" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="5" FactorHeight="0.1" FactorOrigin="1" FactorRandomAcceleration="1" HeightMax="1" HeightMin="-50" MaxAnimSpeed="3" SpeedMax="1.25" SpeedMin="0.25"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" Radius="6" VisibilityDist="35"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Fishes.trouts_20m_school" Id="{B389097C-C7E4-47A8-B8E5-C6B9384B4C80}" Library="animals" Class="Fish" Description="">
+  <Properties>
+   <Boid nCount="30" gravity_at_death="-9.81" bInvulnerable="0" Mass="0" object_Model="objects/characters/animals/fish/fresh_water/trout_a.cgf"/>
+   <Flocking AttractDistMax="0.15" AttractDistMin="0.1" bEnableFlocking="1" FactorAlign="10" FactorCohesion="10" FactorSeparation="0.1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="5" FactorHeight="0.1" FactorOrigin="1" FactorRandomAcceleration="1" HeightMax="1" HeightMin="-50" MaxAnimSpeed="4" SpeedMax="6" SpeedMin="1.5"/>
+   <Options bActivate="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" Radius="10" VisibilityDist="35"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.crow_12m_takeoff" Id="{1153D5C8-7025-4C52-B72A-305BA7987038}" Library="animals" Class="Crows" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/crow/crow.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="0" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="10" FactorTakeOff="10" FlightTime="10" HeightMax="20" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="4" SpeedMax="8" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="4" bSpawnFromPoint="1" bStartOnGround="1" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.crow_12m_area" Id="{004876C4-544C-45CB-AC29-BE8D80FD6399}" Library="animals" Class="Crows" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/crow/crow.cdf"/>
+   <Flocking AttractDistMax="5.6" AttractDistMin="0" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="200"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="4" FactorTakeOff="1" FlightTime="10" HeightMax="5" HeightMin="1" LandDecelerationHeight="5" MaxAnimSpeed="3" SpeedMax="6" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.crow_30m_area" Id="{F0D7A8B0-FF41-4C1A-8AE4-7EBA6F1BD603}" Library="animals" Class="Crows" Description="">
+  <Properties>
+   <Boid nCount="6" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/crow/crow.cdf"/>
+   <Flocking AttractDistMax="5.6" AttractDistMin="0" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="2" FactorHeight="0.4" FactorOrigin="4" FactorTakeOff="10" FlightTime="20" HeightMax="5" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="3" SpeedMax="6" SpeedMin="3"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Lizards.salamander_6m_area" Id="{44D6506F-EAE4-4660-992B-760D7DC01FB3}" Library="animals" Class="Salamanders" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/salamander/salamander.cdf"/>
+   <Flocking AttractDistMax="2.75" AttractDistMin="0.1" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="10" HeightMax="0.1" HeightMin="0.1" MaxAnimSpeed="1" SpeedMax="1" SpeedMin="0.1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="5" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="150" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Spider.Spiders_12m_area" Id="{834E6C44-1F53-4676-B954-3805DB06D853}" Library="animals" Class="Chickens" Description="">
+  <Properties>
+   <Boid nCount="4" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/spider/spider_wolf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="1" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="10" SpeedMax="1" SpeedMin="0.5"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="12" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Spider.Spiders_6m_area" Id="{3854BB1E-7F92-4F62-B9AC-7265DEF1601A}" Library="animals" Class="Chickens" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/spider/spider_wolf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="1" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="10" SpeedMax="1" SpeedMin="0.5"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="6" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Spider.Spiders_10m_nest" Id="{5FEC8DE1-2F83-4E29-9E69-5024BCBB4D61}" Library="animals" Class="Chickens" Description="">
+  <Properties>
+   <Boid nCount="25" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/spider/spider_wolf.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="1" FactorHeight="1" FactorOrigin="1" HeightMax="1" HeightMin="0" MaxAnimSpeed="10" SpeedMax="1" SpeedMin="0.5"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="8" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Turtle.Turtles_3m_area" Id="{78CA2FE7-0496-4C6A-AE3C-45BFC3EEF089}" Library="animals" Class="Turtles" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="0" Mass="15" object_Model="objects/characters/animals/reptiles/turtle/red_eared_slider.cdf"/>
+   <Flocking AttractDistMax="1.5" AttractDistMin="0.1" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="10" HeightMax="1" HeightMin="0" MaxAnimSpeed="2" SpeedMax="0.75" SpeedMin="0.45"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="2" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Frog.frogs_3m_area" Id="{D1038D60-2314-4485-B4C4-5C788F439963}" Library="animals" Class="Frogs" Description="">
+  <Properties>
+   <Boid nCount="1" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/amphibians/toad/toad.cdf"/>
+   <Movement MaxAnimSpeed="1" SpeedMax="4" SpeedMin="4"/>
+   <Options bActivate="1" bFollowPlayer="0" bObstacleAvoidance="1" Radius="3" VisibilityDist="100"/>
+   <ParticleEffects fEffectScale="0.5" waterJumpSplash="collisions.small.water"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.butterfly_land_multi_v2" Id="{0C08535B-9373-4216-B09A-AD0C9098B2D7}" Library="animals" Class="Birds" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="0" Mass="5" object_Model="objects/characters/animals/insects/butterfly/butterfly_blue.cdf"/>
+   <Flocking AttractDistMax="2" AttractDistMin="1" bEnableFlocking="1" FactorAlign="3" FactorCohesion="10" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="0.1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="10" FactorHeight="10" FactorOrigin="0.1" FactorTakeOff="10" FlightTime="10" HeightMax="20" HeightMin="1" LandDecelerationHeight="0.5" MaxAnimSpeed="6" SpeedMax="4.5" SpeedMin="2"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="4" bSpawnFromPoint="1" bStartOnGround="1" VisibilityDist="100"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="3" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Squirrels.squirrels_6m_area" Id="{82BA2221-9F88-4481-9604-6FDCDD456016}" Library="animals" Class="Squirrels" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/squirrel/squirrel.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="1" FactorHeight="1" FactorOrigin="1.5" HeightMax="0.1" HeightMin="0.1" MaxAnimSpeed="3" SpeedMax="3" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="6" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Squirrels.squirrels_12m_area" Id="{79375782-D2B4-4995-ABC2-82652A036273}" Library="animals" Class="Squirrels" Description="">
+  <Properties>
+   <Boid nCount="3" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/squirrel/squirrel.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="1" HeightMax="0.1" HeightMin="0.1" MaxAnimSpeed="3" SpeedMax="3" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="12" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Squirrels.squirrels_3m_area" Id="{1E92F192-0EB6-4B20-A0AD-98186DCE35BF}" Library="animals" Class="Squirrels" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/squirrel/squirrel.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="10" FactorHeight="1" FactorOrigin="100" HeightMax="0.1" HeightMin="0.1" MaxAnimSpeed="1.6" SpeedMax="1.5" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="0" Radius="3" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Birds.seagulls_30m_area" Id="{46D04125-B2D2-4D8A-AAC2-8CFF912890C7}" Library="animals" Class="Seagulls" Description="">
+  <Properties>
+   <Boid nCount="6" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/seagull/seagull.cdf"/>
+   <Flocking AttractDistMax="30" AttractDistMin="2" bEnableFlocking="1" FactorAlign="1" FactorCohesion="1" FactorSeparation="0.2" FieldOfViewAngle="250"/>
+   <Ground FactorAlign="0" FactorCohesion="3" FactorOrigin="10" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0" WalkToIdleDuration="3"/>
+   <Movement FactorAvoidLand="100" FactorHeight="0.4" FactorOrigin="1" FactorTakeOff="10" FlightTime="20" HeightMax="20" HeightMin="10" LandDecelerationHeight="2" MaxAnimSpeed="1" SpeedMax="6" SpeedMin="1"/>
+   <Options bActivate="1" AnimationDist="0" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="1" bPlaySounds="1" Radius="15" bSpawnFromPoint="0" bStartOnGround="0" VisibilityDist="200"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="250" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.particle_bees_idle" Id="{E3855C82-2FC7-4FE5-969D-5B200F86185A}" Library="animals" Class="ParticleEffect" Description="">
+  <Properties bActive="1" esAttachForm="Vertices" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="environment_fx.environment.bees_idle" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+   <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="10" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Insects.particle_bees_swarm" Id="{799D17A7-9D07-463C-AF04-E150F81F9A60}" Library="animals" Class="ParticleEffect" Description="">
+  <Properties bActive="1" esAttachForm="Vertices" esAttachType="" Comment="" bCountPerUnit="0" CountScale="100" NetworkSync="0" ParticleEffect="environment_fx.environment.bees_swarm" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+   <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="10" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Snakes.BrownSnake_6m_area" Id="{9B3E9934-4040-4068-BA96-5454F79989C5}" Library="animals" Class="Snake" Description="">
+  <Properties>
+   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/snake/snake_brown.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="100" FactorHeight="1" FactorOrigin="0.1" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="6" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Snakes.BrownSnakes_12m_area" Id="{75DC5E90-2BB8-4BC8-AE24-86EC5AEF410B}" Library="animals" Class="Snake" Description="">
+  <Properties>
+   <Boid nCount="2" gravity_at_death="-9.81" bInvulnerable="0" Mass="10" object_Model="objects/characters/animals/snake/snake_brown.cdf"/>
+   <Flocking AttractDistMax="20" AttractDistMin="5" bEnableFlocking="0" FactorAlign="0.01" FactorCohesion="0.01" FactorSeparation="1" FieldOfViewAngle="250"/>
+   <Movement FactorAvoidLand="100" FactorHeight="1" FactorOrigin="0.1" HeightMax="0.1" HeightMin="0" MaxAnimSpeed="4" SpeedMax="4" SpeedMin="1"/>
+   <Options bActivate="1" bAvoidWater="1" bFollowPlayer="0" bNoLanding="0" bObstacleAvoidance="1" bPlaySounds="1" Radius="12" VisibilityDist="50"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

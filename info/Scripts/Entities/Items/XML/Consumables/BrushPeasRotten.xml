@@ -1,0 +1,37 @@
+<item name="BrushPeasRotten" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@BrushPeasRotten"/>
+		<param name="description" value="@BrushPeasRottenDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/brush_peas/brush_peas_rotten_pile.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="poisonChance" value="65"/>
+		<param name="torpidityAmount" value="5"/>
+		<param name="staminaAmount" value="-5"/>
+		<param name="foodAmount" value="60"/>
+		<param name="drinkAmount" value="5"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<usable>
+		<param name="title" value="@BrushPeasRottenFertilizePlanter"/>
+		<param name="action" value="fertilize"/>
+		<param name="soundUsed" value="Play_apply_fertilizer"/>
+		<param name="targetClassNames" value="planter_box"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

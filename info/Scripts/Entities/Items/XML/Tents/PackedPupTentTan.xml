@@ -1,0 +1,25 @@
+<item name="PackedPupTentTan" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@PackedPupTentTan"/>
+		<param name="description" value="@PackedPupTentTanDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="PupTentTan"/>
+		<param name="placed_sound" value="Play_puptent_setup"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/tents/puptent/puptent_packed.cgf" material="objects/tents/puptent/pupTentTan.mtl"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

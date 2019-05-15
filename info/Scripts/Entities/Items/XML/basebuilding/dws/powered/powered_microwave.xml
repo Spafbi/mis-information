@@ -1,0 +1,34 @@
+<item name="powered_microwave" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="oven" type="246" name="powered_microwave" max_health="2000">
+		<oven filename="Objects/props/microwave/dws_microwave.cgf" helper_food="food"/>
+		<base_parts>
+			<base_part class="light_power">
+				<light_power helper="light_power" light_bulb_size="0.05" light_radius="0.05" light_offset="0,0.015,-0.055" light_cast_shadows="0" light_view_dist_ratio="1"
+					light_color="0.01,0,0" light_diff_mul="0.01" light_style="0" light_anim_speed="1"/>
+			</base_part>
+			<base_part class="light_powered">
+				<light_powered helper="light_powered" light_bulb_size="0.05" light_radius="0.3" light_cast_shadows="0" light_view_dist_ratio="1"
+					light_color="1,0.7,0.4" light_diff_mul="0.05" light_style="19" light_anim_speed="1"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.5,-0.5,-0.3" bb2="0.5,0.5,0.3" temperature="10" light="0.7" humidity="-0.1"/>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-2,-2,-1" bb2="2,1,3.0" temperature="10" humidity="-0.1"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="microwave">
+				<microwave sound_done="Play_microwave_food_done"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+</item>

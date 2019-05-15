@@ -1,0 +1,38 @@
+<item name="camping_pop_up_canopy" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="8.5"/>
+		<param name="display_name" value="@camping_pop_up_canopy"/>
+		<param name="description" value="@camping_pop_up_canopyDescription"/>
+	</params>
+
+	<base_part class="static" type="9" name="camping_pop_up_canopy" max_health="1000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/other/portable_gazebo/portable_gazebo.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/other/portable_gazebo/portable_gazebo_packed.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/camping_pop_up_canopy_200.png?crc=333FDE5B"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30002"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/camping_pop_up_canopy_2048.png?crc=333FDE5B"/>
+	</steam>
+</item>

@@ -1,0 +1,36 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="75" Class="UI:MovieClip:Visible" pos="500,-200,0" flags="0">
+   <Inputs uiMovieclips_MovieClips="MainMenu:Cursor" instanceID="-1" Visible="0" Alpha="0"/>
+  </Node>
+  <Node Id="78" Name="Confirmation_Dialog" Class="_commentbox" pos="-580,-250.80698,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1740" Height="360"/>
+   <NodeSize Width="1740" Height="387.74118"/>
+  </Node>
+  <Node Id="89" Class="UI:Display:Display" pos="-220,-200,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="90" Class="UI:Display:Config" pos="160,-200,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="0" consoleCursor="0" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="5"/>
+  </Node>
+  <Node Id="136" Class="UI:Functions:MainMenu:DisplayWindow" pos="840,-200,0" flags="0">
+   <Inputs instanceID="-1" window="Empty"/>
+  </Node>
+  <Node Id="137" Class="UI:Events:MainMenu:ShowStatusMessage" pos="-560,60,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="138" Class="UI:Functions:MainMenu:ShowStatusMessage" pos="840,40,0" flags="0">
+   <Inputs instanceID="-1" message=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="136" nodeOut="75" portIn="Call" portOut="OnSet" enabled="0"/>
+  <Edge nodeIn="138" nodeOut="75" portIn="Call" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="90" nodeOut="89" portIn="set" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="75" nodeOut="90" portIn="Set" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="89" nodeOut="137" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="137" portIn="message" portOut="Message" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

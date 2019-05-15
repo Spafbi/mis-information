@@ -1,0 +1,81 @@
+<item name="DuctTape" class="Weapon" category="primary" priority="13" weaponParams="1">
+	<params>
+		<param name="display_name" value="@DuctTape"/>
+		<param name="description" value="@DuctTapeDescription"/>
+		<param name="itemClass" value="1hmelee"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="0.3"/>
+		<param name="stack_size" value="10"/>
+		<param name="bleed_percent" value="0"/>    
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="0.1"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_secondary1"/>
+		<param name="bone_attachment_02" value="stow_secondary2"/>
+		<param name="sprintToFireDelay" value="0.05"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.1"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.15"/>
+		<param name="relaxedToTacticalBlendTime" value="0.22"/>
+		<param name="tag" value="duct_tape"/>
+		<param name="prone_no_melee" value="0"/>
+		<animPrecache name="1handedmelee">
+			<precache DBAFile="animations/human/male/items/duct_tape/duct_tape.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScaleTactical="0.75" speedScale="1.0" rotationScale="1.0" firingSpeedScale="1.0"/>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/duct_tape/duct_tape_inhand.cgf"/>
+		<onground name="Objects/craftingMats/duct_tape/duct_tape.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.2"/>
+				<param name="damage" value="0"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.43"/> <!-- Delay, in seconds, from when weapon is meleed until impact occurs -->
+				<param name="aiDelay" value="0.4"/>
+				<param name="duration" value="1.0"/> <!-- Essentially rate of fire for melee. Time, in seconds, between each melee action -->
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/>
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+				<param name="capturetype" value="1"/>
+			</melee>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations> <!-- Can only have max 2 categories defined below -->
+			<location category="any"/>
+			<location category="belt"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Equipment"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DuctTape_200.png?crc=C1480C44"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70008"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Equipment"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/DuctTape_2048.png?crc=C1480C44"/>
+	</steam>
+</item>

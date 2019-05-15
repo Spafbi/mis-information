@@ -1,0 +1,77 @@
+<item name="MotorcycleHelmetWhite" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@MotorcycleHelmetWhite"/>
+		<param name="description" value="@MotorcycleHelmetWhiteDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="Objects/characters/players/generic/hat/helmet_a/helmet.skin"/>
+		<param name="mtl" value="objects/characters/players/generic/hat/helmet_b/helmet_b.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="hat"/>
+	</wearable>
+
+	<geometry>
+		<onground name="Objects/characters/players/generic/hat/helmet_a/helmet.cgf" material="objects/characters/players/generic/hat/helmet_b/helmet_b"/>
+	</geometry>
+
+	<protection level="2"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="physical" percentage="2.0"/>
+			<protection_amount type="explosion" percentage="3.0"/>
+			<protection_amount type="rain_acid" percentage="3"/>
+            <protection_amount type="cold" percentage="4.5"/>
+		</environmental>
+		<protectBodyPart name="head">
+			<!-- PROTECT AGAINST MELEE -->
+			<protection_amount hit_type="blunt" percentage="75.0"/>
+			<protection_amount hit_type="melee" percentage="75.0"/>
+			<!-- SURVIVE 1 HEADSHOT -->
+			<protection_amount hit_type="ammo_22" percentage="75.0"/> <!-- Takes down to 10/16% -->
+		</protectBodyPart>
+	</protection>
+
+	<explosion> <!-- Only used to show PFX on destroy -->
+		<param name="damage" value="0"/>
+		<param name="pressure" value="0"/>
+		<param name="min_radius" value="0"/>
+		<param name="max_radius" value="0"/>
+		<param name="min_phys_radius" value="0"/>
+		<param name="max_phys_radius" value="0"/>
+		<param name="sound_radius" value="0"/>
+		<param name="hole_size" value="0"/>
+		<param name="effect" value="item_degradation.generic.debris_medium"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="0"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hat"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MotorcycleHelmetWhite_200.png?crc=38B4A1D7"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40318"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MotorcycleHelmetWhite_2048.png?crc=38B4A1D7"/>
+	</steam>
+</item>

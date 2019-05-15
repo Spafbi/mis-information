@@ -1,0 +1,49 @@
+<ammo name="Flashbang" class="Grenade">
+	<geometry>
+		<firstperson name="objects/weapons/m84_flashbang/m84_flashbang_onground.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="18" />
+		<param name="min_bounce_speed" value="0.5" />
+		<param name="single_contact" value="0" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_metal_grenade" />
+		<param name="pierceability" value="14" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="100" />
+		<param name="torpidity" value="20" />
+		<param name="stamina" value="10" />
+		<param name="min_radius" value="0" />
+		<param name="max_radius" value="10" />
+		<param name="min_phys_radius" value="0" />
+		<param name="max_phys_radius" value="10" />
+		<param name="sound_radius" value="150" />
+		<param name="hole_size" value="2" />
+		<param name="terrain_hole_size" value="3" />
+		<param name="radialblurdist" value="15" />
+		<param name="type" value="frag" />
+	</explosion>
+
+	<params>
+		<param name="lifetime" value="3.0" /> <!-- time delay for explosion once thrown -->
+		<param name="showtime" value="0.05" />
+		<param name="aitype" value="grenade" />
+	</params>
+
+	<flashbang>
+		<param name="max_radius" value="25" /> <!-- radius which will blind -->
+		<param name="blindAmount" value="0.5" /> <!-- how much white to blend in -->
+		<param name="flashbangBaseTime" value="10" /> <!-- how long to blind for -->
+	</flashbang>
+</ammo>

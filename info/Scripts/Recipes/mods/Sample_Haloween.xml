@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Sample Halloween mod -->
+<recipes>
+<!-- remove comment to enable
+	<guide name="default" id="0">
+		<cats>
+			<cat name="Clothing">
+				<subcats>
+					<subcat name="Headwear">
+						<items>
+							<item class="JackOLanternHelmet" time="5">
+								<materials>
+									<material class="Pumpkin" />
+								</materials>
+							</item>
+						</items>
+					</subcat>
+				</subcats>
+			</cat>
+
+			<cat name="Other">
+				<subcats>
+					<subcat name="Lights">
+						<items>
+							<item class="jack_o_lantern" time="5">
+								<materials>
+									<material class="Pumpkin" />
+									<material class="candle_animal_fat_small" />
+								</materials>
+							</item>
+						</items>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+-->
+</recipes>

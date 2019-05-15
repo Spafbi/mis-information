@@ -1,0 +1,59 @@
+<ammo name="ammo_12_gauge_beanbag" class="Bullet">
+	<geometry />
+
+	<flags>
+		<param name="clientonly" value="1" />
+		<param name="reusable" value="1" />
+	</flags>
+
+	<whiz>
+		<param name="sound" value="Play_bullet_whiz" />
+		<param name="distance" value="10.0" />
+	</whiz>
+
+	<ricochet>
+		<param name="sound" value="Play_bullet_ricochet" />
+	</ricochet>
+
+	<!-- No sonic boom - subsonic round -->
+
+	<!-- https://en.wikipedia.org/wiki/Bean_bag_round -->
+	<physics type="particle">
+		<param name="mass" value="0.06" /> <!-- 40 gram lead weight + 20 for others -->
+		<param name="speed" value="80" /> <!-- 70 to 90m/s standard -->
+		<param name="radius" value="0.003" />
+		<param name="air_resistance" value="1.5" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_fabric" />
+		<param name="single_contact" value="1" />
+		<param name="pierceability" value="14" /> <!-- No penetration -->
+		<pierceabilityLevels> <!-- Percentage of damage to take off. SurfacePierceability > 10 = 0 reduction -->
+			<param name="level3" value="100" />  <!-- SurfacePierceability < 10 -->
+			<param name="level2" value="100" />  <!-- SurfacePierceability < 7  -->
+			<param name="level1" value="100" /> <!-- SurfacePierceability < 4  -->
+			<param name="maxPenetrationThickness" value="0.01" /> <!-- Penetrates valid surface levels up to 1cm thick -->
+		</pierceabilityLevels>
+	</physics>
+
+	<params>
+		<param name="hit_type" value="ammo_12_gauge_beanbag" />
+		<param name="damage" value="1.0" />
+		<param name="torpidity" value="69.0" />
+		<param name="stamina" value="30.0" />
+		<param name="knocks_target" value="0"/>
+		<param name="min_damage_for_knockDown" value="0"/>
+		<param name="min_damage_for_knockDown_leg" value="0"/>
+		<param name="bleed_percent" value="1" />
+		<param name="lifetime" value="5.0" />
+		<param name="showtime" value="0.05" /> <!-- Time delay before projectile is rendered (so it doesn't clip through camera when shot). Decreased from 0.15 for slow moving visible projectile  -->
+		<param name="bulletType" value="1" />
+		<param name="hitRecoil" value="Level4_mp"/> <!-- Not used -->
+	</params>
+
+	<trailUnderWater>
+		<param name="effect" value="water.bubbles.bullets" />
+		<param name="scale" value="3.0" />
+	</trailUnderWater>
+</ammo>

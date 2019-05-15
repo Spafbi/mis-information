@@ -1,0 +1,30 @@
+<item name="water_barrel" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="place_dws" value="2"/>
+		<param name="display_name" value="@water_barrel"/>
+		<param name="description" value="@water_barrelDescription"/>
+	</params>
+
+	<base_part class="water_barrel" type="256" name="water_barrel" max_health="2000">
+		<water_barrel filename="Objects/props/plastic_barrel/dws_plastic_barrel_full.cgf"/>
+		<base_actions>
+			<base_action class="water_barrel">
+				<water_barrel fluid_capacity="200000"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

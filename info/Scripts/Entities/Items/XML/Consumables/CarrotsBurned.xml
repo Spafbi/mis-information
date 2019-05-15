@@ -1,0 +1,26 @@
+<item name="CarrotsBurned" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>		
+		<param name="display_name" value="@CarrotsBurned"/>
+		<param name="description" value="@CarrotsBurnedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/carrot/carrot.cgf" material="Objects/consumables/carrot/carrot_burned"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="35"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

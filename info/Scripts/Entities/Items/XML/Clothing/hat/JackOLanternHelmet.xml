@@ -1,0 +1,56 @@
+<item name="JackOLanternHelmet" class="Item" category="any">
+	<params>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@JackOLanternHelmet"/>
+		<param name="description" value="@JackOLanternHelmetDescription"/>
+	</params>
+
+	<geometry>
+		<onground name="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_helmet.cgf" material="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_helmet"/>
+	</geometry>
+
+	<protection level="0">
+		<environmental>
+			<protection_amount type="rain_acid" percentage="2"/>
+            <protection_amount type="cold" percentage="3"/>
+		</environmental>
+	</protection>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_helmet.skin"/>
+		<param name="mtl" value="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_helmet.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="hat"/>
+
+		<param name="overlay_layer" value="4"/>
+		<param name="overlay_3p" value="0"/>
+		<param name="overlay_texture" value="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_overlay_diff.tif"/>
+		<param name="overlay_color" value="1.0,1.0,1.0"/>
+		<param name="overlay_in_time" value="0.15"/>
+		<param name="overlay_out_time" value="0.15"/>
+	</wearable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hat"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/JackOLanternHelmet_200.png?crc=484BFD57"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="EAEA00"/>
+		<param name="itemdefid" value="40301"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/JackOLanternHelmet_2048.png?crc=484BFD57"/>
+	</steam>
+</item>

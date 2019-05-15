@@ -1,0 +1,344 @@
+<Vehicle name="dirtbike">
+
+	<Physics pushable="1" shove_force="0.5">
+		<Buoyancy waterDensity="50" waterResistance="3000" waterDamping="500"/>
+		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
+	</Physics>
+
+	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="50">
+		<DamageMultipliers>
+			<DamageMultiplier damageType="melee" multiplier="0.1"/>
+			<DamageMultiplier damageType="collision" multiplier="0.05"/>
+			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
+		</DamageMultipliers>
+		<DamagesGroups>
+			<DamagesGroup name="Destroy" useTemplate="DirtbikeDestroy"/>
+		</DamagesGroups>
+	</Damages>
+
+	<Components>
+		<Component name="hull" damageMax="1000" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
+			<DamageBehaviors> <!-- Four damage levels, 25%, 50%, 75% and 100% (destroyed) -->
+				<DamageBehavior class="Effect" damageRatioMin="0.25" damageRatioMax="0.5">
+					<Effect effect="HullSmoke25" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.50" damageRatioMax="0.75">
+					<Effect effect="HullSmoke50" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.75">
+					<Effect effect="HullSmoke75" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Group" damageRatioMin="1">
+					<Group name="Destroy"/>
+				</DamageBehavior>
+			</DamageBehaviors>
+		</Component>
+		<Component name="engine" damageMax="100" position="0,-0.05,0.51" size="0.25,0.4,0.3" useBoundsFromParts="0" hullAffection="2.0"> <!-- Weak spot - 2x damage when hitting engine -->
+			<DamageBehaviors>
+				<!-- Disable engine when damaged 99% -->
+				<!--<DamageBehavior class="MovementNotification" damageRatioMin="0.99">
+					<MovementNotification isFatal="0" />
+				</DamageBehavior>-->
+				<!-- Begin burning effect/damage at 95% damage for Engine component -->
+				<!--<DamageBehavior class="Effect" damageRatioMin="0.95">
+					<Effect effect="EngineBurn" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Burn" damageRatioMin="0.95">
+					<Burn helper="vehicleBurnPos" damage="2" selfDamage="5" radius="1" interval="0.5"/>
+				</DamageBehavior>-->
+			</DamageBehaviors>
+		</Component>
+		<!--<Component name="fueltank" damageMax="100" position="0,0.01,1.01" size="0.25,0.4,0.3" useBoundsFromParts="0" hullAffection="2">
+			<DamageBehaviors>
+				<DamageBehavior class="Effect" damageRatioMin="0.5">
+					<Effect effect="EngineBurn" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Burn" damageRatioMin="0.5">
+					<Burn helper="vehicleBurnPos" damage="2" selfDamage="1" radius="1" interval="0.5"/>
+				</DamageBehavior>
+				<DamageBehavior class="Explosion" damageRatioMin="0.95">
+					<Explosion damage="125" helper="vehicleBurnPos" pressure="5000" radius="8" minRadius="3" physRadius="5" minPhysRadius="3" soundRadius="100" />
+				</DamageBehavior>
+			</DamageBehaviors>
+		</Component>-->
+		<Component name="enterVehicle" damageMax="0" position="0,0,1" size="1,2,2" useBoundsFromParts="0">
+			<DamageBehaviors />
+		</Component>
+		<Component name="headLight" damageMax="0" position="0,0.425,1.135" size="0.2,0.2,0.2" useBoundsFromParts="0" hullAffection="1">
+			<DamageBehaviors/>
+				<!--<DamageBehavior class="Effect">
+					<Effect effect="DestroyHeadLightLeft"/>
+				</DamageBehavior>
+			</DamageBehaviors>-->
+		</Component>
+		<Component name="wheel1" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="1" hullAffection="0" dontRepair="1">
+			<DamageBehaviors/> <!-- Can't destroy wheels -->
+		</Component>
+		<Component name="wheel2" damageMax="0" position="0,0,0" size="1,1,1" useBoundsFromParts="1" hullAffection="0" dontRepair="1">
+			<DamageBehaviors/> <!-- Can't destroy wheels -->
+		</Component>
+	</Components>
+
+	<Parts>
+		<Part name="hull" class="Animated" component="hull">
+			<Parts>
+				<Part name="headLight" class="Light" component="headLight" helper="headLightPos"> <!-- TODO: Get headlight to parent with forks and rotate with it -->
+					<Light type="Headlight"/>
+				</Part>
+				<Part name="headLightFlare" class="Light" component="headLight" helper="headLightPos">
+					<Light type="Headlight_Flare"/>
+				</Part>
+				<Part name="headLightFill" class="Light" component="headLight" helper="headLightPos">
+					<Light type="HeadlightFillSmallMedium"/>
+				</Part>
+				<Part name="wheel1" class="SubPartWheel" component="wheel1" mass="40">
+					<SubPartWheel rayCast="0" axle="0" density="0" damping="-0.7" driving="0" canBrake="0" lenMax="0.2" maxFriction="1.75" minFriction="1.15" slipFrictionMod="0.1" stiffness="0" suspLength="0.1" rimRadius="0.2" torqueScale="0.9"/>
+				</Part>
+				<Part name="wheel2" class="SubPartWheel" component="wheel2" mass="40">
+					<SubPartWheel rayCast="0" axle="1" density="0" damping="-0.7" driving="1" canBrake="1" lenMax="0.2" maxFriction="2.0" minFriction="1.5" slipFrictionMod="0.1" stiffness="0" suspLength="0.1" rimRadius="0.2" torqueScale="1.1"/>
+				</Part>
+				<Part name="wheel3" class="SubPartWheel" component="hull" mass="1"> <!-- Left training wheel -->
+					<SubPartWheel rayCast="0" axle="2" density="0" damping="-0.7" driving="0" canBrake="0" canSteer="0" lenMax="0.3" maxFriction="0.1" minFriction="0.1" slipFrictionMod="1" stiffness="0" stiffnessWeight="-2" suspLength="0.1" rimRadius="0.2" torqueScale="0.9"/>
+				</Part>
+				<Part name="wheel4" class="SubPartWheel" component="hull" mass="1"> <!-- Right training wheel -->
+					<SubPartWheel rayCast="0" axle="2" density="0" damping="-0.7" driving="0" canBrake="0" canSteer="0" lenMax="0.3" maxFriction="0.1" minFriction="0.1" slipFrictionMod="1" stiffness="0" stiffnessWeight="-2" suspLength="0.1" rimRadius="0.2" torqueScale="0.9"/>
+				</Part>
+			</Parts>
+			<Animated filename="objects/vehicles/dirtbike/dirtbike.cga" filenameDestroyed="objects/vehicles/dirtbike/dirtbike_damaged.cga"/>
+		</Part>
+		<Part name="massBox" class="MassBox" mass="100" position="0,-0.1,0.55" disablePhysics="0" disableCollision="0" isHidden="0">
+			<MassBox size="1,1.25,0.2" drivingOffset="-0.2"/>
+		</Part>
+	</Parts>
+
+	<Helpers>
+		<Helper name="exhaust_pos" position="0.115,-0.9,0.99" direction="0,-1,0.1" part="hull"/>
+		<Helper name="engineSoundPos" position="0,-0.45,0.7" direction="0,0,1" part="hull"/>
+		<Helper name="hornPos" position="0,0.5,1" direction="0,1,0" part="hull"/>
+		<Helper name="headLightPos" position="0,0.47,1.14" direction="0,1,0" part="hull"/>
+		<Helper name="vehicleBurnPos" position="0,-0.05,0.45" direction="0,0,1" part="hull"/>
+		<Helper name="passenger_enter_01" position="-0.5,0,0" direction="0,0,1" part="hull"/>
+		<Helper name="passenger_enter_02" position="0.5,0,0" direction="0,0,1" part="hull"/>
+	</Helpers>
+
+	<Actions>
+		<Action class="Enter">
+			<Activations>
+				<Activation type="OnUsed" param1="component" param2="enterVehicle"/>
+			</Activations>
+			<Enter>
+				<Seats>
+					<Seat value="driver"/>
+					<Seat value="passenger1"/>
+				</Seats>
+			</Enter>
+		</Action>
+	</Actions>
+
+	<Seats>
+		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver" tpCameraDistance="4">
+			<Views>
+				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" rotationMax="10,0,60" hidePlayer="0" followSpeed="16">
+					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0.0"/>
+				</View>
+				<View class="SteerThirdPerson">
+					<SteerThirdPerson>
+						<Pos aim="0,0,2.5" offset="0,-6,0" pivotOffset="-1.5"/>
+						<Rotation rotationMax="45,0,160" rotationMax2="45,0,160" stickSensitivity="2,0,2" stickSensitivity2="1,0,2"/>
+						<Motion returnSpeed="1" returnSpeed2="1" angFollow="0"/>
+						<Radius min="0.9" max="1.3" relaxRate="5"/>
+					</SteerThirdPerson>
+				</View>
+			</Views>
+			<SeatActions>
+				<SeatAction class="Sound">
+					<Audio startTrigger="Play_quadbike_horn" stopTrigger="Stop_quadbike_horn" helper="hornPos"/>
+				</SeatAction>
+				<SeatAction class="Lights">
+					<Lights activation="toggle">
+						<LightParts>
+							<LightPart value="headLight"/>
+							<LightPart value="headLightFill"/>
+							<LightPart value="headLightFlare"/>
+						</LightParts>
+					</Lights>
+				</SeatAction>
+				<SeatAction class="SteeringWheel">
+					<SteeringWheel fragmentID="IdleDriver">
+						<Car jitterAmpLow="0.02" jitterAmpHi="0.08" jitterFreqLow="9" jitterFreqHi="25" jitterSuspAmp="0.1" jitterSuspResponse="10"/>
+					</SteeringWheel>
+				</SeatAction>
+			</SeatActions>
+		</Seat>
+		<Seat name="passenger1" part="hull" enterHelper="passenger_enter_02" sitHelper="passenger_seat_02" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="2">
+			<Views>
+				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" rotationMax="20,0,70" hidePlayer="0">
+					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0"/>
+				</View>
+				<View class="SteerThirdPerson">
+					<SteerThirdPerson>
+						<Pos aim="0,0,2.5" offset="0,-6,0" pivotOffset="-1.5"/>
+						<Rotation rotationMax="45,0,160" rotationMax2="45,0,160" stickSensitivity="2,0,2" stickSensitivity2="1,0,2"/>
+						<Motion returnSpeed="1" returnSpeed2="1" angFollow="0"/>
+						<Radius min="0.9" max="1.3" relaxRate="5"/>
+					</SteerThirdPerson>
+				</View>
+			</Views>
+			<SeatActions />
+		</Seat>
+	</Seats>
+
+	<MovementParams>
+		<!-- Two-wheeled support notes:
+
+		Overview:
+		The two-wheeled support system works by creating a counterweight to emulate the bike driver leaning left/right
+		The root position and mass of the counter-weight is specifed below and the physics system will move the counter-weight left/right as the bike is turned to simulate the bike driver shifting/leaning his weight.
+		There are also two new "balance capsules" on the left/right of the bike that are used to help push down on the ground to force the bike upright
+
+		Counter-weight Values:
+		driverMass (m_massCW): the mass of the counter-weight (the driver - should be correct ratio of bike weight to driver weight)
+		driverPosY (m_pos0CW.y): initial y position of the counter-weight - relative to the bike's origin
+		driverPosZ (m_pos0CW.z): initial z position of the counter-weight - relative to the bike's origin
+		driverMoveZ (m_kzCW): the maximum vertical distance the counter weight can be rotated as it swings left/right above the bike (simulates the driver moving higher as he shifts over the top of the bike)
+		driverSpeed (m_stiltCW): the max speed at which the counter-weight is adjusted (how quickly the driver can shift his weight)
+		driverMaxMoveX (m_maxxCW): the maximum distance the counter weight can be moved left/right (how far the driver can lean)
+
+		Balance Capsules:
+		driverMoveX (m_ktiltCW[0]): scalar to adjust the force the balance capsules push down with on the ground when not turning(steering) or leaning
+		driverMoveXSteer (m_ktiltCW[1]): scalar to adjust the force the the balance capsules push down with when turning(steering) and leaning
+		minVelSteerLean (m_minVelSteerLean): below minVelSteerLean the value driverMoveX is used, above the value (and turning/steering) driverMoveXSteer is used
+
+		General Values:
+		wheelDisableSpeed (m_velWheelDisable): disables the wheel's colliders when this velocity is reached
+		wheelDisableMask (m_maskWheelDisable): bit masked used to determine the wheel colliders to disable
+		rollDamping (m_dampingy): scalar to dampen how quickly the bike lean occurs
+		uprightOnMount (m_uprightOnMount): 1 means the bike is forced instantly upgright when a player mounts the bike
+		-->
+		<StdWheeled vMaxSteerMax="14" 
+					steerSpeed="5" 
+					steerSpeedMin="100" 
+					steerSpeedScale="1" 
+					steerSpeedScaleMin="1" 
+					v0SteerMax="35" 
+					kvSteerMax="31" 
+					steerRelaxation="250" 
+					pedalLimitMax="0.1" 
+					rpmInterpSpeed="4" 
+					rpmRelaxSpeed="2" 
+					rpmGearShiftSpeed="3"
+					driverMass="80"
+					driverPosY="0"
+					driverPosZ="1.5"
+					driverMoveZ="0.0"
+					driverMoveX="0.8"
+					driverMoveXSteer="1.4"
+					driverMaxMoveX="30"
+					driverSpeed="50"
+					minVelSteerLean="2"
+					rollDamping="1.5"
+					wheelDisableSpeed="2.5"
+					wheelDisableMask="12"
+					uprightOnMount="1">
+			<Wheeled axleFriction="20" 
+					 axleFrictionMax="100" 
+					 brakeTorque="250" 
+					 brakeImpulse="0.5" 
+					 clutchSpeed="2.3" 
+					 damping="0" 
+					 engineIdleRPM="150" 
+					 engineMaxRPM="2000" 
+					 engineMinRPM="80" 
+					 enginePower="20" 
+					 engineShiftDownRPM="400" 
+					 engineShiftUpRPM="1200" 
+					 engineStartRPM="300" 
+					 stabilizer="0" 
+					 minBrakingFriction="1.9" 
+					 maxBrakingFriction="2.9" 
+					 maxSteer="0.61" 
+					 maxSpeed="15" 
+					 maxTimeStep="0.02" 
+					 minEnergy="0.012" 
+					 slipThreshold="0.01" 
+					 suspDampingMin="-0.18" 
+					 suspDampingMax="-0.5" 
+					 suspDampingMaxSpeed="30" 
+					 gearDirSwitchRPM="1000" 
+					 dynFriction="1.25" 
+					 latFriction="1"
+					 wheelMassScale="0.5">
+				<gearRatios>
+					<gearRatio value="-20"/>
+					<gearRatio value="0"/>
+					<gearRatio value="5"/>
+				</gearRatios>
+			</Wheeled>
+			<SoundParams engineSoundPosition="engineSoundPos" runSoundDelay="1" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3" maxSlipSpeed="11"/>
+			<Boost endurance="10" regeneration="10" strength="8"/>
+			<AirDamp dampAngle="1.2,0.75,0" dampAngVel="1.5,0.8,0.8"/>
+			<Eject timer="0.1" maxTippingAngle="55" />
+		</StdWheeled>
+	</MovementParams>
+
+	<Particles mfxRow="vfx_quadbike">
+		<Exhaust insideWater="0" outsideWater="1">
+			<Helpers>
+				<Helper value="exhaust_pos"/>
+			</Helpers>
+			<EngineStart effect="vehicles.Dirtbike.Engine.Start"/>
+			<EngineStop effect="vehicles.Dirtbike.Engine.Stop"/>
+			<EngineRunning effect="vehicles.Dirtbike.Engine.Running" boostEffect="" baseSizeScale="1" 
+				minSpeed="0"  minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" 
+				maxSpeed="15" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1" 
+				minPower="0"  minPowerSizeScale="1" minPowerCountScale="1" minPowerSpeedScale="1" 
+				maxPower="1"  maxPowerSizeScale="1" maxPowerCountScale="2" maxPowerSpeedScale="2"/>
+		</Exhaust>
+		<DamageEffects>
+			<DamageEffect name="HullSmoke25" helper="vehicleBurnPos" effect="vehicles.Dirtbike.Damage.HullSmoke25"/>
+			<DamageEffect name="HullSmoke50" helper="vehicleBurnPos" effect="vehicles.Dirtbike.Damage.HullSmoke50"/>
+			<DamageEffect name="HullSmoke75" helper="vehicleBurnPos" effect="vehicles.Dirtbike.Damage.HullSmoke75"/>
+			<!--<DamageEffect name="EngineBurn" helper="vehicleBurnPos" effect="vehicles.Dirtbike.Damage.EngineBurn"/>-->
+			<!--<DamageEffect name="BlownTirePFX" helper="" effect="vehicles.Common.Ground.Blown_Tire" gravityDirection="0,0,1"/>-->
+			<DamageEffect name="VehicleDestroyed" helper="vehicleBurnPos" effect="vehicles.Dirtbike.Damage.Destroyed"/> <!-- Effect called in DamagesGroups -->
+			<DamageEffect name="SmokeStack" helper="vehicleCenterPos" effect="vehicles.Dirtbike.Damage.SmokeStack"/> <!-- Effect called in DamagesGroups -->
+		</DamageEffects>
+		<EnvironmentLayers>
+			<EnvironmentLayer minSpeed="5" minSpeedSizeScale="0.15" minSpeedCountScale="0.15" minSpeedSpeedScale="0.25" maxSpeed="20" maxSpeedSizeScale="0.5" maxSpeedCountScale="0.5" maxSpeedSpeedScale="1">
+				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+				<Emitters />
+				<Wheels>
+					<WheelGroups>
+						<WheelGroup>
+							<Wheels>
+								<Wheel value="1"/>
+							</Wheels>
+						</WheelGroup>
+						<WheelGroup>
+							<Wheels>
+								<Wheel value="2"/>
+							</Wheels>
+						</WheelGroup>
+					</WheelGroups>
+				</Wheels>
+			</EnvironmentLayer>
+			<!--<EnvironmentLayer name="slip" minSpeed="0.5" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+				<Emitters />
+				<Wheels all="1" allActive="0"/>
+			</EnvironmentLayer>-->
+			<EnvironmentLayer name="rims" minSpeed="3" minSpeedSizeScale="0.25" minSpeedCountScale="1" maxSpeed="10" maxSpeedSizeScale="0.5" maxSpeedCountScale="1">
+				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+				<Emitters />
+				<Wheels all="1" allActive="0"/>
+			</EnvironmentLayer>
+		</EnvironmentLayers>
+	</Particles>
+
+	<Mannequin tag="dirtbike" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/dirtbikeAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints />
+	<Modifications />
+
+</Vehicle>

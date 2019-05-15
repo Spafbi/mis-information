@@ -1,0 +1,127 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-920,-320,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Display:Display" pos="-200,-540,0" flags="0">
+   <Inputs uiElements_Element="StatsBar" instanceID="-1"/>
+  </Node>
+  <Node Id="4" Class="Actor:LocalPlayer" pos="-440,-20,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="5" Class="UI:Functions:StatsBar:SetHealth" pos="460,160,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="7" Class="Game:MyPlayer" pos="-200,-40,0" flags="0">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="8" Class="UI:Functions:StatsBar:SetFood" pos="460,250,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="9" Class="UI:Functions:StatsBar:SetWater" pos="460,330,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="10" Class="UI:Functions:StatsBar:SetTemperature" pos="460,410,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="11" Class="UI:Functions:StatsBar:SetRadiation" pos="460,490,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="12" Class="UI:Display:Display" pos="-200,-760,0" flags="0">
+   <Inputs uiElements_Element="ChatWindow" instanceID="-1"/>
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="240,-760,0" flags="0">
+   <Inputs uiActions_UIAction="ChatWindow" Strict="0" Args=""/>
+  </Node>
+  <Node Id="286" Class="UI:Events:System:OnGameplayEnded" pos="-920,-480,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="289" Class="UI:Functions:StatsBar:SetBleedingLevel" pos="460,570,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="290" Class="UI:Events:MP:VOIPState" pos="150,1030,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="292" Class="UI:Functions:StatsBar:SetStance" pos="460,80,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="293" Class="UI:Functions:VOIP:SetVOIPState" pos="490,1030,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="294" Class="UI:Display:Display" pos="-200,-320,0" flags="0">
+   <Inputs uiElements_Element="VOIP" instanceID="-1"/>
+  </Node>
+  <Node Id="319" Class="UI:Functions:StatsBar:SetPoisoned" pos="460,650,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="320" Class="UI:Functions:StatsBar:SetOxygen" pos="460,730,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="338" Class="UI:Action:Control" pos="460,-40,0" flags="0">
+   <Inputs uiActions_UIAction="InventoryHide" Strict="0" Args=""/>
+  </Node>
+  <Node Id="341" Class="UI:Util:UIDelay" pos="180,-40,0" flags="0">
+   <Inputs delay="1"/>
+  </Node>
+  <Node Id="400" Name="Ensure_inventory_is_closed_in_vehicle" Class="_comment" pos="130,20,0" flags="0"/>
+  <Node Id="418" Name="Voice_over_IP" Class="_commentbox" pos="130,960.46655,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="620" Height="200"/>
+   <NodeSize Width="620" Height="237.17413"/>
+  </Node>
+  <Node Id="420" Class="UI:Events:MP:VOIPLoudness" pos="150,1110,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="421" Class="UI:Functions:VOIP:SetVOIPLoudness" pos="490,1110,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="422" Class="UI:Functions:StatsBar:SetTorpidity" pos="460,810,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="423" Class="UI:Functions:StatsBar:SetStamina" pos="460,890,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="show" portOut="output" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="1" portIn="update" portOut="output" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="1" portIn="show" portOut="output" enabled="1"/>
+  <Edge nodeIn="294" nodeOut="1" portIn="show" portOut="output" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="Enable" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="Get" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="7" portIn="Call" portOut="OnHealthChange" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="7" portIn="Health" portOut="OnHealthChange" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="7" portIn="Call" portOut="OnFoodChange" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="7" portIn="Food" portOut="OnFoodChange" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="Call" portOut="OnWaterChange" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="Water" portOut="OnWaterChange" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="7" portIn="Call" portOut="OnTemperatureChange" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="7" portIn="Temperature" portOut="OnTemperatureChange" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="7" portIn="Call" portOut="OnRadiationChange" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="7" portIn="Radiation" portOut="OnRadiationChange" enabled="1"/>
+  <Edge nodeIn="289" nodeOut="7" portIn="BleedingLevel" portOut="OnBleedingChange" enabled="1"/>
+  <Edge nodeIn="289" nodeOut="7" portIn="Call" portOut="OnBleedingChange" enabled="1"/>
+  <Edge nodeIn="292" nodeOut="7" portIn="Call" portOut="StanceChanged" enabled="1"/>
+  <Edge nodeIn="292" nodeOut="7" portIn="Stance" portOut="StanceChanged" enabled="1"/>
+  <Edge nodeIn="319" nodeOut="7" portIn="Call" portOut="OnPoisonChange" enabled="1"/>
+  <Edge nodeIn="319" nodeOut="7" portIn="Poisioned" portOut="OnPoisonChange" enabled="1"/>
+  <Edge nodeIn="320" nodeOut="7" portIn="Call" portOut="OnOxygenChange" enabled="1"/>
+  <Edge nodeIn="320" nodeOut="7" portIn="Oxygen" portOut="OnOxygenChange" enabled="1"/>
+  <Edge nodeIn="341" nodeOut="7" portIn="in" portOut="EnterVehicle" enabled="1"/>
+  <Edge nodeIn="422" nodeOut="7" portIn="Call" portOut="OnTorpidityChange" enabled="1"/>
+  <Edge nodeIn="422" nodeOut="7" portIn="Torpidity" portOut="OnTorpidityChange" enabled="1"/>
+  <Edge nodeIn="423" nodeOut="7" portIn="Call" portOut="OnStaminaChange" enabled="1"/>
+  <Edge nodeIn="423" nodeOut="7" portIn="Stamina" portOut="OnStaminaChange" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="12" portIn="Start" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="286" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="286" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="294" nodeOut="286" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="293" nodeOut="290" portIn="state" portOut="State" enabled="1"/>
+  <Edge nodeIn="293" nodeOut="290" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="338" nodeOut="341" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="421" nodeOut="420" portIn="loudness" portOut="Loudness" enabled="1"/>
+  <Edge nodeIn="421" nodeOut="420" portIn="Call" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

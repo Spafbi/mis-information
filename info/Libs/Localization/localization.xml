@@ -1,0 +1,19 @@
+<localization> 
+	<init> 
+		<entry>text_ui_ingame.xml</entry>
+		<entry>text_ui_menus.xml</entry>
+		<entry>text_ui_items.xml</entry>
+		<entry>text_ui_hints.xml</entry>
+	</init> 
+	<singleplayer> 
+	</singleplayer> 
+	<multiplayer> 
+		<!--<entry>...</entry>-->
+	</multiplayer>
+	<credits>
+		<!--<entry>...</entry>-->
+	</credits>
+	<patch>
+		<!--<entry>...</entry>-->
+	</patch>
+</localization>

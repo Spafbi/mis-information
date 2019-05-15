@@ -1,0 +1,46 @@
+<item name="TrapC4" class="Trap" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrapC4"/>
+		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="TrapC4Packed"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/c4/trap_c4_1m.cgf"/>
+	</geometry>
+
+	<trap>
+		<!-- only one of these two should be set to 1 (true) -->
+		<param name="destroy_when_triggered" value="1"/> <!-- default is 1-->
+		<param name="disable_when_triggered" value="0"/> <!-- recommended to use thirdpersonAux as well if this is set -->
+	</trap>
+
+	<explosion>
+		<param name="damage" value="250"/>
+		<param name="torpidity" value="10"/>
+		<param name="stamina" value="0"/>
+		<param name="min_radius" value="3"/>
+		<param name="max_radius" value="5"/>
+		<param name="min_phys_radius" value="2.5"/>
+		<param name="max_phys_radius" value="3.5"/>
+		<param name="sound_radius" value="100"/>
+		<param name="pressure" value="400"/>
+		<param name="effect" value="traps.landmine.explosion"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="15"/>
+		<param name="hit_type" value="explosion"/>
+	</explosion>
+
+</item>

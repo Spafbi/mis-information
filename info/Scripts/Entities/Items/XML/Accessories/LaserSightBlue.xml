@@ -1,0 +1,43 @@
+<item name="LaserSightBlue" class="Laser" category="any">
+	<params>
+		<param name="display_name" value="@LaserSightBlue"/>
+		<param name="description" value="@LaserSightBlueDescription"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="hide_as_attachment" value="0"/>
+		<param name="dontRotateOnSpawn" value="1"/>
+	</params>
+
+	<geometry>
+		<firstperson name="objects/weapons/attachments/laser_sight/laser_sight.cgf"/>
+		<thirdperson name="objects/weapons/attachments/laser_sight/laser_sight.cgf"/>
+	</geometry>
+
+	<laser>
+		<firstperson laser_dot="weapon_fx.laser_sight.aimdot_tp_blue" laser_range="150" laser_thickness="15"/>
+
+		<thirdperson laser_geometry_tp="objects/weapons/attachments/laser_beam/bluee_beam.cgf" laser_dot="weapon_fx.laser_sight.aimdot_tp_blue" laser_range="150" laser_thickness="15"/>
+	</laser>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="barrel_left"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/LaserSightBlue_200.png?crc=201BDBE6"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="20004"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/LaserSightBlue_2048.png?crc=201BDBE6"/>
+	</steam>
+</item>

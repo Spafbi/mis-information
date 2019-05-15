@@ -1,0 +1,39 @@
+<ammo name="GrenadeGasSleep" class="SmokeGrenade">
+	<geometry>
+		<firstperson name="objects/weapons/smokeGrenade/smokeGrenade_yellow_inair_tp.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="18" />
+		<param name="min_bounce_speed" value="0.5" />
+		<param name="single_contact" value="0" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_metal_grenade" />
+		<param name="pierceability" value="14" />
+	</physics>
+
+	<trail>
+		<param name="effect" value="weapon_fx.grenade.smoke_trail" />
+		<param name="prime" value="false" />
+	</trail>
+
+	<params>
+		<param name="lifetime" value="50.0" />
+		<param name="showtime" value="0.2" />
+		<param name="quietRemoval" value="1" />
+	</params>
+
+	<grenade>
+		<param name="color" value="5" /> <!-- translucent -->
+		<param name="torpidityPerSecond" value="30" />
+		<param name="staminaPerSecond" value="10" />
+	</grenade>
+</ammo>

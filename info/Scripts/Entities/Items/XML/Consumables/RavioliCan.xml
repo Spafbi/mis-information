@@ -1,0 +1,27 @@
+<item name="RavioliCan" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@RavioliCan"/>
+		<param name="description" value="@RavioliCanDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/ravioli/ravioli.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="360"/>
+		<param name="drinkAmount" value="150"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

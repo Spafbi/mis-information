@@ -1,0 +1,27 @@
+<skin name="SUVBasic_Yellow">
+
+	<params>
+		<param name="display_name" value="SUV Yellow Skin"/>
+		<param name="description" value="Yellow skin for the SUV"/>
+		<param name="material" value="objects/vehicles/suv/suv_yellow"/>
+	</params>
+
+	<items>
+		<item name="suv_basic"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SUVBasic_Yellow_200.png?crc=9A158431"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="10"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300051"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SUVBasic_Yellow_2048.png?crc=9A158431"/>
+	</steam>
+</skin>

@@ -1,0 +1,26 @@
+<item name="BeetsBurned" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="15"/>		
+		<param name="display_name" value="@BeetsBurned"/>
+		<param name="description" value="@BeetsBurnedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/beets/beets_pile.cgf" material="Objects/consumables/beets/beets_burned"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="35"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

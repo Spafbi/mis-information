@@ -1,0 +1,6 @@
+<!-- The ItemPackages script allows you to create new DisplayNames for items, depending on what accessories they have fitted 
+     You can specify multiple accessories, separated by a semicolon -->
+
+<ItemPackages>
+	<!-- See SDK scripts for examples if needed -->
+</ItemPackages>

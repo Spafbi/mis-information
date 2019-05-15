@@ -1,0 +1,77 @@
+<item name="DeerMeatSteakRaw" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@DeerMeatSteakRaw"/>
+		<param name="description" value="@DeerMeatSteakRawDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/meat_steaks/meat_steak_raw.cgf"/>
+	</geometry>
+
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="DeerMeatSteakCooked"/>
+		<param name="cookedTime" value="180"/>
+		<param name="rottenItem" value="DeerMeatSteakRotten"/>
+		<param name="rottenTime" value="600"/>
+		<param name="curable" value="1"/>
+		<param name="curedItem" value="DeerMeatSteakCured"/>
+		<param name="curedTime" value="300"/>
+		<param name="foodAmount" value="200"/>
+		<param name="poisonChance" value="35"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@DeerMeatSteakRawCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

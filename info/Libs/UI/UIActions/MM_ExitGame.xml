@@ -1,0 +1,36 @@
+<Graph Description="" Group="MM_Common" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="32" Class="UI:Functions:Game:ExitGame" pos="1460,60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="40,60,0" flags="1">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ExitGame|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="80" Class="Logic:Condition" pos="590,60,0" flags="1">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="96" Class="UI:Functions:Settings:LogoutUser" pos="1180,60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="97" Class="UI:Events:MainMenu:ExitGame" pos="-270,60,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="132" Class="UI:Functions:MainMenu:DisplayWindow" pos="860,60,0" flags="0">
+   <Inputs instanceID="-1" window="Empty"/>
+  </Node>
+  <Node Id="133" Name="Handle_Events" Class="_commentbox" pos="-290,9.1417065,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2000" Height="380"/>
+   <NodeSize Width="2000" Height="407.93768"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="80" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="80" portIn="Call" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="96" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="97" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="96" nodeOut="132" portIn="send" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

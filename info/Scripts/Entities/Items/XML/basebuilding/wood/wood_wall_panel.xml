@@ -1,0 +1,20 @@
+<item name="wood_wall_panel" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="4.0"/>
+		<param name="display_name" value="@wood_wall_panel"/>
+		<param name="description" value="@wood_wall_panelDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/wood/wood_sheet.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

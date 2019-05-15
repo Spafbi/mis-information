@@ -1,0 +1,54 @@
+<item name="357x14" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.156"/> <!-- 8 grams per bullet / 2 + 100 grams for magazine -->
+		<param name="display_name" value="@357x14"/>
+		<param name="description" value="@357x14Description"/>
+		<param name="tag" value="357x14"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="14"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="ammo_357" amount="14" pile="Pile_357"/>
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_load" value="Play_magazine_load"/>
+		<param name="sound_unload" value="Play_magazine_unload"/>
+	</magazine>
+
+	<geometry>
+		<onground name="Objects/magazines/357_p350/p350_mag.cgf"/> <!-- We only display onground model. TP model controlled in Mannequin -->
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="p350_357_mag"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Magazine"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/357x14_200.png?crc=34FB4A32"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80078"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Magazine"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/357x14_2048.png?crc=34FB4A32"/>
+	</steam>
+</item>

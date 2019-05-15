@@ -1,0 +1,27 @@
+<skin name="Rem870Founders">
+
+	<params>
+		<param name="display_name" value="AT-12 Founders"/>
+		<param name="description" value="A special limited edition AT-12 Founders Club skin. Pew Pew!"/>
+		<param name="material" value="objects/weapons/rem870/rem_870_founders"/>
+	</params>
+
+	<items>
+		<item name="Rem870"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Rem870Founders_200.png?crc=A879CF4C"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="200010"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Rem870Founders_2048.png?crc=A879CF4C"/>
+	</steam>
+</skin>

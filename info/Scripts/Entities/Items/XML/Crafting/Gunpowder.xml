@@ -1,0 +1,21 @@
+<item name="Gunpowder" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="0.2" />
+		<param name="stack_size" value="64" />
+		<param name="display_name" value="@Gunpowder" />
+		<param name="description" value="@GunpowderDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/gunpowder/gunpowder.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

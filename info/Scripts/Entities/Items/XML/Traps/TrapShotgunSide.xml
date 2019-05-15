@@ -1,0 +1,56 @@
+<item name="TrapShotgunSide" class="Trap" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrapShotgunSide"/>
+		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="TrapShotgunSidePacked"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/shotgun/trap_shotgun_side_1m.cgf"/>
+		<thirdpersonAux name="Objects/traps/shotgun/trap_shotgun_side_1m_triggered.cgf"/>
+	</geometry>
+
+	<trap>
+		<param name="launch_helper" value="weapon_term"/> <!-- for the muzzle PFX -->
+		<param name="reset_class" value="Pile_12GaugePellet"/> <!-- require ammo to reset trap -->
+
+		<!-- only one of these two should be set to 1 (true) -->
+		<param name="destroy_when_triggered" value="0"/> <!-- default is 1-->
+		<param name="disable_when_triggered" value="1"/> <!-- recommended to use thirdpersonAux as well if this is set -->
+
+		<param name="sound_reset" value="Play_pickup_metal_3p"/>
+
+		<!-- this overrides the default generated trigger area -->
+		<param name="trigger_proxy_offset" value="-0.05,0,0"/>
+		<param name="trigger_proxy_size" value="1.25,0.75,0.25"/>
+	</trap>
+
+	<explosion> <!-- We fake the shotgun projectile because chance of hitting player with projectile is very low -->
+		<param name="damage" value="60"/>
+		<param name="torpidity" value="0"/>
+		<param name="stamina" value="0"/>
+		<param name="min_radius" value="1"/>
+		<param name="max_radius" value="2"/>
+		<param name="min_phys_radius" value="0"/>
+		<param name="max_phys_radius" value="0"/>
+		<param name="sound_radius" value="150"/>
+		<param name="pressure" value="0"/>
+		<param name="effect" value="traps.shotgun.muzzle_flash"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="0"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+</item>

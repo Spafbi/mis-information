@@ -1,0 +1,56 @@
+<item name="Arrowx8_0BRP" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.0"/>
+		<param name="display_name" value="@Arrowx8_0BRP"/>
+		<param name="description" value="@Arrowx8_0BRPDescription"/>
+		<param name="is_ammo_pile" value="1"/>
+		<param name="hide_as_attachment" value="1"/>
+		<param name="tag" value="Arrowx8"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="8"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="arrow_0BRP" amount="8"/>
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_split" value="Play_rounds_split"/>
+		<param name="sound_combine" value="Play_rounds_split"/>
+	</magazine>
+
+	<geometry>
+		<thirdperson name="Objects/ammo/arrow/arrow_onground.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="arrow_mag"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:AmmoPile"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Arrowx8_0BRP_200.png?crc=884726BC"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80019"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:AmmoPile"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Arrowx8_0BRP_2048.png?crc=884726BC"/>
+	</steam>
+</item>

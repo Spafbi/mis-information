@@ -1,0 +1,118 @@
+<item name="JerryCanDiesel" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="13.0"/>
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="display_name" value="@JerryCanDiesel"/>
+		<param name="description" value="@JerryCanDieselDescription"/>
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="healthMax" value="35"/> <!-- required for explosion below to work -->
+		<param name="destroyWhenDegraded" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/JerryCan/jerryCan.cgf" material="Objects/equipment/JerryCan/jerryCan1"/>
+	</geometry>
+
+	<consumable>
+		<param name="type" value="0"/> <!-- eICT_Diesel -->
+		<param name="consumePartial" value="1"/>
+		<param name="drinkAmount" value="19000"/>
+		<param name="refillable" value="1"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+		<param name="soundRefilled" value="Play_container_fill"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@JerryCanDieselWaterPlanter"/>
+				<param name="action" value="water"/>
+				<param name="param" value="not_explosive"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="planter_box"/>
+			</use>
+			<use>
+				<param name="title" value="@JerryCanDieselDepositFluid"/>
+				<param name="action" value="fluid_item"/>
+				<param name="param" value="not_empty"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_barrel"/>
+			</use>
+			<use>
+				<param name="title" value="@JerryCanDieselDepositFluid"/>
+				<param name="action" value="fluid_item"/>
+				<param name="param" value="not_explosive"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_purifier"/>
+			</use>
+			<use>
+				<param name="title" value="@JerryCanDieselWithdrawFluid"/>
+				<param name="action" value="refill_item"/>
+				<param name="param" value="not_full"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_barrel;water_collector;water_purifier"/>
+			</use>
+		</uses>
+	</usable>
+
+	<craftable>
+		<!-- Purify water -->
+		<craft name="WaterPurificationTablets" destroy="1" purify="1"/>
+		<!-- Poison water -->
+		<craft name="AppleRotten" destroy="1" poison="1"/>
+		<craft name="BeetsRotten" destroy="1" poison="1"/>
+		<craft name="BrushPeasRotten" destroy="1" poison="1"/>
+		<craft name="CarrotsRotten" destroy="1" poison="1"/>
+		<craft name="PotatoesRotten" destroy="1" poison="1"/>
+		<craft name="PumpkinRotten" destroy="1" poison="1"/>
+		<craft name="RadishesRotten" destroy="1" poison="1"/>
+		<craft name="SnapPeasRotten" destroy="1" poison="1"/>
+		<craft name="TomatoesRotten" destroy="1" poison="1"/>
+		<!-- Transfer fluid -->
+		<craft name="WaterBottle"/>
+		<craft name="JerryCanDiesel"/>
+		<craft name="CivCanteen01"/>
+		<craft name="MilitaryCanteenMetal"/>
+		<craft name="MilitaryCanteenPlastic"/>
+		<craft name="WaterskinCraftedDeer"/>
+		<craft name="WaterskinCraftedWolf"/>
+		<craft name="camping_water_jug"/>
+	</craftable>
+
+	<explosion>
+		<param name="damage" value="50"/> <!-- max damage from explosion -->
+		<param name="pressure" value="4000"/> <!-- pressure wave force -->
+		<param name="min_radius" value="2"/> <!-- full damage up to this radius -->
+		<param name="max_radius" value="4"/> <!-- linear damage falloff from min to max -->
+		<param name="min_phys_radius" value="2.2"/> <!-- full pressure wave up to this radius -->
+		<param name="max_phys_radius" value="3"/> <!-- linear pressure wave falloff from min to max -->
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="explosions.jerrycan_diesel.burning"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="65"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<damage_area>
+		<param name="ground_particle_path" value="weapon_fx.molotov3.dummy"/>
+		<param name="ground_particle_duration" value="28"/>
+		<param name="ground_particle_effect_slot" value="5"/>
+		<param name="area_id" value="-5"/>
+		<param name="radius" value="2"/>
+		<param name="fire_duration" value="5.0"/>
+		<param name="fire_damage" value="3.0"/>
+		<param name="fire_incremental_duration" value="1.0"/>
+		<param name="body_fire_start_time" value="1.0"/>
+	</damage_area>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="dieselfuel"/>
+		</locations>
+	</storage>
+
+</item>

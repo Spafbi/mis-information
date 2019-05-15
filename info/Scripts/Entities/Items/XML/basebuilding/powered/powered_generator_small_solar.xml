@@ -1,0 +1,42 @@
+<item name="powered_generator_small_solar" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5.0"/>
+		<param name="display_name" value="@powered_generator_small_solar"/> 
+	</params>
+
+	<base_part class="generator" type="105" name="powered_generator_small_solar" max_health="4000" repair_with="ScrapMetal">
+		<generator filename="Objects/basebuilding/other/solar_powered_generator/solar_powered_generator.cgf" power_type="solar" helper="light" power_output="3"/>
+		<base_actions>
+			<base_action class="toggle_generator">
+				<toggle_generator effect="" sound_running="Play_generator_small_on" sound_stopping="Play_generator_small_off"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+	
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/powered_generator_small_solar_200.png?crc=5E340BDA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30100"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/powered_generator_small_solar_2048.png?crc=5E340BDA"/>
+	</steam>
+</item>

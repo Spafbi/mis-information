@@ -1,0 +1,53 @@
+<item name="GasCanisterPack" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="7.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@GasCanisterPack"/>
+		<param name="description" value="@GasCanisterPackDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/scba_air_system/scba_air_system.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/scba_air_system/scba_air_system.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<thirdperson name="objects/characters/players/male/back/backpack/scba_air_system/scba_onground.cgf" material="objects/characters/players/male/back/backpack/scba_air_system/scba_air_system"/>
+		<onground name="objects/characters/players/male/back/backpack/scba_air_system/scba_onground.cgf" material="objects/characters/players/male/back/backpack/scba_air_system/scba_air_system"/>
+	</geometry>
+	<protection level="3"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="gas_smoke" percentage="67.0"/>
+			<protection_amount type="gas_radiation" percentage="67.0"/>
+		</environmental>
+	</protection>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="10"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/GasCanisterPack_200.png?crc=E9CE7B6D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40015"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/GasCanisterPack_2048.png?crc=E9CE7B6D"/>
+	</steam>
+</item>

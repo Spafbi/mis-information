@@ -1,0 +1,39 @@
+<item name="tire_1_3m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@tire_1_3m"/>
+		<param name="description" value="@tire_1_3mDescription"/>
+	</params>
+
+	<base_part class="static" type="80" name="tire_1_3m" max_health="4000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/misc/tire_1_3m.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/tire_1_3m_200.png?crc=EBF54C42"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30018"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/tire_1_3m_2048.png?crc=EBF54C42"/>
+	</steam>
+</item>

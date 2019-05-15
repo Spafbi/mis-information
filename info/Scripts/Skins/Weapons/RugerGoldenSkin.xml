@@ -1,0 +1,27 @@
+<skin name="RugerGoldenSkin">
+
+	<params>
+		<param name="display_name" value="22 Golden Gun Skin"/>
+		<param name="description" value="Golden Gun skin for the .22 pistol "/>
+		<param name="material" value="objects/weapons/ruger22/ruger22_goldengun"/>
+	</params>
+
+	<items>
+		<item name="ruger22"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RugerGoldenSkin_200.png?crc=5DA1A402"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200011"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RugerGoldenSkin_2048.png?crc=5DA1A402"/>
+	</steam>
+</skin>

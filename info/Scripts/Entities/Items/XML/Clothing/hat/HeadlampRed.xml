@@ -1,0 +1,71 @@
+<item name="HeadlampRed" class="Item" category="any">
+	<params>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.90"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@HeadlampRed"/>
+		<param name="description" value="@HeadlampRedDescription"/>
+	</params>
+
+	<wearable>
+		<param name="attach_item" value="1"/> <!-- must be used when item has a flashlight that turns on/off -->
+		<param name="cgf" value="Objects/characters/players/generic/hat/headlamp/headlamp.cgf"/>
+		<param name="skin" value="Objects/characters/players/generic/hat/headlamp/headlamp.skin"/>
+		<param name="mtl" value="Objects/characters/players/generic/hat/headlamp/headlamp.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="hat"/>
+	</wearable>
+
+	<geometry>
+		<thirdperson name="Objects/characters/players/generic/hat/headlamp/headlamp.cgf"/>
+		<onground name="Objects/characters/players/generic/hat/headlamp/headlamp_onground.cgf"/>
+	</geometry>
+
+	<flashlight>
+		<param name="helper" value="light"/>
+		<param name="light_radius" value="50.0"/>
+		<param name="light_color" value="0.4,0,0"/>
+		<param name="light_diff_mul" value="10.0"/>
+		<param name="light_spec_mul" value="1"/>
+		<param name="light_hdr_dyn" value="0"/>
+		<param name="light_offset" value="0,0,0"/>
+		<param name="light_rotation" value="0,0,90"/>
+		<param name="light_style" value="20"/>
+		<param name="light_anim_speed" value="1.0"/>
+		<param name="light_cast_shadows" value="1"/>
+		<param name="light_bulb_size" value="1"/>
+		<param name="light_view_dist_ratio" value="100"/>
+		<param name="light_volumetric_fog" value="1"/>
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics"/>
+		<param name="light_project_fov" value="80.0"/>
+		<param name="light_project_texture" value="textures/lights/generic/spot_050.tif"/>
+		<param name="lens_flare_name" value="miscreated.flashlight.headlamp"/>
+		<param name="lens_flare_fov" value="160"/>
+	</flashlight>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hat"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/HeadlampRed_200.png?crc=E1A82411"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40300"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/HeadlampRed_2048.png?crc=E1A82411"/>
+	</steam>
+</item>

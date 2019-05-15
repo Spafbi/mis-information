@@ -1,0 +1,129 @@
+<item name="Binoculars" class="Weapon" category="primary" priority="999" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Binoculars"/>
+		<param name="description" value="@BinocularsDescription"/>
+		<param name="itemClass" value="binoculars"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="0.75"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="bleed_percent" value="20"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="1"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="0"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToZoomDelay" value="0.2"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.2"/>
+		<param name="relaxedToTacticalBlendTime" value="0.5"/>
+		<param name="tag" value="binoculars"/>
+		<param name="prone_no_melee" value="0"/>
+		<animPrecache name="binoculars">
+			<precache DBAFile="animations/human/male/weapons/binoculars/binoculars_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScale="1.0" speedScaleTactical="1.0" rotationScale="1.0"/>
+
+	<geometry>
+		<thirdperson name="Objects/Weapons/binoculars/binoculars.cgf"/>
+		<onground name="Objects/Weapons/binoculars/binoculars_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee> <!-- match NW, as only fists are used here -->
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="melee"/>
+				<param name="range" value="1.0"/>
+				<param name="damage" value="8"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.43"/>
+				<param name="aiDelay" value="0.4"/>
+				<param name="duration" value="1.0"/>
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/>
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<!-- No item degradation as fists are used -->
+		</firemode>
+	</firemodes>
+
+	<zoommodes>
+		<zoommode name="ironsight" type="IronSight">
+			<zoom>
+				<param name="suffix" value="iron"/>
+				<param name="suffixAG" value="_iron"/>
+				<param name="target_snap_enabled" value="0"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="200.0"/>
+				<param name="dof_focusLimit" value="1500.0"/>
+				<param name="dof_shoulderMinZ" value="0.17"/>
+				<param name="dof_shoulderMinZScale" value="2.0"/>
+				<param name="dof_minZ" value="0.25"/>
+				<param name="dof_minZScale" value="1.0"/>
+				<param name="zoom_in_time" value="0.4"/>
+				<param name="zoom_out_time" value="0.25"/>
+				<param name="zoom_out_delay" value="0.15"/>
+				<param name="scope_mode" value="1"/>
+				<param name="scope_nearFov" value="6"/>
+				<param name="hide_weapon" value="0"/>
+				<stages>
+					<stage value="6" rotationSpeedScale="0.50"/>
+					<stage value="8" rotationSpeedScale="0.40"/>
+					<stage value="10" rotationSpeedScale="0.30"/>
+					<stage value="12" rotationSpeedScale="0.20"/>
+				</stages>
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.025"/>
+				<param name="maxY" value="0.030"/>
+				<param name="stabilizeTime" value="3.0"/>
+				<param name="minScale" value="0.5"/>
+				<param name="crouchScale" value="0.25"/>
+				<param name="proneScale" value="0.25"/>
+				<param name="holdBreathScale" value="0.05"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+			</zoomSway>
+			<scope>
+				<param name="dark_in_time" value="0.15"/>
+				<param name="dark_out_time" value="0.025"/>
+				<param name="overlay_texture" value="Textures/Weapons/binoculars/soft_edge_2048x1024_diff.tif"/>
+				<param name="overlay_mode" value="1"/>
+				<param name="overlay_in_time" value="0.15"/>
+				<param name="overlay_out_time" value="0.5"/>
+			</scope>
+		</zoommode>
+	</zoommodes>
+
+	<storage>
+		<locations> <!-- Can only have max 2 categories defined below -->
+			<location category="any"/>
+			<location category="belt"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Belt"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Binoculars_200.png?crc=767BAD40"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110012"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Belt"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Binoculars_2048.png?crc=767BAD40"/>
+	</steam>
+</item>

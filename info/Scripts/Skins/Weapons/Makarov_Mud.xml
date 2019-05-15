@@ -1,0 +1,14 @@
+<skin name="Makarov_Mud">
+ 
+    <params>
+        <param name="display_name" value="Makarov Mud Skin"/>
+        <param name="description" value="Makarov Mud Skin"/>
+        <param name="material" value="Objects/weapons/makarov/makarov_muddy"/>
+    </params>
+ 
+    <items>
+        <item name="Makarov"/>
+    </items>
+
+
+</skin>

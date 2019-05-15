@@ -1,0 +1,35 @@
+<item name="powered_oven" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="oven" type="245" name="powered_oven" max_health="5000">
+		<oven filename="Objects/props/elecStove/dws_elecstove.cgf" helper_food="food"/>
+		<base_parts>
+			<base_part class="light_power">
+				<light_power helper="light_power" light_bulb_size="0.05" light_radius="0.01" light_cast_shadows="0" light_view_dist_ratio="1"
+					light_color="1,0,0" light_diff_mul="0.1"/>
+			</base_part>
+			<base_part class="light_powered">
+				<light_powered helper="light_powered" light_bulb_size="0.05" light_radius="0.6" light_offset="-0.2,-0.275,-0.375" light_rotation="0,50,-90" light_cast_shadows="0" light_view_dist_ratio="1"
+					light_color="1,0.85,0.65" light_diff_mul="1" light_style="19" light_anim_speed="1"
+					light_project_fov="150" light_project_texture="textures/lights/generic/spot_050.dds"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-1,-1,-0.5" bb2="1,1,1.5" temperature="20" light="0.8" humidity="-0.5"/>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-3,-3,-1" bb2="3,2,3.0" temperature="35" light="0.1" humidity="-0.2"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="oven">
+				<oven sound_done="Play_oven_food_done"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+</item>

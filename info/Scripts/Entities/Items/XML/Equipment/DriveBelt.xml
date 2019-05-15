@@ -1,0 +1,37 @@
+<item name="DriveBelt" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="healthMax" value="25.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="display_name" value="@DriveBelt"/>
+		<param name="description" value="@DriveBeltDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/drive_belt/drive_belt.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="drivebelt"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DriveBelt_200.png?crc=361DF7E4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70007"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Vehicle"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/DriveBelt_2048.png?crc=361DF7E4"/>
+	</steam>
+</item>

@@ -1,0 +1,27 @@
+<skin name="F100Truck_Pink">
+
+	<params>
+		<param name="display_name" value="Pickup Truck Pink Skin"/>
+		<param name="description" value="Pink skin for the Pickup Truck"/>
+		<param name="material" value="objects/vehicles/F100Truck/f100truck_pink"/>
+	</params>
+
+	<items>
+		<item name="f100truck"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/F100Truck_Pink_200.png?crc=6D4AB751"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="10"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300033"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/F100Truck_Pink_2048.png?crc=6D4AB751"/>
+	</steam>
+</skin>

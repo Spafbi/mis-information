@@ -1,0 +1,21 @@
+<item name="gnome_giant_c" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="800"/> <!-- metal parts must have a mass > 50 -->
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="no_icon" value="1"/>
+		<param name="display_name" value="@gnome_giant_c"/>
+		<param name="description" value="@gnome_giant_cDescription"/>
+	</params>
+
+	<base_part class="static" type="2500" name="gnome_giant_c" max_health="15000" repair_with="DuctTape" towable="1">
+		<static filename="objects/props/misc/garden_gnome/gnome_standard_c_giant.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/props/misc/garden_gnome/gnome_standard_c_giant.cgf"/>
+	</geometry>
+
+</item>

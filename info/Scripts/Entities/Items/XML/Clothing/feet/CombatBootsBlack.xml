@@ -1,0 +1,54 @@
+<item name="CombatBootsBlack" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.2"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@CombatBootsBlack"/>
+		<param name="description" value="@CombatBootsBlackDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/feet/combat_boots/combat_boots.skin"/>
+		<param name="mtl" value="objects/characters/players/male/feet/combat_boots/combat_boots_black.mtl"/>
+		<param name="slot" value="feet"/>
+	</wearable>
+	<geometry>
+		<onground name="objects/characters/players/male/feet/combat_boots/combat_boots_tp.cgf" material="objects/characters/players/male/feet/combat_boots/combat_boots_black"/>
+	</geometry>
+	<protection level="2"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="physical" percentage="2.0"/>
+			<protection_amount type="fire" percentage="1.0"/>
+			<protection_amount type="feet_sharp" percentage="50.0"/>
+			<protection_amount type="feet_blunt" percentage="25.0"/>
+			<protection_amount type="explosion" percentage="4.0"/>
+            <protection_amount type="cold" percentage="5"/>
+            <protection_amount type="heat" percentage="1.0"/>
+			<protection_amount type="rain_acid" percentage="5"/>
+		</environmental>
+	</protection>
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="feet"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CombatBootsBlack_200.png?crc=A63F47C4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40073"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CombatBootsBlack_2048.png?crc=A63F47C4"/>
+	</steam>
+</item>

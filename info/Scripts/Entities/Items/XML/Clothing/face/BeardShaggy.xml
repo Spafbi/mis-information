@@ -1,0 +1,27 @@
+<item name="BeardShaggy" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@BeardShaggy"/>
+		<param name="description" value="@BeardShaggyDescription"/>
+	</params>
+
+	<geometry>
+		<onground name="objects/characters/animals/fish/fresh_water/trout_a.cgf" material="objects/characters/animals/fish/fresh_water/trout"/>
+	</geometry>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/beard/default/beard.skin"/>
+		<param name="mtl" value="objects/characters/players/male/beard/default/beard.mtl"/>
+		<param name="slot" value="face"/>
+	</wearable>
+	
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="face"/>
+		</locations>
+	</storage>
+
+</item>

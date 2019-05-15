@@ -1,0 +1,7 @@
+<download name="training_level" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="37686464" md5="023044c12e74cc7e04f9e59c562741b2"/>
+  <file src="training_level.xml" dest="training_level.xml" size="351" md5="ff4bd58658b1c9509f3c325eb27e2d98"/>
+ </files>
+</download>

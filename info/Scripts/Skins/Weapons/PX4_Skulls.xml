@@ -1,0 +1,14 @@
+<skin name="PX4_Skulls">
+ 
+    <params>
+        <param name="display_name" value="PX4 Skulls Skin"/>
+        <param name="description" value="PX4 Skulls Skin"/>
+        <param name="material" value="Objects/weapons/px4/px4_skulls"/>
+    </params>
+ 
+    <items>
+        <item name="PX4"/>
+    </items>
+
+	
+</skin>

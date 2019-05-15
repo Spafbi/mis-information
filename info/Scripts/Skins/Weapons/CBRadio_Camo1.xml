@@ -1,0 +1,27 @@
+<skin name="CBRadio_Camo1">
+ 
+    <params>
+        <param name="display_name" value="Survivotron VI Hex Camo Skin"/>
+        <param name="description" value="Hex Camo Skin for the Survivotron VI CB-Radio"/>
+        <param name="material" value="Objects/weapons/cb_radio/cb_radio_camo1"/>
+    </params>
+ 
+    <items>
+        <item name="Cb_radio"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CBRadio_Camo1_200.png?crc=F2E15E62"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200026"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CBRadio_Camo1_2048.png?crc=F2E15E62"/>
+	</steam>
+</skin>

@@ -1,0 +1,14 @@
+<skin name="PipeWrench_Bloody">
+ 
+    <params>
+        <param name="display_name" value="Pipe Wrench Bloody Skin"/>
+        <param name="description" value="Pipe Wrench Bloody Skin"/>
+        <param name="material" value="Objects/weapons/pipe_wrench/pipe_wrench_bloody"/>
+    </params>
+ 
+    <items>
+        <item name="PipeWrench"/>
+    </items>
+
+
+</skin>

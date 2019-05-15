@@ -1,0 +1,117 @@
+<item name="Candle" class="Torch" category="secondary" priority="13" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Candle"/>
+		<param name="description" value="@CandleDescription"/>
+		<param name="itemClass" value="pistol"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="0.5"/>
+		<param name="healthMax" value="25.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="bleed_percent" value="2"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="1"/> <!-- Delay for 1s after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="0"/>
+		<param name="bone_attachment_01" value="stow_secondary1"/>
+		<param name="bone_attachment_02" value="stow_secondary2"/>
+		<param name="sprintToFireDelay" value="0.05"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.2"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.2"/>
+		<param name="relaxedToTacticalBlendTime" value="0.3"/>
+		<param name="nonHostileUse" value="1"/>
+		<param name="tag" value="torch"/>
+		<animPrecache name="torch">
+			<precache DBAFile="animations/human/male/weapons/torch/torch_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+		<!-- Custom Params - Should be moved to own block -->
+		<param name="fire_percent" value="90"/>
+		<param name="fire_duration" value="4.0"/>
+		<param name="fire_damage" value="1.0"/>
+		<param name="fire_incremental_duration" value="0.0"/>
+		<param name="body_fire_start_time" value="0.0"/>
+	</params>
+
+	<MovementModifiers speedScale="1.0" speedScaleTactical="1.0" rotationScale="1.0"/>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/other/candle/candle_thin.cgf"/>
+		<onground name="Objects/basebuilding/other/candle/candle_thin.cgf"/>
+	</geometry>
+
+	<flashlight>
+		<param name="helper" value="light"/>
+		<param name="light_radius" value="10.0"/>
+		<param name="light_color" value="0.73,0.57,0.21"/>
+		<param name="light_diff_mul" value="0.25"/>
+		<param name="light_spec_mul" value="0.1"/>
+		<param name="light_hdr_dyn" value="0"/>
+		<param name="light_style" value="50"/>
+		<param name="light_anim_speed" value="1.0"/>
+		<param name="light_bulb_size" value="0.2"/>
+		<param name="light_cast_shadows" value="1"/>
+		<param name="light_view_dist_ratio" value="5"/>
+		<param name="light_volumetric_fog" value="0"/>
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics"/>
+		<param name="lens_flare_name" value="miscreated.bpart.candle"/>
+		<param name="lens_flare_fov" value="360"/>
+	</flashlight>
+
+	<torch>
+		<param name="helper" value="light"/>
+		<param name="offset" value="0.0, 0.0, 0.0"/>
+		<param name="effect" value="weapon_fx.candle.flame"/>
+		<!--<param name="soundStart" value="Play_torch_flames_loop" />
+		<param name="soundStop" value="Stop_torch_flames_loop" />-->
+	</torch>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.0"/>
+				<param name="damage" value="10"/> <!-- slightly more damage to account for "burn" from candle hit -->
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.43"/>
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="0.8"/>
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="secondary"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Secondary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Candle_200.png?crc=F7D5EA12"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110013"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Secondary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Candle_2048.png?crc=F7D5EA12"/>
+	</steam>
+</item>

@@ -1,0 +1,53 @@
+<ammo name="ammo_rock_player" class="Grenade">
+	<geometry>
+		<firstperson name="Objects/ammo/rocks/ammo_rock_med.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="0.75" />
+		<param name="speed" value="20" /> 
+		<param name="radius" value="0.5" />
+		<param name="air_resistance" value="0.0026" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_rock" />
+		<param name="pierceability" value="14" /> <!-- High piercability so it doesn't pass through surfaces -->
+		<param name="single_contact" value="1" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="1" />
+		<param name="torpidity" value="5" />
+		<param name="stamina" value="5" />
+		<param name="min_radius" value="0" />
+		<param name="max_radius" value="1" />
+		<param name="min_phys_radius" value="0" />
+		<param name="max_phys_radius" value="1" />
+		<param name="sound_radius" value="50" /> <!-- AI stimulus -->
+		<param name="hole_size" value="2" />
+		<param name="terrain_hole_size" value="3" />
+		<param name="radialblurdist" value="5" />
+		<param name="type" value="frag" />
+		<param name="effect" value="weapon_fx.rock.explode" />
+		<param name="effect_scale" value="1" />
+	</explosion>
+
+	<params>
+		<param name="showtime" value="0.05" />
+		<param name="lifetime" value="10.0" /> <!-- need a moderate life time for rocks -->
+		<param name="aitype" value="grenade" />
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0.0" />
+		<param name="detonateOnImpact" value="1" />
+		<param name="detonateOnActorImpact" value="1" />
+		<param name="allowDetonationDelay" value="0" />
+	</grenade>
+</ammo>

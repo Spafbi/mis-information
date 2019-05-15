@@ -1,0 +1,21 @@
+<item name="SheetMetal" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="3.0" />
+		<param name="stack_size" value="32" />
+		<param name="display_name" value="@SheetMetal" />
+		<param name="description" value="@SheetMetalDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/Sheet_Metal/sheet_metal003.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

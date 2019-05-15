@@ -1,0 +1,41 @@
+<Communications>
+
+	<Config name="Spiker">
+
+		<Communication name="comm_death" finishMethod="voice" blocking="none">
+			<Variation voiceName="spiker_death" />
+		</Communication>
+
+		<Communication name="comm_headshot_death" finishMethod="voice" blocking="none">
+			<Variation voiceName="spiker_death" />
+		</Communication>
+
+		<Communication name="comm_death_melee" finishMethod="voice" blocking="none">
+			<Variation voiceName="spiker_death" />
+		</Communication>
+
+		<Communication name="comm_pain" finishMethod="voice" blocking="none">
+			<Variation voiceName="spiker_hurt" />
+		</Communication>
+	</Config>
+
+	<Config name="Crazy">
+		<Communication name="comm_death" finishMethod="voice" blocking="none">
+			<Variation voiceName="crazy_mutant_death" />
+		</Communication>
+
+		<Communication name="comm_headshot_death" finishMethod="voice" blocking="none">
+			<Variation voiceName="crazy_mutant_death" />
+		</Communication>
+
+		<Communication name="comm_death_melee" finishMethod="voice" blocking="none">
+			<Variation voiceName="crazy_mutant_death" />
+		</Communication>
+
+		<Communication name="comm_pain" finishMethod="voice" blocking="none">
+			<Variation voiceName="crazy_mutant_hurt" />
+		</Communication>
+	</Config>
+
+
+</Communications>

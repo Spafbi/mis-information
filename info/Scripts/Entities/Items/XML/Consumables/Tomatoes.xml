@@ -1,0 +1,77 @@
+<item name="Tomatoes" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@Tomatoes"/>
+		<param name="description" value="@TomatoesDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/tomato/tomato_pile.cgf"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@TomatoesCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@TomatoesCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@TomatoesCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@TomatoesCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@TomatoesCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@TomatoesCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="TomatoesCooked"/>
+		<param name="cookedTime" value="100"/>
+		<param name="rottenItem" value="TomatoesRotten"/>
+		<param name="foodAmount" value="55"/>
+		<param name="drinkAmount" value="65"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<craftable>
+		<craft name="SurvivalKnife" craft="SeedsTomatoes" destroy="0"/>
+		<craft name="HuntingKnife" craft="SeedsTomatoes" destroy="0"/>
+	</craftable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

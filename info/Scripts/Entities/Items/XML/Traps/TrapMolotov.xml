@@ -1,0 +1,58 @@
+<item name="TrapMolotov" class="Trap" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrapMolotov"/>
+		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="TrapMolotovPacked"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/molotov/trap_molotov_1m.cgf"/>
+	</geometry>
+
+	<trap>
+		<!-- only one of these two should be set to 1 (true) -->
+		<param name="destroy_when_triggered" value="1"/> <!-- default is 1-->
+		<param name="disable_when_triggered" value="0"/> <!-- recommended to use thirdpersonAux as well if this is set -->
+	</trap>
+
+	<explosion>
+		<param name="damage" value="10"/>
+		<param name="torpidity" value="0"/>
+		<param name="stamina" value="0"/>
+		<param name="min_radius" value="2.5"/>
+		<param name="max_radius" value="5"/>
+		<param name="min_phys_radius" value="2.5"/>
+		<param name="max_phys_radius" value="5"/>
+		<param name="sound_radius" value="20"/>
+		<param name="pressure" value="50"/>
+		<param name="effect" value="traps.molotov.glass"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="10"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<damage_area>
+		<param name="ground_particle_path" value="weapon_fx.molotov3.dummy"/>
+		<param name="ground_particle_duration" value="28"/>
+		<param name="ground_particle_effect_slot" value="5"/>
+		<param name="area_id" value="-5"/>
+		<param name="radius" value="3"/>
+		<param name="fire_duration" value="5.0"/>
+		<param name="fire_damage" value="3.0"/>
+		<param name="fire_incremental_duration" value="1.0"/>
+		<param name="body_fire_start_time" value="1.0"/>
+	</damage_area>
+
+</item>

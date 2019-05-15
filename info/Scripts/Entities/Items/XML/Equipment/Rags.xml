@@ -1,0 +1,40 @@
+<item name="Rags" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="64"/>
+		<param name="display_name" value="@Rags"/>
+		<param name="description" value="@RagsDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/rag/rag.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="rags"/>
+		<param name="soundUsed" value="Play_bandage_use"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Medical"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Rags_200.png?crc=EA1DD155"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70017"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Medical"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Rags_2048.png?crc=EA1DD155"/>
+	</steam>
+</item>

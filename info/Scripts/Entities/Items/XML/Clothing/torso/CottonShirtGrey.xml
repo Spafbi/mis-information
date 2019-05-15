@@ -1,0 +1,60 @@
+<item name="CottonShirtGrey" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.2"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.2"/>
+		<param name="display_name" value="@CottonShirtGrey"/>
+		<param name="description" value="@CottonShirtGreyDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/torso/long/cotton_shirt/cotton_shirt.skin"/>
+		<param name="mtl" value="objects/characters/players/male/torso/long/cotton_shirt/cotton_shirt.mtl"/>
+		<param name="slot" value="torso"/>
+		<param name="length" value="1"/> <!-- 1 is full length, includes arms -->
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/torso/long/cotton_shirt/cotton_shirt_onground.cgf" material="objects/characters/players/male/torso/long/cotton_shirt/cotton_shirt"/>
+	</geometry>
+
+    <protection level="0">
+        <environmental>
+            <protection_amount type="cold" percentage="10"/>
+            <protection_amount type="heat" percentage="1"/>
+        </environmental>
+    </protection>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="torso"/>
+		</locations>
+		<types>
+			<type category="any" capacity="2"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Torso"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CottonShirtGrey_200.png?crc=5E010FC5"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40517"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Torso"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CottonShirtGrey_2048.png?crc=5E010FC5"/>
+	</steam>
+</item>

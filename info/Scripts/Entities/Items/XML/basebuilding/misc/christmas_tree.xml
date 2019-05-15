@@ -1,0 +1,24 @@
+<item name="christmas_tree" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1250"/> <!-- metal parts must have a mass > 50 -->
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="no_icon" value="1"/>
+		<param name="display_name" value="@christmas_tree"/>
+		<param name="description" value="@christmas_treeDescription"/>
+	</params>
+
+	<base_part class="static" type="2999" name="christmas_tree" towable="1">
+		<static filename="objects/natural/vegetation/Trees/christmas_tree/christmas_tree.cgf"/>
+		<envareas>
+			<envarea enabled="1" scaleEffectsFromCenter="1" bb1="-3.5,-3.5,-1" bb2="3.5,3.5,3.0" temperature="2" light="0.1"/>
+		</envareas>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/natural/vegetation/Trees/christmas_tree/christmas_tree.cgf"/>
+	</geometry>
+
+</item>

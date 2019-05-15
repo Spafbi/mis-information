@@ -1,0 +1,27 @@
+<skin name="ColtPythonTest">
+
+	<params>
+		<param name="display_name" value="Colt Python Test Skin"/>
+		<param name="description" value="Test skin for Colt Python weapons"/>
+		<param name="material" value="objects/weapons/coltpython/coltpython_grimey_rick"/>
+	</params>
+
+	<items>
+		<item name="ColtPython"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ColtPythonTest_200.png?crc=1F566345"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="200001"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/ColtPythonTest_2048.png?crc=1F566345"/>
+	</steam>
+</skin>

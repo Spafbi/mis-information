@@ -1,0 +1,28 @@
+<item name="dws_blind_door" class="Placeable" category="any">
+
+	<params>
+		<param name="mass" value="1.0"/>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="door" type="244" name="dws_blind_door" max_health="750">
+		<door filename="Objects/structures/hunting_blind/dws_blind_door.cgf" rotate_base="-180" rotate_range="90" rotate_speed="180" rotate_axis="z" rotate_dir="" 
+			sound_open="Play_door_wood_open" sound_opened="Play_door_wood_opened" sound_close="Play_door_wood_close" sound_closed="Play_door_wood_closed"/>
+		<base_actions>
+			<base_action class="toggle_door">
+				<toggle_door sound_knock="Play_door_wood_knock" />
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

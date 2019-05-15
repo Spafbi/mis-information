@@ -1,0 +1,26 @@
+<item name="DeerMeatSteakBurned" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@DeerMeatSteakBurned"/>
+		<param name="description" value="@DeerMeatSteakBurnedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/meat_steaks/meat_steak_burnt.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="75"/>
+		<param name="soundConsumed" value="Play_food_hard_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

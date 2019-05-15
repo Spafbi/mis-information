@@ -1,0 +1,57 @@
+<item name="sandbag_crafted_single" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1"/>
+		<param name="stack_size" value="64"/>
+		<param name="display_name" value="@sandbag_crafted_single"/>
+		<param name="description" value="@sandbag_crafted_singleDescription"/>
+	</params>
+
+	<base_part class="static" type="107" name="sandbag_crafted_single" max_health="3000" repair_with="Rags">
+		<static filename="objects/basebuilding/sand/sandbag_crafted_single.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@sandbag_crafted_singleFillWithDirt"/>
+				<param name="action" value="dirt_fill"/> <!-- also crafts back into a large bag -->
+				<param name="soundUsed" value="Play_empty_dirt"/>
+				<param name="param" value="cloth_bag_large"/>
+				<param name="targetClassNames" value="planter_box"/>
+			</use>
+			<use>
+				<param name="title" value="@sandbag_crafted_singleEmptyDirtOnGround"/>
+				<param name="action" value="dirt_empty"/> <!-- also crafts back into a large bag -->
+				<param name="soundUsed" value="Play_empty_dirt"/>
+				<param name="param" value="cloth_bag_large"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/sandbag_crafted_single_200.png?crc=1864610A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30114"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/sandbag_crafted_single_2048.png?crc=1864610A"/>
+	</steam>
+</item>

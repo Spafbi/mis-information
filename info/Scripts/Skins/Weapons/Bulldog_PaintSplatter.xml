@@ -1,0 +1,14 @@
+<skin name="Bulldog_PaintSplatter">
+ 
+    <params>
+        <param name="display_name" value="Bulldog Paint Splatter Skin"/>
+        <param name="description" value="Bulldog Paint Splatter Skin"/>
+        <param name="material" value="Objects/weapons/bulldog/bulldog_paint_splatter"/>
+    </params>
+ 
+    <items>
+        <item name="Bulldog"/>
+    </items>
+
+	
+</skin>

@@ -1,0 +1,37 @@
+<item name="WatermelonRotten" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.5"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@WatermelonRotten"/>
+		<param name="description" value="@WatermelonRottenDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/crops/watermelon/watermelon.cgf" material="Objects/basebuilding/crops/watermelon/water_melon_rotten"/>
+	</geometry>
+
+	<consumable>
+		<param name="poisonChance" value="55"/>
+		<param name="torpidityAmount" value="20"/>
+		<param name="staminaAmount" value="-40"/>
+		<param name="foodAmount" value="125"/>
+		<param name="drinkAmount" value="100"/>
+		<param name="soundConsumed" value="Play_food_soft_hard"/>
+	</consumable>
+
+	<usable>
+		<param name="title" value="@WatermelonRottenFertilizePlanter"/>
+		<param name="action" value="fertilize"/>
+		<param name="soundUsed" value="Play_apply_fertilizer"/>
+		<param name="targetClassNames" value="planter_box"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

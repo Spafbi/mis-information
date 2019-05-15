@@ -1,0 +1,329 @@
+<item name="Rem870" class="Weapon" category="primary" priority="12" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Rem870"/>
+		<param name="description" value="@Rem870Description"/>
+		<param name="itemClass" value="shotgun"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="3.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="20"/>
+		<param name="has_first_select" value="1"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="0.85"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="1.1"/>
+		<param name="sprintToZoomDelay" value="0.2"/>
+		<param name="runToSprintBlendTime" value="0.4"/>
+		<param name="sprintToRunBlendTime" value="0.4"/>
+		<param name="relaxedToTacticalBlendTime" value="0.45"/>
+		<param name="tag" value="rem870"/>
+		<param name="adb" value="rem870WeaponAnims.adb"/>
+		<animPrecache name="Rem870">
+			<precache DBAFile="animations/weapons/rem870/rem870.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/rem870/rem870_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
+	<MovementModifiers speedScale="0.95" speedScaleTactical="0.85"/>
+
+	<magazines>
+		<magazine name="Pile_12GaugeBeanbag"/>
+		<magazine name="Pile_12GaugePellet"/>
+		<magazine name="Pile_12GaugeSlug"/>
+	</magazines>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/rem870/rem870.cdf"/>
+		<onground name="Objects/weapons/rem870/rem870_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode type="default">
+			<fire>
+				<param name="hit_type" value=""/> <!-- not used - ammo param -->
+				<param name="ammo_type" value=""/> <!-- not used - magazine param -->
+				<param name="rate" value="50"/>
+				<param name="damage" value="0"/> <!-- not used - ammo param -->
+				<param name="helper_tp" value="weapon_term"/>
+				<param name="bullet_chamber" value="1"/>
+				<param name="knocks_target" value=""/> <!-- not used - ammo param -->
+				<param name="min_damage_for_knockDown" value=""/> <!-- not used - ammo param -->
+				<param name="min_damage_for_knockDown_leg" value=""/> <!-- not used - ammo param -->
+				<param name="ironsight_fire_anim_damp" value="1.0"/> <!-- Lower values compress animation output -->
+				<param name="holdbreath_fire_anim_damp" value="0.75"/> <!-- Lower values compress anim when holding breath -->
+				<param name="holdbreath_ffeedback_damp" value="1.0"/>
+				<param name="stabilization" value="0.0"/>
+				<param name="tag" value="single"/>
+				<param name="sound_radius" value="200"/>
+			</fire>
+			<recoil>
+				<param name="max_recoil" value="16"/>
+				<param name="attack" value="6.0"/>
+				<param name="decay" value="0.3"/> <!-- Not used in Miscreated due to magazine changes. Always end_decay -->
+				<param name="end_decay" value="0.3"/> <!-- Speed at which your gun returns to its resting position after firing. Lower is faster -->
+				<param name="maxx" value="4.0"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="16.0"/> <!-- Vertical camera shake -->
+				<param name="randomness" value="0.2"/>
+				<param name="recoil_crouch_m" value="1.0"/>
+				<param name="recoil_prone_m" value="1.0"/>
+				<param name="recoil_jump_m" value="0.5"/>
+				<param name="recoil_holdBreathActive_m" value="1.0"/> <!-- Can't hold breath without zooming. Modify this in zoom mode instead -->
+				<hints>
+					<hint x="0.3" y="0.2"/>
+					<hint x="-0.1" y="0.3"/>
+					<hint x="-0.4" y="0.3"/>
+					<hint x="0.0" y="0.4"/>
+					<hint x="0.4" y="0.3"/>
+					<hint x="0.1" y="0.2"/>
+					<hint x="-0.5" y="0.3"/>
+					<hint x="0.0" y="0.5"/>
+					<hint x="0.5" y="0.3"/>
+					<hint x="0.2" y="0.4"/>
+					<hint x="-0.3" y="0.3"/>
+					<hint x="-0.2" y="0.2"/>
+					<hint x="-0.3" y="0.4"/>
+					<hint x="0.1" y="0.2"/>
+				</hints>
+			</recoil>
+			<spread> <!-- This whole block doesn't seem to work! -->
+				<param name="min" value="0.0"/> <!-- Bullet spread is set to zero as the pellet spread is used. -->
+				<param name="max" value="0.0"/>
+				<param name="attack" value="0.0"/>
+				<param name="decay" value="0.0"/>
+				<param name="end_decay" value="0.4"/>
+				<param name="speed_m" value="0.0"/>
+				<param name="rotation_m" value="0.0"/>
+				<param name="spread_jump_m" value="0.0"/>
+				<param name="speed_holdBreathActive_m" value="1.0"/>
+				<param name="spread_holdBreathActive_m" value="1.0"/>
+			</spread>
+			<muzzleflash aiVisibilityRadius="2.0">
+				<thirdperson effect="" helper="muzzleflash_effect"/> <!-- Defined in accessory below -->
+			</muzzleflash>
+			<muzzlesmoke>
+				<thirdperson effect="" helper="smoke_effect"/> <!-- Defined in accessory below -->
+			</muzzlesmoke>
+			<reject>
+				<thirdperson effect="" helper="shells"/> <!-- Defined in accessory below -->
+			</reject>
+			<shotgun>
+				<param name="spread" value="1.0"/> <!-- not used, set in accessory below -->
+			</shotgun>
+		</firemode>
+
+		<firemode name="Shotgun" type="Shotgun"/>
+
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.7"/>
+				<param name="damage" value="14"/> <!-- +2 from kick -->
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.51"/> <!-- Delay, in seconds, from when weapon is meleed until impact occurs -->
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.0"/> <!-- Essentially rate of fire for melee. Time, in seconds, between each melee action -->
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<zoommodes>
+		<zoommode type="default">
+			<zoomSway> <!-- This block is ignored in the "default" zoom mode. Has to be overridden below in "hipfire" -->
+				<param name="maxX" value=""/>
+				<param name="maxY" value=""/>
+				<param name="stabilizeTime" value=""/>
+				<param name="holdBreathScale" value=""/>
+				<param name="holdBreathTime" value=""/>
+				<param name="minScale" value=""/>
+				<param name="scaleAfterFiring" value=""/>
+				<param name="crouchScale" value=""/>
+				<param name="proneScale" value=""/>
+			</zoomSway>
+			<spreadMod> <!-- This whole block doesn't seem to work! -->
+				<param name="min_mod" value="0.001"/>
+				<param name="max_mod" value="0.1"/>
+				<param name="attack_mod" value="1.2"/>
+				<param name="decay_mod" value="1.0"/>
+				<param name="end_decay_mod" value="1.0"/>
+				<param name="speed_m_mod" value="0.25"/>
+				<param name="rotation_m_mod" value="0.5"/>
+				<param name="spread_crouch_m_mod" value="0.75"/>
+				<param name="spread_jump_m_mod" value="1.0"/>
+				<param name="spread_holdBreathActive_m_mod" value="0.75"/>
+			</spreadMod>
+			<recoilMod>
+				<param name="max_recoil_mod" value="1.0"/>
+				<param name="attack_mod" value="10.0"/>
+				<param name="decay_mod" value="1.0"/>
+				<param name="end_decay_mod" value="1.2"/>
+				<param name="impulse_mod" value="1.0"/>
+				<param name="maxx_mod" value="0.4"/>
+				<param name="maxy_mod" value="0.5"/>
+				<param name="recoil_crouch_m_mod" value="1.3"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_jump_m_mod" value="1.0"/>
+				<param name="recoil_holdBreathActive_m_mod" value="2.5"/> <!-- Higher number = less recoil -->
+			</recoilMod>
+		</zoommode>
+
+		<zoommode name="ironsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="1.175" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="iron"/>
+				<param name="suffixAG" value="_iron"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.5"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.25"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.25"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.15"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.7"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="3.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.01"/>
+				<param name="maxY" value="0.005"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.015"/>
+				<param name="maxY" value="0.015"/>
+				<param name="stabilizeTime" value="3.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+	</zoommodes>
+
+	<accessories>
+		<!-- MAGAZINE -->
+		<accessory name="Pile_12GaugeBeanbag" category="magazine" exclusive="1">
+			<attach helper="12gauge_mag"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="Shotgun">
+						<shotgun>
+							<param name="spread" value="0.5"/>
+						</shotgun>
+						<muzzleflash>
+							<thirdperson effect="weapon_fx.shotgun.muzzle_flash_beanbag" helper="muzzleflash_effect"/>
+						</muzzleflash>
+						<muzzlesmoke>
+							<thirdperson effect="" helper="smoke_effect"/>
+						</muzzlesmoke>
+						<reject>
+							<thirdperson effect="weapon_fx.shotgun.shell_eject_beanbag" helper="shells"/>
+						</reject>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+		<accessory name="Pile_12GaugePellet" category="magazine" exclusive="1">
+			<attach helper="12gauge_mag"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="Shotgun">
+						<shotgun>
+							<param name="spread" value="3.0"/>
+						</shotgun>
+						<muzzleflash>
+							<thirdperson effect="weapon_fx.shotgun.muzzle_flash_pellet" helper="muzzleflash_effect"/>
+						</muzzleflash>
+						<muzzlesmoke>
+							<thirdperson effect="weapon_fx.common.barrel_smoke" helper="smoke_effect"/>
+						</muzzlesmoke>
+						<reject>
+							<thirdperson effect="weapon_fx.shotgun.shell_eject_pellet" helper="shells"/>
+						</reject>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+		<accessory name="Pile_12GaugeSlug" category="magazine" exclusive="1">
+			<attach helper="12gauge_mag"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="Shotgun">
+						<shotgun>
+							<param name="spread" value="0.5"/>
+						</shotgun>
+						<muzzleflash>
+							<thirdperson effect="weapon_fx.shotgun.muzzle_flash_slug" helper="muzzleflash_effect"/>
+						</muzzleflash>
+						<muzzlesmoke>
+							<thirdperson effect="weapon_fx.common.barrel_smoke" helper="smoke_effect"/>
+						</muzzlesmoke>
+						<reject>
+							<thirdperson effect="weapon_fx.shotgun.shell_eject_slug" helper="shells"/>
+						</reject>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+	</accessories>
+
+	<storage>
+		<locations>
+			<location category="primary"/>
+		</locations>
+		<types>
+			<type category="12gauge_mag" capacity="1"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Rem870_200.png?crc=C82EAE49"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="15"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110057"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Rem870_2048.png?crc=C82EAE49"/>
+	</steam>
+</item>

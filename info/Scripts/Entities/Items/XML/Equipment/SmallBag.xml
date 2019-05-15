@@ -1,0 +1,21 @@
+<item name="SmallBag" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@SmallBag"/>
+		<param name="description" value="@SmallBagDescription"/>
+	</params>
+	<geometry>
+		<onground name="objects/characters/players/generic/hat/baseball_cap/baseballcap_onground.cgf" material="objects/characters/players/generic/hat/baseball_cap/baseballCap"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="belt"/>
+		</locations>
+		<types>
+			<type category="any" capacity="100"/>
+		</types>
+	</storage>
+</item>

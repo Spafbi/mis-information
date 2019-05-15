@@ -1,0 +1,29 @@
+<item name="powered_light_switch" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="static" type="167" name="powered_light_switch" max_health="0">
+		<static filename="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" />
+		<base_parts>
+			<base_part class="light_power">
+				<light_power helper="light_powered" light_bulb_size="0.01" light_radius="0.04" light_cast_shadows="0" light_view_dist_ratio="5"
+					light_color="1,0,0" light_diff_mul="1" light_spec_mul="1" light_style="0" light_anim_speed="1" />
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-3,-3,-3" bb2="3,3,4" temperature="2" humidity="-0.1"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="toggle_light_nearest">
+				<toggle_light_nearest sound_on_trigger="" sound_off_trigger=""/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+</item>

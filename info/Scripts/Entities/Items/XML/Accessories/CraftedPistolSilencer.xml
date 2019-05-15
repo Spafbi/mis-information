@@ -1,0 +1,52 @@
+<item name="CraftedPistolSilencer" class="Item" category="any">
+	<params>
+		<param name="display_name" value="@CraftedPistolSilencer"/>
+		<param name="description" value="@CraftedPistolSilencerDescription"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.7"/>
+		<param name="tag" value="silencer"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="hide_as_attachment" value="0"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/attachments/crafted_silencer/crafted_silencer.cgf" scale="0.9"/>
+	</geometry>
+
+	<explosion>
+		<param name="damage" value="0.1"/>
+		<param name="min_radius" value="0"/>
+		<param name="max_radius" value="0"/>
+		<param name="min_phys_radius" value="0"/>
+		<param name="max_phys_radius" value="0"/>
+		<param name="sound_radius" value="50"/>
+		<param name="pressure" value="0"/>
+		<param name="effect" value="item_degradation.generic.debris_small_metal"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="0"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="b_end_pistol"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedPistolSilencer_200.png?crc=5128DFDD"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="20013"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CraftedPistolSilencer_2048.png?crc=5128DFDD"/>
+	</steam>
+</item>

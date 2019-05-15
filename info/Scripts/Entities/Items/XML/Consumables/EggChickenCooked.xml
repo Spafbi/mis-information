@@ -1,0 +1,29 @@
+<item name="EggChickenCooked" class="Consumable" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@EggChickenCooked"/>
+		<param name="description" value="@EggChickenCookedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/eggs/egg1.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="EggChickenBurned"/>
+		<param name="cookedTime" value="100"/>
+		<param name="foodAmount" value="70"/>
+		<param name="drinkAmount" value="20"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

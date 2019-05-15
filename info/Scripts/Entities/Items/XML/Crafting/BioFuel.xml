@@ -1,0 +1,21 @@
+<item name="BioFuel" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="0.2" />
+		<param name="stack_size" value="64" />
+		<param name="display_name" value="@Biofuel" />
+		<param name="description" value="@BiofuelDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/bio_fuel/bio_fuel.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

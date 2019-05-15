@@ -1,0 +1,46 @@
+<item name="StowPackWhite" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@StowPackWhite"/>
+		<param name="description" value="@StowPackWhiteDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/stowpack/stowpack.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/stowpack/stowpack_white.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<thirdperson name="objects/characters/players/male/back/backpack/stowpack/stowpack_tp.cgf" material="objects/characters/players/male/back/backpack/stowpack/stowpack_white"/>
+		<onground name="objects/characters/players/male/back/backpack/stowpack/stowpack_tp.cgf" material="objects/characters/players/male/back/backpack/stowpack/stowpack_white"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="10"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/StowPackWhite_200.png?crc=5409AB6A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40037"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/StowPackWhite_2048.png?crc=5409AB6A"/>
+	</steam>
+</item>

@@ -1,0 +1,41 @@
+<item name="StickPile" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.75"/>
+		<param name="stack_size" value="128"/>
+		<param name="stack_size_spawned" value="4"/>
+		<param name="display_name" value="@StickPile"/>
+		<param name="description" value="@StickPileDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/sticks/sticks.cgf"/>
+	</geometry>
+	
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1" />
+		<param name="cookedItem" value="Charcoal" />
+		<param name="cookedTime" value="0" /> <!-- must be 0 for output from burned wood -->
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@StickPileAddFuel"/>
+				<param name="action" value="wood_item"/>
+				<param name="param" value="0.5"/> <!-- burn time in minutes -->
+				<param name="soundUsed" value="Play_wood_use"/>
+				<param name="targetClassNames" value="dws_grill2;dws_firepit_outdoors_1;dws_firepit_outdoors_2;water_purifier;dws_cabinStove;Campfire;stone_furnace;stone_fireplace"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

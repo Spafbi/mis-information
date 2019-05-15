@@ -1,0 +1,70 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-540,280,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="33" Name="Server_Connect_Main_Page" Class="_commentbox" pos="-560,230.13635,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="900" Height="120"/>
+   <NodeSize Width="900" Height="147.64063"/>
+  </Node>
+  <Node Id="104" Name="Setup_page" Class="_commentbox" pos="-560,-389.86365,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="780" Height="380"/>
+   <NodeSize Width="780" Height="407.64063"/>
+  </Node>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-560,30.136435,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="900" Height="160"/>
+   <NodeSize Width="900" Height="187.64063"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-540,80,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="-260,80,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="160,80,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="132" Class="UI:Functions:MainMenu:DisplayWindow" pos="-260,280,0" flags="0">
+   <Inputs instanceID="-1" window="ServerBrowser"/>
+  </Node>
+  <Node Id="135" Class="UI:Functions:MP:GameServerListRequest" pos="40,280,0" flags="0">
+   <Inputs nType="0" bNotFull="0" bNotEmpty="0" bEmpty="0" bNoMods="0"/>
+  </Node>
+  <Node Id="136" Class="UI:Events:MP:GameServerListRequestResult" pos="-540,-340,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="138" Class="UI:Functions:MainMenu:GameServerListRequestResult" pos="-160,-340,0" flags="0">
+   <Inputs instanceID="-1" value="0" message=""/>
+  </Node>
+  <Node Id="145" Class="UI:Events:MP:GameServerResponded" pos="-540,-210,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="146" Class="UI:Events:MP:GameServerRefreshComplete" pos="-540,-100,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="147" Class="UI:Functions:MainMenu:GameServerResponded" pos="-160,-210,0" flags="0">
+   <Inputs instanceID="-1" index="0" serverData=""/>
+  </Node>
+  <Node Id="149" Class="UI:Functions:MainMenu:GameServerRefreshComplete" pos="-160,-100,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="132" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="132" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="136" portIn="message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="136" portIn="value" portOut="Value" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="136" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="145" portIn="index" portOut="Index" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="145" portIn="serverData" portOut="ServerData" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="145" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="149" nodeOut="146" portIn="Call" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

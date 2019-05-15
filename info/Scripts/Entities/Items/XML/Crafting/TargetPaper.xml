@@ -1,0 +1,20 @@
+<item name="TargetPaper" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@TargetPaper"/>
+		<param name="description" value="@TargetPaperDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/GunRange/target_paper.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

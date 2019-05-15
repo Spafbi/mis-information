@@ -1,0 +1,54 @@
+<item name="jack_o_lantern" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@jack_o_lantern"/>
+		<param name="description" value="@jack_o_lanternDescription"/>
+	</params>
+
+	<base_part class="static" type="146" name="jack_o_lantern" max_health="600" repair_with="Pumpkin">
+		<static filename="objects/basebuilding/other/jack_o_lantern/jack_o_lantern.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="particle" light_bulb_size="0.1" light_radius="0.2" light_color="0.90,0.09,0.01" light_diff_mul="0.5" light_spec_mul="1.0" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-1.5,-1.5,-1.5" bb2="1.5,1.5,1.5" temperature="5" humidity="-0.05" light="0.3"/>
+				</envareas>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="particle" effect="fire.flame.candle"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="lightable_light">
+				<lightable_light sound_on_trigger="" sound_off_trigger=""/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/jack_o_lantern/jack_o_lantern.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/jack_o_lantern_200.png?crc=B81205D4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="EAEA00"/>
+		<param name="itemdefid" value="30014"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/jack_o_lantern_2048.png?crc=B81205D4"/>
+	</steam>
+</item>

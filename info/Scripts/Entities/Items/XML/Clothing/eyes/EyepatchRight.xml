@@ -1,0 +1,52 @@
+<item name="EyepatchRight" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="25.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@EyepatchRight"/>
+		<param name="description" value="@EyepatchRightDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="Objects/characters/players/male/eyes/eyepatch/eyepatch_right.skin"/>
+		<param name="mtl" value="Objects/characters/players/male/eyes/eyepatch/eyepatch.mtl"/> <!-- not currently used in THE MATRIX-->
+		<param name="slot" value="eyes"/>
+
+		<param name="overlay_layer" value="3"/>
+		<param name="overlay_texture" value="Objects/characters/players/male/eyes/eyepatch/textures/eyepatch_right_diff.tif"/>
+		<param name="overlay_color" value="1.0,1.0,1.0"/>
+		<param name="overlay_alpha" value="0.0"/>
+		<param name="overlay_in_alpha" value="0.75"/>
+		<param name="overlay_in_time" value="1.5"/>
+		<param name="overlay_out_alpha" value="0.75"/>
+		<param name="overlay_out_time" value="1.5"/>
+	</wearable>
+	<geometry>
+		<onground name="Objects/characters/players/male/eyes/eyepatch/eyepatch_ground.cgf" material="Objects/characters/players/male/eyes/eyepatch/eyepatch"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="eyes"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Eyes"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/EyepatchRight_200.png?crc=451D9070"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40041"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Eyes"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/EyepatchRight_2048.png?crc=451D9070"/>
+	</steam>
+</item>

@@ -1,0 +1,27 @@
+<skin name="TruckSemi_Camo1">
+
+	<params>
+		<param name="display_name" value="Semi Truck Hunters Skin"/>
+		<param name="description" value="Hunters camo skin for the Semi Truck"/>
+		<param name="material" value="objects/vehicles/truck_semi/semi_truck_camo1"/>
+	</params>
+
+	<items>
+		<item name="truck_semi"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo1_200.png?crc=ABD1A184"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="20"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300029"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo1_2048.png?crc=ABD1A184"/>
+	</steam>
+</skin>

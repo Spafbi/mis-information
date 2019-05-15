@@ -1,0 +1,27 @@
+<skin name="AKMTest">
+
+	<params>
+		<param name="display_name" value="AKM Test Skin"/>
+		<param name="description" value="AKM Test Skin"/>
+		<param name="material" value="objects/weapons/akm/akm_gold"/>
+	</params>
+
+	<items>
+		<item name="AKM"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AKMTest_200.png?crc=8C95247E"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="200000"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AKMTest_2048.png?crc=8C95247E"/>
+	</steam>
+</skin>

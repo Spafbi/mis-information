@@ -1,0 +1,28 @@
+<item name="dws_garage_door" class="Placeable" category="any">
+
+	<params>
+		<param name="mass" value="1.0"/>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="door" type="234" name="dws_garage_door" max_health="5000">
+		<door filename="Objects/structures/city_garage_workshop/dws_garage_door.cgf" rotate_base="0" move_range="4" move_speed="2" move_axis="z" move_axis_dir="+" 
+			sound_open="Play_industrial_garage_door_open" sound_opened="" sound_close="Play_industrial_garage_door_close" sound_closed=""/>
+		<base_actions>
+			<base_action class="toggle_door">
+				<toggle_door/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

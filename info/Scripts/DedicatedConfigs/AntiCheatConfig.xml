@@ -1,0 +1,181 @@
+<AntiCheatConfig>
+	<!-- List of cheat types and what actions to take when server detects suspicious activity -->
+
+	<Cheat type="ESPCheat">
+		<Action value="Log"/>
+	</Cheat>
+
+	<Cheat type="WeaponDamage">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="1.1" param="1" />
+    </Action>
+    <Action value="Kick">
+      <Condition operator="GreaterThan" value="1.5" param="1" />
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="PlayerMovedEntity">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="NoMagazine">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="OutOfAmmo">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="PickupDistance">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="HitLocationMismatch">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="0.1" param="1"/>
+    </Action>
+    <Action value="Kick">
+      <Condition operator="GreaterThan" value="10" param="1"/>
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="FireRate">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="1.1" param="1"/>
+    </Action>
+    <Action value="Kick">
+      <Condition operator="GreaterThan" value="1.5" param="1"/>
+    </Action>
+    <Action value="Ban">
+      <Condition operator="GreaterThan" value="2" param="1"/>
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="HitShotOwnerMismatch">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="HitShotIdMismatch">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="MissingShotId">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="MultipleEntityHits">
+		<Action value="Log"/>
+		<!-- <Action value="Kick"/> -->
+	</Cheat>
+
+	<Cheat type="MeleeRange">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="0.5" param="1"/>
+    </Action>
+    <Action value="Kick">
+      <Condition operator="GreaterThan" value="2" param="1"/>
+    </Action>
+    <Action value="Ban">
+      <Condition operator="GreaterThan" value="10" param="1"/>
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="PlayerSpeed">
+		<Action value="Log"/>
+		<!--<Action value="Ban">
+      <Condition operator="GreaterThan" value="85" />
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="PlayerTeleport">
+		<Action value="Log"/>
+		<!--<Action value="Ban">
+      <Condition operator="GreaterThan" value="85" />
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="ExternalProgram">
+		<Action value="Log"/>
+		<!--<Action value="Ban">
+      <Condition operator="GreaterThan" value="85" />
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="ServerSpawnedAmmoUsed">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="ShootingWithoutFiremode">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="ValidHitInfo">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<Cheat type="Headshots_ContiguousHits">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="25" param="1"/>
+    </Action>
+    <Action value="Ban">
+      <Condition operator="GreaterThan" value="50" param="1"/>
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="Headshots_RatioTooHigh">
+		<Action value="Log"/>
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="0.45" param="1"/>
+    </Action>
+    <Action value="Ban">
+      <Condition operator="GreaterThan" value="0.75" param="1"/>
+    </Action>-->
+		<!--<Action value="Infraction" severity="10">
+      <Condition operator="GreaterThan" value="999" param="2"/>
+    </Action>
+    <Action value="Ban">
+      <Condition operator="GreaterThan" value="999" param="2"/>
+    </Action>-->
+	</Cheat>
+
+	<Cheat type="UserFlying">
+		<Action value="Log"/>
+	</Cheat>
+
+	<Cheat type="AimBot">
+		<Action value="Log"/>
+		<!--<Action value="Kick"/>-->
+	</Cheat>
+
+	<!-- Actions to take when overall number of cheat infractions reach a given threshhold -->
+	<Global decay_rate="10">
+		<Action value="Kick" threshhold="20"/>
+	</Global>
+
+	<!-- hashing support methods 0 to <5 -->
+	<DataProbe hash_method="0">
+		<Asset ext="pak" weight="2"/>
+		<Asset ext="dds" weight="10"/>
+		<Asset ext="cgf" weight="10"/>
+		<Asset ext="cga" weight="2"/>
+		<Asset ext="caf" weight="2"/>
+		<Asset ext="xml" weight="10"/>
+		<Asset ext="lua" weight="10"/>
+		<Asset ext="other" weight="2"/>
+	</DataProbe>
+</AntiCheatConfig>

@@ -1,0 +1,27 @@
+<skin name="AP85_Gold">
+ 
+    <params>
+        <param name="display_name" value="AP85 Gold Skin"/>
+        <param name="description" value="AP85 Gold Skin"/>
+        <param name="material" value="Objects/weapons/AP85/ap85_gold"/>
+    </params>
+ 
+    <items>
+        <item name="AP85"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AP85_Gold_200.png?crc=B9376D63"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200113"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AP85_Gold_2048.png?crc=B9376D63"/>
+	</steam>
+</skin>

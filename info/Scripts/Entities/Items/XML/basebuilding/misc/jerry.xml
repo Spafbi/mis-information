@@ -1,0 +1,24 @@
+<item name="jerry" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@jerry"/>
+		<param name="description" value="@jerryDescription"/>
+	</params>
+
+	<base_part class="static" type="3501" name="jerry" max_health="1000" repair_with="DuctTape">
+		<static filename="Objects/basebuilding/other/fishbowl/fishbowl.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/other/fishbowl/fishbowl.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

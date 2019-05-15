@@ -1,0 +1,13 @@
+<skin name="M9A1_Tempered">
+ 
+    <params>
+        <param name="display_name" value="M9A1 Tempered Skin"/>
+        <param name="description" value="M9A1 Tempered Skin"/>
+        <param name="material" value="Objects/weapons/m9a1/m9a1_tempered"/>
+    </params>
+ 
+    <items>
+        <item name="M9A1"/>
+    </items>
+
+</skin>

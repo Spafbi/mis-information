@@ -1,0 +1,28 @@
+<item name="TrekkingTentOrange" class="Tent" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="10"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrekkingTentOrange"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="PackedTrekkingTentOrange"/>
+		<param name="packup_sound" value="Play_puptent_teardown"/>
+		<param name="repair_sound" value="Play_duct_tape"/>
+		<param name="loot_item_category" value="RandomTentContents"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/tents/trekking_tent/trekking_tent.cgf" material="objects/tents/trekking_tent/trekking_tent_orange.mtl"/>
+	</geometry>
+
+	<storage>
+		<types>
+			<type category="any" capacity="20"/>
+		</types>
+	</storage>
+
+</item>

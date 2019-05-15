@@ -1,0 +1,33 @@
+<Modes>
+
+	<GameMode name='SinglePlayer'>
+		<Alias name='SP' />
+		<Rules path='Scripts/GameRules/SinglePlayer.xml' />
+		<DefaultHudState name="sp_core_hud" />
+	</GameMode>
+
+	<GameMode name='Miscreated' usePlayerTeamVisualization='0'>
+		<Alias name='Miscreated' />
+		<Alias name='MIS' />
+		<Rules path='Scripts/GameRules/Miscreated.xml' />
+		<DefaultHudState name='mp_miscreated' />
+	</GameMode>
+
+	<GameMode name='BattleRoyale' usePlayerTeamVisualization='0'>
+		<Alias name='BattleRoyale' />
+		<Alias name='BR' />
+		<Rules path='Scripts/GameRules/BattleRoyale.xml' />
+		<DefaultHudState name='mp_br' />
+	</GameMode>
+
+	<GameMode name='InstantAction' usePlayerTeamVisualization='0'>
+		<Alias name='IA' />
+		<Alias name='DM' />
+		<Alias name='DeathMatch' />
+		<LevelLocation path='Multiplayer/' />
+		<LevelLocation path='Dlc/' />
+		<Rules path='Scripts/GameRules/InstantAction.xml' />
+		<DefaultHudState name="mp_ia" />
+	</GameMode>
+
+</Modes>

@@ -1,0 +1,75 @@
+<item name="RK_ClothingHelmet" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_ClothingHelmet"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_ClothingHelmet"/>
+		<param name="description" value="@RK_ClothingHelmetDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/repair_kits.cgf" Material="Objects/equipment/repairkits/repair_kits_black"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_ClothingHelmet" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="BikeHelmetBlack" percentage="100"/>
+		<item name="BikeHelmetBlue" percentage="100"/>
+		<item name="BikeHelmetGreen" percentage="100"/>
+		<item name="BikeHelmetPink" percentage="100"/>
+		<item name="BikeHelmetPurple" percentage="100"/>
+		<item name="BikeHelmetRed" percentage="100"/>
+		<item name="BikeHelmetWhite" percentage="100"/>
+		<item name="BikeHelmetYellow" percentage="100"/>
+		<item name="FootballHelmet" percentage="100"/>
+		<item name="FootballHelmetAmerica" percentage="100"/>
+		<item name="FootballHelmetBlack" percentage="100"/>
+		<item name="FootballHelmetBlue" percentage="100"/>
+		<item name="FootballHelmetFabulous" percentage="100"/>
+		<item name="FootballHelmetGold" percentage="100"/>
+		<item name="FootballHelmetGreen" percentage="100"/>
+		<item name="FootballHelmetRed" percentage="100"/>
+		<item name="FootballHelmetStripedBlack" percentage="100"/>
+		<item name="FootballHelmetStripedBlue" percentage="100"/>
+		<item name="FootballHelmetStripedGreen" percentage="100"/>
+		<item name="FootballHelmetStripedRed" percentage="100"/>
+		<item name="FootballHelmetStripedTeal" percentage="100"/>
+		<item name="FootballHelmetStripedYellow" percentage="100"/>
+		<item name="FootballHelmetTeal" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedBlack" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedBlue" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedGreen" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedRed" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedTeal" percentage="100"/>
+		<item name="FootballHelmetWhiteStripedYellow" percentage="100"/>
+		<item name="FootballHelmetYellow" percentage="100"/>
+		<item name="MotorcycleHelmetCarbon" percentage="100"/>
+		<item name="MotorcycleHelmetGold" percentage="100"/>
+		<item name="MotorcycleHelmetWhite" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_ClothingHelmet_200.png?crc=38301084"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130003"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_ClothingHelmet_2048.png?crc=38301084"/>
+	</steam>
+</item>

@@ -1,0 +1,54 @@
+<item name="powered_work_light" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="4.0"/>
+		<param name="display_name" value="@powered_work_light"/>
+		<param name="description" value="@powered_work_lightDescription"/>
+	</params>
+
+	<base_part class="powered" type="106" name="powered_work_light" max_health="2000" repair_with="ScrapMetal">
+		<powered filename="Objects/basebuilding/other/lamp/lamp.cgf" helper="light" power_consumption="1"/>
+		<base_parts>
+			<base_part class="light"> <!-- PROJECTOR LIGHT -->
+				<light helper="light" light_radius="20" light_color="1.0,0.84,0.66" light_diff_mul="20" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_rotation="-30,0,90" light_style="39" light_anim_speed="1" light_cast_shadows="1" light_bulb_size="1" light_view_dist_ratio="30" light_material="materials/lights/lens_flares/generic/lens_optics" light_project_fov="120" light_project_texture="textures/lights/flashlight_projector.tif" fog_volume_enabled="1" fog_volume_helper="light" fog_volume_color="1.0,0.84,0.66" fog_volume_radius="5" fog_volume_size="30" fog_volume_density="0.0005" lens_flare_name="miscreated.bpart.worklight" lens_flare_fov="140" sound_on="Play_lights_hum" sound_off="Stop_lights_hum"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-1.5,0.1,-2.5" bb2="1.5,8,2.5" temperature="6" light="0.75" humidity="-0.1"/>
+				</envareas>
+			</base_part>
+			<base_part class="light"> <!-- FILL LIGHT -->
+				<light helper="light" light_radius="0.11" light_color="1.0,0.84,0.66" light_diff_mul="2" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_rotation="-30,0,90" light_style="39" light_anim_speed="1" light_cast_shadows="0" light_bulb_size="0.05" light_view_dist_ratio="250"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="toggle_powered">
+				<toggle_powered sound_connect_power="Play_power_connect" sound_toggle_switch="Play_lights_switch"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/powered_work_light_200.png?crc=DEDFF1C0"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30107"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/powered_work_light_2048.png?crc=DEDFF1C0"/>
+	</steam>
+</item>

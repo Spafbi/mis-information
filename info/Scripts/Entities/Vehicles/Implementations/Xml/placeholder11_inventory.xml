@@ -1,0 +1,18 @@
+<inventory>
+	<fluids>
+		<levels>
+			<type category="oil" decay_rate="40" fill_amount="6000"/> <!-- 6L, .04L / minute -->
+			<type category="dieselfuel" decay_rate="1000" fill_amount="110000"/> <!-- 110L, 1L / minute -->
+		</levels>
+	</fluids>
+	<storage>
+		<types>
+			<type category="carbattery" capacity="1" />
+			<type category="drivebelt" capacity="1" />
+			<type category="sparkplugs" capacity="1" />
+			<type category="towcable" capacity="1" visible="1" />
+			<type category="wheel" capacity="4" visible="1" /> <!-- Visible=1 forces item to render at parent relevance distance (500m for vehicle) -->
+			<type category="any" capacity="5" />
+		</types>
+	</storage>
+</inventory>

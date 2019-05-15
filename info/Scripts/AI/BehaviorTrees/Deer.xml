@@ -1,0 +1,198 @@
+<BehaviorTree>
+
+	<Variables>
+		<Variable name="ExecuteSequence" />
+		<Variable name="ExecuteInterruptibleSequence" />
+
+		<Variable name="TargetVisible" />
+	</Variables>
+
+	<SignalVariables>
+
+		<Signal name="OnEnemySeen" variable="TargetVisible" value="true" />
+		<Signal name="OnLostSightOfTarget" variable="TargetVisible" value="false" />
+
+	</SignalVariables>
+
+	<Root>
+		<Priority>
+
+			<Case condition="ExecuteSequence">
+				<LuaBehavior name="ExecuteSequence" />
+			</Case>
+
+			<Case>
+
+				<StateMachine>
+
+					<!--
+					=================================================
+					Idle
+					=================================================
+					-->
+
+					<State name="Idle">
+
+						<Transitions>
+
+							<Transition to="Flee" onEvent="OnEnemyDamage"/>
+
+							<Transition to="Flee" onEvent="OnEnemySeen"/>
+							<Transition to="Flee" onEvent="OnThreateningSeen"/>
+							<Transition to="Flee" onEvent="OnBulletRain"/>
+							<Transition to="Flee" onEvent="OnEnemyHeard"/>
+							<Transition to="Flee" onEvent="OnThreateningSoundHeard"/>
+
+							<Transition to="Alert" onEvent="OnSuspectedSoundHeard" />
+							<Transition to="Alert" onEvent="OnInterestingSoundHeard" />
+
+						</Transitions>
+
+						<BehaviorTree>
+							<Loop>
+								<Sequence>
+
+									<Log message="Idle behavior" />
+
+									<SetAlertness value="0"/>
+
+									<Priority>
+
+										<!-- Sequence -->
+										<Case condition="ExecuteInterruptibleSequence">
+											<Sequence>
+												<Log message="Executing ai sequence in idle" />
+												<LuaBehavior name="ExecuteInterruptibleSequence" />
+											</Sequence>
+										</Case>
+
+										<Case>
+											<Sequence>
+												<Log message="Waiting at wander position"/>
+												<Wait duration="10" variation="10" />
+
+												<Log message="Wandering to a random position"/>
+												<Selector>
+
+													<Sequence>
+
+														<SuppressFailure>
+															<QueryTPS name="Deer_Wander" register="RefPoint" />
+														</SuppressFailure>
+
+														<!-- If the AI gets off the mesh he can essentially infinite loop in wander, so remove him -->
+														<ExecuteLua code="entity:RemoveIfOffMesh()" />
+
+														<LuaGate code="return not entity:IsRefPointOffMesh()">
+															<Move to="RefPoint" stance="Stand" speed="Walk" stopWithinDistance="5" avoidDangers="0"/>
+														</LuaGate>
+
+													</Sequence>
+
+													<Log message="Could not wander to a random position" />
+												</Selector>
+
+											</Sequence>
+										</Case>
+									</Priority>
+								</Sequence>
+							</Loop>
+						</BehaviorTree>
+					</State>
+
+					<!--
+					=================================================
+					Alert
+					=================================================
+					-->
+
+					<State name="Alert">
+
+						<Transitions>
+
+							<Transition to="Idle" onEvent="GoToIdle" />
+
+							<Transition to="Flee" onEvent="OnEnemyDamage"/>
+
+							<Transition to="Flee" onEvent="OnEnemySeen"/>
+							<Transition to="Flee" onEvent="OnThreateningSeen"/>
+							<Transition to="Flee" onEvent="OnBulletRain"/>
+							<Transition to="Flee" onEvent="OnEnemyHeard"/>
+							<Transition to="Flee" onEvent="OnThreateningSoundHeard"/>
+
+						</Transitions>
+
+						<BehaviorTree>
+							<Loop>
+								<Sequence>
+									<Log message="Facing an interesting event" />
+
+									<SetAlertness value="1"/>
+
+									<Parallel>
+
+										<Sequence>
+											<Wait duration="5.0" />
+											<Parallel successMode="any">
+												<WaitForEvent name="OnSuspectedSoundHeard" />
+												<WaitForEvent name="OnInterestingSoundHeard" />
+											</Parallel>
+										</Sequence>
+
+										<Sequence>
+											<Animate name="AI_BecomeAlerted" urgent="0"/>
+											<Loop>
+												<SuppressFailure><TurnBody towards="Target" /></SuppressFailure>
+											</Loop>
+											<Wait duration="10" variation="10" />
+											<SendTransitionSignal name="GoToIdle" />
+										</Sequence>
+
+									</Parallel>
+								</Sequence>
+							</Loop>
+						</BehaviorTree>
+
+					</State>
+
+					<!--
+					=================================================
+					Flee
+					=================================================
+					-->
+
+					<State name="Flee">
+
+						<Transitions>
+							<Transition to="Idle" onEvent="GoToIdle" />
+						</Transitions>
+
+						<BehaviorTree>
+							<Sequence>
+								<Log message="Running away from a threat"/>
+
+								<SetAlertness value="1"/>
+
+								<SuppressFailure>
+									<Sequence>
+										<QueryTPS name="Deer_RunAway" register="RefPoint" />
+
+										<LuaGate code="return not entity:IsRefPointOffMesh()">
+											<Move to="RefPoint" stance="Stand" speed="Sprint" stopWithinDistance="5.0" avoidDangers="0" considerActorsAsPathObstacles="1" />
+										</LuaGate>
+
+									</Sequence>
+								</SuppressFailure>
+
+								<SendTransitionSignal name="GoToIdle" />
+
+							</Sequence>
+						</BehaviorTree>
+
+					</State>
+
+				</StateMachine>
+			</Case>
+		</Priority>
+	</Root>
+</BehaviorTree>

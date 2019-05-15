@@ -1,0 +1,14 @@
+<skin name="Crowbar_Bloody">
+ 
+    <params>
+        <param name="display_name" value="Crowbar Bloody Skin"/>
+        <param name="description" value="Crowbar Bloody Skin"/>
+        <param name="material" value="Objects/weapons/crowbar/crowbar_bloody"/>
+    </params>
+ 
+    <items>
+        <item name="Crowbar"/>
+    </items>
+
+	
+</skin>

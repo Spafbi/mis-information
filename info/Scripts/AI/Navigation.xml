@@ -1,0 +1,24 @@
+<Navigation version="6" >
+	<AgentTypes>
+
+		<AgentType name="MediumSizedCharacters" voxelSize="0.1, 0.1, 0.125" radius="2" height="16" climbableHeight="4" maxWaterDepth="8" >
+			<SmartObjectUserClasses>
+				<class name="Human" />
+				<class name="Mutant" />
+				<class name="Skinner" />
+				<class name="Spiker" />
+			</SmartObjectUserClasses>
+		</AgentType>
+
+		<AgentType name="LargeSizedCharacters" voxelSize="0.16, 0.16, 0.125" radius="4" height="20" climbableHeight="2" maxWaterDepth="8" >
+			<SmartObjectUserClasses>
+				<class name="Deer" />
+				<class name="DeerFemale" />
+			</SmartObjectUserClasses>
+		</AgentType>
+
+		<AgentType name="VehicleMedium" voxelSize="0.20, 0.20, 0.20" radius="14" height="10" climbableHeight="4" maxWaterDepth="5" >
+		</AgentType>
+
+	</AgentTypes>
+</Navigation>

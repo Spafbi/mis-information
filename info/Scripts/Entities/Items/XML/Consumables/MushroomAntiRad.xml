@@ -1,0 +1,41 @@
+<item name="MushroomAntiRad" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@MushroomAntiRad"/>
+		<param name="description" value="@MushroomAntiRadDescription"/>
+		<param name="view_dist_min" value="50"/> <!-- minimum 50m draw distance -->
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/craftingMats/Mushrooms/BigMushroom/Mushroom_Clump_Radioactive.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="antirad"/>
+		<param name="soundUsed" value="Play_food_soft_eat"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Consumable"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MushroomAntiRad_200.png?crc=3D5F1EF1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="50002"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Consumable"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MushroomAntiRad_2048.png?crc=3D5F1EF1"/>
+	</steam>
+</item>

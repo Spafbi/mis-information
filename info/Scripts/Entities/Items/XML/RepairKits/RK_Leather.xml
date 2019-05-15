@@ -1,0 +1,83 @@
+<item name="RK_Leather" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_Leather"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_Leather"/>
+		<param name="description" value="@RK_LeatherDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/sewing_kit.cgf" Material="Objects/equipment/repairkits/repair_kits_leather"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_Leather" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="RuggedPack" percentage="100"/>
+		<item name="RuggedPackBlack" percentage="100"/>
+		<item name="RuggedPackBrown" percentage="100"/>
+		<item name="RuggedPackCamo1" percentage="100"/>
+		<item name="RuggedPackCamo2" percentage="100"/>
+		<item name="RuggedPackCamo3" percentage="100"/>
+		<item name="RuggedPackCamo4" percentage="100"/>
+		<item name="RuggedPackGreen" percentage="100"/>
+		<item name="RuggedPackGreenCamo1" percentage="100"/>
+		<item name="RuggedPackGreenCamo2" percentage="100"/>
+		<item name="RuggedPackGreenCamo3" percentage="100"/>
+		<item name="RuggedPackGreenCamo4" percentage="100"/>
+		<item name="CombatBootsBlack" percentage="100"/>
+		<item name="CombatBootsCamo" percentage="100"/>
+		<item name="CombatBootsTan" percentage="100"/>
+		<item name="SteeltoedBootsBlack" percentage="100"/>
+		<item name="SteeltoedBootsBrown" percentage="100"/>
+		<item name="MilitaryGloves" percentage="100"/>
+		<item name="MilitaryGlovesBlack" percentage="100"/>
+		<item name="MilitaryGlovesBrown" percentage="100"/>
+		<item name="MilitaryGlovesGreen" percentage="100"/>
+		<item name="CowboyHat" percentage="100"/>
+		<item name="CowboyHatLeather" percentage="100"/>
+		<item name="DorfmanPacific" percentage="100"/>
+		<item name="Headlamp" percentage="100"/>
+		<item name="HeadlampRed" percentage="100"/>
+		<item name="WeldersMask" percentage="100"/>
+		<item name="FootballPads" percentage="100"/>
+		<item name="FootballPadsSpiked" percentage="100"/>
+		<item name="NoSleevesVestBlack" percentage="100"/>
+		<item name="NoSleevesVestBlue" percentage="100"/>
+		<item name="NoSleevesVestBrown" percentage="100"/>
+		<item name="NoSleevesVestGreen" percentage="100"/>
+		<item name="NoSleevesVestRed" percentage="100"/>
+		<item name="NoSleevesVestTan" percentage="100"/>
+		<item name="ShoulderPadOneSide" percentage="100"/>
+		<item name="ShoulderPadOneSideLeft" percentage="100"/>
+		<item name="LeatherJacketYellow" percentage="100"/>
+		<item name="LeatherJacketRed" percentage="100"/>
+		<item name="LeatherJacketBrown" percentage="100"/>
+		<item name="LeatherJacketBlack" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_Leather_200.png?crc=E361DAD1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130031"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_Leather_2048.png?crc=E361DAD1"/>
+	</steam>
+</item>

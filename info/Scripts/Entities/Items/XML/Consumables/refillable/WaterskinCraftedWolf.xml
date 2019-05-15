@@ -1,0 +1,87 @@
+<item name="WaterskinCraftedWolf" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.6"/>
+		<param name="display_name" value="@WaterskinCraftedWolf"/>
+		<param name="description" value="@WaterskinCraftedWolfDescription"/>
+
+	</params>
+
+	<geometry>
+		<thirdperson name="objects\consumables\waterskin\waterskin.cgf" material="objects\consumables\waterskin\waterskin_wolf.mtl"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="drinkAmount" value="500"/>
+		<param name="refillable" value="1"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+		<param name="soundRefilled" value="Play_container_fill"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@WaterskinCraftedWolfWaterPlanter"/>
+				<param name="action" value="water"/>
+				<param name="param" value="not_explosive"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="planter_box"/>
+			</use>
+			<use>
+				<param name="title" value="@WaterskinCraftedWolfDepositFluid"/>
+				<param name="action" value="fluid_item"/>
+				<param name="param" value="not_empty"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_barrel"/>
+			</use>
+			<use>
+				<param name="title" value="@WaterskinCraftedWolfDepositFluid"/>
+				<param name="action" value="fluid_item"/>
+				<param name="param" value="not_explosive"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_purifier"/>
+			</use>
+			<use>
+				<param name="title" value="@WaterskinCraftedWolfWithdrawFluid"/>
+				<param name="action" value="refill_item"/>
+				<param name="param" value="not_full"/>
+				<param name="soundUsed" value="Play_apply_water"/>
+				<param name="targetClassNames" value="water_barrel;water_collector;water_purifier"/>
+			</use>
+		</uses>
+	</usable>
+
+	<craftable>
+		<!-- Purify water -->
+		<craft name="WaterPurificationTablets" destroy="1" purify="1"/>
+		<!-- Poison water -->
+		<craft name="AppleRotten" destroy="1" poison="1"/>
+		<craft name="BeetsRotten" destroy="1" poison="1"/>
+		<craft name="BrushPeasRotten" destroy="1" poison="1"/>
+		<craft name="CarrotsRotten" destroy="1" poison="1"/>
+		<craft name="PotatoesRotten" destroy="1" poison="1"/>
+		<craft name="PumpkinRotten" destroy="1" poison="1"/>
+		<craft name="RadishesRotten" destroy="1" poison="1"/>
+		<craft name="SnapPeasRotten" destroy="1" poison="1"/>
+		<craft name="TomatoesRotten" destroy="1" poison="1"/>
+		<!-- Transfer fluid -->
+		<craft name="WaterBottle"/>
+		<craft name="JerryCanDiesel"/>
+		<craft name="CivCanteen01"/>
+		<craft name="MilitaryCanteenMetal"/>
+		<craft name="MilitaryCanteenPlastic"/>
+		<craft name="WaterskinCraftedDeer"/>
+		<craft name="WaterskinCraftedWolf"/>
+		<craft name="camping_water_jug"/>
+	</craftable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="dieselfuel"/>
+		</locations>
+	</storage>
+
+</item>

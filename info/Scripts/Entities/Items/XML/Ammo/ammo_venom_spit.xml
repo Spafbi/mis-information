@@ -1,0 +1,54 @@
+<ammo name="ammo_venom_spit" class="Bullet">
+
+	<geometry>
+		<firstperson name="Objects/ammo/rocks/ammo_rock_acidspit.cgf" scale="1.5"/>
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="reusable" value="1" />
+	</flags>
+
+	<!-- Disable Rigid physics as it causes Kyt Nav to regen -->
+	<!--<physics type="rigid">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="15" />
+		<param name="max_logged_collisions" value="1" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_rock" />
+	</physics>-->
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="40" /> 
+		<param name="radius" value="0.5" />
+		<param name="air_resistance" value="0.0026" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_venom" />
+		<param name="pierceability" value="14" /> <!-- High piercability so it doesn't pass through surfaces -->
+		<param name="single_contact" value="1" />
+	</physics>
+
+	<params>
+		<param name="damage" value="6" />
+		<param name="acid" value="12" />
+		<param name="torpidity" value="10.0" />
+		<param name="stamina" value="5.0" />
+		<param name="poison_percent" value="75" />
+		<param name="showtime" value="0.05" />
+		<param name="lifetime" value="5.0" />
+		<param name="hit_type" value="bullet" />
+		<param name="bulletType" value="2" /> <!-- Bullet Type 2 - Assault rifle bullet, just so we have something here -->
+	</params>
+
+	<!-- FIX ME!!! Doesn't work on server spawned projectiles -->
+	<!--<trail>
+		<param name="effect" value="weapon_fx.venom.spit" />
+		<param name="prime" value="false" />
+	</trail>-->
+
+</ammo>

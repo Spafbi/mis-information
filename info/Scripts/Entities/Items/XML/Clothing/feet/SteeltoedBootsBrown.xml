@@ -1,0 +1,53 @@
+<item name="SteeltoedBootsBrown" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.4"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@SteeltoedBootsBrown"/>
+		<param name="description" value="@SteeltoedBootsBrownDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/feet/steeltoed_boots/steeltoed_boots.skin"/>
+		<param name="mtl" value="objects/characters/players/male/feet/steeltoed_boots/steeltoed_boots.mtl"/>
+		<param name="slot" value="feet"/>
+	</wearable>
+	<geometry>
+		<onground name="objects/characters/players/male/feet/steeltoed_boots/steeltoed_boots_onground.cgf" material="objects/characters/players/male/feet/steeltoed_boots/steeltoed_boots"/>
+	</geometry>
+	<protection level="3"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="physical" percentage="1.0"/>
+			<protection_amount type="feet_sharp" percentage="90.0"/>
+			<protection_amount type="feet_blunt" percentage="40.0"/>
+			<protection_amount type="explosion" percentage="2.0"/>
+            <protection_amount type="cold" percentage="4"/>
+            <protection_amount type="heat" percentage="1.0"/>
+			<protection_amount type="rain_acid" percentage="5"/>
+		</environmental>
+	</protection>
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="feet"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SteeltoedBootsBrown_200.png?crc=68673C86"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40101"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SteeltoedBootsBrown_2048.png?crc=68673C86"/>
+	</steam>
+</item>

@@ -1,0 +1,27 @@
+<item name="Salt" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.25"/>
+		<param name="stack_size" value="20"/>
+		<param name="display_name" value="@Salt"/>
+		<param name="description" value="@SaltDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/saltandpepper/salt.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="1"/>
+		<param name="drinkAmount" value="-600"/>
+		<param name="torpidityAmount" value="-30"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

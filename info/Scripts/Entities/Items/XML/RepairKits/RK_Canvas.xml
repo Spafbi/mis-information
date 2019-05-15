@@ -1,0 +1,94 @@
+<item name="RK_Canvas" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_Canvas"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_Canvas"/>
+		<param name="description" value="@RK_CanvasDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/sewing_kit.cgf" Material="Objects/equipment/repairkits/repair_kits_canva"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_Canvas" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="RuckSack" percentage="100"/>
+		<item name="DuffelBagBlack" percentage="100"/>
+		<item name="DuffelBagGreen" percentage="100"/>
+		<item name="DuffelBagGreenCamo1" percentage="100"/>
+		<item name="DuffelBagGreenCamo2" percentage="100"/>
+		<item name="DuffelBagGreenCamo3" percentage="100"/>
+		<item name="DuffelBagGreenCamo4" percentage="100"/>
+		<item name="DuffelBagTanCamo1" percentage="100"/>
+		<item name="DuffelBagTanCamo2" percentage="100"/>
+		<item name="DuffelBagTanCamo3" percentage="100"/>
+		<item name="DuffelBagTanCamo4" percentage="100"/>
+		<item name="DuffelBagUrbanCamo1" percentage="100"/>
+		<item name="DuffelBagUrbanCamo2" percentage="100"/>
+		<item name="DuffelBagUrbanCamo3" percentage="100"/>
+		<item name="DuffelBagUrbanCamo4" percentage="100"/>
+		<item name="DuffelBag" percentage="100"/>
+		<item name="FlakVestGreen" percentage="100"/>
+		<item name="FlakVestGreenCamo1" percentage="100"/>
+		<item name="FlakVestTan" percentage="100"/>
+		<item name="FlakVestTanCamo1" percentage="100"/>
+		<item name="PoliceVestBlack" percentage="100"/>
+		<item name="PoliceVestBlue" percentage="100"/>
+		<item name="TacticalVestBlack" percentage="100"/>
+		<item name="TacticalVestGreen" percentage="100"/>
+		<item name="TacticalVestGreenCamo1" percentage="100"/>
+		<item name="TacticalVestGreenCamo2" percentage="100"/>
+		<item name="TacticalVestGreenCamo3" percentage="100"/>
+		<item name="TacticalVestGreenCamo4" percentage="100"/>
+		<item name="TacticalVestTan" percentage="100"/>
+		<item name="TacticalVestTanCamo1" percentage="100"/>
+		<item name="TacticalVestTanCamo2" percentage="100"/>
+		<item name="TacticalVestTanCamo3" percentage="100"/>
+		<item name="TacticalVestTanCamo4" percentage="100"/>
+		<item name="TacticalVestUrbanCamo1" percentage="100"/>
+		<item name="TacticalVestUrbanCamo2" percentage="100"/>
+		<item name="TacticalVestUrbanCamo3" percentage="100"/>
+		<item name="TacticalVestUrbanCamo4" percentage="100"/>
+		<item name="MilitaryJacketBlack" percentage="100"/>
+		<item name="MilitaryJacketGreen" percentage="100"/>
+		<item name="MilitaryJacketGreenCamo1" percentage="100"/>
+		<item name="MilitaryJacketGreenCamo2" percentage="100"/>
+		<item name="MilitaryJacketGreenCamo3" percentage="100"/>
+		<item name="MilitaryJacketGreenCamo4" percentage="100"/>
+		<item name="MilitaryJacketTan" percentage="100"/>
+		<item name="MilitaryJacketTanCamo1" percentage="100"/>
+		<item name="MilitaryJacketTanCamo2" percentage="100"/>
+		<item name="MilitaryJacketTanCamo3" percentage="100"/>
+		<item name="MilitaryJacketTanCamo4" percentage="100"/>
+		<item name="MilitaryJacketUrbanCamo1" percentage="100"/>
+		<item name="MilitaryJacketUrbanCamo2" percentage="100"/>
+		<item name="MilitaryJacketUrbanCamo3" percentage="100"/>
+		<item name="MilitaryJacketUrbanCamo4" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_Canvas_200.png?crc=E3254F03"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130032"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_Canvas_2048.png?crc=E3254F03"/>
+	</steam>
+</item>

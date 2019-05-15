@@ -1,0 +1,48 @@
+<item name="powered_generator_small" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.5"/>
+		<param name="place_dws" value="1"/>
+		<param name="display_name" value="@powered_generator_small"/>
+		<param name="description" value="@powered_generator_smallDescription"/>
+	</params>
+
+	<base_part class="generator" type="104" name="powered_generator_small" max_health="4000" repair_with="ScrapMetal" limit="1">
+		<generator filename="Objects/basebuilding/other/small_generator/powered_generator_small.cgf" power_type="fuel" helper="light" power_output="5"/>
+		<base_actions>
+			<base_action class="toggle_generator">
+				<toggle_generator effect="" sound_running="Play_generator_small_on" sound_stopping="Play_generator_small_off"/>
+			</base_action>
+		</base_actions>
+
+		<envareas>
+			<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-2,-2,-1" bb2="2,2,3.0" temperature="7"/>
+		</envareas>
+	</base_part>
+	
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/powered_generator_small_200.png?crc=2309F4E5"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30101"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/powered_generator_small_2048.png?crc=2309F4E5"/>
+	</steam>
+</item>

@@ -1,0 +1,56 @@
+<item name="SeedsBeets" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@SeedsBeets"/>
+		<param name="description" value="@SeedsBeetsDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/seedbags/seedbag.cgf" material="Objects/consumables/seedbags/seedbags_beets.mtl"/>
+	</geometry>
+
+	<usable>
+		<param name="title" value="@SeedsBeetsSowInPlanter"/>
+		<param name="action" value="plant"/>
+		<param name="soundUsed" value="Play_plant_seeds"/>
+		<param name="targetClassNames" value="planter_box"/>
+	</usable>
+
+	<plantable>
+		<param name="crop_good" value="Beets"/>
+		<param name="crop_rotten" value="BeetsRotten"/>
+		<param name="grow_time_minutes" value="27.5"/>
+		<param name="model_dirt" value="Objects/basebuilding/crops/potato/dirt_pile.cgf"/>
+		<param name="model_small" value="Objects/basebuilding/crops/beets/beets_small.cgf"/>
+		<param name="model_medium" value="Objects/basebuilding/crops/beets/beets_medium.cgf"/>
+		<param name="model_big" value="Objects/basebuilding/crops/beets/beets_big.cgf"/>
+		<param name="material_good" value="Objects/basebuilding/crops/beets/crop_beets.mtl"/>
+		<param name="material_dead" value="Objects/basebuilding/crops/beets/crop_beets_dead.mtl"/>
+		<param name="material_bugs" value="Objects/basebuilding/crops/beets/crop_beets_eaten.mtl"/>
+		<param name="material_rotten" value="Objects/basebuilding/crops/beets/crop_beets_rotten.mtl"/>
+	</plantable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Seeds"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SeedsBeets_200.png?crc=BC77128B"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="85000"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Seeds"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SeedsBeets_2048.png?crc=BC77128B"/>
+	</steam>
+</item>

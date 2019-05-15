@@ -1,0 +1,27 @@
+<item name="CocktailWhiskeyCola" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@CocktailWhiskeyCola"/>
+		<param name="description" value="@CocktailWhiskeyColaDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/item_drink_can/item_drink_can_coke.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="type" value="7"/> <!-- eICT_Alcohol -->
+		<param name="drinkAmount" value="350"/>
+		<param name="torpidityAmount" value="17"/>
+		<param name="soundConsumed" value="Play_soda_open"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

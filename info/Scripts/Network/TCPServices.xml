@@ -1,0 +1,4 @@
+<TCPServices>
+	<TCPService config="download" port="80" server="miscreatedgame.com" serviceID="" serverInfo="" prefix="/download"/>
+	<TCPService config="telemetry" port="80" server="miscreatedgame.com" serviceID="" serverInfo="" prefix="/telemetry"/>
+</TCPServices>

@@ -1,0 +1,54 @@
+<item name="22x10_ruger" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/> <!-- 2.1g per bullet /2 + 100g for magazine -->
+		<param name="display_name" value="@22x10_ruger"/>
+		<param name="description" value="@22x10_rugerDescription"/>
+		<param name="tag" value="22x10_ruger"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="10"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="ammo_22" amount="10" pile="Pile_22"/>
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_load" value="Play_magazine_load"/>
+		<param name="sound_unload" value="Play_magazine_unload"/>
+	</magazine>
+
+	<geometry>
+		<onground name="Objects/magazines/22_ruger/22_ruger.cgf"/> <!-- We only display onground model. TP model controlled in Mannequin -->
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="22_ruger_mag"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Magazine"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/22x10_ruger_200.png?crc=1E71A423"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80005"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Magazine"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/22x10_ruger_2048.png?crc=1E71A423"/>
+	</steam>
+</item>

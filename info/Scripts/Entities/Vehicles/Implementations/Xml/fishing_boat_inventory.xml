@@ -1,0 +1,15 @@
+<inventory>
+  <fluids>
+    <levels>
+      <type category="oil" decay_rate="25" fill_amount="4000"/> <!-- 4L, .025L / minute -->
+			<type category="dieselfuel" decay_rate="500" fill_amount="40000"/> <!-- 40L, .5L / minute -->
+    </levels>
+  </fluids>
+   <storage>
+    <types>
+      <type category="carbattery" capacity="1" />
+      <type category="sparkplugs" capacity="1" />
+      <type category="any" capacity="5" />
+    </types>
+  </storage>  
+</inventory>

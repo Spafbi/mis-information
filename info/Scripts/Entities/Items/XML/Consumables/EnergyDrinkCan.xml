@@ -1,0 +1,28 @@
+<item name="EnergyDrinkCan" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@EnergyDrinkCan"/>
+		<param name="description" value="@EnergyDrinkCanDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/item_drink_can/item_drink_can_energy_drink.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="drinkAmount" value="450"/>
+		<param name="torpidityAmount" value="-10"/>
+		<param name="staminaAmount" value="30"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

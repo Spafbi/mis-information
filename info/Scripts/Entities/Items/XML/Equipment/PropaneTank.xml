@@ -1,0 +1,93 @@
+<item name="PropaneTank" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="6.5"/>
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="display_name" value="@PropaneTank"/>
+		<param name="description" value="@PropaneTankDescription"/>
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="healthMax" value="35"/> <!-- required for explosion below to work -->
+		<param name="fluid_amount_max" value="14000"/> <!-- volume in mL -->
+		<param name="fluid_type" value="1"/> <!-- eICT_Propane -->
+		<param name="destroyWhenDegraded" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/propanetank_small/propanetank_small.cgf" material="Objects/props/propanetank_small/propanetank_small"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@PropaneTankAttachFuel"/>
+				<param name="action" value="propane_item"/>
+				<param name="param" value="not_empty"/>
+				<param name="soundUsed" value="Play_propane_attach"/>
+				<param name="targetClassNames" value="dws_grill_base"/>
+			</use>
+			<use>
+				<param name="title" value="@PropaneTankAttachTank"/>
+				<param name="action" value="propane_item"/>
+				<param name="param" value="empty"/>
+				<param name="soundUsed" value="Play_propane_attach"/>
+				<param name="targetClassNames" value="water_purifier"/>
+			</use>
+			<use>
+				<param name="title" value="@PropaneTankRefillTank"/>
+				<param name="action" value="refill_gastank"/>
+				<param name="param" value="not_full"/>
+				<param name="soundUsed" value="Play_propane_attach"/>
+				<param name="targetClassNames" value="awm"/>  <!-- only used with awm so far -->
+			</use>
+		</uses>
+	</usable>
+
+	<explosion>
+		<param name="damage" value="50"/> <!-- max damage from explosion -->
+		<param name="pressure" value="4000"/> <!-- pressure wave force -->
+		<param name="min_radius" value="2"/> <!-- full damage up to this radius -->
+		<param name="max_radius" value="4"/> <!-- linear damage falloff from min to max -->
+		<param name="min_phys_radius" value="2.2"/> <!-- full pressure wave up to this radius -->
+		<param name="max_phys_radius" value="3"/> <!-- linear pressure wave falloff from min to max -->
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="explosions.jerrycan_diesel.burning"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="65"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<damage_area>
+		<param name="ground_particle_path" value="weapon_fx.molotov3.dummy"/>
+		<param name="ground_particle_duration" value="28"/>
+		<param name="ground_particle_effect_slot" value="5"/>
+		<param name="area_id" value="-5"/>
+		<param name="radius" value="2"/>
+		<param name="fire_duration" value="5.0"/>
+		<param name="fire_damage" value="3.0"/>
+		<param name="fire_incremental_duration" value="1.0"/>
+		<param name="body_fire_start_time" value="1.0"/>
+	</damage_area>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Crafting"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PropaneTank_200.png?crc=C57394CC"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70016"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Crafting"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PropaneTank_2048.png?crc=C57394CC"/>
+	</steam>
+</item>

@@ -1,0 +1,21 @@
+<item name="PipeMetal" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.3"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@PipeMetal"/>
+		<param name="description" value="@PipeMetalDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingMats/pipe_metal/pipe_metal.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,45 @@
+<item name="horshoe_pack" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.2"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.4"/>
+		<param name="display_name" value="@horshoe_pack"/>
+		<param name="description" value="@horshoe_packDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/horshoe_pack/horshoe_pack.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/horshoe_pack/horshoe.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<onground name="objects/characters/players/male/back/backpack/horshoe_pack/horshoe_ground.cgf"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="5"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/horshoe_pack_200.png?crc=486A5287"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40016"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/horshoe_pack_2048.png?crc=486A5287"/>
+	</steam>
+</item>

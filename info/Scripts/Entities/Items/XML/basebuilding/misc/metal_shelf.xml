@@ -1,0 +1,23 @@
+<item name="metal_shelf" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="3.0"/>
+        <param name="display_name" value="@metal_shelf"/>
+        <param name="description" value="@metal_shelfDescription"/>
+    </params>
+
+    <base_part class="static" type="4875" name="metal_shelf" max_health="3000" repair_with="ScrapMetal">
+        <static filename="objects/basebuilding/other/metal_shelf/metal_shelf.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

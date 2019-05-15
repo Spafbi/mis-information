@@ -1,0 +1,76 @@
+<loadouts>
+	<!-- WEAPONS IN ORDER OF UNLOCK FOR SIMPLICITY ON UI SCREENS-->
+	<!-- 0:Secondary, 1:SubMachineGuns 2:Assault Rifles, 3:Sniper Rifles, 4:Shotguns, 4:Heavy -->
+	<Weapon>
+	<!-- // EI Begin
+	
+		<item name="Rifle" >
+			<Name value="@mp_eRifle" /> <!- Localization string for display in-game ->
+			<TypeName value="@ui_loadout_type_assault_rifle" /> <!- Localization string for display in-game ->
+			<Description value="@ui_loadout_rifle_desc" /> <!- Localization string for display in-game ->
+			<Subcategory value="2" /> <!- See available categories above ->
+			<AllowedPackageGroups value="SDK" /> <!- Groups are defined in EquipmentLoadoutPackages.xml... Use '|' as a delimiter, example "SDK|MyKit2|Mykit3" ->
+		</item>
+
+		<item name="Pistol">
+			<Name value="@mp_ePistol" />
+			<TypeName value="@ui_loadout_type_pistol" />
+			<Description value="@ui_loadout_pistol_desc" />
+			<Subcategory value="0" />
+			<AllowedPackageGroups value="SDK" />
+		</item>
+
+		<item name="Shotgun">
+			<Name value="@mp_eShotgun" />
+			<TypeName value="@ui_loadout_type_shotgun" />
+			<Description value="@ui_loadout_shotgun_desc" />
+			<Subcategory value="4" />
+			<AllowedPackageGroups value="SDK" />
+		</item>
+		
+ // EI End -->
+
+	</Weapon>
+
+	<!-- EXPLOSIVES -->
+	<Explosive>
+	<!-- // EI Begin
+	
+		<item name="RocketLauncher">
+			<Name value="@mp_eRocketLauncher" />
+			<TypeName value="@ui_loadout_type_explosive" />
+			<Description value="@ui_loadout_rocketlauncher_desc" />
+			<AllowedPackageGroups value="SDK" />
+		</item>
+
+		<item name="FragGrenades">
+			<Name value="@mp_eFragGrenades" />
+			<TypeName value="@ui_loadout_type_explosive" />
+			<Description value="@ui_loadout_grenades_desc" />
+			<AllowedPackageGroups value="SDK" />
+		</item>
+
+		<item name="SmokeGrenades">
+			<Name value="@mp_eSmokeGrenades" />
+			<TypeName value="@ui_loadout_type_explosive" />
+			<Description value="@ui_loadout_smokegrenades_desc" />
+			<AllowedPackageGroups value="SDK" />
+		</item>	
+		
+ // EI End -->		
+	</Explosive>
+
+  	<!-- ATTACHMENTS -->  <!-- 0:Scopes, 1:Barrel 2:Under-Barrel, (3:Weapon Skins *special case, don't use here*) -->
+	<Attachment>
+	<!-- // EI Begin
+	
+			<item name="Flashlight" >
+			<Name value="@mp_eFlashlight" />
+			<Description value="@ui_loadout_att_flashlight_desc" />
+			<Subcategory value="2" />
+			<AllowedPackageGroups value="SDK" />
+		</item>
+ // EI End -->	
+ 
+	</Attachment>
+</loadouts>

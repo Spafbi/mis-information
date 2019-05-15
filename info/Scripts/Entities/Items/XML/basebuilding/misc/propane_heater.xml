@@ -1,0 +1,54 @@
+<item name="propane_heater" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="7.5"/>
+		<param name="display_name" value="@propane_heater"/>
+		<param name="description" value="@propane_heaterDescription"/>
+	</params>
+
+	<base_part class="static" type="260" name="propane_heater" max_health="1000" repair_with="ScrapMetal">
+		<static filename="Objects/basebuilding/other/propane_heater/propane_heater.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="glow" light_bulb_size="0.05" light_radius="0.12" light_cast_shadows="0" light_view_dist_ratio="20" light_color="1.0,0.13,0.04" light_diff_mul="4"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-4,-4,-2" bb2="4,4,3.5" temperature="45" light="0.1" humidity="-0.5" rain="-0.1"/>
+				</envareas>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="glow" effect="fire.bpart.dws.propane_heater"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="toggle_light">
+				<toggle_light sound_on="" sound_off=""/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/other/propane_heater/propane_heater.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/propane_heater_200.png?crc=DC467F86"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30238"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/propane_heater_2048.png?crc=DC467F86"/>
+	</steam>
+</item>
