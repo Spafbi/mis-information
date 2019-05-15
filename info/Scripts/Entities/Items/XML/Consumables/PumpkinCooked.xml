@@ -1,0 +1,30 @@
+<item name="PumpkinCooked" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@PumpkinCooked"/>
+		<param name="description" value="@PumpkinCookedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/pumpkin/mini_pumpkin.cgf" material="Objects/consumables/pumpkin/pumpkin_cooked"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="PumpkinBurned"/>
+		<param name="cookedTime" value="100"/>
+		<param name="foodAmount" value="240"/>
+		<param name="drinkAmount" value="25"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

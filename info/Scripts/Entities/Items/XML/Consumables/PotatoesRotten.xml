@@ -1,0 +1,37 @@
+<item name="PotatoesRotten" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@PotatoesRotten"/>
+		<param name="description" value="@PotatoesRottenDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/potato/potato_pile_rotten.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="poisonChance" value="95"/>
+		<param name="torpidityAmount" value="40"/>
+		<param name="staminaAmount" value="-40"/>
+		<param name="foodAmount" value="110"/>
+		<param name="drinkAmount" value="1"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<usable>
+		<param name="title" value="@PotatoesRottenFertilizePlanter"/>
+		<param name="action" value="fertilize"/>
+		<param name="soundUsed" value="Play_apply_fertilizer"/>
+		<param name="targetClassNames" value="planter_box"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

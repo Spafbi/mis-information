@@ -1,0 +1,57 @@
+<item name="ScarfPatternB" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@ScarfPatternB"/>
+		<param name="description" value="@ScarfPatternBDescription"/>
+	</params>
+
+	<geometry>
+		<onground name="Objects/characters/players/male/neck/scarf/scarf_onground.cgf" material="Objects/characters/players/male/neck/scarf/scarf_pattern_b.mtl"/>
+	</geometry>
+
+    <protection level="1">
+        <environmental>
+            <protection_amount type="cold" percentage="5"/>
+            <protection_amount type="heat" percentage="2"/>
+        </environmental>
+    </protection>
+
+	<wearable>
+		<param name="skin" value="Objects/characters/players/male/neck/scarf/scarf.skin"/>
+		<param name="mtl" value="Objects/characters/players/male/neck/scarf/scarf_pattern_b"/>
+		<param name="slot" value="neck"/>
+	</wearable>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="neck"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Neck"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ScarfPatternB_200.png?crc=D629E50A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="40466"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Neck"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/ScarfPatternB_2048.png?crc=D629E50A"/>
+	</steam>
+</item>

@@ -1,0 +1,73 @@
+<ammo name="Flare" class="Bullet">
+	<geometry>
+		<firstperson name="objects/ammo/12Gauge_Flare/flare_projectile.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="1" />
+	</flags>
+
+	<physics type="rigid">
+		<param name="mass" value="0.001" />
+		<param name="speed" value="100" />
+		<param name="max_logged_collisions" value="2" />
+		<param name="traceable" value="1" />
+		<param name="material" value="mat_plastic" />
+	</physics>
+
+	<!-- ADAM: Testing particle setup, floats for much longer but PFX needs physics setup -->
+	<!--<physics type="particle">
+		<param name="mass" value="0.25" />
+		<param name="speed" value="50" />
+		<param name="radius" value="1" />
+		<param name="air_resistance" value="0.25" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -4" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_plastic" />
+		<param name="single_contact" value="0" />
+		<param name="min_bounce_speed" value="1" />
+		<param name="traceable" value="1" />
+		<param name="pierceability" value="0" />
+		<pierceabilityLevels>
+			<param name="level3" value="0" />
+			<param name="level2" value="51" />
+			<param name="level1" value="100" />
+			<param name="maxPenetrationThickness" value="0.3" />
+		</pierceabilityLevels>
+	</physics>-->
+
+	<trail>
+		<param name="effect" value="weapon_fx.flaregun.flare" />
+		<param name="scale" value="1" />
+	</trail>
+
+	<chemlight>
+		<param name="color" value="255,0,0" />
+		<param name="radius" value="50.0" />
+		<param name="diffuseMult" value="100" />
+		<param name="specularMult" value="0.01" />
+		<param name="HDRDynamic" value="0.0" />
+		<param name="style" value="10" />
+		<param name="animSpeed" value="1" />
+		<param name="castShadows" value="1" />
+		<param name="light_bulb_size" value="1.5" />
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics" />
+		<param name="lens_flare_name" value="miscreated.flaregun.flare" />
+		<param name="lens_flare_fov" value="360" />
+	</chemlight>
+
+	<params>
+		<param name="hit_type" value="Flare" />
+		<param name="damage" value="40" />
+		<param name="knocks_target" value="0"/>
+		<param name="min_damage_for_knockDown" value="0"/>
+		<param name="min_damage_for_knockDown_leg" value="0"/>
+		<param name="bleed_percent" value="0" />
+		<param name="lifetime" value="120.0" />
+		<param name="showtime" value="0.5" />
+		<param name="quietRemoval" value="1" />
+		<param name="bulletType" value="1" /> <!-- Bullet Type 2 - Assault rifle bullet -->
+	</params>
+</ammo>

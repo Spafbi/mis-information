@@ -1,0 +1,27 @@
+<item name="MRE" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.75"/>
+		<param name="display_name" value="@MRE"/>
+		<param name="description" value="@MREDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/rations/rations.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="750"/>
+		<param name="drinkAmount" value="300"/>
+		<param name="soundConsumed" value="Play_food_hard_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,39 @@
+<item name="Pyrite" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="1.0" />
+		<param name="stack_size" value="64" />		
+		<param name="display_name" value="@Pyrite" />
+		<param name="description" value="@PyriteDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/pyrite/pyrite.cgf"/>
+	</geometry>
+
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1" />
+		<param name="cookedItem" value="Sulphur" />
+		<param name="cookedTime" value="60" />	
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@PyriteSmeltInFurnace"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="stone_furnace"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

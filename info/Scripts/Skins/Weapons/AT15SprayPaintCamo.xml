@@ -1,0 +1,27 @@
+<skin name="AT15SprayPaintCamo">
+
+	<params>
+		<param name="display_name" value="AT-15 Camo Spray"/>
+		<param name="description" value="A camo spray painted AT-15"/>
+		<param name="material" value="objects/weapons/at15/at15_spraypaint_camo"/>
+	</params>
+
+	<items>
+		<item name="AT15"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AT15SprayPaintCamo_200.png?crc=D219392B"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200014"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AT15SprayPaintCamo_2048.png?crc=D219392B"/>
+	</steam>
+</skin>

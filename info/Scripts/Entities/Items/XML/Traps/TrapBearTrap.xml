@@ -1,0 +1,53 @@
+<item name="TrapBearTrap" class="Trap" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrapBearTrap"/>
+		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="TrapBearTrapPacked"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/beartrap/trap_beartrap.cgf"/>
+		<thirdpersonAux name="Objects/traps/beartrap/trap_beartrap_triggered.cgf"/>
+	</geometry>
+
+	<trap>
+		<!-- only one of these two should be set to 1 (true) -->
+		<param name="destroy_when_triggered" value="0"/> <!-- default is 1-->
+		<param name="disable_when_triggered" value="1"/> <!-- recommended to use thirdpersonAux as well if this is set -->
+
+		<!--<param name="sound_triggered" value="Play_bearTrap_close" />-->
+		<param name="sound_reset" value="Play_bearTrap_set"/>
+
+		<param name="trigger_proxy_offset" value="0,0,0"/>
+		<param name="trigger_proxy_size" value="1,1,0.5"/>
+	</trap>
+
+	<explosion>
+		<param name="damage" value="40"/>
+		<param name="torpidity" value="0"/>
+		<param name="stamina" value="0"/>
+		<param name="min_radius" value="1.4"/>
+		<param name="max_radius" value="1.5"/>
+		<param name="min_phys_radius" value="0.1"/>
+		<param name="max_phys_radius" value="0.2"/>
+		<param name="sound_radius" value="10"/>
+		<param name="pressure" value="1"/>
+		<param name="effect" value="traps.beartrap.shut"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="0"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+</item>

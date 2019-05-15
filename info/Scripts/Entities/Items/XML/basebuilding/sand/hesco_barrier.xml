@@ -1,0 +1,39 @@
+<item name="hesco_barrier" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@hesco_barrier"/>
+		<param name="description" value="@hesco_barrierDescription"/>
+	</params>
+
+	<base_part class="static" type="236" name="hesco_barrier" max_health="3000" repair_with="ScrapMetal">
+		<static filename="objects/basebuilding/sand/hesco_barrier/hesco_bpart.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/sand/hesco_barrier/hesco_bpart_packed.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/hesco_barrier_200.png?crc=DC657CD3"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30247"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/hesco_barrier_2048.png?crc=DC657CD3"/>
+	</steam>
+</item>

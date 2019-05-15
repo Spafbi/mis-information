@@ -1,0 +1,41 @@
+<HitTypes>
+	<!-- Also add these to hitDeathTags.xml -->
+	<!-- NOTE: Any new types adjust the PlotSign.xml to added correct damage scaling for it -->
+	<!-- Hard-coded also in GameRules.h @ RESERVED_HIT_TYPES -->
+	<hit_type name="event" flags="SinglePlayerOnly"/>
+	<hit_type name="impulse_hit" flags="SinglePlayerOnly"/>
+	<hit_type name="disableCollisions" flags="Server"/>
+	<hit_type name="bullet" flags="ValidationRequired"/>
+	<hit_type name="heavyBullet" flags="ValidationRequired"/>
+	<hit_type name="explosion" flags="ValidationRequired"/>
+	<hit_type name="frag" flags="ValidationRequired"/>
+	<hit_type name="fire" flags="ValidationRequired"/>
+	<hit_type name="acid" flags="ValidationRequired"/>
+	<hit_type name="ammo_10mm" flags="ValidationRequired"/>
+	<hit_type name="ammo_12_gauge_beanbag" flags="ValidationRequired"/>
+	<hit_type name="ammo_12_gauge_pellet" flags="ValidationRequired"/>
+	<hit_type name="ammo_12_gauge_slug" flags="ValidationRequired"/>
+	<hit_type name="ammo_22" flags="ValidationRequired"/>
+	<hit_type name="ammo_223" flags="ValidationRequired"/>
+	<hit_type name="ammo_308" flags="ValidationRequired"/>
+	<hit_type name="ammo_357" flags="ValidationRequired"/>
+	<hit_type name="ammo_5_45x39" flags="ValidationRequired"/>
+	<hit_type name="ammo_5_56x45" flags="ValidationRequired"/>
+	<hit_type name="ammo_5_70x28" flags="ValidationRequired"/>
+	<hit_type name="ammo_7_62x39" flags="ValidationRequired"/>
+	<hit_type name="ammo_7_62x51" flags="ValidationRequired"/>
+	<hit_type name="ammo_9mm" flags="ValidationRequired"/>
+	<hit_type name="ammo_acp_45" flags="ValidationRequired"/>
+	<hit_type name="ammo_rock_lge" flags="ValidationRequired"/>
+	<hit_type name="ammo_rock_sml" flags="ValidationRequired"/>
+	<hit_type name="ammo_tranquilizer_dart" flags="ValidationRequired"/>
+	<hit_type name="ammo_venom_spit" flags=""/>
+	<hit_type name="arrow" flags="ValidationRequired"/>
+	<hit_type name="blunt" flags="IsMeleeAttack"/>
+	<hit_type name="flare" flags="ValidationRequired"/>
+	<hit_type name="hammer" flags="IsMeleeAttack"/>
+	<hit_type name="hatchet" flags="IsMeleeAttack"/>
+	<hit_type name="knife" flags="IsMeleeAttack"/>
+	<hit_type name="pickaxe" flags="IsMeleeAttack"/>
+	<hit_type name="torch" flags="IsMeleeAttack"/>
+</HitTypes>

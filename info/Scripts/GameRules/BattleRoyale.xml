@@ -1,0 +1,56 @@
+<Mode name='BattleRoyale'>
+
+	<StatsRecording class='StandardStatsRecording' />
+
+	<Spawning class='BattleRoyaleSpawning' teamGame='0' teamSpawnsType='None' midRoundJoining='0' usingLua='0' />
+
+	<!-- No Scoring in BattleRoyale -->
+	<!--
+	<Scoring class='StandardScoring'>
+		<Player>
+			<Event type='PlayerKill' points='200' xp='200' />
+		</Player>
+	</Scoring> 
+	-->
+
+	<!-- No ScoreRewards in BattleRoyale -->
+	<!-- <ScoreRewards enabled='1' /> -->
+
+	<!-- No AssistScoring in BattleRoyale -->
+	<!-- <AssistScoring class='AssistScoring' maxTimeBetweenAttackAndKillForAssist='7000'  maxAssistScore='99' assistScoreMultiplier='0.5'/> -->
+
+	<PlayerStats class='StandardPlayerStats' recordTimeSurvived='1' />
+
+	<State class='BattleRoyaleState'>
+		<StartStrings startMatch='ui_msg_br_matchstart' />
+	</State>
+
+	<VictoryConditions class='BattleRoyaleVictoryConditions' killsAsScore='1' />
+
+	<PlayerSetup class='BattleRoyaleSetup' />
+
+	<DamageHandling class='MPDamageHandling'>
+		<Table path='Scripts/GameRules/MPDamageTable.xml' />
+	</DamageHandling>
+
+	<ActorAction class='MPActorAction' />
+
+	<!--
+	<Spectator class='MPSpectator' eatsActorActions='1' enableFree='1' enableFollow='1' enableKiller='1' enableFollowWhenNoLivesLeft='1' serverAlwaysAllowsSpectatorModeChange='1' timeFromDeathTillAutoSpectate='5000' />
+
+	<Rounds class='BattleRoyaleRound' resetScores='1' suddenDeathTimeSecs='0' primaryTeamOverride='2' showKillcamAtEndOfRound='1' playMusicAtEndOfRound='0' showRoundStartingMessageEverySpawn='1' >
+		<EndStrings>
+			<Strings reason="TimeLimitReached" drawMessage="ui_msg_pred_time_out"/>
+			<Strings reason="ObjectivesCompleted" drawMessage="ui_msg_pred_all_marines_dead"/>
+		</EndStrings>
+
+		<PrimaryTeam>
+			<StartStrings startNewRoundHeader="ui_msg_pr_start_you_are_a" startNewRoundTeam='ui_msg_pr_start_predator' startNewRoundSmallBanner='ui_msg_hunter_start_attack' />
+		</PrimaryTeam>
+		<SecondaryTeam>
+			<StartStrings startNewRoundHeader="ui_msg_pr_start_you_are_a" startNewRoundTeam='ui_msg_pr_start_soldier' startNewRoundSmallBanner='ui_msg_hunter_start_defend' />
+		</SecondaryTeam>
+	</Rounds>
+	-->
+
+</Mode>

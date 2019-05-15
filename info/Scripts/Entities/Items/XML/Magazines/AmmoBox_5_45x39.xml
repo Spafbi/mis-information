@@ -1,0 +1,52 @@
+<item name="AmmoBox_5_45x39" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@AmmoBox_5_45x39"/>
+		<param name="description" value="@AmmoBox_5_45x39Description"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="75"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="ammo_5_45x39" amount="1" pile="Pile_545x39"/> <!-- how many projectiles are fired -->
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_load" value="Play_magazine_load"/>
+		<param name="sound_unload" value="Play_magazine_unload"/>
+	</magazine>
+
+	<geometry>
+		<onground name="Objects/equipment/ammo_box/ammo_box.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:AmmoBox"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AmmoBox_5_45x39_200.png?crc=1436C15E"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80070"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:AmmoBox"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AmmoBox_5_45x39_2048.png?crc=1436C15E"/>
+	</steam>
+</item>

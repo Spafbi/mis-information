@@ -1,0 +1,28 @@
+<skin name="HK45CoolBlue">
+ 
+    <params>
+        <param name="display_name" value="HK45 Cool Blue Camo"/>
+        <param name="description" value="A Fancy Blue camo for the HK45"/>
+        <param name="material" value="Objects/weapons/hk45/hk45_cool_blue"/>
+    </params>
+ 
+    <items>
+        <!-- List any items that this skin can be applied to  -->
+        <item name="hk45"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/HK45CoolBlue_200.png?crc=EE5FF883"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200012"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/HK45CoolBlue_2048.png?crc=EE5FF883"/>
+	</steam>
+</skin>

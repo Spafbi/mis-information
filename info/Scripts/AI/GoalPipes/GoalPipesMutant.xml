@@ -1,0 +1,291 @@
+<GoalPipes>
+
+	<GoalPipe name="MutantDirectPursue">
+		<FireCmd mode="Off" />
+		<Speed id="Sprint" />
+		<Stance id="Stand" />
+		<Stick continuous="true" constantSpeed="true" requestPartialPath="true" regenDistThreshold="0.1" />
+		<Script code="entity:CallBehaviorFunction('OnDirectPursueComplete')"/>
+	</GoalPipe>
+
+	<GoalPipe name="MutantMeleeAttackStart">
+		<Locate name="atttarget" />
+		<LookAt blocking="false" useLastOp="true" angleThreshold="1" useBodyDir="true" />
+		<FireCmd mode="Melee" />
+		<Timeout interval="1.0" />
+		<Script code="entity:CallBehaviorFunction('OnMeleeFailed')"/>
+	</GoalPipe>
+
+	<GoalPipe name="MutantMeleeAttackPerforming">
+		<FireCmd mode="Off" />
+		<Timeout interval="1.25" />
+		<Script code="entity:CallBehaviorFunction('OnMeleeFailed')"/>
+	</GoalPipe>
+	
+	<GoalPipe name="MutantMeleeAttackWait">
+		<Timeout interval="1.0" />
+		<Script code="entity:CallBehaviorFunction('OnMeleeWaitDone')"/>
+	</GoalPipe>
+
+	<GoalPipe name="MutantSpikerMelee">
+		<Timeout interval="2" />
+		<Script code="entity:CallBehaviorFunction('OnMeleeDone')"/>
+	</GoalPipe>
+	
+
+
+	<!--
+
+		<FireCmd mode="Off" />
+
+	<GoalPipe name="RunToRefPoint">
+		<Stance id="Stand"/>
+		<Speed id="Run"/>
+		<Strafe distance="0"/>
+		<Locate name="refpoint"/>
+		<Script code="entity:EnableCloak()" />
+		<Stick locateName="refpoint" distance="3" requestPartialPath="true" continuous="false" />
+		<Script code="entity:DisableCloak()" />
+		<Timeout intervalMin="0.0" intervalMax="1.0"/>
+		<Signal name="OnReferencePointReached"/>
+		<Timeout interval="2.0"/>
+	</GoalPipe>
+
+	<GoalPipe name="GuardianLookAtRefPoint">
+		<Locate name="refpoint"/>
+		<LookAt blocking="false" useLastOp="true" useBodyDir="true"/>
+		<Timeout intervalMin="2.0" intervalMax="4.0"/>
+		<Signal name="OnLookAtDone"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerTryAdvPointsAroundSearchSpot">
+		<TacticalPos blocking="true" name="StalkerAdvPointsAroundSearchSpot" register="RefPoint"/>
+		<If IF_LASTOP_SUCCEED="">
+			<Stance id="Alerted"/>
+			<Speed id="Run"/>
+			<Strafe distance="0"/>
+			<Locate name="refpoint"/>
+			<Stick blocking="true" distance="0" useLastOp="true" requestPartialPath="true"/>
+			<Script code="entity:CallBehaviorFunction('OnAdvPointReached')"/>
+		<Else/>
+			<Script code="entity:CallBehaviorFunction('OnNoAdvPointsAroundSearchSpot')"/>
+		</If>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerSearchSpotFromAdvPoint">
+		<Timeout intervalMin="0.5" intervalMax="1.0"/>
+		<Locate name="refpoint"/>
+		<LookAt blocking="false" useLastOp="true" useBodyDir="true"/>
+		<Timeout intervalMin="1.5" intervalMax="2.5"/>
+		<Script code="entity:CallBehaviorFunction('OnTrySoftPing')"/>
+		<Timeout intervalMin="1.0" intervalMax="3.5"/>
+ 		<Script code="entity:CallBehaviorFunction('GoToNextSearchSpot')"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerGoToSearchSpot">
+		<Stance id="Alerted"/>
+		<Speed id="Run"/>
+		<Strafe distance="0"/>
+		<Locate name="refpoint"/>
+		<Stick blocking="true" distance="0" useLastOp="true" requestPartialPath="true"/>
+		<Signal name="OnSearchSpotReached"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerSearchSpot">
+		<Timeout intervalMin="0.5" intervalMax="1.0"/>
+		<Script code="entity:CallBehaviorFunction('OnTrySoftPing')"/>
+		<Timeout intervalMin="0.5" intervalMax="1.5"/>
+ 		<Script code="entity:CallBehaviorFunction('GoToNextSearchSpot')"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerLookAtDetectedTarget">
+		<Timeout intervalMin="0.25" intervalMax="0.75"/>
+		<Locate name="refpoint"/>
+		<LookAt blocking="false" useLastOp="true" useBodyDir="true"/>
+ 		<Timeout intervalMin="3.0" intervalMax="5.0"/>
+ 		<Script code="entity:CallBehaviorFunction('GoToNextSearchSpot')"/>
+	</GoalPipe>
+
+  <GoalPipe name="LookInDirOfDeadMember">
+    <Timeout intervalMin="0.0" intervalMax="2.0" />
+    <Stance id="Alerted" />
+    <Timeout intervalMin="0.5" intervalMax="3.0" />
+    <Locate name="refpoint" />
+    <LookAt continuous="false" useBodyDir="true" useLastOp="true" angleThreshold="5" />
+    <Script code="entity:CallBehaviorFunction('OnLookAtDone')"/>
+    <Timeout interval="999" />
+  </GoalPipe>
+
+	<GoalPipe name="StalkerLookAtAttentionTarget">
+		<Locate name="atttarget" />
+		<LookAt useLastOp="true" angleThreshold="1" useBodyDir="true" />
+		<Timeout interval="999.9" />
+	</GoalPipe>
+
+	<GoalPipe name="StalkerLookAtRefPoint">
+		<Locate name="refpoint" />
+		<LookAt useLastOp="true" angleThreshold="1" useBodyDir="true" />
+		<Timeout interval="999.9" />
+	</GoalPipe>
+
+	<GoalPipe name="StalkerSpectacularKillApproach">
+		<FireCmd mode="Off" />
+		<Speed id="Sprint" />
+		<Stance id="Stand" />
+		<Stick continuous="true" constantSpeed="true" requestPartialPath="true" regenDistThreshold="0.1" />
+		<Script code="entity:CallBehaviorFunction('OnSpectacularKillApproachComplete')"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerMeleeAttackPerforming">
+		<Timeout interval="5.0" />
+		<Script code="entity:CallBehaviorFunction('OnMeleeFailed')"/>
+	</GoalPipe>
+	
+	<GoalPipe name="StalkerMeleeAttackWait">
+		<FireCmd mode="BurstWhileMoving" />
+		<Timeout interval="1.0" />
+		<Script code="entity:CallBehaviorFunction('OnWaitDone')"/>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerCocky">
+		<Timeout interval="1.5" />
+		<FireCmd mode="Melee" />
+		<Speed id="Walk" />
+		<Stance id="Stand" />
+		<Locate name="atttarget" />
+		<Stick distance="0" useLastOp="true" requestPartialPath="true" regenDistThreshold="0.1" />
+	</GoalPipe>
+	
+	<GoalPipe name="StalkerJumpMiss">
+		<FireCmd mode="Melee" />
+		<Speed id="Walk" />
+		<Stance id="Stand" />
+		<Locate name="atttarget" />
+		<Stick distance="0" useLastOp="true" requestPartialPath="true" regenDistThreshold="0.1" />
+	</GoalPipe>
+
+	<GoalPipe name="StalkerStalk">
+		<FireCmd mode="Off" />
+		<Stance id="Stand" />
+		<Locate name="probtarget" />
+		<TacticalPos name="StalkerStalkQuery" register="Cover" />
+		<If IF_LASTOP_SUCCEED="">
+			<Hide register="Cover" />
+			<If IF_LASTOP_FAILED="">
+				<Script code="entity:CallBehaviorFunction('OnNoPathToCover')"/>
+				<Timeout interval="2.0" />
+			</If>
+		<Else/>
+			<Script code="entity:CallBehaviorFunction('OnNoGoodStalkCover')"/>
+			<Timeout interval="2.0" />
+		</If>
+	</GoalPipe>
+	
+	<GoalPipe name="StalkerFront">
+		<FireCmd mode="Off" />
+		<Group>
+			<Loop>
+				<Script code="entity:CallBehaviorFunction('AnalyzeSituation')"/>
+				<Speed id="Sprint" />
+				<Stance id="Stand" />
+				<Strafe distanceStart="3" distanceEnd="0" strafeWhileMoving="true" />
+				<TacticalPos name="StalkerFrontQuery" register="Cover" />
+				<If IF_LASTOP_SUCCEED="">
+					<Hide register="Cover" />
+					<FireCmd mode="Off" />
+					<Timeout interval="2.0" />
+				<Else/>
+					<Script code="entity:CallBehaviorFunction('OnFrontQueryFailed')"/>
+					<Timeout interval="2.0" />
+				</If>
+				<Script code="entity:DisruptCloak(false, 0.5)" />
+			</Loop>
+		</Group>
+	</GoalPipe>
+	
+	<GoalPipe name="StalkerFlank">
+		<FireCmd mode="Off" />
+		<Group>
+			<Loop>
+				<Script code="entity:CallBehaviorFunction('AnalyzeSituation')"/>
+				<Speed id="Sprint" />
+				<Stance id="Stand" />
+				<TacticalPos name="StalkerFlankQuery" register="Cover" />
+				<If IF_LASTOP_SUCCEED="">
+					<Hide register="Cover" />
+					<FireCmd mode="Off" />
+					<Timeout interval="3.0" />
+				<Else/>
+					<Script code="entity:CallBehaviorFunction('OnNoGoodFlankSpots')"/>
+					<Timeout interval="0.5" />
+					<Stick continuous="true" duration="2.0" requestPartialPath="true" regenDistThreshold="0.1" />
+				</If>
+			</Loop>
+		</Group>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerApproach">
+		<Group>
+			<FireCmd mode="Off" />
+			<Stance id="Stand" />
+			<Speed id="Sprint" />
+			<Locate name="probtarget" />	
+			<Stick distance="0" useLastOp="true" requestPartialPath="true" regenDistThreshold="0.1" />
+			<If IF_LASTOP_SUCCEED="">
+				<Script code="entity:CallBehaviorFunction('OnApproachDone')"/>
+			</If>
+			<Timeout interval="1.0" />
+		</Group>
+	</GoalPipe>
+
+	<GoalPipe name="StalkerTaunt">
+		<Loop>
+			<Group>
+				<Locate name="probtarget" />
+				<LookAt continuous="false" useBodyDir="false" useLastOp="true"/>
+				<Script code="entity:PlayTaunt()" />
+				<Timeout interval="0.2" />
+				<Script code="if (entity.Behavior.OnTauntDone) then entity.Behavior:OnTauntDone(entity) end" />
+				<Timeout interval="2.0" />
+			</Group>
+		</Loop>
+	</GoalPipe>
+
+  <GoalPipe name="StalkerJumpSuccess">
+    <Locate name="probtarget"/>
+    <LookAt continuous="false" useBodyDir="true" useLastOp="true"/>
+	<Communicate name="comm_melee_taunt" channel="PersonalImmediate" expirity="1.0"/>
+    <Script code="if (entity.Behavior.OnTauntDone) then entity.Behavior:OnTauntDone(entity) end" />    
+    <Timeout interval="2.0" />    
+  </GoalPipe>  
+  
+	<GoalPipe name="StalkerUnderPressureHide">
+		<FireCmd mode="BurstWhileMoving" />
+		<Speed id="Sprint" />
+		<Stance id="Stand" />
+		<Strafe strafeWhileMoving="true" distanceStart="4" distanceEnd="0" />
+		<Locate name="probtarget" />
+		<Group>
+			<TacticalPos name="StalkerPressureQuery" register="Cover" />
+			<If IF_LASTOP_SUCCEED="">
+				<Hide register="Cover" />
+			<Else/>
+				<Script code="entity:CallBehaviorFunction('OnStalkerPressureQueryFailed')"/>
+				<Timeout interval="2.0" />
+			</If>
+			<Timeout interval="4.0" />
+		</Group>
+	</GoalPipe>
+	
+	<GoalPipe name="StalkerUnderPressureInCover">
+		<FireCmd mode="Off" />
+		<Speed id="Run" />
+		<Stance id="LowCover" />
+		<Loop>
+			<Timeout interval="1" />
+		</Loop>
+	</GoalPipe>
+
+-->
+	
+</GoalPipes>

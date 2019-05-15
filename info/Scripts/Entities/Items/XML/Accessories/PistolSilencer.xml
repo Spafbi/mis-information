@@ -1,0 +1,37 @@
+<item name="PistolSilencer" class="Item" category="any">
+	<params>
+		<param name="display_name" value="@PistolSilencer"/>
+		<param name="description" value="@PistolSilencerDescription"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.25"/>
+		<param name="tag" value="silencer"/>
+		<param name="hide_as_attachment" value="0"/>
+		<param name="dontRotateOnSpawn" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/weapons/attachments/rifle_silencer/rifle_silencer.cgf" scale="0.75"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="b_end_pistol"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PistolSilencer_200.png?crc=01F8B492"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="20008"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PistolSilencer_2048.png?crc=01F8B492"/>
+	</steam>
+</item>

@@ -1,0 +1,39 @@
+<item name="Aspirin" class="Consumable" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@Aspirin"/>
+		<param name="description" value="@AspirinDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/aspirin/aspirin.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="torpidityAmount" value="-33"/>
+		<param name="soundConsumed" value="Play_pills_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Medical"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Aspirin_200.png?crc=B055532F"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70004"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Medical"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Aspirin_2048.png?crc=B055532F"/>
+	</steam>
+</item>

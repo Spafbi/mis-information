@@ -1,0 +1,30 @@
+<item name="PotatoesCooked" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@PotatoesCooked"/>
+		<param name="description" value="@PotatoesCookedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/potato/potato_pile.cgf" material="Objects/consumables/potato/potato_cooked"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="PotatoesBurned"/>
+		<param name="cookedTime" value="100"/>
+		<param name="foodAmount" value="210"/>
+		<param name="drinkAmount" value="30"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

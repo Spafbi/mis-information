@@ -1,0 +1,14 @@
+<skin name="Cleaver_Bloody">
+ 
+    <params>
+        <param name="display_name" value="Cleaver Bloody Skin"/>
+        <param name="description" value="Cleaver Bloody Skin"/>
+        <param name="material" value="Objects/weapons/cleaver/cleaver_bloody"/>
+    </params>
+ 
+    <items>
+        <item name="Cleaver"/>
+    </items>
+
+	
+</skin>

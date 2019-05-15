@@ -1,0 +1,450 @@
+<item name="M40A5" class="Weapon" category="primary" priority="1" weaponParams="1">
+	<params>
+		<param name="display_name" value="@M40A5"/>
+		<param name="description" value="@M40A5Description"/>
+		<param name="itemClass" value="m40a5"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="7.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="20"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="1"/> <!-- Delay for 1s after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/> <!-- Visually attaches the weapon to the players back in 3rd person view, when unselected -->
+		<param name="has_first_select" value="1"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="1.1"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.2"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.2"/>
+		<param name="relaxedToTacticalBlendTime" value="0.5"/>
+		<param name="tag" value="m40a5"/>
+		<param name="adb" value="m40a5WeaponAnims.adb"/>
+		<animPrecache name="m40a5">
+			<precache DBAFile="animations/weapons/m40a5/m40a5.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/m40a5/m40a5_1p.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/m40a5/m40a5_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
+	<MovementModifiers speedScale="0.875" speedScaleTactical="0.775"/>
+
+	<magazines>
+		<magazine name="M40x5"/>
+	</magazines>
+
+	<geometry>
+		<firstperson name="Objects/weapons/m40/m40a5.cdf"/>
+		<thirdperson name="Objects/weapons/m40/m40a5.cdf"/>
+		<onground name="Objects/weapons/m40/m40a5_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode type="default">
+			<fire>
+				<param name="hit_type" value="ammo_7_62x51"/> <!-- Name of the hit type. This is used to set damage done to vehicles in vehicle XMLs -->
+				<param name="ammo_type" value="ammo_7_62x51"/> <!-- Type of bullet the weapon will fire -->
+				<param name="rate" value="24"/> <!-- Rate of fire for the weapon (bullets fired per minute) -->
+				<param name="damage" value="80"/>
+				<param name="bullet_chamber" value="1"/> <!-- Indicates whether the weapon has a bullet in the bullet chamber after reload (basically an extra bullet) -->
+				<param name="helper_tp" value="weapon_term"/>
+				<param name="knocks_target" value="0"/>
+				<param name="min_damage_for_knockDown" value="0"/>
+				<param name="min_damage_for_knockDown_leg" value="10"/>
+				<param name="holdbreath_ffeedback_damp" value="1.0"/>
+				<param name="holdbreath_fire_anim_damp" value="1.0"/>
+				<param name="ironsight_fire_anim_damp" value="1"/>
+				<param name="stabilization" value="0.0"/>
+				<param name="tag" value="single"/>
+				<param name="sound_radius" value="250"/>
+			</fire>
+			<recoil>
+				<param name="max_recoil" value="1"/> <!-- Maximum recoil for the weapon in any direction -->
+				<param name="first_attack" value="0.4"/> <!-- Attack value for the first bullet fired -->
+				<param name="attack" value="0.4"/> <!-- Amount of recoil per shot (must be less than max) -->
+				<param name="decay" value="99"/> <!-- Speed at which your gun returns to its normal position after firing. Lower is faster -->
+				<param name="end_decay" value="0.4"/> <!-- Decay value for the last bullet fired -->
+				<param name="maxx" value="1.8"/> <!-- Max recoil on the X (backwards, causes upwards recoil) axis -->
+				<param name="maxy" value="8.0"/> <!-- Max recoil on the Y (sideways) axis -->
+				<param name="randomness" value="0.2"/>
+				<param name="recoil_holdBreathActive_m" value="1.0"/>
+				<param name="recoil_crouch_m" value="1.0"/>
+				<param name="recoil_jump_m" value="0.5"/>
+				<hints>
+					<hint x="0.04" y="0.4"/>
+					<hint x="-0.24" y="0.36"/>
+					<hint x="0.03" y="0.4"/>
+					<hint x="-0.08" y="0.4"/>
+					<hint x="0.24" y="0.37"/>
+					<hint x="0.45" y="0.4"/>
+					<hint x="0.20" y="0.39"/>
+					<hint x="-0.12" y="0.39"/>
+					<hint x="-0.33" y="0.4"/>
+					<hint x="-0.08" y="0.38"/>
+					<hint x="0.2" y="0.4"/>
+					<hint x="-0.12" y="0.37"/>
+					<hint x="0.22" y="0.39"/>
+					<hint x="-0.07" y="0.4"/>
+				</hints>
+			</recoil>
+			<spread>
+				<param name="min" value="0.1"/> <!-- Minimum spread in all directions -->
+				<param name="max" value="1.0"/> <!-- Maximum spread in all directions -->
+				<param name="attack" value="1.25"/> <!-- Amount of spread per shot (Must be less than max) -->
+				<param name="decay" value="1.5"/> <!-- Speed at which the spread decreases. Lower is faster. Is active whenever your spread is above minimum, but is more noticeable when not firing -->
+				<param name="end_decay" value="0.2"/>
+				<param name="speed_m" value="1.25"/> <!-- Multiplies the current player velocity then adds it to the attack (or min?) - can go above the max spread -->
+				<param name="rotation_m" value="0.0"/> <!-- Amount of spread gained when moving mouse -->
+				<param name="spread_jump_m" value="1.0"/>
+				<param name="spread_crouch_m" value="0.8"/>
+				<param name="speed_holdBreathActive_m" value="1.0"/>
+				<param name="spread_holdBreathActive_m" value="1.0"/>
+			</spread>
+			<muzzleflash aiVisibilityRadius="2.0">
+				<thirdperson effect="weapon_fx.common.muzzle_flash_standard" helper="muzzleflash_effect"/>
+			</muzzleflash>
+			<muzzlesmoke>
+				<thirdperson effect="weapon_fx.common.barrel_smoke" helper="smoke_effect"/>
+			</muzzlesmoke>
+			<reject>
+				<thirdperson effect="weapon_fx.shells.7_62x51.shell_eject" helper="shells"/>
+			</reject>
+		</firemode>
+
+		<firemode name="Single" type="Single"/>
+
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.7"/>
+				<param name="damage" value="14"/> <!-- +2 from kick -->
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.51"/> <!-- Delay, in seconds, from when weapon is meleed until impact occurs -->
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.0"/> <!-- Essentially rate of fire for melee. Time, in seconds, between each melee action -->
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<zoommodes>
+		<zoommode type="default">
+			<zoomSway> <!-- This block is ignored in the "default" zoom mode. Has to be overridden below in "hipfire" -->
+				<param name="maxX" value=""/>
+				<param name="maxY" value=""/>
+				<param name="stabilizeTime" value=""/>
+				<param name="holdBreathScale" value=""/>
+				<param name="holdBreathTime" value=""/>
+				<param name="minScale" value=""/>
+				<param name="scaleAfterFiring" value=""/>
+				<param name="crouchScale" value=""/>
+				<param name="proneScale" value=""/>
+			</zoomSway>
+			<spreadMod> <!-- This whole block doesn't seem to work! -->
+				<param name="min_mod" value="0.1"/>
+				<param name="max_mod" value="0.25"/>
+				<param name="attack_mod" value="0.25"/>
+				<param name="decay_mod" value="0.35"/>
+				<param name="end_decay_mod" value="1.0"/>
+				<param name="speed_m_mod" value="0.20"/>
+				<param name="speed_holdBreathActive_m_mod" value="1.0"/>
+				<param name="rotation_m_mod" value="0.0"/>
+				<param name="spread_crouch_m_mod" value="1.0"/>
+				<param name="spread_jump_m_mod" value="1.0"/>
+				<param name="spread_holdBreathActive_m_mod" value="1.0"/>
+			</spreadMod>
+			<recoilMod>
+				<param name="max_recoil_mod" value="1.0"/>
+				<param name="attack_mod" value="1.0"/>
+				<param name="decay_mod" value="0.9"/>
+				<param name="end_decay_mod" value="0.9"/>
+				<param name="maxx_mod" value="0.8"/>
+				<param name="maxy_mod" value="0.5"/>
+				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_jump_m_mod" value="1.0"/>
+				<param name="recoil_holdBreathActive_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+			</recoilMod>
+		</zoommode>
+
+		<zoommode name="ironsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="1.33" rotationSpeedScale="0.75" movementSpeedScale="0.625"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="iron"/>
+				<param name="suffixAG" value="_iron"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.01"/>
+				<param name="maxY" value="0.005"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.015"/>
+				<param name="maxY" value="0.015"/>
+				<param name="stabilizeTime" value="3.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+
+		<zoommode name="opticscope" type="Scope" enabled="0">
+			<zoom>
+				<stages>
+					<stage value="4.0" rotationSpeedScale="0.5" movementSpeedScale="0.5"/> <!-- Reduce input sensitivity by 50% with optic scope, slow character movement -->
+				</stages>
+				<param name="suffix" value="optic"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_optic"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="iron" value="scope_"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="200.0"/>
+				<param name="dof_focusLimit" value="500.0"/>
+				<param name="dof_mask" value=""/>
+				<param name="dof_shoulderMinZ" value="0.17"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="2.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.4"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.25"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.0"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="scope_mode" value="1"/>
+				<param name="scope_nearFov" value="6"/>
+				<param name="hide_weapon" value="0"/> <!-- Hide the weapon (leaving only the scope in view) -->
+				<param name="muzzle_flash_scale" value="0.4"/>
+			</zoom>
+			<zoomSway> <!-- These DO work (Pure FP camera) -->
+				<param name="maxX" value="0.003"/> <!-- Horizontal sway (left/right) -->
+				<param name="maxY" value="0.0035"/> <!-- Vertical sway (up/down) -->
+				<param name="stabilizeTime" value="3.0"/> <!-- How long (in seconds) to stabilize the weapon to minScale -->
+				<param name="holdBreathScale" value="0.025"/> <!-- Overall (not additional multiplier) movement scale (should be less than minScale) -->
+				<param name="holdBreathTime" value="0.5"/> <!-- How long (in seconds) to stabilize the weapon to holdBreathScale (not additional multiplier of stabilizeTime) -->
+				<param name="minScale" value="0.1"/> <!-- Minimum scaled movement amount based off the maxX/Y -->
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.5"/> <!-- This is an additional multiplier of minScale -->
+				<param name="proneScale" value="0.5"/> <!-- This is an additional multiplier of minScale -->
+			</zoomSway>
+			<spreadMod>
+				<param name="min_mod" value="0.001"/>
+				<param name="max_mod" value="0.0025"/>
+				<param name="attack_mod" value="1.0"/>
+				<param name="decay_mod" value="0.1"/>
+				<param name="end_decay_mod" value="0.1"/>
+				<param name="speed_m_mod" value="0.25"/>
+				<param name="rotation_m_mod" value="0.25"/>
+				<param name="spread_crouch_m_mod" value="0.75"/>
+				<param name="spread_jump_m_mod" value="1.0"/>
+				<param name="spread_holdBreathActive_m_mod" value="0.1"/>
+				<param name="speed_holdBreathActive_m_mod" value="1.0"/>
+			</spreadMod>
+			<recoilMod>
+				<param name="max_recoil_mod" value="1.0"/>
+				<param name="attack_mod" value="1.0"/>
+				<param name="decay_mod" value="0.9"/>
+				<param name="end_decay_mod" value="0.9"/>
+				<param name="maxx_mod" value="0.8"/>
+				<param name="maxy_mod" value="0.5"/>
+				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_jump_m_mod" value="1.0"/>
+				<param name="recoil_holdBreathActive_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+			</recoilMod>
+			<scope>
+				<param name="dark_in_time" value="0"/> <!-- Time (in seconds) taken to switch to Aux1 scope model when initiating zoom -->
+				<param name="dark_out_time" value="0"/> <!-- Time (in seconds) taken to switch to FP scope model when leaving zoom -->
+			</scope>
+		</zoommode>
+
+		<zoommode name="huntingscope" type="Scope" enabled="0">
+			<zoom>
+				<stages>
+					<stage value="8.0" rotationSpeedScale="0.25" movementSpeedScale="0.5"/> <!-- Reduce input sensitivity by 75% with hunting scope, slow character movement -->
+				</stages>
+				<param name="suffix" value="hunting"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_hunting"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="iron" value="scope_"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="200.0"/>
+				<param name="dof_focusLimit" value="500.0"/>
+				<param name="dof_mask" value=""/>
+				<param name="dof_shoulderMinZ" value="0.17"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="2.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.4"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.25"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.0"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="scope_mode" value="1"/>
+				<param name="scope_nearFov" value="6"/>
+				<param name="hide_weapon" value="0"/> <!-- Hide the weapon (leaving only the scope in view) -->
+				<param name="muzzle_flash_scale" value="0.4"/>
+			</zoom>
+			<zoomSway> <!-- These DO work (Pure FP camera) -->
+				<param name="maxX" value="0.003"/> <!-- Horizontal sway (left/right) -->
+				<param name="maxY" value="0.0035"/> <!-- Vertical sway (up/down) -->
+				<param name="stabilizeTime" value="3.0"/> <!-- How long (in seconds) to stabilize the weapon to minScale -->
+				<param name="holdBreathScale" value="0.025"/> <!-- Overall (not additional multiplier) movement scale (should be less than minScale) -->
+				<param name="holdBreathTime" value="0.5"/> <!-- How long (in seconds) to stabilize the weapon to holdBreathScale (not additional multiplier of stabilizeTime) -->
+				<param name="minScale" value="0.1"/> <!-- Minimum scaled movement amount based off the maxX/Y -->
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.5"/> <!-- This is an additional multiplier of minScale -->
+				<param name="proneScale" value="0.5"/> <!-- This is an additional multiplier of minScale -->
+			</zoomSway>
+			<spreadMod>
+				<param name="min_mod" value="0.001"/>
+				<param name="max_mod" value="0.0025"/>
+				<param name="attack_mod" value="1.0"/>
+				<param name="decay_mod" value="0.1"/>
+				<param name="end_decay_mod" value="0.1"/>
+				<param name="speed_m_mod" value="0.25"/>
+				<param name="rotation_m_mod" value="0.25"/>
+				<param name="spread_crouch_m_mod" value="0.75"/>
+				<param name="spread_jump_m_mod" value="1.0"/>
+				<param name="spread_holdBreathActive_m_mod" value="0.1"/>
+				<param name="speed_holdBreathActive_m_mod" value="1.0"/>
+			</spreadMod>
+			<recoilMod>
+				<param name="max_recoil_mod" value="1.0"/>
+				<param name="attack_mod" value="1.0"/>
+				<param name="decay_mod" value="0.9"/>
+				<param name="end_decay_mod" value="0.9"/>
+				<param name="maxx_mod" value="0.8"/>
+				<param name="maxy_mod" value="0.5"/>
+				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_jump_m_mod" value="1.0"/>
+				<param name="recoil_holdBreathActive_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+			</recoilMod>
+			<scope>
+				<param name="dark_in_time" value="0"/> <!-- Time (in seconds) taken to switch to Aux1 scope model when initiating zoom -->
+				<param name="dark_out_time" value="0"/> <!-- Time (in seconds) taken to switch to FP scope model when leaving zoom -->
+				<param name="overlay_texture" value="Textures/Weapons/scope_peripheral_vision_diff.tif"/>
+				<param name="overlay_mode" value="0"/>
+				<param name="overlay_in_time" value="0.15"/>
+				<param name="overlay_out_time" value="0.1"/>
+			</scope>
+		</zoommode>
+	</zoommodes>
+
+	<accessories>
+		<!-- MAGAZINE -->
+		<accessory name="M40x5" category="magazine" exclusive="1">
+			<attach helper="mag_m40x5"/>
+			<detach/>
+			<show helper="mag_m40x5"/>
+		</accessory>
+		<!-- SCOPES -->
+		<accessory name="OpticScope" zoommode="opticscope" category="scope" exclusive="1">
+			<attach helper="optic_scope"/>
+			<detach/>
+		</accessory>
+		<accessory name="HuntingScope" zoommode="huntingscope" category="scope" exclusive="1">
+			<attach helper="hunting_scope"/>
+			<detach/>
+		</accessory>
+		<!-- BARREL END -->
+		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+		<accessory name="CraftedSilencer" category="barrelend" exclusive="1" health_reduction_per_shot="49.0"> <!-- CraftedSilencer has 50 HP -->
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+	</accessories>
+
+	<storage>
+		<locations>
+			<location category="primary"/>
+		</locations>
+		<types> <!-- Categories cannot be longer than 14 char! -->
+			<type category="m40_mag" capacity="1" visible="1"/>
+			<type category="scope_rifle" capacity="1" visible="1"/>
+			<type category="barrel_end" capacity="1" visible="1"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/M40A5_200.png?crc=BC26B1D1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="15"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110042"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/M40A5_2048.png?crc=BC26B1D1"/>
+	</steam>
+</item>

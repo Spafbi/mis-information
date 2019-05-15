@@ -1,0 +1,46 @@
+<item name="ExplosiveOilBarrel" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="85"/> <!-- Player cannot carry -->
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="display_name" value="@ExplosiveOilBarrel"/>
+		<param name="description" value="@ExplosiveOilBarrelDescription"/>
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="no_icon" value="1"/>
+		<param name="healthMax" value="35"/> <!-- required for explosion below to work -->
+		<param name="destroyWhenDegraded" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/OilBarrel/oilbarrel.cgf" material="Objects/props/OilBarrel/oilbarrel_red"/>
+	</geometry>
+
+	<explosion>
+		<param name="damage" value="50"/> <!-- max damage from explosion -->
+		<param name="pressure" value="4000"/> <!-- pressure wave force -->
+		<param name="min_radius" value="2"/> <!-- full damage up to this radius -->
+		<param name="max_radius" value="4"/> <!-- linear damage falloff from min to max -->
+		<param name="min_phys_radius" value="2.2"/> <!-- full pressure wave up to this radius -->
+		<param name="max_phys_radius" value="3"/> <!-- linear pressure wave falloff from min to max -->
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="explosions.jerrycan_diesel.burning"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="65"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+	<damage_area>
+		<param name="ground_particle_path" value="weapon_fx.molotov3.dummy"/>
+		<param name="ground_particle_duration" value="28"/>
+		<param name="ground_particle_effect_slot" value="5"/>
+		<param name="area_id" value="-5"/>
+		<param name="radius" value="2"/>
+		<param name="fire_duration" value="5.0"/>
+		<param name="fire_damage" value="3.0"/>
+		<param name="fire_incremental_duration" value="1.0"/>
+		<param name="body_fire_start_time" value="1.0"/>
+	</damage_area>
+
+</item>

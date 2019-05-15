@@ -1,0 +1,53 @@
+<item name="FlipFlops" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.25"/>
+		<param name="healthMax" value="35.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@FlipFlops"/>
+		<param name="description" value="@FlipFlopsDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/feet/flipflops/flipflops.skin"/>
+		<param name="mtl" value="objects/characters/players/male/feet/flipflops/flipflops.mtl"/>
+		<param name="slot" value="feet"/>
+	</wearable>
+	<geometry>
+		<onground name="objects/characters/players/male/feet/flipflops/flipflops_ground.cgf"/>
+	</geometry>
+
+    <protection level="0">
+        <environmental>
+            <protection_amount type="feet_sharp" percentage="5.0"/>
+            <protection_amount type="cold" percentage="1.0"/>
+            <protection_amount type="heat" percentage="4.0"/>
+			<protection_amount type="rain_acid" percentage="2"/>
+        </environmental>
+    </protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="feet"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/FlipFlops_200.png?crc=54AF08E2"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40076"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/FlipFlops_2048.png?crc=54AF08E2"/>
+	</steam>
+</item>

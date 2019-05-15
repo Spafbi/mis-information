@@ -1,0 +1,88 @@
+<item name="plated_column_torch_3m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="3"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@plated_column_torch_3m"/>
+		<param name="description" value="@plated_column_torch_3mDescription"/>
+	</params>
+
+	<base_part class="static" type="1072" name="plated_column_torch_3m" max_health="2500" repair_with="SheetMetal">
+		<static filename="objects/basebuilding/plated/plated_column_torch_3m.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="particle" light_bulb_size="0.05" light_radius="10" light_color="0.73,0.57,0.41" light_diff_mul="1" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.tiki_torch" lens_flare_fov="360"/>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="particle" effect="fire.flame.tiki_torch"/>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="lightable_light">
+				<lightable_light sound_on_trigger="" sound_off_trigger=""/>
+			</base_action>
+		</base_actions>
+
+		<damage_multipliers>
+			<damage_multiplier damage_type="collision" multiplier="0.1"/>
+			<damage_multiplier damage_type="explosion" multiplier="15.0"/>
+			<damage_multiplier damage_type="frag" multiplier="4"/>
+			<damage_multiplier damage_type="fire" multiplier="1.0"/>
+			<damage_multiplier damage_type="melee" multiplier="0.0"/>
+			<damage_multiplier damage_type="repair" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_10mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_beanbag" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_pellet" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_slug" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_22" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_223" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_308" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_357" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_45x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_56x45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_70x28" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x51" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_9mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_acp_45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_lge" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_sml" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_player" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_tranquilizer_dart" multiplier="0.0"/>
+			<damage_multiplier damage_type="arrow" multiplier="0.0"/>
+			<damage_multiplier damage_type="blunt" multiplier="0.0"/>
+			<damage_multiplier damage_type="flare" multiplier="0.0"/>
+			<damage_multiplier damage_type="hammer" multiplier="0.0"/>
+			<damage_multiplier damage_type="hatchet" multiplier="0.0"/>
+			<damage_multiplier damage_type="knife" multiplier="0.0"/>
+			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
+			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+		</damage_multipliers>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/plated_column_torch_3m_200.png?crc=5CDAC58B"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30036"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/plated_column_torch_3m_2048.png?crc=5CDAC58B"/>
+	</steam>
+</item>

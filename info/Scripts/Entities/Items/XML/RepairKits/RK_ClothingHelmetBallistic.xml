@@ -1,0 +1,57 @@
+<item name="RK_ClothingHelmetBallistic" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_ClothingHelmetBallistic"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_ClothingHelmetBallistic"/>
+		<param name="description" value="@RK_ClothingHelmetBallisticDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/repair_kits.cgf" Material="Objects/equipment/repairkits/repair_kits_black"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_ClothingHelmetBallistic" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="MilitaryHelmetGreen" percentage="100"/>
+		<item name="MilitaryHelmetGreenCamo1" percentage="100"/>
+		<item name="MilitaryHelmetGreenCamo2" percentage="100"/>
+		<item name="MilitaryHelmetGreenCamo3" percentage="100"/>
+		<item name="MilitaryHelmetGreenCamo4" percentage="100"/>
+		<item name="MilitaryHelmetTan" percentage="100"/>
+		<item name="MilitaryHelmetTanCamo1" percentage="100"/>
+		<item name="MilitaryHelmetTanCamo2" percentage="100"/>
+		<item name="MilitaryHelmetTanCamo3" percentage="100"/>
+		<item name="MilitaryHelmetTanCamo4" percentage="100"/>
+		<item name="MilitaryHelmetUrbanCamo1" percentage="100"/>
+		<item name="MilitaryHelmetUrbanCamo2" percentage="100"/>
+		<item name="MilitaryHelmetUrbanCamo3" percentage="100"/>
+		<item name="MilitaryHelmetUrbanCamo4" percentage="100"/>
+		<item name="SwatHelmet" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_ClothingHelmetBallistic_200.png?crc=38301084"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130004"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_ClothingHelmetBallistic_2048.png?crc=38301084"/>
+	</steam>
+</item>

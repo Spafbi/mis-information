@@ -1,0 +1,48 @@
+<ammo name="BabySpiderSelfDestruct" class="Grenade">
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="0.1" />
+		<param name="min_bounce_speed" value="0.5" />
+		<param name="single_contact" value="0" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_metal_grenade" />
+		<param name="pierceability" value="14" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="100" />
+		<param name="torpidity" value="0.5" />
+		<param name="poison_percent" value="15" />
+		<param name="stamina" value="15" />
+		<param name="acid" value="17" />
+		<param name="min_radius" value="1.5" />
+		<param name="max_radius" value="8" />
+		<param name="min_phys_radius" value="1" />
+		<param name="max_phys_radius" value="6" />
+		<param name="hole_size" value="1" />
+		<param name="terrain_hole_size" value="0.5" />
+		<param name="radialblurdist" value="15" />
+		<param name="type" value="acid" />
+	</explosion>
+
+	<params>
+		<param name="damage" value="3.0" />
+		<param name="lifetime" value="0.5"/>
+		<param name="showtime" value="0.05" />
+		<param name="aitype" value="grenade" />
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0" /> <!-- Don't decrease time to detonate just because it hit a surface -->
+		<param name="detonateOnImpact" value="0" />
+		<param name="detonateOnActorImpact" value="0" />
+		<param name="allowDetonationDelay" value="1" />
+	</grenade>
+</ammo>

@@ -1,0 +1,46 @@
+<ammo name="ChemlightGreen" class="Projectile">
+	<geometry>
+		<firstperson name="objects/weapons/chemlight/chemlight_green.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="rigid">
+		<param name="mass" value="0.1" />
+		<param name="speed" value="16" />
+		<param name="max_logged_collisions" value="1" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_plastic" />
+	</physics>
+
+	<chemlight>
+		<param name="color" value="0,255,0" />
+		<param name="radius" value="15.0" />
+		<param name="diffuseMult" value="10" />
+		<param name="specularMult" value="0.01" />
+		<param name="HDRDynamic" value="0.0" />
+		<param name="light_offset" value="0,0,0" />
+		<param name="light_rotation" value="0,90,0" />
+		<param name="style" value="10" />
+		<param name="animSpeed" value="1" />
+		<param name="castShadows" value="1" />
+		<param name="light_bulb_size" value="0.05" />
+		<param name="light_project_fov" value="360" />
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics" />
+		<param name="light_view_dist_ratio" value="10" />
+		<param name="light_volumetric_fog" value="0" />
+		<param name="lens_flare_name" value="miscreated.chemlight.flare" />
+		<param name="lens_flare_fov" value="360" />
+	</chemlight>
+
+	<params>
+		<param name="lifetime" value="300" />
+		<param name="showtime" value="0.15" />
+		<param name="quietRemoval" value="1" />
+	</params>
+</ammo>

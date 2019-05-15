@@ -1,0 +1,77 @@
+<item name="Pumpkin" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@Pumpkin"/>
+		<param name="description" value="@PumpkinDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/pumpkin/mini_pumpkin.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="PumpkinCooked"/>
+		<param name="cookedTime" value="100"/>
+		<param name="rottenItem" value="PumpkinRotten"/>
+		<param name="foodAmount" value="180"/>
+		<param name="drinkAmount" value="50"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@PumpkinCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@PumpkinCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@PumpkinCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@PumpkinCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@PumpkinCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@PumpkinCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<craftable>
+		<craft name="SurvivalKnife" craft="SeedsPumpkins" destroy="0"/>
+		<craft name="HuntingKnife" craft="SeedsPumpkins" destroy="0"/>
+	</craftable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

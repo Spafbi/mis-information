@@ -1,0 +1,27 @@
+<skin name="PX4_UrbanMarpatCamo">
+ 
+    <params>
+        <param name="display_name" value="PX4 Urban Marpat Camo Skin"/>
+        <param name="description" value="PX4 Urban Marpat Camo Skin"/>
+        <param name="material" value="Objects/weapons/px4/px4_urban_marpat_camo"/>
+    </params>
+ 
+    <items>
+        <item name="PX4"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PX4_UrbanMarpatCamo_200.png?crc=FB41143D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200109"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PX4_UrbanMarpatCamo_2048.png?crc=FB41143D"/>
+	</steam>
+</skin>

@@ -1,0 +1,28 @@
+<skin name="MagliteAluminium">
+ 
+    <params>
+        <param name="display_name" value="Aluminium Maglite"/>
+        <param name="description" value="An Aluminium Skin for the Maglite"/>
+        <param name="material" value="objects/weapons/maglite/maglite_silver_mat"/>
+    </params>
+ 
+    <items>
+        <item name="Maglite"/>
+        <item name="MagliteSmall"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MagliteAluminium_200.png?crc=CFF0DBDA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200017"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MagliteAluminium_2048.png?crc=CFF0DBDA"/>
+	</steam>
+</skin>

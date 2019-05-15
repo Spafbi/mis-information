@@ -1,0 +1,27 @@
+<skin name="Quadbike_White">
+
+	<params>
+		<param name="display_name" value="Quadbike White Skin"/>
+		<param name="description" value="White skin for the Quadbike"/>
+		<param name="material" value="Objects/vehicles/quadbike/quadbike_white"/>
+	</params>
+
+	<items>
+		<item name="quadbike"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Quadbike_White_200.png?crc=4659533A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="10"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300076"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Quadbike_White_2048.png?crc=4659533A"/>
+	</steam>
+</skin>

@@ -1,0 +1,58 @@
+<item name="PuffyJacketBlack" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.60"/>
+		<param name="healthMax" value="150.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="display_name" value="@PuffyJacketBlack"/>
+		<param name="description" value="@PuffyJacketBlackDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/jacket/puffy_jacket/puffy_jacket.skin"/>
+		<param name="mtl" value="objects/characters/players/male/jacket/puffy_jacket/puffy_jacket_black.mtl"/>
+		<param name="slot" value="vest"/>
+		<param name="length" value="1"/> <!-- 0 normal, 1=torso,arms, 2=1+legs, 3=2+hands,feet -->
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/jacket/puffy_jacket/puffy_jacket_onground.cgf" material="objects/characters/players/male/jacket/puffy_jacket/puffy_jacket_black"/>
+	</geometry>
+	
+	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="rain" percentage="20"/>
+			<protection_amount type="humidity" percentage="50"/>
+			<protection_amount type="rain_acid" percentage="10.0"/>
+			<protection_amount type="rain_radiation" percentage="10"/>
+			<protection_amount type="cold" percentage="25"/>
+			<protection_amount type="heat" percentage="-10"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="vest"/>
+		</locations>
+		<types>
+			<type category="any" capacity="4"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Jacket"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PuffyJacketBlack_200.png?crc=3B7F2737"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40345"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Jacket"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PuffyJacketBlack_2048.png?crc=3B7F2737"/>
+	</steam>
+</item>

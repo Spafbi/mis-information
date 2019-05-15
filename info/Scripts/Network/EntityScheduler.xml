@@ -1,0 +1,1886 @@
+<EntityScheduler>
+	<!-- game rules -->
+	<Class name="InstantAction" policy="rule"/>
+	<Class name="Miscreated" policy="rule"/>
+	<Class name="BattleRoyale" policy="rule"/>
+
+	<!-- vehicles -->
+	<Class name="VehicleSeatSerializer" policy="cart" own="own"/>
+	<Class name="armored_truck_army" policy="car" own="own"/>
+	<Class name="armored_truck_police" policy="car" own="own"/>
+	<Class name="bicycle" policy="car" own="own"/>
+	<Class name="dirtbike" policy="car" own="own"/>
+	<Class name="dune_buggy" policy="car" own="own"/>
+	<Class name="f100truck" policy="car" own="own"/>
+	<Class name="fishing_boat" policy="car" own="own"/>
+	<Class name="jetski" policy="car" own="own"/>
+	<Class name="party_bus" policy="car" own="own"/>
+	<Class name="quadbike" policy="car" own="own"/>
+	<Class name="sedan_base" policy="car" own="own"/>
+	<Class name="sedan_base_black" policy="car" own="own"/>
+	<Class name="sedan_base_green" policy="car" own="own"/>
+	<Class name="sedan_base_red" policy="car" own="own"/>
+	<Class name="sedan_base_yellow" policy="car" own="own"/>
+	<Class name="sedan_police" policy="car" own="own"/>
+	<Class name="sedan_taxi_blix" policy="car" own="own"/>
+	<Class name="sedan_taxi_engoa" policy="car" own="own"/>
+	<Class name="sedan_taxi_fullout" policy="car" own="own"/>
+	<Class name="suv_basic" policy="car" own="own"/>
+	<Class name="towcar" policy="car" own="own"/>
+	<Class name="tractor" policy="car" own="own"/>
+	<Class name="truck_5ton" policy="car" own="own"/>
+	<Class name="truck_semi" policy="car" own="own"/>
+
+	<!-- actors -->
+	<Class name="DummyPlayer" policy="dude" own="own"/>
+	<Class name="Player" policy="dude" own="own"/>
+	<Class name="PlayerTest" policy="dude"/>
+
+	<!-- player corpse -->
+	<Class name="PlayerCorpse" policy="crps" />
+
+	<!-- mutant/bandits -->
+	<Class name="Spiker" policy="bndt" />
+	<Class name="Crazy" policy="bndt" />
+	<Class name="HumanSpider" policy="bndt" />
+	<Class name="HumanZombie" policy="bndt" />
+	<Class name="BruteMutant" policy="bndt" />
+	<Class name="BabySpider" policy="bndt" />
+
+	<!-- ai animals -->
+	<Class name="Bear" policy="bndt" />
+	<Class name="Deer" policy="bndt" />
+	<Class name="DeerFemale" policy="bndt" />
+	<Class name="GreyWolf" policy="bndt" />
+	<Class name="TwoHeadDog" policy="bndt" />
+	<Class name="GiantRoach" policy="bndt" />
+
+	<!-- simple animals -->
+	<Class name="Pig" policy="anml" />
+	<Class name="Rooster" policy="anml" />
+
+	<!-- legacy actor AIs -->
+	<Class name="ActorOld_Spiker" policy="bndt" />
+	<Class name="ActorOld_Crazy" policy="bndt" />
+	<Class name="ActorOld_HumanZombie" policy="bndt" />
+	<Class name="ActorOld_BruteMutant" policy="bndt" />
+	<Class name="ActorOld_Deer" policy="bndt" />
+	<Class name="ActorOld_DeerFemale" policy="bndt" />
+	<Class name="ActorOld_GreyWolf" policy="bndt" />
+	<Class name="ActorOld_TwoHeadDog" policy="bndt" />
+
+	<!-- clothing - back -->
+	<Class name="DuffelBag" policy="pack" />
+	<Class name="DuffelBagBlack" policy="pack" />
+	<Class name="DuffelBagGreen" policy="pack" />
+	<Class name="DuffelBagGreenCamo1" policy="pack" />
+	<Class name="DuffelBagGreenCamo2" policy="pack" />
+	<Class name="DuffelBagGreenCamo3" policy="pack" />
+	<Class name="DuffelBagGreenCamo4" policy="pack" />
+	<Class name="DuffelBagTanCamo1" policy="pack" />
+	<Class name="DuffelBagTanCamo2" policy="pack" />
+	<Class name="DuffelBagTanCamo3" policy="pack" />
+	<Class name="DuffelBagTanCamo4" policy="pack" />
+	<Class name="DuffelBagUrbanCamo1" policy="pack" />
+	<Class name="DuffelBagUrbanCamo2" policy="pack" />
+	<Class name="DuffelBagUrbanCamo3" policy="pack" />
+	<Class name="DuffelBagUrbanCamo4" policy="pack" />
+	<Class name="horshoe_pack" policy="pack" />
+	<Class name="RuckSack" policy="pack" />
+	<Class name="RuggedPack" policy="pack" />
+	<Class name="RuggedPackBlack" policy="pack" />
+	<Class name="RuggedPackBrown" policy="pack" />
+	<Class name="RuggedPackCamo1" policy="pack" />
+	<Class name="RuggedPackCamo2" policy="pack" />
+	<Class name="RuggedPackCamo3" policy="pack" />
+	<Class name="RuggedPackCamo4" policy="pack" />
+	<Class name="RuggedPackGreen" policy="pack" />
+	<Class name="RuggedPackGreenCamo1" policy="pack" />
+	<Class name="RuggedPackGreenCamo2" policy="pack" />
+	<Class name="RuggedPackGreenCamo3" policy="pack" />
+	<Class name="RuggedPackGreenCamo4" policy="pack" />
+	<Class name="StowPackBlack" policy="pack" />
+	<Class name="StowPackBlue" policy="pack" />
+	<Class name="StowPackGreen" policy="pack" />
+	<Class name="StowPackOrange" policy="pack" />
+	<Class name="StowPackPink" policy="pack" />
+	<Class name="StowPackPurple" policy="pack" />
+	<Class name="StowPackRed" policy="pack" />
+	<Class name="StowPackWhite" policy="pack" />
+	<Class name="StowPackYellow" policy="pack" />
+
+	<!-- clothing - eyes -->
+	<Class name="Aviators" policy="clth" />
+	<Class name="EyepatchLeft" policy="clth" />
+	<Class name="EyepatchRight" policy="clth" />
+	<Class name="SunglassesAGold" policy="clth" />
+	<Class name="SunglassesABlack" policy="clth" />
+	<Class name="SunglassesASilver" policy="clth" />
+	<Class name="SunglassesBBlack" policy="clth" />
+	<Class name="SunglassesBMaroon" policy="clth" />
+	<Class name="SunglassesBSilver" policy="clth" />
+
+	<!-- clothing - face -->
+	<Class name="BalaclavaBlack" policy="clth" />
+	<Class name="BalaclavaGray" policy="clth" />
+	<Class name="BalaclavaGreen" policy="clth" />
+	<Class name="BalaclavaPink" policy="clth" />
+	<Class name="BalaclavaYellow" policy="clth" />
+	<Class name="Bandana" policy="clth" />
+	<Class name="BandanaBlack" policy="clth" />
+	<Class name="BandanaBlue" policy="clth" />
+	<Class name="BandanaBrown" policy="clth" />
+	<Class name="BandanaCamo1" policy="clth" />
+	<Class name="BandanaCamo2" policy="clth" />
+	<Class name="BandanaCamo3" policy="clth" />
+	<Class name="BandanaCamo4" policy="clth" />
+	<Class name="BandanaGray" policy="clth" />
+	<Class name="BandanaGreen" policy="clth" />
+	<Class name="BandanaKhaki" policy="clth" />
+	<Class name="BandanaOrange" policy="clth" />
+	<Class name="BandanaPink" policy="clth" />
+	<Class name="BandanaRed" policy="clth" />
+	<Class name="DustMask" policy="clth" />
+	<Class name="GasMask" policy="clth" />
+	<Class name="HeadSack" policy="clth" />
+	<Class name="HockeyMask" policy="clth" />
+	<Class name="HockeyMaskDp" policy="clth" />
+
+	<!-- clothing - feet -->
+	<Class name="CanvasShoes" policy="clth" />
+	<Class name="CombatBootsBlack" policy="clth" />
+	<Class name="CombatBootsCamo" policy="clth" />
+	<Class name="CombatBootsTan" policy="clth" />
+	<Class name="FlipFlops" policy="clth" />
+	<Class name="HitopsBlack" policy="clth" />
+	<Class name="HitopsBlue" policy="clth" />
+	<Class name="HitopsGreen" policy="clth" />
+	<Class name="HitopsPink" policy="clth" />
+	<Class name="HitopsPurple" policy="clth" />
+	<Class name="HitopsRed" policy="clth" />
+	<Class name="HitopsYellow" policy="clth" />
+	<Class name="Sneakers" policy="clth" />
+	<Class name="SneakersBlack" policy="clth" />
+	<Class name="SneakersBlackBlue" policy="clth" />
+	<Class name="SneakersBlackGreen" policy="clth" />
+	<Class name="SneakersBlackPink" policy="clth" />
+	<Class name="SneakersBlackRed" policy="clth" />
+	<Class name="SneakersBlueBlack" policy="clth" />
+	<Class name="SneakersBrown" policy="clth" />
+	<Class name="SneakersGreenBlack" policy="clth" />
+	<Class name="SneakersPinkBlack" policy="clth" />
+	<Class name="SneakersRedBlack" policy="clth" />
+	<Class name="SneakersSilver" policy="clth" />
+	<Class name="SneakersWhite" policy="clth" />
+	<Class name="SneakersWhiteBlue" policy="clth" />
+	<Class name="SneakersWhiteGreen" policy="clth" />
+	<Class name="SneakersWhitePink" policy="clth" />
+	<Class name="SteeltoedBootsBlack" policy="clth" />
+	<Class name="SteeltoedBootsBrown" policy="clth" />
+	<Class name="TennisShoes" policy="clth" />
+
+
+	<!-- clothing - hands -->
+	<Class name="MilitaryGloves" policy="clth" />
+	<Class name="MilitaryGlovesBlack" policy="clth" />
+	<Class name="MilitaryGlovesBrown" policy="clth" />
+	<Class name="MilitaryGlovesGreen" policy="clth" />
+	<Class name="WoolGlovesBlack" policy="clth" />
+	<Class name="WoolGlovesBlue" policy="clth" />
+	<Class name="WoolGlovesBrown" policy="clth" />
+	<Class name="WoolGlovesCamo1" policy="clth" />
+	<Class name="WoolGlovesCamo2" policy="clth" />
+	<Class name="WoolGlovesCamo3" policy="clth" />
+	<Class name="WoolGlovesCamo4" policy="clth" />
+	<Class name="WoolGlovesGreen" policy="clth" />
+	<Class name="WoolGlovesWhite" policy="clth" />
+
+	<!-- clothing - hat -->
+	<Class name="BandanaHat" policy="clth" />
+	<Class name="BandanaHatCamo1" policy="clth" />
+	<Class name="BandanaHatCamo2" policy="clth" />
+	<Class name="BandanaHatCamo3" policy="clth" />
+	<Class name="BandanaHatCamo4" policy="clth" />
+	<Class name="BaseballCap" policy="clth" />
+	<Class name="BeanieBrown" policy="clth" />
+	<Class name="BeanieBrownWhite" policy="clth" />
+	<Class name="BeanieGreenGreen" policy="clth" />
+	<Class name="BeanieOrangeYellow" policy="clth" />
+	<Class name="BeaniePinkPink" policy="clth" />
+	<Class name="BeanieWhite" policy="clth" />
+	<Class name="BeretBlack" policy="clth" />
+	<Class name="BeretBlackFlagAu" policy="clth" />
+	<Class name="BeretBlackFlagBelgium" policy="clth" />
+	<Class name="BeretBlackFlagCanada" policy="clth" />
+	<Class name="BeretBlackFlagGermany" policy="clth" />
+	<Class name="BeretBlackFlagIsrael" policy="clth" />
+	<Class name="BeretBlackFlagUk" policy="clth" />
+	<Class name="BeretBlackFlagUsa" policy="clth" />
+	<Class name="BeretBlue" policy="clth" />
+	<Class name="BeretBlueFlagAu" policy="clth" />
+	<Class name="BeretBlueFlagBelgium" policy="clth" />
+	<Class name="BeretBlueFlagCanada" policy="clth" />
+	<Class name="BeretBlueFlagGermany" policy="clth" />
+	<Class name="BeretBlueFlagIsrael" policy="clth" />
+	<Class name="BeretBlueFlagUk" policy="clth" />
+	<Class name="BeretBlueFlagUsa" policy="clth" />
+	<Class name="BeretBrown" policy="clth" />
+	<Class name="BeretBrownFlagAu" policy="clth" />
+	<Class name="BeretBrownFlagBelgium" policy="clth" />
+	<Class name="BeretBrownFlagCanada" policy="clth" />
+	<Class name="BeretBrownFlagGermany" policy="clth" />
+	<Class name="BeretBrownFlagIsrael" policy="clth" />
+	<Class name="BeretBrownFlagUk" policy="clth" />
+	<Class name="BeretBrownFlagUsa" policy="clth" />
+	<Class name="BeretGreen" policy="clth" />
+	<Class name="BeretGreenFlagAu" policy="clth" />
+	<Class name="BeretGreenFlagBelgium" policy="clth" />
+	<Class name="BeretGreenFlagCanada" policy="clth" />
+	<Class name="BeretGreenFlagGermany" policy="clth" />
+	<Class name="BeretGreenFlagIsrael" policy="clth" />
+	<Class name="BeretGreenFlagUk" policy="clth" />
+	<Class name="BeretGreenFlagUsa" policy="clth" />
+	<Class name="BeretRed" policy="clth" />
+	<Class name="BeretRedFlagAu" policy="clth" />
+	<Class name="BeretRedFlagBelgium" policy="clth" />
+	<Class name="BeretRedFlagCanada" policy="clth" />
+	<Class name="BeretRedFlagGermany" policy="clth" />
+	<Class name="BeretRedFlagIsrael" policy="clth" />
+	<Class name="BeretRedFlagUk" policy="clth" />
+	<Class name="BeretRedFlagUsa" policy="clth" />
+	<Class name="BeretSkyBlue" policy="clth" />
+	<Class name="BeretSkyBlueFlagAu" policy="clth" />
+	<Class name="BeretSkyBlueFlagBelgium" policy="clth" />
+	<Class name="BeretSkyBlueFlagCanada" policy="clth" />
+	<Class name="BeretSkyBlueFlagGermany" policy="clth" />
+	<Class name="BeretSkyBlueFlagIsrael" policy="clth" />
+	<Class name="BeretSkyBlueFlagUk" policy="clth" />
+	<Class name="BeretSkyBlueFlagUsa" policy="clth" />
+	<Class name="BikeHelmetBlack" policy="clth" />
+	<Class name="BikeHelmetBlue" policy="clth" />
+	<Class name="BikeHelmetGreen" policy="clth" />
+	<Class name="BikeHelmetPink" policy="clth" />
+	<Class name="BikeHelmetPurple" policy="clth" />
+	<Class name="BikeHelmetRed" policy="clth" />
+	<Class name="BikeHelmetWhite" policy="clth" />
+	<Class name="BikeHelmetYellow" policy="clth" />
+	<Class name="ChristmasHat" policy="clth" />
+	<Class name="CowboyHat" policy="clth" />
+	<Class name="CowboyHatLeather" policy="clth" />
+	<Class name="CowboyHatStraw" policy="clth" />
+	<Class name="DorfmanPacific" policy="clth" />
+	<Class name="flexcap_acfrontback_black" policy="clth" />
+	<Class name="flexcap_acfrontback_blue" policy="clth" />
+	<Class name="flexcap_acfrontback_camo1" policy="clth" />
+	<Class name="flexcap_acfrontback_camo2" policy="clth" />
+	<Class name="flexcap_acfrontback_camo3" policy="clth" />
+	<Class name="flexcap_acfrontback_camo4" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_black" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_blue" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_camo1" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_camo2" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_camo3" policy="clth" />
+	<Class name="flexcap_aclogofrontacback_camo4" policy="clth" />
+	<Class name="flexcap_ausfront_camo4" policy="clth" />
+	<Class name="flexcap_belfront_camo4" policy="clth" />
+	<Class name="flexcap_canadafront_camo4" policy="clth" />
+	<Class name="flexcap_crytekfront_black" policy="clth" />
+	<Class name="flexcap_crytekfront_brown" policy="clth" />
+	<Class name="flexcap_crytekfront_camo1" policy="clth" />
+	<Class name="flexcap_crytekfront_camo2" policy="clth" />
+	<Class name="flexcap_crytekfront_camo3" policy="clth" />
+	<Class name="flexcap_crytekfront_camo4" policy="clth" />
+	<Class name="flexcap_dopefishfront_black" policy="clth" />
+	<Class name="flexcap_dopefishfront_blue" policy="clth" />
+	<Class name="flexcap_dopefishfront_green" policy="clth" />
+	<Class name="flexcap_dopefishfront_orange" policy="clth" />
+	<Class name="flexcap_dopefishfront_pink" policy="clth" />
+	<Class name="flexcap_dopefishfront_red" policy="clth" />
+	<Class name="flexcap_eilogo_black" policy="clth" />
+	<Class name="flexcap_eilogo_blue" policy="clth" />
+	<Class name="flexcap_eilogo_khaki" policy="clth" />
+	<Class name="flexcap_eilogo_pink" policy="clth" />
+	<Class name="flexcap_firefrontback_black" policy="clth" />
+	<Class name="flexcap_firefrontback_blue" policy="clth" />
+	<Class name="flexcap_flagfrontback_pink_camo1" policy="clth" />
+	<Class name="flexcap_flagfrontback_pink_camo2" policy="clth" />
+	<Class name="flexcap_flagfrontback_pink_camo3" policy="clth" />
+	<Class name="flexcap_flagfrontback_pink_camo4" policy="clth" />
+	<Class name="flexcap_gbfront_camo4" policy="clth" />
+	<Class name="flexcap_gerfront_camo4" policy="clth" />
+	<Class name="flexcap_isrealfront_camo4" policy="clth" />
+	<Class name="flexcap_nobranding_black" policy="clth" />
+	<Class name="flexcap_nobranding_blue" policy="clth" />
+	<Class name="flexcap_nobranding_green" policy="clth" />
+	<Class name="flexcap_nobranding_orange" policy="clth" />
+	<Class name="flexcap_nobranding_pink" policy="clth" />
+	<Class name="flexcap_nobranding_red" policy="clth" />
+	<Class name="flexcap_policefrontback_black" policy="clth" />
+	<Class name="flexcap_policefrontback_blue" policy="clth" />
+	<Class name="flexcap_policefrontback_camo1" policy="clth" />
+	<Class name="flexcap_policefrontback_camo2" policy="clth" />
+	<Class name="flexcap_policefrontback_camo3" policy="clth" />
+	<Class name="flexcap_policefrontback_camo4" policy="clth" />
+	<Class name="flexcap_polycountfront_black" policy="clth" />
+	<Class name="flexcap_polycountfront_blue" policy="clth" />
+	<Class name="flexcap_polycountfront_pink" policy="clth" />
+	<Class name="flexcap_usfront_camo4" policy="clth" />
+	<Class name="flexcap_usfrontback_black" policy="clth" />
+	<Class name="flexcap_usfrontback_blue" policy="clth" />
+	<Class name="flexcap_usfrontback_green" policy="clth" />
+	<Class name="flexcap_usfrontback_orange" policy="clth" />
+	<Class name="flexcap_usfrontback_pink" policy="clth" />
+	<Class name="flexcap_usfrontback_red" policy="clth" />
+	<Class name="FootballHelmet" policy="clth" />
+	<Class name="FootballHelmetAmerica" policy="clth" />
+	<Class name="FootballHelmetBlack" policy="clth" />
+	<Class name="FootballHelmetBlue" policy="clth" />
+	<Class name="FootballHelmetFabulous" policy="clth" />
+	<Class name="FootballHelmetGold" policy="clth" />
+	<Class name="FootballHelmetGreen" policy="clth" />
+	<Class name="FootballHelmetRed" policy="clth" />
+	<Class name="FootballHelmetStripedBlack" policy="clth" />
+	<Class name="FootballHelmetStripedBlue" policy="clth" />
+	<Class name="FootballHelmetStripedGreen" policy="clth" />
+	<Class name="FootballHelmetStripedRed" policy="clth" />
+	<Class name="FootballHelmetStripedTeal" policy="clth" />
+	<Class name="FootballHelmetStripedYellow" policy="clth" />
+	<Class name="FootballHelmetTeal" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedBlack" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedBlue" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedGreen" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedRed" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedTeal" policy="clth" />
+	<Class name="FootballHelmetWhiteStripedYellow" policy="clth" />
+	<Class name="FootballHelmetYellow" policy="clth" />
+	<Class name="HeadbandAqua" policy="clth" />
+	<Class name="HeadbandBlack" policy="clth" />
+	<Class name="HeadbandBlue" policy="clth" />
+	<Class name="HeadbandBrown" policy="clth" />
+	<Class name="HeadbandCamoA" policy="clth" />
+	<Class name="HeadbandCamoB" policy="clth" />
+	<Class name="HeadbandCamoC" policy="clth" />
+	<Class name="HeadbandCamoD" policy="clth" />
+	<Class name="HeadbandGold" policy="clth" />
+	<Class name="HeadbandGreen" policy="clth" />
+	<Class name="HeadbandOrange" policy="clth" />
+	<Class name="HeadbandPatternA" policy="clth" />
+	<Class name="HeadbandPatternB" policy="clth" />
+	<Class name="HeadbandPatternC" policy="clth" />
+	<Class name="HeadbandPatternD" policy="clth" />
+	<Class name="HeadbandPatternE" policy="clth" />
+	<Class name="HeadbandPink" policy="clth" />
+	<Class name="HeadbandPurple" policy="clth" />
+	<Class name="HeadbandRainbow" policy="clth" />
+	<Class name="HeadbandRed" policy="clth" />
+	<Class name="HeadbandSilver" policy="clth" />
+	<Class name="HeadbandWhite" policy="clth" />
+	<Class name="HeadbandYellow" policy="clth" />
+	<Class name="Headlamp" policy="clth" />
+	<Class name="HeadlampRed" policy="clth" />
+	<Class name="JackOLanternHelmet" policy="clth" />
+	<Class name="MilitaryHelmetGreen" policy="clth" />
+	<Class name="MilitaryHelmetGreenCamo1" policy="clth" />
+	<Class name="MilitaryHelmetGreenCamo2" policy="clth" />
+	<Class name="MilitaryHelmetGreenCamo3" policy="clth" />
+	<Class name="MilitaryHelmetGreenCamo4" policy="clth" />
+	<Class name="MilitaryHelmetTan" policy="clth" />
+	<Class name="MilitaryHelmetTanCamo1" policy="clth" />
+	<Class name="MilitaryHelmetTanCamo2" policy="clth" />
+	<Class name="MilitaryHelmetTanCamo3" policy="clth" />
+	<Class name="MilitaryHelmetTanCamo4" policy="clth" />
+	<Class name="MilitaryHelmetUrbanCamo1" policy="clth" />
+	<Class name="MilitaryHelmetUrbanCamo2" policy="clth" />
+	<Class name="MilitaryHelmetUrbanCamo3" policy="clth" />
+	<Class name="MilitaryHelmetUrbanCamo4" policy="clth" />
+	<Class name="MotorcycleHelmetCarbon" policy="clth" />
+	<Class name="MotorcycleHelmetGold" policy="clth" />
+	<Class name="MotorcycleHelmetWhite" policy="clth" />
+	<Class name="SwatHelmet" policy="clth" />
+	<Class name="WeldersMask" policy="clth" />
+
+	<!-- clothing - legs -->
+	<Class name="BlueJeans" policy="clth" />
+	<Class name="BlueJeans2" policy="clth" />
+	<Class name="BlueJeans2Brown" policy="clth" />
+	<Class name="BlueJeans2Green" policy="clth" />
+	<Class name="CargoPantsBlack" policy="clth" />
+	<Class name="CargoPantsCamo1" policy="clth" />
+	<Class name="CargoPantsCamo2" policy="clth" />
+	<Class name="CargoPantsCamo3" policy="clth" />
+	<Class name="CargoPantsCamo4" policy="clth" />
+	<Class name="CargoPantsGreen" policy="clth" />
+	<Class name="CargoPantsGreenCamo1" policy="clth" />
+	<Class name="CargoPantsGreenCamo2" policy="clth" />
+	<Class name="CargoPantsGreenCamo3" policy="clth" />
+	<Class name="CargoPantsGreenCamo4" policy="clth" />
+	<Class name="CargoPantsTan" policy="clth" />
+	<Class name="CargoPantsUrbanCamo1" policy="clth" />
+	<Class name="CargoPantsUrbanCamo2" policy="clth" />
+	<Class name="CargoPantsUrbanCamo3" policy="clth" />
+	<Class name="CargoPantsUrbanCamo4" policy="clth" />
+	<Class name="CargoShortsBlack" policy="clth" />
+	<Class name="CargoShortsBlue" policy="clth" />
+	<Class name="CargoShortsBrightBlue" policy="clth" />
+	<Class name="CargoShortsBrightGreen" policy="clth" />
+	<Class name="CargoShortsBrightPink" policy="clth" />
+	<Class name="CargoShortsBrightRed" policy="clth" />
+	<Class name="CargoShortsBrown" policy="clth" />
+	<Class name="CargoShortsCamo1" policy="clth" />
+	<Class name="CargoShortsCamo2" policy="clth" />
+	<Class name="CargoShortsCamo3" policy="clth" />
+	<Class name="CargoShortsCamo4" policy="clth" />
+	<Class name="CargoShortsDarkGrey" policy="clth" />
+	<Class name="CargoShortsGreen" policy="clth" />
+	<Class name="CargoShortsGrey" policy="clth" />
+	<Class name="CargoShortsTan" policy="clth" />
+	<Class name="CargoShortsYellow" policy="clth" />
+	<Class name="TrackPantsBlack" policy="clth" />
+	<Class name="TrackPantsBlue" policy="clth" />
+	<Class name="TrackPantsGreen" policy="clth" />
+	<Class name="TrackPantsOrange" policy="clth" />
+	<Class name="TrackPantsPink" policy="clth" />
+	<Class name="TrackPantsYellow" policy="clth" />
+	<Class name="WandererPantsBlack" policy="clth" />
+	<Class name="WandererPantsBlue" policy="clth" />
+	<Class name="WandererPantsBrown" policy="clth" />
+	<Class name="WandererPantsGreen" policy="clth" />
+	<Class name="WandererPantsRed" policy="clth" />
+	<Class name="WandererPantsTan" policy="clth" />
+
+	<!-- clothing - neck -->
+	<Class name="NecklaceCrossChrome" policy="clth" />
+	<Class name="NecklaceCrossGold" policy="clth" />
+	<Class name="NecklaceCrossSilver" policy="clth" />
+	<Class name="ScarfAqua" policy="clth" />
+	<Class name="ScarfBlack" policy="clth" />
+	<Class name="ScarfBlue" policy="clth" />
+	<Class name="ScarfBrown" policy="clth" />
+	<Class name="ScarfCamo1" policy="clth" />
+	<Class name="ScarfCamo2" policy="clth" />
+	<Class name="ScarfCamo3" policy="clth" />
+	<Class name="ScarfCamo4" policy="clth" />
+	<Class name="ScarfGold" policy="clth" />
+	<Class name="ScarfGray" policy="clth" />
+	<Class name="ScarfGreen" policy="clth" />
+	<Class name="ScarfOrange" policy="clth" />
+	<Class name="ScarfPatternA" policy="clth" />
+	<Class name="ScarfPatternB" policy="clth" />
+	<Class name="ScarfPatternC" policy="clth" />
+	<Class name="ScarfPatternD" policy="clth" />
+	<Class name="ScarfPatternE" policy="clth" />
+	<Class name="ScarfPink" policy="clth" />
+	<Class name="ScarfPurple" policy="clth" />
+	<Class name="ScarfRainbow" policy="clth" />
+	<Class name="ScarfRed" policy="clth" />
+	<Class name="ScarfShemagh" policy="clth" />
+	<Class name="ScarfSilver" policy="clth" />
+	<Class name="ScarfWhite" policy="clth" />
+	<Class name="ScarfYellow" policy="clth" />
+	<Class name="ShoulderPadOneSide" policy="clth" />
+	<Class name="ShoulderPadOneSideLeft" policy="clth" />
+
+
+	<!-- clothing - jacket -->
+	<Class name="FlakVestGreen" policy="clth" />
+	<Class name="FlakVestGreenCamo1" policy="clth" />
+	<Class name="FlakVestTan" policy="clth" />
+	<Class name="FlakVestTanCamo1" policy="clth" />
+	<Class name="FootballPads" policy="clth" />
+	<Class name="FootballPadsSpiked" policy="clth" />
+	<Class name="PoliceVestBlue" policy="clth" />
+	<Class name="PoliceVestBlack" policy="clth" />
+	<Class name="NoSleevesVestBlack" policy="clth" />
+	<Class name="NoSleevesVestBlue" policy="clth" />
+	<Class name="NoSleevesVestBrown" policy="clth" />
+	<Class name="NoSleevesVestGreen" policy="clth" />
+	<Class name="NoSleevesVestRed" policy="clth" />
+	<Class name="NoSleevesVestTan" policy="clth" />
+	<Class name="TacticalVestBlack" policy="clth" />
+	<Class name="TacticalVestGreen" policy="clth" />
+	<Class name="TacticalVestGreenCamo1" policy="clth" />
+	<Class name="TacticalVestGreenCamo2" policy="clth" />
+	<Class name="TacticalVestGreenCamo3" policy="clth" />
+	<Class name="TacticalVestGreenCamo4" policy="clth" />
+	<Class name="TacticalVestTan" policy="clth" />
+	<Class name="TacticalVestTanCamo1" policy="clth" />
+	<Class name="TacticalVestTanCamo2" policy="clth" />
+	<Class name="TacticalVestTanCamo3" policy="clth" />
+	<Class name="TacticalVestTanCamo4" policy="clth" />
+	<Class name="TacticalVestUrbanCamo1" policy="clth" />
+	<Class name="TacticalVestUrbanCamo2" policy="clth" />
+	<Class name="TacticalVestUrbanCamo3" policy="clth" />
+	<Class name="TacticalVestUrbanCamo4" policy="clth" />
+
+	<!-- clothing - torso -->
+	<Class name="ButtonUpShirtBlack" policy="clth" />
+	<Class name="ButtonUpShirtBlackChekered" policy="clth" />
+	<Class name="ButtonUpShirtBlackDots" policy="clth" />
+	<Class name="ButtonUpShirtBlackStriped" policy="clth" />
+	<Class name="ButtonUpShirtBlue" policy="clth" />
+	<Class name="ButtonUpShirtBlueChekered" policy="clth" />
+	<Class name="ButtonUpShirtBlueDots" policy="clth" />
+	<Class name="ButtonUpShirtBlueHawaiian" policy="clth" />
+	<Class name="ButtonUpShirtBlueStriped" policy="clth" />
+	<Class name="ButtonUpShirtDarkGreenChekered" policy="clth" />
+	<Class name="ButtonUpShirtDarkGreenStriped" policy="clth" />
+	<Class name="ButtonUpShirtDarkGrey" policy="clth" />
+	<Class name="ButtonUpShirtDarkGreyChekered" policy="clth" />
+	<Class name="ButtonUpShirtDarkGreyDots" policy="clth" />
+	<Class name="ButtonUpShirtDarkGreyStriped" policy="clth" />
+	<Class name="ButtonUpShirtGreen" policy="clth" />
+	<Class name="ButtonUpShirtGreenChekered" policy="clth" />
+	<Class name="ButtonUpShirtGreenHawaiian" policy="clth" />
+	<Class name="ButtonUpShirtGreenStriped" policy="clth" />
+	<Class name="ButtonUpShirtGrey" policy="clth" />
+	<Class name="ButtonUpShirtGreyChekered" policy="clth" />
+	<Class name="ButtonUpShirtGreyStriped" policy="clth" />
+	<Class name="ButtonUpShirtPink" policy="clth" />
+	<Class name="ButtonUpShirtPinkChekered" policy="clth" />
+	<Class name="ButtonUpShirtPinkStriped" policy="clth" />
+	<Class name="ButtonUpShirtPurple" policy="clth" />
+	<Class name="ButtonUpShirtPurpleChekered" policy="clth" />
+	<Class name="ButtonUpShirtPurpleHawaiian" policy="clth" />
+	<Class name="ButtonUpShirtPurpleStriped" policy="clth" />
+	<Class name="ButtonUpShirtRed" policy="clth" />
+	<Class name="ButtonUpShirtRedChekered" policy="clth" />
+	<Class name="ButtonUpShirtRedDots" policy="clth" />
+	<Class name="ButtonUpShirtRedHawaiian" policy="clth" />
+	<Class name="ButtonUpShirtRedStriped" policy="clth" />
+	<Class name="CottonShirtBlue" policy="clth" />
+	<Class name="CottonShirtBrown" policy="clth" />
+	<Class name="CottonShirtGreen" policy="clth" />
+	<Class name="CottonShirtGrey" policy="clth" />
+	<Class name="CottonShirtRed" policy="clth" />
+	<Class name="CottonShirtTan" policy="clth" />
+	<Class name="GasCanisterPack" policy="clth" />
+	<Class name="GhillieSuit1" policy="clth" />
+	<Class name="GhillieSuit2" policy="clth" />
+	<Class name="GhillieSuit3" policy="clth" />
+	<Class name="GhillieSuit4" policy="clth" />
+	<Class name="GhillieHood1" policy="clth" />
+	<Class name="GhillieHood2" policy="clth" />
+	<Class name="GhillieHood3" policy="clth" />
+	<Class name="GhillieHood4" policy="clth" />
+	<Class name="HazmatMask" policy="clth" />
+	<Class name="HazmatSuitBlue" policy="clth" />
+	<Class name="HazmatSuitGreen" policy="clth" />
+	<Class name="HazmatSuitOrange" policy="clth" />
+	<Class name="HazmatSuitPink" policy="clth" />
+	<Class name="HazmatSuitWhite" policy="clth" />
+	<Class name="HazmatSuitYellow" policy="clth" />
+	<Class name="Hoodie" policy="clth" />
+	<Class name="HoodieBlackGreyDesign1" policy="clth" />
+	<Class name="HoodieBlackWhiteDesign4" policy="clth" />
+	<Class name="HoodieBlueBlackDesign4" policy="clth" />
+	<Class name="HoodieBlueDesign2" policy="clth" />
+	<Class name="HoodieBlueWhiteDesign4" policy="clth" />
+	<Class name="HoodieCapitalMunch" policy="clth" />
+	<Class name="HoodieEagle" policy="clth" />
+	<Class name="HoodieGreenBlackDesign4" policy="clth" />
+	<Class name="HoodieGreenDesign2" policy="clth" />
+	<Class name="HoodieGreenWhiteDesign4" policy="clth" />
+	<Class name="HoodieGrey" policy="clth" />
+	<Class name="HoodieGreyDarkGreyDesign1" policy="clth" />
+	<Class name="HoodieOrangeBlackDesign4" policy="clth" />
+	<Class name="HoodiePinkDesign2" policy="clth" />
+	<Class name="HoodiePixel" policy="clth" />
+	<Class name="HoodiePixelBlackGreyDesign5" policy="clth" />
+	<Class name="HoodiePixelBlueBlackDesign5" policy="clth" />
+	<Class name="HoodiePixelGreenBlackDesign5" policy="clth" />
+	<Class name="HoodiePixelGreyBlueDesign5" policy="clth" />
+	<Class name="HoodiePixelGreyDesign5" policy="clth" />
+	<Class name="HoodiePixelGreyGreenDesign5" policy="clth" />
+	<Class name="HoodiePixelGreyOrangeDesign5" policy="clth" />
+	<Class name="HoodiePixelGreyRedDesign5" policy="clth" />
+	<Class name="HoodiePixelOrangeBlackDesign5" policy="clth" />
+	<Class name="HoodiePixelRedBlackDesign5" policy="clth" />
+	<Class name="HoodieRedBlackDesign4" policy="clth" />
+	<Class name="HoodieRedDesign2" policy="clth" />
+	<Class name="HoodieRedWhiteDesign4" policy="clth" />
+	<Class name="HoodieSerk" policy="clth" />
+	<Class name="LeatherJacketBlack" policy="clth" />
+	<Class name="LeatherJacketBrown" policy="clth" />
+	<Class name="LeatherJacketRed" policy="clth" />
+	<Class name="LeatherJacketYellow" policy="clth" />
+	<Class name="MilitaryJacketBlack" policy="clth" />
+	<Class name="MilitaryJacketGreen" policy="clth" />
+	<Class name="MilitaryJacketGreenCamo1" policy="clth" />
+	<Class name="MilitaryJacketGreenCamo2" policy="clth" />
+	<Class name="MilitaryJacketGreenCamo3" policy="clth" />
+	<Class name="MilitaryJacketGreenCamo4" policy="clth" />
+	<Class name="MilitaryJacketTan" policy="clth" />
+	<Class name="MilitaryJacketTanCamo1" policy="clth" />
+	<Class name="MilitaryJacketTanCamo2" policy="clth" />
+	<Class name="MilitaryJacketTanCamo3" policy="clth" />
+	<Class name="MilitaryJacketTanCamo4" policy="clth" />
+	<Class name="MilitaryJacketUrbanCamo1" policy="clth" />
+	<Class name="MilitaryJacketUrbanCamo2" policy="clth" />
+	<Class name="MilitaryJacketUrbanCamo3" policy="clth" />
+	<Class name="MilitaryJacketUrbanCamo4" policy="clth" />
+	<Class name="PuffyJacketAmerica" policy="clth" />
+	<Class name="PuffyJacketBlack" policy="clth" />
+	<Class name="PuffyJacketBlueWhite" policy="clth" />
+	<Class name="PuffyJacketCamo1" policy="clth" />
+	<Class name="PuffyJacketCamo2" policy="clth" />
+	<Class name="PuffyJacketCamo3" policy="clth" />
+	<Class name="PuffyJacketCanada" policy="clth" />
+	<Class name="PuffyJacketEaster" policy="clth" />
+	<Class name="PuffyJacketGold" policy="clth" />
+	<Class name="PuffyJacketGreenWhite" policy="clth" />
+	<Class name="PuffyJacketGrey" policy="clth" />
+	<Class name="PuffyJacketGreyBlack" policy="clth" />
+	<Class name="PuffyJacketGreyBlack2" policy="clth" />
+	<Class name="PuffyJacketKaki" policy="clth" />
+	<Class name="PuffyJacketOrangeGreen" policy="clth" />
+	<Class name="PuffyJacketOrangeTeal" policy="clth" />
+	<Class name="PuffyJacketOrangeWhite" policy="clth" />
+	<Class name="PuffyJacketPinkWhite" policy="clth" />
+	<Class name="PuffyJacketPurpleFushia" policy="clth" />
+	<Class name="PuffyJacketRedBlue" policy="clth" />
+	<Class name="PuffyJacketRedWhite" policy="clth" />
+	<Class name="PuffyJacketSilver" policy="clth" />
+	<Class name="PuffyJacketWhite" policy="clth" />
+	<Class name="PuffyJacketWhiteCamo1" policy="clth" />
+	<Class name="RainJacketBlack" policy="clth" />
+	<Class name="RainJacketBlue" policy="clth" />
+	<Class name="RainJacketBlueGrey" policy="clth" />
+	<Class name="RainJacketCamo1" policy="clth" />
+	<Class name="RainJacketCamo2" policy="clth" />
+	<Class name="RainJacketCamo3" policy="clth" />
+	<Class name="RainJacketDarkGrey" policy="clth" />
+	<Class name="RainJacketGreen" policy="clth" />
+	<Class name="RainJacketGreenGrey" policy="clth" />
+	<Class name="RainJacketGrey" policy="clth" />
+	<Class name="RainJacketGreyBlack" policy="clth" />
+	<Class name="RainJacketKaki" policy="clth" />
+	<Class name="RainJacketLightDarkGrey" policy="clth" />
+	<Class name="RainJacketMarine" policy="clth" />
+	<Class name="RainJacketOrangeBlue" policy="clth" />
+	<Class name="RainJacketPinkPurple" policy="clth" />
+	<Class name="RainJacketRed" policy="clth" />
+	<Class name="RainJacketRedBlue" policy="clth" />
+	<Class name="RainJacketRedGrey" policy="clth" />
+	<Class name="RainJacketYellow" policy="clth" />
+	<Class name="Sweater" policy="clth" />
+	<Class name="SweaterBlack" policy="clth" />
+	<Class name="SweaterBlue" policy="clth" />
+	<Class name="SweaterChristmasGreen" policy="clth" />
+	<Class name="SweaterChristmasGreen2" policy="clth" />
+	<Class name="SweaterChristmasRed" policy="clth" />
+	<Class name="SweaterChristmasRed2" policy="clth" />
+	<Class name="SweaterGreen" policy="clth" />
+	<Class name="SweaterOrange" policy="clth" />
+	<Class name="SweaterPink" policy="clth" />
+	<Class name="SweaterRed" policy="clth" />
+	<Class name="TshirtAmalgamatedBlack" policy="clth" />
+	<Class name="TshirtAmalgamatedBlue" policy="clth" />
+	<Class name="TshirtAmalgamatedGreen" policy="clth" />
+	<Class name="TshirtAmalgamatedGrey" policy="clth" />
+	<Class name="TshirtAmalgamatedPink" policy="clth" />
+	<Class name="TshirtAmalgamatedRed" policy="clth" />
+	<Class name="TshirtBBGBlack" policy="clth" />
+	<Class name="TshirtBBGBlue" policy="clth" />
+	<Class name="TshirtBBGGreen" policy="clth" />
+	<Class name="TshirtBBGGrey" policy="clth" />
+	<Class name="TshirtBBGPink" policy="clth" />
+	<Class name="TshirtBBGRed" policy="clth" />
+	<Class name="TshirtCamo1" policy="clth" />
+	<Class name="TshirtCamo2" policy="clth" />
+	<Class name="TshirtCamo3" policy="clth" />
+	<Class name="TshirtCamo4" policy="clth" />
+	<Class name="TshirtCatBlack" policy="clth" />
+	<Class name="TshirtCatBlue" policy="clth" />
+	<Class name="TshirtCatGreen" policy="clth" />
+	<Class name="TshirtCatGrey" policy="clth" />
+	<Class name="TshirtCatPink" policy="clth" />
+	<Class name="TshirtCatRed" policy="clth" />
+	<Class name="TshirtCryengineBlack" policy="clth" />
+	<Class name="TshirtCryengineBlue" policy="clth" />
+	<Class name="TshirtCryengineGreen" policy="clth" />
+	<Class name="TshirtCryengineGrey" policy="clth" />
+	<Class name="TshirtCryenginePink" policy="clth" />
+	<Class name="TshirtCryengineRed" policy="clth" />
+	<Class name="TshirtEntradaBlack" policy="clth" />
+	<Class name="TshirtEntradaBlue" policy="clth" />
+	<Class name="TshirtEntradaGreen" policy="clth" />
+	<Class name="TshirtEntradaGrey" policy="clth" />
+	<Class name="TshirtEntradaPink" policy="clth" />
+	<Class name="TshirtEntradaRed" policy="clth" />
+	<Class name="TshirtFirefighterBlack" policy="clth" />
+	<Class name="TshirtFirefighterBlue" policy="clth" />
+	<Class name="TshirtFlipflopBlack" policy="clth" />
+	<Class name="TshirtFlipflopBlue" policy="clth" />
+	<Class name="TshirtFlipflopGreen" policy="clth" />
+	<Class name="TshirtFlipflopGrey" policy="clth" />
+	<Class name="TshirtFlipflopPink" policy="clth" />
+	<Class name="TshirtFlipflopRed" policy="clth" />
+	<Class name="TshirtKstarBlack" policy="clth" />
+	<Class name="TshirtKstarBlue" policy="clth" />
+	<Class name="TshirtKstarGreen" policy="clth" />
+	<Class name="TshirtKstarGrey" policy="clth" />
+	<Class name="TshirtKstarPink" policy="clth" />
+	<Class name="TshirtKstarRed" policy="clth" />
+	<Class name="TshirtMaskBlack" policy="clth" />
+	<Class name="TshirtMaskBlue" policy="clth" />
+	<Class name="TshirtMaskGreen" policy="clth" />
+	<Class name="TshirtMaskGrey" policy="clth" />
+	<Class name="TshirtMaskPink" policy="clth" />
+	<Class name="TshirtMaskRed" policy="clth" />
+	<Class name="TshirtNoImageBlack" policy="clth" />
+	<Class name="TshirtNoImageBlue" policy="clth" />
+	<Class name="TshirtNoImageGreen" policy="clth" />
+	<Class name="TshirtNoImageGrey" policy="clth" />
+	<Class name="TshirtNoImagePink" policy="clth" />
+	<Class name="TshirtNoImageRed" policy="clth" />
+	<Class name="TshirtNuclearBlack" policy="clth" />
+	<Class name="TshirtNuclearBlue" policy="clth" />
+	<Class name="TshirtNuclearGreen" policy="clth" />
+	<Class name="TshirtNuclearGrey" policy="clth" />
+	<Class name="TshirtNuclearPink" policy="clth" />
+	<Class name="TshirtNuclearRed" policy="clth" />
+	<Class name="TshirtPlebsiBlack" policy="clth" />
+	<Class name="TshirtPlebsiBlue" policy="clth" />
+	<Class name="TshirtPlebsiGreen" policy="clth" />
+	<Class name="TshirtPlebsiGrey" policy="clth" />
+	<Class name="TshirtPlebsiPink" policy="clth" />
+	<Class name="TshirtPlebsiRed" policy="clth" />
+	<Class name="TshirtPoliceBlack" policy="clth" />
+	<Class name="TshirtPoliceBlue" policy="clth" />
+	<Class name="TshirtPolycountBlack" policy="clth" />
+	<Class name="TshirtPolycountBlue" policy="clth" />
+	<Class name="TshirtPolycountGreen" policy="clth" />
+	<Class name="TshirtPolycountGrey" policy="clth" />
+	<Class name="TshirtPolycountPink" policy="clth" />
+	<Class name="TshirtPolycountRed" policy="clth" />
+	<Class name="TshirtSecurityBlack" policy="clth" />
+	<Class name="TshirtSecurityBlue" policy="clth" />
+	<Class name="TshirtSuckersBlack" policy="clth" />
+	<Class name="TshirtSuckersBlue" policy="clth" />
+	<Class name="TshirtSuckersGreen" policy="clth" />
+	<Class name="TshirtSuckersGrey" policy="clth" />
+	<Class name="TshirtSuckersPink" policy="clth" />
+	<Class name="TshirtSuckersRed" policy="clth" />
+	<Class name="TshirtTargetBlack" policy="clth" />
+	<Class name="TshirtTargetBlue" policy="clth" />
+	<Class name="TshirtTargetGreen" policy="clth" />
+	<Class name="TshirtTargetGrey" policy="clth" />
+	<Class name="TshirtTargetPink" policy="clth" />
+	<Class name="TshirtTargetRed" policy="clth" />
+
+	<!-- clothing - waist -->
+	<Class name="CraftedFannyPack" policy="clth" />
+	<Class name="FannyPackBlack" policy="clth" />
+	<Class name="FannyPackBlueOrange" policy="clth" />
+	<Class name="FannyPackCamo1" policy="clth" />
+	<Class name="FannyPackCamo2" policy="clth" />
+	<Class name="FannyPackCamo3" policy="clth" />
+	<Class name="FannyPackGray" policy="clth" />
+	<Class name="FannyPackGreenGray" policy="clth" />
+	<Class name="FannyPackMaroonGray" policy="clth" />
+	<Class name="FannyPackPurplePink" policy="clth" />
+	<Class name="FannyPackRed" policy="clth" />
+	<Class name="FannyPackRedBlue" policy="clth" />
+	<Class name="FannyPackYellow" policy="clth" />
+
+	<!-- weapons -->
+	<Class name="EnvironmentalWeapon" policy="gun"/> <!-- //depot/miscreated/dev/GameSDK/Scripts/Entities/Multiplayer/EnvironmentWeapon_Rooted.lua -->
+
+	<Class name="ACAW" policy="gun" />
+	<Class name="AK74U" policy="gun" />
+	<Class name="AKM" policy="gun"/>
+	<Class name="AKMGold" policy="gun" />
+	<Class name="AA12" policy="gun"/>
+	<Class name="AP85" policy="gun" />
+	<Class name="AT15" policy="gun"/>
+	<Class name="AUMP45" policy="gun" />
+	<Class name="Axe" policy="gun"/>
+	<Class name="AxePatrick" policy="gun"/>
+	<Class name="BaseballBat" policy="gun"/>
+	<Class name="BaseballBatHerMajesty" policy="gun"/>
+	<Class name="BaseballBatNails" policy="gun"/>
+	<Class name="BaseballBatSawBladeNails" policy="gun"/>
+	<Class name="BaseballBatSawBlade" policy="gun"/>
+	<Class name="BaseballBatScrapNails" policy="gun"/>
+	<Class name="BayonetRifle" policy="gun" />
+	<Class name="Binoculars" policy="gun"/>
+	<Class name="Bulldog" policy="gun" />
+	<Class name="Candle" policy="gun" />
+	<Class name="Cb_radio" policy="gun"/>
+	<Class name="Cleaver" policy="gun" />
+	<Class name="ColtPython" policy="gun"/>
+	<Class name="ColtPythonGrimeyRick" policy="gun"/>
+	<Class name="CraftedBow" policy="gun"/>
+	<Class name="CraftedHammer" policy="gun"/>
+	<Class name="CraftedHatchet" policy="gun"/>
+	<Class name="CraftedLongPistol" policy="gun" />
+	<Class name="CraftedPistol556" policy="gun" />
+	<Class name="CraftedRifle9mm" policy="gun" />
+	<Class name="CraftedShortRifle556" policy="gun" />
+	<Class name="CraftedShortShotgun" policy="gun" />
+	<Class name="CraftedShotgun" policy="gun" />
+	<Class name="CraftedPickaxe" policy="gun"/>
+	<Class name="CraftedPistol" policy="gun"/>
+	<Class name="CraftedRifleLong" policy="gun"/>
+	<Class name="CraftedSMG" policy="gun"/>
+	<Class name="Crossbow" policy="gun"/>
+	<Class name="Crowbar" policy="gun" />
+	<Class name="CX4Storm" policy="gun" />
+	<Class name="DebugPistol" policy="gun"/>
+	<Class name="DT12" policy="gun" />
+	<Class name="FahQPaddle" policy="gun"/>
+	<Class name="FlareGun" policy="gun"/>
+	<Class name="Flashlight" policy="gun"/>
+	<Class name="G18Pistol" policy="gun"/>
+	<Class name="GridMap" policy="gun"/>
+	<Class name="Guitar" policy="gun" />
+	<Class name="Hammer" policy="gun"/>
+	<Class name="Hatchet" policy="gun"/>
+	<Class name="hk45" policy="gun"/>
+	<Class name="HuntingKnife" policy="gun"/>
+	<Class name="Katana" policy="gun"/>
+	<Class name="KatanaBlackWidow" policy="gun"/>
+	<Class name="KrissV" policy="gun"/>
+	<Class name="LugWrench" policy="gun"/>
+	<Class name="M16" policy="gun"/>
+	<Class name="m1911a1" policy="gun"/>
+	<Class name="M249" policy="gun"/>
+	<Class name="M40A5" policy="gun"/>
+	<Class name="M9A1" policy="gun" />
+	<Class name="Maglite" policy="gun"/>
+	<Class name="MagliteSmall" policy="gun"/>
+	<Class name="Makarov" policy="gun" />
+	<Class name="Map" policy="gun"/>
+	<Class name="Machete" policy="gun" />
+	<Class name="MannequinArm" policy="gun" />
+	<Class name="Megaphone" policy="gun"/>
+	<Class name="Mk18" policy="gun"/>
+	<Class name="Mk18Reaver" policy="gun" />
+	<Class name="MP5" policy="gun"/>
+	<Class name="Model70" policy="gun"/>
+	<Class name="NailKnuckles" policy="gun"/>
+	<Class name="NailsPaddle" policy="gun"/>
+	<Class name="NoWeapon" policy="gun" />
+	<Class name="P350" policy="gun" />
+	<Class name="Pickaxe" policy="gun"/>
+	<Class name="PipeWrench" policy="gun" />
+	<Class name="PoliceBaton" policy="gun"/>
+	<Class name="PX4" policy="gun" />
+	<Class name="R90" policy="gun" />
+	<Class name="RecurveBow" policy="gun"/>
+	<Class name="Rem700" policy="gun"/>
+	<Class name="Rem870" policy="gun"/>
+	<Class name="ruger22" policy="gun"/>
+	<Class name="Sako_85" policy="gun"/>
+	<Class name="SawedShotgun" policy="gun"/>
+	<Class name="Shotgun870Tactical" policy="gun"/>
+	<Class name="Squeegee" policy="gun"/>
+	<Class name="StunBaton" policy="gun" />
+	<Class name="SurvivalKnife" policy="gun"/>
+	<Class name="Torch" policy="gun"/>
+	<Class name="Wasteland22" policy="gun"/>
+	<Class name="WoodPaddle" policy="gun"/>
+	<Class name="TranquilizerGun" policy="gun"/>
+	
+	<!-- weapon accessories -->
+	<Class name="CraftedPistolSilencer" policy="gun" />
+	<Class name="CraftedSilencer" policy="gun" />
+	<Class name="FlashlightPistol" policy="gun" />
+	<Class name="FlashlightRifle" policy="gun" />
+	<Class name="HuntingScope" policy="gun" />
+	<Class name="IronsightKit" policy="gun" />
+	<Class name="LaserSight" policy="gun" />
+	<Class name="LaserSightGreen" policy="gun" />
+	<Class name="LaserSightBlue" policy="gun" />
+	<Class name="OpticScope" policy="gun" />
+	<Class name="OpticScopeBow" policy="gun" />
+	<Class name="PistolSilencer" policy="gun" />
+	<Class name="ReflexSight" policy="gun" />
+	<Class name="ReflexSightBow" policy="gun" />
+	<Class name="RifleSilencer" policy="gun" />
+	<Class name="T1Micro" policy="gun" />
+	<Class name="ForegripVertical" policy="gun" />
+
+	<!-- weapon repair kits -->
+	<Class name="RK_AA12" policy="obj" />
+	<Class name="RK_ACAW" policy="obj" />
+	<Class name="RK_AK74U" policy="obj" />
+	<Class name="RK_AKM" policy="obj" />
+	<Class name="RK_AP85" policy="obj" />
+	<Class name="RK_AUMP45" policy="obj" />
+	<Class name="RK_AT15" policy="obj" />
+	<Class name="RK_Bulldog" policy="obj" />
+	<Class name="RK_Canvas" policy="obj" />
+	<Class name="RK_Cloth" policy="obj" />
+	<Class name="RK_ClothingHelmet" policy="obj" />
+	<Class name="RK_ClothingHelmetBallistic" policy="obj" />
+	<Class name="RK_ColtPython" policy="obj" />
+	<Class name="RK_Crossbow" policy="obj" />
+	<Class name="RK_CX4Storm" policy="obj" />
+	<Class name="RK_DT12" policy="obj" />
+	<Class name="RK_Equipment" policy="obj" />
+	<Class name="RK_FlareGun" policy="obj" />
+	<Class name="RK_G18Pistol" policy="obj" />
+	<Class name="RK_hk45" policy="obj" />
+	<Class name="RK_KrissV" policy="obj" />
+	<Class name="RK_Leather" policy="obj" />
+	<Class name="RK_M16" policy="obj" />
+	<Class name="RK_m1911a1" policy="obj" />
+	<Class name="RK_M249" policy="obj" />
+	<Class name="RK_M40A5" policy="obj" />
+	<Class name="RK_M9A1" policy="obj" />
+	<Class name="RK_Makarov" policy="obj" />
+	<Class name="RK_MeleePrimary" policy="obj" />
+	<Class name="RK_MeleeSecondary" policy="obj" />
+	<Class name="RK_Mk18" policy="obj" />
+	<Class name="RK_Model70" policy="obj" />
+	<Class name="RK_MP5" policy="obj" />
+	<Class name="RK_P350" policy="obj" />
+	<Class name="RK_PX4" policy="obj" />
+	<Class name="RK_R90" policy="obj" />
+	<Class name="RK_RecurveBow" policy="obj" />
+	<Class name="RK_Rem700" policy="obj" />
+	<Class name="RK_Rem870" policy="obj" />
+	<Class name="RK_ruger22" policy="obj" />
+	<Class name="RK_Sako_85" policy="obj" />
+	<Class name="RK_SawedShotgun" policy="obj" />
+	<Class name="RK_Shotgun870Tactical" policy="obj" />
+	<Class name="RK_Teflon" policy="obj" />
+	<Class name="RK_TranquilizerGun" policy="obj" />
+	<Class name="RK_Wasteland22" policy="obj" />
+
+	<!-- throwable weapons -->
+	<Class name="C4TimedPickup" policy="obj" />
+	<Class name="ChemlightBluePickup" policy="gun"/>
+	<Class name="ChemlightGreenPickup" policy="gun"/>
+	<Class name="ChemlightRedPickup" policy="gun"/>
+	<Class name="ChemlightWhitePickup" policy="gun"/>
+	<Class name="ChemlightYellowPickup" policy="gun"/>
+	<Class name="EmptyBottle" policy="gun"/>
+	<Class name="FlashbangPickup" policy="gun"/>
+	<Class name="GrenadePickup" policy="gun"/>
+	<Class name="GrenadeMolotovPickup" policy="gun"/>
+	<Class name="GrenadeSmokeGreenPickup" policy="gun"/>
+	<Class name="GrenadeSmokeMagentaPickup" policy="gun"/>
+	<Class name="GrenadeSmokeRedPickup" policy="gun"/>
+	<Class name="GrenadeSmokeWhitePickup" policy="gun"/>
+	<Class name="GrenadeSmokeYellowPickup" policy="gun"/>
+	<Class name="GrenadeGasSleepPickup" policy="gun"/>
+	<Class name="GrenadeGasNervePickup" policy="gun"/>
+	<Class name="GrenadeGasTearPickup" policy="gun"/>
+	<Class name="PipebombPickup" policy="gun"/>
+
+	<!-- magazines -->
+	<Class name="10mmx15" policy="gun"/>
+	<Class name="10mmx30" policy="gun"/>
+	<Class name="12Gaugex8_Beanbag_AA12" policy="gun"/>
+	<Class name="12Gaugex8_Pellet_AA12" policy="gun"/>
+	<Class name="12Gaugex8_Slug_AA12" policy="gun"/>
+	<Class name="22x10_ruger" policy="gun"/>
+	<Class name="357x14" policy="gun" />
+	<Class name="545x30" policy="gun" />
+	<Class name="556x100" policy="gun"/>
+	<Class name="57x50" policy="gun" />
+	<Class name="762x30" policy="gun"/>
+	<Class name="762x5" policy="gun" />
+	<Class name="9mmx10" policy="gun"/>
+	<Class name="9mmx10_makarov" policy="gun" />
+	<Class name="9mmx15_m9a1" policy="gun" />
+	<Class name="9mmx19" policy="gun"/>
+	<Class name="9mmx19_ap85" policy="gun"/>
+	<Class name="9mmx33" policy="gun"/>
+	<Class name="acp_45x10_hk" policy="gun"/>
+	<Class name="acp_45x20" policy="gun" />
+	<Class name="acp_45x30" policy="gun" />
+	<Class name="acp_45x7" policy="gun"/>
+	<Class name="AmmoBox_10mm" policy="gun"/>
+	<Class name="AmmoBox_22" policy="gun"/>
+	<Class name="AmmoBox_223" policy="gun"/>
+	<Class name="AmmoBox_308" policy="gun"/>
+	<Class name="AmmoBox_357" policy="gun"/>
+	<Class name="AmmoBox_5_45x39" policy="gun"/>
+	<Class name="AmmoBox_5_56x45" policy="gun"/>
+	<Class name="AmmoBox_5_70x28" policy="gun"/>
+	<Class name="AmmoBox_7_62x39" policy="gun"/>
+	<Class name="AmmoBox_7_62x51" policy="gun"/>
+	<Class name="AmmoBox_9mm" policy="gun"/>
+	<Class name="AmmoBox_acp_45" policy="gun"/>
+	<Class name="Arrowx8" policy="gun"/>
+	<Class name="Arrowx8_000P" policy="gun"/>
+	<Class name="Arrowx8_00R0" policy="gun"/>
+	<Class name="Arrowx8_00RP" policy="gun"/>
+	<Class name="Arrowx8_0B00" policy="gun"/>
+	<Class name="Arrowx8_0B0P" policy="gun"/>
+	<Class name="Arrowx8_0BR0" policy="gun"/>
+	<Class name="Arrowx8_0BRP" policy="gun"/>
+	<Class name="Arrowx8_F000" policy="gun"/>
+	<Class name="Boltx5_0000" policy="gun"/>
+	<Class name="Boltx5_000P" policy="gun"/>
+	<Class name="Boltx5_00R0" policy="gun"/>
+	<Class name="Boltx5_00RP" policy="gun"/>
+	<Class name="Boltx5_0B00" policy="gun"/>
+	<Class name="Boltx5_0B0P" policy="gun"/>
+	<Class name="Boltx5_0BR0" policy="gun"/>
+	<Class name="Boltx5_0BRP" policy="gun"/>
+	<Class name="Boltx5_F000" policy="gun"/>
+	<Class name="CraftedArrowx8_0000" policy="gun"/>
+	<Class name="CraftedArrowx8_000P" policy="gun"/>
+	<Class name="CraftedArrowx8_00R0" policy="gun"/>
+	<Class name="CraftedArrowx8_00RP" policy="gun"/>
+	<Class name="CraftedArrowx8_0B00" policy="gun"/>
+	<Class name="CraftedArrowx8_0B0P" policy="gun"/>
+	<Class name="CraftedArrowx8_0BR0" policy="gun"/>
+	<Class name="CraftedArrowx8_0BRP" policy="gun"/>
+	<Class name="CraftedArrowx8_F000" policy="gun"/>
+	<Class name="M40x5" policy="gun"/>
+	<Class name="Pile_10mm" policy="gun"/>
+	<Class name="Pile_12GaugeBeanbag" policy="gun"/>
+	<Class name="Pile_12GaugePellet" policy="gun"/>
+	<Class name="Pile_12GaugeSlug" policy="gun"/>
+	<Class name="Pile_12GaugeCrafted" policy="gun" />
+	<Class name="Pile_22" policy="gun"/>
+	<Class name="Pile_223" policy="gun"/>
+	<Class name="Pile_308" policy="gun"/>
+	<Class name="Pile_357" policy="gun"/>
+	<Class name="Pile_45ACP" policy="gun"/>
+	<Class name="Pile_545x39" policy="gun"/>
+	<Class name="Pile_556x45" policy="gun"/>
+	<Class name="Pile_57x28" policy="gun" />
+	<Class name="Pile_762x39" policy="gun"/>
+	<Class name="Pile_762x51" policy="gun"/>
+	<Class name="Pile_9mm" policy="gun"/>
+	<Class name="Pile_Flare" policy="gun"/>
+	<Class name="Pile_TranquilizerDart" policy="gun"/>
+	<Class name="STANAGx30" policy="gun"/>
+
+	<!-- ammo -->
+	<Class name="ammo_10mm" policy="proj"/>
+	<Class name="ammo_12_gauge_beanbag" policy="proj"/>
+	<Class name="ammo_12_gauge_pellet" policy="proj"/>
+	<Class name="ammo_12_gauge_slug" policy="proj"/>
+	<Class name="ammo_22" policy="proj"/>
+	<Class name="ammo_223" policy="proj"/>
+	<Class name="ammo_308" policy="proj"/>
+	<Class name="ammo_357" policy="proj"/>
+	<Class name="ammo_5_45x39" policy="proj"/>
+	<Class name="ammo_5_56x45" policy="proj"/>
+	<Class name="ammo_5_70x28" policy="proj" />
+	<Class name="ammo_7_62x39" policy="proj"/>
+	<Class name="ammo_7_62x51" policy="proj"/>
+	<Class name="ammo_9mm" policy="proj"/>
+	<Class name="ammo_acp_45" policy="proj"/>
+	<Class name="ammo_rock_lge" policy="proj"/>
+	<Class name="ammo_rock_player" policy="proj"/>
+	<Class name="ammo_rock_sml" policy="proj"/>
+	<Class name="ammo_venom_spit" policy="proj"/>
+	<Class name="ammo_tranquilizer_dart" policy="proj"/>
+	<Class name="arrow" policy="proj"/>
+	<Class name="arrow_000P" policy="proj"/>
+	<Class name="arrow_00R0" policy="proj"/>
+	<Class name="arrow_00RP" policy="proj"/>
+	<Class name="arrow_0B00" policy="proj"/>
+	<Class name="arrow_0B0P" policy="proj"/>
+	<Class name="arrow_0BR0" policy="proj"/>
+	<Class name="arrow_0BRP" policy="proj"/>
+	<Class name="arrow_F000" policy="proj"/>
+	<Class name="BabySpiderSelfDestruct" policy="proj"/>
+	<Class name="bolt_0000" policy="proj"/>
+	<Class name="bolt_000P" policy="proj"/>
+	<Class name="bolt_00R0" policy="proj"/>
+	<Class name="bolt_00RP" policy="proj"/>
+	<Class name="bolt_0B00" policy="proj"/>
+	<Class name="bolt_0B0P" policy="proj"/>
+	<Class name="bolt_0BR0" policy="proj"/>
+	<Class name="bolt_0BRP" policy="proj"/>
+	<Class name="bolt_F000" policy="proj"/>
+	<Class name="C4Timed" policy="proj" />
+	<Class name="ChemlightBlue" policy="proj"/>
+	<Class name="ChemlightGreen" policy="proj"/>
+	<Class name="ChemlightRed" policy="proj"/>
+	<Class name="ChemlightWhite" policy="proj"/>
+	<Class name="ChemlightYellow" policy="proj"/>
+	<Class name="CraftedArrow_0000" policy="proj"/>
+	<Class name="CraftedArrow_000P" policy="proj"/>
+	<Class name="CraftedArrow_00R0" policy="proj"/>
+	<Class name="CraftedArrow_00RP" policy="proj"/>
+	<Class name="CraftedArrow_0B00" policy="proj"/>
+	<Class name="CraftedArrow_0B0P" policy="proj"/>
+	<Class name="CraftedArrow_0BR0" policy="proj"/>
+	<Class name="CraftedArrow_0BRP" policy="proj"/>
+	<Class name="CraftedArrow_F000" policy="proj"/>
+	<Class name="Flare" policy="proj"/>
+	<Class name="Flashbang" policy="proj"/>
+	<Class name="Grenade" policy="proj"/>
+	<Class name="GrenadeBottle" policy="proj"/>
+	<Class name="GrenadeGasNerve" policy="proj"/>
+	<Class name="GrenadeGasSleep" policy="proj"/>
+	<Class name="GrenadeGasTear" policy="proj"/>
+	<Class name="GrenadeMolotov" policy="proj"/>
+	<Class name="GrenadeSmokeGreen" policy="proj"/>
+	<Class name="GrenadeSmokeMagenta" policy="proj"/>
+	<Class name="GrenadeSmokeRed" policy="proj"/>
+	<Class name="GrenadeSmokeWhite" policy="proj"/>
+	<Class name="GrenadeSmokeYellow" policy="proj"/>
+	<Class name="Pipebomb" policy="proj"/>
+
+	<!-- consumables -->
+	<Class name="AdrenalineSyringe" policy="cons"/>
+	<Class name="AmcoinLedger" policy="cons"/>
+	<Class name="AppleFresh" policy="cons"/>
+	<Class name="AppleRotten" policy="cons"/>
+	<Class name="BearMeatBurned" policy="cons" />
+	<Class name="BearMeatCooked" policy="cons" />
+	<Class name="BearMeatCured" policy="cons" />
+	<Class name="BearMeatRaw" policy="cons" />
+	<Class name="BearMeatRotten" policy="cons" />
+	<Class name="BeefStew" policy="cons"/>
+	<Class name="BeerCan" policy="cons"/>
+	<Class name="Beets" policy="cons"/>
+	<Class name="BeetsBurned" policy="cons" />
+	<Class name="BeetsCooked" policy="cons" />
+	<Class name="BeetsRotten" policy="cons"/>
+	<Class name="Berries" policy="cons"/>
+	<Class name="BrushPeas" policy="cons"/>
+	<Class name="BrushPeasBurned" policy="cons" />
+	<Class name="BrushPeasCooked" policy="cons" />
+	<Class name="BrushPeasRotten" policy="cons"/>
+	<Class name="CannedMeat" policy="cons"/>
+	<Class name="Carrots" policy="cons"/>
+	<Class name="CarrotsBurned" policy="cons" />
+	<Class name="CarrotsCooked" policy="cons" />
+	<Class name="CarrotsRotten" policy="cons"/>
+	<Class name="CerealBox" policy="cons"/>
+	<Class name="ChickenBurned" policy="cons"/>
+	<Class name="ChickenCooked" policy="cons"/>
+	<Class name="ChickenRaw" policy="cons"/>
+	<Class name="ChickenRotten" policy="cons"/>
+	<Class name="CivCanteen01" policy="cons"/>
+	<Class name="ClamSingle" policy="cons" />
+	<Class name="CocktailGinAndTonic" policy="cons" />
+	<Class name="CocktailRedEye" policy="cons" />
+	<Class name="CocktailVodkaSmite" policy="cons" />
+	<Class name="CocktailWhiskeyCola" policy="cons" />
+	<Class name="CokeCan" policy="cons"/>
+	<Class name="CornCan" policy="cons"/>
+	<Class name="DeerMeatSteakBurned" policy="cons"/>
+	<Class name="DeerMeatSteakCooked" policy="cons"/>
+	<Class name="DeerMeatSteakCured" policy="cons"/>
+	<Class name="DeerMeatSteakRaw" policy="cons"/>
+	<Class name="DeerMeatSteakRotten" policy="cons"/>
+	<Class name="DogFoodCan" policy="cons"/>
+	<Class name="DrPepperCan" policy="cons"/>
+	<Class name="EggChicken" policy="cons" />
+	<Class name="EggChickenBurned" policy="cons" />
+	<Class name="EggChickenCooked" policy="cons" />
+	<Class name="EggChickenRotten" policy="cons" />
+	<Class name="EnergyDrinkCan" policy="cons"/>
+	<Class name="HamBurned" policy="cons"/>
+	<Class name="HamCooked" policy="cons"/>
+	<Class name="HamCured" policy="cons"/>
+	<Class name="HamRaw" policy="cons"/>
+	<Class name="HamRotten" policy="cons"/>
+	<Class name="HersheysBar" policy="cons"/>
+	<Class name="Honeycomb" policy="cons" />
+	<Class name="MilitaryCanteenMetal" policy="cons"/>
+	<Class name="MilitaryCanteenPlastic" policy="cons"/>
+	<Class name="MiniBottleGin" policy="cons"/>
+	<Class name="MiniBottleVodka" policy="cons"/>
+	<Class name="MiniBottleWhiskey" policy="cons"/>
+	<Class name="MRE" policy="cons"/>
+	<Class name="MushroomAntiRad" policy="cons"/>
+	<Class name="MushroomFood" policy="cons"/>
+	<Class name="MushroomHeal" policy="cons"/>
+	<Class name="NutSpread" policy="cons"/>
+	<Class name="PeachesCan" policy="cons"/>
+	<Class name="PearsCan" policy="cons"/>
+	<Class name="PeasCan" policy="cons"/>
+	<Class name="Pepper" policy="cons"/>
+	<Class name="PepsiCan" policy="cons"/>
+	<Class name="Potatoes" policy="cons"/>
+	<Class name="PotatoesBurned" policy="cons" />
+	<Class name="PotatoesCooked" policy="cons" />
+	<Class name="PotatoesRotten" policy="cons"/>
+	<Class name="Pumpkin" policy="cons" />
+	<Class name="PumpkinBurned" policy="cons" />
+	<Class name="PumpkinCooked" policy="cons" />
+	<Class name="PumpkinRotten" policy="cons" />
+	<Class name="Radishes" policy="cons"/>
+	<Class name="RadishesBurned" policy="cons" />
+	<Class name="RadishesCooked" policy="cons" />
+	<Class name="RadishesRotten" policy="cons"/>
+	<Class name="RavioliCan" policy="cons"/>
+	<Class name="Salt" policy="cons"/>
+	<Class name="Seaweed" policy="cons" />
+	<Class name="SnapPeas" policy="cons"/>
+	<Class name="SnapPeasBurned" policy="cons" />
+	<Class name="SnapPeasCooked" policy="cons" />
+	<Class name="SnapPeasRotten" policy="cons"/>
+	<Class name="SoupCan" policy="cons"/>
+	<Class name="SpriteCan" policy="cons"/>
+	<Class name="Tomatoes" policy="cons"/>
+	<Class name="TomatoesBurned" policy="cons" />
+	<Class name="TomatoesCooked" policy="cons" />
+	<Class name="TomatoesRotten" policy="cons"/>
+	<Class name="TomatoJuiceCan" policy="cons"/>
+	<Class name="TunaCan" policy="cons"/>
+	<Class name="WaterBottle" policy="cons"/>
+	<Class name="Watermelon" policy="cons" />
+	<Class name="WatermelonRotten" policy="cons" />
+	<Class name="WaterskinCraftedDeer" policy="cons"/>
+	<Class name="WaterskinCraftedWolf" policy="cons"/>
+	<Class name="WolfMeatSteakBurned" policy="cons"/>
+	<Class name="WolfMeatSteakCooked" policy="cons"/>
+	<Class name="WolfMeatSteakCured" policy="cons"/>
+	<Class name="WolfMeatSteakRaw" policy="cons"/>
+	<Class name="WolfMeatSteakRotten" policy="cons"/>
+
+	<!-- seeds -->
+	<Class name="SeedsBeets" policy="obj"/>
+	<Class name="SeedsBrushPeas" policy="obj"/>
+	<Class name="SeedsCarrots" policy="obj"/>
+	<Class name="SeedsPotatoes" policy="obj"/>
+	<Class name="SeedsPumpkins" policy="obj"/>
+	<Class name="SeedsRadishes" policy="obj"/>
+	<Class name="SeedsSnapPeas" policy="obj"/>
+	<Class name="SeedsTomatoes" policy="obj"/>
+	<Class name="SeedsWatermelons" policy="obj" />
+
+	<!-- equipment / medical -->
+	<Class name="AdvancedBandage" policy="obj"/>
+	<Class name="AntibioticBandage" policy="obj"/>
+	<Class name="Antibiotics" policy="obj"/>
+	<Class name="AntiradiationPills" policy="obj"/>
+	<Class name="Aspirin" policy="obj"/>
+	<Class name="Bandage" policy="obj"/>
+	<Class name="CarBattery" policy="obj"/>
+	<Class name="DriveBelt" policy="obj"/>
+	<Class name="DuctTape" policy="obj"/>
+	<Class name="ElectricalParts" policy="obj"/>
+	<Class name="ExplosiveOilBarrel" policy="obj" />
+	<Class name="FireDrill" policy="obj" />
+	<Class name="HeatPack" policy="obj"/>
+	<Class name="JerryCanDiesel" policy="obj"/>
+	<Class name="JerryCanGas" policy="obj"/>
+	<Class name="JerryCanWater" policy="obj"/>
+	<Class name="Matches" policy="obj"/>
+	<Class name="Oil" policy="obj"/>
+	<Class name="PoliceHandcuffKey" policy="obj"/>
+	<Class name="PoliceHandcuffs" policy="obj"/>
+	<Class name="PotassiumIodidePills" policy="obj" />
+	<Class name="PropaneTank" policy="obj" />
+	<Class name="Rags" policy="obj"/>
+	<Class name="RubbingAlcohol" policy="obj"/>
+	<Class name="small_generator" policy="obj"/>
+	<Class name="SparkPlugs" policy="obj"/>
+	<Class name="TowCable" policy="obj"/>
+	<Class name="WaterPurificationTablets" policy="obj"/>
+	<Class name="Wheel" policy="obj"/>
+	<Class name="WorkLight" policy="obj"/>
+
+	<!-- guides -->
+	<Class name="guide_medical_bandages" policy="obj"/>
+	<Class name="guide_powered_parts_1" policy="obj"/>
+	<Class name="guide_structures_tire_stacks" policy="obj"/>
+	<Class name="guide_structures_wood_bridges_1" policy="obj"/>
+	<Class name="guide_structures_wood_bridges_2" policy="obj"/>
+	<Class name="guide_structures_wood_curves" policy="obj"/>
+	<Class name="guide_structures_wood_gallows" policy="obj"/>
+	<Class name="guide_structures_wood_gatehouse" policy="obj"/>
+	<Class name="guide_structures_wood_ramps_1" policy="obj"/>
+	<Class name="guide_structures_wood_ramps_2" policy="obj"/>
+	<Class name="guide_structures_wood_roofs" policy="obj" />
+	<Class name="guide_structures_wood_stairs_1" policy="obj" />
+	<Class name="guide_structures_wood_stairs_2" policy="obj" />
+	<Class name="guide_structures_wood_storage" policy="obj"/>
+	<Class name="guide_structures_wood_traps_1" policy="obj"/>
+	<Class name="guide_structures_wood_traps_2" policy="obj"/>
+	<Class name="guide_structures_wood_walkways_1" policy="obj"/>
+	<Class name="guide_structures_wood_walkways_2" policy="obj"/>
+	<Class name="guide_structures_wood_walls_1" policy="obj"/>
+	<Class name="guide_structures_wood_walls_2" policy="obj"/>
+	<Class name="guide_structures_wood_watchtower" policy="obj"/>
+	<Class name="guide_traps_1" policy="obj"/>
+	<Class name="guide_traps_2" policy="obj"/>
+	<Class name="guide_weapons_melee" policy="obj"/>
+
+	<!-- crafting -->
+	<Class name="Amalgaduino" policy="obj" />
+	<Class name="AnimalFat" policy="obj"/>
+	<Class name="AnimalGut" policy="obj"/>
+	<Class name="BarbedWireCoil" policy="obj"/>
+	<Class name="BearPelt" policy="obj" />
+	<Class name="BioFuel" policy="obj" />
+	<Class name="C4Bricks" policy="obj" />
+	<Class name="CamoNetting" policy="obj"/>
+	<Class name="Charcoal" policy="obj" />
+	<Class name="ChristmasPresentBpart" policy="obj" />
+	<Class name="ChristmasPresentClothing" policy="obj" />
+	<Class name="ChristmasPresentWeapon" policy="obj" />
+	<Class name="cloth_bag_large" policy="obj"/>
+	<Class name="DeerPelt" policy="obj"/>
+	<Class name="Gunpowder" policy="obj" />
+	<Class name="IronIngot" policy="obj" />
+	<Class name="Lighter" policy="obj" />
+	<Class name="Lumber" policy="obj"/>
+	<Class name="Nails" policy="obj"/>
+	<Class name="PaintCan_Aqua" policy="obj"/>
+	<Class name="PaintCan_Black" policy="obj"/>
+	<Class name="PaintCan_Blue" policy="obj"/>
+	<Class name="PaintCan_Brown" policy="obj"/>
+	<Class name="PaintCan_Gold" policy="obj"/>
+	<Class name="PaintCan_Green" policy="obj"/>
+	<Class name="PaintCan_Orange" policy="obj"/>
+	<Class name="PaintCan_Pink" policy="obj"/>
+	<Class name="PaintCan_Purple" policy="obj"/>
+	<Class name="PaintCan_Red" policy="obj"/>
+	<Class name="PaintCan_Silver" policy="obj"/>
+	<Class name="PaintCan_White" policy="obj"/>
+	<Class name="PaintCan_Yellow" policy="obj"/>
+	<Class name="PipeMetal" policy="obj"/>
+	<Class name="Plywood" policy="obj"/>
+	<Class name="power_pole" policy="obj"/>
+	<Class name="PropaneHeaterTop" policy="obj" />
+	<Class name="Pyrite" policy="obj" />
+	<Class name="Rocks" policy="obj"/> <!-- rocks -->
+	<Class name="Rope" policy="obj"/>
+	<Class name="SawBlade" policy="obj"/>
+	<Class name="ScrapMetal" policy="obj"/> <!-- metal -->
+	<Class name="SheetMetal" policy="obj"/>
+	<Class name="ShelterPole" policy="obj"/>
+	<Class name="StickPile" policy="obj"/>
+	<Class name="Sulphur" policy="obj" />
+	<Class name="TargetPaper" policy="obj"/>
+	<Class name="Tarp" policy="obj"/>
+	<Class name="Thatch" policy="obj"/>
+	<Class name="WolfPelt" policy="obj"/>
+	<Class name="WoodPile" policy="obj"/> <!-- wood -->
+
+	<!-- construction -->
+	<Class name="Campfire" policy="obj"/>
+	<Class name="CampfirePacked" policy="cnst"/>
+	<Class name="DieselGenerator" policy="cnst"/>
+	<Class name="DieselGeneratorModern" policy="cnst"/>
+	<Class name="DryingRack" policy="obj"/>
+	<Class name="DryingRackPacked" policy="cnst"/>
+	<Class name="SteamStand" policy="cnst"/>
+	<Class name="SteamStandVehicle" policy="cnst"/>
+
+	<!-- traps -->
+	<Class name="TrapBearTrap" policy="obj"/>
+	<Class name="TrapBearTrapPacked" policy="obj"/>
+	<Class name="TrapC4" policy="obj" />
+	<Class name="TrapC4Packed" policy="obj" />
+	<Class name="TrapC42m" policy="obj" />
+	<Class name="TrapC4Packed2m" policy="obj" />
+	<Class name="TrapCans" policy="obj"/>
+	<Class name="TrapCansPacked" policy="obj"/>
+	<Class name="TrapCans2m" policy="obj"/>
+	<Class name="TrapCans2mPacked" policy="obj"/>
+	<Class name="TrapFlare" policy="obj"/>
+	<Class name="TrapFlarePacked" policy="obj"/>
+	<Class name="TrapFlare2m" policy="obj"/>
+	<Class name="TrapFlare2mPacked" policy="obj"/>
+	<Class name="TrapGrenadeFrag" policy="obj"/>
+	<Class name="TrapGrenadeFragPacked" policy="obj"/>
+	<Class name="TrapGrenadeFrag2m" policy="obj"/>
+	<Class name="TrapGrenadeFrag2mPacked" policy="obj"/>
+	<Class name="TrapLandmine" policy="obj"/>
+	<Class name="TrapLandminePacked" policy="obj"/>
+	<Class name="TrapMolotov" policy="obj"/>
+	<Class name="TrapMolotovPacked" policy="obj"/>
+	<Class name="TrapMolotov2m" policy="obj"/>
+	<Class name="TrapMolotov2mPacked" policy="obj"/>
+	<Class name="TrapNerveGrenade" policy="obj" />
+	<Class name="TrapNerveGrenadePacked" policy="obj" />
+	<Class name="TrapNerveGrenade2m" policy="obj" />
+	<Class name="TrapNerveGrenadePacked2m" policy="obj" />
+	<Class name="TrapPipebomb" policy="obj"/>
+	<Class name="TrapPipebombPacked" policy="obj"/>
+	<Class name="TrapPipebomb2m" policy="obj" />
+	<Class name="TrapPipebombPacked2m" policy="obj" />
+	<Class name="TrapPropane" policy="obj" />
+	<Class name="TrapPropane2m" policy="obj" />
+	<Class name="TrapPropanePacked" policy="obj" />
+	<Class name="TrapPropanePacked2m" policy="obj" />
+	<Class name="TrapShotgunSide" policy="obj"/>
+	<Class name="TrapShotgunSidePacked" policy="obj"/>
+	<Class name="TrapShotgunSide2m" policy="obj"/>
+	<Class name="TrapShotgunSide2mPacked" policy="obj"/>
+	<Class name="TrapSleepGrenade" policy="obj" />
+	<Class name="TrapSleepGrenadePacked" policy="obj" />
+	<Class name="TrapSleepGrenade2m" policy="obj" />
+	<Class name="TrapSleepGrenadePacked2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeGreen" policy="obj" />
+	<Class name="TrapSmokeGrenadeGreenPacked" policy="obj" />
+	<Class name="TrapSmokeGrenadeGreen2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeGreenPacked2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeMagenta" policy="obj" />
+	<Class name="TrapSmokeGrenadeMagentaPacked" policy="obj" />
+	<Class name="TrapSmokeGrenadeMagenta2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeMagentaPacked2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeRed" policy="obj" />
+	<Class name="TrapSmokeGrenadeRedPacked" policy="obj" />
+	<Class name="TrapSmokeGrenadeRed2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeRedPacked2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeWhite" policy="obj" />
+	<Class name="TrapSmokeGrenadeWhitePacked" policy="obj" />
+	<Class name="TrapSmokeGrenadeWhite2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeWhitePacked2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeYellow" policy="obj" />
+	<Class name="TrapSmokeGrenadeYellowPacked" policy="obj" />
+	<Class name="TrapSmokeGrenadeYellow2m" policy="obj" />
+	<Class name="TrapSmokeGrenadeYellowPacked2m" policy="obj" />
+	<Class name="TrapTearGrenade" policy="obj" />
+	<Class name="TrapTearGrenadePacked" policy="obj" />
+	<Class name="TrapTearGrenade2m" policy="obj" />
+	<Class name="TrapTearGrenadePacked2m" policy="obj" />
+
+	<Class name="StaticPlotSign" policy="cnst"/>
+
+	<!-- basebuilding -->
+	<Class name="BuildExclusion" policy="obj"/>
+	<Class name="PlotSign" policy="cnst"/>
+	<Class name="PlotSignPacked" policy="cnst"/>
+
+	<Class name="animated_search_light" policy="obj"/>
+	<Class name="camping_chair" policy="obj"/>
+	<Class name="camping_lantern" policy="obj"/>
+	<Class name="camping_pop_up_canopy" policy="obj"/>
+	<Class name="camping_table" policy="obj"/>
+	<Class name="camping_water_jug" policy="obj"/>
+	<Class name="candle_animal_fat_large" policy="obj"/>
+	<Class name="candle_animal_fat_small" policy="obj"/>
+	<Class name="christmas_tree" policy="obj" />
+	<Class name="dws_grill2" policy="obj" />
+	<Class name="gnome_bronze" policy="obj"/>
+	<Class name="gnome_creep" policy="obj"/>
+	<Class name="gnome_giant_c" policy="obj" />
+	<Class name="gnome_gold" policy="obj"/>
+	<Class name="gnome_silver" policy="obj"/>
+	<Class name="gnome_standard_a" policy="obj"/>
+	<Class name="gnome_standard_b" policy="obj"/>
+	<Class name="gnome_standard_c" policy="obj"/>
+	<Class name="hesco_barrier" policy="obj" />
+	<Class name="jack_o_lantern" policy="obj" />
+	<Class name="log_furniture_bench_a" policy="obj"/>
+	<Class name="log_furniture_bench_b" policy="obj"/>
+	<Class name="log_furniture_bench_c" policy="obj"/>
+	<Class name="log_furniture_table_a" policy="obj"/>
+	<Class name="metal_aframe_3m_4m" policy="obj" />
+	<Class name="metal_barbed_wire_2m" policy="obj"/>
+	<Class name="metal_barbed_wire_4m" policy="obj"/>
+	<Class name="metal_gate_3m_5_4m" policy="obj" />
+	<Class name="metal_wall_3m_2m" policy="obj" />
+	<Class name="metal_wall_3m_4m" policy="obj" />
+	<Class name="metal_gateway_4m_8m" policy="obj" />
+	<Class name="metal_door_lockable_1m_2m" policy="obj" />
+	<Class name="metal_gate_lockable_3m_5_4m" policy="obj" />
+	<Class name="metal_gatehouse_4m_8m" policy="obj" />
+	<Class name="metal_steam_stand" policy="obj" />
+	<Class name="metal_wall_1_3m_2m" policy="obj" />
+	<Class name="metal_wall_1_3m_4m" policy="obj" />
+	<Class name="metal_wall_2m_2m" policy="obj" />
+	<Class name="metal_wall_2m_4m" policy="obj" />
+	<Class name="metal_wall_door_3m_4m" policy="obj" />
+	<Class name="metal_wall_window_3m_2m" policy="obj" />
+	<Class name="metal_wall_window_3m_4m" policy="obj" />
+	<Class name="planter_box" policy="obj"/>
+	<Class name="plated_bridge_3m_12m" policy="obj"/>
+	<Class name="plated_bridge_3m_6m" policy="obj"/>
+	<Class name="plated_bridge_6m_12m" policy="obj"/>
+	<Class name="plated_bridge_6m_6m" policy="obj"/>
+	<Class name="plated_bridge_9m_12m" policy="obj"/>
+	<Class name="plated_bridge_9m_6m" policy="obj"/>
+	<Class name="plated_column_1_3m" policy="obj"/>
+	<Class name="plated_column_2m" policy="obj"/>
+	<Class name="plated_column_3m" policy="obj"/>
+	<Class name="plated_column_4m" policy="obj"/>
+	<Class name="plated_column_torch_1_3m" policy="obj"/>
+	<Class name="plated_column_torch_2m" policy="obj"/>
+	<Class name="plated_column_torch_3m" policy="obj"/>
+	<Class name="plated_column_torch_4m" policy="obj"/>
+	<Class name="plated_door_1m_2m" policy="obj"/>
+	<Class name="plated_door_lockable_1m_2m" policy="obj"/>
+	<Class name="plated_gate_lockable_3m_4m" policy="obj"/>
+	<Class name="plated_gatehouse" policy="obj"/>
+	<Class name="plated_ramp_0m_1_3m_1m" policy="obj"/>
+	<Class name="plated_ramp_0m_1_3m_3m" policy="obj"/>
+	<Class name="plated_ramp_0m_2m_1m" policy="obj"/>
+	<Class name="plated_ramp_0m_2m_3m" policy="obj"/>
+	<Class name="plated_ramp_1_3m_2m_1m" policy="obj"/>
+	<Class name="plated_ramp_1_3m_2m_3m" policy="obj"/>
+	<Class name="plated_ramp_1_3m_3m_1m" policy="obj"/>
+	<Class name="plated_ramp_1_3m_3m_3m" policy="obj"/>
+	<Class name="plated_ramp_2m_3m_1m" policy="obj"/>
+	<Class name="plated_ramp_2m_3m_3m" policy="obj"/>
+	<Class name="plated_roof_1_3m_1m" policy="obj" />
+	<Class name="plated_roof_1_3m_2m" policy="obj" />
+	<Class name="plated_roof_1_3m_4m" policy="obj" />
+	<Class name="plated_roof_2m_1m" policy="obj" />
+	<Class name="plated_roof_2m_2m" policy="obj" />
+	<Class name="plated_roof_2m_4m" policy="obj" />
+	<Class name="plated_roof_3m_1m" policy="obj" />
+	<Class name="plated_roof_3m_2m" policy="obj" />
+	<Class name="plated_roof_3m_4m" policy="obj" />
+	<Class name="plated_roof_murderhole_3m_2m" policy="obj" />
+	<Class name="plated_roof_murderhole_3m_4m" policy="obj" />
+	<Class name="plated_roof_trapdoor_3m_4m" policy="obj" />
+	<Class name="plated_shutter_1_6m_0_9m" policy="obj" />
+	<Class name="plated_trapdoor_lockable_1m_2m" policy="obj" />
+	<Class name="plated_walkroof_3m_4m_4m" policy="obj"/>
+	<Class name="plated_walkstairs_3m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_0m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_1_3m_1m_1m" policy="obj"/>
+	<Class name="plated_walkway_1_3m_3m_1m" policy="obj"/>
+	<Class name="plated_walkway_1_3m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_2m_1m_1m" policy="obj"/>
+	<Class name="plated_walkway_2m_3m_1m" policy="obj"/>
+	<Class name="plated_walkway_2m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_3m_1m_1m" policy="obj"/>
+	<Class name="plated_walkway_3m_3m_1m" policy="obj"/>
+	<Class name="plated_walkway_3m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_curve_1_3m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_curve_2m_4m_4m" policy="obj"/>
+	<Class name="plated_walkway_curve_3m_4m_4m" policy="obj"/>
+	<Class name="plated_wall_1_3m_1m" policy="obj"/>
+	<Class name="plated_wall_1_3m_2m" policy="obj"/>
+	<Class name="plated_wall_1_3m_4m" policy="obj"/>
+	<Class name="plated_wall_2m_1m" policy="obj"/>
+	<Class name="plated_wall_2m_2m" policy="obj"/>
+	<Class name="plated_wall_2m_4m" policy="obj"/>
+	<Class name="plated_wall_3m_1m" policy="obj"/>
+	<Class name="plated_wall_3m_2m" policy="obj"/>
+	<Class name="plated_wall_3m_4m" policy="obj"/>
+	<Class name="plated_wall_curve_1_3m_4m" policy="obj"/>
+	<Class name="plated_wall_curve_2m_4m" policy="obj"/>
+	<Class name="plated_wall_curve_3m_4m" policy="obj"/>
+	<Class name="plated_wall_door_3m_4m" policy="obj"/>
+	<Class name="plated_wall_door_curve_3m_4m" policy="obj"/>
+	<Class name="plated_wall_shutter_3m_2m" policy="obj" />
+	<Class name="plated_wall_shutter_3m_4m" policy="obj" />
+	<Class name="plated_ramp_wall_0m_1_3m_3m" policy="obj" />
+	<Class name="plated_ramp_wall_0m_2m_3m" policy="obj" />
+	<Class name="plated_ramp_wall_1_3m_2m_3m" policy="obj" />
+	<Class name="plated_ramp_wall_1_3m_3m_3m" policy="obj" />
+	<Class name="plated_ramp_wall_2m_3m_1m" policy="obj" />
+	<Class name="plated_wall_window_3m_2m" policy="obj"/>
+	<Class name="plated_wall_window_3m_4m" policy="obj"/>
+	<Class name="plated_wall_window_curve_3m_4m" policy="obj"/>
+	<Class name="plated_watchtower" policy="obj"/>
+	<Class name="plated_watchtower_tire" policy="obj" />
+	<Class name="powered_generator_small" policy="obj"/>
+	<Class name="powered_generator_small_solar" policy="obj"/>
+	<Class name="powered_work_light" policy="obj"/>
+	<Class name="powered_work_light_blue" policy="obj"/>
+	<Class name="powered_work_light_green" policy="obj"/>
+	<Class name="powered_work_light_pink" policy="obj"/>
+	<Class name="powered_work_light_red" policy="obj"/>
+	<Class name="powered_work_light_yellow" policy="obj"/>
+	<Class name="propane_heater" policy="obj" />
+	<Class name="rug_bear_pelt" policy="obj" />
+	<Class name="rug_wolf_pelt" policy="obj"/>
+	<Class name="sandbag_crafted_1_3m_1m" policy="obj"/>
+	<Class name="sandbag_crafted_1_3m_3m" policy="obj"/>
+	<Class name="sandbag_crafted_1_3m_3m_window" policy="obj" />
+	<Class name="sandbag_crafted_1m_1m" policy="obj"/>
+	<Class name="sandbag_crafted_1m_3m" policy="obj"/>
+	<Class name="sandbag_crafted_1m_3m_window" policy="obj" />
+	<Class name="sandbag_crafted_single" policy="obj"/>
+	<Class name="shelter_wall_panel" policy="obj"/>
+	<Class name="small_leanto" policy="obj"/>
+	<Class name="small_leanto_camo" policy="obj"/>
+	<Class name="small_shelter_wall_1m_1_3m" policy="obj"/>
+	<Class name="small_shelter_wall_1m_1_3m_camo" policy="obj"/>
+	<Class name="small_shelter_wall_1m_2m" policy="obj"/>
+	<Class name="small_shelter_wall_1m_2m_camo" policy="obj"/>
+	<Class name="small_shelter_wall_2m_1_3m" policy="obj"/>
+	<Class name="small_shelter_wall_2m_1_3m_camo" policy="obj"/>
+	<Class name="small_shelter_wall_2m_2m" policy="obj"/>
+	<Class name="small_shelter_wall_2m_2m_camo" policy="obj"/>
+	<Class name="small_shelter_wall_4m_1_3m" policy="obj"/>
+	<Class name="small_shelter_wall_4m_1_3m_camo" policy="obj"/>
+	<Class name="small_shelter_wall_4m_2m" policy="obj"/>
+	<Class name="small_shelter_wall_4m_2m_camo" policy="obj"/>
+	<Class name="SolarPanelPiece" policy="obj"/>
+	<Class name="stick_scaffolding_1m" policy="obj" />
+	<Class name="stick_scaffolding_1_3m" policy="obj" />
+	<Class name="stick_scaffolding_2m" policy="obj" />
+	<Class name="stick_scaffolding_3m" policy="obj" />
+	<Class name="stick_scaffolding_4m" policy="obj" />
+	<Class name="stone_furnace" policy="obj" />
+	<Class name="stone_furnace_packed" policy="obj" />
+	<Class name="tiki_torch" policy="obj"/>
+	<Class name="tire_1_3m" policy="obj"/>
+	<Class name="tire_1m" policy="obj"/>
+	<Class name="tire_2m" policy="obj"/>
+	<Class name="tire_3m" policy="obj"/>
+	<Class name="tire_4m" policy="obj"/>
+	<Class name="tire_single" policy="obj"/>
+	<Class name="water_barrel" policy="obj" />
+	<Class name="water_collector" policy="obj" />
+	<Class name="water_purifier" policy="obj" />
+	<Class name="wood_bed" policy="obj"/>
+	<Class name="wood_bridge_3m_12m" policy="obj"/>
+	<Class name="wood_bridge_3m_6m" policy="obj"/>
+	<Class name="wood_bridge_6m_12m" policy="obj"/>
+	<Class name="wood_bridge_6m_6m" policy="obj"/>
+	<Class name="wood_bridge_9m_12m" policy="obj"/>
+	<Class name="wood_bridge_9m_6m" policy="obj"/>
+	<Class name="wood_chair" policy="obj"/>
+	<Class name="wood_coffeetable" policy="obj"/>
+	<Class name="wood_column_1_3m" policy="obj"/>
+	<Class name="wood_column_2m" policy="obj"/>
+	<Class name="wood_column_3m" policy="obj"/>
+	<Class name="wood_column_4m" policy="obj"/>
+	<Class name="wood_column_torch_1_3m" policy="obj"/>
+	<Class name="wood_column_torch_2m" policy="obj"/>
+	<Class name="wood_column_torch_3m" policy="obj"/>
+	<Class name="wood_column_torch_4m" policy="obj"/>
+	<Class name="wood_crate_large" policy="obj"/>
+	<Class name="wood_crate_large_packed" policy="obj"/>
+	<Class name="wood_crate_small" policy="obj"/>
+	<Class name="wood_crate_small_packed" policy="obj"/>
+	<Class name="wood_door_1m_2m" policy="obj"/>
+	<Class name="wood_door_frame" policy="obj"/>
+	<Class name="wood_door_lockable_1m_2m" policy="obj"/>
+	<Class name="wood_floor_panel" policy="obj"/>
+	<Class name="wood_furniture_panel" policy="obj"/>
+	<Class name="wood_gallows" policy="obj"/>
+	<Class name="wood_gate_lockable_3m_4m" policy="obj"/>
+	<Class name="wood_gatehouse" policy="obj"/>
+	<Class name="wood_palisade_3m" policy="obj"/>
+	<Class name="wood_punji_2m_2m" policy="obj"/>
+	<Class name="wood_punji_poison_2m_2m" policy="obj"/>
+	<Class name="wood_ramp_0m_1_3m_1m" policy="obj"/>
+	<Class name="wood_ramp_0m_1_3m_3m" policy="obj"/>
+	<Class name="wood_ramp_0m_2m_1m" policy="obj"/>
+	<Class name="wood_ramp_0m_2m_3m" policy="obj"/>
+	<Class name="wood_ramp_1_3m_2m_1m" policy="obj"/>
+	<Class name="wood_ramp_1_3m_2m_3m" policy="obj"/>
+	<Class name="wood_ramp_1_3m_3m_1m" policy="obj"/>
+	<Class name="wood_ramp_1_3m_3m_3m" policy="obj"/>
+	<Class name="wood_ramp_2m_3m_1m" policy="obj"/>
+	<Class name="wood_ramp_2m_3m_3m" policy="obj"/>
+	<Class name="wood_ramp_panel" policy="obj"/>
+	<Class name="wood_ramp_wall_0m_1_3m_3m" policy="obj" />
+	<Class name="wood_ramp_wall_0m_2m_3m" policy="obj" />
+	<Class name="wood_ramp_wall_1_3m_2m_3m" policy="obj" />
+	<Class name="wood_ramp_wall_1_3m_3m_3m" policy="obj" />
+	<Class name="wood_ramp_wall_2m_3m_1m" policy="obj" />
+	<Class name="wood_roof_1_3m_1m" policy="obj" />
+	<Class name="wood_roof_1_3m_2m" policy="obj" />
+	<Class name="wood_roof_1_3m_4m" policy="obj" />
+	<Class name="wood_roof_2m_1m" policy="obj" />
+	<Class name="wood_roof_2m_2m" policy="obj" />
+	<Class name="wood_roof_2m_4m" policy="obj" />
+	<Class name="wood_roof_3m_1m" policy="obj" />
+	<Class name="wood_roof_3m_2m" policy="obj" />
+	<Class name="wood_roof_3m_4m" policy="obj" />
+	<Class name="wood_roof_murderhole_3m_2m" policy="obj" />
+	<Class name="wood_roof_murderhole_3m_4m" policy="obj" />
+	<Class name="wood_roof_trapdoor_3m_4m" policy="obj" />
+	<Class name="wood_trapdoor_lockable_1m_2m" policy="obj" />
+	<Class name="wood_shutter_1_6m_0_9m" policy="obj" />
+	<Class name="wood_stairs_0m_1_3m_1m" policy="obj"/>
+	<Class name="wood_stairs_0m_1_3m_3m" policy="obj"/>
+	<Class name="wood_stairs_0m_2m_1m" policy="obj"/>
+	<Class name="wood_stairs_0m_2m_3m" policy="obj"/>
+	<Class name="wood_stairs_0m_1_3m_4m_1_6m" policy="obj"/>
+	<Class name="wood_stairs_0m_1_3m_1_2m_1_6m" policy="obj"/>
+	<Class name="wood_stairs_1_3m_3m_3m" policy="obj" />
+	<Class name="wood_stairs_1_3m_2m_1m" policy="obj"/>
+	<Class name="wood_stairs_1_3m_2m_3m" policy="obj"/>
+	<Class name="wood_stairs_1_3m_3m_1m" policy="obj"/>
+	<Class name="wood_stairs_2m_3m_1m" policy="obj" />
+	<Class name="wood_stairs_2m_3m_3m" policy="obj" />
+	<Class name="wood_stairs_panel" policy="obj" />
+	<Class name="wood_table" policy="obj"/>
+	<Class name="wood_target" policy="obj"/>
+	<Class name="wood_toilet" policy="obj"/>
+	<Class name="wood_walkroof_3m_4m_4m" policy="obj"/>
+	<Class name="wood_walkstairs_3m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_0m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_1_3m_1m_1m" policy="obj"/>
+	<Class name="wood_walkway_1_3m_3m_1m" policy="obj"/>
+	<Class name="wood_walkway_1_3m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_2m_1m_1m" policy="obj"/>
+	<Class name="wood_walkway_2m_3m_1m" policy="obj"/>
+	<Class name="wood_walkway_2m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_3m_1m_1m" policy="obj"/>
+	<Class name="wood_walkway_3m_3m_1m" policy="obj"/>
+	<Class name="wood_walkway_3m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_curve_1_3m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_curve_2m_4m_4m" policy="obj"/>
+	<Class name="wood_walkway_curve_3m_4m_4m" policy="obj"/>
+	<Class name="wood_wall_1_3m_1m" policy="obj"/>
+	<Class name="wood_wall_1_3m_2m" policy="obj"/>
+	<Class name="wood_wall_1_3m_4m" policy="obj"/>
+	<Class name="wood_wall_2m_1m" policy="obj"/>
+	<Class name="wood_wall_2m_2m" policy="obj"/>
+	<Class name="wood_wall_2m_4m" policy="obj"/>
+	<Class name="wood_wall_3m_1m" policy="obj"/>
+	<Class name="wood_wall_3m_2m" policy="obj"/>
+	<Class name="wood_wall_3m_4m" policy="obj"/>
+	<Class name="wood_wall_curve_1_3m_4m" policy="obj"/>
+	<Class name="wood_wall_curve_2m_4m" policy="obj"/>
+	<Class name="wood_wall_curve_3m_4m" policy="obj"/>
+	<Class name="wood_wall_curve_panel" policy="obj"/>
+	<Class name="wood_wall_door_3m_4m" policy="obj"/>
+	<Class name="wood_wall_door_curve_3m_4m" policy="obj"/>
+	<Class name="wood_wall_panel" policy="obj"/>
+	<Class name="wood_wall_shutter_3m_2m" policy="obj" />
+	<Class name="wood_wall_shutter_3m_4m" policy="obj" />
+	<Class name="wood_wall_window_3m_2m" policy="obj"/>
+	<Class name="wood_wall_window_3m_4m" policy="obj"/>
+	<Class name="wood_wall_window_curve_3m_4m" policy="obj"/>
+	<Class name="wood_watchtower" policy="obj"/>
+	<Class name="wood_watchtower_tire" policy="obj" />
+	<Class name="wood_window_frame" policy="obj"/>
+	<Class name="workbench" policy="obj" />
+
+	<!-- structures / tents -->
+	<Class name="CampingTentBlue" policy="strt"/>
+	<Class name="CampingTentBrown" policy="strt"/>
+	<Class name="CampingTentGreen" policy="strt"/>
+	<Class name="CampingTentOrange" policy="strt"/>
+	<Class name="CampingTentPurple" policy="strt"/>
+	<Class name="CampingTentRed" policy="strt"/>
+	<Class name="CampingTentYellow" policy="strt"/>
+	<Class name="PackedCampingTentBlue" policy="obj"/>
+	<Class name="PackedCampingTentBrown" policy="obj"/>
+	<Class name="PackedCampingTentGreen" policy="obj"/>
+	<Class name="PackedCampingTentOrange" policy="obj"/>
+	<Class name="PackedCampingTentPurple" policy="obj"/>
+	<Class name="PackedCampingTentRed" policy="obj"/>
+	<Class name="PackedCampingTentYellow" policy="obj"/>
+
+	<Class name="EasyCampTentBlue" policy="strt"/>
+	<Class name="EasyCampTentBrown" policy="strt"/>
+	<Class name="EasyCampTentGreen" policy="strt"/>
+	<Class name="EasyCampTentOrange" policy="strt"/>
+	<Class name="EasyCampTentPurple" policy="strt"/>
+	<Class name="EasyCampTentRed" policy="strt"/>
+	<Class name="EasyCampTentYellow" policy="strt"/>
+	<Class name="PackedEasyCampTentBlue" policy="obj"/>
+	<Class name="PackedEasyCampTentBrown" policy="obj"/>
+	<Class name="PackedEasyCampTentGreen" policy="obj"/>
+	<Class name="PackedEasyCampTentOrange" policy="obj"/>
+	<Class name="PackedEasyCampTentPurple" policy="obj"/>
+	<Class name="PackedEasyCampTentRed" policy="obj"/>
+	<Class name="PackedEasyCampTentYellow" policy="obj"/>
+
+	<Class name="PupTentBlue" policy="strt"/>
+	<Class name="PupTentBrown" policy="strt"/>
+	<Class name="PupTentGreen" policy="strt"/>
+	<Class name="PupTentRed" policy="strt"/>
+	<Class name="PupTentTan" policy="strt"/>
+	<Class name="PackedPupTentBlue" policy="obj"/>
+	<Class name="PackedPupTentBrown" policy="obj"/>
+	<Class name="PackedPupTentGreen" policy="obj"/>
+	<Class name="PackedPupTentRed" policy="obj"/>
+	<Class name="PackedPupTentTan" policy="obj"/>
+
+	<Class name="TrekkingTentBlue" policy="strt"/>
+	<Class name="TrekkingTentBrown" policy="strt"/>
+	<Class name="TrekkingTentGreen" policy="strt"/>
+	<Class name="TrekkingTentOrange" policy="strt"/>
+	<Class name="TrekkingTentPurple" policy="strt"/>
+	<Class name="TrekkingTentRed" policy="strt"/>
+	<Class name="TrekkingTentYellow" policy="strt"/>
+	<Class name="PackedTrekkingTentBlue" policy="obj"/>
+	<Class name="PackedTrekkingTentBrown" policy="obj"/>
+	<Class name="PackedTrekkingTentGreen" policy="obj"/>
+	<Class name="PackedTrekkingTentOrange" policy="obj"/>
+	<Class name="PackedTrekkingTentPurple" policy="obj"/>
+	<Class name="PackedTrekkingTentRed" policy="obj"/>
+	<Class name="PackedTrekkingTentYellow" policy="obj"/>
+
+	<Class name="TwoPersonTentBlue" policy="strt"/>
+	<Class name="TwoPersonTentBrown" policy="strt"/>
+	<Class name="TwoPersonTentGreen" policy="strt"/>
+	<Class name="TwoPersonTentOrange" policy="strt"/>
+	<Class name="TwoPersonTentPurple" policy="strt"/>
+	<Class name="TwoPersonTentRed" policy="strt"/>
+	<Class name="TwoPersonTentYellow" policy="strt"/>
+	<Class name="PackedTwoPersonTentBlue" policy="obj"/>
+	<Class name="PackedTwoPersonTentBrown" policy="obj"/>
+	<Class name="PackedTwoPersonTentGreen" policy="obj"/>
+	<Class name="PackedTwoPersonTentOrange" policy="obj"/>
+	<Class name="PackedTwoPersonTentPurple" policy="obj"/>
+	<Class name="PackedTwoPersonTentRed" policy="obj"/>
+	<Class name="PackedTwoPersonTentYellow" policy="obj"/>
+
+
+	<!-- basic physicalized objects -->
+	<Class name="Default" policy="phys"/>
+	<Class name="BasicEntity" policy="phys"/>
+	<Class name="DestroyableObject" policy="phys"/>
+	<Class name="PressurizedObject" policy="phys"/>
+	<Class name="RigidBodyEx" policy="phys"/>
+	<Class name="RopeEntity" policy="phys"/>
+	<Class name="InteractiveEntity" policy="phys"/>
+	<Class name="Tornado" policy="phys"/>
+	<Class name="Constraint" policy="phys"/>
+	<Class name="GeomEntity" policy="phys"/>
+	<Class name="DangerousRigidBody" policy="phys"/>
+	<Class name="DeadBody" policy="phys"/>
+
+	<!-- misc -->
+	<Class name="Comment" policy="obj"/>
+	<Class name="SpawnPoint" policy="obj"/>
+	<Class name="SpawnGroup" policy="capt"/>
+	<Class name="Door" policy="door"/>
+	<Class name="Elevator" policy="door"/>
+	<Class name="ElevatorSwitch" policy="door"/>
+	<Class name="Hazard" policy="obj"/>
+	<Class name="AreaShape" policy="obj"/>
+	<Class name="AnimObject" policy="obj"/>
+	<Class name="AreaBox" policy="obj"/>
+	<Class name="LightBox" policy="obj"/>
+	<Class name="AreaSphere" policy="obj"/>
+	<Class name="ProximityTrigger" policy="obj"/>
+	<Class name="RadiationProximityTrigger" policy="obj"/>
+	<Class name="WindArea" policy="obj"/>
+	<Class name="TagPoint" policy="obj"/>
+	<Class name="Lightning" policy="obj"/>
+	<Class name="GravityBox" policy="obj"/>
+	<Class name="SpectatorPoint" policy="obj"/>
+	<Class name="FogVolume" policy="obj"/>
+	<Class name="AreaTrigger" policy="obj"/>
+	<Class name="ForbiddenArea" policy="capt"/>
+	<Class name="FireHeatArea" policy="obj"/>
+	<Class name="FireDamageArea" policy="obj"/>
+
+	<Class name="AIAnchor" policy="obj"/>
+	<Class name="CameraSource" policy="obj"/>
+	<Class name="Fog" policy="obj"/>
+	<Class name="ParticleEffect" policy="obj"/>
+	<Class name="SmartObject" policy="obj"/>
+
+	<Class name="CTFFlag" policy="capt"/>
+	<Class name="CTFBase" policy="capt"/>
+	<Class name="BTBBombSite" policy="obj"/>
+	<Class name="BTBBombBase" policy="obj"/>
+	<Class name="ExtractionPoint" policy="capt"/>
+	<Class name="ExtractionWeaponSpawn" policy="obj"/>
+	<Class name="AssaultIntel" policy="obj"/>
+	<Class name="AmmoCrateMP" policy="obj"/>
+
+	<Class name="VTOLSpawnPoint" policy="obj"/>
+	<Class name="DestroyableLight" policy="obj"/>
+	<Class name="RigidBody" policy="obj"/>
+	<Class name="Cloth" policy="obj"/>
+	<Class name="InteractiveObjectEx" policy="obj"/>
+	<Class name="Breakage" policy="obj"/>
+	<Class name="DeployableBarrier" policy="obj"/>
+	<Class name="RigidBodyLight" policy="obj"/>
+	<Class name="Rain" policy="obj"/>
+	<Class name="Ladder" policy="obj"/>
+	<Class name="LedgeObject" policy="obj"/>
+
+	<Class name="NavigationSeedPoint" policy="obj"/>
+	<Class name="WaterRipplesGenerator" policy="obj"/>
+
+	<!-- fallback -->
+	<Default policy="obj"/>
+</EntityScheduler>

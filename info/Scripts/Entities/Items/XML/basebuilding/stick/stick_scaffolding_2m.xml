@@ -1,0 +1,39 @@
+<item name="stick_scaffolding_2m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.75"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@stick_scaffolding_2m"/>
+		<param name="description" value="@stick_scaffolding_2mDescription"/>
+	</params>
+
+	<base_part class="static" type="162" name="stick_scaffolding_2m" max_health="1" repair_with="StickPile">
+		<static filename="objects/basebuilding/stick/stick_scaffolding_2m.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/stick/stick_scaffolding_packed.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/stick_scaffolding_2m_200.png?crc=9768078D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30234"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/stick_scaffolding_2m_2048.png?crc=9768078D"/>
+	</steam>
+</item>

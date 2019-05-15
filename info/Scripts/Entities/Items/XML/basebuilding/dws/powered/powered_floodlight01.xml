@@ -1,0 +1,30 @@
+<item name="powered_floodlight01" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="static" type="253" name="powered_floodlight01" max_health="10">
+		<static filename="Objects/props/industrial/misc/dws_floodlight01.cgf" />
+		<base_parts>
+			<base_part class="light_nearest">
+				<light_nearest helper="light" light_bulb_size="0.1" light_radius="15" light_offset="0,0,0" light_rotation="0,0,-90" light_cast_shadows="0" light_view_dist_ratio="10" 
+					light_color="0.73,0.57,0.41" light_diff_mul="10" light_spec_mul="1" light_hdr_dyn="0" light_style="19" light_anim_speed="1" 
+					light_project_fov="140" light_project_texture="textures/lights/generic/rectangle_full_050.dds" 
+					light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.floodlight" lens_flare_fov="180"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-1.5,-7,-3.5" bb2="1.5,0.3,0.5" temperature="8" light="0.75" humidity="-0.1"/>
+				</envareas>
+			</base_part>
+			<base_part class="light_nearest">
+				<light_nearest helper="light_fill" light_bulb_size="0.05" light_radius="0.1" light_offset="0,0,0" light_rotation="0,0,0" light_cast_shadows="0" light_view_dist_ratio="250" 
+					light_color="0.73,0.57,0.41" light_diff_mul="10" light_spec_mul="1" light_hdr_dyn="0" light_style="19" light_anim_speed="1" />
+			</base_part>
+		</base_parts>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+</item>

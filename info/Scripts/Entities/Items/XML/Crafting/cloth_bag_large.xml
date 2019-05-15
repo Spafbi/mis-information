@@ -1,0 +1,27 @@
+<item name="cloth_bag_large" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="display_name" value="@cloth_bag_large"/>
+		<param name="description" value="@cloth_bag_largeDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/sand/sandbag_flatcrafted.cgf" scale="0.5"/>
+	</geometry>
+
+	<usable>
+		<param name="title" value="@cloth_bag_largeFillBagWithDirt"/>
+		<param name="action" value="craft"/>
+		<param name="param" value="sandbag_crafted_single"/>
+		<param name="soundUsed" value="Play_sandbag_fill"/>
+	</usable>
+	
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

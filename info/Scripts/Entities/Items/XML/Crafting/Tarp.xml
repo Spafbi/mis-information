@@ -1,0 +1,21 @@
+<item name="Tarp" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@Tarp"/>
+		<param name="description" value="@TarpDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/tarp/tarp_folded.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

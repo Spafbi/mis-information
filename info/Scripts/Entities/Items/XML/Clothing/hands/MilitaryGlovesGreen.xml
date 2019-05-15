@@ -1,0 +1,55 @@
+<item name="MilitaryGlovesGreen" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@MilitaryGlovesGreen"/>
+		<param name="description" value="@MilitaryGlovesGreenDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/hands/gloves/military/gloves.skin"/>
+		<param name="mtl" value="objects/characters/players/male/hands/gloves/military/gloves_c.mtl"/>
+		<param name="slot" value="hands"/>
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/hands/gloves/military/glove_ground.cgf" material="objects/characters/players/male/hands/gloves/military/glove_c_ground"/>
+	</geometry>
+
+	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="explosion" percentage="1.0"/>
+			<protection_amount type="physical" percentage="1.0"/>
+            <protection_amount type="cold" percentage="5.0"/>
+            <protection_amount type="heat" percentage="3.0"/>
+			<protection_amount type="rain_acid" percentage="4"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hands"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hands"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MilitaryGlovesGreen_200.png?crc=1BF0F3DE"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40105"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hands"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MilitaryGlovesGreen_2048.png?crc=1BF0F3DE"/>
+	</steam>
+</item>

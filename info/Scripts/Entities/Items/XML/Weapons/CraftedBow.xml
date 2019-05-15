@@ -1,0 +1,284 @@
+<item name="CraftedBow" class="Weapon" category="primary" priority="12" weaponParams="1">
+	<params>
+		<param name="display_name" value="@CraftedBow"/>
+		<param name="description" value="@CraftedBowDescription"/>
+		<param name="itemClass" value="bow"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="2.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="20"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="1"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="hand" value="left"/>
+		<param name="attachment_right" value="left_weapon"/> <!-- swap hands -->
+		<param name="attachment_left" value="weapon"/>
+		<param name="sprintToFireDelay" value="0.8"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.2"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="autoReloadDelay" value="0.5"/> <!-- Time delay to automatically reload weapon on empty magazine -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.2"/>
+		<param name="tag" value="crafted_bow"/>
+		<param name="adb" value="crafted_bowWeaponAnims.adb"/>
+		<param name="prone_no_select" value="1"/>
+		<animPrecache name="crafted_bow">
+			<precache DBAFile="animations/weapons/crafted_bow/crafted_bow.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/recurveBow/recurveBow_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
+	<MovementModifiers speedScale="0.975" speedScaleTactical="0.9"/>
+
+	<magazines>
+		<magazine name="Arrowx8"/>
+		<magazine name="Arrowx8_000P"/>
+		<magazine name="Arrowx8_00R0"/>
+		<magazine name="Arrowx8_00RP"/>
+		<magazine name="Arrowx8_0B00"/>
+		<magazine name="Arrowx8_0B0P"/>
+		<magazine name="Arrowx8_0BR0"/>
+		<magazine name="Arrowx8_0BRP"/>
+		<magazine name="Arrowx8_F000"/>
+		<magazine name="CraftedArrowx8_0000"/>
+		<magazine name="CraftedArrowx8_000P"/>
+		<magazine name="CraftedArrowx8_00R0"/>
+		<magazine name="CraftedArrowx8_00RP"/>
+		<magazine name="CraftedArrowx8_0B00"/>
+		<magazine name="CraftedArrowx8_0B0P"/>
+		<magazine name="CraftedArrowx8_0BR0"/>
+		<magazine name="CraftedArrowx8_0BRP"/>
+		<magazine name="CraftedArrowx8_F000"/>
+	</magazines>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/bow_crafted/crafted_bow.cdf"/>
+		<onground name="Objects/weapons/bow_crafted/crafted_bow_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode type="default">
+			<fire>
+				<param name="hit_type" value=""/> <!-- not used - ammo param -->
+				<param name="ammo_type" value="arrow"/> <!-- not used - magazine param -->
+				<param name="rate" value="25"/>
+				<param name="damage" value="0"/> <!-- not used - ammo param -->
+				<param name="helper_tp" value="weapon_term"/>
+				<param name="bullet_chamber" value="0"/>
+				<param name="is_silenced" value="1"/>
+			</fire>
+			<recoil>
+				<param name="max_recoil" value="4"/>
+				<param name="attack" value="0.4"/>
+				<param name="decay" value="1.25"/>
+				<param name="maxx" value="0"/>
+				<param name="maxy" value="0"/>
+				<hints>
+					<hint x="0.02" y="0.00"/>
+					<hint x="0.02" y="0.00"/>
+					<hint x="0.10" y="0.00"/>
+					<hint x="0.28" y="0.00"/>
+					<hint x="0.35" y="0.00"/>
+					<hint x="0.43" y="0.00"/>
+					<hint x="0.50" y="0.00"/>
+					<hint x="0.50" y="0.00"/>
+					<hint x="0.50" y="0.00"/>
+					<hint x="0.50" y="0.00"/>
+				</hints>
+			</recoil>
+			<spread>
+				<param name="min" value="1.0"/>
+				<param name="max" value="0.0"/>
+				<param name="attack" value="0.8"/>
+				<param name="decay" value="0.9"/>
+				<param name="speed_m" value="0.3"/>
+				<param name="rotation_m" value="0"/>
+				<param name="spread_jump_m" value="1.0"/>
+				<param name="spread_crouch_m" value="0.0"/>
+				<param name="speed_holdBreathActive_m" value="0.75"/>
+			</spread>
+			<muzzleflash/>
+			<reject/>
+		</firemode>
+
+		<firemode type="Throw" name="Bow">
+			<throw>
+				<param name="prime_enabled" value="false"/> <!-- can projectile be "primed" -->
+				<param name="throw_delay" value="0"/>
+				<param name="delay" value="0"/>
+				<param name="hold_duration" value="1.25"/> <!-- based a bit on skyrim bow params -->
+				<param name="hold_min_scale" value="0.25"/>
+				<param name="hold_max_scale" value="1.25"/>
+			</throw>
+		</firemode>
+
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.7"/>
+				<param name="damage" value="14"/> <!-- +2 from kick -->
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/>
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.51"/> <!-- Delay, in seconds, from when weapon is meleed until impact occurs -->
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.0"/> <!-- Essentially rate of fire for melee. Time, in seconds, between each melee action -->
+				<param name="knockdown_chance" value="0.0"/>
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/>
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/>
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<zoommodes>
+		<zoommode type="default">
+			<stereo>
+				<param name="eyeDistance" value="0.002"/>
+				<param name="convergenceDistance" value="0.01"/>
+			</stereo>
+			<zoomSway> <!-- This block is ignored in the "default" zoom mode. Has to be overridden below in "hipfire" -->
+				<param name="maxX" value="0.025"/>
+				<param name="maxY" value="0.030"/>
+				<param name="stabilizeTime" value="3.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+			<spreadMod> <!-- This whole block doesn't seem to work! -->
+				<param name="min_mod" value="0.1"/>
+				<param name="max_mod" value="0.25"/>
+				<param name="attack_mod" value="0.25"/>
+				<param name="decay_mod" value="0.35"/>
+				<param name="end_decay_mod" value="1.0"/>
+				<param name="speed_m_mod" value="0.20"/>
+				<param name="speed_holdBreathActive_m_mod" value="1.0"/>
+				<param name="rotation_m_mod" value="0.0"/>
+				<param name="spread_crouch_m_mod" value="1.0"/>
+				<param name="spread_jump_m_mod" value="1.0"/>
+				<param name="spread_holdBreathActive_m_mod" value="1.0"/>
+			</spreadMod>
+			<recoilMod>
+				<param name="max_recoil_mod" value="1.0"/>
+				<param name="attack_mod" value="0.55"/>
+				<param name="first_attack_mod" value="0.75"/>
+				<param name="decay_mod" value="2.0"/>
+				<param name="end_decay_mod" value="1.1"/>
+				<param name="maxx_mod" value="2.9"/>
+				<param name="maxy_mod" value="1.3"/>
+				<param name="impulse_mod" value="1.0"/>
+				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_jump_m_mod" value="1.0"/>
+				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+			</recoilMod>
+		</zoommode>
+
+		<zoommode name="ironsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="1.33" rotationSpeedScale="0.75" movementSpeedScale="0.85"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="iron"/>
+				<param name="suffixAG" value="_iron"/>
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.6"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.002"/>
+				<param name="maxY" value="0.002"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.008"/>
+				<param name="maxY" value="0.008"/>
+				<param name="stabilizeTime" value="3.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+	</zoommodes>
+
+	<accessories>
+		<accessory name="Arrowx8" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_000P" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_00R0" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_00RP" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_0B00" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_0B0P" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_0BR0" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_0BRP" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="Arrowx8_F000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al"/></accessory>
+		<accessory name="CraftedArrowx8_0000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_000P" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_00R0" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_00RP" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_0B00" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_0B0P" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_0BR0" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_0BRP" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="CraftedArrowx8_F000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+	</accessories>
+
+	<storage>
+		<locations>
+			<location category="primary"/>
+		</locations>
+		<types>
+			<type category="arrow_mag" capacity="1"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedBow_200.png?crc=943AA9F7"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="8"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110017"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CraftedBow_2048.png?crc=943AA9F7"/>
+	</steam>
+</item>

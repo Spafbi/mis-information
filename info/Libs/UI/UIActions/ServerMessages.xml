@@ -1,0 +1,44 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="UI:Display:Display" pos="-380,-430,0" flags="0">
+   <Inputs uiElements_Element="ServerMessages" instanceID="-1"/>
+  </Node>
+  <Node Id="5" Name="Display_the_server_messages_window_and_unload_it_on_level_end" Class="_commentbox" pos="-700,-469.82132,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="900" Height="240"/>
+   <NodeSize Width="900" Height="267.64063"/>
+  </Node>
+  <Node Id="286" Class="UI:Events:System:OnGameplayEnded" pos="-680,-300,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="295" Name="Server_messages_functionality" Class="_commentbox" pos="-700,-189.71666,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="910" Height="290"/>
+   <NodeSize Width="910" Height="317.64063"/>
+  </Node>
+  <Node Id="327" Name="From_system_to_server_messages_window" Class="_comment" pos="-680,-130,0" flags="0"/>
+  <Node Id="329" Class="Game:Start" pos="-680,-410,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="345" Class="UI:Functions:ServerMessages:AddMessage" pos="-190,-80,0" flags="0">
+   <Inputs instanceID="-1" Message=""/>
+  </Node>
+  <Node Id="346" Class="UI:Functions:ServerMessages:ClearMessages" pos="-190,20,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="347" Class="UI:Events:MP:AddServerMessage" pos="-660,-80,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="348" Class="UI:Events:MP:ClearServerMessages" pos="-660,20,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="286" portIn="unload" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="329" portIn="show" portOut="output" enabled="1"/>
+  <Edge nodeIn="345" nodeOut="347" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="345" nodeOut="347" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="346" nodeOut="348" portIn="Call" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

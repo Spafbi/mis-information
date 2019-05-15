@@ -1,0 +1,56 @@
+<skin name="HoodieBikerSkin">
+
+	<params>
+		<param name="display_name" value="Hoodie Biker Skin"/>
+		<param name="description" value="A skin awarded to early backers of Miscreated"/>
+		<param name="material" value="Objects/characters/players/male/torso/long/hoodie/hoodie_biker_skin"/>
+	</params>
+
+	<items>
+		<item name="Hoodie"/>
+		<item name="HoodieBlackGreyDesign1"/>
+		<item name="HoodieBlackWhiteDesign4"/>
+		<item name="HoodieBlueBlackDesign4"/>
+		<item name="HoodieBlueDesign2"/>
+		<item name="HoodieBlueWhiteDesign4"/>
+		<item name="HoodieCapitalMunch"/>
+		<item name="HoodieEagle"/>
+		<item name="HoodieGreenBlackDesign4"/>
+		<item name="HoodieGreenDesign2"/>
+		<item name="HoodieGreenWhiteDesign4"/>
+		<item name="HoodieGrey"/>
+		<item name="HoodieGreyDarkGreyDesign1"/>
+		<item name="HoodieOrangeBlackDesign4"/>
+		<item name="HoodiePinkDesign2"/>
+		<item name="HoodiePixel"/>
+		<item name="HoodiePixelBlackGreyDesign5"/>
+		<item name="HoodiePixelBlueBlackDesign5"/>
+		<item name="HoodiePixelGreenBlackDesign5"/>
+		<item name="HoodiePixelGreyBlueDesign5"/>
+		<item name="HoodiePixelGreyDesign5"/>
+		<item name="HoodiePixelGreyGreenDesign5"/>
+		<item name="HoodiePixelGreyOrangeDesign5"/>
+		<item name="HoodiePixelGreyRedDesign5"/>
+		<item name="HoodiePixelOrangeBlackDesign5"/>
+		<item name="HoodiePixelRedBlackDesign5"/>
+		<item name="HoodieRedBlackDesign4"/>
+		<item name="HoodieRedDesign2"/>
+		<item name="HoodieRedWhiteDesign4"/>
+		<item name="HoodieSerk"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/HoodieBikerSkin_200.png?crc=2AEA1A55"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="200006"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/HoodieBikerSkin_2048.png?crc=2AEA1A55"/>
+	</steam>
+</skin>

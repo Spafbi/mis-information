@@ -1,0 +1,43 @@
+<item name="NecklaceCrossSilver" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@NecklaceCrossSilver"/>
+		<param name="description" value="@NecklaceCrossSilverDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="Objects/characters/players/male/neck/necklaces_cross/necklace_cross.skin"/>
+		<param name="mtl" value="Objects/characters/players/male/neck/necklaces_cross/necklace_cross_a.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="neck"/>
+	</wearable>
+
+	<geometry>
+		<onground name="Objects/characters/players/male/neck/necklaces_cross/necklace_cross_a_onground.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="neck"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Neck"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/NecklaceCrossSilver_200.png?crc=EB8E971C"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="1EFF00"/>
+		<param name="itemdefid" value="40452"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Neck"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/NecklaceCrossSilver_2048.png?crc=EB8E971C"/>
+	</steam>
+</item>

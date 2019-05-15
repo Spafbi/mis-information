@@ -1,0 +1,21 @@
+<item name="wood_door_frame" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@wood_door_frame"/>
+		<param name="description" value="@wood_door_frameDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

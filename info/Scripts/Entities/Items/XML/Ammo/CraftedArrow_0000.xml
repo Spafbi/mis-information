@@ -1,0 +1,66 @@
+<ammo name="CraftedArrow_0000" class="ArrowEI">
+	<geometry>
+		<firstperson name="objects/ammo/crafted_arrow/crafted_arrow.cgf" />
+	</geometry>
+
+<!-- Arrow effect explanation:
+	- poison, fire and bleeding effect are lost, radiation one stays
+	- barbed/fire arrow has higher break chance
+	- barbed/fire arrow has higher weight and lower speed
+	- barbed arrow has slightly higher initial damage
+	- fire arrow has slightly lower initial damage
+	- FBRP (Fire / Bleed / Radiation / Poison)
+ -->
+
+	<flags>
+		<param name="clientonly" value="1" />
+		<param name="reusable" value="1" />
+	</flags>
+
+	<whiz>
+		<param name="sound" value="Play_bullet_whiz" />
+		<param name="distance" value="10.0" />
+	</whiz>
+
+	<physics type="particle">
+		<param name="mass" value="0.02" />
+		<param name="speed" value="100" /> <!-- longbow speed varies between 40-100 m/s -->
+		<param name="radius" value="0.004" /> <!-- average for an arrow shaft -->
+		<param name="air_resistance" value="0.0026" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_wood" />
+		<param name="pierceability" value="8" />
+		<param name="single_contact" value="1" />
+	</physics>
+
+	<!-- Standard Arrow -->
+	<params>
+		<param name="damage" value="48" />
+		<param name="bleed_percent" value="33" />
+		<param name="fire_percent" value="0" />
+		<param name="poison_percent" value="0" />
+		<param name="irradiate_percent" value="0" />
+		<param name="replacement_item" value="CraftedArrowx8_0000" /> <!-- Only Radiation is re-used -->
+		<param name="replacement_item_offset" value="-0.40565" />
+		<param name="break_chance" value="0.1" />
+		<param name="hit_type" value="arrow" />
+		<param name="knocks_target" value="0"/>
+		<param name="min_damage_for_knockDown" value="0"/>
+		<param name="min_damage_for_knockDown_leg" value="0"/>
+		<param name="showtime" value="0" /> <!-- dont wait before showing the arrow -->
+		<param name="lifetime" value="15.0" /> <!-- need a long life time for arrows -->
+		<param name="bulletType" value="6" /> <!-- arrow, see BasicActor.lua - death_impulses -->
+	</params>
+
+	<trail>
+		<param name="effect_owneronly" value="weapon_fx.arrow.trail" />
+		<param name="prime" value="false" />
+	</trail>
+
+	<trailUnderWater>
+		<param name="effect" value="water.bubbles.bullets" />
+		<param name="prime" value="false" />
+	</trailUnderWater>
+</ammo>

@@ -1,0 +1,65 @@
+<PrecacheLists>
+
+	<Always>
+		<FlashTexs>
+			<FlashTex name = 'textures/sprites/hud/dirt1_hud_diff.tif' />
+			<FlashTex name = 'textures/sprites/hud/dirt2_hud_diff.tif' />
+			<FlashTex name = 'textures/sprites/hud/dirt3_hud_diff.tif' />
+			<FlashTex name = 'textures/sprites/hud/blood1_hud_diff.tif' />
+			<FlashTex name = 'textures/sprites/hud/blood2_hud_diff.tif' />
+			<FlashTex name = 'textures/sprites/hud/blood3_hud_diff.tif' />
+			<FlashTex name = 'textures/weapons/damage_blurmask.tif' />
+		</FlashTexs>
+		<GFXs>
+			<!--Flash paths need to start with '/libs/'-->
+			<GFX name = '/libs/ui/ChatWindow/ChatWindow.gfx' />
+			<GFX name = '/libs/ui/Inventory/Inventory.gfx' />
+			<GFX name = '/libs/ui/MainMenu/MainMenu.gfx' />
+			<GFX name = '/libs/ui/StatsBar/StatsBar.gfx' />
+			<GFX name = '/libs/ui/RadioScreen/RadioScreen.gfx' />
+			<GFX name = '/libs/ui/ServerMessages/ServerMessages.gfx' />
+			<GFX name = '/libs/ui/UsableMenu/UsableMenu.gfx' />
+			<GFX name = '/libs/ui/VOIP/VOIP.gfx' />
+		</GFXs>
+		<ADBTagDefs>
+			<ADBTagDef name = 'Animations/Mannequin/ADB/blendRagdollTags.xml'/>
+		</ADBTagDefs>
+	</Always>
+
+	<GameMode name='Multiplayer'>
+		<CDFs>
+			<CDF name = 'objects/characters/players/male/human_male.cdf' />
+			<CDF name = 'objects/characters/players/female/human_female.cdf' />
+		</CDFs>
+		<DBAs>
+			<DBA name ='animations/human/male/locomotion.dba' />
+			<DBA name ='animations/human/male/locomotion/1handedmelee.dba' />
+			<DBA name ='animations/human/male/locomotion/jump.dba' />
+			<DBA name ='animations/human/male/locomotion/lean.dba' />
+			<DBA name ='animations/human/male/locomotion/nw.dba' />
+			<DBA name ='animations/human/male/weapons/flashlight/flashlight_3p.dba' />
+			<DBA name ='animations/human/male/weapons/generic/generic.dba' />
+			<DBA name ='animations/human/male/weapons/nw/nw_3p.dba' />
+		</DBAs>
+		<CGFs>
+		</CGFs>
+		<Particles>
+			<Particle name = 'collisions.small.water' />
+			<Particle name = 'character.player.bleeding' />
+			<Particle name = 'character.mutant.rock_throw' />
+			<Particle name = 'character.mutant.spider_explosion' />
+			<Particle name = 'character.mutant.spider_primer' />
+		</Particles>
+		<VehicleXMLs>
+		</VehicleXMLs>
+		<BodyDamages>
+			<BodyDamage body="Libs/BodyDamage/BodyDamage_MP.xml" parts="Libs/BodyDamage/BodyParts_HumanMaleShared.xml" />
+			<BodyDestruction name="Libs/BodyDamage/BodyDestructibility_Default.xml" />
+		</BodyDamages>
+		<GFXs>
+		</GFXs>
+		<ADBs>
+		</ADBs>
+	</GameMode>
+
+</PrecacheLists>

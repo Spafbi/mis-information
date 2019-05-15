@@ -1,0 +1,76 @@
+<ATLConfig atl_name="w_generic">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_generic_bow_equip_3p">
+			<WwiseEvent wwise_name="Play_generic_bow_equip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_bow_equip_fp">
+			<WwiseEvent wwise_name="Play_generic_bow_equip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_bow_unequip_3p">
+			<WwiseEvent wwise_name="Play_generic_bow_unequip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_bow_unequip_fp">
+			<WwiseEvent wwise_name="Play_generic_bow_unequip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_change_firemode_3p">
+			<WwiseEvent wwise_name="Play_generic_change_firemode_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_change_firemode_fp">
+			<WwiseEvent wwise_name="Play_generic_change_firemode_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_gun_dry_fire_3p">
+			<WwiseEvent wwise_name="Play_generic_gun_dry_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_gun_dry_fire_fp">
+			<WwiseEvent wwise_name="Play_generic_gun_dry_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_handheld_equip_3p">
+			<WwiseEvent wwise_name="Play_generic_handheld_equip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_handheld_equip_fp">
+			<WwiseEvent wwise_name="Play_generic_handheld_equip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_handheld_unequip_3p">
+			<WwiseEvent wwise_name="Play_generic_handheld_unequip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_handheld_unequip_fp">
+			<WwiseEvent wwise_name="Play_generic_handheld_unequip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_pistol_equip_3p">
+			<WwiseEvent wwise_name="Play_generic_pistol_equip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_pistol_equip_fp">
+			<WwiseEvent wwise_name="Play_generic_pistol_equip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_pistol_unequip_3p">
+			<WwiseEvent wwise_name="Play_generic_pistol_unequip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_pistol_unequip_fp">
+			<WwiseEvent wwise_name="Play_generic_pistol_unequip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_rifle_equip_3p">
+			<WwiseEvent wwise_name="Play_generic_rifle_equip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_rifle_equip_fp">
+			<WwiseEvent wwise_name="Play_generic_rifle_equip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_rifle_unequip_3p">
+			<WwiseEvent wwise_name="Play_generic_rifle_unequip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_rifle_unequip_fp">
+			<WwiseEvent wwise_name="Play_generic_rifle_unequip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slide_back_3p">
+			<WwiseEvent wwise_name="Play_generic_slide_back_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slide_back_fp">
+			<WwiseEvent wwise_name="Play_generic_slide_back_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slide_release_3p">
+			<WwiseEvent wwise_name="Play_generic_slide_release_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slide_release_fp">
+			<WwiseEvent wwise_name="Play_generic_slide_release_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

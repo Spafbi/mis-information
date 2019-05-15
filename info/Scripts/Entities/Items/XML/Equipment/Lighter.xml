@@ -1,0 +1,89 @@
+<item name="Lighter" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="50"/>
+		<param name="stack_size_spawned" value="35"/> <!-- allow up to 35 uses when spawned in -->
+		<param name="display_name" value="@Lighter"/>
+		<param name="description" value="@LighterDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/lighter/lighter.cgf"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@LighterLightFurnace"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_match"/>
+				<param name="targetClassNames" value="stone_furnace;stone_fireplace"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightFire"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="Campfire;water_purifier"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightGrill"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightStove"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightFirepit"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightTikiTorch"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="tiki_torch"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightCandle"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="candle_animal_fat_small;candle_animal_fat_large;dws_candle_animal_fat_large;wood_column_torch_1_3m;wood_column_torch_2m;wood_column_torch_3m;wood_column_torch_4m;plated_column_torch_1_3m;plated_column_torch_2m;plated_column_torch_3m;plated_column_torch_4m"/>
+			</use>
+			<use>
+				<param name="title" value="@LighterLightJackOLantern"/>
+				<param name="action" value="light_item"/>
+				<param name="soundUsed" value="Play_light_lighter"/>
+				<param name="targetClassNames" value="jack_o_lantern"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Equipment"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Lighter_200.png?crc=7958ACAD"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="70027"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Equipment"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Lighter_2048.png?crc=7958ACAD"/>
+	</steam>
+</item>

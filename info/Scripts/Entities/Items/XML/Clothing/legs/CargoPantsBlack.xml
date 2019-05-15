@@ -1,0 +1,60 @@
+<item name="CargoPantsBlack" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="display_name" value="@CargoPantsBlack"/>
+		<param name="description" value="@CargoPantsBlackDescription"/>
+	</params>
+	
+	<geometry>
+		<onground name="objects/characters/players/male/legs/long/cargo_pants_new/cargo_pants_onground.cgf" material="objects/characters/players/male/legs/long/cargo_pants_new/cargo_pants_black"/>
+	</geometry>
+
+    <protection level="1">
+        <environmental>
+            <protection_amount type="cold" percentage="20"/>
+            <protection_amount type="heat" percentage="3"/>
+        </environmental>
+    </protection>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/legs/long/cargo_pants_new/cargo_pants.skin"/>
+		<param name="mtl" value="objects/characters/players/male/legs/long/cargo_pants_new/cargo_pants_black.mtl"/>
+		<param name="slot" value="legs"/>
+		<param name="length" value="1"/> <!-- 1 is full length -->
+	</wearable>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="legs"/>
+		</locations>
+		<types>
+			<type category="any" capacity="5"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Legs"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CargoPantsBlack_200.png?crc=02972810"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40407"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Legs"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CargoPantsBlack_2048.png?crc=02972810"/>
+	</steam>
+</item>

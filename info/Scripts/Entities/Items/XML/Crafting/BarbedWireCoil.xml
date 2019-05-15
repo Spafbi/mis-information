@@ -1,0 +1,21 @@
+<item name="BarbedWireCoil" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="stack_size" value="64"/>
+		<param name="display_name" value="@BarbedWireCoil"/>
+		<param name="description" value="@BarbedWireCoilDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/metal/barbed_wire/barbed_wire_coil.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

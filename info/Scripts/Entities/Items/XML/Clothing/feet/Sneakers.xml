@@ -1,0 +1,54 @@
+<item name="Sneakers" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.9"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@Sneakers"/>
+		<param name="description" value="@SneakersDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/feet/sneakers/sneakers.skin"/>
+		<param name="mtl" value="objects/characters/players/male/feet/sneakers/sneakers.mtl"/>
+		<param name="slot" value="feet"/>
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/feet/sneakers/sneakers_onground.cgf" material="objects/characters/players/male/feet/sneakers/sneakers"/>
+	</geometry>
+
+	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
+		<environmental>
+			<protection_amount type="feet_sharp" percentage="20.0"/>
+            <protection_amount type="cold" percentage="2.5"/>
+            <protection_amount type="heat" percentage="5.0"/>
+			<protection_amount type="rain_acid" percentage="4"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="feet"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Sneakers_200.png?crc=69926E46"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40084"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Feet"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Sneakers_2048.png?crc=69926E46"/>
+	</steam>
+</item>

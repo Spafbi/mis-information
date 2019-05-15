@@ -1,0 +1,72 @@
+<item name="Carrots" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@Carrots"/>
+		<param name="description" value="@CarrotsDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/carrot/carrot.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="CarrotsCooked"/>
+		<param name="cookedTime" value="100"/>
+		<param name="rottenItem" value="CarrotsRotten"/>
+		<param name="foodAmount" value="80"/>
+		<param name="drinkAmount" value="30"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@CarrotsCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@CarrotsCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@CarrotsCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@CarrotsCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@CarrotsCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@CarrotsCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

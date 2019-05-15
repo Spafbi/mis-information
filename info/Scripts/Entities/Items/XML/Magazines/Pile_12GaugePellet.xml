@@ -1,0 +1,55 @@
+<item name="Pile_12GaugePellet" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.0"/>
+		<param name="display_name" value="@Pile_12GaugePellet"/>
+		<param name="description" value="@Pile_12GaugePelletDescription"/>
+		<param name="is_ammo_pile" value="1"/>
+		<param name="hide_as_attachment" value="1"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="10"/> <!-- max number of rounds this pile can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="ammo_12_gauge_pellet" amount="6"/> <!-- for 6x pellets used per shot -->
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_split" value="Play_rounds_split"/>
+		<param name="sound_combine" value="Play_rounds_split"/>
+	</magazine>
+
+	<geometry>
+		<thirdperson name="Objects/ammo/12Gauge/pile_12gaugepellet.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="12gauge_mag"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:AmmoPile"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Pile_12GaugePellet_200.png?crc=5F85437A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80043"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:AmmoPile"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Pile_12GaugePellet_2048.png?crc=5F85437A"/>
+	</steam>
+</item>

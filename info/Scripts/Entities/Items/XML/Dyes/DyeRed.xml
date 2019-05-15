@@ -1,0 +1,28 @@
+<item name="DyeRed" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@DyeRed"/>
+	</params>
+
+	<dye>
+		<!-- The primary and secondary are an index into the Dyes in Libs/PlayerCustomization/Dyes.xml -->
+		<param name="primary" value="20"/>
+		<param name="secondary" value="20"/>
+		<param name="wear" value="0.5"/>
+		<param name="blood" value="0.5"/>
+		<param name="radiation" value="0.5"/>
+	</dye>
+
+	<geometry>
+		<thirdperson name="objects/craftingMats/nails/nails.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

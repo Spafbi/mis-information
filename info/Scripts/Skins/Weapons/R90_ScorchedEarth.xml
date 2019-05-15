@@ -1,0 +1,14 @@
+<skin name="R90_ScorchedEarth">
+ 
+    <params>
+        <param name="display_name" value="R90 Scorched Earth Skin"/>
+        <param name="description" value="R90 Scorched Earth Skin"/>
+        <param name="material" value="Objects/weapons/P90/r90_scorched_earth"/>
+    </params>
+ 
+    <items>
+        <item name="R90"/>
+    </items>
+
+	
+</skin>

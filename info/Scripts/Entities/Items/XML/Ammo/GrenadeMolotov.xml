@@ -1,0 +1,53 @@
+<ammo name="GrenadeMolotov" class="Molotov">
+	<geometry>
+		<firstperson name="objects/weapons/molotov/molotov.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+
+	<physics type="particle">
+		<param name="mass" value="1.00" />
+		<param name="speed" value="18" />
+		<param name="max_logged_collisions" value="1" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="45, 45, 45" />
+		<param name="spin_random" value="720, 720, 720" />
+		<param name="material" value="mat_glass_bottle" />
+	</physics>
+
+	<explosion>
+		<!--<param name="damage" value="50" /> Explosion damage comes from the weapon script, but physics comes from Ammo script -->
+		<param name="pressure" value="100" />
+		<param name="torpidity" value="5" />
+		<param name="stamina" value="5" />
+		<param name="min_radius" value="2" />
+		<param name="max_radius" value="5" />
+		<param name="min_phys_radius" value="2" />
+		<param name="max_phys_radius" value="5" />
+		<param name="sound_radius" value="75" />
+		<param name="hole_size" value="2" />
+		<param name="radialblurdist" value="15" />
+		<param name="type" value="frag" />
+	</explosion>
+
+	<trail>
+		<param name="effect" value="weapon_fx.molotov3.trail" />
+		<param name="prime" value="false" />
+	</trail>
+
+	<params>
+		<param name="lifetime" value="8.0" />
+		<param name="showtime" value="0.05" />
+		<param name="aitype" value="grenade" />
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0.0" />
+		<param name="detonateOnImpact" value="1" />
+		<param name="detonateOnActorImpact" value="1" />
+		<param name="allowDetonationDelay" value="0" />
+	</grenade>
+</ammo>

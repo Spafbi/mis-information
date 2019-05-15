@@ -1,0 +1,23 @@
+<item name="flagpole_australia" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="5.5"/>
+        <param name="display_name" value="@flagpole_australia"/>
+        <param name="description" value="@flagpole_australiaDescription"/>
+    </params>
+
+    <base_part class="static" type="4855" name="flagpole_australia" max_health="1000" repair_with="ScrapMetal">
+        <static filename="objects/basebuilding/other/flag/flag_pole_australia.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

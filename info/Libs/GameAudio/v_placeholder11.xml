@@ -1,0 +1,31 @@
+<ATLConfig atl_name="v_placeholder11">
+  <AudioTriggers>
+    <ATLTrigger atl_name="Play_placeholder11_bump">
+      <WwiseEvent wwise_name="Play_diesel_truck_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_damage">
+      <WwiseEvent wwise_name="Play_diesel_truck_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_horn">
+      <WwiseEvent wwise_name="Play_diesel_truck_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_run">
+      <WwiseEvent wwise_name="Play_diesel_truck_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_slip">
+      <WwiseEvent wwise_name="Play_diesel_truck_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_start">
+      <WwiseEvent wwise_name="Play_diesel_truck_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder11_stop">
+      <WwiseEvent wwise_name="Play_diesel_truck_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder11_damage">
+      <WwiseEvent wwise_name="Stop_diesel_truck_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder11_horn">
+      <WwiseEvent wwise_name="Stop_diesel_truck_horn" />
+    </ATLTrigger>
+  </AudioTriggers>
+</ATLConfig>

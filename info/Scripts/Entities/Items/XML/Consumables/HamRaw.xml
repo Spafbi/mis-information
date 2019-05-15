@@ -1,0 +1,76 @@
+<item name="HamRaw" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@HamRaw"/>
+		<param name="description" value="@HamRawDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/ham/ham_raw.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="HamCooked"/>
+		<param name="cookedTime" value="225"/>
+		<param name="rottenItem" value="HamRotten"/>
+		<param name="rottenTime" value="600"/>
+		<param name="curable" value="1"/>
+		<param name="curedItem" value="HamCured"/>
+		<param name="curedTime" value="300"/>
+		<param name="foodAmount" value="150"/>
+		<param name="poisonChance" value="44"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@HamRawCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@HamRawCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@HamRawCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@HamRawCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@HamRawCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@HamRawCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

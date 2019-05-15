@@ -1,0 +1,21 @@
+<item name="BearPelt" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@BearPelt"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects\craftingMats\animal_hide\animal_hide.cgf" material="Objects\craftingMats\animal_hide\animal_hide.mtl"/>
+		
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

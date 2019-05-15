@@ -1,0 +1,56 @@
+<item name="CraftedArrowx8_000P" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.0"/>
+		<param name="display_name" value="@CraftedArrowx8_000P"/>
+		<param name="description" value="@CraftedArrowx8_000PDescription"/>
+		<param name="is_ammo_pile" value="1"/>
+		<param name="hide_as_attachment" value="1"/>
+		<param name="tag" value="CraftedArrowx8"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="8"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="CraftedArrow_000P" amount="8"/>
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_split" value="Play_rounds_split"/>
+		<param name="sound_combine" value="Play_rounds_split"/>
+	</magazine>
+
+	<geometry>
+		<thirdperson name="Objects/ammo/crafted_arrow/crafted_arrow_onground.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="arrow_mag"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:AmmoPile"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedArrowx8_000P_200.png?crc=FA79087F"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="80032"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:AmmoPile"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CraftedArrowx8_000P_2048.png?crc=FA79087F"/>
+	</steam>
+</item>

@@ -1,0 +1,59 @@
+<item name="NoSleevesVestBrown" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.25"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.3"/>
+		<param name="display_name" value="@NoSleevesVestBrown"/>
+		<param name="description" value="@NoSleevesVestBrownDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/jacket/nosleeves_vest/nosleeves_vest.skin"/>
+		<param name="mtl" value="objects/characters/players/male/jacket/nosleeves_vest/nosleeves_vest_brown.mtl"/>
+		<param name="slot" value="vest"/>
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/jacket/nosleeves_vest/nosleeves_vest_onground.cgf" material="objects/characters/players/male/jacket/nosleeves_vest/nosleeves_vest_brown"/>
+	</geometry>
+
+	<protection level="0">
+		<environmental>
+			<protection_amount type="cold" percentage="6"/>
+			<protection_amount type="heat" percentage="10"/>
+		</environmental>
+	</protection>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="vest"/>
+		</locations>
+		<types>
+			<type category="any" capacity="4"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Jacket"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/NoSleevesVestBrown_200.png?crc=FAE49FCC"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40338"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Jacket"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/NoSleevesVestBrown_2048.png?crc=FAE49FCC"/>
+	</steam>
+</item>

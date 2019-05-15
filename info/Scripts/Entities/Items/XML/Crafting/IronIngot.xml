@@ -1,0 +1,39 @@
+<item name="IronIngot" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="1.0" />
+		<param name="stack_size" value="64" />		
+		<param name="display_name" value="@IronIngot" />
+		<param name="description" value="@IronIngotDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/iron_ingot/iron_ingot.cgf"/>
+	</geometry>
+
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1" />
+		<param name="cookedItem" value="IronIngot" />
+		<param name="cookedTime" value="60" />
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@IronIngotSmeltInFurnace"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="stone_furnace"/>
+			</use>
+		</uses>
+	</usable>
+	
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

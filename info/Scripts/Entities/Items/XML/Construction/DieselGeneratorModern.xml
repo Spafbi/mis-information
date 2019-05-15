@@ -1,0 +1,28 @@
+<item name="DieselGeneratorModern" class="Structure" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="physics" value="1"/> <!-- static -->
+		<param name="display_name" value="@DieselGeneratorModern"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/large_generator/large_generator.cgf"/>
+	</geometry>
+
+	<generator>
+		<levels>
+			<type category="oil" decay_rate="25" fill_amount="4000"/> <!-- 4L, .025L / minute -->
+			<type category="dieselfuel" decay_rate="250" fill_amount="40000"/> <!-- 40L, .250L / minute -->
+		</levels>
+	</generator>
+
+	<storage>
+		<types>
+			<type category="carbattery" capacity="1" visible="1"/>
+			<type category="drivebelt" capacity="1" visible="1"/>
+		</types>
+	</storage>
+
+</item>

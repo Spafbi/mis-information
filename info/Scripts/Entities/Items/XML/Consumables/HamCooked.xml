@@ -1,0 +1,29 @@
+<item name="HamCooked" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@HamCooked"/>
+		<param name="description" value="@HamCookedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/ham/ham_cooked.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="HamBurned"/>
+		<param name="cookedTime" value="60"/>
+		<param name="foodAmount" value="400"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

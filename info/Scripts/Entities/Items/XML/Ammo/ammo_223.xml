@@ -1,0 +1,63 @@
+<ammo name="ammo_223" class="Bullet">
+	<geometry />
+
+	<flags>
+		<param name="clientonly" value="1" />
+		<param name="reusable" value="1" />
+	</flags>
+
+	<whiz>
+		<param name="sound" value="Play_bullet_whiz" />
+		<param name="distance" value="10.0" />
+	</whiz>
+
+	<ricochet>
+		<param name="sound" value="Play_bullet_ricochet" />
+	</ricochet>
+
+	<sonic_boom>
+		<param name="sound" value="Play_bullet_sonic_boom" />
+		<param name="distance" value="100.0" />
+	</sonic_boom>
+
+	<!-- https://en.wikipedia.org/wiki/.223_Remington -->
+	<physics type="particle">
+		<param name="mass" value="0.0035" /> <!-- 55 grain / 3.5 grams -->
+		<param name="speed" value="990" /> <!-- 1738J energy -->
+		<param name="radius" value="0.00285" /> <!-- 5.7mm diameter -->
+		<param name="air_resistance" value="1.4133" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="material" value="mat_metal_thin" />
+		<param name="single_contact" value="1" />
+		<param name="pierceability" value="7" />
+		<pierceabilityLevels> <!-- Percentage of damage to take off. SurfacePierceability > 10 = 0 reduction -->
+			<param name="level3" value="25" /> <!-- SurfacePierceability < 10 -->
+			<param name="level2" value="50" /> <!-- SurfacePierceability < 7  -->
+			<param name="level1" value="75" /> <!-- SurfacePierceability < 4  -->
+			<param name="maxPenetrationThickness" value="0.1" /> <!-- Penetrates valid surface levels up to 10cm thick -->
+		</pierceabilityLevels>
+	</physics>
+
+	<params>
+		<param name="hit_type" value="ammo_223" />
+		<param name="knocks_target" value="0"/>
+		<param name="min_damage_for_knockDown" value="0"/>
+		<param name="min_damage_for_knockDown_leg" value="0"/>
+		<param name="bleed_percent" value="100" />
+		<param name="lifetime" value="3.0" /> <!-- Projectile will be destroyed after this time (in seconds) -->
+		<param name="showtime" value="0.05" /> <!-- Delay (in seconds) before projectile is rendered -->
+		<param name="bulletType" value="2" /> <!-- Bullet Type 2 - Assault rifle bullet -->
+		<param name="hitRecoil" value="Level2_mp" />
+	</params>
+
+	<trail>
+		<param name="effect_owneronly" value="weapon_fx.common.tracer_fast"/> <!-- PFX trail only owner can see -->
+	</trail>
+
+	<trailUnderWater>
+		<param name="effect" value="water.bubbles.bullets" />
+		<param name="scale" value="3.0" />
+	</trailUnderWater>
+</ammo>

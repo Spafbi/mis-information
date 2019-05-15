@@ -1,0 +1,279 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/PlayerTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/PlayerActions.xml"/>
+ <FragmentDefs>
+  <burst_fire scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <rapid_fire scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom" flags="Persistent">
+   <Override tags="SDKRifle+rapid" scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  </rapid_fire>
+  <cock />
+  <stop_rapid_fire scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom">
+   <Override tags="SDKRifle" scopes="Torso1P+Torso3P+Weapon+AttachmentTop+AttachmentBottom"/>
+  </stop_rapid_fire>
+  <melee scopes="FullBody3P+Torso3P+Weaponpose+Audio1">
+   <Override tags="stunbaton+prone+tactical" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="prone" scopes="Torso3P+Audio1"/>
+   <Override tags="duct_tape+tactical" scopes="Torso3P+Audio1"/>
+   <Override tags="rope+tactical" scopes="Torso3P+Audio1"/>
+   <Override tags="stunbaton" scopes="FullBody3P+Torso3P+Weapon+Audio1"/>
+   <Override tags="handcuffs" scopes="Torso3P+Audio1"/>
+  </melee>
+  <melee_weapon scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <melee_interact scopes="Torso1P+Torso3P"/>
+  <select scopes="Torso3P+Audio1">
+   <Override tags="at15+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m16+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="mk18+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="870_tactical+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="rem870+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="coltpython+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="crafted_shotgun+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="aa12+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="acaw+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="akm+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ak74u+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="bulldog+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="crafted_rifle+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="crafted_smg+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="flaregun+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="g18+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="hk45+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="kriss_v+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m1911a1+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m249+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m40a5+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="makarov+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="model70+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="p350+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="mp5+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="rem700+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ruger22+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="sako_85+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m9a1+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ap85+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="px4+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="p90+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="storm+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="crafted_pistol+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="tranquilizer_gun+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ump+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="wasteland22+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+  </select>
+  <deselect scopes="Torso3P+Audio1"/>
+  <idle scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <idle_break scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <idle_lastGrenade scopes="Weapon"/>
+  <jump scopes="Torso1P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <fire scopes="Torso1P+Torso3P+Weapon+Audio1+Audio2"/>
+  <throw scopes="Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom">
+   <Override tags="throwable+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="chemlight+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="c4timedpickup+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="grenade+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="m84_flashbang+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="prone" scopes="FullBody3P+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="recurvebow+Arrowx8+tactical" scopes="GenericBelowAiming+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="throwable+medium_throwable" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="throwable+small_throwable" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="throwable+large_throwable" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="chemlight" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="c4timedpickup" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="grenade" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="m84_flashbang" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="recurvebow" scopes="Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+   <Override tags="throwable" scopes="FullBody3P+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
+  </throw>
+  <hold scopes="Torso3P+Weapon+Audio1"/>
+  <hold_cancel scopes="Torso3P+Weapon+Audio1"/>
+  <prime scopes="Torso1P+Torso3P+Weapon+Audio1" flags="Persistent"/>
+  <raise scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <lower scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <reload scopes="Torso3P+Weaponpose+Weapon+Audio1"/>
+  <begin_reload scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <reload_shell scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <exit_reload scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <enter_modify scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom" flags="Persistent"/>
+  <leave_modify scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <change_firemode scopes="Torso1P+Torso3P+Weaponpose+Weapon+Audio1+AttachmentTop+AttachmentBottom">
+   <Override tags="m16" scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  </change_firemode>
+  <intoPlant scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <fromPlant scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <plant scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <grab scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <drop scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <rip_off scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <spin_down scopes="Audio2">
+   <Override tags="SDKRifle" scopes=""/>
+  </spin_down>
+  <spin_down_tail scopes="Audio1"/>
+  <hit scopes="Audio2"/>
+  <empty_clip scopes="Torso1P+Torso3P+Weapon+WeaponForceFeedback+Audio1+Audio2+AttachmentTop+AttachmentBottom"/>
+  <pickedup scopes="Audio2">
+   <Override tags="mk18+tactical" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m16+tactical" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="at15" scopes="Torso3P+Weapon+Audio1"/>
+  </pickedup>
+  <pickedup_ammo scopes="Audio2">
+   <Override tags="shotgun" scopes="Audio1"/>
+  </pickedup_ammo>
+  <zoom_in scopes="Audio1"/>
+  <zoom_out scopes="Audio1"/>
+  <zoom_lean scopes="Audio1"/>
+  <shot_last_bullet scopes="Audio2"/>
+  <spin_up scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <aimPose scopes="AimPose" flags="Persistent"/>
+  <unprime scopes="Torso1P+Torso3P+Weapon+Audio1"/>
+  <pre_fire scopes="Torso3P"/>
+  <barrel_spin />
+  <idlePose scopes="FullBody1P"/>
+  <kick scopes="FullBody3P+AimPose+Audio1"/>
+  <FPIdle scopes="Motion1P"/>
+  <FPSway scopes="Sway1P"/>
+  <FPMovement scopes="Motion1P"/>
+  <FPLand scopes="Motion1P"/>
+  <FPNone scopes="Motion1P"/>
+  <bump scopes="Sway1P"/>
+  <friendly_enter scopes="Torso1P+Weapon+Audio1+AttachmentTop+AttachmentBottom" flags="Persistent"/>
+  <friendly_leave scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <weapon_lower_enter scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom" flags="Persistent"/>
+  <weapon_lower_leave scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <Motion_Idle scopes="FullBody1P+Torso1P+Motion1P+Sway1P+GroundAlignment1P+FullBody3P+AimPose+Torso3P+GroundAlignment3P+Weapon+WeaponForceFeedback+Audio1+Audio2+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <Motion_Move scopes="FullBody1P+Torso1P+Motion1P+Sway1P+GroundAlignment1P+FullBody3P+AimPose+Torso3P+GroundAlignment3P+Weapon+WeaponForceFeedback+Audio1+Audio2+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <MotionIdle scopes="FullBody3P"/>
+  <MotionTurn scopes="FullBody3P"/>
+  <MotionMovement scopes="FullBody3P"/>
+  <MotionJump scopes="FullBody3P+Audio1">
+   <Override tags="throwable+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="chemlight+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="c4timedpickup+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="grenade+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="m84_flashbang+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="hatchet+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="hammer+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="huntingknife+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="lugwrench+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="policebaton+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="squeegee+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="survivalknife+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="woodpaddle+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="handcuffs+forward" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="nailknuckles" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="nw" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="throwable" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="chemlight" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="c4timedpickup" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="grenade" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="m84_flashbang" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="hatchet" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="hammer" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="huntingknife" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="lugwrench" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="policebaton" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="squeegee" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="survivalknife" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="woodpaddle" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="map" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="torch" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="baseballbat" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="duct_tape" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="handcuffs" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="rope" scopes="FullBody3P+AimPose+Audio1"/>
+   <Override tags="katana" scopes="FullBody3P"/>
+  </MotionJump>
+  <MotionInAir scopes="FullBody3P"/>
+  <MotionMounted scopes="FullBody3P"/>
+  <slide scopes="FullBody1P+Motion1P+FullBody3P+AimPose+Audio2+SlaveChar+SlaveObject"/>
+  <ledgeGrab scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <interact scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <LadderClimb scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <LadderGetOff scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <LadderGetOn scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <animationControlled scopes="FullBody1P+Torso1P+Motion1P+Sway1P+FullBody3P+AimPose+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
+  <hitDeath scopes="HitReaction+Audio1"/>
+  <grabObjectSimple scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <dropObjectSimple scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <throwObjectSimple scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
+  <grabNPCKill scopes="Torso1P+Motion1P+Sway1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar"/>
+  <WeaponPose scopes="Weaponpose"/>
+  <BlendRagdoll scopes="FullBody3P+AimPose+Torso3P+Weapon+Audio1+Audio2"/>
+  <emote scopes="Torso1P+Torso3P+Weaponpose+Audio2">
+   <Override tags="emotep_drinkingstream" scopes="FullBody3P+AimPose+Torso3P"/>
+   <Override tags="emotep_searchcontainer_high" scopes="GenericBelowAiming+AimPose"/>
+   <Override tags="emotep_searchcontainer_low" scopes="GenericBelowAiming+AimPose"/>
+   <Override tags="emotep_search_ownbody" scopes="GenericBelowAiming+AimPose"/>
+   <Override tags="emotep_searchcontainer_med" scopes="GenericBelowAiming+AimPose"/>
+   <Override tags="katana+crouch+emotep_healing" scopes="Torso3P"/>
+   <Override tags="crafted_bow+emote_whistle" fragTags="outro" scopes="Torso3P"/>
+   <Override tags="crafted_bow+emote_whistle" fragTags="intro" scopes="Torso3P"/>
+   <Override tags="guitar+emote_middlefinger" fragTags="outro" scopes="Torso3P"/>
+   <Override tags="guitar+emote_middlefinger" fragTags="intro" scopes="Torso3P+Audio2"/>
+   <Override tags="guitar+emote_wave" fragTags="intro" scopes="Torso3P+Audio2"/>
+   <Override tags="guitar+emotep_handsup" fragTags="intro" scopes="Torso3P+Audio2"/>
+   <Override tags="emote_whistle" fragTags="outro" scopes="Torso3P"/>
+   <Override tags="emote_whistle" fragTags="intro" scopes="Torso3P"/>
+   <Override tags="guitar+emote_middlefinger" scopes="Torso3P"/>
+   <Override tags="guitar+emote_wave" scopes="Torso3P"/>
+   <Override tags="guitar+emotep_handsup" scopes="Torso3P"/>
+   <Override tags="katana+emotep_healing" scopes="Torso3P"/>
+   <Override tags="emote_victoryarm" scopes="Lean"/>
+   <Override tags="emote_victoryfinger" scopes="Lean"/>
+   <Override tags="emotep_incapacitated" scopes="Incapacitated"/>
+   <Override tags="emotep_barf" scopes="GenericBelowAiming+AimPose+Torso3P"/>
+   <Override tags="emotep_crafting" scopes="FullBody3P"/>
+  </emote>
+  <lean scopes="Lean1P+Lean"/>
+  <leanZ scopes="LeanZ"/>
+  <leanY scopes="LeanY"/>
+  <lookDir scopes="LookDir"/>
+  <breathing scopes="breathing+Audio1+Audio2"/>
+  <proneFR scopes="proneFR"/>
+  <proneFP scopes="proneFP"/>
+  <proneBP scopes="proneBP"/>
+  <proneBR scopes="proneBR"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Char1P />
+  <Char3P />
+  <Weapon />
+  <Audio />
+  <attachment_top />
+  <attachment_bottom />
+  <SlaveChar />
+  <SlaveObject />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FullBody1P layer="0" numLayers="3" context="Char1P"/>
+  <Torso1P layer="24" numLayers="3" context="Char1P"/>
+  <Lean1P layer="27" numLayers="1" context="Char1P"/>
+  <Motion1P layer="28" numLayers="1" context="Char1P"/>
+  <Sway1P layer="29" numLayers="2" context="Char1P"/>
+  <GroundAlignment1P layer="31" numLayers="1" context="Char1P"/>
+  <FullBody3P layer="0" numLayers="3" context="Char3P"/>
+  <GenericBelowAiming layer="3" numLayers="2" context="Char3P"/>
+  <proneFP layer="5" numLayers="1" context="Char3P"/>
+  <proneFR layer="6" numLayers="1" context="Char3P"/>
+  <proneBP layer="7" numLayers="1" context="Char3P"/>
+  <proneBR layer="8" numLayers="1" context="Char3P"/>
+  <breathing layer="9" numLayers="2" context="Char3P"/>
+  <Lean layer="11" numLayers="1" context="Char3P"/>
+  <LeanY layer="12" numLayers="1" context="Char3P"/>
+  <LeanZ layer="13" numLayers="1" context="Char3P"/>
+  <AimPose layer="15" numLayers="2" context="Char3P"/>
+  <Torso3P layer="17" numLayers="3" context="Char3P"/>
+  <Weaponpose layer="20" numLayers="2" context="Char3P"/>
+  <Incapacitated layer="22" numLayers="1" context="Char3P"/>
+  <LookDir layer="23" numLayers="1" context="Char3P"/>
+  <HitReaction layer="24" numLayers="1" context="Char3P"/>
+  <GroundAlignment3P layer="25" numLayers="1" context="Char3P"/>
+  <Weapon layer="0" numLayers="3" context="Weapon"/>
+  <WeaponAttachment layer="4" numLayers="3" context="Weapon"/>
+  <WeaponForceFeedback layer="0" numLayers="0" context="Weapon" Tags="forceFeedback"/>
+  <Audio1 layer="0" numLayers="0" context="Audio"/>
+  <Audio2 layer="0" numLayers="0" context="Audio"/>
+  <AttachmentTop layer="0" numLayers="3" context="attachment_top"/>
+  <AttachmentBottom layer="0" numLayers="3" context="attachment_bottom"/>
+  <SlaveChar layer="0" numLayers="3" context="SlaveChar" Tags="slave"/>
+  <SlaveObject layer="0" numLayers="3" context="SlaveObject" Tags="slave"/>
+ </ScopeDefs>
+</ControllerDef>

@@ -1,0 +1,33 @@
+<item name="Watermelon" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.5"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@Watermelon"/>
+		<param name="description" value="@WatermelonDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/crops/watermelon/watermelon.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="rottenItem" value="WatermelonRotten"/>
+		<param name="foodAmount" value="225"/>
+		<param name="drinkAmount" value="300"/>
+		<param name="soundConsumed" value="Play_food_soft_hard"/>
+	</consumable>
+
+	<craftable>
+		<craft name="SurvivalKnife" craft="SeedsWatermelons" destroy="0"/>
+		<craft name="HuntingKnife" craft="SeedsWatermelons" destroy="0"/>
+	</craftable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,57 @@
+<item name="BalaclavaBlack" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.25"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@BalaclavaBlack"/>
+		<param name="description" value="@BalaclavaBlackDescription"/>
+	</params>
+
+	<geometry>
+		<onground name="Objects/characters/players/male/face/balaclava/balaclava_groundmodel.cgf" material="Objects/characters/players/male/face/balaclava/balaclava_a"/>
+	</geometry>
+
+    <protection level="1">
+        <environmental>
+            <protection_amount type="fire" percentage="2.0"/>
+            <protection_amount type="cold" percentage="5.0"/>
+        </environmental>
+    </protection>
+
+	<wearable>
+		<param name="skin" value="Objects/characters/players/male/face/balaclava/balaclava.skin"/>
+		<param name="mtl" value="Objects/characters/players/male/face/balaclava/balaclava_a.mtl"/>
+		<param name="slot" value="face"/>
+	</wearable>
+	
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="face"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Face"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/BalaclavaBlack_200.png?crc=7E4EB124"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40048"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Face"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/BalaclavaBlack_2048.png?crc=7E4EB124"/>
+	</steam>
+</item>

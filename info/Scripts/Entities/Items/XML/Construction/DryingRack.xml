@@ -1,0 +1,24 @@
+<item name="DryingRack" class="DryingRack" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="6"/>
+		<param name="display_name" value="@DryingRack"/>
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+	</params>
+
+	<placeable>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/props/campfire/wood.cgf"/>
+	</geometry>
+
+	<storage>
+		<types>
+			<type category="any" capacity="5"/>
+		</types>
+	</storage>
+
+</item>

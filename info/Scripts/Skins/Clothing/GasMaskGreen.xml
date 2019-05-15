@@ -1,0 +1,27 @@
+<skin name="GasMaskGreen">
+
+	<params>
+		<param name="display_name" value="Gas Mask Green Skin"/>
+		<param name="description" value="A gas mask with colored lenses."/>
+		<param name="material" value="Objects/characters/players/male/face/gasmask/gasmask_green_glass"/>
+	</params>
+
+	<items>
+		<item name="GasMask"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/GasMaskGreen_200.png?crc=179F3F5F"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200018"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/GasMaskGreen_2048.png?crc=179F3F5F"/>
+	</steam>
+</skin>

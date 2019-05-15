@@ -1,0 +1,14 @@
+<skin name="AUMP45_Skulls">
+ 
+    <params>
+        <param name="display_name" value="AUMP45 White Skulls Skin"/>
+        <param name="description" value="AUMP45 White Skulls Skin"/>
+        <param name="material" value="Objects/weapons/UMP/ump_skulls"/>
+    </params>
+ 
+    <items>
+        <item name="AUMP45"/>
+    </items>
+
+	
+</skin>

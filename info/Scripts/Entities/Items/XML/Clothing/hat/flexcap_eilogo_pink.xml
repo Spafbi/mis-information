@@ -1,0 +1,54 @@
+<item name="flexcap_eilogo_pink" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@flexcap_eilogo_pink"/>
+		<param name="description" value="@flexcap_eilogo_pinkDescription"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/generic/hat/flexcap/flexcap.skin"/>
+		<param name="mtl" value="objects/characters/players/generic/hat/flexcap/flexcap_eilogo_pink.mtl"/> <!-- not currently used in code -->
+		<param name="slot" value="hat"/>
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/generic/hat/flexcap/flexcap_onground.cgf" material="objects/characters/players/generic/hat/flexcap/flexcap_eilogo_pink"/>
+	</geometry>
+
+	<protection level="1">
+		<environmental>
+			<protection_amount type="rain_acid" percentage="1"/>
+            <protection_amount type="cold" percentage="2"/>
+            <protection_amount type="heat" percentage="2"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hat"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/flexcap_eilogo_pink_200.png?crc=AA24D4DB"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="40218"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/flexcap_eilogo_pink_2048.png?crc=AA24D4DB"/>
+	</steam>
+</item>

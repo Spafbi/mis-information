@@ -1,0 +1,37 @@
+<item name="TomatoesRotten" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="10"/>
+		<param name="display_name" value="@TomatoesRotten"/>
+		<param name="description" value="@TomatoesRottenDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/tomato/tomato_pile_rotten.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="poisonChance" value="75"/>
+		<param name="torpidityAmount" value="30"/>
+		<param name="staminaAmount" value="-30"/>
+		<param name="foodAmount" value="30"/>
+		<param name="drinkAmount" value="15"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<usable>
+		<param name="title" value="@TomatoesRottenFertilizePlanter"/>
+		<param name="action" value="fertilize"/>
+		<param name="soundUsed" value="Play_apply_fertilizer"/>
+		<param name="targetClassNames" value="planter_box"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

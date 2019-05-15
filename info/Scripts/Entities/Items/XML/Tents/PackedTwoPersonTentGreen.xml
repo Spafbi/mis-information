@@ -1,0 +1,25 @@
+<item name="PackedTwoPersonTentGreen" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="4.0"/>
+		<param name="display_name" value="@PackedTwoPersonTentGreen"/>
+		<param name="description" value="@PackedTwoPersonTentGreenDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="TwoPersonTentGreen"/>
+		<param name="placed_sound" value="Play_puptent_setup"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/tents/packed_tent_civilian/packed_tent_civilian_small.cgf" material="objects/tents/packed_tent_civilian/packed_tent_civilian_green.mtl"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

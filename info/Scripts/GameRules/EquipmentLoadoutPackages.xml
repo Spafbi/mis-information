@@ -1,0 +1,32 @@
+<default>
+	<!-- This file is used for Multiplayer equipment packs. It differs from the Sandbox equipment pack editor because it translates directly with in-game UI, if your game uses classes/kits for players. -->
+	<!-- Use Flow Graph in your level to set a default equipment pack if your game doesn't use classes/kits. Game:MP:SetEquipmentLoadout to set which pack to use by default. -->
+	<!-- The id field is incremented per-group. Set included weapons/explosives/attachments for each loadout. -->
+
+	<!-- ========================== SDK Loadouts ========================== -->
+	<Group name="SDK">
+		<!-- pack 0 in Flow Graph -->
+		<!-- EI Begin - This is what model actually gets loaded. All of the other places (lots of them)
+		                get overridden by this -->
+		<loadout name = "Male" 
+				displayName        = "@ui_loadout_sdk_name1"
+				displayDescription = "@ui_loadout_sdk_desc1"
+				id                 = "1"
+				modelOverride      = "objects/characters/players/male/human_male.cdf">
+		</loadout>
+
+		<loadout name = "Female"
+				displayName        = "@ui_loadout_sdk_name1"
+				displayDescription = "@ui_loadout_sdk_desc1"
+				id                 = "2"
+				modelOverride      = "objects/characters/players/female/human_female.cdf">
+		</loadout>
+
+	</Group>
+
+	<!-- This automatically changes characters depending on the main weapon -->
+	<Classic rebel="Objects/characters/your_character_path_%s.cdf" cell="Objects/characters/your_other_character_path/%s.cdf">
+		<Map weapon="Main_weapon_name" rebel="01" />
+	</Classic>
+
+</default>

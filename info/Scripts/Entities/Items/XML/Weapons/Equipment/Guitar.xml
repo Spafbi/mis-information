@@ -1,0 +1,88 @@
+<item name="Guitar" class="Weapon" category="primary" priority="12" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Guitar"/>
+		<param name="description" value="@GuitarDescription"/>
+		<param name="itemClass" value="pistol"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="3.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="20"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="0.85"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="0"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="0.05"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.1"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.15"/>
+		<param name="relaxedToTacticalBlendTime" value="0.45"/>
+		<param name="tag" value="guitar"/>
+		<param name="prone_no_select" value="1"/>
+		<animPrecache name="guitar">
+			<precache DBAFile="animations/human/male/weapons/guitar/guitar.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScale="1.0" speedScaleTactical="0.85" rotationScale="1.0"/>
+
+	<geometry>
+		<thirdperson name="objects/weapons/guitar/guitar.cgf"/>
+		<onground name="objects/weapons/guitar/guitar_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode name="Single" type="Single"> <!-- Needed to trigger the guitar playing actions -->
+			<fire>
+				<param name="damage" value="0"/> <!-- Needed to override for ui -->
+			</fire>
+		</firemode>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.4"/> <!-- increased range to account for guitar size -->
+				<param name="damage" value="12"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.51"/>
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.0"/>
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations> <!-- Can only have max 2 categories defined below -->
+			<location category="primary"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Guitar_200.png?crc=B50311A4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110030"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Guitar_2048.png?crc=B50311A4"/>
+	</steam>
+</item>

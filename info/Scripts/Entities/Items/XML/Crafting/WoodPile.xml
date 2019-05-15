@@ -1,0 +1,40 @@
+<item name="WoodPile" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="1.5" />
+		<param name="stack_size" value="64" />
+		<param name="display_name" value="@WoodPile" />
+		<param name="description" value="@WoodPileDescription" />
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/wood/wood_pile.cgf"/>
+	</geometry>
+	
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1" />
+		<param name="cookedItem" value="Charcoal" />
+		<param name="cookedTime" value="0" /> <!-- must be 0 for output from burned wood -->
+	</consumable>
+	
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@WoodPileAddFuel"/>
+				<param name="action" value="wood_item"/>
+				<param name="param" value="1"/> <!-- burn time in minutes -->
+				<param name="soundUsed" value="Play_wood_use"/>
+				<param name="targetClassNames" value="dws_grill2;dws_firepit_outdoors_1;dws_firepit_outdoors_2;water_purifier;dws_cabinStove;Campfire;stone_furnace;stone_fireplace"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

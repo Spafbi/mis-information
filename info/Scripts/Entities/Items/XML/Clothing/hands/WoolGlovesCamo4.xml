@@ -1,0 +1,51 @@
+<item name="WoolGlovesCamo4" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.1"/>
+		<param name="healthMax" value="50.0"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="display_name" value="@WoolGlovesCamo4"/>
+		<param name="description" value="@WoolGlovesCamo4Description"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/hands/gloves/woolglove/woolgloves.skin"/>
+		<param name="mtl" value="objects/characters/players/male/hands/gloves/woolglove/woolglove_camo4.mtl"/>
+		<param name="slot" value="hands"/>
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/hands/gloves/woolglove/woolglove_ground.cgf" material="objects/characters/players/male/hands/gloves/woolglove/woolglove_camo4"/>
+	</geometry>
+
+	<protection level="0">
+		<environmental>
+            <protection_amount type="cold" percentage="5.0"/>
+		</environmental>
+	</protection>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="hands"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hands"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo4_200.png?crc=ECAD3182"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40112"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hands"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo4_2048.png?crc=ECAD3182"/>
+	</steam>
+</item>

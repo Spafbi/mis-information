@@ -1,0 +1,97 @@
+<item name="Rocks" class="Weapon" category="any" priority="0" weaponParams="1">
+
+	<params>
+		<param name="display_name" value="@Rocks"/>
+		<param name="description" value="@RocksDescription"/>
+		<param name="itemClass" value="small_throwable"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="2.0"/>
+		<param name="stack_size" value="64"/>
+		<param name="stack_size_spawned" value="1"/>
+		<param name="damage_scale" value="0.5"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="selectable" value="1"/>
+		<param name="sprintToFireDelay" value="0.05"/>
+		<param name="sprintToZoomDelay" value="0.1"/>
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.15"/>
+		<param name="tag" value="throwable"/>
+		<animPrecache name="Throwable">
+			<precache DBAFile="animations/human/male/weapons/throw/throw.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<ammos>
+		<ammo name="ammo_rock_player" amount="1"/>
+	</ammos>
+
+	<geometry>
+		<thirdperson name="Objects/craftingmats/rockpile/rock_pile.cgf" scale="0.65" position="-0.01,-0.03,-0.13"/>
+		<onground name="Objects/craftingmats/rockpile/rock_pile.cgf"/>
+	</geometry>
+
+	<zoommodes>
+		<zoommode name="grenadehelper" type="ThrowIndicator"/>
+	</zoommodes>
+
+	<firemodes>
+		<firemode type="Throw" name="Rock">
+			<fire>
+				<param name="ammo_type" value="ammo_rock_player"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="rate" value="60"/>
+				<param name="damage" value="15"/>
+				<param name="helper" value="grenade"/>
+				<param name="helper_fp" value="grenade"/>
+				<param name="helper_tp" value="grenade"/>
+				<param name="knocks_target" value="1"/>
+				<param name="min_damage_for_knockDown" value="0"/>
+				<param name="knockdown_chance_leg" value="90"/>
+				<param name="min_damage_for_knockDown_leg" value="50"/>
+				<param name="sound_radius" value="10"/>
+			</fire>
+			<throw>
+				<param name="prime_enabled" value="false"/> <!-- can project be "primed" -->
+				<param name="prime_delay" value="0.6"/>
+				<param name="prime_timer" value="false"/> <!-- can primed project blow up while being held -->
+				<param name="throw_delay" value="0.5"/>
+				<param name="delay" value="0.15"/>
+				<param name="hold_duration" value="1.0"/>
+				<param name="hold_min_scale" value="0.4"/>
+				<param name="hold_max_scale" value="1.5"/>
+				<param name="strength_scale" value="1.0"/>
+			</throw>
+		</firemode>
+
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="blunt"/>
+				<param name="range" value="1.4"/>
+				<param name="damage" value="8"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.43"/> <!-- Delay, in seconds, from when weapon is meleed until impact occurs -->
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.0"/> <!-- Essentially rate of fire for melee. Time, in seconds, between each melee action -->
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/>
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="secondary"/>
+		</locations>
+	</storage>
+
+</item>

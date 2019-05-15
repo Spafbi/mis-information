@@ -1,0 +1,42 @@
+<item name="rug_bear_pelt" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@rug_bear_pelt"/>
+		<param name="description" value="@rug_bear_peltDescription"/>
+	</params>
+
+	<base_part class="static" type="148" name="rug_bear_pelt" repair_with="Rags">
+		<static filename="objects/basebuilding/other/bear_pelt_rug/bear_pelt.cgf"/>
+		<envareas>
+			<envarea enabled="1" scaleEffectsFromCenter="0" bb1="-0.75,-0.75,0" bb2="0.75,0.75,1.0" temperature="2"/>
+		</envareas>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/craftingMats/animal_hide/animal_hide.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/rug_bear_pelt_200.png?crc=F3575461"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30015"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/rug_bear_pelt_2048.png?crc=F3575461"/>
+	</steam>
+</item>

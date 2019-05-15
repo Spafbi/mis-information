@@ -1,0 +1,39 @@
+<item name="TrapSmokeGrenadeMagentaPacked" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@TrapSmokeGrenadeMagentaPacked"/>
+		<param name="description" value="@TrapSmokeGrenadeMagentaPackedDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="TrapSmokeGrenadeMagenta"/>
+		<param name="placed_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/smokegrenade/trap_smokegrenade_magenta_onground.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Trap"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/TrapSmokeGrenadeMagentaPacked_200.png?crc=BE972D1E"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="100024"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Trap"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/TrapSmokeGrenadeMagentaPacked_2048.png?crc=BE972D1E"/>
+	</steam>
+</item>

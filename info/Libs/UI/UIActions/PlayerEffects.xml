@@ -1,0 +1,316 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-560,100,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="4" Class="Actor:LocalPlayer" pos="-360,100,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="7" Class="Game:MyPlayer" pos="-120,80,0" flags="0" InHideMask="15" OutHideMask="2147483647">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="19" Class="UI:Display:Display" pos="1260,280,0" flags="0" InHideMask="1023" OutHideMask="255">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="20" Class="UI:Action:Control" pos="2060,80,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DisplayRespawn" Strict="0" Args=""/>
+  </Node>
+  <Node Id="288" Class="Multiplayer:IsMultiplayer" pos="1260,-60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="302" Class="Image:EffectGhosting" pos="1600,640,0" flags="0">
+   <Inputs entityId="0" Enabled="0" Disabled="1" ImageGhosting_Amount="0"/>
+  </Node>
+  <Node Id="303" Class="Image:ColorCorrection" pos="1600,740,0" flags="0" InHideMask="2047">
+   <Inputs entityId="0" Enabled="0" Disabled="1" Global_User_ColorC="0" Global_User_ColorM="0" Global_User_ColorY="0" Global_User_ColorK="0" Global_User_Brightness="1" Global_User_Contrast="1" Global_User_Saturation="1" Global_User_ColorHue="0"/>
+  </Node>
+  <Node Id="305" Class="Image:EffectAlienInterference" pos="1600,520,0" flags="0">
+   <Inputs entityId="0" Enabled="0" Disabled="1" AlienInterference_Amount="0" clr_AlienInterference_Color="0.496933,0.496933,0.496933"/>
+  </Node>
+  <Node Id="317" Class="Math:Less" pos="1260,540,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="318" Name="." Class="_commentbox" pos="1240,442.31433,0" flags="0">
+   <Inputs TextSize="1" Color="0.745404,0.701102,0.238398" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="580" Height="390"/>
+   <NodeSize Width="580" Height="445.32635"/>
+  </Node>
+  <Node Id="322" Class="Image:ScreenFader" pos="2120,280,0" flags="0" InHideMask="1023" OutHideMask="7">
+   <Inputs FadeGroup="0" UseCurColor="1" FadeInTime="2" FadeOutTime="2" color_FadeColor="0,0,0" tex_TextureName="textures/defaults/white.dds" UpdateAlways="0" StopFader="0"/>
+  </Node>
+  <Node Id="323" Class="Actor:Sensor" pos="1580,-540,0" flags="0" InHideMask="15" OutHideMask="33554431">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="331" Class="Image:EffectDepthOfField" pos="1900,-620,0" flags="0" InHideMask="511">
+   <Inputs entityId="0" Enabled="0" Disabled="1" Dof_User_Active="0" Dof_User_FocusDistance="0.5" Dof_User_FocusRange="5" Dof_User_BlurAmount="2" Dof_MaxCoC="12" Dof_CenterWeight="1"/>
+  </Node>
+  <Node Id="344" Class="Image:ScreenFader" pos="1720,-60,0" flags="0" InHideMask="1023" OutHideMask="7">
+   <Inputs FadeGroup="0" UseCurColor="1" FadeInTime="5" FadeOutTime="2" color_FadeColor="0,0,0" tex_TextureName="textures/defaults/white.dds" UpdateAlways="0" StopFader="0"/>
+  </Node>
+  <Node Id="359" Class="Image:FilterBlur" pos="2360,-140,0" flags="0" InHideMask="31">
+   <Inputs entityId="0" Enabled="0" Disabled="1" FilterBlurring_Type="0" FilterBlurring_Amount="1"/>
+  </Node>
+  <Node Id="364" Class="Image:FilterVisualArtifacts" pos="2360,-40,0" flags="0" InHideMask="32767">
+   <Inputs entityId="0" Enabled="0" Disabled="1" VisualArtifacts_Vsync="0" VisualArtifacts_VsyncFreq="1" VisualArtifacts_Interlacing="0" VisualArtifacts_InterlacingTile="1" VisualArtifacts_InterlacingRot="0" VisualArtifacts_SyncWavePhase="0" VisualArtifacts_SyncWaveFreq="0" VisualArtifacts_SyncWaveAmplitude="0" FilterArtifacts_ChromaShift="0.5" FilterArtifacts_Grain="10" clr_VisualArtifacts_ColorTint="1,0.854993,0.854993" tex_VisualArtifacts_Mask="textures/defaults/white.dds"/>
+  </Node>
+  <Node Id="371" Class="Math:BooleanTo" pos="2060,-40,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="372" Class="Math:BooleanTo" pos="2060,-120,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="373" Name="Fade_to_black_on_Death" Class="_comment" pos="1720,-90,0" flags="0"/>
+  <Node Id="376" Name="Fade_to_black_for_2s_on_Respawn" Class="_comment" pos="1700,250,0" flags="0"/>
+  <Node Id="381" Class="Math:Less" pos="1260,1000,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="383" Class="Camera:ViewShakeEx" pos="1980,920,0" flags="0" InHideMask="262143">
+   <Inputs entityId="0" Restrict="0" View="0" GroundOnly="0" Smooth="0" Angle="0.7,0.7,0.7" Shift="0.1,0.1,0.1" Frequency="12" Randomness="1" Distance="0" RangeMin="0" RangeMax="30" SustainDuration="0" FadeInDuration="0" FadeOutDuration="1" Preset="0"/>
+  </Node>
+  <Node Id="385" Class="Logic:Gate" pos="1780,980,0" flags="0">
+   <Inputs Closed="1"/>
+  </Node>
+  <Node Id="387" Class="Time:Timer" pos="1600,980,0" flags="0" InHideMask="15" OutHideMask="1">
+   <Inputs period="2" min="0" max="0" paused="0"/>
+  </Node>
+  <Node Id="389" Class="Math:BooleanTo" pos="1420,980,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="391" Class="Audio:Trigger" pos="2360,-260,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_player_death_3p" audioTrigger_StopTrigger=""/>
+  </Node>
+  <Node Id="392" Class="Logic:Any" pos="1720,-200,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="393" Class="Audio:Trigger" pos="2300,-620,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_underwater_ambience" audioTrigger_StopTrigger="Stop_underwater_ambience"/>
+  </Node>
+  <Node Id="396" Class="Logic:Any" pos="1260,-620,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="398" Class="Math:BooleanFrom" pos="1900,-460,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="399" Name="." Class="_commentbox" pos="1240,-717.38141,0" flags="0">
+   <Inputs TextSize="1" Color="0.223228,0.386429,0.502886" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1440" Height="340"/>
+   <NodeSize Width="1440" Height="395.32635"/>
+  </Node>
+  <Node Id="411" Class="Logic:Any" pos="2060,-260,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="413" Class="Logic:Any" pos="2120,-420,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="416" Name="Stop_sound_on_Death_else_continues_waiting_respawn" Class="_comment" pos="2300,-650,0" flags="0"/>
+  <Node Id="417" Name="." Class="_commentbox" pos="1240,842.34979,0" flags="0">
+   <Inputs TextSize="1" Color="0.396755,0.552011,0.3564" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="920" Height="200"/>
+   <NodeSize Width="920" Height="255.32635"/>
+  </Node>
+  <Node Id="447" Name="Torpidity" Class="_comment" pos="1260,1130,0" flags="0"/>
+  <Node Id="448" Name="." Class="_commentbox" pos="1240,1062.5835,0" flags="0">
+   <Inputs TextSize="1" Color="0.318547,0.617207,0.603827" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="520" Height="620"/>
+   <NodeSize Width="520" Height="675.32635"/>
+  </Node>
+  <Node Id="449" Class="Logic:Any" pos="1020,640,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="450" Name="Drowning_screenshake" Class="_comment" pos="1970,990,0" flags="0"/>
+  <Node Id="451" Class="Logic:Any" pos="1260,820,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="455" Name="Radiation" Class="_comment" pos="1260,510,0" flags="0"/>
+  <Node Id="456" Name="." Class="_commentbox" pos="1240,182.61786,0" flags="0">
+   <Inputs TextSize="1" Color="0.508881,0.327778,0.603827" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1140" Height="140"/>
+   <NodeSize Width="1140" Height="195.32635"/>
+  </Node>
+  <Node Id="457" Class="Logic:Any" pos="1260,-420,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="463" Name="." Class="_commentbox" pos="1240,-358.32458,0" flags="0">
+   <Inputs TextSize="1" Color="0.686685,0.274677,0.274677" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1440" Height="520"/>
+   <NodeSize Width="1440" Height="575.32635"/>
+  </Node>
+  <Node Id="465" Name="Death_effects" Class="_comment" pos="1260,-90,0" flags="0"/>
+  <Node Id="466" Name="THIS_SHOULD_BE_IN_CODE!" Class="_comment" pos="2360,-290,0" flags="0"/>
+  <Node Id="469" Name="Underwater_Events" Class="_comment" pos="1260,-650,0" flags="0"/>
+  <Node Id="472" Class="Logic:Any" pos="860,920,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="473" Class="Logic:Any" pos="160,920,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="474" Class="Logic:Any" pos="480,-620,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="475" Class="Logic:Any" pos="1580,-260,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="478" Class="Math:BooleanFrom" pos="600,1620,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="479" Class="Image:FilterVisualArtifacts" pos="1260,1160,0" flags="0">
+   <Inputs entityId="0" Enabled="0" Disabled="1" VisualArtifacts_Vsync="0" VisualArtifacts_VsyncFreq="1" VisualArtifacts_Interlacing="0" VisualArtifacts_InterlacingTile="1" VisualArtifacts_InterlacingRot="0" VisualArtifacts_SyncWavePhase="0" VisualArtifacts_SyncWaveFreq="1" VisualArtifacts_SyncWaveAmplitude="2" FilterArtifacts_ChromaShift="0" FilterArtifacts_Grain="1" clr_VisualArtifacts_ColorTint="0.752942,0.752942,0.752942" tex_VisualArtifacts_Mask="textures/lights/verysoftcenter.tif"/>
+  </Node>
+  <Node Id="484" Class="Image:ScreenFader" pos="1260,1520,0" flags="0">
+   <Inputs FadeGroup="2" UseCurColor="1" FadeInTime="20" FadeOutTime="1" color_FadeColor="0,0,0" tex_TextureName="" UpdateAlways="0" StopFader="0"/>
+  </Node>
+  <Node Id="508" Class="Math:Less" pos="1020,1200,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="509" Name="Disable_if_torpidity_less_than_1" Class="_comment" pos="980,1170,0" flags="0"/>
+  <Node Id="510" Class="Math:Div" pos="1020,1280,0" flags="0">
+   <Inputs A="0" B="100"/>
+  </Node>
+  <Node Id="511" Class="Math:Div" pos="1020,1340,0" flags="0">
+   <Inputs A="0" B="1000"/>
+  </Node>
+  <Node Id="512" Class="Logic:Any" pos="820,1280,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="519" Class="Math:Div" pos="1020,1400,0" flags="0">
+   <Inputs A="0" B="50"/>
+  </Node>
+  <Node Id="522" Class="Time:Delay" pos="780,1540,0" flags="0">
+   <Inputs delay="10" resetOnInput="0"/>
+  </Node>
+  <Node Id="523" Name="10s_between_becoming_unconscious_and_starting_to_wake_up" Class="_comment" pos="580,1490,0" flags="0"/>
+  <Node Id="534" Name="If_player_is_faster_conscious_again_then_stop_fader_and_prevent_fade_out" Class="_comment" pos="1260,1490,0" flags="0"/>
+  <Node Id="536" Class="Logic:Condition" pos="1020,1500,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="540" Class="Logic:Any" pos="480,1500,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="551" Class="Multiplayer:IsMultiplayer" pos="1460,280,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="552" Class="Image:ScreenFader" pos="1700,280,0" flags="0" InHideMask="1023" OutHideMask="7">
+   <Inputs FadeGroup="0" UseCurColor="1" FadeInTime="2" FadeOutTime="0.05" color_FadeColor="0,0,0" tex_TextureName="textures/defaults/black.dds" UpdateAlways="0" StopFader="0"/>
+  </Node>
+  <Node Id="553" Class="Time:Delay" pos="1920,280,0" flags="0">
+   <Inputs delay="1.9" resetOnInput="0"/>
+  </Node>
+  <Node Id="554" Name="Don&apos;t_do_any_of_this_in_Editor" Class="_comment" pos="1460,250,0" flags="0"/>
+  <Node Id="555" Name="2s_fade_from_black_once_unlocked" Class="_comment" pos="2120,250,0" flags="0"/>
+  <Node Id="556" Class="Time:Delay" pos="1720,80,0" flags="0">
+   <Inputs delay="2" resetOnInput="0"/>
+  </Node>
+  <Node Id="557" Name="Wait_2s_then_open_Respawn_Menu" Class="_comment" pos="2060,50,0" flags="0"/>
+  <Node Id="558" Name="FadeGroup_2_used_for_unconscious\n_1_is_used_by_HUD_hits\n_0_is_used_for_respawn" Class="_comment" pos="1470,1520,0" flags="0"/>
+  <Node Id="561" Class="Math:Div" pos="1260,660,0" flags="0">
+   <Inputs A="0" B="150"/>
+  </Node>
+  <Node Id="565" Class="Logic:Any" pos="1020,-240,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="566" Name="Don&apos;t_show_in_Editor" Class="_comment" pos="1260,0,0" flags="0"/>
+  <Node Id="567" Class="Math:Div" pos="1260,760,0" flags="0">
+   <Inputs A="0" B="1000"/>
+  </Node>
+  <Node Id="573" Name="Scale_to_0.1" Class="_comment" pos="1260,730,0" flags="0"/>
+  <Node Id="574" Name="Scale_to_0.66" Class="_comment" pos="1260,630,0" flags="0"/>
+  <Node Id="577" Name="1.0" Class="_comment" pos="1130,1280,0" flags="0"/>
+  <Node Id="578" Name="0.1" Class="_comment" pos="1140,1340,0" flags="0"/>
+  <Node Id="579" Name="2.0" Class="_comment" pos="1120,1400,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="1" portIn="update" portOut="output" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="Enable" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="Get" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="4" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="473" nodeOut="4" portIn="in1" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="474" nodeOut="4" portIn="in1" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="7" portIn="unload" portOut="OnRevive" enabled="1"/>
+  <Edge nodeIn="381" nodeOut="7" portIn="A" portOut="OnOxygenChange" enabled="1"/>
+  <Edge nodeIn="449" nodeOut="7" portIn="in1" portOut="OnRadiationChange" enabled="1"/>
+  <Edge nodeIn="512" nodeOut="7" portIn="in1" portOut="OnTorpidityChange" enabled="1"/>
+  <Edge nodeIn="540" nodeOut="7" portIn="in1" portOut="OnUnconsciousChange" enabled="1"/>
+  <Edge nodeIn="565" nodeOut="7" portIn="in1" portOut="OnDeath" enabled="1"/>
+  <Edge nodeIn="551" nodeOut="19" portIn="Get" portOut="onUnload" enabled="1"/>
+  <Edge nodeIn="344" nodeOut="288" portIn="FadeOut" portOut="True" enabled="1"/>
+  <Edge nodeIn="392" nodeOut="288" portIn="in1" portOut="True" enabled="1"/>
+  <Edge nodeIn="556" nodeOut="288" portIn="in" portOut="True" enabled="1"/>
+  <Edge nodeIn="302" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
+  <Edge nodeIn="302" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="305" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
+  <Edge nodeIn="305" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="331" nodeOut="323" portIn="Dof_User_Active" portOut="IsHeadUnderwater" enabled="1"/>
+  <Edge nodeIn="331" nodeOut="323" portIn="Enabled" portOut="IsHeadUnderwater" enabled="1"/>
+  <Edge nodeIn="398" nodeOut="323" portIn="Value" portOut="IsHeadUnderwater" enabled="1"/>
+  <Edge nodeIn="371" nodeOut="344" portIn="true" portOut="FadedOut" enabled="1"/>
+  <Edge nodeIn="372" nodeOut="344" portIn="false" portOut="FadedOut" enabled="1"/>
+  <Edge nodeIn="359" nodeOut="371" portIn="Disabled" portOut="out" enabled="1"/>
+  <Edge nodeIn="364" nodeOut="371" portIn="Disabled" portOut="out" enabled="1"/>
+  <Edge nodeIn="359" nodeOut="372" portIn="Enabled" portOut="out" enabled="1"/>
+  <Edge nodeIn="364" nodeOut="372" portIn="Enabled" portOut="out" enabled="1"/>
+  <Edge nodeIn="385" nodeOut="381" portIn="Close" portOut="false" enabled="1"/>
+  <Edge nodeIn="385" nodeOut="381" portIn="Open" portOut="true" enabled="1"/>
+  <Edge nodeIn="389" nodeOut="381" portIn="true" portOut="false" enabled="1"/>
+  <Edge nodeIn="389" nodeOut="381" portIn="false" portOut="true" enabled="1"/>
+  <Edge nodeIn="383" nodeOut="385" portIn="Trigger" portOut="Out" enabled="1"/>
+  <Edge nodeIn="385" nodeOut="387" portIn="In" portOut="out" enabled="1"/>
+  <Edge nodeIn="387" nodeOut="389" portIn="paused" portOut="out" enabled="1"/>
+  <Edge nodeIn="372" nodeOut="392" portIn="true" portOut="out" enabled="1"/>
+  <Edge nodeIn="391" nodeOut="392" portIn="Play" portOut="out" enabled="1"/>
+  <Edge nodeIn="323" nodeOut="396" portIn="Enable" portOut="out" enabled="1"/>
+  <Edge nodeIn="323" nodeOut="396" portIn="Get" portOut="out" enabled="1"/>
+  <Edge nodeIn="323" nodeOut="396" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="331" nodeOut="396" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="393" nodeOut="396" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="475" nodeOut="396" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="393" nodeOut="398" portIn="Play" portOut="True" enabled="1"/>
+  <Edge nodeIn="413" nodeOut="398" portIn="in2" portOut="False" enabled="1"/>
+  <Edge nodeIn="359" nodeOut="411" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="364" nodeOut="411" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="391" nodeOut="411" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="393" nodeOut="413" portIn="Stop" portOut="out" enabled="1"/>
+  <Edge nodeIn="317" nodeOut="449" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="561" nodeOut="449" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="567" nodeOut="449" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="302" nodeOut="451" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="451" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="305" nodeOut="451" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="413" nodeOut="457" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="383" nodeOut="472" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="451" nodeOut="472" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="472" portIn="entityId" portOut="out" enabled="1"/>
+  <Edge nodeIn="472" nodeOut="473" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="396" nodeOut="474" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="411" nodeOut="475" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="484" nodeOut="478" portIn="StopFader" portOut="False" enabled="1"/>
+  <Edge nodeIn="484" nodeOut="478" portIn="FadeOut" portOut="True" enabled="1"/>
+  <Edge nodeIn="522" nodeOut="478" portIn="in" portOut="True" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="508" portIn="Enabled" portOut="false" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="508" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="510" portIn="VisualArtifacts_SyncWaveAmplitude" portOut="out" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="511" portIn="FilterArtifacts_ChromaShift" portOut="out" enabled="1"/>
+  <Edge nodeIn="508" nodeOut="512" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="510" nodeOut="512" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="511" nodeOut="512" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="519" nodeOut="512" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="519" portIn="FilterArtifacts_Grain" portOut="out" enabled="1"/>
+  <Edge nodeIn="536" nodeOut="522" portIn="In" portOut="out" enabled="1"/>
+  <Edge nodeIn="484" nodeOut="536" portIn="FadeIn" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="478" nodeOut="540" portIn="Value" portOut="out" enabled="1"/>
+  <Edge nodeIn="536" nodeOut="540" portIn="Condition" portOut="out" enabled="1"/>
+  <Edge nodeIn="552" nodeOut="551" portIn="FadeOut" portOut="True" enabled="1"/>
+  <Edge nodeIn="553" nodeOut="552" portIn="in" portOut="FadedOut" enabled="1"/>
+  <Edge nodeIn="322" nodeOut="553" portIn="FadeIn" portOut="out" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="556" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="302" nodeOut="561" portIn="ImageGhosting_Amount" portOut="out" enabled="1"/>
+  <Edge nodeIn="305" nodeOut="561" portIn="AlienInterference_Amount" portOut="out" enabled="1"/>
+  <Edge nodeIn="288" nodeOut="565" portIn="Get" portOut="out" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="565" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="567" portIn="Global_User_ColorC" portOut="out" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="567" portIn="Global_User_ColorHue" portOut="out" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="567" portIn="Global_User_ColorY" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

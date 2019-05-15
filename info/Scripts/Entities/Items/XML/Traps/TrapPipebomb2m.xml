@@ -1,0 +1,46 @@
+<item name="TrapPipebomb2m" class="Trap" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@TrapPipebomb2m"/>
+		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<placeable>
+		<param name="packup_class" value="TrapPipebombPacked2m"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="Objects/traps/pipebomb/trap_pipebomb_2m.cgf"/>
+	</geometry>
+
+	<trap>
+		<!-- only one of these two should be set to 1 (true) -->
+		<param name="destroy_when_triggered" value="1"/> <!-- default is 1-->
+		<param name="disable_when_triggered" value="0"/> <!-- recommended to use thirdpersonAux as well if this is set -->
+	</trap>
+
+	<explosion>
+		<param name="damage" value="65"/>
+		<param name="torpidity" value="0"/>
+		<param name="stamina" value="0"/>
+		<param name="min_radius" value="1.5"/>
+		<param name="max_radius" value="3"/>
+		<param name="min_phys_radius" value="1.5"/>
+		<param name="max_phys_radius" value="3"/>
+		<param name="sound_radius" value="50"/>
+		<param name="pressure" value="200"/>
+		<param name="effect" value="traps.grenadefrag.explosion"/>
+		<param name="effect_scale" value="1"/>
+		<param name="radial_blur_dist" value="10"/>
+		<param name="hit_type" value="frag"/>
+	</explosion>
+
+</item>

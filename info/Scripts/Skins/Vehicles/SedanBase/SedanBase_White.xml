@@ -1,0 +1,31 @@
+<skin name="SedanBase_White">
+
+	<params>
+		<param name="display_name" value="Sedan White Skin"/>
+		<param name="description" value="White skin for the Sedan"/>
+		<param name="material" value="objects/vehicles/sedan_crown_vic/base/sedan_base"/>
+	</params>
+
+	<items>
+		<item name="sedan_base"/>
+		<item name="sedan_base_black"/>
+		<item name="sedan_base_green"/>
+		<item name="sedan_base_red"/>
+		<item name="sedan_base_yellow"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SedanBase_White_200.png?crc=A5D8CAC3"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="10"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300004"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SedanBase_White_2048.png?crc=A5D8CAC3"/>
+	</steam>
+</skin>

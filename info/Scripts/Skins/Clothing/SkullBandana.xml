@@ -1,0 +1,40 @@
+<skin name="SkullBandana">
+ 
+    <params>
+        <param name="display_name" value="Skull Bandana"/>
+        <param name="description" value="Skull Face skin for the Bandana"/>
+        <param name="material" value="Objects/characters/players/male/face/bandana/bandana_skull_face"/>
+    </params>
+ 
+    <items>
+        <item name="Bandana"/>
+        <item name="BandanaBlack"/>
+        <item name="BandanaBlue"/>
+        <item name="BandanaBrown"/>
+        <item name="BandanaCamo1"/>
+        <item name="BandanaCamo2"/>
+        <item name="BandanaCamo3"/>
+        <item name="BandanaCamo4"/>
+        <item name="BandanaGray"/>
+        <item name="BandanaGreen"/>
+        <item name="BandanaKhaki"/>
+        <item name="BandanaOrange"/>
+        <item name="BandanaPink"/>
+        <item name="BandanaRed"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SkullBandana_200.png?crc=0CB7A357"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200023"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SkullBandana_2048.png?crc=0CB7A357"/>
+	</steam>
+</skin>

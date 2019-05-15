@@ -1,0 +1,46 @@
+<item name="RuckSack" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.8"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="display_name" value="@RuckSack"/>
+		<param name="description" value="@RuckSackDescription"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/large_backpack/large_rucksack.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/large_backpack/large_rucksack_mat.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<thirdperson name="objects/characters/players/male/back/backpack/large_backpack/large_rucksack_onground.cgf" material="objects/characters/players/male/back/backpack/large_backpack/large_rucksack_mat"/>
+		<onground name="objects/characters/players/male/back/backpack/large_backpack/large_rucksack_onground.cgf" material="objects/characters/players/male/back/backpack/large_backpack/large_rucksack_mat"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="20"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RuckSack_200.png?crc=DB548E62"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="5"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40017"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RuckSack_2048.png?crc=DB548E62"/>
+	</steam>
+</item>

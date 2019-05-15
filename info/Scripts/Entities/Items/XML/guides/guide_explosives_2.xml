@@ -1,0 +1,27 @@
+<item name="guide_explosives_2" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@guide_explosives_2"/>
+		<param name="description" value="@guide_explosives_2Description"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/crafting_guides/guide_advanced.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="guide"/>
+		<param name="param" value="29"/>
+		<param name="soundUsed" value="Play_book_page_turn"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	
+</item>

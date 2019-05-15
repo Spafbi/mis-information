@@ -1,0 +1,46 @@
+<item name="DuffelBagTanCamo2" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.8"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="display_name" value="@DuffelBagTanCamo2"/>
+		<param name="description" value="@DuffelBagTanCamo2Description"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag_tan_camo2.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<thirdperson name="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag_ground.cgf" material="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag_tan_camo2"/>
+		<onground name="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag_ground.cgf" material="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag_tan_camo2"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="20"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DuffelBagTanCamo2_200.png?crc=20192851"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="5"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40008"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/DuffelBagTanCamo2_2048.png?crc=20192851"/>
+	</steam>
+</item>

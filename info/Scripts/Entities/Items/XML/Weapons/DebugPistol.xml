@@ -1,0 +1,114 @@
+<item name="DebugPistol" class="DebugGun" category="secondary" priority="30" weaponParams="1">
+		<param name="debug" value="1"/>
+	<params>
+		<param name="display_name" value="@DebugPistol"/>
+		<param name="itemClass" value="pistol"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="0.1"/>
+		<param name="attach_to_back" value="0"/>
+		<param name="tag" value="g18"/>
+		<param name="adb" value="g18WeaponAnims.adb"/>
+		<animPrecache name="G18Pistol">
+			<precache DBAFile="animations/weapons/g18/g18.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/g18/g18_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
+	<MovementModifiers speedScale="1.0" speedScaleTactical="1.0"/>
+
+	<magazines>
+		<magazine name="9mmx10"/>
+	</magazines>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/entrada_g18/g18.cdf"/>
+		<onground name="Objects/weapons/entrada_g18/g18_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode type="default">
+			<fire>
+				<param name="hit_type" value="ammo_9mm"/>
+				<param name="ammo_type" value="ammo_9mm"/>
+				<param name="rate" value="999"/>
+				<param name="damage" value="1"/>
+				<param name="tag" value="single"/>
+			</fire>
+			<recoil/>
+			<spread/>
+		</firemode>
+
+		<firemode name="Single" type="Single"/>
+	</firemodes>
+
+	<zoommodes>
+		<zoommode type="default">
+			<zoomSway> <!-- This block is ignored in the "default" zoom mode. Has to be overridden below in "hipfire" -->
+				<param name="maxX" value=""/>
+				<param name="maxY" value=""/>
+				<param name="stabilizeTime" value=""/>
+				<param name="holdBreathScale" value=""/>
+				<param name="holdBreathTime" value=""/>
+				<param name="minScale" value=""/>
+				<param name="scaleAfterFiring" value=""/>
+				<param name="crouchScale" value=""/>
+				<param name="proneScale" value=""/>
+			</zoomSway>
+			<spreadMod/>
+			<recoilMod/>
+		</zoommode>
+
+		<zoommode name="ironsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="1.25" rotationSpeedScale="1.0"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="iron"/>
+				<param name="suffixAG" value="_iron"/>
+				<param name="dof" value="0"/>
+				<param name="zoom_in_time" value="0.1"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.1"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.1"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.7"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="3.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.0"/>
+				<param name="maxY" value="0.0"/>
+				<param name="stabilizeTime" value="0.0"/>
+				<param name="holdBreathScale" value="0.0"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="0.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.0"/>
+				<param name="scaleAfterFiring" value="0.0"/>
+				<param name="crouchScale" value="0.0"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.0"/>
+			</zoomSway>
+		</zoommode>
+
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.0"/>
+				<param name="maxY" value="0.0"/>
+				<param name="stabilizeTime" value="0.0"/>
+				<param name="holdBreathScale" value="0.0"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="0.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.0"/>
+				<param name="scaleAfterFiring" value="0.0"/>
+				<param name="crouchScale" value="0.0"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.0"/>
+			</zoomSway>
+		</zoommode>
+	</zoommodes>
+
+	<accessories/>
+
+	<storage>
+		<locations>
+			<location category="secondary"/>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

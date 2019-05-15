@@ -1,0 +1,52 @@
+<item name="NoWeapon" class="NoWeapon" category="primary" priority="0" weaponParams="1">
+	<params>
+		<param name="droppable" value="0" />
+		<param name="itemClass" value="nw" />
+		<param name="bleed_percent" value="5" />
+		<param name="relaxedToTacticalBlendTime" value="0.2" />
+		<param name="tag" value="NoWeapon" />
+		<param name="prone_no_melee" value="0"/>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScaleTactical="1.0" speedScale="1.0" rotationScale="1.0"/>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision" />
+				<param name="hit_type" value="melee" />
+				<param name="range" value="1.0" /> <!-- range in meters punching reaches -->
+				<param name="damage" value="8" />
+				<param name="impulse" value="10" />
+				<param name="impulse_actor" value="30" />
+				<param name="impulse_ai_to_player" value="0" /> <!-- -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40" />
+				<param name="delay" value="0.43" />
+				<param name="aiDelay" value="0.4" /> <!-- delay until hit is applied for timing -->
+				<param name="duration" value="1.0" />
+				<param name="knockdown_chance" value="0.0" /> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0" />
+				<param name="use_melee_weapon_delay" value="-1.0" />
+				<param name="weapon_restore_delay" value="0.0" />
+				<param name="trigger_client_reaction" value="1" /> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10" />
+				<KickAttack>
+					<param name="range" value="1.4" /> <!-- range in meters kicking reaches -->
+					<param name="delay" value="0.5" />
+					<param name="duration" value="1.2" />
+					<param name="damage" value="12" />
+					<param name="impulse_up_percentage" value="0.4" />
+					<param name="impulse_ai_to_player" value="300"/>
+					<param name="sound_radius" value="10" />
+				</KickAttack>
+			</melee>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="noweapon" />
+		</locations>
+	</storage>
+</item>

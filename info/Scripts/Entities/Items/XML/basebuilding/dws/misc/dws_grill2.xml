@@ -1,0 +1,42 @@
+<item name="dws_grill2" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="7.5"/>
+		<param name="place_dws" value="2"/> <!-- doesn't do power source line of sight check -->
+		<param name="display_name" value="@dws_grill2"/>
+		<param name="description" value="@dws_grill2Description"/>
+	</params>
+
+	<base_part class="grill" type="250" name="dws_grill2" max_health="2000">
+		<grill filename="Objects/props/outside_grill/dws_grill_2.cgf" helper_food="food" helper_wood="wood" model_wood="Objects/props/outside_grill/grill_2_wood.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="food" light_bulb_size="0.05" light_radius="10" light_cast_shadows="1" light_view_dist_ratio="5" light_color="1,0.7,0.3" light_diff_mul="1" light_style="50" light_anim_speed="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.campfire.fire_medium" lens_flare_fov="360"/>
+			</base_part>
+			<base_part class="particle">
+				<particle helper="wood" effect="fire.bpart.dws.grill_portable"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.1,-0.1,0.75" bb2="0.1,0.1,1.5" fire="2" temperature="60"/>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-3,-3,-1" bb2="3,3,2.5" temperature="40" light="1" humidity="-0.5" rain="-0.1"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="grill">
+				<grill can_use_wood="1"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

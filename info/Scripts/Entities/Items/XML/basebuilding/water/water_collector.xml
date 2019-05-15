@@ -1,0 +1,28 @@
+<item name="water_collector" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.0"/>
+		<param name="display_name" value="@water_collector"/>
+		<param name="description" value="@water_collectorDescription"/>
+	</params>
+
+	<base_part class="water_barrel" type="257" name="water_collector" max_health="2000">
+		<water_barrel filename="objects/basebuilding/other/water_collector/water_collector.cgf"/>
+		<base_actions>
+			<base_action class="water_collector">
+				<water_collector fluid_capacity="200000"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+</item>

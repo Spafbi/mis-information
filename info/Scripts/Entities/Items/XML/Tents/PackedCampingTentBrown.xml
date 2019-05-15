@@ -1,0 +1,25 @@
+<item name="PackedCampingTentBrown" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5.0"/>
+		<param name="display_name" value="@PackedCampingTentBrown"/>
+		<param name="description" value="@PackedCampingTentBrownDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="CampingTentBrown"/>
+		<param name="placed_sound" value="Play_puptent_setup"/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/tents/packed_tent_civilian/packed_tent_civilian_large.cgf" material="objects/tents/packed_tent_civilian/packed_tent_civilian_brown.mtl"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

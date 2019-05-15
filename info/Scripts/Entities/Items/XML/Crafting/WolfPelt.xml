@@ -1,0 +1,20 @@
+<item name="WolfPelt" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.5"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@WolfPelt"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects\craftingMats\animal_hide\animal_hide.cgf" material="Objects\craftingMats\animal_hide\wolf_hide.mtl"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

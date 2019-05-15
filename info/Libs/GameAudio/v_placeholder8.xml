@@ -1,0 +1,31 @@
+<ATLConfig atl_name="v_placeholder8">
+  <AudioTriggers>
+    <ATLTrigger atl_name="Play_placeholder8_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder8_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder8_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder8_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+  </AudioTriggers>
+</ATLConfig>

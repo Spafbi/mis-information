@@ -1,0 +1,26 @@
+<item name="PepsiCan" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@PepsiCan"/>
+		<param name="description" value="@PepsiCanDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/item_drink_can/item_drink_can_pepsi.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="drinkAmount" value="350"/>
+		<param name="soundConsumed" value="Play_soda_open"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

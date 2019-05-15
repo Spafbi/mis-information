@@ -1,0 +1,40 @@
+<Factions>
+	<Faction name="Players" default="hostile">
+	</Faction>
+
+	<Faction name="Bandits">
+		<Reaction faction="Players" reaction="hostile" />
+		<Reaction faction="Bandits" reaction="friendly" />
+		<Reaction faction="Mutants" reaction="neutral" />
+		<Reaction faction="WildLife" reaction="hostile" />
+		<Reaction faction="Predators" reaction="neutral" />
+	</Faction>
+
+	<Faction name="Mutants">
+		<Reaction faction="Players" reaction="hostile" />
+		<Reaction faction="Bandits" reaction="neutral" />
+		<Reaction faction="Mutants" reaction="friendly" />
+		<Reaction faction="WildLife" reaction="hostile" />
+		<Reaction faction="Predators" reaction="neutral" />
+	</Faction>
+
+	<Faction name="WildLife" default="hostile">
+		<Reaction faction="WildLife" reaction="friendly" />
+	</Faction>
+
+	<Faction name="Predators" default="hostile">
+		<Reaction faction="Players" reaction="hostile" />
+		<Reaction faction="Bandits" reaction="hostile" />
+		<Reaction faction="Mutants" reaction="hostile" />
+		<Reaction faction="WildLife" reaction="hostile" />
+		<Reaction faction="Predators" reaction="friendly" />
+	</Faction>
+
+	<Faction name="HostileOnlyWithPlayers" default="neutral">
+		<Reaction faction="Players" reaction="hostile" />
+	</Faction>
+
+	<Faction name="HostileWithEveryone" default="hostile">
+	</Faction>
+
+</Factions>

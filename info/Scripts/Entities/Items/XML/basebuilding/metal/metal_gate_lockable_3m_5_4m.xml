@@ -1,0 +1,65 @@
+<item name="metal_gate_lockable_3m_5_4m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="750"/> <!-- towable parts must have a mass > 50 -->
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="no_icon" value="1"/>
+		<param name="display_name" value="@metal_gate_lockable_3m_5_4m"/>
+		<param name="description" value="@metal_gate_lockable_3m_5_4mDescription"/>
+	</params>
+
+	<base_part class="door" type="2099" name="metal_gate_lockable_3m_5_4m" max_health="30000" repair_with="SheetMetal" towable="1">
+		<door filename="objects/basebuilding/metal/metal_gate_3m_5_4m.cgf" rotate_base="-90" rotate_range="90" rotate_speed="30" rotate_axis="z" rotate_axis_front="y" sound_open="Play_door_metal_open" sound_opened="" sound_close="Play_door_metal_close" sound_closed="Play_door_metal_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
+		<base_actions>
+			<base_action class="toggle_door">
+				<toggle_door sound_knock="Play_door_metal_knock"/>
+			</base_action>
+			<base_action class="toggle_lock">
+				<toggle_lock/>
+			</base_action>
+		</base_actions>
+
+		<damage_multipliers>
+			<damage_multiplier damage_type="collision" multiplier="0.1"/>
+			<damage_multiplier damage_type="explosion" multiplier="15.0"/>
+			<damage_multiplier damage_type="frag" multiplier="4"/>
+			<damage_multiplier damage_type="fire" multiplier="1.0"/>
+			<damage_multiplier damage_type="melee" multiplier="0.0"/>
+			<damage_multiplier damage_type="repair" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_10mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_beanbag" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_pellet" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_slug" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_22" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_223" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_308" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_357" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_45x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_56x45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_70x28" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x51" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_9mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_acp_45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_lge" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_sml" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_player" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_tranquilizer_dart" multiplier="0.0"/>
+			<damage_multiplier damage_type="arrow" multiplier="0.0"/>
+			<damage_multiplier damage_type="blunt" multiplier="0.0"/>
+			<damage_multiplier damage_type="flare" multiplier="0.0"/>
+			<damage_multiplier damage_type="hammer" multiplier="0.0"/>
+			<damage_multiplier damage_type="hatchet" multiplier="0.0"/>
+			<damage_multiplier damage_type="knife" multiplier="0.0"/>
+			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
+			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+		</damage_multipliers>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/metal/metal_gate_3m_5_4m.cgf"/>
+	</geometry>
+
+</item>

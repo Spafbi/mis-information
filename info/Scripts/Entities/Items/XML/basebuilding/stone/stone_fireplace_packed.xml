@@ -1,0 +1,24 @@
+<item name="stone_fireplace_packed" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0" />
+		<param name="mass" value="6" />
+		<param name="display_name" value="@stone_fireplace_packed" />
+		<param name="description" value="@stone_fireplace_packedDescription" />
+	</params>
+
+	<base_part class="entity" type="3500" name="stone_fireplace_packed" max_health="8000" limit="1" repair_with="Rocks">
+		<entity class="stone_fireplace"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf" />
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any" />
+		</locations>
+	</storage>
+
+</item>

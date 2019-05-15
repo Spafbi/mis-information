@@ -1,0 +1,21 @@
+<item name="GlowPlugs" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@GlowPlugs"/>
+		<param name="description" value="@GlowPlugsDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/glow_plug/glow_plugs.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="glowplugs"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,29 @@
+<item name="workbench" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5.5"/>
+		<param name="display_name" value="@workbench"/>
+		<param name="description" value="@workbenchDescription"/>
+	</params>
+
+	<base_part class="static" type="4849" name="workbench" max_health="5000">
+		<static filename="objects/basebuilding/other/workbench/workbench_base.cgf"/>
+		<base_actions>
+			<!-- just opens the player's inventory -->
+			<base_action class="open_inventory">
+				<open_inventory message="@workbench_open_inventory"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+</item>

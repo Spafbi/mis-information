@@ -1,0 +1,71 @@
+<item name="RK_Teflon" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_Teflon"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>
+		<param name="display_name" value="@RK_Teflon"/>
+		<param name="description" value="@RK_TeflonDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/sewing_kit.cgf" Material="Objects/equipment/repairkits/repair_kits_teflon"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_Teflon" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="GasCanisterPack" percentage="100"/>
+		<item name="GasMask" percentage="100"/>
+		<item name="HazmatMask" percentage="100"/>
+		<item name="HazmatSuitBlue" percentage="100"/>
+		<item name="HazmatSuitGreen" percentage="100"/>
+		<item name="HazmatSuitOrange" percentage="100"/>
+		<item name="HazmatSuitPink" percentage="100"/>
+		<item name="HazmatSuitWhite" percentage="100"/>
+		<item name="HazmatSuitYellow" percentage="100"/>
+		<item name="RainJacketBlack" percentage="100"/>
+		<item name="RainJacketBlue" percentage="100"/>
+		<item name="RainJacketBlueGrey" percentage="100"/>
+		<item name="RainJacketCamo1" percentage="100"/>
+		<item name="RainJacketCamo2" percentage="100"/>
+		<item name="RainJacketCamo3" percentage="100"/>
+		<item name="RainJacketDarkGrey" percentage="100"/>
+		<item name="RainJacketGreen" percentage="100"/>
+		<item name="RainJacketGreenGrey" percentage="100"/>
+		<item name="RainJacketGrey" percentage="100"/>
+		<item name="RainJacketGreyBlack" percentage="100"/>
+		<item name="RainJacketKaki" percentage="100"/>
+		<item name="RainJacketLightDarkGrey" percentage="100"/>
+		<item name="RainJacketMarine" percentage="100"/>
+		<item name="RainJacketOrangeBlue" percentage="100"/>
+		<item name="RainJacketPinkPurple" percentage="100"/>
+		<item name="RainJacketRed" percentage="100"/>
+		<item name="RainJacketRedBlue" percentage="100"/>
+		<item name="RainJacketRedGrey" percentage="100"/>
+		<item name="RainJacketYellow" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_Teflon_200.png?crc=A42B623B"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130033"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_Teflon_2048.png?crc=A42B623B"/>
+	</steam>
+</item>

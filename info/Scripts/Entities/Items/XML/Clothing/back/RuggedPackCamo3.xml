@@ -1,0 +1,46 @@
+<item name="RuggedPackCamo3" class="Item" category="any">
+	<params>
+		<param name="debug" value="1"/>
+		<param name="colorable" value="0"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.5"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.2"/>
+		<param name="display_name" value="@RuggedPackCamo3"/>
+		<param name="description" value="@RuggedPackCamo3Description"/>
+	</params>
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/back/backpack/rugged/backpack_rugged.skin"/>
+		<param name="mtl" value="objects/characters/players/male/back/backpack/rugged/backpack_rugged_camo3.mtl"/>
+		<param name="slot" value="back"/>
+	</wearable>
+	<geometry>
+		<thirdperson name="objects/characters/players/male/back/backpack/rugged/backpack_rugged_tp.cgf" material="objects/characters/players/male/back/backpack/rugged/backpack_rugged_camo3"/>
+		<onground name="objects/characters/players/male/back/backpack/rugged/backpack_rugged_tp.cgf" material="objects/characters/players/male/back/backpack/rugged/backpack_rugged_camo3"/>
+	</geometry>
+	<storage>
+		<locations>
+			<location category="backpack"/>
+		</locations>
+		<types>
+			<type category="any" capacity="15"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RuggedPackCamo3_200.png?crc=BEF463AA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40023"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RuggedPackCamo3_2048.png?crc=BEF463AA"/>
+	</steam>
+</item>

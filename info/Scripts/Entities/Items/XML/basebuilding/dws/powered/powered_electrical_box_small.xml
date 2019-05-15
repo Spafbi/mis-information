@@ -1,0 +1,20 @@
+<item name="powered_electrical_box_small" class="Placeable" category="any">
+
+	<params>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<base_part class="power" type="166" name="powered_electrical_box_small" max_health="500">
+		<power filename="Objects/props/Underground/Electrical Boxes/Elec_Small.cgf" />
+		<base_actions>
+			<base_action class="toggle_power">
+				<toggle_power sound_connect_power="Play_power_connect"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+</item>

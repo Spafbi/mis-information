@@ -1,0 +1,63 @@
+<ATLConfig atl_name="objects">
+	<AudioTriggers>
+		<!-- Objects = sounds created without need for direct, physical human input -->
+		<!-- i.e; a footstep, slamming door, lightswitch click all require direct physical human input for creation of the sound at sound-off -->
+		<!-- the hum of a generator, fire on the grill and terminal sounds may be instigated by a human but aren't physically created by a human -->
+
+		<!-- GENERATOR -->
+		<ATLTrigger atl_name="Play_generator_small_on">
+			<WwiseEvent wwise_name="play_generator_small_on"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_small_off">
+			<WwiseEvent wwise_name="play_generator_small_off"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_medium_on">
+			<WwiseEvent wwise_name="play_generator_medium_on"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_medium_off">
+			<WwiseEvent wwise_name="play_generator_medium_off"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_large_on">
+			<WwiseEvent wwise_name="play_generator_large_on"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_large_off">
+			<WwiseEvent wwise_name="play_generator_large_off"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generator_large_breakdown">
+			<WwiseEvent wwise_name="play_generator_large_breakdown"/>
+		</ATLTrigger>
+
+		<!-- COOKING -->
+		<ATLTrigger atl_name="Play_grill_cooking">
+			<WwiseEvent wwise_name="Play_grill_cooking"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_grill_cooking">
+			<WwiseEvent wwise_name="Stop_grill_cooking"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_microwave_food_done">
+			<WwiseEvent wwise_name="Play_microwave_food_done"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_microwave_running">
+			<WwiseEvent wwise_name="Play_microwave_running"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_microwave_running">
+			<WwiseEvent wwise_name="Stop_microwave_running"/>
+		</ATLTrigger>
+
+		<!-- STEAM TERMINAL -->
+		<ATLTrigger atl_name="Play_terminal_error">
+			<WwiseEvent wwise_name="Play_terminal_error"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_terminal_recieve">
+			<WwiseEvent wwise_name="Play_terminal_recieve"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_terminal_submit">
+			<WwiseEvent wwise_name="Play_terminal_submit"/>
+		</ATLTrigger>
+
+		<!-- PUNCHING BAG -->
+		<ATLTrigger atl_name="Play_punchingBag_chain_hit">
+			<WwiseEvent wwise_name="Play_punchingBag_chain_hit"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

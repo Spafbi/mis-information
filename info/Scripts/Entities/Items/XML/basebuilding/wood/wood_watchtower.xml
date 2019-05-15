@@ -1,0 +1,39 @@
+<item name="wood_watchtower" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@wood_watchtower"/>
+		<param name="description" value="@wood_watchtowerDescription"/>
+	</params>
+
+	<base_part class="static" type="69" name="wood_watchtower" max_health="20000">
+		<static filename="objects/basebuilding/wood/watchtower_wood.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/wood_watchtower_200.png?crc=562C77E4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30232"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/wood_watchtower_2048.png?crc=562C77E4"/>
+	</steam>
+</item>

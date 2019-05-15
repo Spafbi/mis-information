@@ -1,0 +1,13 @@
+<skin name="CX4Storm_UrbanBlue">
+ 
+    <params>
+        <param name="display_name" value="Cx8 Storm Urban Blue Skin"/>
+        <param name="description" value="Cx8 Storm Urban Blue Skin"/>
+        <param name="material" value="Objects/weapons/storm/storm_carbine_urban_blue"/>
+    </params>
+ 
+    <items>
+        <item name="CX4Storm"/>
+    </items>
+
+</skin>

@@ -1,0 +1,27 @@
+<item name="MiniBottleVodka" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="display_name" value="@MiniBottleVodka"/>
+		<param name="description" value="@MiniBottleVodkaDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/alcohol_bottles/minibottle_vodka.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="type" value="7"/> <!-- eICT_Alcohol -->
+		<param name="drinkAmount" value="50"/>
+		<param name="torpidityAmount" value="20"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

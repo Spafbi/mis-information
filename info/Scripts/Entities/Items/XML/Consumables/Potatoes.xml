@@ -1,0 +1,92 @@
+<item name="Potatoes" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@Potatoes"/>
+		<param name="description" value="@PotatoesDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/potato/potato_pile.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="PotatoesCooked"/>
+		<param name="cookedTime" value="100"/>
+		<param name="rottenItem" value="PotatoesRotten"/>
+		<param name="foodAmount" value="140"/>
+		<param name="drinkAmount" value="40"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@PotatoesSowInPlanter"/>
+				<param name="action" value="plant"/>
+				<param name="soundUsed" value="Play_plant_seeds"/>
+				<param name="targetClassNames" value="planter_box"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookInMicrowave"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_microwave"/>
+				<param name="targetClassNames" value="powered_microwave"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@PotatoesCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<plantable>
+		<param name="crop_good" value="Potatoes"/>
+		<param name="crop_rotten" value="PotatoesRotten"/>
+		<param name="grow_time_minutes" value="30"/>
+		<param name="model_dirt" value="Objects/basebuilding/crops/potato/dirt_pile.cgf"/>
+		<param name="model_small" value="Objects/basebuilding/crops/potato/potato_small.cgf"/>
+		<param name="model_medium" value="Objects/basebuilding/crops/potato/potato_medium.cgf"/>
+		<param name="model_big" value="Objects/basebuilding/crops/potato/potato_big.cgf"/>
+		<param name="material_good" value="Objects/basebuilding/crops/potato/crops_potato.mtl"/>
+		<param name="material_dead" value="Objects/basebuilding/crops/potato/crops_potato_dead.mtl"/>
+		<param name="material_bugs" value="Objects/basebuilding/crops/potato/crops_potato_eaten.mtl"/>
+		<param name="material_rotten" value="Objects/basebuilding/crops/potato/crops_potato_rotten.mtl"/>
+	</plantable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

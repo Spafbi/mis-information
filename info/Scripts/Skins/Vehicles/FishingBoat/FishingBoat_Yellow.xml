@@ -1,0 +1,27 @@
+<skin name="FishingBoat_Yellow">
+
+	<params>
+		<param name="display_name" value="Fishing Boat Yellow Skin"/>
+		<param name="description" value="Yellow skin for the Fishing Boat"/>
+		<param name="material" value="objects/vehicles/fishing_boat/fishing_boat_yellow"/>
+	</params>
+
+	<items>
+		<item name="fishing_boat"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Vehicle Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/FishingBoat_Yellow_200.png?crc=C93B29A1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="10"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="300090"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Vehicle Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/FishingBoat_Yellow_2048.png?crc=C93B29A1"/>
+	</steam>
+</skin>

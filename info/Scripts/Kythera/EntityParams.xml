@@ -1,0 +1,401 @@
+<EntityParams>
+	<Default type="bb">
+		<Stances type="bb">
+			<Default type="bb">
+				<Speeds type="bb">
+					<Default type="bb">
+						<Speed type="float">1.000000</Speed>
+					</Default>
+					<Stop type="bb">
+						<Speed type="float">0.000000</Speed>
+					</Stop>
+					<Walk type="bb">
+						<Speed type="float">1.000000</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.500000</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.000000</Speed>
+					</Sprint>
+				</Speeds>
+			</Default>
+		</Stances>
+	</Default>
+
+	<Human type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.9</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">2.25</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.4</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+			<Crouch type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.387</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.774</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">1.8</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">3.6</Speed>
+					</Sprint>
+				</Speeds>
+			</Crouch>
+			<Prone type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.172</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.344</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">0.8</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">1.6</Speed>
+					</Sprint>
+				</Speeds>
+			</Prone>
+		</Stances>
+	</Human>
+
+	<Mutant type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">4.5</Speed>
+					 </Sprint>
+				</Speeds>
+			</Stand>
+			<Crouch type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.4</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.8</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">1.8</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">3.6</Speed>
+					</Sprint>
+				</Speeds>
+			</Crouch>
+			<Relaxed type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">4.5</Speed>
+					</Sprint>
+				</Speeds>
+			</Relaxed>
+		</Stances>
+	</Mutant>
+
+	<FastMutant type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+			<Crouch type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.4</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.8</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">1.8</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">4.2</Speed>
+					</Sprint>
+				</Speeds>
+			</Crouch>
+			<Relaxed type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Relaxed>
+		</Stances>
+	</FastMutant>
+
+	<BruteMutant type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">5.5</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+			<Crouch type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.4</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.8</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">1.8</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">4.2</Speed>
+					</Sprint>
+				</Speeds>
+			</Crouch>
+			<Relaxed type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.8</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">3.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">5.5</Speed>
+					</Sprint>
+				</Speeds>
+			</Relaxed>
+		</Stances>
+	</BruteMutant>
+
+	<Deer type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.0</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">4.2</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.2</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+			<Relaxed type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.0</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">4.2</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">6.2</Speed>
+					</Sprint>
+				</Speeds>
+			</Relaxed>
+		</Stances>
+	</Deer>
+	 
+	<Wolf type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.3</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">2.0</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">10.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">13.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</Wolf>
+	 
+	<MutantDog type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.0</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.5</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">7.5</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">13.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</MutantDog>
+	
+	<Bear type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.0</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.5</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">4.5</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">7.5</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</Bear>
+	
+	<HumanSpider type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">1.0</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">2.5</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">6.5</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">12.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</HumanSpider>
+
+	<SimpleAnimal type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.4</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">0.8</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">1.5</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">2.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</SimpleAnimal>
+	
+	<Crawler type="bb">
+		<Stances type="bb">
+			<Stand type="bb">
+				<Speeds type="bb">
+					<Slow type="bb">
+						<Speed type="float">0.4</Speed>
+					</Slow>
+					<Walk type="bb">
+						<Speed type="float">1.5</Speed>
+					</Walk>
+					<Run type="bb">
+						<Speed type="float">2.0</Speed>
+					</Run>
+					<Sprint type="bb">
+						<Speed type="float">3.0</Speed>
+					</Sprint>
+				</Speeds>
+			</Stand>
+		</Stances>
+	</Crawler>
+
+</EntityParams>

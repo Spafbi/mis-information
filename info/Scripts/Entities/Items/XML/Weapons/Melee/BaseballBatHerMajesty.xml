@@ -1,0 +1,82 @@
+<item name="BaseballBatHerMajesty" class="Weapon" category="primary" priority="1" weaponParams="1">
+	<params>
+		<param name="display_name" value="@BaseballBatHerMajesty"/>
+		<param name="description" value="@BaseballBatHerMajestyDescription"/>
+		<param name="itemClass" value="1hmelee"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="2.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="87"/>  
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="0.75"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="0.05"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.1"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.15"/>
+		<param name="relaxedToTacticalBlendTime" value="0.4"/>
+		<param name="tag" value="baseballbat"/>
+		<animPrecache name="baseballbat">
+			<precache DBAFile="animations/human/male/weapons/baseballbat/baseballbat_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScaleTactical="0.85" speedScale="1.0" rotationScale="1.0" firingSpeedScale="0.65"/>
+
+	<geometry>
+		<thirdperson name="objects/weapons/baseballbat/baseballbat_her_majesty.cgf"/>
+		<onground name="objects/weapons/baseballbat/baseballbat_her_majesty_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="hatchet"/>
+				<param name="range" value="1.8"/>
+				<param name="damage" value="49"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.51"/>
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="1.3"/>
+				<param name="knockdown_chance" value="0.0"/>  <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<SurfaceBehaviors>
+				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="primary"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/BaseballBatHerMajesty_200.png?crc=AA85DF80"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110007"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/BaseballBatHerMajesty_2048.png?crc=AA85DF80"/>
+	</steam>
+</item>

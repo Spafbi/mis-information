@@ -1,0 +1,25 @@
+<item name="crafted_rug_10" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@crafted_rug_10"/>
+		<param name="description" value="@crafted_rug_10Description"/>
+	</params>
+
+	<base_part class="static" type="5080" name="crafted_rug_10" max_health="200" repair_with="Rags">
+		<static filename="Objects/basebuilding/other/rugs/crafted_rugs/rug_10.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

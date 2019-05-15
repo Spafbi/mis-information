@@ -1,0 +1,253 @@
+<ATLConfig atl_name="v_placeholder7">
+  <AudioTriggers>
+    <ATLTrigger atl_name="Play_placeholder7_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder7_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder7_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder7_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_black_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_black_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_black_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_green_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_green_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_green_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_red_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_red_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_red_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_base_yellow_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_yellow_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_base_yellow_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_car_siren">
+      <WwiseEvent wwise_name="Play_police_car_siren" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_police_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_police_car_siren">
+      <WwiseEvent wwise_name="Stop_police_car_siren" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_police_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_police_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_blix_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_blix_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_blix_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_engoa_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_engoa_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_engoa_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_bump">
+      <WwiseEvent wwise_name="Play_sedan_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_damage">
+      <WwiseEvent wwise_name="Play_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_horn">
+      <WwiseEvent wwise_name="Play_sedan_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_run">
+      <WwiseEvent wwise_name="Play_sedan_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_slip">
+      <WwiseEvent wwise_name="Play_sedan_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_start">
+      <WwiseEvent wwise_name="Play_sedan_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_sedan_taxi_fullout_stop">
+      <WwiseEvent wwise_name="Play_sedan_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_fullout_damage">
+      <WwiseEvent wwise_name="Stop_sedan_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_sedan_taxi_fullout_horn">
+      <WwiseEvent wwise_name="Stop_sedan_horn" />
+    </ATLTrigger>
+  </AudioTriggers>
+</ATLConfig>

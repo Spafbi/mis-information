@@ -1,0 +1,62 @@
+<item name="MilitaryJacketUrbanCamo4" class="Item" category="any">
+	<params>
+		<param name="colorable" value="1"/>
+		<param name="droppable" value="1"/>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="1.5"/>
+		<param name="healthMax" value="150.0"/>
+		<param name="damage_scale" value="0.2"/>
+		<param name="display_name" value="@MilitaryJacketUrbanCamo4"/>
+		<param name="description" value="@MilitaryJacketUrbanCamo4Description"/>
+	</params>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/jacket/military_jacket/military_jacket.skin"/>
+		<param name="mtl" value="objects/characters/players/male/jacket/military_jacket/military_jacket_urban_camo_4.mtl"/>
+		<param name="slot" value="torso"/>
+		<param name="length" value="1"/> <!-- 1 is full length, includes arms -->
+	</wearable>
+
+	<geometry>
+		<onground name="objects/characters/players/male/jacket/military_jacket/military_jacket_onground.cgf" material="objects/characters/players/male/jacket/military_jacket/military_jacket_urban_camo_4.mtl"/>
+	</geometry>
+
+    <protection level="0">
+        <environmental>
+            <protection_amount type="cold" percentage="13"/>
+            <protection_amount type="heat" percentage="0"/>
+        </environmental>
+    </protection>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="torso"/>
+		</locations>
+		<types>
+			<type category="any" capacity="4"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Torso"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MilitaryJacketUrbanCamo4_200.png?crc=A2862FAD"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40567"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Torso"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MilitaryJacketUrbanCamo4_2048.png?crc=A2862FAD"/>
+	</steam>
+</item>

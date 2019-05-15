@@ -1,0 +1,25 @@
+<item name="CampfirePacked" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="3.75"/>
+		<param name="display_name" value="@CampfirePacked"/>
+		<param name="description" value="@CampfirePackedDescription"/>
+	</params>
+
+	<placeable>
+		<param name="placed_class" value="Campfire"/>
+		<param name="placed_sound" value=""/>
+	</placeable>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/rockpile/rock_pile.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,39 @@
+<item name="OpticScope" class="Item" category="any">
+	<params>
+		<param name="display_name" value="@OpticScope"/>
+		<param name="description" value="@OpticScopeDescription"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="scopeAttachment" value="1"/>
+		<param name="hide_as_attachment" value="0"/>
+		<param name="dontRotateOnSpawn" value="1"/>
+	</params>
+
+	<geometry>
+		<firstperson name="objects/weapons/attachments/optic_scope/optic_scope.cgf" useStreaming="0"/>
+		<thirdperson name="objects/weapons/attachments/optic_scope/optic_scope.cgf" useStreaming="0"/>
+		<aux1 name="objects/weapons/attachments/optic_scope/optic_scope_zoom.cgf" useStreaming="0"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="scope_rifle"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/OpticScope_200.png?crc=0A24D6B2"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="20006"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/OpticScope_2048.png?crc=0A24D6B2"/>
+	</steam>
+</item>

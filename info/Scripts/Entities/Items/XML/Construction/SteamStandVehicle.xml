@@ -1,0 +1,21 @@
+<item name="SteamStandVehicle" class="Structure" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="physics" value="1"/> <!-- static -->
+		<param name="display_name" value="@SteamStandVehicle"/>
+		<param name="no_icon" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/steam_stand/steam_stand.cgf"/> <!-- Simplified proxy for improved towing -->
+	</geometry>
+
+	<storage>
+		<params>
+			<param name="steam" value="2"/>
+		</params>
+	</storage>
+
+</item>

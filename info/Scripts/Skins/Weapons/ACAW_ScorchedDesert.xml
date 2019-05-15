@@ -1,0 +1,14 @@
+<skin name="ACAW_ScorchedDesert">
+ 
+    <params>
+        <param name="display_name" value="ACAW Scorched Desert Skin"/>
+        <param name="description" value="ACAW Scorched Desert Skin"/>
+        <param name="material" value="Objects/weapons/acaw/acaw_scorched_desert"/>
+    </params>
+ 
+    <items>
+        <item name="ACAW"/>
+    </items>
+
+	
+</skin>

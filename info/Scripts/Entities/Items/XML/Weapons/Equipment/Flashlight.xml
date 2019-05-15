@@ -1,0 +1,106 @@
+<item name="Flashlight" class="Flashlight" category="primary" priority="13" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Flashlight"/>
+		<param name="description" value="@FlashlightDescription"/>
+		<param name="itemClass" value="pistol"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="0.65"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="bleed_percent" value="15"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="0.1"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_secondary1"/>
+		<param name="bone_attachment_02" value="stow_secondary2"/>
+		<param name="sprintToFireDelay" value="0.1"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.2"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.2"/>
+		<param name="relaxedToTacticalBlendTime" value="0.3"/>
+		<param name="nonHostileUse" value="1"/>
+		<param name="tag" value="flashlight"/>
+		<animPrecache name="flashlight">
+			<precache DBAFile="animations/human/male/weapons/flashlight/flashlight_3p.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScale="1.0" speedScaleTactical="1.0" rotationScale="1.0"/>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/flashlight/flashlight.cgf"/>
+		<onground name="Objects/weapons/flashlight/flashlight_onground.cgf"/>
+	</geometry>
+
+	<flashlight>
+		<param name="helper" value="light_term"/>
+		<param name="light_radius" value="50.0"/>
+		<param name="light_color" value="0.6,0.55,0.45"/>
+		<param name="light_diff_mul" value="10.0"/>
+		<param name="light_spec_mul" value="1"/>
+		<param name="light_hdr_dyn" value="0"/>
+		<param name="light_offset" value="0,0,0"/>
+		<param name="light_rotation" value="0,90,0"/>
+		<param name="light_style" value="17"/>
+		<param name="light_anim_speed" value="1.0"/>
+		<param name="light_cast_shadows" value="1"/>
+		<param name="light_bulb_size" value="1"/>
+		<param name="light_view_dist_ratio" value="100"/>
+		<param name="light_volumetric_fog" value="1"/>
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics"/>
+		<param name="light_project_fov" value="80.0"/>
+		<param name="light_project_texture" value="Textures/lights/flashlight_projector.tif"/>
+		<param name="lens_flare_name" value="miscreated.flashlight.flashlight"/>
+		<param name="lens_flare_fov" value="140"/>
+		<param name="off_material" value="Objects/weapons/flashlight/flashlight_tp"/>
+		<param name="on_material" value="Objects/weapons/flashlight/flashlight_on"/>
+	</flashlight>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee> <!-- match NW, as only fists are used here -->
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="melee"/>
+				<param name="range" value="1.0"/>
+				<param name="damage" value="8"/>
+				<param name="impulse" value="10"/>
+				<param name="impulse_actor" value="30"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="40"/>
+				<param name="delay" value="0.43"/>
+				<param name="aiDelay" value="0.4"/>
+				<param name="duration" value="1.0"/>
+				<param name="knockdown_chance" value="0.0"/> <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/>
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="10"/>
+			</melee>
+			<!-- No item degradation as fists are used -->
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="secondary"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Secondary"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Flashlight_200.png?crc=000907CA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="110027"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Secondary"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/Flashlight_2048.png?crc=000907CA"/>
+	</steam>
+</item>

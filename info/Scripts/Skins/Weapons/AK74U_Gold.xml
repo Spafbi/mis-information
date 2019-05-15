@@ -1,0 +1,14 @@
+<skin name="AK74U_Gold">
+ 
+    <params>
+        <param name="display_name" value="AK74U Gold Skin"/>
+        <param name="description" value="AK74U Gold Skin"/>
+        <param name="material" value="Objects/weapons/ak74u/ak74u_gold"/>
+    </params>
+ 
+    <items>
+        <item name="AK74U"/>
+    </items>
+
+	
+</skin>

@@ -1,0 +1,21 @@
+<BehaviorTree>
+
+	<Variables>
+		<!-- these variables are not used in this BT, but need to be present to prevent a warning caused by BasicAI:OnReset() -->
+		<Variable name="ExecuteSequence" />
+		<Variable name="ExecuteInterruptibleSequence" />
+	</Variables>
+
+	<SignalVariables>
+	</SignalVariables>
+
+	<Timestamps>
+	</Timestamps>
+
+	<Root>
+		<LuaWrapper onEnter="entity:SelectPrimaryWeapon();" onExit="">
+			<Halt/>
+		</LuaWrapper>
+	</Root>
+
+</BehaviorTree>

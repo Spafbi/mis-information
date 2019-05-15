@@ -1,0 +1,21 @@
+<item name="Plywood" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="3.0"/>  <!-- quarter sheet weight -->
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@Plywood"/>
+		<param name="description" value="@PlywoodDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/craftingmats/wood/wood_sheet.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

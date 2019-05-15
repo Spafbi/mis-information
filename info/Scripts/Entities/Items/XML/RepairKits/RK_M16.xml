@@ -1,0 +1,43 @@
+<item name="RK_M16" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_M16"/>
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_M16"/>
+		<param name="description" value="@RK_M16Description"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/repair_kits.cgf" Material="Objects/equipment/repairkits/repair_kits_red"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_M16" percentage="100"/>
+		<item name="M16" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_M16_200.png?crc=4B8CBE0F"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="8"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130012"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_M16_2048.png?crc=4B8CBE0F"/>
+	</steam>
+</item>

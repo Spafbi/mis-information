@@ -1,0 +1,27 @@
+<skin name="KatanaTest">
+
+	<params>
+		<param name="display_name" value="Katana Test Skin"/>
+		<param name="description" value="Test skin for Katana weapons"/>
+		<param name="material" value="objects/weapons/katana/katana_black_widow"/>
+	</params>
+
+	<items>
+		<item name="Katana"/>
+	</items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/KatanaTest_200.png?crc=E5E549FD"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="200002"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/KatanaTest_2048.png?crc=E5E549FD"/>
+	</steam>
+</skin>

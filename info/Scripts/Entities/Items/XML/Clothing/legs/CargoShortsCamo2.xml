@@ -1,0 +1,60 @@
+<item name="CargoShortsCamo2" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.8"/>
+		<param name="healthMax" value="75.0"/>
+		<param name="damage_scale" value="0.2"/>
+		<param name="display_name" value="@CargoShortsCamo2"/>
+		<param name="description" value="@CargoShortsCamo2Description"/>
+	</params>
+
+	<geometry>
+		<onground name="objects/characters/players/male/legs/short/cargo_shorts/cargo_short_onground.cgf" material="objects/characters/players/male/legs/short/cargo_shorts/cargo_short_camo2"/>
+	</geometry>
+
+    <protection level="0">
+        <environmental>
+            <protection_amount type="cold" percentage="5"/>
+            <protection_amount type="heat" percentage="7"/>
+        </environmental>
+    </protection>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/legs/short/cargo_shorts/cargo_shorts.skin"/>
+		<param name="mtl" value="objects/characters/players/male/legs/short/cargo_shorts/cargo_short_camo2"/>
+		<param name="slot" value="legs"/>
+		<param name="length" value="2"/> <!-- 1 is full length -->
+	</wearable>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="legs"/>
+		</locations>
+		<types>
+			<type category="any" capacity="4"/>
+		</types>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Legs"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CargoShortsCamo2_200.png?crc=3F5CC381"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40430"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Legs"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CargoShortsCamo2_2048.png?crc=3F5CC381"/>
+	</steam>
+</item>

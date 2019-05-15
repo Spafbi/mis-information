@@ -1,0 +1,48 @@
+<item name="RK_Equipment" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="itemClass" value="RK_Equipment"/> <!-- Needs to match THIS item name. Needed for parsing in code -->
+		<param name="mass" value="1.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.25"/>
+		<param name="destroyWhenDegraded" value="1"/>		
+		<param name="display_name" value="@RK_Equipment"/>
+		<param name="description" value="@RK_EquipmentDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/equipment/repairkits/repair_kits.cgf" Material="Objects/equipment/repairkits/repair_kits_teal"/>
+	</geometry>
+
+	<repair>
+		<item name="RK_Equipment" percentage="100"/> <!-- Allow self-repairs -->
+		<item name="Binoculars" percentage="100"/>
+		<item name="Cb_radio" percentage="100"/>
+		<item name="Flashlight" percentage="100"/>
+		<item name="Maglite" percentage="100"/>
+		<item name="MagliteSmall" percentage="100"/>
+		<item name="Megaphone" percentage="100"/>
+	</repair>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_Equipment_200.png?crc=965DAF4C"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130007"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_Equipment_2048.png?crc=965DAF4C"/>
+	</steam>
+</item>

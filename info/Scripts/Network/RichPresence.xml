@@ -1,0 +1,14 @@
+<!-- RichPresence on 360/ps3 -->
+<RichPresence>
+	<!-- Maps -->
+	<!-- name: the name of the .cry map file -->
+	<!-- id: the context enum id provided by the xlast for 360 (we map these ids internally for ps3) -->
+	<!--<Element name="c3mp_rooftop_gardens" id="0" />
+	<Element name="c3mp_museum" id="1" />-->
+
+	<!-- GameRules -->
+	<!-- name: class name of the game rules -->
+	<!-- id: the context enum id provided by the xlast for 360 (ps3 is handled internally) -->
+	<!--<Element name="InstantAction" id="0" />
+	<Element name="TeamInstantAction" id="1" />-->
+</RichPresence>
