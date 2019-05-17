@@ -121,9 +121,9 @@
 						<types>
 							<type name="Components">
 								<items>
-									<item class="SheetMetal" time="1">
+									<item class="SheetMetal" time="0.5">
 										<materials>
-											<material class="IronIngot" count="2" />
+											<material class="IronIngot" count="4" />
 										</materials>
 									</item>
 									<item class="PipeMetal" time="1">
@@ -914,9 +914,9 @@
 						<types>
 							<type name="Components">
 								<items>
-									<item class="SheetMetal" time="1">
+									<item class="SheetMetal" time="0.5">
 										<materials>
-											<material class="IronIngot" count="2" />
+											<material class="IronIngot" count="4" />
 										</materials>
 									</item>
 									<item class="PipeMetal" time="1">
@@ -1060,6 +1060,11 @@
 									<item class="Lumber" time="0.5">
 										<materials>
 											<material class="WoodPile" count="2" />
+										</materials>
+									</item>
+									<item class="StickPile" time="0.5" amount="2">
+										<materials>
+											<material class="WoodPile" count="1" />
 										</materials>
 									</item>
 									<item class="Plywood" time="0.5">
@@ -3260,7 +3265,8 @@
 						<items>
 							<item class="PipebombPickup" time="10">
 								<materials>
-									<material class="Gunpowder" count="64" />
+									<material class="Gunpowder" count="256" />
+									<material class="Sulphur" count="10" />
 									<material class="PipeMetal" />
 									<material class="DuctTape" />
 									<material class="Nails" count="32" />

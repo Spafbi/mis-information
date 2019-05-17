@@ -56,6 +56,9 @@
 			<SurfaceBehaviors> <!-- allows the melee weapon to harvest resources -->
 				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
 				<param name="mat_rock_harvest" harvestFactor="1.0" deteriorationFactor="0.3"/>
+				<param name="mat_iron_harvest" harvestFactor="1.0" deteriorationFactor="0.3"/>
+				<param name="mat_pyrite_harvest" harvestFactor="1.0" deteriorationFactor="0.3"/>
+				<param name="mat_coal_harvest" harvestFactor="1.0" deteriorationFactor="0.3"/>
 			</SurfaceBehaviors>
 		</firemode>
 	</firemodes>
