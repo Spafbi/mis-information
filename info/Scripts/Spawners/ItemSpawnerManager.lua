@@ -3709,6 +3709,33 @@ reduced to 25% of the prior item's, like so:
         },
 		
 		{
+            category = "IronAndRocks",
+            classes =
+            {
+                { class = "Rocks", percent = 10 },
+                { class = "IronOre", percent = 90 },
+            },
+        },
+		
+		{
+            category = "CoalAndRocks",
+            classes =
+            {
+                { class = "Rocks", percent = 10 },
+                { class = "Charcoal", percent = 90 },
+            },
+        },
+		
+		{
+            category = "PyriteAndRocks",
+            classes =
+            {
+                { class = "Rocks", percent = 10 },
+                { class = "Pyrite", percent = 90 },
+            },
+        },
+		
+		{
 			category = "Rec2",
 			classes =
 			{
