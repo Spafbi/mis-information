@@ -8,6 +8,7 @@
 # ==============================================================================
 import argparse
 import os
+from pathlib import Path
 from zipfile import ZipFile
 
 
@@ -21,6 +22,18 @@ def extract_file(**kwargs):
             pak_file.extract(file, target_dir)
     pak_file.close()
 
+def remove_binary_xml_files(target_dir):
+    xml_list = list(Path(target_dir).rglob("*.[xX][mM][lL]"))
+    binaries = list()
+    for this_xml in xml_list:
+        file = open(this_xml, "rb")
+        contents = file.readline()
+        if contents[:6].decode() == "CryXml":
+            binaries.append(this_xml)
+        file.close
+    for binary_file in binaries:
+        os.remove(binary_file)
+
 
 def process_paks(**kwargs):
     directory = kwargs.get('directory')
@@ -30,6 +43,9 @@ def process_paks(**kwargs):
         if filename.endswith(".pak"):
             extract_file(filename="{0}/{1}".format(directory, filename),
                          target_dir=target_dir)
+
+    # Remove binary files
+    remove_binary_xml_files(target_dir)
 
 
 def main():
