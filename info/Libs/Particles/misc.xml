@@ -1,0 +1,88 @@
+<ParticleLibrary Name="misc" SandboxVersion="3.8.6.49" ParticleVersion="26">
+ <Particles Name="blood_fx.water">
+  <Params Count="20" Continuous="true" ParticleLifeTime="5,Random=0.327" FocusAngle="73.7" EmitAngle="82.1" Facing="Water" Texture="textures/sprites/blood/blood_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="Random=0.347,ParticleAge=(;t=0.26,v=1;t=0.56,v=1;t=1)" DiffuseBacklighting="0.97" Size="0.2,Random=0.18,ParticleAge=(t=0.004,v=0.204;t=1,v=1)" Stretch="0.2" Speed="0.1" RandomAngles="z=180" VisibleUnderwater="If_False"/>
+  <Childs>
+   <Particles Name="water1">
+    <Params Count="5" Continuous="true" ParticleLifeTime="5,Random=0.208" EmitAngle="4.2" Texture="textures/sprites/blood/blood_anim_a.tif" TextureTiling="TilesX=4,TilesY=8,VariantCount=16" SoftParticle="true" Alpha="ParticleAge=(;t=0.26,v=1;t=0.56,v=1;t=1)" DiffuseLighting="0.079" DiffuseBacklighting="1" Size="0.88,Random=0.18,ParticleAge=(t=0.004,v=0.204;t=1,v=1)" GravityScale="0.007" RandomAngles="y=180" RandomRotationRate="y=15" VisibleUnderwater="If_True"/>
+   </Particles>
+   <Particles Name="water2">
+    <Params Count="20" Continuous="true" ParticleLifeTime="4,Random=0.455" PositionOffset="y=-0.04" FocusAngle="180" EmitAngle="88.4,Random=1" Texture="textures/sprites/blood/blood_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.426,ParticleAge=(t=0.35,v=1;t=1)" DiffuseLighting="0.267" DiffuseBacklighting="1" Size="0.37,Random=0.18,ParticleAge=(t=0.004,v=0.204;t=1,v=1)" Stretch="0.2" Speed="0.2" GravityScale="0.004" RandomAngles="y=180" VisibleUnderwater="If_True"/>
+   </Particles>
+   <Particles Name="water3">
+    <Params Count="5" Continuous="true" ParticleLifeTime="5,Random=0.55" PositionOffset="y=-0.04" FocusAngle="180" EmitAngle="88.4,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.574,ParticleAge=(t=0.482,v=1;t=1)" Color="(x=0.467,y=0,z=0)" DiffuseLighting="0.327" DiffuseBacklighting="1" Size="2,Random=0.18" Speed="0.2" RandomAngles="y=180" VisibleUnderwater="If_True"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="blood_fx.ground">
+  <Params Count="33" Continuous="true" EmitterLifeTime="0.6" ParticleLifeTime="1,Random=0.574" EmitAngle="8.4,Random=0.762" Texture="textures/sprites/blood/blood_anim_a.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true" Alpha="Random=0.228,ParticleAge=(t=0.93,v=1;t=1,v=0.706)" Color="(x=0.392,y=0,z=0.06)" DiffuseLighting="0.218" DiffuseBacklighting="1" Size="0.88,Random=0.594,EmitterStrength=(v=1;t=1,v=0.61)" Stretch="0.37,ParticleAge=(;t=0.47,v=1)" Speed="4.1,Random=0.535,EmitterStrength=(v=1;t=1,v=0.318)" GravityScale="0.366" InitAngles="y=180" RandomAngles="y=270"/>
+ </Particles>
+ <Particles Name="blood_fx.splashes_on_ground">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="a1">
+    <Params Count="30" Continuous="true" ParticleLifeTime="40" PositionOffset="y=0.01" RandomOffset="x=0.5,z=0.5" EmitAngle="90" Facing="Free" Texture="textures/sprites/blood/blood_a.tif" SoftParticle="true" Alpha="0.1,ParticleAge=(;t=0.06,v=1;t=0.87,v=1;t=1)" DiffuseLighting="0.455" DiffuseBacklighting="1" Size="0.41,Random=0.644,ParticleAge=(;t=1,v=1)" Stretch="4.85" RandomAngles="y=180" PhysicsType="SimpleCollision" CollideTerrain="true" Elasticity="0.059" DynamicFriction="10" Density="842" FillRateCost="0"/>
+   </Particles>
+   <Particles Name="a2">
+    <Params Count="1" Continuous="true" ParticleLifeTime="0.6,Random=0.574" EmitAngle="52.6,Random=0.762" Texture="textures/sprites/blood/blood_anim_a.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true" Alpha="Random=0.228,ParticleAge=(t=0.93,v=1;t=1,v=0.706)" Color="(x=0.392,y=0,z=0.06)" DiffuseLighting="0.218" DiffuseBacklighting="0.565" NotAffectedByFog="true" Size="0.5,Random=0.594" Stretch="0.1" Speed="2.5,Random=0.812" GravityScale="0.5" RandomAngles="y=270" RandomRotationRate="y=31"/>
+   </Particles>
+   <Particles Name="animated">
+    <Params Count="5" Continuous="true" PulsePeriod="Random=0.248" ParticleLifeTime="1,Random=0.777778" RandomOffset="z=0.01" EmitAngle="35.8,Random=1" Texture="textures/sprites/blood/blood_a.tif" SoftParticle="true" Alpha="ParticleAge=(t=0.82,v=1;t=1)" DiffuseLighting="0.267" DiffuseBacklighting="0.486" NotAffectedByFog="true" Size="0.02,Random=0.598131,ParticleAge=(v=1;t=1,v=0.16)" Stretch="Random=0.188,ParticleAge=(t=0.584,v=1;t=1)" TailLength="0.02,TailSteps=16" Speed="2,Random=0.2936172" GravityScale="0.604,Random=0.188" Turbulence3DSpeed="0.02" RandomRotationRate="y=32" Elasticity="0.1"/>
+   </Particles>
+   <Particles Name="a3">
+    <Params Count="1" Continuous="true" ParticleLifeTime="0.6,Random=0.574" EmitAngle="20,Random=0.762" Texture="textures/sprites/blood/blood_anim_a.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true" Alpha="Random=0.228,ParticleAge=(t=0.93,v=1;t=1,v=0.706)" Color="(x=0.392,y=0,z=0.06)" DiffuseLighting="0.386" DiffuseBacklighting="0.565" NotAffectedByFog="true" Size="0.5,Random=0.594" Stretch="0.1" Speed="0.2,Random=0.812" RandomAngles="y=270" RandomRotationRate="y=31"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="blood_fx.water_pulse">
+  <Params Count="12" EmitterLifeTime="1" ParticleLifeTime="15,Random=0.327" FocusAngle="73.7" EmitAngle="82.1" Facing="Water" Texture="textures/sprites/blood/blood_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="Random=0.347,ParticleAge=(;t=0.12,v=1;t=0.56,v=1;t=1)" DiffuseLighting="0.277" DiffuseBacklighting="0.97" Size="0.2,Random=0.18,ParticleAge=(t=0.004,v=0.204;t=1,v=1)" Stretch="0.2" RandomAngles="z=180" VisibleUnderwater="If_False"/>
+  <Childs>
+   <Particles Name="water2">
+    <Params Count="21" ParticleLifeTime="14,Random=0.455" PositionOffset="y=-0.04" RandomOffset="x=0.1,z=0.1" EmitAngle="88.4,Random=1" Texture="textures/sprites/blood/blood_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="0.337,ParticleAge=(;t=0.145,v=1;t=0.396,v=1;t=1)" DiffuseLighting="0.178" DiffuseBacklighting="1" Size="0.18,Random=0.18,ParticleAge=(v=0.204;t=0.12,v=0.59;t=1,v=1)" Speed="0.05" RandomAngles="y=180" VisibleUnderwater="If_True"/>
+   </Particles>
+   <Particles Name="water3">
+    <Params Count="5" ParticleLifeTime="15,Random=0.158" PositionOffset="y=-0.04" RandomOffset="x=0.1,z=0.1" FocusAngle="180" EmitAngle="88.4,Random=1" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="0.436,ParticleAge=(;t=0.184,v=1;t=0.576,v=1;t=1)" Color="(x=0.467,y=0,z=0)" DiffuseLighting="0.149" DiffuseBacklighting="1" Size="0.58,Random=0.18,ParticleAge=(;t=0.26,v=0.61;t=1,v=1)" Speed="0.02" RandomAngles="y=180" VisibleUnderwater="If_True"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="underwater.player_breath_fp">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="player_breath1">
+    <Params Count="50" Continuous="true" EmitterLifeTime="0.2" ParticleLifeTime="5" RandomOffset="x=0.2,y=0.2,z=0.2" EmitAngle="180,Random=1" Texture="textures/sprites/water/bubble_a.tif" Material="materials/particle/bubbles" DiffuseBacklighting="0.07" Size="0.01,Random=0.782" Stretch="0.01,Random=0.337,ParticleAge=(t=0.525,v=0.61)" Speed="0.3" GravityScale="-0.1" Turbulence3DSpeed="0.3" VisibleUnderwater="If_True"/>
+    <Childs>
+     <Particles Name="small">
+      <Params Count="30" Continuous="true" EmitterLifeTime="0.4" ParticleLifeTime="5" RandomOffset="x=0.1,y=0.1,z=0.1" EmitAngle="15" Texture="textures/sprites/water/bubble_a.tif" Material="materials/particle/bubbles" DiffuseBacklighting="0.176" Size="0.03,Random=0.495" GravityScale="-0.126" Turbulence3DSpeed="0.2" RandomAngles="x=40" VisibleUnderwater="If_True"/>
+     </Particles>
+    </Childs>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="battledust.light">
+  <Params Count="16" Continuous="true" ParticleLifeTime="10,Random=0.495" PositionOffset="y=5" RandomOffset="x=20,y=1,z=20" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.05,ParticleAge=(;t=0.506,v=1;t=1)" DiffuseLighting="0.5" DiffuseBacklighting="0.2" Size="25,Random=0.327,ParticleAge=(v=0.57;t=1,v=1)" Speed="1" AirResistance="1.4" RandomAngles="y=180" RandomRotationRate="y=12" FillRateCost="0"/>
+  <Childs>
+   <Particles Name="light1">
+    <Params Count="18" Continuous="true" ParticleLifeTime="10,Random=0.455" PositionOffset="y=5" RandomOffset="x=20,y=1,z=20" Texture="textures/sprites/smoke/smoke_a.tif" SoftParticle="true" Alpha="0.05,ParticleAge=(;t=0.506,v=1;t=1)" DiffuseLighting="0.5" DiffuseBacklighting="0.2" Size="20,Random=0.525,ParticleAge=(v=0.57;t=1,v=1)" Speed="1" AirResistance="6.42" RandomAngles="y=180" RandomRotationRate="y=15" FillRateCost="0"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="fog.mist_over_river">
+  <Params Count="50" Continuous="true" ParticleLifeTime="20,Random=0.515" PositionOffset="y=1" RandomOffset="x=30,z=30" Texture="textures/sprites/smoke/smoke_tiled_d.dds" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.3,ParticleAge=(;t=0.255,v=1;t=1)" Color="(x=0.82,y=0.847,z=0.84)" DiffuseBacklighting="0.2" EmissiveLighting="1" Size="10,Random=0.079,ParticleAge=(v=0.64;t=1,v=1)" Stretch="0.82" AirResistance="10" GravityScale="Random=0.426" RandomAngles="y=359" RandomRotationRate="y=5" CameraMaxDistance="100" CameraMinDistance="4.1"/>
+ </Particles>
+ <Particles Name="fog.fog_ground">
+  <Params Count="200" Continuous="true" ParticleLifeTime="20,Random=0.515" PositionOffset="y=2" RandomOffset="x=70,z=70" BlendType="Additive" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.25,ParticleAge=(;t=0.24,v=1;t=0.76,v=1;t=1)" DiffuseLighting="0.5" DiffuseBacklighting="0.2" Size="8,Random=0.079,ParticleAge=(v=0.64;t=1,v=1)" Speed="0.1" AirResistance="0.64" GravityScale="-0.03,Random=0.426" RandomAngles="y=359" RandomRotationRate="y=11" FillRateCost="5.08"/>
+ </Particles>
+ <Particles Name="fog.dense">
+  <Params Count="35" Continuous="true" ParticleLifeTime="20,Random=0.515" PositionOffset="y=7" RandomOffset="x=36,z=36" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.3,ParticleAge=(;t=0.24,v=1;t=1)" DiffuseBacklighting="0.25" EmissiveLighting="0.5" Size="20" AirResistance="0.29" RandomAngles="y=90" RandomRotationRate="x=1,y=11,z=1" CameraMinDistance="10.5" FillRateCost="1.11"/>
+ </Particles>
+ <Particles Name="airdrop.smoke">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke_pillar">
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="180,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.082,v=1;t=0.83,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseBacklighting="0.595" EmissiveLighting="0.627" Size="100,Random=0.2,ParticleAge=(v=0.024;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="smoke_close">
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="31,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.027,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseBacklighting="1" EmissiveLighting="0.627" Size="8,Random=0.2,ParticleAge=(v=0.137;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

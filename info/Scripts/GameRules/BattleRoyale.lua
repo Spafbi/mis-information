@@ -55,51 +55,51 @@ function BattleRoyale:EquipPlayer(playerId)
 	if (player and player.actor) then
 
 		-- Default weapons
-		local weaponId = ItemSystem.GiveItem(playerId, "Flashlight");
+		local weaponId = ISM.GiveItem(playerId, "Flashlight");
 
-		--local rifleId = ItemSystem.GiveItem(playerId, "AT15", true);
-		--local accessoryId = ItemSystem.GiveItem(playerId, "STANAGx30", false, rifleId, "stanag_mag00");
+		--local rifleId = ISM.GiveItem(playerId, "AT15", true);
+		--local accessoryId = ISM.GiveItem(playerId, "STANAGx30", false, rifleId, "stanag_mag00");
 
 		-- Default clothes
 		local rnd = random(1, 3);
 
 		-- Feet
 		if (rnd == 1) then
-			ItemSystem.GiveItem(playerId, "TennisShoes");
+			ISM.GiveItem(playerId, "TennisShoes");
 		elseif (rnd == 2) then
-			ItemSystem.GiveItem(playerId, "Sneakers");
+			ISM.GiveItem(playerId, "Sneakers");
 		else
-			ItemSystem.GiveItem(playerId, "CanvasShoes");
+			ISM.GiveItem(playerId, "CanvasShoes");
 		end
 
 		-- Legs
 		rnd = random(1, 4);
 
 		if (rnd == 1) then
-			ItemSystem.GiveItem(playerId, "BlueJeans");
+			ISM.GiveItem(playerId, "BlueJeans");
 		elseif (rnd == 2) then
-			ItemSystem.GiveItem(playerId, "BlueJeans2");
+			ISM.GiveItem(playerId, "BlueJeans2");
 		elseif (rnd == 3) then
-			ItemSystem.GiveItem(playerId, "BlueJeans2Brown");
+			ISM.GiveItem(playerId, "BlueJeans2Brown");
 		else
-			ItemSystem.GiveItem(playerId, "BlueJeans2Green");
+			ISM.GiveItem(playerId, "BlueJeans2Green");
 		end
 
 		-- Torso
 		rnd = random(1, 6);
 
 		if (rnd == 1) then
-			ItemSystem.GiveItem(playerId, "TshirtNoImageBlack");
+			ISM.GiveItem(playerId, "TshirtNoImageBlack");
 		elseif (rnd == 2) then
-			ItemSystem.GiveItem(playerId, "TshirtNoImageBlue");
+			ISM.GiveItem(playerId, "TshirtNoImageBlue");
 		elseif (rnd == 3) then
-			ItemSystem.GiveItem(playerId, "TshirtNoImageGreen");
+			ISM.GiveItem(playerId, "TshirtNoImageGreen");
 		elseif (rnd == 4) then
-			ItemSystem.GiveItem(playerId, "TshirtNoImageGrey");
+			ISM.GiveItem(playerId, "TshirtNoImageGrey");
 		elseif (rnd == 5) then
-			ItemSystem.GiveItem(playerId, "TshirtNoImagePink");
+			ISM.GiveItem(playerId, "TshirtNoImagePink");
 		else
-			ItemSystem.GiveItem(playerId, "TshirtNoImageRed");
+			ISM.GiveItem(playerId, "TshirtNoImageRed");
 		end
 
 	end

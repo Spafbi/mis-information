@@ -155,7 +155,7 @@
 				<DamagesSubGroup delay="0.2" randomness="1">
 					<DamageBehaviors>
 						<DamageBehavior class="Explosion" >
-							<Explosion damage="300" helper="vehicleBurnPos" pressure="2000" radius="10" minRadius="5" physRadius="3" minPhysRadius="2.2" soundRadius="150" />
+							<Explosion damage="125" helper="vehicleBurnPos" pressure="2000" radius="10" minRadius="5" physRadius="3" minPhysRadius="2.2" soundRadius="150" />
 						</DamageBehavior>
 						<DamageBehavior class="Sink" damageRatioMin="1"/>
 					</DamageBehaviors>

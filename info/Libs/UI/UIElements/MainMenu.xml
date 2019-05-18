@@ -1,0 +1,230 @@
+<UIElements name="Menus">
+
+  <UIElement name="MainMenu" mouseevents="1" keyevents="1" cursor="1" controller_input="1">
+
+    <GFx file="MainMenu/MainMenu.gfx" layer="3">
+      <Constraints>
+        <Align mode="dynamic" valign="center" halign="center" scale="1" max="0" />
+      </Constraints>
+    </GFx>
+  
+    <functions>
+
+		<!-- screens -->
+		<function name="DisplayWindow" funcname="DisplayWindow" desc="Display a window">
+			<param name="window" desc="The window to display" type="string" />
+		</function>
+
+		<!-- values -->
+		<function name="GetValue" funcname="GetValue" desc="">
+			<param name="name" desc="" type="string" />
+		</function>
+
+		<function name="SetValue" funcname="SetValue" desc="">
+			<param name="name" desc="" type="string" />
+			<param name="value" desc="" type="string"/>
+		</function>
+
+		<function name="ApplyWindowSettings" funcname="ApplyWindowSettings" desc="">
+			<param name="name" desc="" type="string" />
+		</function>
+
+		<function name="RevertWindowSettings" funcname="RevertWindowSettings" desc="">
+			<param name="name" desc="" type="string" />
+		</function>
+
+		<!-- steppers -->
+		<function name="AddStepperOption" funcname="AddStepperOption" desc="">
+			<param name="id" desc="id of stepper" type="string" />
+			<param name="caption" desc="" type="string" />
+			<param name="value" desc="" type="string" />
+		</function>
+		
+		<!-- set result values -->
+		<function name="SerialNumberValidateResult" fscommand="SerialNumberValidateResult" desc="">
+			<param name="value" type="int" />
+			<param name="message" type="string" />
+		</function>
+
+		<function name="AccountCreateResult" fscommand="AccountCreateResult" desc="">
+			<param name="value" type="int" />
+			<param name="message" type="string" />
+		</function>
+
+		<function name="AccountLoginResult" fscommand="AccountLoginResult" desc="">
+			<param name="value" type="int" />
+			<param name="message" type="string" />
+		</function>
+
+		<function name="GameServerListRequestResult" fscommand="GameServerListRequestResult" desc="">
+			<param name="value" type="int" />
+			<param name="message" type="string" />
+		</function>
+
+		<function name="GameServerResponded" fscommand="GameServerResponded" desc="">
+			<param name="index" type="int" />
+			<param name="serverData" type="string" />
+		</function>
+
+		<function name="GameServerRefreshComplete" fscommand="GameServerRefreshComplete" desc="">
+		</function>
+			
+			<!-- confirmation -->
+		<function name="ShowConfirmationWindow" funcname="ShowConfirmationWindow" desc="">
+			<param name="title" desc="" type="string" />
+			<param name="message" desc="" type="string" />
+			<param name="btn1Caption" desc="" type="string" />
+			<param name="btn2Caption" desc="" type="string" />
+		</function>
+		
+		<function name="HideConfirmationWindow" funcname="HideConfirmationWindow" desc="" />
+		
+		<!-- spinner -->
+		<function name="ShowSpinner" funcname="ShowSpinner" desc="">
+			<param name="caption" desc="" type="string" />
+		</function>
+		
+		<function name="HideSpinner" funcname="HideSpinner" desc=""/>
+		
+		<!-- loadingScreen -->
+		<function name="SetLoadingImage" funcname="DisplayLoadingImage" desc="">
+			<param name="image" desc="" type="string" />
+		</function>	
+
+		<!-- status message -->
+		<function name="ShowStatusMessage" funcname="ShowStatusMessage" desc="">
+			<param name="message" desc="" type="string" />
+		</function>	
+
+		<!-- loadingScreen -->
+		<function name="HideStatusMessage" funcname="HideStatusMessage" desc="" />
+
+		<!-- EI Hendrik Keybinds -->
+		<function name="OnInputCaptured" funcname="OnInputCaptured" desc="">
+			<param name="actionmap" desc="" type="string" />
+			<param name="action" desc="" type="string" />
+			<param name="input" desc="" type="string" />
+			<param name="devicetype" desc="" type="int" />
+			<param name="deviceindex" desc="" type="int" />
+		</function>
+
+		<function name="OnInputBindsRequested" funcname="OnInputBindsRequested" desc="">
+			<param name="json" desc="" type="string" />
+		</function>
+    </functions>
+
+    <events>
+		<!-- exit button -->
+		<event name="ExitGame" fscommand="ExitGame" desc="">
+		</event>
+
+		<!-- display a screen/window -->
+		<event name="DisplayWindow" fscommand="DisplayWindow" desc="">
+			<param name="Name" type="string" />
+		</event>
+
+		<!-- screens -->
+		<event name="AccountLogin" fscommand="AccountLogin" desc="">
+			<param name="Email" type="string" />
+			<param name="Password" type="string" />
+		</event>
+
+		<event name="SerialNumberValidate" fscommand="SerialNumberValidate" desc="">
+			<param name="SerialNumber" type="string" />
+		</event>
+
+		<event name="AccountCreate" fscommand="AccountCreate" desc="">
+			<param name="SerialNumber" type="string" />
+			<param name="Email" type="string" />
+			<param name="Password" type="string" />
+		</event>
+
+		<event name="ServerConnect" fscommand="ServerConnect" desc="">
+			<param name="Server" desc="Server name/ip" type="string" />
+		</event>
+
+		<event name="GameServerListRequest" fscommand="GameServerListRequest">
+			<param name="nType" type="int" />
+			<param name="bNotFull" type="bool" />
+			<param name="bNotEmpty" type="bool" />
+			<param name="bEmpty" type="bool" />
+		</event>
+
+		<event name="GameServerFlagRequest" fscommand="GameServerFlagRequest">
+			<param name="sIP" type="string" />
+			<param name="nPort" type="int" />
+			<param name="bFavorite" type="bool" />
+			<param name="bSet" type="bool" />
+		</event>
+
+		<!-- confirm -->
+		<event name="OnConfirm" fscommand="OnConfirm" desc="">    
+			<param name="Accepted" desc="true or false" type="bool" />
+		</event>
+
+		<event name="ApplyDisplayOptions" fscommand="ApplyDisplayOptions" desc="" />
+		<event name="RevertDisplayOptions" fscommand="RevertDisplayOptions" desc="" />
+
+		<event name="ApplyGraphicsOptions" fscommand="ApplyGraphicsOptions" desc="" />
+		<event name="RevertGraphicsOptions" fscommand="RevertGraphicsOptions" desc="" />
+			
+		<event name="ApplyVideoOptions" fscommand="ApplyVideoOptions" desc="" />
+		<event name="RevertVideoOptions" fscommand="RevertVideoOptions" desc="" />
+
+		<event name="ApplyAudioOptions" fscommand="ApplyAudioOptions" desc="" />
+		<event name="RevertAudioOptions" fscommand="RevertAudioOptions" desc="" />
+
+		<event name="ApplyControlOptions" fscommand="ApplyControlOptions" desc="" />
+		<event name="RevertControlOptions" fscommand="RevertControlOptions" desc="" />
+
+		<event name="ApplyPlayerSetup" fscommand="ApplyPlayerSetup" desc="" />
+
+		<event name="ResumeGame" fscommand="ResumeGame" desc="" />
+
+		<event name="Suicide" fscommand="Suicide" desc="" />
+
+		<event name="DisconnectFromServer" fscommand="DisconnectFromServer" desc="" />
+
+		<event name="Respawn" fscommand="Respawn" desc="" />
+		<event name="RespawnAtBase" fscommand="RespawnAtBase" desc="" />
+
+			<!-- common -->
+		<event name="OnButtonHover" fscommand="OnButtonHover" desc="" />   
+		<event name="OnButtonClick" fscommand="OnButtonClick" desc="" />   
+		<event name="OnStartMainMenuMusic" fscommand="OnStartMainMenuMusic" desc="" />   
+		<event name="OnStopMainMenuMusic" fscommand="OnStopMainMenuMusic" desc="" />   
+
+		<event name="RequestLoadingValue" fscommand="RequestLoadingValue" desc="Request a value from C++ will be send to SetValue">
+			<param name="name" desc="" type="string" />
+		</event>
+
+		<event name="RequestSettingValue" fscommand="RequestSettingValue" desc="Request a value from C++ will be send to SetValue">
+			<param name="name" desc="" type="string" />
+		</event>
+
+		<event name="UpdateSettingValue" fscommand="UpdateSettingValue" desc="Update a value in C++ from Flash">
+			<param name="name" desc="" type="string" />
+			<param name="value" desc="" type="string" />
+		</event>			
+			
+		<!-- EI Hendrik Keybinds -->
+		<event name="OnEnterInputCaptureMode" fscommand="OnEnterInputCaptureMode" desc="Request Key Input from C++">
+			<param name="actionmap" desc="" type="string" />
+			<param name="action" desc="" type="string" />
+			<param name="input" desc="" type="string" />
+			<param name="devicetype" desc="" type="int" />
+			<param name="deviceindex" desc="" type="int" />
+		</event>
+
+		<event name="OnRequestKeybinds" fscommand="OnRequestKeybinds" desc="Requests the keybinds from C++" />
+		<event name="OnResetKeybinds" fscommand="OnResetKeybinds" desc="Resets the keybinds through C++" />
+	</events>
+	
+	<MovieClips>
+		<MovieClip name="Cursor" instancename="Cursor" />
+	</MovieClips>
+		
+  </UIElement>
+  
+  
+</UIElements>

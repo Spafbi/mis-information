@@ -3,47 +3,47 @@
   <Node Id="1" Class="UI:Action:Start" pos="100,-480,0" flags="0">
    <Inputs UseAsState="1"/>
   </Node>
-  <Node Id="33" Name="Setup_page" Class="_commentbox" pos="80,-549.74219,0" flags="0">
+  <Node Id="33" Name="Setup_page" Class="_commentbox" pos="80,-549.77161,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-   <ResizeBorder X="0" Y="0" Width="560" Height="160"/>
-   <NodeSize Width="560" Height="187.64063"/>
+   <ResizeBorder X="0" Y="0" Width="840" Height="160"/>
+   <NodeSize Width="840" Height="187.67006"/>
   </Node>
-  <Node Id="41" Name="Handle_events" Class="_commentbox" pos="80,-349.81311,0" flags="0">
+  <Node Id="41" Name="Handle_events" Class="_commentbox" pos="80,-349.84253,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-   <ResizeBorder X="0" Y="0" Width="1440" Height="340"/>
-   <NodeSize Width="1440" Height="367.64063"/>
+   <ResizeBorder X="0" Y="0" Width="1440" Height="520"/>
+   <NodeSize Width="1440" Height="547.67004"/>
   </Node>
-  <Node Id="79" Class="UI:Action:Control" pos="440,-140,0" flags="0">
+  <Node Id="79" Class="UI:Action:Control" pos="440,10,0" flags="0">
    <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ExitToMainQ|@ui_Yes|@ui_No"/>
   </Node>
-  <Node Id="80" Class="Logic:Condition" pos="900,-140,0" flags="0">
+  <Node Id="80" Class="Logic:Condition" pos="970,10,0" flags="0">
    <Inputs Condition="0"/>
   </Node>
-  <Node Id="97" Class="UI:Action:End" pos="1160,-80,0" flags="0">
+  <Node Id="97" Class="UI:Action:End" pos="1190,70,0" flags="0">
    <Inputs UseAsState="1" Args=""/>
   </Node>
-  <Node Id="99" Name="Handle_Exit_button" Class="_comment" pos="100,-170,0" flags="0"/>
-  <Node Id="100" Class="Debug:ExecuteString" pos="1160,-160,0" flags="0">
+  <Node Id="99" Name="Handle_Exit_button" Class="_comment" pos="100,-20,0" flags="0"/>
+  <Node Id="100" Class="Debug:ExecuteString" pos="1190,-10,0" flags="0">
    <Inputs String="disconnect" NextFrame="1"/>
   </Node>
   <Node Id="101" Class="UI:Functions:MenuEvents:DisplayIngameMenu" pos="1000,-280,0" flags="0">
    <Inputs Display="0"/>
   </Node>
-  <Node Id="105" Class="UI:Events:MainMenu:DisconnectFromServer" pos="100,-140,0" flags="0">
+  <Node Id="105" Class="UI:Events:MainMenu:DisconnectFromServer" pos="100,10,0" flags="0">
    <Inputs instanceID="-1" Port="-1" Idx=""/>
   </Node>
-  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="680,-549.74219,0" flags="0">
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="90,-770.02942,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="840" Height="160"/>
-   <NodeSize Width="840" Height="187.64063"/>
+   <NodeSize Width="840" Height="187.67006"/>
   </Node>
-  <Node Id="120" Class="UI:Action:Start" pos="700,-500,0" flags="0">
+  <Node Id="120" Class="UI:Action:Start" pos="110,-720,0" flags="0">
    <Inputs UseAsState="1"/>
   </Node>
-  <Node Id="121" Class="UI:Action:Control" pos="960,-500,0" flags="0">
+  <Node Id="121" Class="UI:Action:Control" pos="370,-720,0" flags="0">
    <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
   </Node>
-  <Node Id="122" Class="UI:Action:End" pos="1360,-500,0" flags="0">
+  <Node Id="122" Class="UI:Action:End" pos="770,-720,0" flags="0">
    <Inputs UseAsState="0" Args=""/>
   </Node>
   <Node Id="126" Class="UI:Events:MainMenu:Respawn" pos="100,-280,0" flags="0">
@@ -51,6 +51,9 @@
   </Node>
   <Node Id="132" Class="UI:Functions:MainMenu:DisplayWindow" pos="360,-480,0" flags="0">
    <Inputs instanceID="-1" window="Respawn"/>
+  </Node>
+  <Node Id="133" Class="UI:Functions:MainMenu:SetValue" pos="1280,-620,0" flags="0">
+   <Inputs instanceID="-1" name="respawnTime" value=""/>
   </Node>
   <Node Id="142" Class="UI:Functions:MP:OnRespawn" pos="760,-280,0" flags="0">
    <Inputs />
@@ -60,6 +63,35 @@
   </Node>
   <Node Id="146" Class="UI:Functions:MainMenu:DisplayWindow" pos="440,-280,0" flags="0">
    <Inputs instanceID="-1" window="Empty"/>
+  </Node>
+  <Node Id="147" Class="UI:Events:MainMenu:RespawnAtBase" pos="100,-170,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="148" Class="UI:Functions:MainMenu:DisplayWindow" pos="440,-170,0" flags="0">
+   <Inputs instanceID="-1" window="Empty"/>
+  </Node>
+  <Node Id="149" Class="UI:Functions:MP:OnRespawnAtBase" pos="740,-170,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="150" Class="UI:Functions:MenuEvents:DisplayIngameMenu" pos="1020,-170,0" flags="0">
+   <Inputs Display="0"/>
+  </Node>
+  <Node Id="151" Class="UI:Action:End" pos="1360,-170,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="152" Class="UI:Functions:MP:GetRespawnValues" pos="660,-480,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="153" Class="UI:Events:MP:OnRespawnValuesChanged" pos="960,-540,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="154" Class="UI:Functions:MainMenu:SetValue" pos="1280,-480,0" flags="0">
+   <Inputs instanceID="-1" name="respawnAtBaseTime" value=""/>
+  </Node>
+  <Node Id="155" Name="Repawn_times_processing" Class="_commentbox" pos="950,-670,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="620" Height="280"/>
+   <NodeSize Width="620" Height="307.67004"/>
   </Node>
  </Nodes>
  <Edges>
@@ -74,8 +106,17 @@
   <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
   <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
   <Edge nodeIn="146" nodeOut="126" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="152" nodeOut="132" portIn="send" portOut="OnCall" enabled="1"/>
   <Edge nodeIn="101" nodeOut="142" portIn="send" portOut="OnEvent" enabled="1"/>
   <Edge nodeIn="142" nodeOut="146" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="148" nodeOut="147" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="149" nodeOut="148" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="150" nodeOut="149" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="151" nodeOut="150" portIn="EndAction" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="153" portIn="value" portOut="Respawn" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="153" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="154" nodeOut="153" portIn="value" portOut="RespawnAtBase" enabled="1"/>
+  <Edge nodeIn="154" nodeOut="153" portIn="Call" portOut="onEvent" enabled="1"/>
  </Edges>
  <GraphTokens />
 </Graph>

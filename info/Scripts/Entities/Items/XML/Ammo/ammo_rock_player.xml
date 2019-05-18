@@ -33,7 +33,7 @@
 		<param name="hole_size" value="2" />
 		<param name="terrain_hole_size" value="3" />
 		<param name="radialblurdist" value="5" />
-		<param name="type" value="frag" />
+		<param name="type" value="blunt" />
 		<param name="effect" value="weapon_fx.rock.explode" />
 		<param name="effect_scale" value="1" />
 	</explosion>

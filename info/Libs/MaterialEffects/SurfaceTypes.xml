@@ -18,7 +18,10 @@ Here are the current values for ammo to easily compare:
  1 - mat_metal_grenade
  2 - mat_metal_thick
  2 - mat_metal_harvest
+ 3 - mat_coal_harvest
  3 - mat_concrete
+ 3 - mat_iron_harvest
+ 3 - mat_pyrite_harvest
  3 - mat_rock, mat_rock_harvest // plot signs can only be placed on the terrain and these two types for normal build rules
  4 - mat_gravel
  4 - mat_metal
@@ -86,6 +89,11 @@ Special surface types
 		<AI fImpactRadius="5" fImpactSoundRadius="25" fFootStepRadius="20" proneMult="0.2" crouchMult="0.5" movingMult="1.5" />
 	</SurfaceType>
 
+	<SurfaceType name="mat_coal_harvest">
+		<Physics friction="0.7" elasticity="0" pierceability="3" sound_obstruction="0.6" />
+		<AI fImpactRadius="2.5" fImpactSoundRadius="20" fFootStepRadius="20" proneMult="0.3" crouchMult="0.5" movingMult="2.5" />
+	</SurfaceType>
+
 	<SurfaceType name="mat_concrete">
 		<Physics friction="2.0" elasticity="0.2" pierceability="3" sound_obstruction="0.7" />
 		<AI fImpactRadius="5" fImpactSoundRadius="25" fFootStepRadius="20" proneMult="0.2" crouchMult="0.5" movingMult="1.5" />
@@ -138,6 +146,11 @@ Special surface types
 
 	<SurfaceType name="mat_ice">
 		<Physics friction="0.1" elasticity="0.1" pierceability="7" can_shatter="1" sound_obstruction="0.5" />
+	</SurfaceType>
+
+	<SurfaceType name="mat_iron_harvest">
+		<Physics friction="0.7" elasticity="0" pierceability="3" sound_obstruction="0.6" />
+		<AI fImpactRadius="2.5" fImpactSoundRadius="20" fFootStepRadius="20" proneMult="0.3" crouchMult="0.5" movingMult="2.5" />
 	</SurfaceType>
 
 	<SurfaceType name="mat_leaves">
@@ -203,6 +216,11 @@ Special surface types
 	<SurfaceType name="mat_plastic">
 		<Physics friction="0.8" elasticity="0" pierceability="10" sound_obstruction="0.4" />
 		<AI fImpactRadius="2.5" fImpactSoundRadius="20" fFootStepRadius="25" proneMult="0.4" crouchMult="0.7" movingMult="1.5" />
+	</SurfaceType>
+
+	<SurfaceType name="mat_pyrite_harvest">
+		<Physics friction="0.7" elasticity="0" pierceability="3" sound_obstruction="0.6" />
+		<AI fImpactRadius="2.5" fImpactSoundRadius="20" fFootStepRadius="20" proneMult="0.3" crouchMult="0.5" movingMult="2.5" />
 	</SurfaceType>
 
 	<SurfaceType name="mat_rock">
