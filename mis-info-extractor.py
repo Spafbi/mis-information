@@ -28,11 +28,6 @@ def remove_binary_xml_files(target_dir):
     xml_list = list(Path(target_dir).rglob("*.[xX][mM][lL]"))
     binaries = list()
     for this_xml in xml_list:
-        # file = open(this_xml, "rb")
-        # contents = file.readline()
-        # if contents[:6].decode() == "CryXml":
-        #     binaries.append(this_xml)
-        # file.close
         if is_binary_string(open(this_xml, 'rb').read(1024)):
             binaries.append(this_xml)
     for binary_file in binaries:
@@ -42,10 +37,10 @@ def process_paks(**kwargs):
     directory = kwargs.get('directory')
     target_dir = kwargs.get('target_dir')
 
-    # for filename in os.listdir(directory):
-    #     if filename.endswith(".pak"):
-    #         extract_file(filename="{0}/{1}".format(directory, filename),
-    #                      target_dir=target_dir)
+    for filename in os.listdir(directory):
+        if filename.endswith(".pak"):
+            extract_file(filename="{0}/{1}".format(directory, filename),
+                         target_dir=target_dir)
 
     # Remove binary files
     remove_binary_xml_files(target_dir)
