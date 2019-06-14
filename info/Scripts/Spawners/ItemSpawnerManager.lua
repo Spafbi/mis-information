@@ -116,6 +116,8 @@ reduced to 25% of the prior item's, like so:
 				{ class = "KatanaBlackWidow", percent = 10 },
 			},
 		},
+		
+
 
 		{
 			category = "RandomFlashlight",
@@ -887,6 +889,46 @@ reduced to 25% of the prior item's, like so:
 				{ class = "MilitaryHelmetUrbanCamo4", percent = 7 },
 			},
 		},
+		
+		{
+			category = "RandomCivilianHelmet",
+			classes = 
+			{
+				{ class = "FootballHelmet", percent = 3 },
+				{ class = "FootballHelmetAmerica", percent = 3 },
+				{ class = "FootballHelmetBlack", percent = 3 },
+				{ class = "FootballHelmetBlue", percent = 4 },
+				{ class = "FootballHelmetFabulous", percent = 3 },
+				{ class = "FootballHelmetGold", percent = 3 },
+				{ class = "FootballHelmetGreen", percent = 4 },
+				{ class = "FootballHelmetRed", percent = 3 },
+				{ class = "FootballHelmetStripedBlack", percent = 3 },
+				{ class = "FootballHelmetStripedBlue", percent = 3 },
+				{ class = "FootballHelmetStripedGreen", percent = 4 },
+				{ class = "FootballHelmetStripedRed", percent = 3 },
+				{ class = "FootballHelmetStripedTeal", percent = 3 },
+				{ class = "FootballHelmetStripedYellow", percent = 4 },
+				{ class = "FootballHelmetWhiteStripedBlack", percent = 3 },
+				{ class = "FootballHelmetWhiteStripedBlue", percent = 3 },
+				{ class = "FootballHelmetWhiteStripedGreen", percent = 3 },
+				{ class = "FootballHelmetWhiteStripedRed", percent = 3 },
+				{ class = "FootballHelmetWhiteStripedTeal", percent = 3 },
+				{ class = "FootballHelmetWhiteStripedYellow", percent = 3 },
+				{ class = "FootballHelmetYellow", percent = 3 },
+				{ class = "BikeHelmetBlack", percent = 3 },
+				{ class = "BikeHelmetBlue", percent = 3 },
+				{ class = "BikeHelmetGreen", percent = 3 },
+				{ class = "BikeHelmetPink", percent = 3 },
+				{ class = "BikeHelmetPurple", percent = 3 },
+				{ class = "BikeHelmetRed", percent = 3 },
+				{ class = "BikeHelmetWhite", percent = 3 },
+				{ class = "BikeHelmetYellow", percent = 3 },
+				{ class = "MotorcycleHelmetCarbon", percent = 3 },
+				{ class = "MotorcycleHelmetGold", percent = 3 },
+				{ class = "MotorcycleHelmetWhite", percent = 3 },	
+			},
+		},
+
 
 
 		-- Legs
@@ -3037,6 +3079,86 @@ reduced to 25% of the prior item's, like so:
 				{ class = "Wasteland22", percent = 5.9 },
 			},
 		},
+		
+		{
+			category = "RandomRangedCivilianPure",
+			classes =
+			{
+				{ class = "AT15", percent = 10 },
+				{ class = "Crossbow", percent = 10 },
+				{ class = "CX4Storm", percent = 10 },
+				{ class = "Model70", percent = 10 },
+				{ class = "RecurveBow", percent = 10 },
+				{ class = "Rem700", percent = 10 },
+				{ class = "Rem870", percent = 10 },
+				{ class = "Sako_85", percent = 10 },
+				{ class = "Shotgun870Tactical", percent = 10 },
+				{ class = "Wasteland22", percent = 10 },
+			},
+		},
+		
+		{
+		    category = "RandomRangedMilitaryPure",
+			classes =
+			{
+				{ class = "AA12", percent = 5 },
+				{ class = "ACAW", percent = 5 },
+				{ class = "AK74U", percent = 5 },
+				{ class = "AKM", percent = 5 },
+				{ class = "AT15", percent = 8 },
+				{ class = "AUMP45", percent = 5 },
+				{ class = "Bulldog", percent = 8 },
+				{ class = "CX4Storm", percent = 7 },
+				{ class = "KrissV", percent = 5 },
+				{ class = "M16", percent = 9 },
+				{ class = "M249", percent = 5 },
+				{ class = "M40A5", percent = 5 },
+				{ class = "Mk18", percent = 9 },
+				{ class = "MP5", percent = 5 },
+				{ class = "R90", percent = 6 },
+				{ class = "Shotgun870Tactical", percent = 5 },
+				{ class = "AKMGold", percent = 1 },
+				{ class = "ColtPythonGrimeyRick", percent = 1 },
+				{ class = "Mk18Reaver", percent = 1 },
+			},
+		},
+		
+		{
+		    category = "RandomRangedPolicePure",
+			classes =
+			{
+				{ class = "ACAW", percent = 10 },
+				{ class = "AT15", percent = 15 },
+				{ class = "AUMP45", percent = 15 },
+				{ class = "CX4Storm", percent = 15 },
+				{ class = "MP5", percent = 14 },
+				{ class = "R90", percent = 14 },
+				{ class = "Shotgun870Tactical", percent = 14 },
+				{ class = "AKMGold", percent = 1 },
+				{ class = "ColtPythonGrimeyRick", percent = 1 },
+				{ class = "Mk18Reaver", percent = 1 },
+			},
+		},
+		
+		{
+		    category = "RandomMilitaryArmor",
+			classes =
+			{
+				{ class = "FlakVestGreen", percent = 25 },
+				{ class = "FlakVestGreenCamo1", percent = 25 },
+				{ class = "FlakVestTan", percent = 25 },
+				{ class = "FlakVestTanCamo1", percent = 25 },
+			},
+		},
+		
+		{
+		    category = "RandomPoliceArmor",
+			classes =
+			{
+				{ class = "PoliceVestBlack", percent = 50 },
+				{ class = "PoliceVestBlue", percent = 50 },
+			},
+		},
 
 		{
 			category = "RandomRanged",
@@ -3052,12 +3174,18 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomPistol",
 			classes =
 			{
-				{ class = "ColtPython", percent = 19.9 },
+				{ class = "ColtPython", percent = 9.9 },
 				{ class = "ColtPythonGrimeyRick", percent = 0.1 },
-				{ class = "FlareGun", percent = 20 },
-				{ class = "G18Pistol", percent = 20 },
-				{ class = "hk45", percent = 20 },
-				{ class = "ruger22", percent = 20 },
+				{ class = "FlareGun", percent = 9 },
+				{ class = "G18Pistol", percent = 9 },
+				{ class = "hk45", percent = 9 },
+				{ class = "ruger22", percent = 9 },
+				{ class = "Makarov", percent = 9 },
+				{ class = "M9A1", percent = 9 },
+				{ class = "m1911a1", percent = 9 },
+				{ class = "PX4", percent = 9 },
+				{ class = "P350", percent = 9 },
+				{ class = "AP85", percent = 9 },
 			},
 		},
 
@@ -3171,18 +3299,18 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomAmmoBox",
 			classes =
 			{
-				{ class = "AmmoBox_10mm", percent = 8 },
-				{ class = "AmmoBox_22", percent = 8 },
-				{ class = "AmmoBox_308", percent = 8 },
-				{ class = "AmmoBox_357", percent = 8 },
-				{ class = "AmmoBox_223", percent = 9 },
-				{ class = "AmmoBox_5_45x39", percent = 8 },
-				{ class = "AmmoBox_5_56x45", percent = 9 },
-				{ class = "AmmoBox_5_70x28", percent = 8 },
-				{ class = "AmmoBox_7_62x39", percent = 9 },
-				{ class = "AmmoBox_7_62x51", percent = 8 },
-				{ class = "AmmoBox_9mm", percent = 9 },
-				{ class = "AmmoBox_acp_45", percent = 8 },
+				{ class = "AmmoBox_10mm", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_22", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_308", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_357", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_223", percent = 9, min = 30, max = 60 },
+				{ class = "AmmoBox_5_45x39", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_5_56x45", percent = 9, min = 30, max = 60 },
+				{ class = "AmmoBox_5_70x28", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_7_62x39", percent = 9, min = 30, max = 60 },
+				{ class = "AmmoBox_7_62x51", percent = 8, min = 30, max = 60 },
+				{ class = "AmmoBox_9mm", percent = 9, min = 30, max = 60 },
+				{ class = "AmmoBox_acp_45", percent = 8, min = 30, max = 60 },
 			},
 		},
 
@@ -3686,6 +3814,227 @@ reduced to 25% of the prior item's, like so:
 				{ class = "Amalgaduino", percent = 23 },
 				{ class = "AmcoinLedger", percent = 2 },
 
+			},
+		},
+
+		-- Air Drops
+		{
+			-- The cargo drop crate has 20 slots
+			category = "RandomAirDropCrate",
+			classes =
+			{
+				{ category = "RandomAirDropCratePolice", percent = 17 },
+				{ category = "RandomAirDropCrateMilitary", percent = 16 },
+				{ category = "RandomAirDropCrateCivilian", percent = 17 },
+				{ category = "RandomAirDropCrateExplosives", percent = 16 },
+				{ category = "RandomAirDropCrateBaseBuilding", percent = 17 },
+				{ category = "RandomAirDropCrateRadiation", percent = 17 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCrateMilitary",
+			group =
+			{
+				{ category = "RandomRangedMilitaryPure", percent = 100 },
+				{ class = "M16", percent = 100 },
+				{ class = "STANAGx30", percent = 100 },
+				{ class = "STANAGx30", percent = 100 },
+				{ class = "M9A1", percent = 100 },
+				{ class = "9mmx15_m9a1", percent = 100 },
+				{ class = "9mmx15_m9a1", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAccessory", percent = 100 },
+				{ category = "RandomMilitaryArmor", percent = 100 },
+				{ category = "RandomMilitaryHelmet", percent = 100 },
+				{ category = "RandomMilitaryJacket", percent = 100 },
+				{ category = "RandomCargoPants", percent = 100 },
+				{ class = "GrenadePickup", percent = 100 },
+				{ class = "GrenadeGasSleepPickup", percent = 100 },
+				{ class = "MRE", percent = 100 },
+				{ class = "C4TimedPickup", percent = 100, min = 1, max = 2 },
+				{ class = "Bandage", percent = 100, min = 5, max = 5 },
+				{ class = "DuffelBagGreen", percent = 100 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCrateRadiation",
+			group =
+			{
+				{ category = "RandomRangedMilitaryPure", percent = 100 },
+				{ class = "AUMP45", percent = 100 },
+				{ class = "acp_45x30", percent = 100 },
+				{ class = "acp_45x30", percent = 100 },
+				{ class = "Pile_45ACP", percent = 100, min = 30, max = 30 },
+				{ class = "Pile_45ACP", percent = 100, min = 30, max = 30 },
+				{ class = "HazmatMask", percent = 100 },
+				{ class = "HazmatSuitOrange", percent = 100 },
+				{ class = "GasCanisterPack", percent = 100 },
+				{ class = "AntiradiationPills", percent = 100, min = 3, max = 3 },
+				{ class = "AntiradiationPills", percent = 100, min = 3, max = 3 },
+				{ class = "MushroomAntiRad", percent = 100, min = 5, max = 5 },
+				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
+				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
+				{ class = "WaterPurificationTablets", percent = 100, min = 3, max = 3 },
+				{ class = "MRE", percent = 100 },
+				{ class = "MRE", percent = 100 },
+				{ class = "MRE", percent = 100 },
+				{ class = "MRE", percent = 100 },
+				{ class = "MRE", percent = 100 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCrateBaseBuilding",
+			group =
+			{
+				{ class = "SheetMetal", percent = 100, min = 64, max = 64 },
+				{ class = "SheetMetal", percent = 100, min = 64, max = 64 },
+				{ class = "SheetMetal", percent = 100, min = 64, max = 64 },
+				{ class = "SheetMetal", percent = 100, min = 64, max = 64 },
+				{ class = "plated_wall_3m_4m", percent = 100, min = 5, max = 5 },
+				{ class = "plated_wall_3m_4m", percent = 100, min = 5, max = 5 },
+				{ class = "plated_walkway_3m_4m_4m", percent = 100, min = 5, max = 5 },
+				{ class = "plated_walkway_3m_4m_4m", percent = 100, min = 5, max = 5 },
+				{ class = "plated_door_lockable_1m_2m", percent = 100 },
+				{ class = "plated_wall_door_3m_4m", percent = 100 },
+				{ class = "plated_gate_lockable_3m_4m", percent = 100 },
+				{ class = "plated_gatehouse", percent = 100 },
+				{ class = "powered_generator_small", percent = 100 },
+				{ class = "RuggedPack", percent = 100 },
+				{ class = "guide_structures_wood_watchtower", percent = 100 },
+				{ class = "guide_structures_wood_stairs_2", percent = 100 },
+				{ class = "guide_structures_wood_walls_2", percent = 100 },
+				{ class = "guide_structures_wood_walkways_2", percent = 100 },
+				{ class = "guide_structures_wood_ramps_2", percent = 100 },
+				{ class = "guide_structures_wood_bridges_2", percent = 100 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCratePolice",
+			group =
+			{
+				{ category = "RandomRangedPolicePure", percent = 100 },
+				{ class = "AT15", percent = 100 },
+				{ class = "STANAGx30", percent = 100 },
+				{ class = "STANAGx30", percent = 100 },
+				{ class = "PX4", percent = 100 },
+				{ class = "acp_45x10_hk", percent = 100 },
+				{ class = "acp_45x10_hk", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAccessory", percent = 100 },
+				{ category = "RandomPoliceArmor", percent = 100 },
+				{ class = "SwatHelmet", percent = 100 },
+				{ class = "TshirtPoliceBlue", percent = 100 },
+				{ class = "CargoPantsBlack", percent = 100 },
+				{ class = "GrenadePickup", percent = 100 },
+				{ class = "GrenadeGasTearPickup", percent = 100 },
+				{ class = "MRE", percent = 100 },
+				{ class = "C4TimedPickup", percent = 100, min = 1, max = 2 },
+				{ class = "Bandage", percent = 100, min = 5, max = 5 },
+				{ class = "DuffelBagBlack", percent = 100 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCrateCivilian",
+			group =
+			{
+				{ category = "RandomRangedCivilianPure", percent = 100 },
+				{ class = "CX4Storm", percent = 100 },
+				{ class = "acp_45x20", percent = 100 },
+				{ class = "acp_45x20", percent = 100 },
+				{ class = "Makarov", percent = 100 },
+				{ class = "9mmx10_makarov", percent = 100 },
+				{ class = "9mmx10_makarov", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAccessory", percent = 100 },
+				{ class = "FootballPads", percent = 100 },
+				{ category = "RandomCivilianHelmet", percent = 100 },
+				{ category = "RandomRainJacket", percent = 100 },
+				{ class = "RuckSack", percent = 100 },
+				{ class = "GrenadeMolotovPickup", percent = 100 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "AppleFresh", percent = 100, min = 5, max = 5 },
+				{ class = "C4TimedPickup", percent = 100, min = 1, max = 2 },
+				{ class = "Bandage", percent = 100, min = 5, max = 5 },
+			},
+		},
+		
+		{
+			category = "RandomAirDropCrateExplosives",
+			group =
+			{
+				{ class = "C4Bricks", percent = 100, min = 5, max = 10 },
+				{ class = "C4Bricks", percent = 100, min = 5, max = 10 },
+				{ class = "Sulphur", percent = 100, min = 64, max = 64 },
+				{ class = "Sulphur", percent = 100, min = 64, max = 64 },
+				{ class = "GrenadeMolotovPickup", percent = 100 },
+				{ class = "GrenadeMolotovPickup", percent = 100 },
+				{ class = "ElectricalParts", percent = 100, min = 5, max = 10 },
+				{ class = "Amalgaduino", percent = 100, min = 5, max = 10 },
+				{ class = "guide_explosives_1", percent = 100 },
+				{ class = "guide_explosives_2", percent = 100 },
+				{ class = "GrenadePickup", percent = 100 },
+				{ class = "GrenadePickup", percent = 100 },
+				{ class = "PipebombPickup", percent = 100, min = 3, max = 3 },
+				{ class = "C4TimedPickup", percent = 100, min = 2, max = 2 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
+				{ class = "BioFuel", percent = 100, min = 64, max = 64 },
+				{ class = "BioFuel", percent = 100, min = 64, max = 64 },
+			},
+		},
+
+		{
+			category = "RandomAirDropCrateSalt",
+			group =
+			{
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+				{ class = "Salt", percent = 100 },
+			},
+		},
+
+		{
+			category = "RandomAirDropCrateBandage",
+			group =
+			{
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
+				{ class = "Bandage", percent = 100 },
 			},
 		},
 

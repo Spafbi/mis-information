@@ -2,14 +2,14 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="2.0"/>
+		<param name="mass" value="5.0"/>
 		<param name="display_name" value="@AmmoBox_10mm"/>
 		<param name="description" value="@AmmoBox_10mmDescription"/>
 	</params>
 
 	<magazine>
 		<!-- must only be one magazine element in this section-->
-		<magazine capacity="100"/> <!-- max number of rounds this magazine can hold -->
+		<magazine capacity="250"/> <!-- max number of rounds this magazine can hold -->
 
 		<!-- Ammo block -->
 		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->

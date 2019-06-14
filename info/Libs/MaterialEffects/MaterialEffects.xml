@@ -12,7 +12,7 @@
   <Created>2005-10-12T15:13:39Z</Created>
   <LastSaved>2016-05-16T08:09:12Z</LastSaved>
   <Company>Crytek</Company>
-  <Version>12.00</Version>
+  <Version>14.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
@@ -7444,10 +7444,10 @@
     <Cell><Data ss:Type="String">impacts:hatchet_impact_water</Data></Cell>
     <Cell><Data ss:Type="String">impacts:hatchet_impact_water</Data></Cell>
     <Cell><Data ss:Type="String">impacts:hatchet_impact_water</Data></Cell>
-    <Cell><Data ss:Type="String">impacts:hatchet_impact_rock</Data></Cell>
+    <Cell><Data ss:Type="String">impacts:pickaxe_impact_rock</Data></Cell>
     <Cell><Data ss:Type="String">impacts:hatchet_impact_concrete</Data></Cell>
-    <Cell><Data ss:Type="String">impacts:hatchet_impact_rock</Data></Cell>
-    <Cell><Data ss:Type="String">impacts:hatchet_impact_rock</Data></Cell>
+    <Cell><Data ss:Type="String">impacts:pickaxe_impact_rock</Data></Cell>
+    <Cell><Data ss:Type="String">impacts:pickaxe_impact_rock</Data></Cell>
     <Cell><Data ss:Type="String">impacts:hatchet_impact_rock</Data></Cell>
     <Cell><Data ss:Type="String">impacts:pickaxe_impact_rock</Data></Cell>
     <Cell><Data ss:Type="String">impacts:hatchet_impact_rock</Data></Cell>
@@ -8238,129 +8238,129 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="s102">
     <Cell ss:StyleID="s103"><Data ss:Type="String">C4Timed_explode</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
     <Cell><Data ss:Type="String">impacts:blank_event</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_default</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_default</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="s102">
     <Cell ss:StyleID="s103"><Data ss:Type="String">C4Timed_explode_underwater</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
     <Cell><Data ss:Type="String">impacts:blank_event</Data></Cell>
-    <Cell><Data ss:Type="String">explosions:pipebomb_explosion_water</Data></Cell>
+    <Cell><Data ss:Type="String">explosions:c4_explosion_water</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:StyleID="s102">
     <Cell ss:StyleID="s103"><Data ss:Type="String">BabySpiderSelfDestruct</Data></Cell>
@@ -9334,11 +9334,12 @@
     <VerticalResolution>300</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>23</LeftColumnVisible>
    <SplitHorizontal>570</SplitHorizontal>
-   <TopRowBottomPane>0</TopRowBottomPane>
+   <TopRowBottomPane>96</TopRowBottomPane>
    <SplitVertical>4050</SplitVertical>
    <LeftColumnRightPane>28</LeftColumnRightPane>
-   <ActivePane>1</ActivePane>
+   <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -9352,12 +9353,14 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>32</ActiveRow>
+     <ActiveRow>125</ActiveRow>
+     <ActiveCol>23</ActiveCol>
+     <RangeSelection>R126:R127</RangeSelection>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>6</ActiveRow>
-     <ActiveCol>43</ActiveCol>
+     <ActiveRow>111</ActiveRow>
+     <ActiveCol>29</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

@@ -13,7 +13,7 @@
 	</params>
 
 	<placeable>
-		<param name="packup_class" value="TrapC4Packed"/>
+		<param name="packup_class" value="TrapC4Packed2m"/>
 		<param name="packup_sound" value="Play_pickup_metal"/>
 	</placeable>
 

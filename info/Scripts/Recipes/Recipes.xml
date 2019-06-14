@@ -110,6 +110,78 @@
 								    <material class="SheetMetal" count="3"/>
 								</materials>
 							</item>
+							<item class="Crafted_AmmoBox_10mm" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_22" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_223" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_308" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_357" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_5_45x39" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_5_56x45" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_5_70x28" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_7_62x39" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_7_62x51" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_9mm" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
+							<item class="Crafted_AmmoBox_acp_45" time="5" amount="0">
+								<materials>
+									<material class="ScrapMetal" count="5"/>
+								    <material class="SheetMetal" count="5"/>
+								</materials>
+							</item>
 					    </items>
 					</subcat>
 				</subcats>
@@ -123,7 +195,7 @@
 								<items>
 									<item class="SheetMetal" time="0.5">
 										<materials>
-											<material class="IronIngot" count="4" />
+											<material class="IronIngot" count="2" />
 										</materials>
 									</item>
 									<item class="PipeMetal" time="1">
@@ -133,7 +205,7 @@
 									</item>
 									<item class="Nails" time="1" amount="16">
 										<materials>
-											<material class="IronIngot" count="2" />
+											<material class="IronIngot" count="1" />
 										</materials>
 									</item>
 								</items>
@@ -711,7 +783,7 @@
 				<subcats>
 					<subcat name="Fuel">
 						<items>
-							<item class="BioFuel" time="2">
+							<item class="BioFuel" time="0.5">
 								<materials>
 									<material class="AnimalFat" count="1" />
 									<material class="Sulphur" count="1" />
@@ -1267,6 +1339,126 @@
 											<material class="PaintCan_White" count="1" />
 										</materials>
 									</item>
+									<item class="flagpole_brazil" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Green" count="1" />
+											<material class="PaintCan_Yellow" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_sweden" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Blue" count="1" />
+											<material class="PaintCan_Yellow" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_slovenia" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Blue" count="1" />
+											<material class="PaintCan_Red" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_poland" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_White" count="1" />
+											<material class="PaintCan_Red" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_mexico" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_Green" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_holland" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_Blue" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_spain" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_Yellow" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_turkey" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_israel" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Blue" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_south_africa" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Black" count="1" />
+											<material class="PaintCan_Green" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_algeria" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Green" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_finland" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Blue" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_austria" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_india" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Green" count="1" />
+											<material class="PaintCan_Yellow" count="1" />
+										</materials>
+									</item>
+									<item class="flagpole_indonesia" time="3">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Rags" count="10" />
+											<material class="PaintCan_Red" count="1" />
+											<material class="PaintCan_White" count="1" />
+										</materials>
+									</item>
 								</items>
 							</type>
 
@@ -1720,7 +1912,7 @@
 									<material class="Charcoal" count="1"/>
 								</materials>
 							</item>
-							<item class="C4Bricks" time="10" amount="1">
+							<item class="C4Bricks" time="2" amount="1">
 								<materials>
 									<material class="Gunpowder" count="64"/>
 									<material class="Sulphur" count="12"/>
@@ -2893,9 +3085,7 @@
 						<items>
 							<item class="TrapC4Packed" time="10">
 								<materials>
-									<material class="Amalgaduino" />
-									<material class="C4Bricks" count="10" />
-									<material class="ElectricalParts" />
+									<material class="C4TimedPickup" count="1" />
 									<material class="ScrapMetal" count="2" />
 									<material class="BarbedWireCoil" />
 								</materials>
@@ -2940,9 +3130,7 @@
 							<!-- 2 meter -->
 							<item class="TrapC4Packed2m" time="10">
 								<materials>
-									<material class="Amalgaduino" />
-									<material class="C4Bricks" count="10" />
-									<material class="ElectricalParts" />
+									<material class="C4TimedPickup" count="1" />
 									<material class="ScrapMetal" count="2" />
 									<material class="BarbedWireCoil" count="2"/>
 								</materials>
@@ -3095,19 +3283,19 @@
 									</item>
 									<item class="wood_roof_trapdoor_3m_4m" time="5">
 										<materials>
-											<material class="wood_door_frame" />
+											<material class="Lumber" count="2" />
 											<material class="wood_wall_3m_4m" />
 										</materials>
 									</item>
 									<item class="wood_roof_murderhole_3m_2m" time="5">
 										<materials>
-											<material class="wood_window_frame" />
+											<material class="Lumber" count="2" />
 											<material class="wood_wall_3m_2m" />
 										</materials>
 									</item>
 									<item class="wood_roof_murderhole_3m_4m" time="5">
 										<materials>
-											<material class="wood_window_frame" />
+											<material class="Lumber" count="2" />
 											<material class="wood_wall_3m_4m" />
 										</materials>
 									</item>

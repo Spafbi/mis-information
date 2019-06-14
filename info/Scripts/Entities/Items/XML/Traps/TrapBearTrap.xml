@@ -47,7 +47,7 @@
 		<param name="effect" value="traps.beartrap.shut"/>
 		<param name="effect_scale" value="1"/>
 		<param name="radial_blur_dist" value="0"/>
-		<param name="hit_type" value="frag"/>
+		<param name="hit_type" value="knife"/>
 	</explosion>
 
 </item>

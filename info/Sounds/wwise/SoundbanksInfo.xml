@@ -1479,6 +1479,8 @@
 			<ShortName>vehicles</ShortName>
 			<Path>vehicles.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3776216603" Name="Play_airdrop_crate_drop"/>
+				<Event Id="1051456190" Name="Play_airdrop_plane"/>
 				<Event Id="2355703077" Name="Play_atv_bump_on_road"/>
 				<Event Id="1402702283" Name="Play_atv_damage"/>
 				<Event Id="1679850955" Name="Play_atv_horn"/>
@@ -1556,6 +1558,7 @@
 				<Event Id="2825110856" Name="Play_tractor_slip"/>
 				<Event Id="683470458" Name="Play_tractor_start"/>
 				<Event Id="3458717330" Name="Play_tractor_stop"/>
+				<Event Id="1088607004" Name="Stop_airdrop_plane"/>
 				<Event Id="1943361485" Name="Stop_atv_damage"/>
 				<Event Id="2344989669" Name="Stop_atv_horn"/>
 				<Event Id="3436729229" Name="Stop_bicycle_damage"/>
@@ -1632,6 +1635,10 @@
 				<File Id="46671971" Language="SFX">
 					<ShortName>jetski_damage_randoms_choke3.wav</ShortName>
 					<Path>SFX\jetski_damage_randoms_choke3_9E69E797.wem</Path>
+				</File>
+				<File Id="47078494" Language="SFX">
+					<ShortName>scream_mid_01-03.wav</ShortName>
+					<Path>SFX\scream_mid_01-03_EE79F7FB.wem</Path>
 				</File>
 				<File Id="49724508" Language="SFX">
 					<ShortName>veh_generic_tires_dirt_slip2.wav</ShortName>
@@ -1777,6 +1784,10 @@
 					<ShortName>veh_tractor_mechanics_low.wav</ShortName>
 					<Path>SFX\veh_tractor_mechanics_low_EE79F7FB.wem</Path>
 				</File>
+				<File Id="222131524" Language="SFX">
+					<ShortName>veh_dieseltruck_engine_med.wav</ShortName>
+					<Path>SFX\veh_dieseltruck_engine_med_EE79F7FB.wem</Path>
+				</File>
 				<File Id="229084029" Language="SFX">
 					<ShortName>jetski_engine_stop.wav</ShortName>
 					<Path>SFX\jetski_engine_stop_9E69E797.wem</Path>
@@ -1844,6 +1855,10 @@
 				<File Id="327101571" Language="SFX">
 					<ShortName>veh_bike_junk2.wav</ShortName>
 					<Path>SFX\veh_bike_junk2_E843A46D.wem</Path>
+				</File>
+				<File Id="328224408" Language="SFX">
+					<ShortName>Ninja Blender Bounce_01-07.wav</ShortName>
+					<Path>SFX\Ninja Blender Bounce_01-07_EE79F7FB.wem</Path>
 				</File>
 				<File Id="328801931" Language="SFX">
 					<ShortName>veh_generic_tires_grass.wav</ShortName>
@@ -1920,6 +1935,10 @@
 				<File Id="498896190" Language="SFX">
 					<ShortName>veh_bike_junk1.wav</ShortName>
 					<Path>SFX\veh_bike_junk1_E843A46D.wem</Path>
+				</File>
+				<File Id="507337438" Language="SFX">
+					<ShortName>veh_dieseltruck_engine_idle.wav</ShortName>
+					<Path>SFX\veh_dieseltruck_engine_idle_EE79F7FB.wem</Path>
 				</File>
 				<File Id="509818813" Language="SFX">
 					<ShortName>veh_luggage_engine_med.wav</ShortName>
@@ -2029,6 +2048,10 @@
 					<ShortName>veh_fishing_boat_engine_off.wav</ShortName>
 					<Path>SFX\veh_fishing_boat_engine_off_9E69E797.wem</Path>
 				</File>
+				<File Id="667703397" Language="SFX">
+					<ShortName>Bathroom Air Filter Bounce_01-01.wav</ShortName>
+					<Path>SFX\Bathroom Air Filter Bounce_01-01_EE79F7FB.wem</Path>
+				</File>
 				<File Id="691063154" Language="SFX">
 					<ShortName>jetski_damage_randoms_lowMetals2.wav</ShortName>
 					<Path>SFX\jetski_damage_randoms_lowMetals2_9E69E797.wem</Path>
@@ -2069,6 +2092,10 @@
 					<ShortName>veh_fishing_boat_creak2.wav</ShortName>
 					<Path>SFX\veh_fishing_boat_creak2_9E69E797.wem</Path>
 				</File>
+				<File Id="782689510" Language="SFX">
+					<ShortName>scream_low_01-01.wav</ShortName>
+					<Path>SFX\scream_low_01-01_EE79F7FB.wem</Path>
+				</File>
 				<File Id="791802104" Language="SFX">
 					<ShortName>veh_atv_engine_onload_medium.wav</ShortName>
 					<Path>SFX\veh_atv_engine_onload_medium_4B8CC0C5.wem</Path>
@@ -2097,6 +2124,10 @@
 					<ShortName>veh_bike_surface_sand.wav</ShortName>
 					<Path>SFX\veh_bike_surface_sand_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="839754673" Language="SFX">
+					<ShortName>veh_airDrop_crate.wav</ShortName>
+					<Path>SFX\veh_airDrop_crate_E843A46D.wem</Path>
+				</File>
 				<File Id="844359062" Language="SFX">
 					<ShortName>jetski_damage_randoms_lowMetals1.wav</ShortName>
 					<Path>SFX\jetski_damage_randoms_lowMetals1_9E69E797.wem</Path>
@@ -2104,6 +2135,10 @@
 				<File Id="844460374" Language="SFX">
 					<ShortName>veh_atv_engine_onload_high.wav</ShortName>
 					<Path>SFX\veh_atv_engine_onload_high_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="851820282" Language="SFX">
+					<ShortName>scream_high_01-01.wav</ShortName>
+					<Path>SFX\scream_high_01-01_EE79F7FB.wem</Path>
 				</File>
 				<File Id="860613034" Language="SFX">
 					<ShortName>veh_truck_horn.wav</ShortName>
@@ -2145,6 +2180,10 @@
 					<ShortName>veh_bike_pedal_fast.wav</ShortName>
 					<Path>SFX\veh_bike_pedal_fast_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="915152324" Language="SFX">
+					<ShortName>Lasko Fan Bounce_01-01.wav</ShortName>
+					<Path>SFX\Lasko Fan Bounce_01-01_EE79F7FB.wem</Path>
+				</File>
 				<File Id="918107046" Language="SFX">
 					<ShortName>veh_generic_tires_medium_slip2.wav</ShortName>
 					<Path>SFX\veh_generic_tires_medium_slip2_9E69E797.wem</Path>
@@ -2160,10 +2199,6 @@
 				<File Id="942606668" Language="SFX">
 					<ShortName>veh_duneBuggy_onload_med.wav</ShortName>
 					<Path>SFX\veh_duneBuggy_onload_med_EE79F7FB.wem</Path>
-				</File>
-				<File Id="943899878" Language="SFX">
-					<ShortName>veh_dieseltruck_engine_med.wav</ShortName>
-					<Path>SFX\veh_dieseltruck_engine_med_EE79F7FB.wem</Path>
 				</File>
 				<File Id="954450315" Language="SFX">
 					<ShortName>veh_dirtbike_engine_run_low.wav</ShortName>
@@ -2208,10 +2243,6 @@
 				<File Id="998288378" Language="SFX">
 					<ShortName>veh_generic_tires_heavy_slip2.wav</ShortName>
 					<Path>SFX\veh_generic_tires_heavy_slip2_9E69E797.wem</Path>
-				</File>
-				<File Id="998987860" Language="SFX">
-					<ShortName>veh_dieseltruck_engine_idle.wav</ShortName>
-					<Path>SFX\veh_dieseltruck_engine_idle_EE79F7FB.wem</Path>
 				</File>
 				<File Id="1017231635" Language="SFX">
 					<ShortName>veh_fishing_boat_engine_high.wav</ShortName>
@@ -4955,10 +4986,6 @@
 					<ShortName>weap_revamp_m40a5_close_mech_01-09.wav</ShortName>
 					<Path>SFX\weap_revamp_m40a5_close_mech_01-09_9E69E797.wem</Path>
 				</File>
-				<File Id="16385109" Language="SFX">
-					<ShortName>weap_revamp_wastelandRanger_close_noise_02-09.wav</ShortName>
-					<Path>SFX\weap_revamp_wastelandRanger_close_noise_02-09_9E69E797.wem</Path>
-				</File>
 				<File Id="16746804" Language="SFX">
 					<ShortName>weap_p90_close_noise_04-20.wav</ShortName>
 					<Path>SFX\weap_p90_close_noise_04-20_9E69E797.wem</Path>
@@ -5203,6 +5230,10 @@
 					<ShortName>weap_p250_close_punch_01-01.wav</ShortName>
 					<Path>SFX\weap_p250_close_punch_01-01_9E69E797.wem</Path>
 				</File>
+				<File Id="83996700" Language="SFX">
+					<ShortName>weap_revamp_rem700_close_noise_02-17.wav</ShortName>
+					<Path>SFX\weap_revamp_rem700_close_noise_02-17_9E69E797.wem</Path>
+				</File>
 				<File Id="84232109" Language="SFX">
 					<ShortName>weap_revamp_m16_close_punch_01-09.wav</ShortName>
 					<Path>SFX\weap_revamp_m16_close_punch_01-09_9E69E797.wem</Path>
@@ -5326,10 +5357,6 @@
 				<File Id="110832954" Language="SFX">
 					<ShortName>weap_gunRevamp_m4a1_close_mech_01-05.wav</ShortName>
 					<Path>SFX\weap_gunRevamp_m4a1_close_mech_01-05_9E69E797.wem</Path>
-				</File>
-				<File Id="111712353" Language="SFX">
-					<ShortName>weap_revamp_rem700_close_noise_01-03.wav</ShortName>
-					<Path>SFX\weap_revamp_rem700_close_noise_01-03_9E69E797.wem</Path>
 				</File>
 				<File Id="112161487" Language="SFX">
 					<ShortName>weap_revamp_m16_distant_fire_01-08.wav</ShortName>
@@ -5586,10 +5613,6 @@
 				<File Id="171078567" Language="SFX">
 					<ShortName>weap_m249_reload_box_1_gunPrepFoley.wav</ShortName>
 					<Path>SFX\weap_m249_reload_box_1_gunPrepFoley_9E69E797.wem</Path>
-				</File>
-				<File Id="174823913" Language="SFX">
-					<ShortName>weap_revamp_wastelandRanger_close_noise_02-05.wav</ShortName>
-					<Path>SFX\weap_revamp_wastelandRanger_close_noise_02-05_9E69E797.wem</Path>
 				</File>
 				<File Id="175746129" Language="SFX">
 					<ShortName>weap_guitar_hit3.wav</ShortName>
@@ -6155,10 +6178,6 @@
 					<ShortName>weap_m9a1_close_noise_01-08.wav</ShortName>
 					<Path>SFX\weap_m9a1_close_noise_01-08_9E69E797.wem</Path>
 				</File>
-				<File Id="322885980" Language="SFX">
-					<ShortName>weap_revamp_wastelandRanger_close_noise_02-07.wav</ShortName>
-					<Path>SFX\weap_revamp_wastelandRanger_close_noise_02-07_9E69E797.wem</Path>
-				</File>
 				<File Id="323705444" Language="SFX">
 					<ShortName>weap_cz75_distant_fire_01-01.wav</ShortName>
 					<Path>SFX\weap_cz75_distant_fire_01-01_9E69E797.wem</Path>
@@ -6326,10 +6345,6 @@
 				<File Id="364685971" Language="SFX">
 					<ShortName>imp_squeegee_hit3.wav</ShortName>
 					<Path>SFX\imp_squeegee_hit3_9E69E797.wem</Path>
-				</File>
-				<File Id="365165235" Language="SFX">
-					<ShortName>item_campfire.wav</ShortName>
-					<Path>SFX\item_campfire_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="365297788" Language="SFX">
 					<ShortName>akm_tail_close3.wav</ShortName>
@@ -6783,6 +6798,10 @@
 					<ShortName>weap_revamp_mp5_distant_fire_02-12.wav</ShortName>
 					<Path>SFX\weap_revamp_mp5_distant_fire_02-12_9E69E797.wem</Path>
 				</File>
+				<File Id="492572519" Language="SFX">
+					<ShortName>weap_revamp_rem700_close_noise_02-19.wav</ShortName>
+					<Path>SFX\weap_revamp_rem700_close_noise_02-19_9E69E797.wem</Path>
+				</File>
 				<File Id="492686105" Language="SFX">
 					<ShortName>akm_tail_close4.wav</ShortName>
 					<Path>SFX\akm_tail_close4_9E69E797.wem</Path>
@@ -6883,10 +6902,6 @@
 					<ShortName>weap_foley_unequip4.wav</ShortName>
 					<Path>SFX\weap_foley_unequip4_5ADB9959.wem</Path>
 				</File>
-				<File Id="512680997" Language="SFX">
-					<ShortName>weap_revamp_rem700_close_noise_01-01.wav</ShortName>
-					<Path>SFX\weap_revamp_rem700_close_noise_01-01_9E69E797.wem</Path>
-				</File>
 				<File Id="514037546" Language="SFX">
 					<ShortName>weap_revamp_m16_distant_fire_01-14.wav</ShortName>
 					<Path>SFX\weap_revamp_m16_distant_fire_01-14_9E69E797.wem</Path>
@@ -6926,6 +6941,10 @@
 				<File Id="523009367" Language="SFX">
 					<ShortName>weap_bat_swing2.wav</ShortName>
 					<Path>SFX\weap_bat_swing2_9E69E797.wem</Path>
+				</File>
+				<File Id="524436950" Language="SFX">
+					<ShortName>weap_revamp_wastelandRanger_close_noise_03-05.wav</ShortName>
+					<Path>SFX\weap_revamp_wastelandRanger_close_noise_03-05_9E69E797.wem</Path>
 				</File>
 				<File Id="524459871" Language="SFX">
 					<ShortName>weap_revamp_mp5_close_tail_01-01.wav</ShortName>
@@ -6998,6 +7017,10 @@
 				<File Id="544047508" Language="SFX">
 					<ShortName>weap_p90_distant_fire_02-09.wav</ShortName>
 					<Path>SFX\weap_p90_distant_fire_02-09_9E69E797.wem</Path>
+				</File>
+				<File Id="544743647" Language="SFX">
+					<ShortName>weap_revamp_wastelandRanger_close_noise_03-09.wav</ShortName>
+					<Path>SFX\weap_revamp_wastelandRanger_close_noise_03-09_9E69E797.wem</Path>
 				</File>
 				<File Id="545341637" Language="SFX">
 					<ShortName>weap_guitar_knock5.wav</ShortName>
@@ -7166,10 +7189,6 @@
 				<File Id="580442647" Language="SFX">
 					<ShortName>weap_sako85_close_fire.wav</ShortName>
 					<Path>SFX\weap_sako85_close_fire_9E69E797.wem</Path>
-				</File>
-				<File Id="580639856" Language="SFX">
-					<ShortName>weap_revamp_rem700_close_noise_01-05.wav</ShortName>
-					<Path>SFX\weap_revamp_rem700_close_noise_01-05_9E69E797.wem</Path>
 				</File>
 				<File Id="580674433" Language="SFX">
 					<ShortName>weap_revamp_mp5_close_punch_01-20.wav</ShortName>
@@ -7571,6 +7590,10 @@
 					<ShortName>weap_rifle_unequip1.wav</ShortName>
 					<Path>SFX\weap_rifle_unequip1_9E69E797.wem</Path>
 				</File>
+				<File Id="676980965" Language="SFX">
+					<ShortName>weap_revamp_rem700_close_noise_02-08.wav</ShortName>
+					<Path>SFX\weap_revamp_rem700_close_noise_02-08_9E69E797.wem</Path>
+				</File>
 				<File Id="678639484" Language="SFX">
 					<ShortName>weap_cz75_close_noise_02-05.wav</ShortName>
 					<Path>SFX\weap_cz75_close_noise_02-05_9E69E797.wem</Path>
@@ -7795,6 +7818,10 @@
 					<ShortName>weap_ump45_noise_01-14.wav</ShortName>
 					<Path>SFX\weap_ump45_noise_01-14_9E69E797.wem</Path>
 				</File>
+				<File Id="728545846" Language="SFX">
+					<ShortName>weap_torch_flame_loop.wav</ShortName>
+					<Path>SFX\weap_torch_flame_loop_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="731676762" Language="SFX">
 					<ShortName>weap_m40a5_reload_3.wav</ShortName>
 					<Path>SFX\weap_m40a5_reload_3_9E69E797.wem</Path>
@@ -7866,6 +7893,10 @@
 				<File Id="750873709" Language="SFX">
 					<ShortName>weap_rifle_suppressed_tail_distant3.wav</ShortName>
 					<Path>SFX\weap_rifle_suppressed_tail_distant3_9E69E797.wem</Path>
+				</File>
+				<File Id="751102831" Language="SFX">
+					<ShortName>weap_revamp_wastelandRanger_close_noise_03-07.wav</ShortName>
+					<Path>SFX\weap_revamp_wastelandRanger_close_noise_03-07_9E69E797.wem</Path>
 				</File>
 				<File Id="751793597" Language="SFX">
 					<ShortName>weap_ak74u_distant_tail4.wav</ShortName>
@@ -7951,6 +7982,10 @@
 					<ShortName>weap_pistol_supressed_tail_close2.wav</ShortName>
 					<Path>SFX\weap_pistol_supressed_tail_close2_9E69E797.wem</Path>
 				</File>
+				<File Id="772717355" Language="SFX">
+					<ShortName>weap_revamp_wastelandRanger_close_noise_03-03.wav</ShortName>
+					<Path>SFX\weap_revamp_wastelandRanger_close_noise_03-03_9E69E797.wem</Path>
+				</File>
 				<File Id="772806318" Language="SFX">
 					<ShortName>weap_revamp_craftedLong_close_mech_01-13.wav</ShortName>
 					<Path>SFX\weap_revamp_craftedLong_close_mech_01-13_9E69E797.wem</Path>
@@ -7990,6 +8025,10 @@
 				<File Id="779420614" Language="SFX">
 					<ShortName>weap_revamp_mp5_close_noise_01-04.wav</ShortName>
 					<Path>SFX\weap_revamp_mp5_close_noise_01-04_9E69E797.wem</Path>
+				</File>
+				<File Id="779859539" Language="SFX">
+					<ShortName>weap_revamp_rem700_close_noise_02-11.wav</ShortName>
+					<Path>SFX\weap_revamp_rem700_close_noise_02-11_9E69E797.wem</Path>
 				</File>
 				<File Id="779957920" Language="SFX">
 					<ShortName>weap_guitar_stringhum2.wav</ShortName>
@@ -8070,10 +8109,6 @@
 				<File Id="795533976" Language="SFX">
 					<ShortName>imp_squeegee_hit1.wav</ShortName>
 					<Path>SFX\imp_squeegee_hit1_9E69E797.wem</Path>
-				</File>
-				<File Id="796402606" Language="SFX">
-					<ShortName>weap_revamp_wastelandRanger_close_noise_02-10.wav</ShortName>
-					<Path>SFX\weap_revamp_wastelandRanger_close_noise_02-10_9E69E797.wem</Path>
 				</File>
 				<File Id="798208793" Language="SFX">
 					<ShortName>weap_p90_close_noise_04-15.wav</ShortName>
@@ -8327,10 +8362,6 @@
 					<ShortName>weap_cx4_close_tail_03-07.wav</ShortName>
 					<Path>SFX\weap_cx4_close_tail_03-07_9E69E797.wem</Path>
 				</File>
-				<File Id="847277227" Language="SFX">
-					<ShortName>weap_revamp_rem700_close_noise_01-08.wav</ShortName>
-					<Path>SFX\weap_revamp_rem700_close_noise_01-08_9E69E797.wem</Path>
-				</File>
 				<File Id="847659962" Language="SFX">
 					<ShortName>imp_metal_chainlink_small2.wav</ShortName>
 					<Path>SFX\imp_metal_chainlink_small2_9E69E797.wem</Path>
@@ -8366,10 +8397,6 @@
 				<File Id="860970743" Language="SFX">
 					<ShortName>weap_ak74u_close_tail5.wav</ShortName>
 					<Path>SFX\weap_ak74u_close_tail5_9E69E797.wem</Path>
-				</File>
-				<File Id="861542053" Language="SFX">
-					<ShortName>weap_revamp_rem700_close_noise_01-07.wav</ShortName>
-					<Path>SFX\weap_revamp_rem700_close_noise_01-07_9E69E797.wem</Path>
 				</File>
 				<File Id="862047835" Language="SFX">
 					<ShortName>weap_m249_tail_close4.wav</ShortName>
@@ -8583,10 +8610,6 @@
 					<ShortName>weap_foley_unequip1.wav</ShortName>
 					<Path>SFX\weap_foley_unequip1_00571A18.wem</Path>
 				</File>
-				<File Id="911286068" Language="SFX">
-					<ShortName>weap_revamp_wastelandRanger_close_noise_02-03.wav</ShortName>
-					<Path>SFX\weap_revamp_wastelandRanger_close_noise_02-03_9E69E797.wem</Path>
-				</File>
 				<File Id="911582795" Language="SFX">
 					<ShortName>weap_foley_unequip2.wav</ShortName>
 					<Path>SFX\weap_foley_unequip2_105DA246.wem</Path>
@@ -8770,6 +8793,10 @@
 				<File Id="956630830" Language="SFX">
 					<ShortName>weap_cx4_close_mech_03-10.wav</ShortName>
 					<Path>SFX\weap_cx4_close_mech_03-10_9E69E797.wem</Path>
+				</File>
+				<File Id="957037798" Language="SFX">
+					<ShortName>weap_revamp_rem700_close_noise_02-21.wav</ShortName>
+					<Path>SFX\weap_revamp_rem700_close_noise_02-21_9E69E797.wem</Path>
 				</File>
 				<File Id="958467231" Language="SFX">
 					<ShortName>weap_dt11_distant_tail_01-05.wav</ShortName>
@@ -9262,6 +9289,10 @@
 				<File Id="1072521293" Language="SFX">
 					<ShortName>weap_cx4_distant_tail_01-08.wav</ShortName>
 					<Path>SFX\weap_cx4_distant_tail_01-08_9E69E797.wem</Path>
+				</File>
+				<File Id="1072609821" Language="SFX">
+					<ShortName>weap_revamp_wastelandRanger_close_noise_03-10.wav</ShortName>
+					<Path>SFX\weap_revamp_wastelandRanger_close_noise_03-10_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
