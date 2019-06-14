@@ -1,0 +1,70 @@
+<item name="arcade_cabinet" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="300"/> <!-- towable parts must have a mass > 50 -->
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="no_icon" value="1"/>
+		<param name="display_name" value="@arcade_cabinet"/>
+		<param name="description" value="@arcade_cabinetDescription"/>
+	</params>
+
+	<base_part class="static" type="2057" name="arcade_cabinet" max_health="10000" repair_with="SheetMetal" towable="1">
+		<static filename="objects/basebuilding/other/arcade_cabinet/arcade_cabinet.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="light" light_bulb_size="0.0" light_radius="0.8" light_color="0.10,0.175,0.30" light_diff_mul="0.2" light_spec_mul="0.1" light_hdr_dyn="0" light_offset="0,0,0" light_style="0" light_anim_speed="0" light_cast_shadows="0" light_view_dist_ratio="20" light_material="" lens_flare_name="" lens_flare_fov=""/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-2,-2,-1.5" bb2="2,2,2" temperature="5" humidity="-0.05" light="0.6"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="toggle_light">
+				<toggle_light sound_on="" sound_off=""/>
+			</base_action>
+		</base_actions>
+
+		<damage_multipliers>
+			<damage_multiplier damage_type="collision" multiplier="0.1"/>
+			<damage_multiplier damage_type="explosion" multiplier="15.0"/>
+			<damage_multiplier damage_type="frag" multiplier="4"/>
+			<damage_multiplier damage_type="fire" multiplier="1.0"/>
+			<damage_multiplier damage_type="melee" multiplier="0.0"/>
+			<damage_multiplier damage_type="repair" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_10mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_beanbag" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_pellet" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_slug" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_22" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_223" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_308" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_357" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_45x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_56x45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_70x28" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x51" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_9mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_acp_45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_lge" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_sml" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_player" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_tranquilizer_dart" multiplier="0.0"/>
+			<damage_multiplier damage_type="arrow" multiplier="0.0"/>
+			<damage_multiplier damage_type="blunt" multiplier="0.0"/>
+			<damage_multiplier damage_type="flare" multiplier="0.0"/>
+			<damage_multiplier damage_type="hammer" multiplier="0.0"/>
+			<damage_multiplier damage_type="hatchet" multiplier="0.0"/>
+			<damage_multiplier damage_type="knife" multiplier="0.0"/>
+			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
+			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+		</damage_multipliers>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/arcade_cabinet/arcade_cabinet_off.cgf"/>
+	</geometry>
+
+</item>

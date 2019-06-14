@@ -1,0 +1,31 @@
+<ATLConfig atl_name="v_generic">
+	<AudioTriggers>
+
+		<ATLTrigger atl_name="Play_airdrop_crate_drop">
+			<WwiseEvent wwise_name="Play_airdrop_crate_drop"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_airdrop_plane">
+			<WwiseEvent wwise_name="Play_airdrop_plane"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_airdrop_plane">
+			<WwiseEvent wwise_name="Stop_airdrop_plane"/>
+		</ATLTrigger>
+
+		<!-- Non-unique sounds shared amongst vehicles -->
+		<ATLTrigger atl_name="Play_generic_bump">
+			<WwiseEvent wwise_name="Play_generic_bump_on_road"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_lights_on_off">
+			<WwiseEvent wwise_name="Play_generic_lights_on_off"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slip_large">
+			<WwiseEvent wwise_name="Play_generic_slip_large"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slip_light">
+			<WwiseEvent wwise_name="Play_generic_slip_light"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_generic_slip_medium">
+			<WwiseEvent wwise_name="Play_generic_slip_medium"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>
