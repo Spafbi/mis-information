@@ -1,0 +1,23 @@
+<item name="flagpole_holland" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="5.5"/>
+        <param name="display_name" value="@flagpole_holland"/>
+        <param name="description" value="@flagpole_hollandDescription"/>
+    </params>
+
+    <base_part class="static" type="4878" name="flagpole_holland" max_health="1000" repair_with="Lumber">
+        <static filename="objects/basebuilding/other/flag/flag_pole_holland.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

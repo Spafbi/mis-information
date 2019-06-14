@@ -1,0 +1,23 @@
+<item name="flagpole_austria" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="5.5"/>
+        <param name="display_name" value="@flagpole_austria"/>
+        <param name="description" value="@flagpole_austriaDescription"/>
+    </params>
+
+    <base_part class="static" type="4885" name="flagpole_austria" max_health="1000" repair_with="Lumber">
+        <static filename="objects/basebuilding/other/flag/flag_pole_austria.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

@@ -1,0 +1,25 @@
+<item name="wood_roof_4m_4m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@wood_roof_4m_4m"/>
+		<param name="description" value="@wood_roof_4m_4mDescription"/>
+	</params>
+
+	<base_part class="static" type="170" name="wood_roof_4m_4m">
+		<static filename="objects/basebuilding/wood/wood_roof_4m_4m.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

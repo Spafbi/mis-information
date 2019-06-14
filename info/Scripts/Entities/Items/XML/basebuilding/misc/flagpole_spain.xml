@@ -1,0 +1,23 @@
+<item name="flagpole_spain" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="5.5"/>
+        <param name="display_name" value="@flagpole_spain"/>
+        <param name="description" value="@flagpole_spainDescription"/>
+    </params>
+
+    <base_part class="static" type="4879" name="flagpole_spain" max_health="1000" repair_with="Lumber">
+        <static filename="objects/basebuilding/other/flag/flag_pole_spain.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

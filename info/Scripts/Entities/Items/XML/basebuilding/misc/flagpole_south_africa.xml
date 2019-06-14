@@ -1,0 +1,23 @@
+<item name="flagpole_south_africa" class="Placeable" category="any">
+
+    <params>
+        <param name="selectable" value="0"/>
+        <param name="mass" value="5.5"/>
+        <param name="display_name" value="@flagpole_south_africa"/>
+        <param name="description" value="@flagpole_south_africaDescription"/>
+    </params>
+
+    <base_part class="static" type="4882" name="flagpole_south_africa" max_health="1000" repair_with="Lumber">
+        <static filename="objects/basebuilding/other/flag/flag_pole_south_africa.cgf"/>
+    </base_part>
+
+    <geometry>
+        <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+    </geometry>
+
+    <storage>
+        <locations>
+            <location category="any"/>
+        </locations>
+    </storage>
+</item>

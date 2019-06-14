@@ -1,0 +1,76 @@
+<FXLib>
+
+	<!-- PIPEBOMB -->
+	<Effect name="pipebomb_explosion_default" delay="0.05">
+		<Audio trigger="Play_explosion" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.pipebomb.explosion</Name>
+		</Particle>
+		<RandEffect>
+			<Decal minscale="1.2" maxscale="1.6" lifetime="5.0">
+				<Material>materials/decals/default_blast</Material>
+			</Decal>
+		</RandEffect>
+	</Effect>
+	<Effect name="pipebomb_explosion_water" delay="0.05">
+		<Audio trigger="Play_explosion" />
+		<Audio trigger="Play_molotov_explosion" /> <!-- Play this in addition for now, to fudge water sounds -->
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.pipebomb.explosion_water</Name>
+		</Particle>
+	</Effect>
+
+	<!-- C4 -->
+	<Effect name="c4_explosion_default" delay="0.05">
+		<Audio trigger="Play_explosion_large" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.c4.explosion</Name>
+		</Particle>
+		<RandEffect>
+			<Decal minscale="1.2" maxscale="1.6" lifetime="5.0">
+				<Material>materials/decals/default_blast</Material>
+			</Decal>
+		</RandEffect>
+	</Effect>
+	<Effect name="c4_explosion_water" delay="0.05">
+		<Audio trigger="Play_explosion_large" />
+		<Audio trigger="Play_molotov_explosion" /> <!-- Play this in addition for now, to fudge water sounds -->
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.c4.explosion_water</Name>
+		</Particle>
+	</Effect>
+
+	<!-- FLASHBANG -->
+	<Effect name="flashbang_explosion_default" delay="0.05">
+		<Audio trigger="Play_explosion" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.flashbang.explosion</Name>
+		</Particle>
+		<RandEffect>
+			<Decal minscale="0.2" maxscale="0.4" lifetime="5.0">
+				<Material>materials/decals/default_blast</Material>
+			</Decal>
+		</RandEffect>
+	</Effect>
+	<Effect name="flashbang_explosion_water" delay="0.05">
+		<Audio trigger="Play_explosion" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">weapon_fx.flashbang.explosion_water</Name>
+		</Particle>
+	</Effect>
+
+	<!-- BABY SPIDER, DOO DOO DOODOO DOODOO -->
+	<Effect name="babyspider_explosion_default" delay="0.05">
+		<Audio trigger="Play_baby_spider_explosion" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">character.mutant.spider_explosion</Name>
+		</Particle>
+	</Effect>
+	<Effect name="babyspider_explosion_water" delay="0.05">
+		<Audio trigger="Play_baby_spider_explosion" />
+		<Particle>
+			<Name minscale="0.75" maxscale="1.3" maxscaledist="80">character.mutant.spider_explosion</Name> <!-- needs water version -->
+		</Particle>
+	</Effect>
+
+</FXLib>

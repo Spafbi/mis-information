@@ -1,0 +1,2107 @@
+<LensFlareLibrary Name="miscreated">
+ <FlareItem Name="hanging.industrial_lamp" Type="Root" Enable="1" Id="{9C200EFA-B00A-43E7-BB79-0A39909A5BF9}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.2" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="industrial_lamp.[group]" Type="Group" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   </Params>
+   <FlareItem Name="industrial_lamp.[group].orbs" Type="CameraOrbs" Enable="1">
+    <Params>
+     <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.15" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+     <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+     <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="industrial_lamp.[group].glow" Type="Glow" Enable="1">
+    <Params>
+     <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="industrial_lamp.[group].ghosts" Type="Multi Ghost" Enable="1">
+    <Params>
+     <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.001" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="industrial_lamp.[group].chromaring" Type="ChromaticRing" Enable="1">
+    <Params>
+     <Common Size="1.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="120" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="industrial_lamp.[group].ghost_streak" Type="Ghost" Enable="1">
+    <Params>
+     <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.014" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="26" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="industrial_lamp.[group].iris shafts" Type="IrisShafts" Enable="1">
+    <Params>
+     <Common Size="0.75" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="60" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+    </Params>
+   </FlareItem>
+  </FlareItem>
+  <FlareItem Name="industrial_lamp.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.6" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="hanging.lamp_posts" Type="Root" Enable="1" Id="{43D16A6E-21D5-479D-9F73-D8B37B0CE204}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.119" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="lamp_posts.vol shafts" Type="Vol Shafts" Enable="1">
+   <Params>
+    <Common Size="0.7" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ImageSpaceShafts HighQuality="0" GoboTex=""/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lamp_posts.orbs" Type="CameraOrbs" Enable="0">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="0.525" Brightness="2" Position="1,1" Tint="0.74453,0.74453,0.74453" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="1" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="20" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lamp_posts.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.6" Perspectivefactor="1" DistanceFadingfactor="0.825" Brightness="4" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="flashlight.flashlight" Type="Root" Enable="1" Id="{F80034C5-37C9-4C72-A531-F5A92007FBE0}" Library="miscreated">
+  <Params>
+   <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flashlight.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.03" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/orb_color4.dds" Count="2" RandomSeed="10" Scatteringrange="0.333,0.278" positionfactor="1,1" positionoffset="0.722,0.667" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.4" BrightnessVariation="0.3" ColorVariation="0.3"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.557" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight.ORBITASTIC" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.15" Perspectivefactor="0.5" DistanceFadingfactor="10" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="1" OrbTexture="textures/lights/lens_flares/orbs_round2.dds" LensTexture="EngineAssets/Textures/flares/Smudgy.dds" Enablelenstexture="0" Enablelensdetailshading="0" Lenstexturestrength="1" Lensdetailshadingstrength="1" Lensdetailbumpiness="1" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="100" Noiseseed="0" Colorvariation="0.5" Sizevariation="0.8" Rotationvariation="0.8"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight.ghost_source" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.361" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.3" Gamma="0.444"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="traffic.roadbarrierlight_flashing" Type="Root" Enable="1" Id="{085064F8-44AF-4307-94D3-BA0C11BD5704}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.2" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="roadbarrierlight_flashing.[group]" Type="Group" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   </Params>
+   <FlareItem Name="roadbarrierlight_flashing.[group].orbs" Type="CameraOrbs" Enable="1">
+    <Params>
+     <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+     <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+     <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="roadbarrierlight_flashing.[group].glow" Type="Glow" Enable="1">
+    <Params>
+     <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="roadbarrierlight_flashing.[group].ghosts" Type="Multi Ghost" Enable="1">
+    <Params>
+     <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="roadbarrierlight_flashing.[group].chromaring" Type="ChromaticRing" Enable="1">
+    <Params>
+     <Common Size="1.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="120" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="roadbarrierlight_flashing.[group].ghost_streak" Type="Ghost" Enable="1">
+    <Params>
+     <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="15" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+    </Params>
+   </FlareItem>
+   <FlareItem Name="roadbarrierlight_flashing.[group].iris shafts" Type="IrisShafts" Enable="1">
+    <Params>
+     <Common Size="0.75" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.2" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="60" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+     <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+     <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+     <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+     <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+    </Params>
+   </FlareItem>
+  </FlareItem>
+  <FlareItem Name="roadbarrierlight_flashing.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="generator.large" Type="Root" Enable="1" Id="{9BDD1A5E-D1DD-4071-87B0-5F5A70B6ACDE}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.2" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="large.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="6" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.1" Position="1,1" Tint="0.502886,0.502886,0.502886" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.01" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.2" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="large.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="vehicle.head_light" Type="Root" Enable="1" Id="{0447BEC8-F29B-4DED-A0F7-95355B9304F6}" Library="miscreated">
+  <Params>
+   <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.05,0.05" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="1" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="head_light.multighosts" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0" DistanceFadingfactor="0" Brightness="0.1" Position="1,1" Tint="0.499505,0.529523,0.859174" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="8,4" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="1" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="8" RandomSeed="12" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.glow_center" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0.15" DistanceFadingfactor="0" Brightness="50" Position="1,1" Tint="0.315763,0.284452,0.20836" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,0.5" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <Glow Polygonfactor="15" Focusfactor="0.01" Gamma="1.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="5" Position="1,1" Tint="0.499505,0.45908,0.353741" Tint.alpha="75" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_vertical" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.03" Position="1,1.1" Tint="0.0846415,0.180144,0.363604" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_blurred.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_horizontal" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.2" Position="1.083,1" Tint="0.0677246,0.20471,0.505432" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_blue_offset" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.3" Brightness="0.05" Position="-2.213,7.35" Tint="0.0050282,0.20836,0.493616" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="-3"/>
+    <Transformation Scale="3,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_horizontal_main" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.02" Position="1,1" Tint="0.0657539,0.147998,0.493616" Tint.alpha="25" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="2,0.03" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_round2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.iris_shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="75" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="64" Smoothness="3" Thickness="0.3" Thicknessnoise="0" Spread="1" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_horizontal3a" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.8" Position="0.9,1" Tint="0.121986,0.293216,0.722672" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="head_light.ghost_streak_horizontal3a" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.8" Position="1.153,1" Tint="0.121986,0.293216,0.722672" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.1,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="torch.fire" Type="Root" Enable="1" Id="{DC8C65AC-DF70-4D38-9F7E-B142B11CB1B8}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="fire.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.05" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="3,0.089" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.2" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.015" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="256" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <Glow Polygonfactor="16" Focusfactor="0.001" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="flashlight.flashlight_strobe" Type="Root" Enable="1" Id="{69BF6E5A-1758-4D85-8E12-4E920183E296}" Library="miscreated">
+  <Params>
+   <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="1" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flashlight_strobe.lens_ring" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.028" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/orb_color4.dds" Count="2" RandomSeed="10" Scatteringrange="0.333,0.278" positionfactor="1,1" positionoffset="0.722,0.667" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.4" BrightnessVariation="0.3" ColorVariation="0.3"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_strobe.iris_shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="1,1,1" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_strobe.ORBITASTIC" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.15" Perspectivefactor="0.5" DistanceFadingfactor="0.5" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="1" OrbTexture="textures/lights/lens_flares/orbs_round2.dds" LensTexture="EngineAssets/Textures/flares/Smudgy.dds" Enablelenstexture="0" Enablelensdetailshading="0" Lenstexturestrength="1" Lensdetailshadingstrength="1" Lensdetailbumpiness="1" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="100" Noiseseed="0" Colorvariation="0.5" Sizevariation="0.8" Rotationvariation="0.8"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_strobe.iris_shafts_back" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="5" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_strobe.center_glow" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_strobe.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="999" Brightness="100" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.1" Gamma="2"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="vehicle.siren_light" Type="Root" Enable="1" Id="{BEEAFF10-0E84-423B-82BE-EDCFF7D52ED0}" Library="miscreated">
+  <Params>
+   <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.05,0.05" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="0" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="siren_light.multighosts" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0.1" DistanceFadingfactor="0" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="8,4" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="1" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="8" RandomSeed="12" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.glow_center" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0.15" DistanceFadingfactor="0" Brightness="10" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,0.5" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <Glow Polygonfactor="15" Focusfactor="0.01" Gamma="1.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="30" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_vertical" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1.1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_blurred.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_horizontal" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.5" Position="1.083,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_offset" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.3" Brightness="0.1" Position="-2.213,7.35" Tint="0.215861,0.215861,0.215861" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="-3"/>
+    <Transformation Scale="3,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_horizontal_main" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="1,1,1" Tint.alpha="25" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="2,0.03" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_round2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.iris_shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="75" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.5,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="64" Smoothness="3" Thickness="0.3" Thicknessnoise="0" Spread="1" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_horizontal_offset1" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.8" Position="0.9,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="siren_light.ghost_streak_horizontal3_offset2" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="0.8" Position="1.153,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.1,0.05" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_lines2.dds"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="chemlight.flare" Type="Root" Enable="1" Id="{3234CAF3-0C84-481C-9B3A-CC623542208D}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="1" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flare.ghost_horiz" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.02" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="2,0.03" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_round2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost_offset" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.3" Brightness="0.01" Position="-2.213,7.35" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="-3"/>
+    <Transformation Scale="3,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.01" Position="1,1.1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_blurred.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.multi_ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0.5" DistanceFadingfactor="0.5" Brightness="0.05" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="8,4" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="1" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="8" RandomSeed="12" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris_shafts_soft" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="1" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="64" Smoothness="3" Thickness="0.2" Thicknessnoise="0" Spread="0.5" Spreadnoise="0" Sizenoise="0.2" Spacingnoise="0.4"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="1,1,1" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_center" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="10" Position="1,1" Tint="1,1,1" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.01" Gamma="1.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_small_bright" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="100" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="2"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="campfire.fire_medium" Type="Root" Enable="1" Id="{52067AF4-726D-4EC5-8036-A6A37CB44676}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="0" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="fire_medium.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire_medium.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire_medium.ghosts" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.015" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire_medium.chromaring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.2" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire_medium.ghost_streak" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="3,0.089" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="fire_medium.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.75" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="radiotower.flare" Type="Root" Enable="1" Id="{EAE9316B-E117-4745-80AF-75D0A53A1F5C}" Library="miscreated">
+  <Params>
+   <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flare.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="0.783538,0.0152085,0.0152085" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/orb_color4.dds" Count="2" RandomSeed="10" Scatteringrange="0.333,0.278" positionfactor="1,1" positionoffset="0.722,0.667" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.4" BrightnessVariation="0.3" ColorVariation="0.3"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris shafts0" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.783538,0.0152085,0.0152085" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.783538,0.0152085,0.0152085" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.783538,0.0152085,0.0152085" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.8" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.783538,0.0152085,0.0152085" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.3" Gamma="0.444"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="bpart.worklight" Type="Root" Enable="1" Id="{62D43248-FCB1-4C3D-AF0E-ED8622E4E58B}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.2" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="1" AffectedbylightFOV="1" MultiplyColor="0"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="worklight.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="8" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.glow_worklight" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.4" Position="1,1" Tint="0.921582,0.332452,0" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.7" Position="0.001,0.001" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.1" Position="1,1" Tint="1,1,1" Tint.alpha="187" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1.5"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="worklight.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.7" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="flaregun.flare" Type="Root" Enable="1" Id="{539DF268-59FE-432F-9568-592C87B334C7}" Library="miscreated">
+  <Params>
+   <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="1" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flare.ghost_horiz" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.02" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="2,0.03" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_round2.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost_offset" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.3" Brightness="0.01" Position="-2.213,7.35" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="-3"/>
+    <Transformation Scale="3,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.01" Position="1,1.1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.2,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/lens_flares/orbs_blurred.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.multi_ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="0.5" DistanceFadingfactor="0.5" Brightness="0.05" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="8,4" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="1" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="8" RandomSeed="12" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris_shafts_soft" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="1" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="64" Smoothness="3" Thickness="0.2" Thicknessnoise="0" Spread="0.5" Spreadnoise="0" Sizenoise="0.2" Spacingnoise="0.4"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="1,1,1" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_center" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="10" Position="1,1" Tint="1,1,1" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.01" Gamma="1.5"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_small_bright" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="100" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="2"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="traffic.lightpole" Type="Root" Enable="1" Id="{DDC16442-05F3-4CE2-A53D-588442697C7E}" Library="miscreated">
+  <Params>
+   <Common Size="0.5" Perspectivefactor="0.5" DistanceFadingfactor="0" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="lightpole.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.15" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="16" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="1" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="2" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.2" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="16" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="0.5" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="1" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="96" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1.5" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="lightpole.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.8" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="flashlight.headlamp" Type="Root" Enable="1" Id="{5E39BB52-B899-4480-BCCE-9FCA49589CB6}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="headlamp.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.02" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/orb_color4.dds" Count="2" RandomSeed="10" Scatteringrange="0.333,0.278" positionfactor="1,1" positionoffset="0.722,0.667" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.4" BrightnessVariation="0.3" ColorVariation="0.3"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="headlamp.iris_shafts_small" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.557" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="headlamp.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.15" Perspectivefactor="0.5" DistanceFadingfactor="10" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="1" OrbTexture="textures/lights/lens_flares/orbs_round2.dds" LensTexture="EngineAssets/Textures/flares/Smudgy.dds" Enablelenstexture="0" Enablelensdetailshading="0" Lenstexturestrength="1" Lensdetailshadingstrength="1" Lensdetailbumpiness="1" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="100" Noiseseed="0" Colorvariation="0.5" Sizevariation="0.8" Rotationvariation="0.8"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="headlamp.iris_shafts_large" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="headlamp.ghost_source" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="headlamp.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.361" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.3" Gamma="0.444"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="bpart.candle" Type="Root" Enable="1" Id="{DC440CEA-7403-4331-B8BC-AA22859DC756}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="candle.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="candle.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="minelamp.flare" Type="Root" Enable="1" Id="{E8AD0072-7A97-41B7-80E6-100573FC6BB3}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flare.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="3,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="outside_light.flare" Type="Root" Enable="1" Id="{6A7DBF3F-7742-406E-8D03-2495D8245B1B}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="0"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flare.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.glow_flare" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1.5" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.1" Position="1,1" Tint="1,1,1" Tint.alpha="4" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.75" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="3" Brightness="0.05" Position="1,1" Tint="0.921582,0.332452,0" Tint.alpha="16" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.05" Position="0.001,0.001" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="0.5" DistanceFadingfactor="2" Brightness="0.05" Position="1,1" Tint="1,1,1" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1.5"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flare.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="vehicle.cargo_light" Type="Root" Enable="1" Id="{9D39EDEB-9BFE-4F2E-B507-F52F7084D855}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="0"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="cargo_light.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="4" Position="1,1" Tint="1,1,1" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_light.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="10" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1.5" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_light.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="8" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.75" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_light.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="10" Brightness="0.5" Position="1,1" Tint="1,0.246201,0" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_light.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="1" Position="0.001,0.001" Tint="1,1,1" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_light.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="bpart.tiki_torch" Type="Root" Enable="1" Id="{4BFD6D14-5AFC-4CD5-8963-457355DBABEE}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="tiki_torch.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="tiki_torch.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="bpart.camping_lantern" Type="Root" Enable="1" Id="{48328519-0A97-4FCF-BF93-59E727119792}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.25" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="camping_lantern.ghost_source" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="16" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.ghost_horz" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="4" Brightness="0.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="0.5" DistanceFadingfactor="2" Brightness="0.1" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="camping_lantern.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.4" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="minelamp.sewer" Type="Root" Enable="1" Id="{EF2905C1-7FFD-45A4-A0FA-5CEE5AC818CE}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="0.3" DistanceFadingfactor="0.3" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="sewer.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="3,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="sewer.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="generator.hotel_hall" Type="Root" Enable="1" Id="{59BED68D-9A38-4391-A3D0-8BFA1A35A3D9}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.2" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="hotel_hall.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="hotel_hall.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="hotel_hall.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="6" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.1" Position="1,1" Tint="0.502886,0.502886,0.502886" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="hotel_hall.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.1" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="hotel_hall.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="15" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="hotel_hall.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="1" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="generator.airfield" Type="Root" Enable="1" Id="{C77A910E-A88D-49DC-BE9C-3B573B378859}" Library="miscreated">
+  <Params>
+   <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="0.05" Brightness="10" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="airfield.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="8" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="2" Position="1,1" Tint="0.693872,0.665387,0.62396" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="4" Perspectivefactor="1" DistanceFadingfactor="0.5" Brightness="0.2" Position="1,1" Tint="0.502886,0.502886,0.502886" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.8" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.01" Position="1,1" Tint="0.47044,0.21952,0.0242229" Tint.alpha="30" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.09,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.2" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="7" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.25" ColorVariation="0.15"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="airfield.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="flashlight.flashlight_small" Type="Root" Enable="1" Id="{EC050D05-76F1-4FF7-9F33-5522BE54E5FA}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.01" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="0" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="flashlight_small.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.03" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.3" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/orb_color4.dds" Count="2" RandomSeed="10" Scatteringrange="0.333,0.278" positionfactor="1,1" positionoffset="0.722,0.667" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.4" BrightnessVariation="0.3" ColorVariation="0.3"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_small.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="0.557" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_small.ORBITASTIC" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.15" Perspectivefactor="0.5" DistanceFadingfactor="10" Brightness="0.2" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="1" OrbTexture="textures/lights/lens_flares/orbs_round2.dds" LensTexture="EngineAssets/Textures/flares/Smudgy.dds" Enablelenstexture="0" Enablelensdetailshading="0" Lenstexturestrength="1" Lensdetailshadingstrength="1" Lensdetailbumpiness="1" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="100" Noiseseed="0" Colorvariation="0.5" Sizevariation="0.8" Rotationvariation="0.8"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_small.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_small.ghost_source" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="flashlight_small.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.361" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.3" Gamma="0.444"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="vehicle.emergency_light" Type="Root" Enable="1" Id="{2F3BE3E0-ECCC-44ED-AD81-9EC4457862BE}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="0.1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="1" Sensorimagebrightnessvariationfactor="1"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.778" TriggerFalloff="0.143"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="0"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="emergency_light.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="20" Position="1,1" Tint="1,1,1" Tint.alpha="96" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.glow_medium" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="20" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.glow_large" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="1.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="6" Position="1,1" Tint="1,1,1" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1.5" TriggerFalloff="1"/>
+    <Glow Polygonfactor="16" Focusfactor="0.01" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="8" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="0.75" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="50" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.ghost_vert" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="2" Position="1,1" Tint="0.991102,0.846873,0" Tint.alpha="16" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="0.089,3" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="1" Position="0.001,0.001" Tint="1,1,1" Tint.alpha="32" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <ChromaticRing Locktolight="1" Thickness="0.2" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="99.9999" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="emergency_light.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="128" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="2" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="bpart.floodlight" Type="Root" Enable="1" Id="{C1997A38-7405-43F5-95BB-CBE30435A133}" Library="miscreated">
+  <Params>
+   <Common Size="1" Perspectivefactor="0.3" DistanceFadingfactor="0.1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="255" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="1" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="floodlight.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.5" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.glow_small" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="32" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.5"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="53" Smoothness="4" Thickness="0.2" Thicknessnoise="0" Spread="0.1" Spreadnoise="0" Sizenoise="1" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="0.8" Perspectivefactor="1" DistanceFadingfactor="1.5" Brightness="0.5" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="5" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="3,0.025" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <LensGhost Texture="textures/lights/lens_flares/ghost_a_multicolor.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.chromatic ring" Type="ChromaticRing" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="2" Brightness="1" Position="0.001,0.001" Tint="0.505432,0.505432,0.505432" Tint.alpha="20" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="0"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <ChromaticRing Locktolight="1" Thickness="0.3" Polygoncomplexity="100" GradientTexture="textures/lights/lens_flares/ghost_a_multicolor.dds" EnableGradientTexture="0" Noiseseed="0" Noisestrength="0" Completionfading="20" Completionspanangle="90" Completionrotation="180"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.multi ghost" Type="Multi Ghost" Enable="1">
+   <Params>
+    <Common Size="0.2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="0.7593,0.579547,0.302126" Tint.alpha="3" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <MultiGhost Texture="textures/lights/lens_flares/ghost_a_grey.dds" Count="4" RandomSeed="8" Scatteringrange="-1.5,1" positionfactor="1,1" positionoffset="0,0" X-axisnoise="0" Y-axisnoise="0" SizeVariation="0.25" BrightnessVariation="0.184" ColorVariation="0.187"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="floodlight.orbs" Type="CameraOrbs" Enable="1">
+   <Params>
+    <Common Size="0.1" Perspectivefactor="0" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="0.505432,0.505432,0.505432" Tint.alpha="64" Orbitangle="0" OcclusionInteraction="1" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <CameraOrbs Illumrange="3" OrbTexture="textures/lights/lens_flares/circular_bokeh_blurry.dds" LensTexture="textures/lights/lens_flares/visor_scratch.dds" Enablelenstexture="1" Enablelensdetailshading="1" Lenstexturestrength="1" Lensdetailshadingstrength="0" Lensdetailbumpiness="0" Enableorbdetailshading="0"/>
+    <Generator Numberoforbs="50" Noiseseed="0" Colorvariation="0.15" Sizevariation="0.25" Rotationvariation="0"/>
+    <AdvancedShading Enableadvshading="0" AmbientDiffuse="0,0,0" AmbientDiffuse.alpha="0" Absorptance="4" Transparency="0.37" Scattering="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+ <FlareItem Name="vehicle.cargo_plane" Type="Root" Enable="1" Id="{6CAE9D51-5811-4C60-B793-4FA42A653011}" Library="miscreated">
+  <Params>
+   <Common Size="20" Perspectivefactor="1" DistanceFadingfactor="0" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="51" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+   <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+   <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+   <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+   <GlobalSettings EnableOcclusion="1" OcclusionSize="0.02,0.02" Flarefadetime="0.2" Shaftfadetime="1" Affectedbylightcolor="1" Affectedbylightradius="0" AffectedbylightFOV="0" MultiplyColor="1"/>
+   <Sensor CustomSensorVariationMap="0" EffectiveSensorSize="0.8"/>
+  </Params>
+  <FlareItem Name="cargo_plane.iris shafts0" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="2" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="0" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="70" Complexity="139" Smoothness="2" Thickness="0.2" Thicknessnoise="0" Spread="0.667" Spreadnoise="0" Sizenoise="0.278" Spacingnoise="0.417"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_plane.iris shafts" Type="IrisShafts" Enable="1">
+   <Params>
+    <Common Size="3" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="0.5" Position="1,1" Tint="1,1,1" Tint.alpha="10" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <IrisShafts Enablegradienttex="0" BaseTex="textures/lights/lens_flares/iris_shaft.dds" GradientTex="" Noiseseed="81" Complexity="32" Smoothness="2" Thickness="0.3" Thicknessnoise="0" Spread="0.2" Spreadnoise="0" Sizenoise="0.8" Spacingnoise="0.2"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_plane.ghost" Type="Ghost" Enable="1">
+   <Params>
+    <Common Size="1" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="50" Orbitangle="0" OcclusionInteraction="0" AutoRotation="0" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="0.2"/>
+    <LensGhost Texture="textures/lights/flashlight_lens_flare.dds"/>
+   </Params>
+  </FlareItem>
+  <FlareItem Name="cargo_plane.glow" Type="Glow" Enable="1">
+   <Params>
+    <Common Size="2" Perspectivefactor="1" DistanceFadingfactor="1" Brightness="1" Position="1,1" Tint="1,1,1" Tint.alpha="100" Orbitangle="0" OcclusionInteraction="0" AutoRotation="1" CorrectAspectRatio="1"/>
+    <Sensor Sensorimagesizevariationfactor="0" Sensorimagebrightnessvariationfactor="0"/>
+    <Transformation Scale="1,1" Translation="0,0" Rotation="0"/>
+    <Dynamics Enable="1" TriggerInvert="0" TriggerOffset="0,0" TriggerRange="1" TriggerFalloff="1"/>
+    <Glow Polygonfactor="35" Focusfactor="0.3" Gamma="1"/>
+   </Params>
+  </FlareItem>
+ </FlareItem>
+</LensFlareLibrary>
