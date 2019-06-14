@@ -78,10 +78,21 @@
   <Params Enabled="false"/>
   <Childs>
    <Particles Name="smoke_pillar">
-    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="180,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.082,v=1;t=0.83,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseBacklighting="0.595" EmissiveLighting="0.627" Size="100,Random=0.2,ParticleAge=(v=0.024;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="180,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.082,v=1;t=0.83,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseLighting="0.4" DiffuseBacklighting="0.715" NotAffectedByFog="true" Size="150,Random=0.2,ParticleAge=(flags=32;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
    </Particles>
    <Particles Name="smoke_close">
-    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="31,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.027,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseBacklighting="1" EmissiveLighting="0.627" Size="8,Random=0.2,ParticleAge=(v=0.137;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="31,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.027,v=1;t=1)" Color="(x=0.9911022,y=0.4735315,z=0.4735315),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseLighting="0.4" DiffuseBacklighting="0.715" NotAffectedByFog="true" Size="8,Random=0.2,ParticleAge=(v=0.137;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="airdrop.landing">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="dust">
+    <Params Count="100" ParticleLifeTime="10,Random=0.5" PositionOffset="y=-0.5" RandomOffset="x=1,z=1" OffsetRoundness="1" FocusGravityDir="true" EmitAngle="90" Texture="textures/sprites/smoke/smoke_test_diff_excl30.dds" TextureTiling="TilesX=9,TilesY=9,AnimFramesCount=81,AnimFramerate=15,AnimBlend=true" SoftParticle="true" Alpha="0.145,Random=0.252,ParticleAge=(t=0.05,v=1;t=0.353,v=0.796,flags=36;t=1)" Color="(x=0.496933,y=0.45078582,z=0.39675525),ParticleAge=(t=0.016,v=(x=0.992,y=0.792,z=0.66);t=0.07,v=(x=1,y=1,z=1))" DiffuseBacklighting="1" Size="3,Random=0.4,ParticleAge=(v=0.886;t=0.153,v=1;t=1,v=1)" Speed="50,Random=0.6" AirResistance="7,Random=0.1,ParticleAge=(v=0.91;t=1,v=1)" RandomAngles="y=360" RandomRotationRate="x=180,y=180,z=180" SortOffset="0.001"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params Count="1" EmitterLifeTime="1" StartTrigger="Play_airdrop_crate_drop"/>
    </Particles>
   </Childs>
  </Particles>

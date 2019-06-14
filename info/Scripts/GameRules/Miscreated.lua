@@ -1,9 +1,89 @@
 Script.ReloadScript("scripts/gamerules/GameRulesUtils.lua");
 
-Miscreated= {};
+Miscreated = {
+	Properties = {
+		AirDrop = {
+			fMinTime = 3600, -- min time to spawn a plane (in seconds)
+			fMaxTime = 7200, -- max time to spawn a plane (in seconds)
+		}
+	}
+}
 
 GameRulesSetStandardFuncs(Miscreated);
 
+function Miscreated.Server:OnInit()
+	self:CreateAirDropPlaneTimer()
+end
+
+----------------------------------------------------------------------------------------------------
+-- Support for the air drop planes to spawn
+----------------------------------------------------------------------------------------------------
+
+function Miscreated:CreateAirDropPlaneTimer()
+	--Log("Miscreated.CreateAirDropPlaneTimer")
+	Script.SetTimerForFunction(randomF(self.Properties.AirDrop.fMinTime*1000, self.Properties.AirDrop.fMaxTime*1000), "SpawnAirDropPlane", self)
+end
+
+SpawnAirDropPlane = function(self)
+	--Log("Miscreated:SpawnAirDropPlane")
+
+	local spawnParams = {}
+	spawnParams.class = "AirDropPlane"
+	spawnParams.name = spawnParams.class
+
+	Log("Miscreated:SpawnAirDropPlane - Spawning AirDropPlane")
+	local spawnedEntity = System.SpawnEntity(spawnParams)
+
+	if not spawnedEntity then
+		Log("Miscreated:SpawnAirDropPlane - AirDropPlane could not be spawned")
+	end
+
+	-- set timer up for the next plane
+	self:CreateAirDropPlaneTimer()
+end
+
+----------------------------------------------------------------------------------------------------
+-- Support for custom chat command mods
+----------------------------------------------------------------------------------------------------
+
+-- Table for custom chat commands to use
+ChatCommands = { }
+
+-- Load custom chat commands (mods)
+Script.LoadScriptFolder("Scripts/GameRules/ChatCommands", true, true)
+
+-- Receives all unhandled, by the core game, chat commands
+-- Do not add custom chat commands directly here
+-- Add new chat commands to a file in the Scripts/GameRules/ChatCommands folder,
+-- so they can be uploaded as mods to Steam
+function Miscreated:ChatCommand(playerId, command)
+	--Log(">> Miscreated:ChatCommand");
+
+	-- player is an entity
+	local player = System.GetEntity(playerId)
+
+	if not player.actor then
+		Log("Miscreated:ChatCommand - playerId is not a valid player")
+		return
+	end
+
+	-- Find the requested chat command and execute it
+	local index = string.find(command, " ")
+
+	if not index then
+		if ChatCommands[command] then
+			ChatCommands[command](playerId, "")
+		end
+	else
+		local cmd = string.sub(command, 1, index - 1)
+		if ChatCommands[cmd] then
+			ChatCommands[cmd](playerId, string.sub(command, index + 1))
+		end
+	end
+end
+
+----------------------------------------------------------------------------------------------------
+-- Support for custom player spawns
 ----------------------------------------------------------------------------------------------------
 
 -- See BattleRoyale.lua for a more complete example of the following 3 methods
@@ -48,45 +128,3 @@ function Miscreated:EquipPlayer(playerId)
 	end
 end
 --]]
-
--- Receives all unhandled, by the core game, chat commands
-function Miscreated:ChatCommand(playerId, command)
-	--Log(">> Miscreated:ChatCommand");
-
-	-- player is an entity
-	local player = System.GetEntity(playerId);
-
-	-- Add any custom chat commands you want here
-
-	-- Mirrors the chat command string back to the player who entered it
-	-- Usage: !mirror I'm sexy and I know it
-	-- The 4 below sends to the chat message window, 0 appears at the top of the player's screen
-	-- Replace playerId with a 0 to send to all clients
-	if (string.sub(command, 1, 8) == "!mirror ") then
---[[ Commented out, but left as an example for modders to use
-		self.game:SendTextMessage(4, playerId, string.sub(command, 9));
---]]
-	-- Spawn an item 2m in front of the player at their foot level
-	elseif (string.sub(command, 1, 7) == "!spawn ") then
---[[ Commented out, but left as an example for modders to use
-		-- Only allow the following SteamId to invoke the command
-		if (player.actor:GetSteam64Id() == "76561198082291600") then
-			local vForwardOffset = {x=0,y=0,z=0};
-			FastScaleVector(vForwardOffset, player:GetDirectionVector(), 2.0);
-
-			local vSpawnPos = {x=0,y=0,z=0};
-			FastSumVectors(vSpawnPos, vForwardOffset, player:GetWorldPos());
-
-			ISM.SpawnItem(string.sub(command, 8), vSpawnPos);
-		end
---]]
-	-- Give an item to the player
-	elseif (string.sub(command, 1, 6) == "!give ") then
---[[ Commented out, but left as an example for modders to use
-		-- Only allow the following SteamId to invoke the command
-		if (player.actor:GetSteam64Id() == "76561198082291600") then
-			local weaponId = ISM.GiveItem(playerId, string.sub(command, 7), true);
-		end
---]]
-	end
-end

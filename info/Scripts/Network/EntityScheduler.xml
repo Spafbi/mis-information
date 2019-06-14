@@ -1810,6 +1810,9 @@
 	<Class name="PackedTwoPersonTentRed" policy="obj"/>
 	<Class name="PackedTwoPersonTentYellow" policy="obj"/>
 
+	<!-- air drops -->
+	<Class name="AirDropPlane" policy="obj"/>
+	<Class name="AirDropCrate" policy="obj"/>
 
 	<!-- basic physicalized objects -->
 	<Class name="Default" policy="phys"/>

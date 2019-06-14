@@ -44,8 +44,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Harvest WoodPile
 		--------------------------------------------------
 		{
-			text = "Harvest wood",
-			fail = "No usable wood left",
+			text = "@harvest_wood",
+			fail = "@harvest_wood_failed",
 			surface = { "mat_wood_harvest" },
 			sound = "Play_pickup_wood",
 			minUses = 6, -- this is a quarter of largest wall
@@ -66,8 +66,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Harvest ScrapMetal
 		--------------------------------------------------
 		{
-			text = "Harvest metal",
-			fail = "No usable metal left",
+			text = "@harvest_scrap_metal",
+			fail = "@harvest_scrap_metal_failed",
 			surface = { "mat_metal_harvest" },
 			sound = "Play_pickup_metal",
 			minUses = 2, -- this is one basepart upgrade
@@ -86,15 +86,15 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Harvest Rocks
 		--------------------------------------------------
 		{
-			text = "Harvest rock",
-			fail = "No usable rock left",
+			text = "@harvest_rock",
+			fail = "@harvest_rock_failed",
 			surface = { "mat_rock_harvest" },
 			sound = "Play_pickup_plastic",
 			minUses = 2,
 			uses = 20,
 			minRefDiameter = 0.5, 
 			maxRefDiameter = 5,
-			regenerate = 90,
+			regenerate = 2,
 			percentage = 100,
 			spawn = "RocksAndPyrite",
 			gridsize = 2,
@@ -102,15 +102,15 @@ geigercounter:			consumable type - used for geiger counter markup
 			toolrequired = true,
 		},
 		{
-			text = "Harvest iron",
-			fail = "No usable iron left",
+			text = "@harvest_iron",
+			fail = "@harvest_iron_failed",
 			surface = { "mat_iron_harvest" },
 			sound = "Play_pickup_plastic",
 			minUses = 2,
 			uses = 40,
 			minRefDiameter = 0.5, 
 			maxRefDiameter = 5,
-			regenerate = 90,
+			regenerate = 2,
 			percentage = 100,
 			spawn = "IronAndRocks",
 			gridsize = 2,
@@ -118,15 +118,15 @@ geigercounter:			consumable type - used for geiger counter markup
 			toolrequired = true,
 		},
 		{
-			text = "Harvest coal",
-			fail = "No usable iron left",
+			text = "@harvest_coal",
+			fail = "@harvest_coal_failed",
 			surface = { "mat_coal_harvest" },
 			sound = "Play_pickup_plastic",
 			minUses = 2,
 			uses = 40,
 			minRefDiameter = 0.5, 
 			maxRefDiameter = 5,
-			regenerate = 90,
+			regenerate = 2,
 			percentage = 100,
 			spawn = "CoalAndRocks",
 			gridsize = 2,
@@ -134,15 +134,15 @@ geigercounter:			consumable type - used for geiger counter markup
 			toolrequired = true,
 		},
 		{
-			text = "Harvest pyrite",
-			fail = "No usable iron left",
+			text = "@harvest_pyrite",
+			fail = "@harvest_pyrite_failed",
 			surface = { "mat_pyrite_harvest" },
 			sound = "Play_pickup_plastic",
 			minUses = 2,
 			uses = 40,
 			minRefDiameter = 0.5, 
 			maxRefDiameter = 5,
-			regenerate = 90,
+			regenerate = 2,
 			percentage = 100,
 			spawn = "PyriteAndRocks",
 			gridsize = 2,
@@ -154,8 +154,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Water sources
 		--------------------------------------------------
 		{
-			text = "Drink dirty water",
-			fail = "Water is too contaminated",
+			text = "@drink_dirty_water",
+			fail = "@drink_water_contaminated",
 			surface = { "mat_water" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = -1,
@@ -167,8 +167,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink dirty water",
-			fail = "Not enough left",
+			text = "@drink_dirty_water",
+			fail = "@drink_water_empty",
 			surface = { "mat_puddle_water" },
 			sound = "Play_drinkStream_drink",
 			uses = 2,
@@ -182,8 +182,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink dirty water",
-			fail = "Water is too contaminated",
+			text = "@drink_dirty_water",
+			fail = "@drink_water_contaminated",
 			surface = { "mat_contaminated_water" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = -1,
@@ -195,8 +195,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink clean water",
-			fail = "Water is too contaminated",
+			text = "@drink_clean_water",
+			fail = "@drink_water_contaminated",
 			surface = { "mat_pristine_water" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = -1,
@@ -207,8 +207,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink sea water",
-			fail = "Water is too contaminated",
+			text = "@drink_sea_water",
+			fail = "@drink_water_contaminated",
 			surface = { "mat_ocean_water" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = -1,
@@ -221,8 +221,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink dirty water",
-			fail = "Water is too contaminated",
+			text = "drink_dirty_water",
+			fail = "@drink_water_contaminated",
 			surface = { "mat_irradiated_water" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = -1,
@@ -235,8 +235,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink from toilet",
-			fail = "No water left in toilet",
+			text = "@drink_from_toilet",
+			fail = "@drink_water_empty",
 			material = { "Objects/props/bathroom/toilet_parts", "Objects/props/toilet/waterbox", "Objects/props/toilet/toilet" },
 			model = { "objects/props/furniture/appliances/bathroom/abandoned_toilet_a.cgf" },
 			sound = "Play_drinkStream_drink",
@@ -252,8 +252,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			AIResponseStrCategory = "ai_actionable_critter",
 		},
 		{
-			text = "Drink from pump",
-			fail = "No water pressure left",
+			text = "@drink_from_pump",
+			fail = "@drink_water_empty",
 			model = { "Objects/props/water_pump/water_pump.cgf" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = 4,
@@ -266,8 +266,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink from hydrant",
-			fail = "No water pressure left",
+			text = "@drink_from_hydrant",
+			fail = "@drink_water_empty",
 			model = { "Objects/props/firehydrant/firehydrant.cgf" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = 1,
@@ -281,8 +281,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Grab arm",
-			fail = "This one is broken",
+			text = "@grab_arm",
+			fail = "@grab_arm_failed",
 			model = {
 				"Objects/props/shop_mannequin/male_arm_right.cgf",
 				"Objects/props/shop_mannequin/female_arm_right.cgf",
@@ -295,8 +295,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			forceinteraction = true,
 		},
 		{
-			text = "Drink dirty water",
-			fail = "No water left",
+			text = "@drink_dirty_water",
+			fail = "@drink_water_empty",
 			model = {
 				"Objects/props/residential_assets/kitchen_set/kitchenset_sink_corner.cgf",
 				"Objects/props/residential_assets/kitchen_set/kitchenset_sink.cgf",
@@ -327,8 +327,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			AIResponseStrCategory = "ai_actionable_critter",
 		},
 		{
-			text = "Drink leftover",
-			fail = "No water left",
+			text = "@drink_from_dispenser",
+			fail = "@drink_water_empty",
 			model = {
 				"Objects/props/hospital/hospital_water_dispenser_bottle.cgf",
 				"Objects/props/hospital/hospital_water_dispenser.cgf",
@@ -345,8 +345,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink from container",
-			fail = "No water left in container",
+			text = "@drink_from_container",
+			fail = "@drink_water_empty",
 			model = { "Objects/props/ibc_container/ibc_container.cgf" },
 			sound = "Play_drinkStream_waterScoop",
 			uses = 5,
@@ -359,8 +359,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			swim = 0,
 		},
 		{
-			text = "Drink from pump",
-			fail = "No pressure left",
+			text = "@drink_from_pump",
+			fail = "@drink_water_empty",
 			model = { "objects/props/restaurant_props/bar_pump/bar_pump.cgf" },
 			sound = "Play_drinkStream_drink",
 			uses = 2,
@@ -372,8 +372,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			torpidityAmount = 25,
 		},
 		{
-			text = "Suck on pump",
-			fail = "No pressure left",
+			text = "@drink_from_pump",
+			fail = "@drink_water_empty",
 			model = { 
 				"Objects/props/gasPump/gasPump.cgf",
 				"Objects/props/misc/old_gas_pump/old_gas_pump_01.cgf",
@@ -390,8 +390,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			poisonChance = 50,
 		},
 		{
-			text = "Siphon fuel",
-			fail = "Nothing left",
+			text = "@siphon_fuel",
+			fail = "@siphon_fuel_failed",
 			model = { 
 				"Objects/props/industrial/tanks/oil_tank/oil_tank_a.cgf",
 				"Objects/props/industrial/tanks/oil_tank/oil_tank_b.cgf",
@@ -408,8 +408,8 @@ geigercounter:			consumable type - used for geiger counter markup
 			poisonChance = 10,
 		},
 		{
-			text = "Suck on valve",
-			fail = "No pressure left",
+			text = "@drink_from_valve",
+			fail = "@drink_water_empty",
 			model = { 
 				"Objects/props/Nitrogen_Tank/nitrogentank_red.cgf",
 			},
@@ -428,8 +428,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Stick sources
 		--------------------------------------------------
 		{
-			text = "Search bush",
-			fail = "Nothing found",
+			text = "@search_bush",
+			fail = "@nothing_was_found",
 			material = {
 				"objects/natural/bushes/cliffbush/cliff_bush_green", 
 				"objects/natural/bushes/cliffbush/cliff_bush_yellow" 
@@ -455,8 +455,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Drink Vending machine
 		--------------------------------------------------
 		{
-			text = "Search vending machine",
-			fail = "Vending machine is empty",
+			text = "@search_vending_machine",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/vendingmachine/vendingmachine.cgf",
 				"objects/props/misc/vending_machine/vending_machine.cgf",
@@ -476,8 +476,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Electrical parts
 		--------------------------------------------------
 		{
-			text = "Salvage electronics",
-			fail = "Nothing left to salvage",
+			text = "@salvage_electronics",
+			fail = "@salvage_failed",
 			model = {
 				"objects/props/brokentv/brokentv.cgf",
 				"objects/props/furniture/computer/computer.cgf",
@@ -532,8 +532,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Registers
 		--------------------------------------------------
 		{
-			text = "Search for amCoins",
-			fail = "Nothing there",
+			text = "@search_amcoins",
+			fail = "@nothing_was_found",
 			model = { 
 				"Objects/props/diner_assets/cash_register/cash_register.cgf",
 				"Objects/props/cash_register/cash_register.cgf",
@@ -553,8 +553,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hiding Place (Small)
 		--------------------------------------------------
 		{
-			text = "Check hiding place",
-			fail = "Nothing there",
+			text = "@search_hiding_spot",
+			fail = "@nothing_was_found",
 			model = { 
 				"Objects/props/residential_assets/toys/toy_bunny.cgf",
 				"Objects/props/clock/wallclock_2.cgf",
@@ -787,8 +787,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hiding Place (Medium)
 		--------------------------------------------------
 		{
-			text = "Check hiding place",
-			fail = "Nothing there",
+			text = "@search_hiding_spot",
+			fail = "@nothing_was_found",
 			model = { 
 				"Objects/props/residential_assets/books/book_set_a.cgf",
 				"Objects/props/residential_assets/books/book_set_b.cgf",
@@ -845,8 +845,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Very good seed source (bunker platers)
 		--------------------------------------------------
 		{
-			text = "Collect seeds",
-			fail = "No seeds left",
+			text = "@collect_seeds",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/city_planter/plant_tray.cgf",
 				},
@@ -861,8 +861,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Tire / Wheels
 		--------------------------------------------------
 		{
-			text = "Search wheel",
-			fail = "No usable wheel left",
+			text = "@search_wheel",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/tire/tire_pile/tire_pile001.cgf",
 				"Objects/props/tire/tire_pile/tire_pile002.cgf",
@@ -879,8 +879,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Rope
 		--------------------------------------------------
 		{
-			text = "Salvage rope",
-			fail = "Nothing left to salvage",
+			text = "@salvage_rope",
+			fail = "@salvage_failed",
 			model = {
 				"objects/props/maritime/fishing_net/fishing_net.cgf",
 				"Objects/props/maritime/fisher_boat/lifebelt_rope.cgf",
@@ -899,8 +899,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Nails / Tools
 		--------------------------------------------------
 		{
-			text = "Salvage tools",
-			fail = "Nothing left to salvage",
+			text = "@salvage_tools",
+			fail = "@salvage_failed",
 			model = {
 				"objects/props/tool_box_large/toolbox_large_closed.cgf",
 				"objects/props/tool_box_large/toolbox_large.cgf",
@@ -921,8 +921,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Rocks
 		--------------------------------------------------
 		{
-			text = "Search for rocks",
-			fail = "No usable rocks found",
+			text = "@search_rocks",
+			fail = "@nothing_was_found",
 			surface = { "mat_gravel" },
 			model = {
 				"objects/props/fishing_camp/campfire_burned.cgf",
@@ -949,8 +949,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Wood
 		--------------------------------------------------
 		{
-			text = "Grab wood",
-			fail = "No usable wood found",
+			text = "@search_wood",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/natural/groundwood/groundwood_01.cgf",
 				"objects/natural/groundwood/groundwood_02.cgf",
@@ -977,8 +977,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Lumber
 		--------------------------------------------------
 		{
-			text = "Tear off lumber",
-			fail = "No usable lumber found",
+			text = "@tear_off_lumber",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/woodpalette/woodpalette.cgf",
 				"objects/props/wooden_pallet/wooden_pallet.cgf",
@@ -1008,8 +1008,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Rags
 		--------------------------------------------------
 		{
-			text = "Tear off rags",
-			fail = "No usable rags left",
+			text = "@tear_off_rags",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/campground/sleepingbag_a.cgf",
 				"objects/props/campground/sleepingbag_b.cgf",
@@ -1053,8 +1053,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Barbed wire
 		--------------------------------------------------
 		{
-			text = "Tear off barbed wire",
-			fail = "No usable barbed wire left",
+			text = "@tear_off_barbed_wire",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/architecture/fences/barbwire_fence/barbwire_fence_16m.cgf",
 				"objects/architecture/fences/barbwire_fence/barbwire_fence_2m.cgf",
@@ -1089,8 +1089,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Tarp
 		--------------------------------------------------
 		{
-			text = "Tear off tarp",
-			fail = "No usable tarp left",
+			text = "@tear_off_tarp",
+			fail = "@nothing_usable_was_found",
 			material = {
 				"Objects/props/Tarp/hb_tarp/tarp_plastic_single_blue_01.cgf",
 				"Objects/props/Tarp/hb_tarp/tarp_plastic_single_blue_ground_002.cgf",
@@ -1151,8 +1151,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Sandbags
 		--------------------------------------------------
 		{
-			text = "Search for sandbags",
-			fail = "No usable sandbag left",
+			text = "@search_sandbags",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/sandbags/sandbag_10.cgf",
 				"objects/props/sandbags/sandbag_5.cgf",
@@ -1174,8 +1174,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Trash / Mailbox
 		--------------------------------------------------
 		{
-			text = "Search trash",
-			fail = "Nothing of worth found",
+			text = "@search_trash",
+			fail = "@nothing_usable_was_found",
 			model = {
 				-- mail
 				"objects/props/usmailbox/usmailbox.cgf",
@@ -1280,8 +1280,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Commercial crate
 		--------------------------------------------------
 		{
-			text = "Search box",
-			fail = "Box is empty",
+			text = "@search_box",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/storage/crates/wood_crate_medium.cgf",
 				"objects/props/storage/crates/wood_crate_long.cgf",
@@ -1302,8 +1302,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Normal locker
 		--------------------------------------------------
 		{
-			text = "Search locker",
-			fail = "Locker is empty",
+			text = "@search_locker",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/locker/lockerwhole.cgf",
 			},
@@ -1321,8 +1321,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Switchbox/Computer (Industrial)
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing useful found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/industrial/switchboard/switchboard_01.cgf",
 				"Objects/props/industrial/switchboard/switchboard_02.cgf",
@@ -1343,8 +1343,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Sink stuff
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/Restaurant_equipment/sink_dishwasher/under_bar_sink.cgf",
 				"Objects/props/cabinets/46_lowersink_a.cgf",
@@ -1366,8 +1366,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Desk stuff
 		--------------------------------------------------
 		{
-			text = "Search desk",
-			fail = "Nothing found",
+			text = "@search_desk",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/CoffeeTable_v2/coffeetable_v2.cgf",
 				"Objects/props/CoffeeTable_v2/coffeetable_nobase_v2.cgf",
@@ -1389,8 +1389,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Kitchen stuff
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/diner_assets/diner_furniture/diner_metaldesk.cgf",
 				"Objects/props/kitchen_cabinets/kitchen_cabinet_3.cgf",
@@ -1439,8 +1439,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Office stuff
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/Cabinet/cabinet_Opening3_4.cgf",
 				"Objects/props/Cabinet/cabinet_Cloed.cgf",
@@ -1465,8 +1465,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Office stuff (merged stuff shelfs)
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/office_shelfs/metal_shelf_stuff01.cgf",
 				"Objects/props/office_shelfs/metal_shelf_stuff02.cgf",
@@ -1496,8 +1496,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Living area stuff
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/lakewood/lakewood_dresser_a.cgf",
 				"Objects/props/lakewood/lakewood_hutch_a.cgf",
@@ -1528,8 +1528,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff big
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/hospital/hospital_reception/hospital_supplycabinet_closed.cgf",
 			},
@@ -1547,8 +1547,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff medium
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/hospital/hospital_furniture/hospital_medicalcabinet_open.cgf",
 				"Objects/props/hospital/hospital_furniture/hospital_medicalcabinet_01.cgf",
@@ -1571,8 +1571,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff small
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/hospital/hospital_electrical/hospital_incubator_01a.cgf",
 				"Objects/props/hospital/hospital_furniture/hospital_drugcart_full.cgf",
@@ -1590,8 +1590,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff medical
 		--------------------------------------------------
 		{
-			text = "Search medical supplies",
-			fail = "Nothing useful found",
+			text = "@search_medical_supplies",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"Objects/props/hospital/hospital_reception/hospital_tub_double_shelf_full.cgf",
 				"Objects/props/hospital/hospital_reception/hospital_tub_shelf_full.cgf",
@@ -1617,8 +1617,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff bandage
 		--------------------------------------------------
 		{
-			text = "Search medical supplies",
-			fail = "Nothing useful found",
+			text = "@search_medical_supplies",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"Objects/props/hospital/hospital_accessories/hospital_utilities_01r.cgf",
 				"Objects/props/hospital/hospital_accessories/hospital_utilities_01s.cgf",
@@ -1638,7 +1638,7 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Hospital stuff syringes
 		--------------------------------------------------
 		{
-			text = "Search medical supplies",
+			text = "@search_medical_supplies",
 			fail = "Nothing usable left",
 			model = {
 				"Objects/props/hospital/hospital_accessories/hospital_needledeposit_01a.cgf",
@@ -1659,8 +1659,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Stoves
 		--------------------------------------------------
 		{
-			text = "Search food",
-			fail = "Nothing found",
+			text = "@search_food",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/elecStove/elecStove.cgf",
 				"Objects/props/furniture/appliances/gas_stove/gas_stove.cgf",
@@ -1683,8 +1683,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Fridge
 		--------------------------------------------------
 		{
-			text = "Search",
-			fail = "Nothing found",
+			text = "@search_food",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/furniture/appliances/fridge/fridge_a.cgf",
 				"Objects/props/furniture/appliances/fridge/fridge_b.cgf",
@@ -1711,8 +1711,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Washing Machine / Dryer
 		--------------------------------------------------
 		{
-			text = "Search clothes",
-			fail = "No usable clothes found",
+			text = "@search_clothes",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/bathroom/Washing_Machine.cgf",
 				"Objects/props/laundry_assets/topwasher_open.cgf",
@@ -1738,8 +1738,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Suitcase / Bodybag
 		--------------------------------------------------
 		{
-			text = "Search clothes",
-			fail = "No usable clothes found",
+			text = "@search_clothes",
+			fail = "@nothing_was_found",
 			model = {
 				"Objects/props/suitcase/suitcase.cgf",
 				"Objects/props/suitcase_colored/suitcase_black_open.cgf",
@@ -1767,8 +1767,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Map
 		--------------------------------------------------
 		{
-			text = "Get map",
-			fail = "No map left",
+			text = "@get_map",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/mapsign/mapsign.cgf",
 			},
@@ -1783,8 +1783,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Military box
 		--------------------------------------------------
 		{
-			text = "Search foot locker",
-			fail = "Foot locker is empty",
+			text = "@search_foot_locker",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/storage/footlocker/footlocker.cgf",
 				"objects/props/ammocrate/ammocrate.cgf",
@@ -1803,8 +1803,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Military box iron sons
 		--------------------------------------------------
 		{
-			text = "Search Iron Sons cache",
-			fail = "Cache is empty",
+			text = "@search_iron_sons_cache",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/storage/footlocker/footlocker_iron_sons.cgf",
 			},
@@ -1822,8 +1822,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Military field desk
 		--------------------------------------------------
 		{
-			text = "Search field desk",
-			fail = "Field desk is empty",
+			text = "@search_desk",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/Military_desk/military_desk.cgf",
 			},
@@ -1842,8 +1842,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Food sources
 		--------------------------------------------------
 		{
-			text = "Search box",
-			fail = "Box is empty",
+			text = "@search_box",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/cabinassets/tackle.cgf",
 				"objects/props/plastic_storage_containers/plastic_container_1.cgf",
@@ -1862,8 +1862,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Beehives
 		--------------------------------------------------
 		{
-			text = "Search beehive",
-			fail = "Nothing to harvest",
+			text = "@search_beehive",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/bee_hive/manmade_beehive_4stack_large.cgf",
 				"objects/props/bee_hive/manmade_beehive_4stack_small.cgf",
@@ -1888,8 +1888,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Sheet metal source
 		--------------------------------------------------
 		{
-			text = "Search junk",
-			fail = "Nothing usable left",
+			text = "@search_junk",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/junkpile/junkpile.cgf",
 			},
@@ -1906,8 +1906,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Scrap metal source
 		--------------------------------------------------
 		{
-			text = "Search junk",
-			fail = "Nothing usable left",
+			text = "@search_junk",
+			fail = "@nothing_usable_was_found",
 			model = {
 				"objects/props/industrial/junk/junk_pile/junk_a.cgf", -- those also have some lumber in them so maybe ism category with lumber
 				"objects/props/industrial/junk/junk_pile/junk_b.cgf", -- those also have some lumber in them so maybe ism category with lumber
@@ -1943,8 +1943,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Ammo or small items
 		--------------------------------------------------
 		{
-			text = "Search cranny",
-			fail = "Nothing found",
+			text = "@search_cranny",
+			fail = "@nothing_was_found",
 			model = {
 				"objects/props/furniture/smallcouch/smallcouch.cgf",
 				"objects/props/furniture/couch/couch.cgf",
@@ -1987,8 +1987,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Berries
 		--------------------------------------------------
 		{
-			text = "Pick berries",
-			fail = "No ripe berries left",
+			text = "@pick_berries",
+			fail = "@nothing_usable_was_found",
 			material = { "objects/props/berry_bush/berry_bush", },
 			model = { "Objects/props/berry_bush/berry_bush.cgf", "Objects/props/berry_bush/berry_bush_tall.cgf", },
 			sound = "Play_bush_movement_dry_large",
@@ -2006,8 +2006,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		-- Apples
 		--------------------------------------------------
 		{
-			text = "Pick apples",
-			fail = "No ripe apples left",
+			text = "@pick_apples",
+			fail = "@nothing_usable_was_found",
 			material = { "objects/props/apple_tree/apple_tree", },
 			model = { 
 				"objects/props/apple_tree/apple_tree_1.cgf",
@@ -2026,8 +2026,8 @@ geigercounter:			consumable type - used for geiger counter markup
 
 		-- seaweed
 		{
-			text = "Harvest Seaweed",
-			fail = "Nothing Edible Left",
+			text = "@harvest_seaweed",
+			fail = "@nothing_usable_was_found",
 			model = { 
 				"objects/props/seaweed/seaweed_1.cgf",
 				"objects/props/seaweed/seaweed_2.cgf",
@@ -2051,8 +2051,8 @@ geigercounter:			consumable type - used for geiger counter markup
 		
 		-- clams (on beaches)
 		{
-			text = "Harvest Clams",
-			fail = "Nothing Edible Left",
+			text = "@harvest_clams",
+			fail = "@nothing_usable_was_found",
 			model = { 
 				"objects/consumables/clams/clam_bunch.cgf",
 			},

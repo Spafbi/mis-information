@@ -358,65 +358,21 @@ AISpawnerManager = {
 		},
 
 		-- --------------------------------------------------------------------
-		-- ROUNDROBIN SPAWNER MANAGER
+		-- TESTING
 		-- --------------------------------------------------------------------
 
-		-- {
-			-- category = "RRAI_HumanZombie",
-			-- classes =
-			-- {
-				-- { category = "HumanZombieSingle", percent = 100	},
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_TwoHeadDog",
-			-- classes =
-			-- {
-				-- { category = "twoheaddog", percent = 100 },
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_Bear",
-			-- classes =
-			-- {
-				-- { category = "Bear", percent = 100	},
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_HumanSpider",
-			-- classes =
-			-- {
-				-- { category = "HumanSpiderSingle", percent = 100 ),
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_Brute",
-			-- classes =
-			-- {
-				-- { category = "BruteMutantSingle", percent = 100 ),
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_BruteArmored",
-			-- classes =
-			-- {
-				-- { category = "BruteMutantArmored", percent = 100 ),
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_Crazy",
-			-- classes =
-			-- {
-				-- { category = "CrazySingle", percent = 100 ),
-			-- },
-		-- },
-		-- {
-			-- category = "RRAI_Spiker",
-			-- classes =
-			-- {
-				-- { category = "SpikerSingle", percent = 100 ),
-			-- },
-		-- },
+		{
+			category = "test_group",
+			min = 5, max = 7,
+			classes = 
+			{
+				{ category = "CrazySingle", percent = 45 },
+				{ category = "SpikerSingle", percent = 30 },
+				{ category = "HumanZombieSingle", percent = 20 },
+				{ category = "BruteMutantSingle", percent = 5 },
+			},
+		},
+
 		-- --------------------------------------------------------------------
 		-- TEST SPAWNERS
 		-- --------------------------------------------------------------------

@@ -5,6 +5,7 @@
 		<param name="itemClass" value="1hmelee"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="10"/>
 		<param name="bleed_percent" value="0"/>
 		<param name="select_delayed_grab_3P" value="1"/>
 		<param name="select_override" value="0.1"/> <!-- Delay after selecting to prevent insta-use -->
