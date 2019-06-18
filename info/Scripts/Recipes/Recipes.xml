@@ -74,19 +74,19 @@
 					
 					<subcat name="Ammo">
 						<items>
-							<item class="Pile_9mm" time="5" amount="5">
+							<item class="Pile_9mm" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="10"/>
 									<material class="SheetMetal" count="1"/>
 								</materials>
 							</item>
-							<item class="Pile_556x45" time="5" amount="5">
+							<item class="Pile_556x45" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="20"/>
 								    <material class="SheetMetal" count="2"/>
 								</materials>
 							</item>
-							<item class="Pile_12GaugePellet" time="5" amount="5">
+							<item class="Pile_12GaugePellet" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="15"/>
 								    <material class="SheetMetal" count="1"/>
@@ -988,7 +988,7 @@
 								<items>
 									<item class="SheetMetal" time="0.5">
 										<materials>
-											<material class="IronIngot" count="4" />
+											<material class="IronIngot" count="2" />
 										</materials>
 									</item>
 									<item class="PipeMetal" time="1">
@@ -998,7 +998,7 @@
 									</item>
 									<item class="Nails" time="1" amount="16">
 										<materials>
-											<material class="IronIngot" count="2" />
+											<material class="IronIngot" count="1" />
 										</materials>
 									</item>
 								</items>
@@ -1924,7 +1924,7 @@
 					 
 					<subcat name="Ammo">
 						<items>
-							<item class="Pile_9mm" time="5" amount="5">
+							<item class="Pile_9mm" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="10"/>
 									<material class="SheetMetal" count="1"/>
@@ -3356,7 +3356,7 @@
 				<subcats>
 					<subcat name="Ammo">
 						<items>
-							<item class="Pile_556x45" time="5" amount="5">
+							<item class="Pile_556x45" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="20"/>
 								    <material class="SheetMetal" count="2"/>
@@ -3412,7 +3412,7 @@
 				<subcats>
 					<subcat name="Ammo">
 						<items>
-							<item class="Pile_12GaugePellet" time="5" amount="5">
+							<item class="Pile_12GaugePellet" time="5" amount="10">
 								<materials>
 									<material class="Gunpowder" count="15"/>
 								    <material class="SheetMetal" count="1"/>
@@ -3485,7 +3485,7 @@
 					
 					<subcat name="Components">
 						<items>
-							<item class="C4Bricks" time="10" amount="1">
+							<item class="C4Bricks" time="2" amount="1">
 								<materials>
 									<material class="Gunpowder" count="64"/>
 								    <material class="Sulphur" count="12"/>
