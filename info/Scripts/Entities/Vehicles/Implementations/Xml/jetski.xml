@@ -1,15 +1,18 @@
 <Vehicle name="jetski" actionMap="jetski_driver">
+
 	<Physics damping="0.05" pushable="1" shove_force="1">
 		<Buoyancy waterDensity="250" waterResistance="1500" waterDamping="0"/>
 		<Simulation maxTimeStep="0.02" minEnergy="0.16" maxLoggedCollisions="2"/>
 	</Physics>
+
 	<Damages collDamageThreshold="50">
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
 			<DamageMultiplier damageType="collision" multiplier="2.0"/> <!-- Full speed collision = ~10% damage -->
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="explosion" multiplier="6" splash="1.0"/>
 			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
 			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
 			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
@@ -26,6 +29,7 @@
 			</DamagesGroup>
 		</DamagesGroups>
 	</Damages>
+
 	<Components>
 		<Component name="hull" damageMax="1000" major="1" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
 			<DamageBehaviors> <!-- Four damage levels, 25%, 50%, 75% and 100% (destroyed) -->
@@ -53,6 +57,7 @@
 			<DamageBehaviors />
 		</Component>
 	</Components>
+
 	<Parts>
 		<Part name="hull" class="Animated" component="hull">
 			<Parts>
@@ -76,6 +81,7 @@
 			<MassBox size="0.5,1.5,1"/>
 		</Part>
 	</Parts>
+
 	<Helpers>
 		<Helper name="passenger_exit_01" position="1.5,0,0.5" direction="0,0,1" part="hull"/>
 		<Helper name="passenger_exit_02" position="-1.5,0,0.5" direction="0,0,1" part="hull"/>
@@ -89,6 +95,7 @@
 		<Helper name="centerPos" position="0,0,0" direction="0,1,0" part="hull"/>
 		<Helper name="propellerPos" position="0,-1.55,0.175" direction="0,0,1" part="hull"/>
 	</Helpers>
+
 	<Actions>
 		<Action class="Enter">
 			<Activations>
@@ -102,6 +109,7 @@
 			</Enter>
 		</Action>
 	</Actions>
+
 	<Seats>
 		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" isPassengerExposed="1" ragdollOnDeath="1" seatGroupIndex="1" actionMap="vehicle_driver">
 			<Views>
@@ -143,6 +151,7 @@
 			<SeatActions />
 		</Seat>
 	</Seats>
+
 	<MovementParams>
 		<!-- turnVelocityMult: Velocity-dependent multiplier for turn momentum -->
 		<!-- turnAccelMultiplier: Multiplier for turning to opposite of current turning direction -->
@@ -172,6 +181,7 @@
 			<Boost endurance="0" regeneration="0" strength="0" />
 		</StdBoat>
 	</MovementParams>
+
 	<Particles mfxRow="vfx_small_boat">
 		<Exhaust insideWater="1" outsideWater="0">
 			<Helpers>
@@ -214,5 +224,7 @@
 			</EnvironmentLayer>
 		</EnvironmentLayers>
 	</Particles>
-	<Mannequin tag="jetski" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/jetskiAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+
+	<Mannequin tag="jetski" vehicleADB="Animations/Mannequin/ADB/jetskiAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
 </Vehicle>

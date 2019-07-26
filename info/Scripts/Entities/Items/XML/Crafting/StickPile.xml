@@ -25,7 +25,7 @@
 			<use>
 				<param name="title" value="@StickPileAddFuel"/>
 				<param name="action" value="wood_item"/>
-				<param name="param" value="0.5"/> <!-- burn time in minutes -->
+				<param name="param" value="0.15"/> <!-- burn time in minutes -->
 				<param name="soundUsed" value="Play_wood_use"/>
 				<param name="targetClassNames" value="dws_grill2;dws_firepit_outdoors_1;dws_firepit_outdoors_2;water_purifier;dws_cabinStove;Campfire;stone_furnace;stone_fireplace"/>
 			</use>

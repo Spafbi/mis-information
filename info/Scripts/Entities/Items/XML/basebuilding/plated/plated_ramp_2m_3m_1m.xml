@@ -14,7 +14,7 @@
 		<damage_multipliers>
 			<damage_multiplier damage_type="collision" multiplier="0.1"/>
 			<damage_multiplier damage_type="explosion" multiplier="15.0"/>
-			<damage_multiplier damage_type="frag" multiplier="4"/>
+			<damage_multiplier damage_type="frag" multiplier="6"/>
 			<damage_multiplier damage_type="fire" multiplier="1.0"/>
 			<damage_multiplier damage_type="melee" multiplier="0.0"/>
 			<damage_multiplier damage_type="repair" multiplier="0.0"/>

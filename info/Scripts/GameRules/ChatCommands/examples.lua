@@ -62,7 +62,7 @@ ChatCommands["!give"] = function(playerId, command)
   -- allowCommand = allowCommand or 4 == player.actor:GetFaction() -- faction 0 to 7 (same numbering as cvars)
   
 	if allowCommand then
-		local weaponId = ISM.GiveItem(playerId, command, true)
+		local weapon = ISM.GiveItem(playerId, command, true)
 	end
 end
 

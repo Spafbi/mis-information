@@ -1,4 +1,5 @@
 <Vehicle name="sedan_taxi_engoa">
+
 	<Physics pushable="0" shove_force="0.5">
 		<Buoyancy waterDensity="50" waterResistance="2000" waterDamping="100"/>
 		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
@@ -8,9 +9,10 @@
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
 			<DamageMultiplier damageType="collision" multiplier="2.0"/> <!-- Full speed collision = ~10% damage -->
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
 			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
 			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
 			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
@@ -473,7 +475,8 @@
 		</EnvironmentLayers>
 	</Particles>
 
-	<Mannequin tag="sedan" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/sedanAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
-	<Paints />
-	<Modifications />
+	<Mannequin tag="sedan" vehicleADB="Animations/Mannequin/ADB/sedanAnims.adb" 
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints/>
+	<Modifications/>
 </Vehicle>

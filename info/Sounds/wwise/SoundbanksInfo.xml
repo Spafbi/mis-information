@@ -1544,6 +1544,7 @@
 				<Event Id="3381169294" Name="Play_luggage_vehicle_start"/>
 				<Event Id="4218932462" Name="Play_luggage_vehicle_stop"/>
 				<Event Id="3212461393" Name="Play_police_car_siren"/>
+				<Event Id="3474444718" Name="Play_prop_plane"/>
 				<Event Id="4181871431" Name="Play_sedan_bump_on_road"/>
 				<Event Id="806264197" Name="Play_sedan_damage"/>
 				<Event Id="3678829757" Name="Play_sedan_horn"/>
@@ -1574,6 +1575,7 @@
 				<Event Id="112780411" Name="Stop_luggage_vehicle_damage"/>
 				<Event Id="1447015899" Name="Stop_luggage_vehicle_horn"/>
 				<Event Id="693849499" Name="Stop_police_car_siren"/>
+				<Event Id="4261242012" Name="Stop_prop_plane"/>
 				<Event Id="2247704891" Name="Stop_sedan_damage"/>
 				<Event Id="471614875" Name="Stop_sedan_horn"/>
 				<Event Id="2552248903" Name="Stop_tractor_damage"/>
@@ -1776,6 +1778,10 @@
 					<ShortName>veh_boat_splash_med2.wav</ShortName>
 					<Path>SFX\veh_boat_splash_med2_9E69E797.wem</Path>
 				</File>
+				<File Id="215774881" Language="SFX">
+					<ShortName>propPlane_engine_run.wav</ShortName>
+					<Path>SFX\propPlane_engine_run_EE79F7FB.wem</Path>
+				</File>
 				<File Id="219458409" Language="SFX">
 					<ShortName>veh_dirtbike_engine_run_med.wav</ShortName>
 					<Path>SFX\veh_dirtbike_engine_run_med_4B8CC0C5.wem</Path>
@@ -1927,6 +1933,10 @@
 				<File Id="458796678" Language="SFX">
 					<ShortName>veh_bike_junk4.wav</ShortName>
 					<Path>SFX\veh_bike_junk4_E843A46D.wem</Path>
+				</File>
+				<File Id="463037320" Language="SFX">
+					<ShortName>propPlane_engine_run_distant.wav</ShortName>
+					<Path>SFX\propPlane_engine_run_distant_EE79F7FB.wem</Path>
 				</File>
 				<File Id="463789046" Language="SFX">
 					<ShortName>veh_generic_tires_light_slip3.wav</ShortName>
@@ -2251,6 +2261,10 @@
 				<File Id="1017453639" Language="SFX">
 					<ShortName>veh_bike_coast_slow.wav</ShortName>
 					<Path>SFX\veh_bike_coast_slow_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1021685338" Language="SFX">
+					<ShortName>propPlane_engine_rattle.wav</ShortName>
+					<Path>SFX\propPlane_engine_rattle_EE79F7FB.wem</Path>
 				</File>
 				<File Id="1029502030" Language="SFX">
 					<ShortName>veh_boat_water_loop_low.wav</ShortName>

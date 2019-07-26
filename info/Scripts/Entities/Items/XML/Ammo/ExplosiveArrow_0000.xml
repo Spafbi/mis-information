@@ -1,0 +1,74 @@
+<ammo name="ExplosiveArrow_0000" class="Grenade">
+	<geometry>
+		<firstperson name="Objects/ammo/arrow/explosive_arrow_onground.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+	
+	<whiz>
+		<param name="sound" value="Play_bullet_whiz" />
+		<param name="distance" value="10.0" />
+	</whiz>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="35" />
+		<param name="min_bounce_speed" value="0.5" />
+		<param name="air_resistance" value="0.0025" />
+		<param name="water_resistance" value="10.0" />
+		<param name="gravity" value="0, 0, -9.81" />
+		<param name="water_gravity" value="0, 0, -9.81" />
+		<param name="single_contact" value="0" />
+		<param name="traceable" value="1" />
+		<param name="material" value="mat_wood" />
+		<param name="pierceability" value="14" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="1000" />
+		<param name="torpidity" value="10" />
+		<param name="stamina" value="15" />
+		<param name="min_radius" value="2" />
+		<param name="max_radius" value="8" />
+		<param name="min_phys_radius" value="3" />
+		<param name="max_phys_radius" value="8" />
+		<param name="sound_radius" value="150" />
+		<param name="hole_size" value="2" />
+		<param name="terrain_hole_size" value="3" />
+		<param name="radialblurdist" value="30" />
+		<param name="type" value="frag" />
+	</explosion>
+
+	<params>
+		<param name="damage" value="150"/>
+		<param name="lifetime" value="5.0" /> <!-- Will detonate in 5s after being thrown -->
+		<param name="showtime" value="0" /> <!-- dont wait before showing the arrow -->
+		<param name="bleed_percent" value="33" />
+		<param name="fire_percent" value="0" />
+		<param name="poison_percent" value="0" />
+		<param name="irradiate_percent" value="0" />
+		<param name="hit_type" value="arrow" />
+		<param name="aitype" value="grenade" />
+		<param name="bulletType" value="6" /> <!-- arrow, see BasicActor.lua - death_impulses -->
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0" /> <!-- Don't decrease time to detonate just because it hit a surface -->
+		<param name="detonateOnImpact" value="1" />
+		<param name="detonateOnActorImpact" value="0" />
+		<param name="allowDetonationDelay" value="1" />
+	</grenade>
+	
+	<trail>
+		<param name="effect_owneronly" value="weapon_fx.arrow.trail_burning" />
+		<param name="prime" value="false" />
+	</trail>
+
+	<trailUnderWater>
+		<param name="effect" value="water.bubbles.bullets" />
+		<param name="prime" value="false" />
+	</trailUnderWater>
+</ammo>

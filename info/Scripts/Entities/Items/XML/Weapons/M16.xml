@@ -190,17 +190,17 @@
 				<param name="end_decay_mod" value="0.95"/>
 				<param name="maxx_mod" value="0.75"/>
 				<param name="maxy_mod" value="0.75"/>
-				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
-				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="2.0"/> <!-- Higher number = less recoil -->
 				<param name="recoil_jump_m_mod" value="1.0"/>
-				<param name="recoil_holdBreathActive_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
 		</zoommode>
 
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
-					<stage value="1.33" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
 				</stages>
 				<param name="suffix" value="iron"/>
 				<param name="suffixAG" value="_iron"/>
@@ -335,10 +335,10 @@
 				<param name="end_decay_mod" value="0.95"/>
 				<param name="maxx_mod" value="0.3"/>
 				<param name="maxy_mod" value="0.3"/>
-				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
-				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="2.0"/> <!-- Higher number = less recoil -->
 				<param name="recoil_jump_m_mod" value="1.0"/>
-				<param name="recoil_holdBreathActive_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
 			<scope>
 				<param name="dark_in_time" value="0"/> <!-- Time (in seconds) taken to switch to Aux1 scope model when initiating zoom -->

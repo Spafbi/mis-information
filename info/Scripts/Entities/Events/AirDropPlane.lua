@@ -57,6 +57,6 @@ function AirDropPlane:OnShutDown()
 end
 
 -- Called when the crate is dropped
-function AirDropPlane:OnCrateDropped()
+--function AirDropPlane:OnCrateDropped()
 	--Log("AirDropPlane - OnCrateDropped")
-end
+--end

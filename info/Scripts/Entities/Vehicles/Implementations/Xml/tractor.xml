@@ -8,9 +8,11 @@
 	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="50">
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
-			<DamageMultiplier damageType="collision" multiplier="0.05"/>
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="collision" multiplier="0.1"/> <!-- TODO -->
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
 			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
 			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
@@ -351,8 +353,8 @@
 		</DamageEffects>
 		<EnvironmentLayers>
 			<EnvironmentLayer 
-					minSpeed="5" minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" 
-					maxSpeed="15" maxSpeedSizeScale="1.0"  maxSpeedCountScale="2.0"  maxSpeedSpeedScale="1.0" >
+					minSpeed="5"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" 
+					maxSpeed="15" maxSpeedSizeScale="1.0"  maxSpeedCountScale="2.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels>
@@ -380,12 +382,16 @@
 					</WheelGroups>
 				</Wheels>
 			</EnvironmentLayer>
-			<!--<EnvironmentLayer name="slip" minSpeed="0.5" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+			<!--<EnvironmentLayer name="slip" 
+					minSpeed="5" minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
+					maxSpeed="12"  maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
-			<EnvironmentLayer name="rims" minSpeed="3" minSpeedSizeScale="0.25" minSpeedCountScale="1" maxSpeed="10" maxSpeedSizeScale="0.50" maxSpeedCountScale="1">
+			<EnvironmentLayer name="rims" 
+					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
@@ -393,8 +399,8 @@
 		</EnvironmentLayers>
 	</Particles>
 
-	<Mannequin tag="tractor" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/tractorAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
-	<Paints />
-	<Modifications />
-
+	<Mannequin tag="tractor" vehicleADB="Animations/Mannequin/ADB/tractorAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints/>
+	<Modifications/>
 </Vehicle>

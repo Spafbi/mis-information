@@ -15,9 +15,9 @@ function BattleRoyale:InitPlayer(playerId)
 	-- player is an entity
 	local player = System.GetEntity(playerId);
 
-	if (player and player.actor) then
+	if (player and player.player) then
 		Log(">> BattleRoyale:InitPlayer - Name: %s", player:GetName());
-		Log(">> BattleRoyale:InitPlayer - Steam64ID: %s", player.actor:GetSteam64Id());
+		Log(">> BattleRoyale:InitPlayer - Steam64ID: %s", player.player:GetSteam64Id());
 
 		Log(">> BattleRoyale:InitPlayer - Moving player's location to 5, 5, 20");
 
@@ -37,10 +37,10 @@ function BattleRoyale:RevivePlayer(playerId)
 	-- player is an entity
 	local player = System.GetEntity(playerId);
 
-	if (player and player.actor) then
+	if (player and player.player) then
 		Log(">> BattleRoyale:RevivePlayer - Setting player's health to 50");
 
-		player.actor:SetHealth(50.0);
+		player.player:SetHealth(50.0);
 	end
 end
 
@@ -52,13 +52,13 @@ function BattleRoyale:EquipPlayer(playerId)
 	-- player is an entity
 	local player = System.GetEntity(playerId);
 
-	if (player and player.actor) then
+	if (player and player.player) then
 
 		-- Default weapons
-		local weaponId = ISM.GiveItem(playerId, "Flashlight");
+		local weapon = ISM.GiveItem(playerId, "Flashlight");
 
-		--local rifleId = ISM.GiveItem(playerId, "AT15", true);
-		--local accessoryId = ISM.GiveItem(playerId, "STANAGx30", false, rifleId, "stanag_mag00");
+		--local rifle = ISM.GiveItem(playerId, "AT15", true);
+		--local accessory = ISM.GiveItem(playerId, "STANAGx30", false, rifle.id, "stanag_mag00");
 
 		-- Default clothes
 		local rnd = random(1, 3);

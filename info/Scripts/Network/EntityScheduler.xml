@@ -1032,6 +1032,7 @@
 	<Class name="CraftedArrowx8_0BR0" policy="gun"/>
 	<Class name="CraftedArrowx8_0BRP" policy="gun"/>
 	<Class name="CraftedArrowx8_F000" policy="gun"/>
+	<Class name="ExplosiveArrowx8_0000" policy="gun"/>
 	<Class name="M40x5" policy="gun"/>
 	<Class name="Pile_10mm" policy="gun"/>
 	<Class name="Pile_12GaugeBeanbag" policy="gun"/>
@@ -1108,6 +1109,7 @@
 	<Class name="CraftedArrow_0BR0" policy="proj"/>
 	<Class name="CraftedArrow_0BRP" policy="proj"/>
 	<Class name="CraftedArrow_F000" policy="proj"/>
+	<Class name="ExplosiveArrow_0000" policy="proj"/>
 	<Class name="Flare" policy="proj"/>
 	<Class name="Flashbang" policy="proj"/>
 	<Class name="Grenade" policy="proj"/>
