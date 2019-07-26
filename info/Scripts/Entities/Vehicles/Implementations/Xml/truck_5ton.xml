@@ -1,18 +1,25 @@
 <Vehicle name="truck_5ton">
+
 	<Physics pushable="0" shove_force="0">
 		<Buoyancy waterDensity="50" waterResistance="2000" waterDamping="100"/>
 		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
 	</Physics>
+
 	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="75">
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
-			<DamageMultiplier damageType="collision" multiplier="0.05"/>
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="collision" multiplier="0.1"/> <!-- TODO -->
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
+			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
+			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
 			<DamagesGroup name="Destroy" useTemplate="CarDestroy"/>
 		</DamagesGroups>
 	</Damages>
+
 	<Components>
 		<Component name="hull" damageMax="1000" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
 			<DamageBehaviors>
@@ -144,6 +151,7 @@
 			</DamageBehaviors>
 		</Component>
 	</Components>
+
 	<Parts>
 		<Part name="hull" class="Animated" component="hull">
 			<Parts>
@@ -261,6 +269,7 @@
 			<MassBox size="1.5,4.5,1" drivingOffset="-0.5"/>
 		</Part>
 	</Parts>
+
 	<Helpers>
 		<Helper name="exhaust_pos" position="0.575,1.55,3.5" direction="0,0,1" part="hull"/>
 		<Helper name="passenger_enter_left" position="-2,2.75,0" direction="0,0,0" part="hull"/>
@@ -290,6 +299,7 @@
 		<Helper name="lightCargoRearBounce" position="0,-2.87,2.0" direction="0,0,1" part="hull"/>
 		<Helper name="lightCargoRearFill" position="0,-2.87,3.85" direction="0,0,-1" part="hull"/>
 	</Helpers>
+
 	<Actions>
 		<Action class="Enter">
 			<Activations>
@@ -329,6 +339,7 @@
 			</Enter>
 		</Action>
 	</Actions>
+
 	<Seats>
 		<Seat name="driver" part="hull" enterHelper="passenger_enter_left" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver" hideBackpack="1" cameraSupressRoll="1" tpCameraDistance="12.0">
 			<Views>
@@ -550,6 +561,7 @@
 			<SeatActions />
 		</Seat>
 	</Seats>
+
 	<MovementParams>
 		<!-- vMaxSteerMax  = Speed where steering angle is reduced by full kvSteerMax -->
 		<!-- v0SteerMax    = Max steering angle for wheels -->
@@ -575,6 +587,7 @@
 			<SoundParams engineSoundPosition="vehicleBurnPos" runSoundDelay="0.0" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3"/>
 		</StdWheeled>
 	</MovementParams>
+
 	<Particles mfxRow="vfx_truck_5ton">
 		<Exhaust insideWater="0" outsideWater="1">
 			<Helpers>
@@ -600,7 +613,9 @@
 			<DamageEffect name="BlownTirePFX" helper="" effect="vehicles.Common.Ground.Blown_Tire" gravityDirection="0,0,1"/>
 		</DamageEffects>
 		<EnvironmentLayers>
-			<EnvironmentLayer minSpeed="5" minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+			<EnvironmentLayer 
+					minSpeed="5"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" 
+					maxSpeed="20" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels>
@@ -630,19 +645,25 @@
 					</WheelGroups>
 				</Wheels>
 			</EnvironmentLayer>
-			<!--<EnvironmentLayer name="slip" minSpeed="0.5" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+			<!--<EnvironmentLayer name="slip" 
+					minSpeed="5" minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
+					maxSpeed="12"  maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
-			<EnvironmentLayer name="rims" minSpeed="3" minSpeedSizeScale="0.25" minSpeedCountScale="1" maxSpeed="10" maxSpeedSizeScale="0.5" maxSpeedCountScale="1">
+			<EnvironmentLayer name="rims" 
+					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>
 		</EnvironmentLayers>
 	</Particles>
-	<Paints />
-	<Modifications />
-	<Mannequin tag="truck_5ton" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/truck_5tonAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+
+	<Mannequin tag="truck_5ton" vehicleADB="Animations/Mannequin/ADB/truck_5tonAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints/>
+	<Modifications/>
 </Vehicle>

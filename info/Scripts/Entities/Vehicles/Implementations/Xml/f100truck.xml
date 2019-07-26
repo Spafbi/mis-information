@@ -1,18 +1,25 @@
 <Vehicle name="f100truck">
+
 	<Physics pushable="0" shove_force="0.5">
 		<Buoyancy waterDensity="50" waterResistance="2000" waterDamping="100"/>
 		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
 	</Physics>
+
 	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="75">
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
-			<DamageMultiplier damageType="collision" multiplier="0.05"/>
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="collision" multiplier="0.1"/> <!-- TODO -->
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
+			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
+			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
 			<DamagesGroup name="Destroy" useTemplate="CarDestroy"/>
 		</DamagesGroups>
 	</Damages>
+
 	<Components>
 		<Component name="hull" damageMax="500" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
 			<DamageBehaviors>
@@ -121,6 +128,7 @@
 			</DamageBehaviors>
 		</Component>
 	</Components>
+
 	<Parts>
 		<Part name="hull" class="Animated" component="hull">
 			<Parts>
@@ -190,6 +198,7 @@
 			<MassBox size="1,2.5,0.75" drivingOffset="-0.7"/>
 		</Part>
 	</Parts>
+
 	<Helpers>
 		<Helper name="passenger_enter_01" position="-2,0.25,0" direction="0,0,0" part="hull"/>
 		<Helper name="passenger_enter_02" position="2,0,0" direction="0,0,0" part="hull"/>
@@ -210,6 +219,7 @@
 		<Helper name="reverseLightLeftPos" position="-1.02,-2.62,0.8575" direction="0,-1,0.5" part="hull"/>
 		<Helper name="reverseLightRightPos" position="1.03,-2.62,0.8575" direction="0,-1,0.5" part="hull"/>
 	</Helpers>
+
 	<Actions>
 		<Action class="Enter">
 			<Activations>
@@ -253,6 +263,7 @@
 			</Enter>
 		</Action>
 	</Actions>
+
 	<Seats>
 		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver" hideBackpack="1" cameraSupressRoll="1">
 			<Views>
@@ -376,6 +387,7 @@
 			<SeatActions />
 		</Seat>
 	</Seats>
+
 	<MovementParams>
 		<ArcadeWheeled steerSpeed="60" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="33" steerRelaxation="300" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="1" engineIgnitionTime="1.5">
 			<Handling>
@@ -400,6 +412,7 @@
 			<SoundParams engineSoundPosition="vehicleBurnPos" runSoundDelay="0.0" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3"/>
 		</ArcadeWheeled>
 	</MovementParams>
+
 	<Particles mfxRow="vfx_f100truck">
 		<Exhaust insideWater="0" outsideWater="1">
 			<Helpers>
@@ -464,15 +477,17 @@
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
 			<EnvironmentLayer name="rims" 
-					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="1" minSpeedSpeedScale="1"
-					maxSpeed="10" maxSpeedSizeScale="0.50" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>
 		</EnvironmentLayers>
 	</Particles>
-	<Paints />
-	<Modifications />
-	<Mannequin tag="f100truck" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/f100truckAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+
+	<Mannequin tag="f100truck" vehicleADB="Animations/Mannequin/ADB/f100truckAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints/>
+	<Modifications/>
 </Vehicle>

@@ -206,17 +206,17 @@
 				<param name="end_decay_mod" value="1.0"/>
 				<param name="maxx_mod" value="0.9"/>
 				<param name="maxy_mod" value="0.8"/>
-				<param name="recoil_crouch_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
-				<param name="recoil_prone_m_mod" value="1.25"/> <!-- Higher number = less recoil -->
+				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="2.0"/> <!-- Higher number = less recoil -->
 				<param name="recoil_jump_m_mod" value="1.0"/>
-				<param name="recoil_holdBreathActive_m_mod" value="1.05"/> <!-- Higher number = less recoil -->
+				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
 		</zoommode>
 
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
-					<stage value="1.33" rotationSpeedScale="0.75" movementSpeedScale="0.85"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.85"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
 				</stages>
 				<param name="suffix" value="iron"/>
 				<param name="suffixAG" value="_iron"/>

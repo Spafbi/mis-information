@@ -3,20 +3,20 @@
 	<Platform GUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EC}">
 		<Language ID="0">
 			<Bank Name="Init" Hash="2055943471" StreamHash="157587662" Timestamp="131938109105731957"/>
-			<Bank Name="ambiences" Hash="377083176" StreamHash="157587662" Timestamp="132042512446100511"/>
-			<Bank Name="bullets" Hash="851934064" StreamHash="157587662" Timestamp="132042512446489474"/>
-			<Bank Name="collisions" Hash="2654401757" StreamHash="157587662" Timestamp="132042512449708036"/>
-			<Bank Name="creatures" Hash="1757726191" StreamHash="157587662" Timestamp="132042512451564416"/>
-			<Bank Name="foleys" Hash="3822615682" StreamHash="157587662" Timestamp="132042512452003238"/>
-			<Bank Name="footsteps" Hash="4176698910" StreamHash="157587662" Timestamp="132042512453688903"/>
-			<Bank Name="music" Hash="2672008645" StreamHash="157587662" Timestamp="132042512454248182"/>
-			<Bank Name="objects" Hash="1025422553" StreamHash="157587662" Timestamp="132042512454846641"/>
-			<Bank Name="particles" Hash="377913436" StreamHash="157587662" Timestamp="132042512455205671"/>
-			<Bank Name="player" Hash="2762754274" StreamHash="157587662" Timestamp="132042512455714312"/>
-			<Bank Name="ui" Hash="1664123386" StreamHash="157587662" Timestamp="132042512455883862"/>
-			<Bank Name="vehicles" Hash="2330505035" StreamHash="157587662" Timestamp="132042512456791535"/>
-			<Bank Name="weapons" Hash="2231427325" StreamHash="157587662" Timestamp="132042512469735422"/>
-			<Bank Name="weather" Hash="2141208144" StreamHash="157587662" Timestamp="132042512470401086"/>
+			<Bank Name="ambiences" Hash="3005316785" StreamHash="157587662" Timestamp="132078833448909229"/>
+			<Bank Name="bullets" Hash="328275275" StreamHash="157587662" Timestamp="132078833449273310"/>
+			<Bank Name="collisions" Hash="1250502558" StreamHash="157587662" Timestamp="132078833452546166"/>
+			<Bank Name="creatures" Hash="299264549" StreamHash="157587662" Timestamp="132078833454375658"/>
+			<Bank Name="foleys" Hash="4147962147" StreamHash="157587662" Timestamp="132078833454814481"/>
+			<Bank Name="footsteps" Hash="260500518" StreamHash="157587662" Timestamp="132078833456320692"/>
+			<Bank Name="music" Hash="924930503" StreamHash="157587662" Timestamp="132078833456869232"/>
+			<Bank Name="objects" Hash="862858026" StreamHash="157587662" Timestamp="132078833457387849"/>
+			<Bank Name="particles" Hash="322955238" StreamHash="157587662" Timestamp="132078833457766833"/>
+			<Bank Name="player" Hash="1595240578" StreamHash="157587662" Timestamp="132078833458245550"/>
+			<Bank Name="ui" Hash="573786629" StreamHash="157587662" Timestamp="132078833458445005"/>
+			<Bank Name="vehicles" Hash="255316514" StreamHash="157587662" Timestamp="132078833460317202"/>
+			<Bank Name="weapons" Hash="522528059" StreamHash="157587662" Timestamp="132078833464595205"/>
+			<Bank Name="weather" Hash="2914629410" StreamHash="157587662" Timestamp="132078833465273392"/>
 		</Language>
 	</Platform>
 </IncrementalBankBuild>

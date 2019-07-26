@@ -1,0 +1,86 @@
+<animal name="Rooster">
+
+	<properties>
+		<param name="object_Model" value="objects/characters/animals/birds/rooster/rooster.cdf"/>
+		<param name="Size" value="1"/>
+		<param name="SizeRandom" value="0"/>
+		<param name="RelevanceDistance" value="-1.0"/>
+		<param name="esLootItemCategory" value="RandomChickenLoot"/>
+		<param name="eiCarryType" value="1"/>
+	</properties>
+	
+	<damage>
+		<param name="Health" value="20"/>
+		<param name="FatalImpulse" value="0"/>
+		<param name="fileBodyDamage" value=""/>
+		<param name="fileBodyDamageParts" value=""/>
+		<param name="fileBodyDestructibility" value=""/>
+	</damage>
+
+	<physics>
+		<param name="Mass" value="10"/>
+		<param name="Gravity" value="-13"/>
+		<param name="Inertia" value="10.0"/>
+		<param name="InertiaAccel" value="11.0"/>
+		<param name="MaxVelGround" value="3"/>
+		<param name="MinSlideAngle" value="75.0"/>
+		<param name="MaxClimbAngle" value="75.0"/>
+		<param name="MinFallAngle" value="80.0"/>
+	</physics>
+
+	<movement>
+		<param name="MaxTurnRate" value="360"/>
+		<param name="ForceTurnOnSpotAngle" value="45.0"/>
+	</movement>
+
+	<stance>
+		<param name="StanceId" value="0"/>
+		<param name="Name" value="stand"/>
+		<param name="HeightPivot" value="0.0"/>
+		<param name="HeightCollider" value="0.3"/>
+		<param name="SizeCollider" value="0.25,0.25,0.0"/>
+		<param name="ViewOffset" value="0.0,0.1,0.35"/>
+		<param name="bUseCapsule" value="1"/>
+	</stance>
+
+	<ai>
+		<param name="bKytheraEnabled" value="0"/>
+		<param name="esKytheraProfile" value="Rooster"/>
+		<simpleai>
+			<param name="SpeedMin" value="0.4"/>
+			<param name="SpeedDefault" value="0.45"/>
+			<param name="SpeedMax" value="0.5"/>
+			<param name="IdleTimeMin" value="2.0"/>
+			<param name="IdleTimeMax" value="20.0"/>
+			<param name="WalkTimeMin" value="4.0"/>
+			<param name="WalkTimeMax" value="20.0"/>
+			<param name="FactorOrigin" value="0.05"/>
+			<param name="FactorAvoidLand" value="10"/>
+			<param name="CollisionDistance" value="1.0"/>
+			<param name="CollisionCheckTime" value="0.2"/>
+			<param name="bAvoidWater" value="1"/>
+			<param name="bObstacleAvoidance" value="1"/>
+		</simpleai>
+	</ai>
+
+	<readabilities>
+		<param name="bUseMannequin" value="0"/>
+		<simple>
+			<param name="MaxAnimationSpeed" value="1.0"/>
+			<sounds>
+				<param name="Stopped" value="Play_chicken_idle"/>
+				<param name="Moving" value="Play_chicken_idle"/>
+				<param name="Scared" value="Play_chicken_scared"/>
+				<param name="Death" value="Play_chicken_death"/>
+			</sounds>
+			<animations>
+				<param name="Stopped" value="idle01_loop"/>
+				<param name="Moving" value="walk_loop"/>
+				<param name="Scared" value="idle01_loop"/>
+				<param name="Death" value="idle01_loop"/>
+				<param name="Carry" value="carry"/>
+			</animations>
+		</simple>
+	</readabilities>
+
+</animal>

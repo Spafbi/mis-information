@@ -53,6 +53,8 @@
 		<magazine name="CraftedArrowx8_0BR0"/>
 		<magazine name="CraftedArrowx8_0BRP"/>
 		<magazine name="CraftedArrowx8_F000"/>
+		<magazine name="ExplosiveArrowx8_0000"/>
+		<magazine name="CraftedExplosiveArrowx8_0000"/>
 	</magazines>
 
 	<geometry>
@@ -180,9 +182,8 @@
 				<param name="end_decay_mod" value="1.1"/>
 				<param name="maxx_mod" value="2.9"/>
 				<param name="maxy_mod" value="1.3"/>
-				<param name="impulse_mod" value="1.0"/>
 				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
-				<param name="recoil_prone_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
+				<param name="recoil_prone_m_mod" value="2.0"/> <!-- Higher number = less recoil -->
 				<param name="recoil_jump_m_mod" value="1.0"/>
 				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
@@ -191,7 +192,7 @@
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
-					<stage value="1.33" rotationSpeedScale="0.75" movementSpeedScale="0.85"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.85"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
 				</stages>
 				<param name="suffix" value="iron"/>
 				<param name="suffixAG" value="_iron"/>
@@ -256,6 +257,8 @@
 		<accessory name="CraftedArrowx8_0BR0" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
 		<accessory name="CraftedArrowx8_0BRP" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
 		<accessory name="CraftedArrowx8_F000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
+		<accessory name="ExplosiveArrowx8_0000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al_ex"/></accessory>
+		<accessory name="CraftedExplosiveArrowx8_0000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo_ex"/></accessory>
 	</accessories>
 
 	<storage>

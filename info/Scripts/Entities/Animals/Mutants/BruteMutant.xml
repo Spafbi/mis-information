@@ -1,0 +1,73 @@
+<animal name="BruteMutant">
+
+	<properties>
+		<param name="object_Model" value="objects/characters/mutants/brutemutant/brute_mutant.cdf"/>
+		<param name="Size" value="1"/>
+		<param name="SizeRandom" value="0"/>
+		<param name="RelevanceDistance" value="-1.0"/>
+		<param name="esLootItemCategory" value="RandomBruteLoot"/>
+		<param name="eiCarryType" value="0"/>
+	</properties>
+
+	<damage>
+		<param name="Health" value="500"/>
+		<param name="FatalImpulse" value="0"/>
+		<param name="fileBodyDamage" value="Libs/BodyDamage/BodyDamage_Brute.xml"/>
+		<param name="fileBodyDamageParts" value="Libs/BodyDamage/BodyParts_Brute.xml"/>
+		<param name="fileBodyDestructibility" value="Libs/BodyDamage/BodyDestructibility_Brute.xml"/>
+	</damage>
+
+	<physics>
+		<param name="Mass" value="1000"/>
+		<param name="Gravity" value="-13"/>
+		<param name="Inertia" value="5.0"/>
+		<param name="InertiaAccel" value="11.0"/>
+		<param name="MaxVelGround" value="5"/>
+		<param name="MinSlideAngle" value="75.0"/>
+		<param name="MaxClimbAngle" value="75.0"/>
+		<param name="MinFallAngle" value="80.0"/>
+	</physics>
+
+	<movement>
+		<param name="MaxTurnRate" value="360"/>
+		<param name="ForceTurnOnSpotAngle" value="0.0"/>
+	</movement>
+
+	<stance>
+		<param name="StanceId" value="0"/>
+		<param name="Name" value="stand"/>
+		<param name="HeightPivot" value="0.0"/>
+		<param name="HeightCollider" value="1.2"/>
+		<param name="SizeCollider" value="0.54,0.54,0.3"/>
+		<param name="ViewOffset" value="0.0,0.1,2.0"/>
+		<param name="bUseCapsule" value="1"/>
+	</stance>
+
+	<ai>
+		<param name="bKytheraEnabled" value="1"/>
+		<param name="esKytheraProfile" value="Brute"/>
+	</ai>
+
+	<readabilities>
+		<param name="bUseMannequin" value="1"/>
+		<mannequin>
+			<param name="TurnStartDelay" value="0.5"/>
+			<param name="TurnDelayMinAngle" value="5"/>
+			<param name="TurnImmediateAngle" value="30"/>
+			<sounds>
+				<param name="Hurt" value="Play_brute_mutant_hurt"/>
+				<param name="Death" value="Play_brute_mutant_death"/>
+			</sounds>
+		</mannequin>
+	</readabilities>
+
+	<bones>
+		<param name="BONE_FOOT_R" value="Bip01 R Foot"/>
+		<param name="BONE_FOOT_L" value="Bip01 L Foot"/>
+	</bones>
+
+	<charactersounds>
+		<param name="footstepEffect" value="footstep_brute_mutant_shoes"/>
+	</charactersounds>
+	
+</animal>

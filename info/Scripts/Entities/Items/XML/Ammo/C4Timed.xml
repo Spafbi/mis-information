@@ -1,4 +1,4 @@
-<ammo name="C4Timed" class="Grenade">
+<ammo name="C4Timed" class="C4Projectile">
 	<geometry>
 		<firstperson name="objects/weapons/c4_and_clacker/c4_and_detonator_onground.cgf" />
 	</geometry>

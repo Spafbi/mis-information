@@ -1,0 +1,26 @@
+<item name="wood_foundation_4m_4m_4m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="display_name" value="@wood_foundation_4m_4m_4m"/>
+		<param name="description" value="@wood_foundation_4m_4m_4mDescription"/>
+	</params>
+
+	<base_part class="static" type="275" name="wood_foundation_4m_4m_4m">
+		<static filename="objects/basebuilding/wood/wood_foundation_4m_4m_4m.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

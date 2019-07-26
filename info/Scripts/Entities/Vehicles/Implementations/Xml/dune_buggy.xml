@@ -1,18 +1,25 @@
 <Vehicle name="dune_buggy">
+
 	<Physics pushable="0" shove_force="0.5">
-		<Buoyancy waterDamping="100" waterDensity="50" waterResistance="2000"/>
-		<Simulation maxLoggedCollisions="2" maxTimeStep="0.02" minEnergy="0.02"/>
+		<Buoyancy waterDensity="50" waterResistance="2000" waterDamping="100"/>
+		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
 	</Physics>
-	<Damages collDamageThreshold="25" submergedDamageMult="0.1" submergedRatioMax="0.5" vehicleCollisionDestructionSpeed="75">
+
+	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="75">
 		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
-			<DamageMultiplier damageType="collision" multiplier="0.05"/>
-			<DamageMultiplier damageType="explosion" multiplier="1" splash="0.5"/>
+			<DamageMultiplier damageType="collision" multiplier="0.1"/> <!-- TODO -->
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
+			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
+			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
 			<DamagesGroup name="Destroy" useTemplate="CarDestroy"/>
 		</DamagesGroups>
 	</Damages>
+
 	<Components>
 		<Component damageMax="500" name="hull" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
 			<DamageBehaviors>
@@ -124,6 +131,7 @@
 			</DamageBehaviors>
 		</Component>
 	</Components>
+
 	<Parts>
 		<Part class="Animated" component="hull" name="hull">
 			<Parts>
@@ -211,6 +219,7 @@
 			<MassBox drivingOffset="-0.7" size="1.3,2.5,1.2"/>
 		</Part>
 	</Parts>
+
 	<Helpers>
 		<Helper direction="0,0,0" name="passenger_enter_01" part="hull" position="-1.7,0,0"/>
 		<Helper direction="0,0,0" name="passenger_enter_02" part="hull" position="1.7,0,0"/>
@@ -229,6 +238,7 @@
 		<Helper direction="0,-1,0" name="reverseLightLeftPos" part="hull" position="-0.53,-2.53,0.88"/>
 		<Helper direction="0,-1,0" name="reverseLightRightPos" part="hull" position="0.53,-2.53,0.88"/>
 	</Helpers>
+
 	<Actions>
 		<Action class="Enter">
 			<Activations>
@@ -273,6 +283,7 @@
 			</Enter>
 		</Action>
 	</Actions>
+
 	<Seats>
 		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver" hideBackpack="1" cameraSupressRoll="1">
 			<Views>
@@ -370,6 +381,7 @@
 			<SeatActions/>
 		</Seat>
 	</Seats>
+
 	<MovementParams>
 		<ArcadeWheeled engineIgnitionTime="1.5" kvSteerMax="5" pedalLimitMax="0.1" rpmGearShiftSpeed="1" steerRelaxation="300" steerSpeed="60" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" v0SteerMax="33" vMaxSteerMax="25">
 			<Handling>
@@ -394,6 +406,7 @@
 			<SoundParams engineSoundPosition="vehicleBurnPos" roadBumpIntensity="0.3" roadBumpMinSpeed="6" roadBumpMinSusp="10" runSoundDelay="0.0"/>
 		</ArcadeWheeled>
 	</MovementParams>
+
 	<Particles mfxRow="vfx_f100truck">
 		<Exhaust insideWater="0" outsideWater="1">
 			<Helpers>
@@ -416,9 +429,11 @@
 			<DamageEffect effect="vehicles.f100.damage.smokestack" helper="vehicleCenterPos" name="SmokeStack"/>
 		</DamageEffects>
 		<EnvironmentLayers>
-			<EnvironmentLayer maxSpeed="25" maxSpeedCountScale="1.0" maxSpeedSizeScale="1.0" maxSpeedSpeedScale="1.0" minSpeed="5" minSpeedCountScale="0.25" minSpeedSizeScale="0.25" minSpeedSpeedScale="0.5">
-				<Alignment alignGroundHeight="0" alignToWater="0" maxHeightCountScale="1" maxHeightSizeScale="1"/>
-				<Emitters/>
+			<EnvironmentLayer 
+					minSpeed="5"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" 
+					maxSpeed="25" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
+				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+				<Emitters />
 				<Wheels>
 					<WheelGroups>
 						<WheelGroup>
@@ -452,15 +467,17 @@
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
 			<EnvironmentLayer name="rims" 
-					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="1" minSpeedSpeedScale="1"
-					maxSpeed="10" maxSpeedSizeScale="0.50" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>
 		</EnvironmentLayers>
 	</Particles>
+
+	<Mannequin tag="dune_buggy" vehicleADB="Animations/Mannequin/ADB/dune_buggyAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
 	<Paints/>
 	<Modifications/>
-	<Mannequin controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb" tag="dune_buggy" vehicleADB="Animations/Mannequin/ADB/dune_buggyAnims.adb"/>
 </Vehicle>

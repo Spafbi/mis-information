@@ -1,0 +1,71 @@
+<animal name="Deer">
+
+	<properties>
+		<param name="object_Model" value="objects/characters/animals/deer/deer.cdf"/>
+		<param name="Size" value="1"/>
+		<param name="SizeRandom" value="0"/>
+		<param name="RelevanceDistance" value="-1.0"/>
+		<param name="esLootItemCategory" value="RandomDeerLoot"/>
+		<param name="eiCarryType" value="0"/>
+	</properties>
+
+	<damage>
+		<param name="Health" value="30"/>
+		<param name="FatalImpulse" value="750"/>
+		<param name="fileBodyDamage" value="Libs/BodyDamage/BodyDamage_Deer.xml"/>
+		<param name="fileBodyDamageParts" value="Libs/BodyDamage/BodyDamage_Deer.xml"/>
+		<param name="fileBodyDestructibility" value=""/>
+	</damage>
+
+	<physics>
+		<param name="Mass" value="140"/>
+		<param name="Gravity" value="-13"/>
+		<param name="Inertia" value="10.0"/>
+		<param name="InertiaAccel" value="11.0"/>
+		<param name="MaxVelGround" value="16"/>
+		<param name="MinSlideAngle" value="75.0"/>
+		<param name="MaxClimbAngle" value="75.0"/>
+		<param name="MinFallAngle" value="80.0"/>
+	</physics>
+
+	<movement>
+		<param name="MaxTurnRate" value="180"/>
+		<param name="ForceTurnOnSpotAngle" value="90.0"/>
+	</movement>
+
+	<stance>
+		<param name="StanceId" value="0"/>
+		<param name="Name" value="stand"/>
+		<param name="HeightPivot" value="0.0"/>
+		<param name="HeightCollider" value="0.9"/>
+		<param name="SizeCollider" value="0.6,0.6,0.0"/>
+		<param name="ViewOffset" value="0.0,1.0,1.25"/>
+		<param name="bUseCapsule" value="1"/>
+	</stance>
+
+	<ai>
+		<param name="bKytheraEnabled" value="1"/>
+		<param name="esKytheraProfile" value="Deer"/>
+	</ai>
+
+	<readabilities>
+		<param name="bUseMannequin" value="1"/>
+		<mannequin>
+			<param name="TurnStartDelay" value="0.5"/>
+			<param name="TurnDelayMinAngle" value="5"/>
+			<param name="TurnImmediateAngle" value="30"/>
+		</mannequin>
+	</readabilities>
+
+	<bones>
+		<param name="BONE_FOOT_R" value="Def_R_Wrist_jnt"/>
+		<param name="BONE_FOOT_L" value="Def_L_Wrist_jnt"/>
+		<param name="BONE_FOOT_R2" value="Def_R_Toe_jnt"/>
+		<param name="BONE_FOOT_L2" value="Def_L_Toe_jnt"/>
+	</bones>
+
+	<charactersounds>
+		<param name="footstepEffect" value="footstep_animal_medium"/>
+	</charactersounds>
+
+</animal>

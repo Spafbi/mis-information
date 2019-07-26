@@ -1,0 +1,30 @@
+<item name="metal_barbed_wire_4m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2"/>
+		<param name="stack_size" value="3"/>
+		<param name="display_name" value="@metal_barbed_wire_4m"/>
+		<param name="description" value="@metal_barbed_wire_4mDescription"/>
+	</params>
+
+	<base_part class="static" type="109" name="metal_barbed_wire_4m" max_health="4500" repair_with="SheetMetal">
+		<static filename="objects/basebuilding/metal/barbed_wire/metal_barbedwire_4m.cgf"/>
+		<base_traps>
+			<base_trap class="collision">
+				<collision damage="5" bleed_percent="75"/>
+			</base_trap>
+		</base_traps>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

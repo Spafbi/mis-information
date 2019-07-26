@@ -292,7 +292,7 @@
     <Params EmitterLifeTime="1" StartTrigger="Play_torch_flames_loop_3p" StopTrigger="Stop_torch_flames_loop_3p"/>
    </Particles>
    <Particles Name="fire_drops">
-    <Params Count="50" Continuous="true" ParticleLifeTime="0.5,Random=0.5" EmitAngle="Random=0.02" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/fire/anim_flametest.tif" TextureTiling="TilesX=10,TilesY=8,AnimFramesCount=80,AnimFramerate=30" Alpha="ParticleAge=(flags=32;t=0.18,v=1;t=1,flags=4)" DiffuseBacklighting="1" EmissiveLighting="2" Size="0.15,ParticleAge=(v=0.25;t=0.5,v=1;t=1,v=1)" MinPixels="4" InheritVelocity="0.5" AirResistance="1" GravityScale="0.1" RandomAngles="y=360"/>
+    <Params Count="50" Continuous="true" ParticleLifeTime="0.5,Random=0.5" EmitAngle="Random=0.02" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/fire/anim_flametest.tif" TextureTiling="TilesX=10,TilesY=8,AnimFramesCount=80,AnimFramerate=30" Alpha="0.492,ParticleAge=(flags=32;t=0.18,v=1;t=1,flags=4)" Color="(y=0.4735315,z=0.44520122)" DiffuseBacklighting="1" EmissiveLighting="1" Size="0.082,ParticleAge=(v=0.25;t=0.5,v=1;t=1,v=1)" MinPixels="4" InheritVelocity="0.5" AirResistance="1" GravityScale="0.1" RandomAngles="y=360"/>
    </Particles>
    <Particles Name="light">
     <Params Count="1" Color="(y=0.2788943,z=0.015208516)" LightSource="Radius=10,Intensity=1" MoveRelativeEmitter="true"/>

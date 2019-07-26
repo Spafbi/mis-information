@@ -191,21 +191,6 @@ reduced to 25% of the prior item's, like so:
 		-- --------------------------------------------------------------------
 
 		{
-			category = "RandomTractorContents",
-			classes =
-			{
-				{category = "RandomAmmo", percent = 5 },
-				{category = "RandomConsumable", percent = 10 },
-				{category = "RandomCraftedTools", percent = 5 },
-				{category = "RandomRanged", percent = 5 },
-				{class = "CarBattery", percent = 10 },
-				{class = "DriveBelt", percent = 10 },
-				{class = "SparkPlugs", percent = 10 },
-				{class = "Wheel", percent = 15, min = 1, max = 4 },
-			},
-		},
-
-		{
 			category = "RandomTowcarContents",
 			classes =
 			{
@@ -244,6 +229,41 @@ reduced to 25% of the prior item's, like so:
 				{category = "RandomClothes", percent = 25 },
 				{category = "RandomFlashlight", percent = 25 },
 				{category = "RandomHat", percent = 25 },
+			},
+		},
+
+		{
+			-- We spawn quadbikes as a group so they will have more items because of their 6 hour decay
+			category = "RandomQuadBikeContents",
+			group =
+			{
+				{class = "CarBattery", percent = 50 },
+				{class = "DriveBelt", percent = 50 },
+				{class = "SparkPlugs", percent = 50 },
+				{class = "Wheel", percent = 100, min = 1, max = 4 },
+			},
+		},
+
+		{
+			-- We spawn jetskis as a group so they will have more items because of their 6 hour decay
+			category = "RandomJetskiContents",
+			group =
+			{
+				{class = "CarBattery", percent = 50 },
+				{class = "SparkPlugs", percent = 50 },
+			},
+		},
+
+		{
+			-- We spawn tractors as a group so they will have more items because of their 6 hour decay
+			category = "RandomTractorContents",
+			group =
+			{
+				{class = "CarBattery", percent = 50 },
+				{class = "DriveBelt", percent = 50 },
+				{class = "SparkPlugs", percent = 50 },
+				{class = "Wheel", percent = 100, min = 1, max = 4 },
+				{class = "TowCable", percent = 50 },
 			},
 		},
 
@@ -680,10 +700,37 @@ reduced to 25% of the prior item's, like so:
 		},
 
 		{
+			category = "RandomRuggedPackAirPlane",
+			classes =
+			{
+				{ class = "RuggedPack", contents="RandomBackpackAirPlaneContents", percent = 9 },
+				{ class = "RuggedPackBlack", contents="RandomBackpackAirPlaneContents", percent = 9 },
+				{ class = "RuggedPackBrown", contents="RandomBackpackAirPlaneContents", percent = 9 },
+				{ class = "RuggedPackCamo1", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackCamo2", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackCamo3", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackCamo4", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackGreen", contents="RandomBackpackAirPlaneContents", percent = 9 },
+				{ class = "RuggedPackGreenCamo1", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackGreenCamo2", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackGreenCamo3", contents="RandomBackpackAirPlaneContents", percent = 8 },
+				{ class = "RuggedPackGreenCamo4", contents="RandomBackpackAirPlaneContents", percent = 8 },
+			},
+		},
+
+		{
 			category = "RandomRuckSack",
 			classes =
 			{
 				{ class = "RuckSack", contents="RandomBackpackContents", percent = 100 },
+			},
+		},
+
+		{
+			category = "RandomRuckSackAirPlane",
+			classes =
+			{
+				{ class = "RuckSack", contents="RandomBackpackAirPlaneContents", percent = 100 },
 			},
 		},
 
@@ -710,6 +757,28 @@ reduced to 25% of the prior item's, like so:
 		},
 
 		{
+			category = "RandomDuffelBagAirPlane",
+			classes =
+			{
+				{ class = "DuffelBag", contents="RandomBackpackAirPlaneContents", percent = 6 },
+				{ class = "DuffelBagBlack", contents="RandomBackpackAirPlaneContents", percent = 6 },
+				{ class = "DuffelBagGreen", contents="RandomBackpackAirPlaneContents", percent = 6 },
+				{ class = "DuffelBagGreenCamo1", contents="RandomBackpackAirPlaneContents", percent = 6 },
+				{ class = "DuffelBagGreenCamo2", contents="RandomBackpackAirPlaneContents", percent = 6 },
+				{ class = "DuffelBagGreenCamo3", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagGreenCamo4", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagTanCamo1", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagTanCamo2", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagTanCamo3", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagTanCamo4", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagUrbanCamo1", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagUrbanCamo2", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagUrbanCamo3", contents="RandomBackpackAirPlaneContents", percent = 7 },
+				{ class = "DuffelBagUrbanCamo4", contents="RandomBackpackAirPlaneContents", percent = 7 },
+			},
+		},
+
+		{
 			category = "RandomStowPack",
 			classes =
 			{
@@ -724,7 +793,6 @@ reduced to 25% of the prior item's, like so:
 				{ class = "StowPackYellow", contents="RandomBackpackContents", percent = 12 },
 			},
 		},
-
 
 		-- Face
 		{
@@ -928,8 +996,6 @@ reduced to 25% of the prior item's, like so:
 				{ class = "MotorcycleHelmetWhite", percent = 3 },	
 			},
 		},
-
-
 
 		-- Legs
 		{
@@ -1568,8 +1634,8 @@ reduced to 25% of the prior item's, like so:
 			category = "StickPileOrThatch",
 			classes =
 			{
-				{ class = "StickPile", percent = 70 },
-				{ class = "Thatch", percent = 30 },
+				{ class = "StickPile", percent = 30 },
+				{ class = "Thatch", percent = 70 },
 			},
 		},
 
@@ -4035,6 +4101,62 @@ reduced to 25% of the prior item's, like so:
 				{ class = "Bandage", percent = 100 },
 				{ class = "Bandage", percent = 100 },
 				{ class = "Bandage", percent = 100 },
+			},
+		},
+
+		-- Air Plane Crash
+		{
+			category = "AirPlaneCrashBackpack",
+			classes =
+			{
+				-- no stowpacks - only better backpacks
+				{ category = "RandomRuggedPackAirPlane", percent = 40 },
+				{ category = "RandomDuffelBagAirPlane", percent = 30 },
+				{ category = "RandomRuckSackAirPlane", percent = 30 },
+			},
+		},
+
+		{
+			category = "AirPlaneCrashCrate",
+			classes =
+			{
+				{ class = "WoodCrate", contents="RandomCrateAirPlaneContents", percent = 100 },
+			},
+		},
+
+		{
+			category = "RandomBackpackAirPlaneContents",
+			group =
+			{
+				-- Only up to 15 slots - civilian focused, no primary weapons
+				{ category = "Map", percent = 100 },
+				{ category = "RandomFlashlight", percent = 100 },
+				{ category = "RandomConsumable", percent = 100 },
+				{ category = "RandomMedical", percent = 100 },
+				{ category = "RandomCraftingGuide", percent = 100 },
+				{ category = "RandomClothes", percent = 100 },
+				{ category = "RandomCrafting", percent = 100 },
+				{ category = "RandomMaintenance", percent = 100 },
+				{ category = "RandomAmmo", percent = 100 },
+				{ category = "RandomPistol", percent = 100 },
+			},
+		},
+
+		{
+			category = "RandomCrateAirPlaneContents",
+			group =
+			{
+				-- Only 10 slots in the crate - all military focused
+				{ category = "RandomRangedMilitaryPure", percent = 100 },
+				{ category = "RandomRangedMilitaryPure", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAccessory", percent = 100 },
+				{ category = "RandomMilitaryClothing", percent = 100 },
+				{ category = "RandomMilitaryClothing", percent = 100 },
+				{ category = "RandomMilitaryClothing", percent = 100 },
+				{ category = "RandomMilitaryClothing", percent = 100 },
+				{ class = "MRE", percent = 100 },
 			},
 		},
 

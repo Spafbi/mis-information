@@ -53,7 +53,7 @@ VehicleSpawnerManager = {
 			{
 				{
 					-- All bicycle spawners now just spawn a quadbike
-					class = "quadbike",
+					class = "quadbike", contents = "RandomQuadBikeContents",
 					skins =
 					{
 						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
@@ -84,7 +84,7 @@ VehicleSpawnerManager = {
 			{
 				{
 					-- All dirtbike spawners now just spawn a quadbike
-					class = "quadbike",
+					class = "quadbike", contents = "RandomQuadBikeContents",
 					skins =
 					{
 						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
@@ -203,7 +203,7 @@ VehicleSpawnerManager = {
 			category = "jetski",
 			classes =
 			{
-				{ class = "jetski" },
+				{ class = "jetski", contents = "RandomJetskiContents" },
 			},
 			initialMinVehicles = 7,
 			abandonedTimer = 21600,  -- six hours
@@ -234,7 +234,7 @@ VehicleSpawnerManager = {
 			classes =
 			{
 				{
-					class = "quadbike",
+					class = "quadbike", contents = "RandomQuadBikeContents",
 					skins =
 					{
 						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
@@ -370,7 +370,7 @@ VehicleSpawnerManager = {
 			category = "tractor",
 			classes =
 			{
-				{ class = "tractor" },
+				{ class = "tractor", contents = "RandomTractorContents" },
 			},
 			initialMinVehicles = 2,
 			abandonedTimer = 21600,  -- six hours

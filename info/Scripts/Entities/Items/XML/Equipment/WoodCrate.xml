@@ -1,0 +1,23 @@
+<item name="WoodCrate" class="Item" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="100"/>
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="display_name" value="@wood_crate_small"/>
+		<param name="description" value="@wood_crate_smallDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_crate_small.cgf"/>
+	</geometry>
+
+	<storage>
+		<types>
+			<type category="any" capacity="10"/>
+		</types>
+	</storage>
+
+</item>

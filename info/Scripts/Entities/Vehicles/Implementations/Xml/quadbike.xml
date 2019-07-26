@@ -1,35 +1,25 @@
 <Vehicle name="quadbike">
+
 	<Physics pushable="1" shove_force="1">
 		<Buoyancy waterDensity="50" waterResistance="1000" waterDamping="500"/>
 		<Simulation maxTimeStep="0.02" minEnergy="0.02" maxLoggedCollisions="2"/>
 	</Physics>
+
 	<Damages submergedRatioMax="0.5" submergedDamageMult="0.1" collDamageThreshold="25" vehicleCollisionDestructionSpeed="50">
-		<DamageMultipliers> <!-- these types are based off hit_type -->
-			<DamageMultiplier damageType="ammo_12_gauge_pellet" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_12_gauge_slug" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_22" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_223" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_308" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_357" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_5_56x45" multiplier="0.5"/>
-			<DamageMultiplier damageType="ammo_7_62x51" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_9mm" multiplier="0.1"/>
-			<DamageMultiplier damageType="ammo_acp_45" multiplier="0.1"/>
-			<DamageMultiplier damageType="arrow" multiplier="0.1"/>
-			<DamageMultiplier damageType="flare" multiplier="0.01"/>
+		<DamageMultipliers>
 			<DamageMultiplier damageType="melee" multiplier="0.1"/>
-			<DamageMultiplier damageType="blunt" multiplier="0.5" />
-			<DamageMultiplier damageType="hatchet" multiplier="0.5" />
-			<DamageMultiplier damageType="collision" multiplier="0.05"/>
-			<DamageMultiplier damageType="explosion" multiplier="1.0" splash="0.5"/>
-			<DamageMultiplier damageType="frag" multiplier="1.0" splash="0.5"/>
-			<DamageMultiplier damageType="fire" multiplier="1.0" splash="0.5"/>
-			<DamageMultiplier damageType="repair" multiplier="1.0"/> <!-- increase this to heal vehicle more -->
+			<DamageMultiplier damageType="collision" multiplier="0.1"/> <!-- TODO -->
+			<DamageMultiplier damageType="explosion" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="acid" multiplier="0.1" splash="1.0"/> <!-- Baby spider explosion -->
+			<DamageMultiplier damageType="frag" multiplier="6.0" splash="1.0"/>
+			<DamageMultiplier damageType="repair" multiplier="5.0"/> <!-- Increase this to repair vehicle more: 3% per hit -->
+			<!-- NOT DOING INDIVIDUAL PROJECTILES UNLESS ABSOLUTELY NECESSARY - TWEAK COMPONENT HP INSTEAD -->
 		</DamageMultipliers>
 		<DamagesGroups>
 			<DamagesGroup name="Destroy" useTemplate="QuadbikeDestroy"/>
 		</DamagesGroups>
 	</Damages>
+
 	<Components>
 		<Component name="hull" damageMax="500" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
 			<DamageBehaviors> <!-- Four damage levels, 25%, 50%, 75% and 100% (destroyed) -->
@@ -152,6 +142,7 @@
 			<DamageBehaviors />
 		</Component>
 	</Components>
+
 	<Parts>
 		<Part name="hull" class="Animated" component="hull">
 			<Parts>
@@ -221,6 +212,7 @@
 			<MassBox size="1,1.25,0.5" drivingOffset="-0.35"/>
 		</Part>
 	</Parts>
+
 	<Helpers>
 		<Helper name="passenger_enter_01" position="-1,0,0" direction="-1,0,0" part="hull"/>
 		<Helper name="passenger_enter_02" position="1,0,0" direction="1,0,0" part="hull"/>
@@ -239,6 +231,7 @@
 		<Helper name="reverseLightLeftPos" position="-0.143,-1.016,0.780" direction="0,1,0" part="hull"/>
 		<Helper name="reverseLightRightPos" position="0.143,-1.016,0.780" direction="0,1,0" part="hull"/>
 	</Helpers>
+
 	<Actions>
 		<Action class="Enter">
 			<Activations>
@@ -266,6 +259,7 @@
 			</Activations>
 		</Action>
 	</Actions>
+
 	<Seats>
 		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver">
 			<Views>
@@ -341,6 +335,7 @@
 			<SeatActions />
 		</Seat>
 	</Seats>
+
 	<MovementParams> <!-- steerSpeed = top speed steering speed, steerSpeedMin = stationary steering speed -->
 		<ArcadeWheeled steerSpeed="15" steerSpeedMin="50" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="20" v0SteerMax="30" steerRelaxation="200" vMaxSteerMax="20" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="1.0"> <!-- v0SteerMax = stationary max angle in degrees, kvSteerMax = reduction amount in degrees when vehicle reaches vMaxSteerMax speed -->
 			<Handling>
@@ -365,6 +360,7 @@
 			<SoundParams engineSoundPosition="vehicleBurnPos" runSoundDelay="0.0" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3"/>
 		</ArcadeWheeled>
 	</MovementParams>
+
 	<Particles mfxRow="vfx_quadbike">
 		<Exhaust insideWater="0" outsideWater="1">
 			<Helpers>
@@ -431,15 +427,17 @@
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
 			<EnvironmentLayer name="rims" 
-					minSpeed="5"  minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
-					maxSpeed="18" maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
+					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>
 		</EnvironmentLayers>
 	</Particles>
-	<Mannequin tag="quadbike" controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" vehicleADB="Animations/Mannequin/ADB/quadbikeAnims.adb" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
-	<Paints />
-	<Modifications />
+
+	<Mannequin tag="quadbike" vehicleADB="Animations/Mannequin/ADB/quadbikeAnims.adb"
+			controllerDef="Animations/Mannequin/ADB/vehicleControllerDefs.xml" passengerADB="Animations/Mannequin/ADB/playerVehicleAnims.adb"/>
+	<Paints/>
+	<Modifications/>
 </Vehicle>

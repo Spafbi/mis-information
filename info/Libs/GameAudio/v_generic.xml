@@ -1,6 +1,7 @@
 <ATLConfig atl_name="v_generic">
 	<AudioTriggers>
 
+		<!-- Airdrop Vehicles-->
 		<ATLTrigger atl_name="Play_airdrop_crate_drop">
 			<WwiseEvent wwise_name="Play_airdrop_crate_drop"/>
 		</ATLTrigger>
@@ -9,6 +10,12 @@
 		</ATLTrigger>
 		<ATLTrigger atl_name="Stop_airdrop_plane">
 			<WwiseEvent wwise_name="Stop_airdrop_plane"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_prop_plane">
+			<WwiseEvent wwise_name="Play_prop_plane"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_prop_plane">
+			<WwiseEvent wwise_name="Stop_prop_plane"/>
 		</ATLTrigger>
 
 		<!-- Non-unique sounds shared amongst vehicles -->

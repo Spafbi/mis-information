@@ -2,9 +2,9 @@ Script.ReloadScript("scripts/gamerules/GameRulesUtils.lua");
 
 Miscreated = {
 	Properties = {
-		AirDrop = {
-			fMinTime = 3600, -- min time to spawn a plane (in seconds)
-			fMaxTime = 7200, -- max time to spawn a plane (in seconds)
+		WorldEvent = {
+			fMinTime = 3600, -- min time to spawn an event (in seconds)
+			fMaxTime = 7200, -- max time to spawn an event (in seconds)
 		}
 	}
 }
@@ -12,34 +12,43 @@ Miscreated = {
 GameRulesSetStandardFuncs(Miscreated);
 
 function Miscreated.Server:OnInit()
-	self:CreateAirDropPlaneTimer()
+	self:CreateWorldEventTimer()
 end
 
 ----------------------------------------------------------------------------------------------------
--- Support for the air drop planes to spawn
+-- Support for the world events to spawn
 ----------------------------------------------------------------------------------------------------
 
-function Miscreated:CreateAirDropPlaneTimer()
-	--Log("Miscreated.CreateAirDropPlaneTimer")
-	Script.SetTimerForFunction(randomF(self.Properties.AirDrop.fMinTime*1000, self.Properties.AirDrop.fMaxTime*1000), "SpawnAirDropPlane", self)
+function Miscreated:CreateWorldEventTimer()
+	--Log("Miscreated.CreateWorldEventTimer")
+	Script.SetTimerForFunction(randomF(self.Properties.WorldEvent.fMinTime*1000, self.Properties.WorldEvent.fMaxTime*1000), "SpawnWorldEvent", self)
 end
 
-SpawnAirDropPlane = function(self)
-	--Log("Miscreated:SpawnAirDropPlane")
+SpawnWorldEvent = function(self)
+	--Log("Miscreated:SpawnWorldEvent")
+
+	local eventName
+	local rnd = random(1, 2)
+
+	if rnd == 1 then
+		eventName = "AirDropPlane"
+	else
+		eventName = "AirPlaneCrash"
+	end
 
 	local spawnParams = {}
-	spawnParams.class = "AirDropPlane"
+	spawnParams.class = eventName
 	spawnParams.name = spawnParams.class
 
-	Log("Miscreated:SpawnAirDropPlane - Spawning AirDropPlane")
+	--Log("Miscreated:SpawnWorldEvent - Spawning Event")
 	local spawnedEntity = System.SpawnEntity(spawnParams)
 
 	if not spawnedEntity then
-		Log("Miscreated:SpawnAirDropPlane - AirDropPlane could not be spawned")
+		Log("Miscreated:SpawnWorldEvent - entity could not be spawned")
 	end
 
-	-- set timer up for the next plane
-	self:CreateAirDropPlaneTimer()
+	-- set timer up for the next world event
+	self:CreateWorldEventTimer()
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -116,15 +125,15 @@ function Miscreated:EquipPlayer(playerId)
 	-- Get the entity for the player
 	local player = System.GetEntity(playerId);
 
-	-- Verify the player is of type "actor" - sanity check
-	if (player and player.actor) then
+	-- Verify the player is of type "player" - sanity check
+	if (player and player.player) then
 
 		-- Give an AT15 to playerId into whatever slot is available and have the player select it
-		local weaponId = ISM.GiveItem(playerId, "AT15", true);
+		local weapon = ISM.GiveItem(playerId, "AT15", true);
 
 		-- Add a STANAGx30 to playerId into the stanag_mag00 slot of the AT15
 		-- Slot names can be found in the item XML files and they start at index 00 and increment up from there
-		local accessoryId = ISM.GiveItem(playerId, "STANAGx30", false, weaponId, "stanag_mag00");
+		local accessory = ISM.GiveItem(playerId, "STANAGx30", false, weapon.id, "stanag_mag00");
 	end
 end
 --]]
