@@ -1,0 +1,7 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/giant_scorpionControllerDefs.xml"/>
+ <contexts>
+  <contextData name="giant_scorpion" enabled="1" database="Animations/Mannequin/ADB/giant_scorpion.adb" context="Char3P" model="objects/characters/animals/giant_scorpion/giant_scorpion.cdf"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

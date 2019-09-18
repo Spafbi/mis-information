@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_molotov">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_molotov_throw_3p">
+			<WwiseEvent wwise_name="Play_molotov_throw_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_molotov_throw_fp">
+			<WwiseEvent wwise_name="Play_molotov_throw_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_smokegrenade">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_smokegrenade_smoke">
+			<WwiseEvent wwise_name="Play_grenadesmoke_smoke"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_smokegrenade_smoke">
+			<WwiseEvent wwise_name="Stop_grenadesmoke_smoke"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

@@ -4,7 +4,7 @@
         <param name="selectable" value="0"/>
         <param name="mass" value="5.5"/>
         <param name="display_name" value="@flagpole_poland"/>
-        <param name="description" value="@flagpole_polandaDescription"/>
+        <param name="description" value="@flagpole_polandDescription"/>
     </params>
 
     <base_part class="static" type="4876" name="flagpole_poland" max_health="1000" repair_with="Lumber">

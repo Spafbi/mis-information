@@ -1,0 +1,28 @@
+<ATLConfig atl_name="w_handcuffs">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_handcuffs_lock_3p">
+			<WwiseEvent wwise_name="Play_handcuffs_lock_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_lock_fp">
+			<WwiseEvent wwise_name="Play_handcuffs_lock_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_rope_lock_3p">
+			<WwiseEvent wwise_name="Play_handcuffs_rope_lock_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_rope_lock_fp">
+			<WwiseEvent wwise_name="Play_handcuffs_rope_lock_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_rope_unlock_3p">
+			<WwiseEvent wwise_name="Play_handcuffs_rope_unlock_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_rope_unlock_fp">
+			<WwiseEvent wwise_name="Play_handcuffs_rope_unlock_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_unlock_3p">
+			<WwiseEvent wwise_name="Play_handcuffs_unlock_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_handcuffs_unlock_fp">
+			<WwiseEvent wwise_name="Play_handcuffs_unlock_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

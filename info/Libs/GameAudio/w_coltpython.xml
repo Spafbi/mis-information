@@ -1,0 +1,52 @@
+<ATLConfig atl_name="w_coltpython">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_357magnum_fire_3p">
+			<WwiseEvent wwise_name="play_357magnum_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_fire_fp">
+			<WwiseEvent wwise_name="play_357magnum_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_close_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_close_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_close_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_close_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_open_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_open_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_open_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_open_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_spin_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_spin_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_chamber_spin_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_chamber_spin_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_foley_end_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_foley_end_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_foley_end_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_foley_end_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_foley_hand_back_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_foley_hand_back_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_foley_hand_back_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_foley_hand_back_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_pin_push_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_pin_push_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_pin_push_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_pin_push_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_shell_3p">
+			<WwiseEvent wwise_name="Play_357magnum_reload_shell_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_357magnum_reload_shell_fp">
+			<WwiseEvent wwise_name="Play_357magnum_reload_shell_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

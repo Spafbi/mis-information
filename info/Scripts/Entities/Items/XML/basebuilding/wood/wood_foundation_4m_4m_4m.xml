@@ -4,9 +4,11 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="place_terrain_only" value="1"/>
 		<param name="display_name" value="@wood_foundation_4m_4m_4m"/>
 		<param name="description" value="@wood_foundation_4m_4m_4mDescription"/>
+		<param name="place_terrain_only" value="1"/>
+		<param name="place_force_lower" value="1"/>
+		<param name="place_offset" value="-2.7"/>
 	</params>
 
 	<base_part class="static" type="275" name="wood_foundation_4m_4m_4m">

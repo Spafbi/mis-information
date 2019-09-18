@@ -245,18 +245,18 @@
 		<Audio trigger="Play_bullet_impact_sand" />
 		<RandEffect>
 			<Decal minscale="0.03" maxscale="0.07">
-				<Material>materials/decals/sand/sand_a</Material>
+				<Material>materials/decals/sand/bullet_sand</Material>
 			</Decal>
 		</RandEffect>
 		<RandEffect>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.a</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.a</Name>
 			</Particle>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.b</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.b</Name>
 			</Particle>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.c</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.c</Name>
 			</Particle>
 		</RandEffect>
 		<FlowGraph name="dirt_bullet_hit" maxdist="2"/>
@@ -878,13 +878,13 @@
 		<Audio trigger="Play_hatchet_impact_sand" />
 		<RandEffect>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.a</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.a</Name>
 			</Particle>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.b</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.b</Name>
 			</Particle>
 			<Particle>
-				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_soil.c</Name>
+				<Name minscale="0.6" maxscale="1.2" maxscaledist="80">bullet.hit_sand.c</Name>
 			</Particle>
 		</RandEffect>
 		<FlowGraph name="dirt_bullet_hit" maxdist="2"/>

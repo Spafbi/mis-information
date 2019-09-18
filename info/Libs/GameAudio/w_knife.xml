@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_knife">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_knife_fire_3p">
+			<WwiseEvent wwise_name="Play_knife_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_knife_fire_fp">
+			<WwiseEvent wwise_name="Play_knife_fire_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

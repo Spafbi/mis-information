@@ -1,0 +1,52 @@
+<ATLConfig atl_name="w_flaregun">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_flaregun_fire_3p">
+			<WwiseEvent wwise_name="Play_flaregun_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_fire_fp">
+			<WwiseEvent wwise_name="Play_flaregun_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_flare">
+			<WwiseEvent wwise_name="Play_flaregun_flare"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_flaregun_flare">
+			<WwiseEvent wwise_name="Stop_flaregun_flare"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_1_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_1_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_1_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_1_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_2_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_2_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_2_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_2_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_3_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_3_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_3_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_3_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_4_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_4_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_4_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_4_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_5_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_5_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_5_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_5_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_6_3p">
+			<WwiseEvent wwise_name="Play_flaregun_reload_6_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flaregun_reload_6_fp">
+			<WwiseEvent wwise_name="Play_flaregun_reload_6_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

@@ -1,0 +1,16 @@
+<ATLConfig atl_name="w_crossbow">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_crossbow_reload_bolt_out_fp">
+			<WwiseEvent wwise_name="Play_crossbow_reload_bolt_out_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crossbow_reload_bolt_out_3p">
+			<WwiseEvent wwise_name="Play_crossbow_reload_bolt_out_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crossbow_reload_bolt_in_fp">
+			<WwiseEvent wwise_name="Play_crossbow_reload_bolt_in_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crossbow_reload_bolt_in_3p">
+			<WwiseEvent wwise_name="Play_crossbow_reload_bolt_in_3p"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

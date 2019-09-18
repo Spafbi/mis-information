@@ -22,7 +22,7 @@
 		<param name="tags" value="Category:Crafting"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/C4Bricks_200.png?crc=94F37BB1"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="20"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="60001"/>

@@ -33,9 +33,9 @@ PartSpawnerManager = {
 				{ class = "metal_gate_lockable_3m_5_4m", percent = 6 },
 
 				-- misc (4.01)
-				{ class = "metal_steam_stand", percent = 4 },
+				{ class = "metal_steam_stand", percent = 7 },
 				{ class = "gnome_giant_c", percent = 0.01 },
-				{ class = "arcade_cabinet", percent = 7 },
+				{ class = "arcade_cabinet", percent = 4 },
 				-- { class = "christmas_tree", percent = 5.0 }, -- disabled until christmas
 			},
 		},

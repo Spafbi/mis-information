@@ -149,6 +149,10 @@
 		<MeleeHitDamage type="float">10.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">15.0</MeleeHitBleedPercent>
 		
+		<MeleeLungeSpeed type="float">5.0</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.93</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.6</MeleeLungeDamageEvent>
+		
 		<EvasiveApproach type="bb">
 			<Probability type="float">0.2</Probability>
             <ApproachDirectness type="float">0.95</ApproachDirectness>
@@ -164,6 +168,10 @@
 		<!-- Attack -->
 		<MeleeHitDamage type="float">10.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">8.0</MeleeHitBleedPercent>
+		
+		<MeleeLungeSpeed type="float">5.5</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.9</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.47</MeleeLungeDamageEvent>
 		
 		<EvasiveApproach type="bb">
             <Probability type="float">0.5</Probability>
@@ -189,6 +197,10 @@
 		<!-- Attack -->
 		<MeleeHitDamage type="float">7.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">10.0</MeleeHitBleedPercent>
+		
+		<MeleeLungeSpeed type="float">6.0</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.83</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.43</MeleeLungeDamageEvent>
 		
 		<EvasiveApproach type="bb">
             <Probability type="float">0.7</Probability>
@@ -221,6 +233,11 @@
 		<MeleeSlowMovingHitRange type="float">2.0</MeleeSlowMovingHitRange>
 		<MeleeHitDamage type="float">20.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">20.0</MeleeHitBleedPercent>
+		
+		<MeleeLungeSpeed type="float">4.5</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.83</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
+		
 		<PrimaryProjectileAmmoType type="string">ammo_rock_lge</PrimaryProjectileAmmoType>
 	</Brute>
 	
@@ -329,6 +346,9 @@
 		<MeleeHitBleedPercent type="float">10.0</MeleeHitBleedPercent>
 		<!-- Impulses are not currently synced to client -->
 		<!-- <MeleeHitImpulse type="float">100.0</MeleeHitImpulse> -->
+		<MeleeLungeSpeed type="float">5.17</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.77</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
 	</GreyWolf>
 	
 	<MutantDog id="130" inheritanceParent="100" type="bb">
@@ -372,6 +392,9 @@
 		<!-- PackMaxDistanceFromAlpha: If mutant dog is in a pack, will be removed from pack if
 			more than this distance away from the alpha -->
 		<PackMaxDistanceFromAlpha type="float">50.0</PackMaxDistanceFromAlpha>
+		<MeleeLungeSpeed type="float">4.88</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.8</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
 	</MutantDog>
 	
 	<Bear id="140" inheritanceParent="100" type="bb">
@@ -407,6 +430,9 @@
 		<MeleeHitBleedPercent type="float">8.0</MeleeHitBleedPercent>
 		<!-- Impulses are not currently synced to client -->
 		<!-- <MeleeHitImpulse type="float">150.0</MeleeHitImpulse>  -->
+		<MeleeLungeSpeed type="float">4.1</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.77</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.6</MeleeLungeDamageEvent>
 	</Bear>
 	
 	<HumanSpider id="150" inheritanceParent="102" type="bb">
@@ -439,6 +465,9 @@
 		<PrimaryProjectileInaccuracyDegrees type="float">0.5</PrimaryProjectileInaccuracyDegrees>
 		<!-- Navigation -->
 		<NavMesh type="string">LargeSizedCharacters</NavMesh>
+		<MeleeLungeSpeed type="float">5.61</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">1.07</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.57</MeleeLungeDamageEvent>
 	</HumanSpider>
 	
 	<SimpleAnimal id="200" type="bb">
@@ -527,6 +556,9 @@
 		<MeleeFastMovingHitRange type="float">2.5</MeleeFastMovingHitRange>
 		<MeleeSlowMovingHitRange type="float">2.0</MeleeSlowMovingHitRange>
 		<MeleeHitDamage type="float">3.0</MeleeHitDamage>
+		<MeleeLungeSpeed type="float">2.0</MeleeLungeSpeed>
+		<MeleeLungeDuration type="float">0.8</MeleeLungeDuration>
+		<MeleeLungeDamageEvent type="float">0.5</MeleeLungeDamageEvent>
   </Crawler>
   
   <BabySpider id="301" inheritanceParent="300" type="bb">

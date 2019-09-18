@@ -1,0 +1,1001 @@
+<EntityPrototypeLibrary Name="miscreated">
+ <EntityPrototype Name="physicalized.pressurized.fire_extinguisher" Id="{FA7E2BA6-FC3E-4059-A9F7-003C183B3B0D}" Library="miscreated" Class="PressurizedObject" Description="">
+  <Properties bAutoGenAIHidePts="0" bCanBreakOthers="0" fDamageTreshold="0" fDensity="-1" esFaction="" bInteractLargeObject="0" fMass="35" objModel="objects/props/fireex/fireex.cgf" bPickable="0" bPlayerOnly="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bUsable="0" UseMessage="">
+   <DamageMultipliers fBullet="1" fCollision="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <Leak Damage="10" DamageHitType="fire" DamageRange="3" ImpulseScale="2" MaxLeaks="10" Pressure="100" PressureDecay="10" PressureImpulse="2" Volume="500" VolumeDecay="1">
+    <Effect AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" ParticleEffect="smoke_and_fire.geysir.intense_steam_small" bPrime="1" PulsePeriod="0" Scale="0.5" bSizePerUnit="0"/>
+   </Leak>
+   <PhysicsBuoyancy water_damping="1.5" water_density="1" water_resistance="0"/>
+   <PhysicsSimulation damping="0" max_time_step="0.01" sleep_speed="0.04"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="0" bExplosion="1" bMelee="0" bOther="1"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="storage.wood_crate_large" Id="{EA6E66E5-C40B-4EAB-9E13-9363D3C32621}" Library="miscreated" Class="wood_crate_large" Description="">
+  <Properties initialSetup="" bMounted="0" eiPhysicsType="2" bPickable="1" soclasses_SmartObjectClass="" bSpecialSelect="0" bUsable="0">
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.chair3" Id="{70A6B7F2-16A7-4E0F-A6A7-81B95AC97476}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/Chairs/chair_3.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.coffeetable" Id="{162F3182-422D-47D6-A53B-1E7128DB3F4E}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/CoffeeTable/coffeetable.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="60" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.coffeetable_nobase_v2" Id="{523DD20B-1D41-4E4E-A3A4-7E175EB1EF3F}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/coffeetable_v2/coffeetable_nobase_v2.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.coffeetable_v2" Id="{4029B88B-691F-4817-833B-6DD4B5761CA5}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/coffeetable_v2/coffeetable_v2.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="60" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.nightstand" Id="{2175656A-C634-4357-A302-049E02A6686E}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/Nightstand/nightstand.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.officechair_matt" Id="{3CAD36FD-9B7A-4B6C-9382-23B440876E91}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/Officechair_Matt/OfficeChair_Matt.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.barriers.policebarricades_100cm" Id="{12522B07-E0FA-4C81-B9F5-EC8403006075}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/PoliceBarricades/PoliceBarricade100cm.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="15" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.barriers.policebarricades_195cm" Id="{00E05895-1E61-484D-8D0B-0789AAD44C99}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/policebarricades/policebarricade195cm.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="15" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.barriers.policebarricades_240cm" Id="{C39F17F1-7B25-4D53-8E65-91A6A4B61226}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/policebarricades/policebarricade240cm.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="15" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.table_2" Id="{089EF5B8-92BF-40E0-B8CE-52C5BCF098B0}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/tables/table_2/table_2.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="60" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.barchair" Id="{76024725-FEC0-4F8E-A667-629F4DFED236}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/barchair/barchair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.benches_a" Id="{164E801A-FD09-48F2-98E0-764024C87791}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/bench/benches_a.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.benches_b" Id="{00173462-00CF-43D6-B6AB-9A2FD3D931B9}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/bench/benches_b.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="75" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bistro_chair" Id="{998DC4FC-587E-45A5-826F-C61D51FFBA70}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/bistro_pack/bistro_chair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="25" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bistro_table" Id="{81B94E15-8A89-4F35-8149-02039DE6F23A}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/bistro_pack/bistro_table.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="65" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bistro_umbrella_closed" Id="{1322A637-EDB8-4F26-9DFA-007B9D5E3596}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/bistro_pack/umbrella_closed.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bistro_umbrella_open" Id="{090DA820-24D8-4A67-8BA8-FEF37AFEA199}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/bistro_pack/umbrella_open.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.tv_broken" Id="{0542799E-8BAC-4F41-AE57-DC21F67C197F}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/brokentv/brokentv.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.tv_unbroken" Id="{3F8C3043-6C4C-4EC5-9698-D05B5815B2F9}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/brokentv/brokentv.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial="Objects/props/brokentv/unbrokentv_mat"/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.misc.buoy" Id="{6CB9A4B8-7F04-446D-8376-C73A3CBAE134}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/buoy/buoy.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="150" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.folding_chair" Id="{2DB470ED-9D59-489B-954B-8883FD43D3B5}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/campGround/folding_chair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.picnic_table" Id="{69E37931-D484-4741-B71D-688F84CA92FD}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/campGround/picnic_table.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="65" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.picnic_table_bench" Id="{400C2CFA-D433-4C82-9BFC-C289CBFF6A87}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/campGround/picnic_table_bench.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bunk_bed" Id="{F828950F-AE68-4575-B286-E30D41758804}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/furniture/bunk_bed/bunk_bed.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.bunk_bed_single" Id="{9599B456-C048-4AFD-ACAE-6579D42F8741}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/bunk_bed/bunk_bed_single.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.dining_chair" Id="{9414FFAE-A954-4B83-B355-CAB90A14F3CF}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/dining_group/chair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.dining_table_big" Id="{B835AD5D-0C08-44D2-A847-428EBBE1FC08}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/dining_group/table_big.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="65" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.dining_table_small" Id="{27B4B2FA-95C7-46BD-A65E-D0E666A5D249}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/dining_group/table_small.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="55" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.livingroom_sofa" Id="{590A78EA-1EF8-4188-8E0F-C5E027168E25}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/furniture/living_room/sofa.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="120" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.livingroom_sofa_chair" Id="{B55C316E-CFDF-4CED-89BF-BA7F13F198C9}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/living_room/sofa_armchair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.plastic_chair_blue" Id="{01816817-EAD8-4FF2-8F5F-D696A83D29E4}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/furniture/plastic_chair/plastic_chair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.plastic_chair_brown" Id="{5AC31B2A-A01D-43CE-B4CB-90BB57A1D797}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/plastic_chair/plastic_chair_brown.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.plastic_chair_white" Id="{E5443128-06A3-4DBF-A1DA-F921ADEC7301}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/furniture/plastic_chair/plastic_chair_white.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.guest_chair" Id="{BD139BF4-9220-4BF0-955F-D119CD332037}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/guestchair/guestchair.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="45" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.homeOfficeDesk" Id="{18B042C8-D922-4D5F-9AE0-487B865669A2}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/homeOffficeDesk/homeOffficeDesk.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.lockerBox" Id="{5119A013-C496-4688-AF6B-1B40F7697D9C}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/locker/lockerbox.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.lockerDoor" Id="{51834D41-384B-4774-8B83-0B0EDFE3C099}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/locker/lockerdoor.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="10" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.lockerWhole" Id="{673B55D3-5C28-48A9-98D8-57A88424D529}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/locker/lockerwhole.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="60" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.restaurant_table" Id="{837733B5-6708-4C9F-97C0-84BE7CA68E3D}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="Objects/props/restaurant_props/rest_table.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.restaurant_table01" Id="{73357800-810A-4F51-95FF-8C2C99CA2504}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/restaurant_props/rest_table01.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.restaurant_table02" Id="{ACBFD9C5-40C3-4A9C-AD30-DCB988496FA8}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/restaurant_props/rest_table02.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="physicalized.furniture.simpleTable" Id="{57EF26EE-A219-44F8-9564-E1216F89DEA8}" Library="miscreated" Class="RigidBodyEx" Description="">
+  <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/simpletable/simpletable.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AI bUsedAsDynamicObstacle="1"/>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="70" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+    <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+    <CGFPropsOverride player_can_break="">
+     <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+     <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+     <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+    </CGFPropsOverride>
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_trap="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+    <ForeignData bMovingPlatform="0"/>
+    <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="audio.environment.flies_small_idle" Id="{4E4EC4ED-B02F-46C4-A24B-EF51D95543F6}" Library="miscreated" Class="AudioAreaAmbience" Description="">
+  <Properties bEnabled="1" audioEnvironmentEnvironment="outside" fEnvironmentDistance="5" audioRTPCGlobalRtpc="area_fade_distance" audioTriggerPlayTrigger="Play_flies_small_idle" audioRTPCRtpc="area_fade_distance" fRtpcDistance="50" eiSoundObstructionType="2" audioTriggerStopTrigger="Stop_flies_small_idle">
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="audio.environment.flies_large_idle" Id="{63959D66-B11B-4D0E-BCA4-CAE693C21EE3}" Library="miscreated" Class="AudioAreaAmbience" Description="">
+  <Properties bEnabled="1" audioEnvironmentEnvironment="outside" fEnvironmentDistance="5" audioRTPCGlobalRtpc="area_fade_distance" audioTriggerPlayTrigger="Play_flies_large_idle" audioRTPCRtpc="area_fade_distance" fRtpcDistance="50" eiSoundObstructionType="2" audioTriggerStopTrigger="Stop_flies_large_idle">
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

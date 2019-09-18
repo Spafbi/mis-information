@@ -1,0 +1,25 @@
+<item name="wood_watchtower_tire_big" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="@wood_watchtower_tire_big"/>
+		<param name="description" value="@wood_watchtower_tire_bigDescription"/>
+	</params>
+
+	<base_part class="static" type="279" name="wood_watchtower_tire_big" max_health="20000">
+		<static filename="objects/basebuilding/wood/watchtower_wood_big_tire.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

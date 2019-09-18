@@ -1,0 +1,164 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="item">
+   <Tag name="noItem"/>
+   <Tag name="at15"/>
+   <Tag name="coltpython"/>
+   <Tag name="flashlight"/>
+   <Tag name="m40a5"/>
+   <Tag name="g18"/>
+   <Tag name="flaregun"/>
+   <Tag name="SDKRifle"/>
+   <Tag name="SDKPistol"/>
+   <Tag name="grenade"/>
+   <Tag name="pick1h"/>
+   <Tag name="pick2h"/>
+   <Tag name="meleeWeapon"/>
+   <Tag name="rem870"/>
+   <Tag name="model70"/>
+   <Tag name="takedown"/>
+   <Tag name="NoWeapon"/>
+   <Tag name="hatchet"/>
+   <Tag name="hammer"/>
+   <Tag name="squeegee"/>
+   <Tag name="lugwrench"/>
+   <Tag name="policebaton"/>
+   <Tag name="huntingknife"/>
+   <Tag name="survivalknife"/>
+   <Tag name="wasteland22"/>
+   <Tag name="recurvebow"/>
+   <Tag name="throwable"/>
+   <Tag name="torch"/>
+   <Tag name="woodpaddle"/>
+   <Tag name="baseballbat"/>
+   <Tag name="pickaxe"/>
+   <Tag name="nailknuckles"/>
+   <Tag name="axe"/>
+   <Tag name="870_tactical"/>
+   <Tag name="map"/>
+   <Tag name="crafted_pistol"/>
+   <Tag name="crafted_shotgun"/>
+   <Tag name="crafted_rifle"/>
+   <Tag name="crafted_smg"/>
+   <Tag name="m1911a1"/>
+   <Tag name="crossbow"/>
+   <Tag name="hk45"/>
+   <Tag name="ruger22"/>
+   <Tag name="maglite"/>
+   <Tag name="maglite_small"/>
+   <Tag name="rem700"/>
+   <Tag name="duct_tape"/>
+   <Tag name="crafted_bow"/>
+   <Tag name="sako_85"/>
+   <Tag name="handcuffs"/>
+   <Tag name="m16"/>
+   <Tag name="mk18"/>
+   <Tag name="cb_radio"/>
+   <Tag name="chemlight"/>
+   <Tag name="megaphone"/>
+   <Tag name="akm"/>
+   <Tag name="rope"/>
+   <Tag name="m84_flashbang"/>
+   <Tag name="tranquilizer_gun"/>
+   <Tag name="mp5"/>
+   <Tag name="m249"/>
+   <Tag name="binoculars"/>
+   <Tag name="kriss_v"/>
+   <Tag name="aa12"/>
+   <Tag name="guitar"/>
+   <Tag name="c4timedpickup"/>
+   <Tag name="katana"/>
+   <Tag name="m9a1"/>
+   <Tag name="machete"/>
+   <Tag name="p90"/>
+   <Tag name="ump"/>
+   <Tag name="ak74u"/>
+   <Tag name="stunbaton"/>
+   <Tag name="storm"/>
+   <Tag name="makarov"/>
+   <Tag name="acaw"/>
+   <Tag name="dt12"/>
+   <Tag name="p350"/>
+   <Tag name="bulldog"/>
+   <Tag name="ap85"/>
+   <Tag name="px4"/>
+   <Tag name="cleaver"/>
+   <Tag name="pipewrench"/>
+   <Tag name="1873"/>
+  </Group>
+  <Group name="weaponType">
+   <Tag name="nw"/>
+   <Tag name="expl"/>
+   <Tag name="rifle"/>
+   <Tag name="pistol"/>
+   <Tag name="shotgun"/>
+   <Tag name="small_throwable"/>
+   <Tag name="medium_throwable"/>
+   <Tag name="large_throwable"/>
+  </Group>
+  <Group name="firemode">
+   <Tag name="gren" priority="1"/>
+   <Tag name="rapid" priority="1"/>
+   <Tag name="single"/>
+   <Tag name="single_shotgun"/>
+   <Tag name="auto_shotgun"/>
+   <Tag name="burst" priority="1"/>
+   <Tag name="throw" priority="1"/>
+  </Group>
+  <Group name="barrel_attachment">
+   <Tag name="silencer"/>
+   <Tag name="stringMedium"/>
+   <Tag name="stringLoose"/>
+   <Tag name="stringStrong"/>   
+   <Tag name="bayonet" priority="2"/>
+  </Group>
+  <Group name="scope_attachment">
+   <Tag name="assaultScope"/>
+   <Tag name="LaserSight"/>
+  </Group>
+  <Group name="underbarrel_attachment">
+   <Tag name="grenadeLauncher"/>
+   <Tag name="lightShotgun"/>
+   <Tag name="gaussAttachment"/>
+   <Tag name="foregrip"/>
+   <Tag name="foregrip_vertical"/>
+   <Tag name="typhoonAttachment"/>
+   <Tag name="extendedClip"/>
+   <Tag name="doubleClip"/>
+  </Group>
+  <Group name="magazine_attachment">
+   <Tag name="9mmx10"/>
+   <Tag name="9mmx19"/>
+   <Tag name="9mmx33"/>
+   <Tag name="556x100"/>
+   <Tag name="stanagx30"/>
+   <Tag name="Arrowx8"/>
+   <Tag name="CraftedArrowx8"/>
+   <Tag name="12gaugex8_aa12"/>
+   <Tag name="762x30"/>
+   <Tag name="Pile_Flare"/>
+   <Tag name="acp_45x10_hk"/>
+   <Tag name="acp_45x7"/>
+   <Tag name="10mmx15"/>
+   <Tag name="M40x5"/>
+   <Tag name="10mmx30"/>
+   <Tag name="22x10_ruger"/>
+   <Tag name="Boltx5"/>
+   <Tag name="545x30"/>
+   <Tag name="acp_45x20"/>
+   <Tag name="9mmx10_makarov"/>
+   <Tag name="762x5"/>
+   <Tag name="357x14"/>
+   <Tag name="57x50"/>
+   <Tag name="9mmx19_ap85"/>
+   <Tag name="acp_45x10_px4"/>
+   <Tag name="acp_45x30"/>
+  </Group>
+  <Group name="playMode">
+   <Tag name="MP"/>
+   <Tag name="SP"/>
+  </Group>
+  <Tag name="sound" priority="2"/>
+  <Tag name="FP"/>
+ </Tags>
+</TagDefinition>

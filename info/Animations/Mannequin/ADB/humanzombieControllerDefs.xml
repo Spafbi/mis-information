@@ -1,0 +1,83 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/humanzombieTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/humanzombieActions.xml"/>
+ <FragmentDefs>
+  <burst_fire scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <rapid_fire scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <cock scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <stop_rapid_fire scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <melee scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <melee_weapon scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <melee_interact scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <select scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <deselect scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <idle scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <idle_break scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <idle_lastGrenade scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <jump scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <fire scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <throw scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <hold scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <hold_cancel scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <prime scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <raise scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <lower scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <reload scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <begin_reload scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <reload_shell scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <exit_reload scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <enter_modify scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <leave_modify scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <change_firemode scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <intoPlant scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <fromPlant scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <plant scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <grab scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <drop scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <rip_off scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <spin_down scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <spin_down_tail scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <hit scopes="Audio2"/>
+  <empty_clip scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <pickedup scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <pickedup_ammo scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <zoom_in scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <zoom_out scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <zoom_lean scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <shot_last_bullet scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <spin_up scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <aimPose scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <unprime scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <pre_fire scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <barrel_spin scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <idlePose scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <kick scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <Motion_Idle scopes="FullBody3P"/>
+  <Motion_Move scopes="FullBody3P"/>
+  <CODE_MT_idleToMove scopes="FullBody3P"/>
+  <Motion_IdleTurn scopes="FullBody3P"/>
+  <CODE_MT_walkToIdle scopes="FullBody3P"/>
+  <CODE_MT_runToIdle scopes="FullBody3P"/>
+  <hitDeath scopes="FullBody3P+Weapon+Audio1">
+   <Override tags="" fragTags="detail" scopes="HitDeathDetail"/>
+   <Override tags="" fragTags="post_death" scopes="HitDeathDetail"/>
+  </hitDeath>
+  <AI_BecomeAlerted scopes="FullBody3P+HitDeathDetail"/>
+  <AI_Melee scopes="Melee+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <AI_TargetUnreachable scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+  <AI_ThrowRock scopes="FullBody3P+HitDeathDetail+Weapon+Audio1+Audio2"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Char3P />
+  <Weapon />
+  <Audio />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FullBody3P layer="0" numLayers="3" context="Char3P"/>
+  <Melee layer="3" numLayers="1" context="Char3P"/>
+  <HitDeathDetail layer="9" numLayers="2" context="Char3P" Tags="Scope_HitDeathDetail"/>
+  <Weapon layer="0" numLayers="3" context="Weapon"/>
+  <Audio1 layer="0" numLayers="0" context="Audio"/>
+  <Audio2 layer="0" numLayers="0" context="Audio"/>
+ </ScopeDefs>
+</ControllerDef>

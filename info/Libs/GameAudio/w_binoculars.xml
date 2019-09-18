@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_binoculars">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_binoculars_raise_3p">
+			<WwiseEvent wwise_name="Play_binocs_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_binoculars_raise_fp">
+			<WwiseEvent wwise_name="Play_binocs_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

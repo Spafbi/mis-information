@@ -1,4 +1,4 @@
-<item name="SawedShotgun" class="Weapon" category="primary" priority="12" weaponParams="1">
+<item name="SawedShotgun" class="Weapon" category="secondary" priority="12" weaponParams="1">
 	<params>
 		<param name="display_name" value="@SawedShotgun"/>
 		<param name="description" value="@SawedShotgunDescription"/>
@@ -303,7 +303,8 @@
 
 	<storage>
 		<locations>
-			<location category="primary"/>
+			<location category="secondary"/>
+			<location category="any"/>
 		</locations>
 		<types>
 			<type category="12gauge_mag" capacity="1"/>

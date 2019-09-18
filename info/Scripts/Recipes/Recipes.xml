@@ -728,12 +728,12 @@
 								</materials>
 							</item>
 							<!-- Halloween -->
-							<!--
+							
 							<item class="JackOLanternHelmet" time="5">
 								<materials>
 									<material class="Pumpkin" />
 								</materials>
-							</item> -->
+							</item>
 						</items>
 					</subcat>
 				</subcats>
@@ -1184,12 +1184,12 @@
 								     </materials>
 							        </item>
 							        <!-- Halloween -->
-							        <!-- <item class="jack_o_lantern" time="5">
-								          <materials>
-									          <material class="Pumpkin" />
-									          <material class="candle_animal_fat_small" />
-								          </materials>
-							          </item> -->
+							        <item class="jack_o_lantern" time="5">
+								        <materials>
+									        <material class="Pumpkin" />
+									        <material class="candle_animal_fat_small" />
+								        </materials>
+							        </item>
 									<item class="powered_work_light" time="5">
 										<materials>
 											<material class="WorkLight" />
@@ -1447,6 +1447,21 @@
 								</items>
 							</type>
 							
+							<type name="Bridges">
+								<items>
+									<item class="wood_wall_drawbridge_3m_4m" time="5">
+										<materials>
+											<material class="Lumber" count="10" />
+										</materials>
+									</item>
+									<item class="wood_draw_bridge" time="5">
+										<materials>
+											<material class="Lumber" count="5" />
+										</materials>
+									</item>
+								</items>
+							</type>	
+							
 							<!-- Removed for 1.0 - Needs a new custom c++ class made that works like the new Campfire
 							<type name="Drying Rack">
 								<items>
@@ -1466,6 +1481,23 @@
 										<materials>
 											<material class="Lumber" count="4" />
 											<material class="Nails" count="20" />
+										</materials>
+									</item>
+								</items>
+							</type>
+							
+							<type name="Foundation">
+								<items>
+									<item class="rock_foundation_4m_4m_4m" time="5">
+										<materials>
+											<material class="Rocks" count="20" />
+											<material class="Lumber" count="4" />
+										</materials>
+									</item>
+									<item class="rock_foundation_2m_2m_4m" time="5">
+										<materials>
+											<material class="Rocks" count="10" />
+											<material class="Lumber" count="2" />
 										</materials>
 									</item>
 								</items>
@@ -2444,9 +2476,20 @@
 											<material class="Lumber" count="14" />
 										</materials>
 									</item>
+									<item class="wood_watchtower_big" time="5">
+										<materials>
+											<material class="Lumber" count="28" />
+										</materials>
+									</item>
 									<item class="wood_watchtower_tire" time="5">
 										<materials>
 											<material class="Lumber" count="14" />
+											<material class="Wheel" count="2" />
+										</materials>
+									</item>
+									<item class="wood_watchtower_tire_big" time="5">
+										<materials>
+											<material class="Lumber" count="28" />
 											<material class="Wheel" count="2" />
 										</materials>
 									</item>

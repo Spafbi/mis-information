@@ -1,0 +1,34 @@
+<ATLConfig atl_name="w_guitar">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_guitar_fire_3p">
+			<WwiseEvent wwise_name="Play_guitar_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_fire_fp">
+			<WwiseEvent wwise_name="Play_guitar_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_knock_3p">
+			<WwiseEvent wwise_name="Play_guitar_knock_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_knock_fp">
+			<WwiseEvent wwise_name="Play_guitar_knock_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger1_3p">
+			<WwiseEvent wwise_name="Play_guitar_stinger1_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger1_fp">
+			<WwiseEvent wwise_name="Play_guitar_stinger1_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger2_3p">
+			<WwiseEvent wwise_name="Play_guitar_stinger2_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger2_fp">
+			<WwiseEvent wwise_name="Play_guitar_stinger2_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger3_3p">
+			<WwiseEvent wwise_name="Play_guitar_stinger3_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_stinger3_fp">
+			<WwiseEvent wwise_name="Play_guitar_stinger3_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

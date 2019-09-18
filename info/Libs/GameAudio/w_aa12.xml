@@ -1,0 +1,52 @@
+<ATLConfig atl_name="w_aa12">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_aa12_fire_3p">
+			<WwiseEvent wwise_name="Play_aa12_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_fire_fp">
+			<WwiseEvent wwise_name="Play_aa12_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_1_gunReadyFoley_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_1_gunReadyFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_1_gunReadyFoley_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_1_gunReadyFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_2_magOut_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_2_magOut_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_2_magOut_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_2_magOut_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_3_backgroundFoley_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_3_backgroundFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_3_backgroundFoley_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_3_backgroundFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_4_newMag_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_4_newMag_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_4_newMag_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_4_newMag_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_5_magSlideIn_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_5_magSlideIn_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_5_magSlideIn_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_5_magSlideIn_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_6_magHit_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_6_magHit_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_6_magHit_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_6_magHit_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_7_returnFoley_3p">
+			<WwiseEvent wwise_name="Play_aa12_reload_7_returnFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_aa12_reload_7_returnFoley_fp">
+			<WwiseEvent wwise_name="Play_aa12_reload_7_returnFoley_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

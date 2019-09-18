@@ -1,0 +1,76 @@
+<ATLConfig atl_name="w_krissv">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_krissVector_autoFire_3p">
+			<WwiseEvent wwise_name="Play_krissVector_autoFire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_autoFire_fp">
+			<WwiseEvent wwise_name="Play_krissVector_autoFire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_fireLoop_3p">
+			<WwiseEvent wwise_name="Play_krissVector_fireLoop_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_krissVector_fireLoop_3p">
+			<WwiseEvent wwise_name="Stop_krissVector_fireLoop_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_fireLoop_fp">
+			<WwiseEvent wwise_name="Play_krissVector_fireLoop_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_krissVector_fireLoop_fp">
+			<WwiseEvent wwise_name="Stop_krissVector_fireLoop_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_charginghandle_back_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_charginghandle_back_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_charginghandle_back_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_charginghandle_back_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_charginghandle_forward_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_charginghandle_forward_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_charginghandle_forward_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_charginghandle_forward_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_charginghandle_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_charginghandle_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_charginghandle_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_charginghandle_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_discard_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_discard_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_discard_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_discard_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_out_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_out_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_out_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_out_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_retrieve_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_retrieve_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_foley_mag_retrieve_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_foley_mag_retrieve_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_mag_in_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_mag_in_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_mag_in_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_mag_in_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_mag_out_3p">
+			<WwiseEvent wwise_name="Play_krissVector_reload_mag_out_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_reload_mag_out_fp">
+			<WwiseEvent wwise_name="Play_krissVector_reload_mag_out_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_singleFire_3p">
+			<WwiseEvent wwise_name="Play_krissVector_singleFire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_krissVector_singleFire_fp">
+			<WwiseEvent wwise_name="Play_krissVector_singleFire_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

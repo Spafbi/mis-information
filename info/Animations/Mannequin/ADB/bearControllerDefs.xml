@@ -1,0 +1,31 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/bearTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/bearActions.xml"/>
+ <FragmentDefs>
+  <Motion_Idle scopes="FullBody3P+Audio1"/>
+  <Motion_Move scopes="FullBody3P"/>
+  <hitDeath scopes="FullBody3P">
+   <Override tags="" fragTags="detail" scopes="HitDeathDetail"/>
+   <Override tags="" fragTags="post_death" scopes="HitDeathDetail"/>
+  </hitDeath>
+  <CODE_MT_RunToIdle scopes="FullBody3P"/>
+  <CODE_MT_WalkToIdle scopes="FullBody3P"/>
+  <Motion_IdleTurn scopes="FullBody3P"/>
+  <AI_BecomeAlerted scopes="FullBody3P+Audio1"/>
+  <AI_Melee scopes="Melee+HitDeathDetail"/>
+  <AI_TargetUnreachable scopes="FullBody3P+Audio1"/>
+  <CODE_MT_IdleToMove scopes="FullBody3P"/>
+  <AI_Stand_Alert scopes="FullBody3P+Audio1"/>
+  <AI_Stand_Relaxed scopes="FullBody3P+Audio1"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Char3P />
+  <Audio />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FullBody3P layer="0" numLayers="2" context="Char3P"/>
+  <Melee layer="2" numLayers="1" context="Char3P"/>
+  <HitDeathDetail layer="2" numLayers="0" context="Char3P" Tags="Scope_HitDeathDetail"/>
+  <Audio1 layer="0" numLayers="0" context="Audio"/>
+ </ScopeDefs>
+</ControllerDef>
