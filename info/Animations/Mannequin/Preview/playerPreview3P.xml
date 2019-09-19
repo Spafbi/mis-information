@@ -1,0 +1,82 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/PlayerControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Player" enabled="1" database="Animations/Mannequin/ADB/playerAnims3P.adb" context="Char3P" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Audio" enabled="1" database="Animations/Mannequin/ADB/playerSounds.adb" context="Audio"/>
+  <contextData name="NoWeapon" enabled="1" context="Weapon" tags="NoWeapon"/>
+  <contextData name="at15" database="Animations/Mannequin/ADB/at15WeaponAnims.adb" context="Weapon" tags="at15" model="objects/weapons/at15/at15.cdf" attachment="weapon"/>
+  <contextData name="g18" database="Animations/Mannequin/ADB/g18WeaponAnims.adb" context="Weapon" tags="g18" model="objects/weapons/entrada_g18/g18.cdf" attachment="weapon"/>
+  <contextData name="flaregun" database="Animations/Mannequin/ADB/flaregunWeaponAnims.adb" context="Weapon" tags="flaregun" model="objects/weapons/flare_gun/flaregun.cdf" attachment="weapon"/>
+  <contextData name="torch" context="Weapon" tags="torch" model="objects/weapons/Torch/torch.cgf" attachment="weapon"/>
+  <contextData name="hammer" context="Weapon" tags="hammer" model="objects/weapons/hammer/hammer.cgf" attachment="weapon"/>
+  <contextData name="hatchet" context="Weapon" tags="hatchet" model="objects/weapons/hatchet/hatchet.cgf" attachment="weapon"/>
+  <contextData name="huntingknife" context="Weapon" tags="huntingknife" model="objects/weapons/huntingknife/huntingknife.cgf" attachment="weapon"/>
+  <contextData name="lugwrench" context="Weapon" tags="lugwrench" model="objects/weapons/lugwrench/lugwrench.cgf" attachment="weapon"/>
+  <contextData name="model70" database="Animations/Mannequin/ADB/model70WeaponAnims.adb" context="Weapon" tags="model70" model="objects/weapons/model70/model_70.cdf" attachment="weapon"/>
+  <contextData name="policebaton" context="Weapon" tags="policebaton" model="objects/weapons/policebaton/policebaton.cgf" attachment="weapon"/>
+  <contextData name="baseballbat" context="Weapon" tags="baseballbat" model="objects/weapons/baseballbat/baseballbat.cgf" attachment="weapon"/>
+  <contextData name="katana" context="Weapon" tags="katana" model="objects/weapons/katana/katana.cgf" attachment="weapon"/>
+  <contextData name="pickaxe" context="Weapon" tags="pickaxe" model="objects/weapons/pickaxe/pickaxe_tp.cgf" attachment="weapon"/>
+  <contextData name="rem870" database="Animations/Mannequin/ADB/rem870WeaponAnims.adb" context="Weapon" tags="rem870" model="objects/weapons/rem870/rem870.cdf" attachment="weapon"/>
+  <contextData name="squeegee" context="Weapon" tags="squeegee" model="objects/weapons/squeegee/squeegee.cgf" attachment="weapon"/>
+  <contextData name="survivalknife" context="Weapon" tags="survivalknife" model="objects/weapons/survivalknife/survivalknife.cgf" attachment="weapon"/>
+  <contextData name="m40a5" database="Animations/Mannequin/ADB/m40a5WeaponAnims.adb" context="Weapon" tags="m40a5" model="objects/weapons/m40/m40a5.cdf" attachment="weapon"/>
+  <contextData name="wasteland22" database="Animations/Mannequin/ADB/wasteland22WeaponAnims.adb" context="Weapon" tags="wasteland22" model="objects/weapons/22rifle/22rifle.cdf" attachment="weapon"/>
+  <contextData name="coltpython" database="Animations/Mannequin/ADB/coltPythonWeaponAnims.adb" context="Weapon" tags="coltpython" model="objects/weapons/coltpython/coltpython.cdf" attachment="weapon"/>
+  <contextData name="flashlight" context="Weapon" tags="flashlight" model="objects/weapons/flashlight/flashlight.cgf" attachment="weapon"/>
+  <contextData name="maglite" context="Weapon" tags="maglite" model="objects/weapons/maglite/maglite.cgf" attachment="weapon"/>
+  <contextData name="maglite_small" context="Weapon" tags="maglite_small" model="objects/weapons/maglite/maglite_small.cgf" attachment="weapon"/>
+  <contextData name="axe" context="Weapon" tags="axe" model="objects/weapons/axe/axe.cgf" attachment="weapon"/>
+  <contextData name="870_tactical" database="Animations/Mannequin/ADB/870_tacticalWeaponAnims.adb" context="Weapon" tags="870_tactical" model="objects/weapons/870_tactical/870_tactical.cdf" attachment="weapon"/>
+  <contextData name="recurvebow" database="Animations/Mannequin/ADB/recurveBowWeaponAnims.adb" context="Weapon" tags="recurvebow" model="objects/weapons/recurvebow/recurvebow.cdf" attachment="weapon"/>
+  <contextData name="crafted_bow" database="Animations/Mannequin/ADB/crafted_bowWeaponAnims.adb" context="Weapon" tags="crafted_bow" model="objects/weapons/bow_crafted/crafted_bow.cdf" attachment="weapon"/>
+  <contextData name="crafted_pistol" context="Weapon" database="Animations/Mannequin/ADB/craftedpistolWeaponAnims.adb" tags="crafted_pistol" model="objects/weapons/crafted_weapons/crafted_pistol/crafted_pistol.cdf" attachment="weapon"/>
+  <contextData name="crafted_shotgun" database="Animations/Mannequin/ADB/craftedshotgunWeaponAnims.adb" context="Weapon" tags="crafted_shotgun" model="objects/weapons/crafted_weapons/crafted_shotgun_double_short/crafted_shotgun_double_short.cdf" attachment="weapon"/>
+  <contextData name="crafted_rifle" context="Weapon" database="Animations/Mannequin/ADB/craftedrifleWeaponAnims.adb" tags="crafted_rifle" model="objects/weapons/crafted_weapons/crafted_rifle_long/crafted_rifle_long.cdf" attachment="weapon"/>
+  <contextData name="crafted_smg" context="Weapon" database="Animations/Mannequin/ADB/craftedsmgWeaponAnims.adb" tags="crafted_smg" model="objects/weapons/crafted_weapons/crafted_smg/crafted_smg.cdf" attachment="weapon"/>
+  <contextData name="m1911a1" database="Animations/Mannequin/ADB/m1911a1WeaponAnims.adb" context="Weapon" tags="m1911a1" model="objects/weapons/m1911a1/m1911a1.cdf" attachment="weapon"/>
+  <contextData name="crossbow" database="Animations/Mannequin/ADB/crossbowWeaponAnims.adb" context="Weapon" tags="crossbow" model="objects/weapons/crossbow/crossbow.cdf" attachment="weapon"/>
+  <contextData name="hk45" database="Animations/Mannequin/ADB/hk45WeaponAnims.adb" context="Weapon" tags="hk45" model="objects/weapons/hk45/hk45.cdf" attachment="weapon"/>
+  <contextData name="m9a1" database="Animations/Mannequin/ADB/m9a1WeaponAnims.adb" context="Weapon" tags="m9a1" model="objects/weapons/m9a1/m9a1.cdf" attachment="weapon"/>
+  <contextData name="ruger22" database="Animations/Mannequin/ADB/ruger22WeaponAnims.adb" context="Weapon" tags="ruger22" model="objects/weapons/ruger22/ruger22.cdf" attachment="weapon"/>
+  <contextData name="rem700" database="Animations/Mannequin/ADB/rem700WeaponAnims.adb" context="Weapon" tags="rem700" model="objects/weapons/rem700/remington700.cdf" attachment="weapon"/>
+  <contextData name="duct_tape" context="Weapon" tags="duct_tape" model="objects/craftingMats/duct_tape/duct_tape.cgf" attachment="weapon"/>
+  <contextData name="sako_85" database="Animations/Mannequin/ADB/sako_85WeaponAnims.adb" context="Weapon" tags="sako_85" model="objects/weapons/huntingrifle_85/sako_85.cdf" attachment="weapon"/>
+  <contextData name="m16" database="Animations/Mannequin/ADB/m16WeaponAnims.adb" context="Weapon" tags="m16" model="objects/weapons/m16/m16.cdf" attachment="weapon"/>
+  <contextData name="mk18" database="Animations/Mannequin/ADB/mk18WeaponAnims.adb" context="Weapon" tags="mk18" model="objects/weapons/mk18/mk18.cdf" attachment="weapon"/>
+  <contextData name="cb_radio" context="Weapon" tags="cb_radio" model="objects/weapons/cb_radio/cb_radio.cgf" attachment="weapon"/>
+  <contextData name="megaphone" context="Weapon" tags="megaphone" model="objects/weapons/megaphone/megaphone.cgf" attachment="weapon"/>
+  <contextData name="chemlight" context="Weapon" tags="chemlight" model="objects/weapons/chemLight/chemlight.cgf" attachment="weapon"/>
+  <contextData name="akm" database="Animations/Mannequin/ADB/akmWeaponAnims.adb" context="Weapon" tags="akm" model="objects/weapons/akm/akm.cdf" attachment="weapon"/>
+  <contextData name="rope" context="Weapon" tags="rope" model="objects/craftingMats/rope/rope.cgf" attachment="weapon"/>
+  <contextData name="grenade" database="Animations/Mannequin/ADB/grenadeWeaponAnims.adb" context="Weapon" tags="grenade" model="objects/weapons/grenade/grenade.cdf" attachment="weapon"/>
+  <contextData name="m84_flashbang" database="Animations/Mannequin/ADB/m84_flashbangWeaponAnims.adb" context="Weapon" tags="m84_flashbang" model="objects/weapons/m84_flashbang/m84_flashbang.cdf" attachment="weapon"/>
+  <contextData name="tranquilizer_gun" database="Animations/Mannequin/ADB/tranquilizer_gunWeaponAnims.adb" context="Weapon" tags="tranquilizer_gun" model="objects/weapons/tranquilizer_gun/tranquilizer_gun.cdf" attachment="weapon"/>
+  <contextData name="mp5" context="Weapon" database="Animations/Mannequin/ADB/mp5WeaponAnims.adb" tags="mp5" model="objects/weapons/mp5/mp5.cdf" attachment="weapon"/>
+  <contextData name="m249" database="Animations/Mannequin/ADB/m249WeaponAnims.adb" context="Weapon" tags="m249" model="objects/weapons/m249/m249.cdf" attachment="weapon"/>
+  <contextData name="binoculars" context="Weapon" tags="binoculars" model="objects/weapons/binoculars/binoculars.cgf" attachment="weapon"/>
+  <contextData name="kriss_v" database="Animations/Mannequin/ADB/kriss_vWeaponAnims.adb" context="Weapon" tags="kriss_v" model="objects/weapons/kriss_v/kriss_v.cdf" attachment="weapon"/>
+  <contextData name="aa12" database="Animations/Mannequin/ADB/aa12WeaponAnims.adb" context="Weapon" tags="aa12" model="objects/weapons/aa12/aa12.cdf" attachment="weapon"/>
+  <contextData name="guitar" context="Weapon" tags="guitar" model="objects/weapons/guitar/guitar.cgf" attachment="weapon"/>
+  <contextData name="c4timedpickup" context="Weapon" tags="c4timedpickup" model="objects/weapons/c4_and_clacker/c4_and_detonator.cgf" attachment="weapon"/>
+  <contextData name="machete" context="Weapon" tags="machete" model="objects/weapons/machete/machete.cgf" attachment="weapon"/>
+  <contextData name="p90" database="Animations/Mannequin/ADB/p90WeaponAnims.adb" context="Weapon" tags="p90" model="objects/weapons/p90/r90.cdf" attachment="weapon"/>
+  <contextData name="ump" database="Animations/Mannequin/ADB/umpWeaponAnims.adb" context="Weapon" tags="ump" model="objects/weapons/ump/ump.cdf" attachment="weapon"/>
+  <contextData name="ak74u" database="Animations/Mannequin/ADB/ak74uWeaponAnims.adb" context="Weapon" tags="ak74u" model="objects/weapons/ak74u/ak74u.cdf" attachment="weapon"/>
+  <contextData name="stunbaton" database="Animations/Mannequin/ADB/stunbatonWeaponAnims.adb" context="Weapon" tags="stunbaton" model="objects/weapons/stunbaton/stunbaton.cdf" attachment="weapon"/>
+  <contextData name="storm" database="Animations/Mannequin/ADB/stormWeaponAnims.adb" context="Weapon" tags="storm" model="objects/weapons/storm/storm_carbine.cdf" attachment="weapon"/>
+  <contextData name="makarov" database="Animations/Mannequin/ADB/makarovWeaponAnims.adb" context="Weapon" tags="makarov" model="objects/weapons/makarov/makarov.cdf" attachment="weapon"/>
+  <contextData name="acaw" database="Animations/Mannequin/ADB/acawWeaponAnims.adb" context="Weapon" tags="acaw" model="objects/weapons/acaw/acaw.cdf" attachment="weapon"/>
+  <contextData name="dt12" database="Animations/Mannequin/ADB/dt12WeaponAnims.adb" context="Weapon" tags="dt12" model="objects/weapons/dt12/dt12.cdf" attachment="weapon"/>
+  <contextData name="p350" database="Animations/Mannequin/ADB/p350WeaponAnims.adb" context="Weapon" tags="p350" model="objects/weapons/p350/p350.cdf" attachment="weapon"/>
+  <contextData name="bulldog" database="Animations/Mannequin/ADB/bulldogWeaponAnims.adb" context="Weapon" tags="bulldog" model="objects/weapons/bulldog/bulldog.cdf" attachment="weapon"/>
+  <contextData name="ap85" database="Animations/Mannequin/ADB/ap85WeaponAnims.adb" context="Weapon" tags="ap85" model="objects/weapons/ap85/ap85.cdf" attachment="weapon"/>
+  <contextData name="px4" database="Animations/Mannequin/ADB/px4WeaponAnims.adb" context="Weapon" tags="px4" model="objects/weapons/px4/px4.cdf" attachment="weapon"/>
+  <contextData name="cleaver" context="Weapon" tags="cleaver" model="objects/weapons/cleaver/cleaver.cgf" attachment="weapon"/>
+  <contextData name="pipewrench" context="Weapon" tags="pipewrench" model="objects/weapons/pipe_wrench/pipe_wrench.cgf" attachment="weapon"/>
+  <contextData name="1873" database="Animations/Mannequin/ADB/1873WeaponAnims.adb" context="Weapon" tags="1873" model="objects/weapons/1873/1873.cdf" attachment="weapon"/>
+  </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="motionIdle"/>
+ </History>
+</MannequinPreview>

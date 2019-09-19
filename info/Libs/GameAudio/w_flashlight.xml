@@ -1,0 +1,16 @@
+<ATLConfig atl_name="w_flashlight">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_flashlight_off_3p">
+			<WwiseEvent wwise_name="Play_flashlight_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flashlight_off_fp">
+			<WwiseEvent wwise_name="Play_flashlight_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flashlight_on_3p">
+			<WwiseEvent wwise_name="Play_flashlight_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flashlight_on_fp">
+			<WwiseEvent wwise_name="Play_flashlight_on_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

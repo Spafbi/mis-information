@@ -9,6 +9,7 @@
 	<Class name="armored_truck_army" policy="car" own="own"/>
 	<Class name="armored_truck_police" policy="car" own="own"/>
 	<Class name="bicycle" policy="car" own="own"/>
+	<Class name="beetle" policy="car" own="own"/>
 	<Class name="dirtbike" policy="car" own="own"/>
 	<Class name="dune_buggy" policy="car" own="own"/>
 	<Class name="f100truck" policy="car" own="own"/>
@@ -17,10 +18,6 @@
 	<Class name="party_bus" policy="car" own="own"/>
 	<Class name="quadbike" policy="car" own="own"/>
 	<Class name="sedan_base" policy="car" own="own"/>
-	<Class name="sedan_base_black" policy="car" own="own"/>
-	<Class name="sedan_base_green" policy="car" own="own"/>
-	<Class name="sedan_base_red" policy="car" own="own"/>
-	<Class name="sedan_base_yellow" policy="car" own="own"/>
 	<Class name="sedan_police" policy="car" own="own"/>
 	<Class name="sedan_taxi_blix" policy="car" own="own"/>
 	<Class name="sedan_taxi_engoa" policy="car" own="own"/>
@@ -178,7 +175,6 @@
 	<Class name="SteeltoedBootsBlack" policy="clth" />
 	<Class name="SteeltoedBootsBrown" policy="clth" />
 	<Class name="TennisShoes" policy="clth" />
-
 
 	<!-- clothing - hands -->
 	<Class name="MilitaryGloves" policy="clth" />
@@ -479,7 +475,6 @@
 	<Class name="ScarfYellow" policy="clth" />
 	<Class name="ShoulderPadOneSide" policy="clth" />
 	<Class name="ShoulderPadOneSideLeft" policy="clth" />
-
 
 	<!-- clothing - jacket -->
 	<Class name="FlakVestGreen" policy="clth" />
@@ -994,6 +989,9 @@
 	<Class name="acp_45x30" policy="gun" />
 	<Class name="acp_45x7" policy="gun"/>
 	<Class name="AmmoBox_10mm" policy="gun"/>
+	<Class name="AmmoBox_12Gauge_Beanbag" policy="gun" />
+	<Class name="AmmoBox_12Gauge_Pellet" policy="gun" />
+	<Class name="AmmoBox_12Gauge_Slug" policy="gun" />
 	<Class name="AmmoBox_22" policy="gun"/>
 	<Class name="AmmoBox_223" policy="gun"/>
 	<Class name="AmmoBox_308" policy="gun"/>
@@ -1023,6 +1021,21 @@
 	<Class name="Boltx5_0BR0" policy="gun"/>
 	<Class name="Boltx5_0BRP" policy="gun"/>
 	<Class name="Boltx5_F000" policy="gun"/>
+	<Class name="Crafted_AmmoBox_10mm" policy="gun"/>
+	<Class name="Crafted_AmmoBox_12Gauge_Beanbag" policy="gun"/>
+	<Class name="Crafted_AmmoBox_12Gauge_Pellet" policy="gun"/>
+	<Class name="Crafted_AmmoBox_12Gauge_Slug" policy="gun"/>
+	<Class name="Crafted_AmmoBox_22" policy="gun"/>
+	<Class name="Crafted_AmmoBox_223" policy="gun"/>
+	<Class name="Crafted_AmmoBox_308" policy="gun"/>
+	<Class name="Crafted_AmmoBox_357" policy="gun"/>
+	<Class name="Crafted_AmmoBox_5_45x39" policy="gun"/>
+	<Class name="Crafted_AmmoBox_5_56x45" policy="gun"/>
+	<Class name="Crafted_AmmoBox_5_70x28" policy="gun"/>
+	<Class name="Crafted_AmmoBox_7_62x39" policy="gun"/>
+	<Class name="Crafted_AmmoBox_7_62x51" policy="gun"/>
+	<Class name="Crafted_AmmoBox_9mm" policy="gun"/>
+	<Class name="Crafted_AmmoBox_acp_45" policy="gun"/>
 	<Class name="CraftedArrowx8_0000" policy="gun"/>
 	<Class name="CraftedArrowx8_000P" policy="gun"/>
 	<Class name="CraftedArrowx8_00R0" policy="gun"/>
@@ -1032,6 +1045,7 @@
 	<Class name="CraftedArrowx8_0BR0" policy="gun"/>
 	<Class name="CraftedArrowx8_0BRP" policy="gun"/>
 	<Class name="CraftedArrowx8_F000" policy="gun"/>
+	<Class name="CraftedExplosiveArrowx8_0000" policy="gun" />
 	<Class name="ExplosiveArrowx8_0000" policy="gun"/>
 	<Class name="M40x5" policy="gun"/>
 	<Class name="Pile_10mm" policy="gun"/>
@@ -1260,6 +1274,7 @@
 	<Class name="ElectricalParts" policy="obj"/>
 	<Class name="ExplosiveOilBarrel" policy="obj" />
 	<Class name="FireDrill" policy="obj" />
+	<Class name="Hacksaw" policy="obj"/>
 	<Class name="HeatPack" policy="obj"/>
 	<Class name="JerryCanDiesel" policy="obj"/>
 	<Class name="JerryCanGas" policy="obj"/>
@@ -1277,9 +1292,12 @@
 	<Class name="TowCable" policy="obj"/>
 	<Class name="WaterPurificationTablets" policy="obj"/>
 	<Class name="Wheel" policy="obj"/>
+	<Class name="WoodCrate" policy="obj"/>
 	<Class name="WorkLight" policy="obj"/>
 
 	<!-- guides -->
+	<Class name="guide_explosives_1" policy="obj"/>
+	<Class name="guide_explosives_2" policy="obj"/>
 	<Class name="guide_medical_bandages" policy="obj"/>
 	<Class name="guide_powered_parts_1" policy="obj"/>
 	<Class name="guide_structures_tire_stacks" policy="obj"/>
@@ -1304,6 +1322,9 @@
 	<Class name="guide_traps_1" policy="obj"/>
 	<Class name="guide_traps_2" policy="obj"/>
 	<Class name="guide_weapons_melee" policy="obj"/>
+	<Class name="guide_weapons_ranged_1" policy="obj"/>
+	<Class name="guide_weapons_ranged_2" policy="obj"/>
+	<Class name="guide_weapons_ranged_3" policy="obj"/>
 
 	<!-- crafting -->
 	<Class name="Amalgaduino" policy="obj" />
@@ -1322,6 +1343,7 @@
 	<Class name="DeerPelt" policy="obj"/>
 	<Class name="Gunpowder" policy="obj" />
 	<Class name="IronIngot" policy="obj" />
+	<Class name="IronOre" policy="obj" />
 	<Class name="Lighter" policy="obj" />
 	<Class name="Lumber" policy="obj"/>
 	<Class name="Nails" policy="obj"/>
@@ -1445,6 +1467,7 @@
 	<Class name="PlotSignPacked" policy="cnst"/>
 
 	<Class name="animated_search_light" policy="obj"/>
+	<Class name="arcade_cabinet" policy="obj" />
 	<Class name="camping_chair" policy="obj"/>
 	<Class name="camping_lantern" policy="obj"/>
 	<Class name="camping_pop_up_canopy" policy="obj"/>
@@ -1453,7 +1476,56 @@
 	<Class name="candle_animal_fat_large" policy="obj"/>
 	<Class name="candle_animal_fat_small" policy="obj"/>
 	<Class name="christmas_tree" policy="obj" />
+	<Class name="crafted_bed" policy="obj" />
+	<Class name="crafted_rug_01" policy="obj" />
+	<Class name="crafted_rug_02" policy="obj" />
+	<Class name="crafted_rug_03" policy="obj" />
+	<Class name="crafted_rug_04" policy="obj" />
+	<Class name="crafted_rug_05" policy="obj" />
+	<Class name="crafted_rug_06" policy="obj" />
+	<Class name="crafted_rug_07" policy="obj" />
+	<Class name="crafted_rug_08" policy="obj" />
+	<Class name="crafted_rug_09" policy="obj" />
+	<Class name="crafted_rug_10" policy="obj" />
+	<Class name="crafted_rug_11" policy="obj" />
 	<Class name="dws_grill2" policy="obj" />
+	<Class name="flagpole_algeria" policy="obj" />
+	<Class name="flagpole_amalgamated" policy="obj" />
+	<Class name="flagpole_amalgamated_glow" policy="obj" />
+	<Class name="flagpole_america" policy="obj" />
+	<Class name="flagpole_australia" policy="obj" />
+	<Class name="flagpole_austria" policy="obj" />
+	<Class name="flagpole_black" policy="obj" />
+	<Class name="flagpole_blue" policy="obj" />
+	<Class name="flagpole_brazil" policy="obj" />
+	<Class name="flagpole_canada" policy="obj" />
+	<Class name="flagpole_capitalmunch" policy="obj" />
+	<Class name="flagpole_china" policy="obj" />
+	<Class name="flagpole_donut_glow" policy="obj" />
+	<Class name="flagpole_finland" policy="obj" />
+	<Class name="flagpole_france" policy="obj" />
+	<Class name="flagpole_germany" policy="obj" />
+	<Class name="flagpole_green" policy="obj" />
+	<Class name="flagpole_holland" policy="obj" />
+	<Class name="flagpole_india" policy="obj" />
+	<Class name="flagpole_indonesia" policy="obj" />
+	<Class name="flagpole_ironsons" policy="obj" />
+	<Class name="flagpole_israel" policy="obj" />
+	<Class name="flagpole_japan" policy="obj" />
+	<Class name="flagpole_mexico" policy="obj" />
+	<Class name="flagpole_pink" policy="obj" />
+	<Class name="flagpole_pirate" policy="obj" />
+	<Class name="flagpole_poland" policy="obj" />
+	<Class name="flagpole_red" policy="obj" />
+	<Class name="flagpole_russia" policy="obj" />
+	<Class name="flagpole_slovenia" policy="obj" />
+	<Class name="flagpole_smiley_glow" policy="obj" />
+	<Class name="flagpole_south_africa" policy="obj" />
+	<Class name="flagpole_spain" policy="obj" />
+	<Class name="flagpole_sweden" policy="obj" />
+	<Class name="flagpole_turkey" policy="obj" />
+	<Class name="flagpole_uk" policy="obj" />
+	<Class name="flagpole_white" policy="obj" />
 	<Class name="gnome_bronze" policy="obj"/>
 	<Class name="gnome_creep" policy="obj"/>
 	<Class name="gnome_giant_c" policy="obj" />
@@ -1464,6 +1536,7 @@
 	<Class name="gnome_standard_c" policy="obj"/>
 	<Class name="hesco_barrier" policy="obj" />
 	<Class name="jack_o_lantern" policy="obj" />
+	<Class name="jerry" policy="obj" />
 	<Class name="log_furniture_bench_a" policy="obj"/>
 	<Class name="log_furniture_bench_b" policy="obj"/>
 	<Class name="log_furniture_bench_c" policy="obj"/>
@@ -1524,10 +1597,12 @@
 	<Class name="plated_roof_3m_1m" policy="obj" />
 	<Class name="plated_roof_3m_2m" policy="obj" />
 	<Class name="plated_roof_3m_4m" policy="obj" />
+	<Class name="plated_roof_4m_4m" policy="obj" />
 	<Class name="plated_roof_murderhole_3m_2m" policy="obj" />
 	<Class name="plated_roof_murderhole_3m_4m" policy="obj" />
 	<Class name="plated_roof_trapdoor_3m_4m" policy="obj" />
 	<Class name="plated_shutter_1_6m_0_9m" policy="obj" />
+	<Class name="plated_shutter_small_lockable" policy="obj" />
 	<Class name="plated_trapdoor_lockable_1m_2m" policy="obj" />
 	<Class name="plated_walkroof_3m_4m_4m" policy="obj"/>
 	<Class name="plated_walkstairs_3m_4m_4m" policy="obj"/>
@@ -1558,6 +1633,7 @@
 	<Class name="plated_wall_curve_3m_4m" policy="obj"/>
 	<Class name="plated_wall_door_3m_4m" policy="obj"/>
 	<Class name="plated_wall_door_curve_3m_4m" policy="obj"/>
+	<Class name="plated_wall_drawbridge_3m_4m" policy="obj" />
 	<Class name="plated_wall_shutter_3m_2m" policy="obj" />
 	<Class name="plated_wall_shutter_3m_4m" policy="obj" />
 	<Class name="plated_ramp_wall_0m_1_3m_3m" policy="obj" />
@@ -1570,8 +1646,16 @@
 	<Class name="plated_wall_window_curve_3m_4m" policy="obj"/>
 	<Class name="plated_watchtower" policy="obj"/>
 	<Class name="plated_watchtower_tire" policy="obj" />
+	<Class name="powered_ceiling_light_c" policy="obj" />
+	<Class name="powered_electrical_box_medium" policy="obj" />
+	<Class name="powered_electrical_box_small" policy="obj" />
+	<Class name="powered_floodlight01" policy="obj" />
+	<Class name="powered_light_switch" policy="obj" />
+	<Class name="powered_microwave" policy="obj" />
+	<Class name="powered_oven" policy="obj" />
 	<Class name="powered_generator_small" policy="obj"/>
 	<Class name="powered_generator_small_solar" policy="obj"/>
+	<Class name="powered_wall_lamp" policy="obj" />
 	<Class name="powered_work_light" policy="obj"/>
 	<Class name="powered_work_light_blue" policy="obj"/>
 	<Class name="powered_work_light_green" policy="obj"/>
@@ -1609,6 +1693,8 @@
 	<Class name="stick_scaffolding_2m" policy="obj" />
 	<Class name="stick_scaffolding_3m" policy="obj" />
 	<Class name="stick_scaffolding_4m" policy="obj" />
+	<Class name="stone_fireplace" policy="obj" />
+	<Class name="stone_fireplace_packed" policy="obj" />
 	<Class name="stone_furnace" policy="obj" />
 	<Class name="stone_furnace_packed" policy="obj" />
 	<Class name="tiki_torch" policy="obj"/>
@@ -1645,7 +1731,9 @@
 	<Class name="wood_door_1m_2m" policy="obj"/>
 	<Class name="wood_door_frame" policy="obj"/>
 	<Class name="wood_door_lockable_1m_2m" policy="obj"/>
+	<Class name="wood_draw_bridge" policy="obj" />
 	<Class name="wood_floor_panel" policy="obj"/>
+	<Class name="wood_foundation_4m_4m_4m" policy="obj" />
 	<Class name="wood_furniture_panel" policy="obj"/>
 	<Class name="wood_gallows" policy="obj"/>
 	<Class name="wood_gate_lockable_3m_4m" policy="obj"/>
@@ -1678,11 +1766,13 @@
 	<Class name="wood_roof_3m_1m" policy="obj" />
 	<Class name="wood_roof_3m_2m" policy="obj" />
 	<Class name="wood_roof_3m_4m" policy="obj" />
+	<Class name="wood_roof_4m_4m" policy="obj" />
 	<Class name="wood_roof_murderhole_3m_2m" policy="obj" />
 	<Class name="wood_roof_murderhole_3m_4m" policy="obj" />
 	<Class name="wood_roof_trapdoor_3m_4m" policy="obj" />
 	<Class name="wood_trapdoor_lockable_1m_2m" policy="obj" />
 	<Class name="wood_shutter_1_6m_0_9m" policy="obj" />
+	<Class name="wood_shutter_small_lockable" policy="obj" />
 	<Class name="wood_stairs_0m_1_3m_1m" policy="obj"/>
 	<Class name="wood_stairs_0m_1_3m_3m" policy="obj"/>
 	<Class name="wood_stairs_0m_2m_1m" policy="obj"/>
@@ -1729,6 +1819,7 @@
 	<Class name="wood_wall_curve_panel" policy="obj"/>
 	<Class name="wood_wall_door_3m_4m" policy="obj"/>
 	<Class name="wood_wall_door_curve_3m_4m" policy="obj"/>
+	<Class name="wood_wall_drawbridge_3m_4m" policy="obj" />
 	<Class name="wood_wall_panel" policy="obj"/>
 	<Class name="wood_wall_shutter_3m_2m" policy="obj" />
 	<Class name="wood_wall_shutter_3m_4m" policy="obj" />
@@ -1812,9 +1903,10 @@
 	<Class name="PackedTwoPersonTentRed" policy="obj"/>
 	<Class name="PackedTwoPersonTentYellow" policy="obj"/>
 
-	<!-- air drops -->
+	<!-- events -->
 	<Class name="AirDropPlane" policy="obj"/>
 	<Class name="AirDropCrate" policy="obj"/>
+	<Class name="AirPlaneCrash" policy="obj"/>
 
 	<!-- basic physicalized objects -->
 	<Class name="Default" policy="phys"/>
@@ -1829,7 +1921,8 @@
 	<Class name="GeomEntity" policy="phys"/>
 	<Class name="DangerousRigidBody" policy="phys"/>
 	<Class name="DeadBody" policy="phys"/>
-
+	<Class name="ShootingTarget" policy="phys"/>
+	
 	<!-- misc -->
 	<Class name="Comment" policy="obj"/>
 	<Class name="SpawnPoint" policy="obj"/>

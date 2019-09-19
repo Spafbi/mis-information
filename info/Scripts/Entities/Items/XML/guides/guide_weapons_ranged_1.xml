@@ -4,7 +4,7 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.1"/>
 		<param name="display_name" value="@guide_weapons_ranged_1"/>
-		<param name="description" value="@guide_weapons_rangedDescription"/>
+		<param name="description" value="@guide_weapons_ranged_1Description"/>
 	</params>
 
 	<geometry>

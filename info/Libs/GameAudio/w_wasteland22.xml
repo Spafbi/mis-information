@@ -1,0 +1,22 @@
+<ATLConfig atl_name="w_wasteland22">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_22ranger_fire_3p">
+			<WwiseEvent wwise_name="play_22ranger_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_22ranger_fire_fp">
+			<WwiseEvent wwise_name="play_22ranger_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_22_ranger_rack_1_3p">
+			<WwiseEvent wwise_name="Play_22ranger_rack_1_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_22_ranger_rack_1_fp">
+			<WwiseEvent wwise_name="Play_22ranger_rack_1_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_22_ranger_rack_2_3p">
+			<WwiseEvent wwise_name="Play_22ranger_rack_2_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_22_ranger_rack_2_fp">
+			<WwiseEvent wwise_name="Play_22ranger_rack_2_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

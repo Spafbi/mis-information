@@ -1,0 +1,13 @@
+<ATLConfig atl_name="w_flashbang">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_flashbang_explode">
+			<WwiseEvent wwise_name="Play_flashbang_explode"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flashbang_throw_3p">
+			<WwiseEvent wwise_name="Play_flashbang_throw_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_flashbang_throw_fp">
+			<WwiseEvent wwise_name="Play_flashbang_throw_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

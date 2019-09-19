@@ -1,0 +1,145 @@
+<ATLConfig atl_name="w_m249">
+	<AudioTriggers>
+
+		<ATLTrigger atl_name="Play_m249_fire_3p">
+			<WwiseEvent wwise_name="Play_m249_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_fire_fp">
+			<WwiseEvent wwise_name="Play_m249_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_refresh_fire_3p">
+			<WwiseEvent wwise_name="Play_m249_refresh_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_refresh_fire_fp">
+			<WwiseEvent wwise_name="Play_m249_refresh_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_1_gunPrepFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_1_gunPrepFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_1_gunPrepFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_1_gunPrepFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_2_feedTrayUp_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_2_feedTrayUp_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_2_feedTrayUp_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_2_feedTrayUp_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_3_beltGunFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_3_beltGunFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_3_beltGunFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_3_beltGunFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_4_pullBoxOff_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_4_pullBoxOff_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_4_pullBoxOff_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_4_pullBoxOff_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_5_boxLoad_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_5_boxLoad_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_5_boxLoad_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_5_boxLoad_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_6_shutFeedTray_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_6_shutFeedTray_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_6_shutFeedTray_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_6_shutFeedTray_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_7_smackTray_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_7_smackTray_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_7_smackTray_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_7_smackTray_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_8_gunReturnFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_8_gunReturnFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_8_gunReturnFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_8_gunReturnFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_1_removeBelt_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_1_removeBelt_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_1_removeBelt_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_1_removeBelt_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_2_pullOffBelt_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_2_pullOffBelt_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_2_pullOffBelt_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_2_pullOffBelt_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_3_attachBox_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_3_attachBox_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_3_attachBox_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_3_attachBox_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_4_grabBelt_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_4_grabBelt_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_4_grabBelt_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_4_grabBelt_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_5_insertBelt_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_5_insertBelt_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_box_bullet_5_insertBelt_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_box_bullet_5_insertBelt_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_1_handOnMag_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_1_handOnMag_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_1_handOnMag_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_1_handOnMag_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_2_magPull_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_2_magPull_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_2_magPull_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_2_magPull_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_3_gunMoveDownFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_3_gunMoveDownFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_3_gunMoveDownFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_3_gunMoveDownFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_4_gunMoveUpFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_4_gunMoveUpFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_4_gunMoveUpFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_4_gunMoveUpFoley_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_5_magLoad_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_5_magLoad_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_5_magLoad_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_5_magLoad_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_6_magHit_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_6_magHit_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_6_magHit_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_6_magHit_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_7_gunReturnFoley_3p">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_7_gunReturnFoley_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_m249_reload_mag_7_gunReturnFoley_fp">
+			<WwiseEvent wwise_name="Play_m249_reload_mag_7_gunReturnFoley_fp"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_m249_refresh_fire_3p">
+			<WwiseEvent wwise_name="Stop_m249_refresh_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_m249_refresh_fire_fp">
+			<WwiseEvent wwise_name="Stop_m249_refresh_fire_fp"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

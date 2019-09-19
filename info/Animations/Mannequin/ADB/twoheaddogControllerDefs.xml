@@ -1,0 +1,29 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/twoheaddogTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/twoheaddogActions.xml"/>
+ <FragmentDefs>
+  <Motion_Idle scopes="FullBody3P"/>
+  <Motion_Move scopes="FullBody3P"/>
+  <hitDeath scopes="FullBody3P">
+   <Override tags="" fragTags="detail" scopes="HitDeathDetail"/>
+   <Override tags="" fragTags="post_death" scopes="HitDeathDetail"/>
+  </hitDeath>
+  <CODE_MT_RunToIdle scopes="FullBody3P"/>
+  <CODE_MT_WalkToIdle scopes="FullBody3P"/>
+  <Motion_IdleTurn scopes="FullBody3P"/>
+  <AI_BecomeAlerted scopes="FullBody3P"/>
+  <AI_Melee scopes="Melee"/>
+  <AI_TargetUnreachable scopes="FullBody3P"/>
+  <CODE_MT_IdleToMove scopes="FullBody3P"/>
+  <Howl scopes="FullBody3P"/>
+  <Sniff scopes="FullBody3P"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Char3P />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FullBody3P layer="0" numLayers="2" context="Char3P"/>
+  <Melee layer="2" numLayers="1" context="Char3P"/>
+  <HitDeathDetail layer="2" numLayers="0" context="Char3P" Tags="Scope_HitDeathDetail"/>
+ </ScopeDefs>
+</ControllerDef>

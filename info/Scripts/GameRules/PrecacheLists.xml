@@ -32,7 +32,6 @@
 			<CDF name = 'objects/characters/players/female/human_female.cdf' />
 		</CDFs>
 		<DBAs>
-			<DBA name ='animations/human/male/locomotion.dba' />
 			<DBA name ='animations/human/male/locomotion/1handedmelee.dba' />
 			<DBA name ='animations/human/male/locomotion/jump.dba' />
 			<DBA name ='animations/human/male/locomotion/lean.dba' />

@@ -50,7 +50,7 @@
 		<param name="effect" value="traps.shotgun.muzzle_flash"/>
 		<param name="effect_scale" value="1"/>
 		<param name="radial_blur_dist" value="0"/>
-		<param name="hit_type" value="frag"/>
+		<param name="hit_type" value="blunt"/>
 	</explosion>
 
 </item>

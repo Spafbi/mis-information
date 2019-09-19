@@ -195,7 +195,7 @@ AISpawnerManager = {
 
 		{
 			category = "wolf_pack",
-			pack = true, min = 3, max = 5,
+			pack = true, min = 3, max = 4,
 			classes =
 			{
 				{ 
@@ -213,7 +213,7 @@ AISpawnerManager = {
 
 		{
 			category = "wolf_pack_large",
-			pack = true, min = 6, max = 8,
+			pack = true, min = 4, max = 6,
 			classes =
 			{
 				{ 
@@ -237,10 +237,11 @@ AISpawnerManager = {
 			category = "Spiker",
 			classes =
 			{
-				{ category = "CrazySingle", percent = 45 },
+				{ category = "CrazySingle", percent = 40 },
 				{ category = "SpikerSingle", percent = 30 },
 				{ category = "HumanZombieSingle", percent = 20 },
 				{ category = "BruteMutantSingle", percent = 5 },
+				{ category = "spiker_pack", percent = 5 },
 			},
 		},
 
@@ -254,6 +255,7 @@ AISpawnerManager = {
 
 		{
 			category = "RandomDeer",
+			pack = true, min = 1, max = 3,
 			classes =
 			{
 				{ category = "DeerSingle", percent = 100 }
@@ -286,7 +288,7 @@ AISpawnerManager = {
 
 		{
 			category = "spiker_pack",
-			pack = true, min = 2, max = 3,
+			pack = true, min = 3, max = 4,
 			classes =
 			{
 				-- Hack in CAISpawnerManager::SpawnAIInSector() will make first ai be a Spiker,
@@ -297,7 +299,7 @@ AISpawnerManager = {
 
 		{
 			category = "brute_pack",
-			pack = true, min = 3, max = 4,
+			pack = true, min = 3, max = 5,
 			classes =
 			{
 				-- Hack in CAISpawnerManager::SpawnAIInSector() will make first ai be a brute,
@@ -308,7 +310,7 @@ AISpawnerManager = {
 
 		{
 			category = "brute_hunting_pack",
-			pack = true, min = 3, max = 4,
+			pack = true, min = 4, max = 6,
 			classes =
 			{
 				-- Hack in CAISpawnerManager::SpawnAIInSector() will make first ai be a brute,
@@ -317,18 +319,73 @@ AISpawnerManager = {
 			},
 		},
 
+
+		-- --------------------------------------------------------------------
+		-- HORDES / INVASIONS
+		-- --------------------------------------------------------------------
+
 		{
 			category = "horde",
-			min = 6, max = 11,
+			min = 8, max = 15,
 			classes =
 			{
 				-- Hack in CAISpawnerManager::SpawnHorde() to spawn at least 1 brute per horde as a psuedo leader
-				{ class = "Crazy", percent = 45 },
-				{ class = "Spiker", percent = 30 },
-				{ class = "HumanZombie", percent = 20 },
-				{ class = "BruteMutant", percent = 5 },
+				{ category = "CrazySingle", percent = 45 },
+				{ category = "SpikerSingle", percent = 30 },
+				{ category = "HumanZombieSingle", percent = 20 },
+				{ category = "BruteMutantSingle", percent = 5 },
 			},
 		},
+
+		{
+			-- Essentially the same as a horde, but no brutes
+			category = "mutant_invasion",
+			min = 10, max = 15,
+			classes =
+			{
+				{ category = "CrazySingle", percent = 45 },
+				{ category = "SpikerSingle", percent = 30 },
+				{ category = "HumanZombieSingle", percent = 25 },
+			},
+		},
+
+		{
+			-- Doesn't work yet, need a no timed explosion variant'
+			category = "babyspider_invasion",
+			min = 10, max = 15,
+			classes = 
+			{
+				{ category = "BabySpider", percent = 100 },
+			},
+		},
+
+		{
+			category = "bear_invasion",
+			min = 3, max = 5,
+			classes = 
+			{
+				{ class = "Bear", percent = 100 },
+			},
+		},
+
+		{
+			category = "giantroach_invasion",
+			min = 10, max = 15,
+			classes = 
+			{
+				{ category = "GiantRoachSingle", percent = 100 },
+			},
+		},
+
+		{
+			category = "twoheaddog_invasion",
+			min = 3, max = 5,
+			classes = 
+			{
+				{ class = "TwoHeadDog", percent = 100 },
+			},
+		},
+
 
 		-- --------------------------------------------------------------------
 		-- ACTIONABLE WORLD MANAGER
@@ -363,7 +420,7 @@ AISpawnerManager = {
 
 		{
 			category = "test_group",
-			min = 5, max = 7,
+			min = 5, max = 10,
 			classes = 
 			{
 				{ category = "CrazySingle", percent = 45 },
@@ -450,6 +507,24 @@ end
 
 function AISpawnerManager:Reset()
 	--Log("AISpawnerManager:Reset");
+end
+
+function AISpawnerManager:SpawnHorde(targetPos)
+	--Log("AISpawnerManager:SpawnHorde");
+
+	local vSpawnPos = {x=0,y=0,z=0}
+
+
+	local rnd = random(1, 100);
+
+	if rnd < 25 then
+		AISM.SpawnHorde(targetPos, "horde")
+	elseif rnd < 90 then
+		AISM.SpawnInvasion(vSpawnPos, targetPos, "mutant_invasion", true)
+	else
+		AISM.SpawnInvasion(vSpawnPos, targetPos, "twoheaddog_invasion", true)
+	end
+
 end
 
 -- Load mods

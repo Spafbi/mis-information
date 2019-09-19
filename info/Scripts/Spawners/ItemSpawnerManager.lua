@@ -2833,8 +2833,8 @@ reduced to 25% of the prior item's, like so:
 			classes =
 			{
 				-- { category = "RandomChristmasPresent", percent = 2 }, -- christmas
-				{ category = "RandomIncapacition", percent = 6 },
-				{ category = "RandomPaintCan", percent = 6 },
+				{ category = "RandomIncapacition", percent = 5 },
+				{ category = "RandomPaintCan", percent = 4 },
 				{ category = "RandomFireStarter", percent = 4 },
 				{ class = "Amalgaduino", percent = 0.1 },
 				{ class = "BarbedWireCoil", percent = 5 },
@@ -2842,7 +2842,7 @@ reduced to 25% of the prior item's, like so:
 				{ class = "DuctTape", percent = 6.9 },
 				{ class = "ElectricalParts", percent = 6 },
 				{ class = "EmptyBottle", percent = 6 },
-				{ class = "Nails", percent = 15 },
+				{ class = "Nails", percent = 13 },
 				{ class = "PipeMetal", percent = 5 },
 				{ class = "Rags", percent = 6 },
 				{ class = "PropaneHeaterTop", percent = 7 },
@@ -2853,6 +2853,7 @@ reduced to 25% of the prior item's, like so:
 				{ class = "TargetPaper", percent = 3 },
 				{ class = "Tarp", percent = 4 },
 				{ class = "WorkLight", percent = 4 },
+				{ class = "Hacksaw", percent = 5 },
 			},
 		},
 
@@ -3704,7 +3705,7 @@ reduced to 25% of the prior item's, like so:
 			{
 				{ class = "HeatPack", percent = 8 },
 				{ category = "RandomMedical", percent = 10 },
-				{ category = "RandomWoolGlove", percent = 5 },
+				{ category = "RandomWoolGloves", percent = 5 },
 				{ category = "BandanaHat", percent = 2 },
 				{ category = "RandomCraftingGuide", percent = 1 },
 				{ category = "RandomAmmo", percent = 1 },
@@ -4174,8 +4175,7 @@ reduced to 25% of the prior item's, like so:
             category = "RocksAndPyrite",
             classes =
             {
-                { class = "Rocks", percent = 60 },
-                { class = "Pyrite", percent = 40 },
+                { class = "Rocks", percent = 100 },
             },
         },
 		

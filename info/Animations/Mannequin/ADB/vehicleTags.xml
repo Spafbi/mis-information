@@ -1,0 +1,29 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="Vehicle">
+   <Tag name="F100truck"/>
+   <Tag name="fishingboat"/>
+   <Tag name="quadbike"/>
+   <Tag name="towcar"/>
+   <Tag name="tractor"/>
+   <Tag name="bicycle"/>
+   <Tag name="truck_5ton"/>
+   <Tag name="dirtbike"/>
+   <Tag name="party_bus"/>
+   <Tag name="sedan"/>
+   <Tag name="dune_buggy"/>
+   <Tag name="armored_truck"/>
+   <Tag name="suv"/>
+   <Tag name="jetski"/>
+   <Tag name="truck_semi"/>
+   <Tag name="beetle"/>
+	</Group>
+  <Group name="PlayMode">
+   <Tag name="SP"/>
+   <Tag name="MP"/>
+  </Group>
+  <Tag name="Driver"/>
+  <Tag name="Passenger"/>
+  <Tag name="Gunner"/>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,22 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/giant_scorpionTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/giant_scorpionActions.xml"/>
+ <FragmentDefs>
+  <Motion_Idle scopes="FullBody3P"/>
+  <Motion_Move scopes="FullBody3P"/>
+  <Motion_IdleTurn scopes="FullBody3P"/>
+  <hitDeath scopes="FullBody3P"/>
+  <AI_Melee scopes="Melee"/>
+  <AI_Spawn scopes="FullBody3P"/>
+  <AI_Despawn scopes="FullBody3P"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Char3P />
+  <Weapon />
+  <Audio />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FullBody3P layer="0" numLayers="3" context="Char3P"/>
+  <Melee layer="3" numLayers="1" context="Char3P"/>
+ </ScopeDefs>
+</ControllerDef>

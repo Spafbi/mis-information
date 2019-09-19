@@ -2,6 +2,7 @@
 
 	<params>
 		<param name="mass" value="2000"/>
+		<param name="no_icon" value="1"/>
 		<param name="view_dist_min" value="8192"/>
 		<param name="display_name" value="@AirDropCrate"/>
 	</params>

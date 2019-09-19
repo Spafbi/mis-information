@@ -10,7 +10,7 @@
 		<param name="description" value="@metal_steam_standDescription"/>
 	</params>
 
-	<base_part class="static" type="2998" name="metal_steam_stand" max_health="10000" repair_with="SheetMetal" towable="1">
+	<base_part class="static" type="2998" name="metal_steam_stand" max_health="20000" repair_with="SheetMetal" towable="1">
 		<static filename="objects/basebuilding/other/kiosk/bpart_kiosk.cgf"/>
 		<envareas>
 			<envarea enabled="1" scaleEffectsFromCenter="1" bb1="-3.5,-3.5,-1" bb2="3.5,3.5,3.0" temperature="4"/>

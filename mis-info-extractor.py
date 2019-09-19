@@ -6,20 +6,37 @@
 # usage           : see ./mis-info-extractory.py -h for usage
 # python_version  : 3.6.7
 # ==============================================================================
-import argparse
-import os
 from pathlib import Path
 from zipfile import ZipFile
+import argparse
+import os
+import subprocess
 
 
-def extract_file(**kwargs):
+def extract_file_old_method(**kwargs):
     filename = kwargs.get('filename')
     target_dir = kwargs.get('target_dir')
     extensions = ('.lua', '.xml')
     pak_file = ZipFile(filename, 'r')
     for file in pak_file.namelist():
         if file.endswith(extensions):
+            print("filename: {}\nfile: {}\ntarget_dir: {}".format(filename, file, target_dir))
             pak_file.extract(file, target_dir)
+    pak_file.close()
+
+def extract_file(**kwargs):
+    filename = kwargs.get('filename')
+    target_dir = kwargs.get('target_dir')
+    extensions = ('.lua', '.xml')
+    pak_file = ZipFile(filename, 'r')
+    baseCmd = '/usr/bin/unzip -o {FILENAME} {THISFILE} -d {TARGET}'
+    for file in pak_file.namelist():
+        if file.lower().endswith(extensions):
+            thisCmd = baseCmd.format(FILENAME=filename,
+                                     THISFILE=file,
+                                     TARGET=target_dir).split()
+
+            subprocess.run(thisCmd)
     pak_file.close()
 
 def remove_binary_xml_files(target_dir):
@@ -39,6 +56,8 @@ def process_paks(**kwargs):
 
     for filename in os.listdir(directory):
         if filename.endswith(".pak"):
+            # extract_file(filename="{0}/{1}".format(directory, filename),
+            #              target_dir=target_dir)
             extract_file(filename="{0}/{1}".format(directory, filename),
                          target_dir=target_dir)
 
@@ -48,7 +67,7 @@ def process_paks(**kwargs):
 
 def main():
     description = 'Miscreated Information (LUA and XML) Extrator'
-    default_dir = 'C:/Program Files/Steam/steamapps/common/Miscreated'
+    default_dir = 'C:/Games/SteamLibrary/steamapps/common/Miscreated'
     # default_dir = 'C:/Games/Miscreated'
     help = "Miscreated installation directory - be sure to use forward " \
            "slashes instead of backslashes"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>E:\Steam\steamapps\common\CRYENGINE\GameSDK\Sounds\wwise_project\</ProjectRoot>
-		<SourceFilesRoot>E:\Steam\steamapps\common\CRYENGINE\GameSDK\Sounds\wwise_project\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Steam\steamapps\common\CRYENGINE\GameSDK\Sounds\wwise_project\../wwise\</SoundBanksRoot>
+		<ProjectRoot>F:\Miscreated\adamj\dev\GameSDK\Sounds\wwise_project\</ProjectRoot>
+		<SourceFilesRoot>F:\Miscreated\adamj\dev\GameSDK\Sounds\wwise_project\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Miscreated\adamj\dev\GameSDK\Sounds\wwise_project\../wwise\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Steam\steamapps\common\CRYENGINE\GameSDK\Sounds\wwise_project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Miscreated\adamj\dev\GameSDK\Sounds\wwise_project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -1488,6 +1488,10 @@
 				<Event Id="731997362" Name="Play_atv_slip"/>
 				<Event Id="2464792052" Name="Play_atv_start"/>
 				<Event Id="98287720" Name="Play_atv_stop"/>
+				<Event Id="2946480977" Name="Play_beetle_horn"/>
+				<Event Id="1026017144" Name="Play_beetle_run_ambience"/>
+				<Event Id="1937370074" Name="Play_beetle_start"/>
+				<Event Id="4017350514" Name="Play_beetle_stop"/>
 				<Event Id="1282812604" Name="Play_bicycle_bump"/>
 				<Event Id="3742125899" Name="Play_bicycle_damage"/>
 				<Event Id="3915081547" Name="Play_bicycle_horn"/>
@@ -1650,6 +1654,10 @@
 					<ShortName>veh_sedan_offload_med.wav</ShortName>
 					<Path>SFX\veh_sedan_offload_med_EE79F7FB.wem</Path>
 				</File>
+				<File Id="54304911" Language="SFX">
+					<ShortName>veh_engine_low_01-01.wav</ShortName>
+					<Path>SFX\veh_engine_low_01-01_EE79F7FB.wem</Path>
+				</File>
 				<File Id="62260728" Language="SFX">
 					<ShortName>veh_generic_tires_concrete_slip2.wav</ShortName>
 					<Path>SFX\veh_generic_tires_concrete_slip2_E843A46D.wem</Path>
@@ -1686,9 +1694,17 @@
 					<ShortName>jetski_engine_high.wav</ShortName>
 					<Path>SFX\jetski_engine_high_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="93949686" Language="SFX">
+					<ShortName>veh_engine_high_offload_02-02.wav</ShortName>
+					<Path>SFX\veh_engine_high_offload_02-02_EE79F7FB.wem</Path>
+				</File>
 				<File Id="97133533" Language="SFX">
 					<ShortName>veh_sedan_onload_med.wav</ShortName>
 					<Path>SFX\veh_sedan_onload_med_EE79F7FB.wem</Path>
+				</File>
+				<File Id="112720017" Language="SFX">
+					<ShortName>veh_engine_medium_offload_01-02.wav</ShortName>
+					<Path>SFX\veh_engine_medium_offload_01-02_EE79F7FB.wem</Path>
 				</File>
 				<File Id="115829166" Language="SFX">
 					<ShortName>veh_bike_junk6.wav</ShortName>
@@ -1826,6 +1842,10 @@
 					<ShortName>veh_fishing_boat_engine_med.wav</ShortName>
 					<Path>SFX\veh_fishing_boat_engine_med_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="276558277" Language="SFX">
+					<ShortName>miscreated_beetle_stop.wav</ShortName>
+					<Path>SFX\miscreated_beetle_stop_E843A46D.wem</Path>
+				</File>
 				<File Id="276886885" Language="SFX">
 					<ShortName>veh_luggage_engine_idle.wav</ShortName>
 					<Path>SFX\veh_luggage_engine_idle_EE79F7FB.wem</Path>
@@ -1841,6 +1861,10 @@
 				<File Id="286092901" Language="SFX">
 					<ShortName>veh_bike_pedal_slow.wav</ShortName>
 					<Path>SFX\veh_bike_pedal_slow_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="299163328" Language="SFX">
+					<ShortName>veh_engine_medium_01-02.wav</ShortName>
+					<Path>SFX\veh_engine_medium_01-02_EE79F7FB.wem</Path>
 				</File>
 				<File Id="305824011" Language="SFX">
 					<ShortName>veh_generic_tires_water.wav</ShortName>
@@ -1906,9 +1930,17 @@
 					<ShortName>veh_generic_tires_concrete.wav</ShortName>
 					<Path>SFX\veh_generic_tires_concrete_EE79F7FB.wem</Path>
 				</File>
+				<File Id="409944191" Language="SFX">
+					<ShortName>miscreated_beetle_start.wav</ShortName>
+					<Path>SFX\miscreated_beetle_start_80DC4D75.wem</Path>
+				</File>
 				<File Id="423214949" Language="SFX">
 					<ShortName>veh_generic_bump3.wav</ShortName>
 					<Path>SFX\veh_generic_bump3_9E69E797.wem</Path>
+				</File>
+				<File Id="442450694" Language="SFX">
+					<ShortName>veh_engine_high_01-01.wav</ShortName>
+					<Path>SFX\veh_engine_high_01-01_EE79F7FB.wem</Path>
 				</File>
 				<File Id="443196465" Language="SFX">
 					<ShortName>veh_tractor_mechanics_high.wav</ShortName>
@@ -2026,6 +2058,14 @@
 					<ShortName>veh_generic_tires_light_slip1.wav</ShortName>
 					<Path>SFX\veh_generic_tires_light_slip1_9E69E797.wem</Path>
 				</File>
+				<File Id="594113927" Language="SFX">
+					<ShortName>veh_beetle_horn_01-01.wav</ShortName>
+					<Path>SFX\veh_beetle_horn_01-01_EE79F7FB.wem</Path>
+				</File>
+				<File Id="594549285" Language="SFX">
+					<ShortName>veh_engine_low_offload_01-02.wav</ShortName>
+					<Path>SFX\veh_engine_low_offload_01-02_EE79F7FB.wem</Path>
+				</File>
 				<File Id="619827659" Language="SFX">
 					<ShortName>veh_bike_bell.wav</ShortName>
 					<Path>SFX\veh_bike_bell_E843A46D.wem</Path>
@@ -2130,6 +2170,10 @@
 					<ShortName>jetski_damage_randoms_thud3.wav</ShortName>
 					<Path>SFX\jetski_damage_randoms_thud3_9E69E797.wem</Path>
 				</File>
+				<File Id="821535794" Language="SFX">
+					<ShortName>Idle_02-02.wav</ShortName>
+					<Path>SFX\Idle_02-02_EE79F7FB.wem</Path>
+				</File>
 				<File Id="821958235" Language="SFX">
 					<ShortName>veh_bike_surface_sand.wav</ShortName>
 					<Path>SFX\veh_bike_surface_sand_4B8CC0C5.wem</Path>
@@ -2161,6 +2205,10 @@
 				<File Id="873396513" Language="SFX">
 					<ShortName>veh_duneBuggy_onload_high.wav</ShortName>
 					<Path>SFX\veh_duneBuggy_onload_high_EE79F7FB.wem</Path>
+				</File>
+				<File Id="890312024" Language="SFX">
+					<ShortName>miscreated_beetle_start.wav</ShortName>
+					<Path>SFX\miscreated_beetle_start_F54F7191.wem</Path>
 				</File>
 				<File Id="893908390" Language="SFX">
 					<ShortName>veh_dunebuggy_horn.wav</ShortName>
@@ -2261,6 +2309,10 @@
 				<File Id="1017453639" Language="SFX">
 					<ShortName>veh_bike_coast_slow.wav</ShortName>
 					<Path>SFX\veh_bike_coast_slow_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1021279876" Language="SFX">
+					<ShortName>miscreated_beetle_idle.wav</ShortName>
+					<Path>SFX\miscreated_beetle_idle_EE79F7FB.wem</Path>
 				</File>
 				<File Id="1021685338" Language="SFX">
 					<ShortName>propPlane_engine_rattle.wav</ShortName>

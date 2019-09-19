@@ -175,7 +175,7 @@ end
 
 
 function Ladder:GetActions(user)
-	Log("[ Ladder ] GetActions");
+	--Log("[ Ladder ] GetActions");
 
 	local actions = {};
 
@@ -188,7 +188,7 @@ function Ladder:GetActions(user)
 end
 
 function Ladder:PerformAction(user, action)
-	Log("[ Ladder ] PerformAction");
+	--Log("[ Ladder ] PerformAction");
 
 	if (not user) then
 		return 0;

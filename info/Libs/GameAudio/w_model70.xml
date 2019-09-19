@@ -1,0 +1,34 @@
+<ATLConfig atl_name="w_model70">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_model70_fire_3p">
+			<WwiseEvent wwise_name="play_carlington_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_fire_fp">
+			<WwiseEvent wwise_name="play_carlington_fire_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_1_3p">
+			<WwiseEvent wwise_name="Play_carlington_rack_1_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_1_fp">
+			<WwiseEvent wwise_name="Play_carlington_rack_1_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_2_3p">
+			<WwiseEvent wwise_name="Play_carlington_rack_2_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_2_fp">
+			<WwiseEvent wwise_name="Play_carlington_rack_2_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_3_3p">
+			<WwiseEvent wwise_name="Play_carlington_rack_3_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_3_fp">
+			<WwiseEvent wwise_name="Play_carlington_rack_3_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_4_3p">
+			<WwiseEvent wwise_name="Play_carlington_rack_4_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_model70_rack_4_fp">
+			<WwiseEvent wwise_name="Play_carlington_rack_4_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

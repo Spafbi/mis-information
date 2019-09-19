@@ -303,5 +303,18 @@ function FindInTable(tbl, keyname, keyvalue)
 	end
 end
 
+-- EI register callbacks to extend existing functionality or combine mods (chained function calls with pre/post joint points)
+-- sample usage: RegisterCallback(Miscreated.Server, 'OnInit', customFunction, nil)
+-- sample usage with params: RegisterCallback(BasicActor.Server, 'OnHit', function (self, hit) customFunc(self, hit) end, nil)
+local function RegisterCallback(obj, funcname, precb, postcb)
+  local rememberOrg = obj[funcname]
+  obj[funcname] = function(self, ...)
+    if precb ~= nil then precb(self, unpack(arg)) end
+    local ret = rememberOrg(self, unpack(arg))
+    if postcb ~= nil then postcb(self, unpack(arg)) end
+    return ret
+  end
+end
+
 -- Load common mods
 Script.LoadScriptFolder("scripts/mods", true, true)

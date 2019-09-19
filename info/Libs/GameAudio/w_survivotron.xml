@@ -1,0 +1,34 @@
+<ATLConfig atl_name="w_survivotron">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_geiger_counter_3p">
+			<WwiseEvent wwise_name="Play_geiger_counter_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_geiger_counter_3p">
+			<WwiseEvent wwise_name="Stop_geiger_counter_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_geiger_counter_fp">
+			<WwiseEvent wwise_name="Play_geiger_counter_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_geiger_counter_fp">
+			<WwiseEvent wwise_name="Stop_geiger_counter_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_button_press_3p">
+			<WwiseEvent wwise_name="Play_cb_radio_button_press_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_button_press_fp">
+			<WwiseEvent wwise_name="Play_cb_radio_button_press_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_off_3p">
+			<WwiseEvent wwise_name="Play_cb_radio_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_off_fp">
+			<WwiseEvent wwise_name="Play_cb_radio_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_on_3p">
+			<WwiseEvent wwise_name="Play_cb_radio_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cb_radio_on_fp">
+			<WwiseEvent wwise_name="Play_cb_radio_on_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

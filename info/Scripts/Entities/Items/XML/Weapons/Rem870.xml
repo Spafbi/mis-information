@@ -30,6 +30,10 @@
 
 	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
 	<MovementModifiers speedScale="0.95" speedScaleTactical="0.85"/>
+	
+	<craftable>
+		<craft name="Hacksaw" craft="SawedShotgun" destroy="0"/>
+	</craftable>
 
 	<magazines>
 		<magazine name="Pile_12GaugeBeanbag"/>

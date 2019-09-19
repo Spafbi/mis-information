@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_melee">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_melee_fire_3p">
+			<WwiseEvent wwise_name="Play_fists_fire_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_melee_fire_fp">
+			<WwiseEvent wwise_name="Play_fists_fire_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

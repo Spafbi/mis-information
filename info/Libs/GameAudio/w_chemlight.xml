@@ -1,0 +1,10 @@
+<ATLConfig atl_name="w_chemlight">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_chemlight_use_3p">
+			<WwiseEvent wwise_name="Play_chemlight_use_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_chemlight_use_fp">
+			<WwiseEvent wwise_name="Play_chemlight_use_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>
