@@ -10,8 +10,8 @@
 
 	<campfire>
 		<fire name="fire.placeable.campfire_med"/>
-		<light	light_radius="4" 
-				light_bulb_size="0"
+		<light	light_radius="7" 
+				light_bulb_size="1.5"
 				light_color="2,0.75,0.25" 
 				light_diff_mul="4d" 
 				light_spec_mul="1.0" 

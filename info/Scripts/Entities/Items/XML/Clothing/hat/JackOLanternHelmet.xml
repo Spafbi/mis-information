@@ -26,7 +26,6 @@
 
 		<param name="overlay_layer" value="4"/>
 		<param name="overlay_3p" value="0"/>
-		<param name="overlay_texture" value="objects/characters/players/generic/hat/jack_o_lantern_helmet/jack_o_lantern_overlay_diff.tif"/>
 		<param name="overlay_color" value="1.0,1.0,1.0"/>
 		<param name="overlay_in_time" value="0.15"/>
 		<param name="overlay_out_time" value="0.15"/>

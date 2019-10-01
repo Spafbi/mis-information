@@ -673,7 +673,7 @@
 
 	<!-- basebuilding damage -->
 	<Policy name="bdmg" impl="FloatAsInt">
-		<Params min="0" max="32767" nbits="15"/>
+		<Params min="0" max="65535" nbits="16"/>
 	</Policy>
 
 	<!-- basebuilding door open percent -->
