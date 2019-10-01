@@ -1,0 +1,24 @@
+<item name="halloween_light_string" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="2.2"/>
+		<param name="display_name" value="Halloween Light String"/>
+		<param name="description" value="A set of halloween themed lights on a string."/>
+	</params>
+
+	<base_part class="static" type="285" name="halloween_light_string" max_health="1000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/other/halloween_light_string/halloween_light_string.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

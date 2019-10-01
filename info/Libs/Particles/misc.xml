@@ -160,4 +160,12 @@
    </Particles>
   </Childs>
  </Particles>
+ <Particles Name="halloween_candle.flame">
+  <Params Count="2" Continuous="true" ParticleLifeTime="1,Random=0.288" PositionOffset="z=0.44" BlendType="Additive" Texture="textures/sprites/fire/fire_candleflame.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=32" OctagonalShape="true" Alpha="ParticleAge=(v=1;t=0.553,v=1;t=1)" Color="(x=0.038204376,y=0.68668544,z=0.07227185)" EmissiveLighting="1" NotAffectedByFog="true" Size="0.03" MoveRelativeEmitter="true" ViewDistanceAdjust="11" PlaneAlignBlendDistance="93.6"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="15" Continuous="true" ParticleLifeTime="6" PositionOffset="z=0.05" RandomOffset="x=0.4,y=0.4" OffsetRoundness="1" EmitAngle="180,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="ParticleAge=(;t=0.5,v=1;t=0.933)" Color="(x=0.21586053,y=0.9911022,z=0.20155628)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" EmissiveLighting="0.38" Size="0.5,Random=0.5,ParticleAge=(v=0.52;t=1,v=1)" Speed="0.6" AirResistance="10,RotationalDragScale=0.165,WindScale=0" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+  </Childs>
+ </Particles>
 </ParticleLibrary>

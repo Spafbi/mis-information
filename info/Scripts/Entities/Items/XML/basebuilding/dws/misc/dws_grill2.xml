@@ -12,7 +12,7 @@
 		<grill filename="Objects/props/outside_grill/dws_grill_2.cgf" helper_food="food" helper_wood="wood" model_wood="Objects/props/outside_grill/grill_2_wood.cgf"/>
 		<base_parts>
 			<base_part class="light">
-				<light helper="food" light_bulb_size="0.05" light_radius="10" light_cast_shadows="1" light_view_dist_ratio="5" light_color="1,0.7,0.3" light_diff_mul="1" light_style="50" light_anim_speed="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.campfire.fire_medium" lens_flare_fov="360"/>
+				<light helper="food" light_bulb_size="0.05" light_radius="10" light_cast_shadows="1" light_offset="0,0,1" light_view_dist_ratio="5" light_color="2,0.75,0.25" light_diff_mul="1" light_style="50" light_anim_speed="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.campfire.fire_medium" lens_flare_fov="360"/>
 			</base_part>
 			<base_part class="particle">
 				<particle helper="wood" effect="fire.bpart.dws.grill_portable"/>

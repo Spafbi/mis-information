@@ -10,13 +10,13 @@
 		<param name="description" value="@metal_wall_window_3m_2mDescription"/>
 	</params>
 
-	<base_part class="static" type="2054" name="metal_wall_window_3m_2m" max_health="60000" repair_with="SheetMetal" towable="1">
+	<base_part class="static" type="2054" name="metal_wall_window_3m_2m" max_health="30000" repair_with="SheetMetal" towable="1">
 		<static filename="objects/basebuilding/metal/metal_wall_window_3m_2m.cgf"/>
 
 		<damage_multipliers>
 			<damage_multiplier damage_type="collision" multiplier="0.1"/>
-			<damage_multiplier damage_type="explosion" multiplier="15.0"/>
-			<damage_multiplier damage_type="frag" multiplier="6"/>
+			<damage_multiplier damage_type="explosion" multiplier="7.5"/>
+			<damage_multiplier damage_type="frag" multiplier="3"/>
 			<damage_multiplier damage_type="fire" multiplier="1.0"/>
 			<damage_multiplier damage_type="melee" multiplier="0.0"/>
 			<damage_multiplier damage_type="repair" multiplier="0.0"/>

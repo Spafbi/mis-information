@@ -12,7 +12,7 @@
 		<static filename="objects/basebuilding/other/candle/candle_large_bases.cgf"/>
 		<base_parts>
 			<base_part class="light">
-				<light helper="light" light_bulb_size="0.1" light_radius="7" light_color="0.73,0.57,0.41" light_diff_mul="1" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+				<light helper="light" light_bulb_size="1" light_radius="7" light_color="2,0.75,0.25" light_diff_mul="1" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
 				<envareas>
 					<envarea enabled="0" scaleEffectsFromCenter="0" bb1="-0.05,-0.05,0.25" bb2="0.05,0.05,0.5" temperature="15"/>
 					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-1.5,-1.5,-1.5" bb2="1.5,1.5,1.5" temperature="4" humidity="-0.1" light="0.7"/>

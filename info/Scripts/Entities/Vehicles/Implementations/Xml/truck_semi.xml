@@ -416,7 +416,7 @@
 			<Wheeled 
 					axleFriction="500" axleFrictionMax="2500" brakeTorque="2000" maxBrakingFriction="0.75"
 					damping="0.1" stabilizer="0.1" slipThreshold="0.02" dynFriction="1.0" suspDampingMin="-0.15" suspDampingMax="-0.65"
-					engineMinRPM="100" engineStartRPM="250" engineIdleRPM="250" engineMaxRPM="1400" enginePower="450"
+					engineMinRPM="100" engineStartRPM="250" engineIdleRPM="250" engineMaxRPM="1400" enginePower="750"
 					engineShiftDownRPM="550" engineShiftUpRPM="1100" clutchSpeed="1.5" gearDirSwitchRPM="1500"
 					maxSpeed="20" maxSteer="0.52" maxTimeStep="0.02" minEnergy="0.04" maxGear="3">
 				<gearRatios>

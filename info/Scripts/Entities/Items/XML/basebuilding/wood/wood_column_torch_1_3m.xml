@@ -12,7 +12,7 @@
 		<static filename="objects/basebuilding/wood/wood_column_torch_1_3m.cgf"/>
 		<base_parts>
 			<base_part class="light">
-				<light helper="particle" light_bulb_size="0.05" light_radius="10" light_color="0.73,0.57,0.41" light_diff_mul="1" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.tiki_torch" lens_flare_fov="360"/>
+				<light helper="particle" light_bulb_size="0.05" light_radius="7" light_color="2,0.75,0.25" light_diff_mul="1" light_offset="0,0,0" light_style="50" light_anim_speed="1" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.tiki_torch" lens_flare_fov="360"/>
 			</base_part>
 			<base_part class="particle">
 				<particle helper="particle" effect="fire.flame.tiki_torch"/>

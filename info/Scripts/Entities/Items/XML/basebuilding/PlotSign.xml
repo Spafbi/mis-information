@@ -8,7 +8,15 @@
 		<param name="display_name" value="@PlotSign"/>
 	</params>
 
-	<placeable maxPartCount="250" buildRadiusXY="30" reserveRadiusXY="180" buildRadiusZ="8.5" reserveRadiusZ="51">
+	<!-- help:
+		maxPartCount -> if increased, the more likely issues/lag occur
+		buildRadius can be a max of 127 -> if increased, the more, the more likely parts show up to late
+		reserveRadius -> always needs to be larger then buildRadius + largest part size (so about 10m at least)
+				otherwise bases get mixed up and owner can't be determined to give pack up rights.
+
+		maxRootDistance is counted in parts ("too many parts from ground message") (default 12 from ground, -1 means unlimited)
+	-->
+	<placeable maxPartCount="250" buildRadiusXY="30" reserveRadiusXY="180" buildRadiusZ="8.5" reserveRadiusZ="51" maxRootDistance="12">
 		<param name="packup_class" value="PlotSignPacked"/>
 		<damage_multipliers>
 			<!-- standard hit types -->

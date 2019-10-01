@@ -2215,6 +2215,15 @@ reduced to 25% of the prior item's, like so:
 				{ class = "AA12" },
 			},
 		},
+		
+		{
+			category = "AK74UWithMagazines",
+			group =
+			{
+				{ class = "AK74U" },
+				{ class = "545x30" },
+			},
+		},
 
 		{
 			category = "AKMWithMagazines",
@@ -3098,8 +3107,8 @@ reduced to 25% of the prior item's, like so:
 				-- { category = "RandomCraftedWeaponPure", percent= 8 },
 				{ class = "AA12", percent = 0.1 },
 				{ class = "ACAW", percent = 0.5 },
-				{ class = "AK74U", percent = 0.5 },
-				{ class = "AKM", percent = 1 },
+				{ class = "AK74U", percent = 1 },
+				{ class = "AKM", percent = 0.5 },
 				{ class = "AKMGold", percent = 0.01 },
 				{ class = "AP85", percent = 1 },
 				{ class = "AT15", percent = 2 },
@@ -3169,9 +3178,9 @@ reduced to 25% of the prior item's, like so:
 			classes =
 			{
 				{ class = "AA12", percent = 5 },
-				{ class = "ACAW", percent = 5 },
-				{ class = "AK74U", percent = 5 },
-				{ class = "AKM", percent = 5 },
+				{ class = "ACAW", percent = 4 },
+				{ class = "AK74U", percent = 8 },
+				{ class = "AKM", percent = 3 },
 				{ class = "AT15", percent = 8 },
 				{ class = "AUMP45", percent = 5 },
 				{ class = "Bulldog", percent = 8 },
@@ -3328,7 +3337,8 @@ reduced to 25% of the prior item's, like so:
 			classes =
 			{
 				{ category = "AA12WithMagazines", percent = 0.15 },
-				{ category = "AKMWithMagazines", percent = 1 },
+				{ category = "AKMWithMagazines", percent = 0.4 },
+				{ category = "AK74UWithMagazines", percent = 1.6 },
 				{ category = "AP85WithMagazines", percent = 1 },
 				{ category = "AT15WithMagazines", percent = 2 },
 				{ category = "BulldogWithMagazines", percent = 1 },
@@ -3353,7 +3363,7 @@ reduced to 25% of the prior item's, like so:
 				{ category = "PX4WithMagazines", percent = 1 },
 				{ category = "RecurveBowWithMagazines", percent = 5 },
 				{ category = "Rem700WithRounds", percent = 3 },
-				{ category = "Rem870WithRounds", percent = 6.8 },
+				{ category = "Rem870WithRounds", percent = 5.8 },
 				{ category = "Ruger22WithMagazines", percent = 6.5 },
 				{ category = "Sako85WithRounds", percent = 2.5 },
 				{ category = "Shotgun870TacticalWithMagazines", percent = 6 },

@@ -306,12 +306,28 @@ end
 -- EI register callbacks to extend existing functionality or combine mods (chained function calls with pre/post joint points)
 -- sample usage: RegisterCallback(Miscreated.Server, 'OnInit', customFunction, nil)
 -- sample usage with params: RegisterCallback(BasicActor.Server, 'OnHit', function (self, hit) customFunc(self, hit) end, nil)
-local function RegisterCallback(obj, funcname, precb, postcb)
+function RegisterCallback(obj, funcname, precb, postcb)
   local rememberOrg = obj[funcname]
   obj[funcname] = function(self, ...)
     if precb ~= nil then precb(self, unpack(arg)) end
     local ret = rememberOrg(self, unpack(arg))
     if postcb ~= nil then postcb(self, unpack(arg)) end
+    return ret
+  end
+end
+
+-- EI register callbacks to extend/override existing functionality or combine mods (chained function calls with pre/post joint points)
+--  this variation requires the callback to handle the return value (the ret param needs to be returned)
+-- sample usage:  RegisterCallbackReturnAware(Miscreated.Server, 'OnInit', customFunction, nil)
+-- sample usage with params: RegisterCallbackReturnAware(BasicActor.Server, 'OnHit', nil, function (self, ret, hit) return ret end)
+--  for modification of the return value only the postcb (second one) can be used
+function RegisterCallbackReturnAware(obj, funcname, precb, postcb)
+  local rememberOrg = obj[funcname]
+  obj[funcname] = function(self, ...)
+    local ret = nil
+    if precb ~= nil then ret = precb(self, ret, unpack(arg)) end
+    ret = rememberOrg(self, unpack(arg))
+    if postcb ~= nil then ret = postcb(self, ret, unpack(arg)) end
     return ret
   end
 end
