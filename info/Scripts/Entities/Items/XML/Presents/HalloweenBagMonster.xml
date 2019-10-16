@@ -1,0 +1,45 @@
+<item name="HalloweenBagMonster" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@HalloweenBagMonster"/>
+		<param name="description" value="@HalloweenBagMonsterDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/halloween_bag/halloween_bag.cgf" material="Objects/props/halloween_bag/halloween_bag_franky"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="Halloween Bag Rare"/>
+				<param name="action" value="spawn_item"/>
+				<param name="soundUsed" value="Play_book_page_turn_3p"/>
+				<param name="param" value="HalloweenBagCommonLoot"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Present"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/HalloweenBagMonster_200.png?crc=6CBBFFDA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="50009"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Present"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/HalloweenBagMonster_2048.png?crc=6CBBFFDA"/>
+	</steam>
+</item>

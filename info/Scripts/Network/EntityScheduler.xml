@@ -51,20 +51,12 @@
 	<Class name="GreyWolf" policy="bndt" />
 	<Class name="TwoHeadDog" policy="bndt" />
 	<Class name="GiantRoach" policy="bndt" />
+	<Class name="GiantScorpion" policy="bndt" />
 
 	<!-- simple animals -->
+	<Class name="Boar" policy="anml" />
 	<Class name="Pig" policy="anml" />
 	<Class name="Rooster" policy="anml" />
-
-	<!-- legacy actor AIs -->
-	<Class name="ActorOld_Spiker" policy="bndt" />
-	<Class name="ActorOld_Crazy" policy="bndt" />
-	<Class name="ActorOld_HumanZombie" policy="bndt" />
-	<Class name="ActorOld_BruteMutant" policy="bndt" />
-	<Class name="ActorOld_Deer" policy="bndt" />
-	<Class name="ActorOld_DeerFemale" policy="bndt" />
-	<Class name="ActorOld_GreyWolf" policy="bndt" />
-	<Class name="ActorOld_TwoHeadDog" policy="bndt" />
 
 	<!-- clothing - back -->
 	<Class name="DuffelBag" policy="pack" />
@@ -142,6 +134,10 @@
 	<Class name="HeadSack" policy="clth" />
 	<Class name="HockeyMask" policy="clth" />
 	<Class name="HockeyMaskDp" policy="clth" />
+	<Class name="SkullMask" policy="clth" />
+	<Class name="SkullMaskGold" policy="clth" />
+	<Class name="SkullMaskSilver" policy="clth" />
+	<Class name="SpaceHelmet" policy="clth" />
 
 	<!-- clothing - feet -->
 	<Class name="CanvasShoes" policy="clth" />
@@ -822,7 +818,6 @@
 	<Class name="Crowbar" policy="gun" />
 	<Class name="CX4Storm" policy="gun" />
 	<Class name="DebugPistol" policy="gun"/>
-	<Class name="DT12" policy="gun" />
 	<Class name="FahQPaddle" policy="gun"/>
 	<Class name="FlareGun" policy="gun"/>
 	<Class name="Flashlight" policy="gun"/>
@@ -852,6 +847,7 @@
 	<Class name="Mk18" policy="gun"/>
 	<Class name="Mk18Reaver" policy="gun" />
 	<Class name="MP5" policy="gun"/>
+	<Class name="Model1873" policy="gun" />
 	<Class name="Model70" policy="gun"/>
 	<Class name="NailKnuckles" policy="gun"/>
 	<Class name="NailsPaddle" policy="gun"/>
@@ -938,7 +934,6 @@
 	<Class name="RK_Rem870" policy="obj" />
 	<Class name="RK_ruger22" policy="obj" />
 	<Class name="RK_Sako_85" policy="obj" />
-	<Class name="RK_SawedShotgun" policy="obj" />
 	<Class name="RK_Shotgun870Tactical" policy="obj" />
 	<Class name="RK_Teflon" policy="obj" />
 	<Class name="RK_TranquilizerGun" policy="obj" />
@@ -1052,7 +1047,6 @@
 	<Class name="Pile_12GaugeBeanbag" policy="gun"/>
 	<Class name="Pile_12GaugePellet" policy="gun"/>
 	<Class name="Pile_12GaugeSlug" policy="gun"/>
-	<Class name="Pile_12GaugeCrafted" policy="gun" />
 	<Class name="Pile_22" policy="gun"/>
 	<Class name="Pile_223" policy="gun"/>
 	<Class name="Pile_308" policy="gun"/>
@@ -1275,10 +1269,12 @@
 	<Class name="ExplosiveOilBarrel" policy="obj" />
 	<Class name="FireDrill" policy="obj" />
 	<Class name="Hacksaw" policy="obj"/>
+	<Class name="HalloweenBagBrute" policy="obj" />
+	<Class name="HalloweenBagMonster" policy="obj" />
+	<Class name="HalloweenBagPumpkin" policy="obj" />
+	<Class name="HalloweenBagSpider" policy="obj" />
 	<Class name="HeatPack" policy="obj"/>
 	<Class name="JerryCanDiesel" policy="obj"/>
-	<Class name="JerryCanGas" policy="obj"/>
-	<Class name="JerryCanWater" policy="obj"/>
 	<Class name="Matches" policy="obj"/>
 	<Class name="Oil" policy="obj"/>
 	<Class name="PoliceHandcuffKey" policy="obj"/>
@@ -1534,6 +1530,10 @@
 	<Class name="gnome_standard_a" policy="obj"/>
 	<Class name="gnome_standard_b" policy="obj"/>
 	<Class name="gnome_standard_c" policy="obj"/>
+	<Class name="halloween_candle" policy="obj" />
+	<Class name="halloween_creepy_bear" policy="obj" />
+	<Class name="halloween_creepy_bunny" policy="obj" />
+	<Class name="halloween_light_string" policy="obj" />
 	<Class name="hesco_barrier" policy="obj" />
 	<Class name="jack_o_lantern" policy="obj" />
 	<Class name="jerry" policy="obj" />
@@ -1544,14 +1544,13 @@
 	<Class name="metal_aframe_3m_4m" policy="obj" />
 	<Class name="metal_barbed_wire_2m" policy="obj"/>
 	<Class name="metal_barbed_wire_4m" policy="obj"/>
-	<Class name="metal_gate_3m_5_4m" policy="obj" />
 	<Class name="metal_wall_3m_2m" policy="obj" />
 	<Class name="metal_wall_3m_4m" policy="obj" />
-	<Class name="metal_gateway_4m_8m" policy="obj" />
 	<Class name="metal_door_lockable_1m_2m" policy="obj" />
 	<Class name="metal_gate_lockable_3m_5_4m" policy="obj" />
 	<Class name="metal_gatehouse_4m_8m" policy="obj" />
 	<Class name="metal_steam_stand" policy="obj" />
+	<Class name="metal_shelf" policy="obj" />
 	<Class name="metal_wall_1_3m_2m" policy="obj" />
 	<Class name="metal_wall_1_3m_4m" policy="obj" />
 	<Class name="metal_wall_2m_2m" policy="obj" />
@@ -1576,6 +1575,9 @@
 	<Class name="plated_column_torch_4m" policy="obj"/>
 	<Class name="plated_door_1m_2m" policy="obj"/>
 	<Class name="plated_door_lockable_1m_2m" policy="obj"/>
+	<Class name="plated_draw_bridge" policy="obj" />
+	<Class name="plated_foundation_2m_2m_4m" policy="obj" />
+	<Class name="plated_foundation_4m_4m_4m" policy="obj" />
 	<Class name="plated_gate_lockable_3m_4m" policy="obj"/>
 	<Class name="plated_gatehouse" policy="obj"/>
 	<Class name="plated_ramp_0m_1_3m_1m" policy="obj"/>
@@ -1636,6 +1638,8 @@
 	<Class name="plated_wall_drawbridge_3m_4m" policy="obj" />
 	<Class name="plated_wall_shutter_3m_2m" policy="obj" />
 	<Class name="plated_wall_shutter_3m_4m" policy="obj" />
+	<Class name="plated_watchtower_big" policy="obj" />
+	<Class name="plated_watchtower_tire_big" policy="obj" />
 	<Class name="plated_ramp_wall_0m_1_3m_3m" policy="obj" />
 	<Class name="plated_ramp_wall_0m_2m_3m" policy="obj" />
 	<Class name="plated_ramp_wall_1_3m_2m_3m" policy="obj" />
@@ -1663,6 +1667,8 @@
 	<Class name="powered_work_light_red" policy="obj"/>
 	<Class name="powered_work_light_yellow" policy="obj"/>
 	<Class name="propane_heater" policy="obj" />
+	<Class name="rock_foundation_2m_2m_4m" policy="obj" />
+	<Class name="rock_foundation_4m_4m_4m" policy="obj" />
 	<Class name="rug_bear_pelt" policy="obj" />
 	<Class name="rug_wolf_pelt" policy="obj"/>
 	<Class name="sandbag_crafted_1_3m_1m" policy="obj"/>
@@ -1827,7 +1833,9 @@
 	<Class name="wood_wall_window_3m_4m" policy="obj"/>
 	<Class name="wood_wall_window_curve_3m_4m" policy="obj"/>
 	<Class name="wood_watchtower" policy="obj"/>
+	<Class name="wood_watchtower_big" policy="obj" />
 	<Class name="wood_watchtower_tire" policy="obj" />
+	<Class name="wood_watchtower_tire_big" policy="obj" />
 	<Class name="wood_window_frame" policy="obj"/>
 	<Class name="workbench" policy="obj" />
 
