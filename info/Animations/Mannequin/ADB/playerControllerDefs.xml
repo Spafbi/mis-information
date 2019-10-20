@@ -58,7 +58,7 @@
    <Override tags="tranquilizer_gun+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="ump+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="wasteland22+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
-   <Override tags="1873+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="model1873+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
   </select>
   <deselect scopes="Torso3P+Audio1"/>
   <idle scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>

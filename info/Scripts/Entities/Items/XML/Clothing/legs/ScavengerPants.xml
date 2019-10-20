@@ -1,0 +1,46 @@
+<item name="ScavengerPants" class="Item" category="any">
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="auto_wear" value="1"/>
+		<param name="mass" value="0.75"/>
+		<param name="healthMax" value="100"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="display_name" value="@ScavengerPants"/>
+		<param name="description" value="@ScavengerPantsDescription"/>
+	</params>
+
+	<geometry>
+		<onground name="objects/characters/players/male/legs/long/scavenger_pants/scavenger_pants_onground.cgf" material="objects/characters/players/male/legs/long/scavenger_pants/scavenger_pants.mtl"/>
+	</geometry>
+
+    <protection level="0">
+        <environmental>
+            <protection_amount type="cold" percentage="15"/>
+			<protection_amount type="heat" percentage="2"/>
+        </environmental>
+    </protection>
+
+	<wearable>
+		<param name="skin" value="objects/characters/players/male/legs/long/scavenger_pants/scavenger_pants.skin"/>
+		<param name="mtl" value="objects/characters/players/male/legs/long/scavenger_pants/scavenger_pants.mtl"/>
+		<param name="slot" value="legs"/>
+		<param name="length" value="1"/> <!-- 1 is full length -->
+	</wearable>
+
+	<usable>
+		<param name="action" value="craft"/>
+		<param name="param" value="Rags"/>
+		<param name="soundUsed" value="Play_fabric_tear"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="legs"/>
+		</locations>
+		<types>
+			<type category="any" capacity="4"/>
+		</types>
+	</storage>
+
+</item>
