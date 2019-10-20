@@ -46,9 +46,6 @@
 		<item name="RainJacketRedBlue" percentage="100"/>
 		<item name="RainJacketRedGrey" percentage="100"/>
 		<item name="RainJacketYellow" percentage="100"/>
-		<item name="SkullMask" percentage="100"/>
-		<item name="SkullMaskSilver" percentage="100"/>
-		<item name="SkullMaskGold" percentage="100"/>
 	</repair>
 
 	<storage>

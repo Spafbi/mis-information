@@ -1,7 +1,0 @@
-<MannequinPreview>
- <controllerDef filename="Animations/Mannequin/ADB/ramControllerDefs.xml"/>
- <contexts>
-  <contextData name="Ram" enabled="1" database="Animations/Mannequin/ADB/ram.adb" context="Char3P" model="objects/characters/animals/ram/ram.cdf"/>
- </contexts>
- <History StartTime="135.32835" EndTime="235.32835"/>
-</MannequinPreview>

@@ -74,7 +74,7 @@
   <contextData name="px4" database="Animations/Mannequin/ADB/px4WeaponAnims.adb" context="Weapon" tags="px4" model="objects/weapons/px4/px4.cdf" attachment="weapon"/>
   <contextData name="cleaver" context="Weapon" tags="cleaver" model="objects/weapons/cleaver/cleaver.cgf" attachment="weapon"/>
   <contextData name="pipewrench" context="Weapon" tags="pipewrench" model="objects/weapons/pipe_wrench/pipe_wrench.cgf" attachment="weapon"/>
-  <contextData name="model1873" database="Animations/Mannequin/ADB/model1873WeaponAnims.adb" context="Weapon" tags="model1873" model="objects/weapons/Model1873/Model1873.cdf" attachment="weapon"/>
+  <contextData name="1873" database="Animations/Mannequin/ADB/1873WeaponAnims.adb" context="Weapon" tags="1873" model="objects/weapons/1873/1873.cdf" attachment="weapon"/>
   </contexts>
  <History StartTime="0" EndTime="0">
   <FragmentID Time="0" FragmentID="motionIdle"/>

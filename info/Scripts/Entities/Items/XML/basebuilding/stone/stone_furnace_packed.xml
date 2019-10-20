@@ -1,10 +1,10 @@
 <item name="stone_furnace_packed" class="Placeable" category="any">
 
 	<params>
-		<param name="selectable" value="0"/>
-		<param name="mass" value="6"/>
-		<param name="display_name" value="@stone_furnace_packed"/>
-		<param name="description" value="@stone_furnace_packedDescription"/>
+		<param name="selectable" value="0" />
+		<param name="mass" value="6" />
+		<param name="display_name" value="@stone_furnace_packed" />
+		<param name="description" value="@stone_furnace_packedDescription" />
 	</params>
 
 	<base_part class="entity" type="4" name="stone_furnace_packed" max_health="8000" limit="2" repair_with="Rocks">
@@ -48,27 +48,13 @@
 	</base_part>
 
 	<geometry>
-		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf" />
 	</geometry>
 
 	<storage>
 		<locations>
-			<location category="any"/>
+			<location category="any" />
 		</locations>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:BaseBuilding"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/stone_furnace_packed_200.png?crc=DDCF3A22"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="30324"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:BaseBuilding"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/stone_furnace_packed_2048.png?crc=DDCF3A22"/>
-	</steam>
 </item>
