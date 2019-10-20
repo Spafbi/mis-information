@@ -1,0 +1,29 @@
+<BodyDamage>
+	<Parts>
+		<Part name="frontLeftLeg" flags="knee">
+			<Bone name="rm_l_wrist_jnt"/>
+			<Bone name="rm_l_elbow_jnt"/>
+		</Part>
+		<Part name="frontRightLeg" flags="knee">
+			<Bone name="rm_r_wrist_jnt"/>
+			<Bone name="rm_r_elbow_jnt"/>
+		</Part>
+		<Part name="backLeftLeg" flags="knee">
+			<Bone name="rm_l_toe_jnt"/>
+			<Bone name="rm_l_tarsal_jnt"/>
+		</Part>
+		<Part name="backRightLeg" flags="knee">
+			<Bone name="rm_r_toe_jnt"/>
+			<Bone name="rm_r_tarsal_jnt"/>
+		</Part>
+		<Part name="head" flags="headshot">
+			<Bone name="rm_head_jnt"/>
+		</Part>
+		<Part name="torso">
+			<Bone name="rm_hips_jnt"/>
+			<Bone name="rm_spine_jnt"/>
+			<Bone name="rm_spine_01_jnt"/>
+			<Bone name="rm_spine_02_jnt"/>
+		</Part>
+	</Parts>
+</BodyDamage>

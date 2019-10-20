@@ -1,0 +1,64 @@
+<animal name="GiantScorpion">
+
+	<properties>
+		<param name="object_Model" value="objects/characters/animals/giant_scorpion/giant_scorpion.cdf"/>
+		<param name="Size" value="1"/>
+		<param name="SizeRandom" value="0"/>
+		<param name="RelevanceDistance" value="-1.0"/>
+		<param name="esLootItemCategory" value=""/>
+		<param name="eiCarryType" value="0"/>
+	</properties>
+
+	<damage>
+		<param name="Health" value="40"/>
+		<param name="FatalImpulse" value="0"/>
+		<param name="fileBodyDamage" value=""/>
+		<param name="fileBodyDamageParts" value=""/>
+		<param name="fileBodyDestructibility" value=""/>
+	</damage>
+
+	<physics>
+		<param name="Mass" value="20"/>
+		<param name="Gravity" value="-13"/>
+		<param name="Inertia" value="10.0"/>
+		<param name="InertiaAccel" value="11.0"/>
+		<param name="MaxVelGround" value="3"/>
+		<param name="MinSlideAngle" value="75.0"/>
+		<param name="MaxClimbAngle" value="75.0"/>
+		<param name="MinFallAngle" value="80.0"/>
+	</physics>
+
+	<movement>
+		<param name="MaxTurnRate" value="360"/>
+		<param name="ForceTurnOnSpotAngle" value="0.0"/>
+	</movement>
+
+	<stance>
+		<param name="StanceId" value="0"/>
+		<param name="Name" value="stand"/>
+		<param name="HeightPivot" value="0.0"/>
+		<param name="HeightCollider" value="0.3"/>
+		<param name="SizeCollider" value="0.35,0.35,0.1"/>
+		<param name="ViewOffset" value="0.0,0.1,0.15"/>
+		<param name="bUseCapsule" value="1"/>
+	</stance>
+
+	<ai>
+		<param name="bKytheraEnabled" value="1"/>
+		<param name="esKytheraProfile" value="GiantRoach"/>
+	</ai>
+
+	<readabilities>
+		<param name="bUseMannequin" value="1"/>
+		<mannequin>
+			<param name="TurnStartDelay" value="0.5"/>
+			<param name="TurnDelayMinAngle" value="5"/>
+			<param name="TurnImmediateAngle" value="30"/>
+			<sounds>
+				<param name="Hurt" value="Play_baby_spider_death"/>
+				<param name="Death" value="Play_baby_spider_death"/>
+			</sounds>
+		</mannequin>
+	</readabilities>
+	
+</animal>
