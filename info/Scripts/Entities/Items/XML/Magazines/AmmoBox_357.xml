@@ -37,7 +37,7 @@
 
 	<steam>
 		<param name="tags" value="Category:AmmoBox"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AmmoBox_357_200.png?crc=9D1388B1"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AmmoBox_357_200.png?crc=D3671590"/>
 		<param name="store_hidden" value="0"/>
 		<param name="amcoins" value="3"/>
 		<param name="tradable" value="0"/>
@@ -47,6 +47,6 @@
 		<param name="store_tags" value="Category:AmmoBox"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AmmoBox_357_2048.png?crc=9D1388B1"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AmmoBox_357_2048.png?crc=D3671590"/>
 	</steam>
 </item>

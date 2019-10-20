@@ -84,7 +84,7 @@
    <Tag name="px4"/>
    <Tag name="cleaver"/>
    <Tag name="pipewrench"/>
-   <Tag name="model1873"/>
+   <Tag name="1873"/>
   </Group>
   <Group name="weaponType">
    <Tag name="nw"/>
