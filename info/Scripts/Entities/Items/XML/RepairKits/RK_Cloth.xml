@@ -511,6 +511,7 @@
 		<item name="FannyPackRed" percentage="100"/>
 		<item name="FannyPackRedBlue" percentage="100"/>
 		<item name="FannyPackYellow" percentage="100"/>
+		<item name="ScavengerPants" percentage="100"/>
 	</repair>
 
 	<storage>

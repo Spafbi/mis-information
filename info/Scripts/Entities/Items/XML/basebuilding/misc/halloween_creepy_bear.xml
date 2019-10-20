@@ -1,0 +1,38 @@
+<item name="halloween_creepy_bear" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@halloween_creepy_bear"/>
+		<param name="description" value="@halloween_creepy_bearDescription"/>
+	</params>
+
+	<base_part class="static" type="288" name="halloween_creepy_bear" max_health="5000" repair_with="DuctTape">
+		<static filename="objects/props/teddy_bear/teddybear_sitting.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/props/teddy_bear/teddybear_sitting.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/halloween_creepy_bear_200.png?crc=96E02D3D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30260"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/halloween_creepy_bear_2048.png?crc=96E02D3D"/>
+	</steam>
+</item>

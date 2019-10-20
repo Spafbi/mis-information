@@ -1,0 +1,24 @@
+<item name="UFOCrate" class="Item" category="any">
+
+	<params>
+		<param name="droppable" value="0"/>
+		<param name="selectable" value="0"/>
+		<param name="no_icon" value="1"/>
+		<param name="mass" value="100"/>
+		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
+		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
+		<param name="display_name" value="@UFOCrate"/>
+		<param name="description" value="@UFOCrateDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/alien_crate/alien_crate.cgf"/>
+	</geometry>
+
+	<storage>
+		<types>
+			<type category="any" capacity="10"/>
+		</types>
+	</storage>
+
+</item>

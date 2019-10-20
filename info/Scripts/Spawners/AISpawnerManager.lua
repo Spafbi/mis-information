@@ -517,12 +517,12 @@ function AISpawnerManager:SpawnHorde(targetPos)
 
 	local rnd = random(1, 100);
 
-	if rnd < 25 then
+	if rnd <= 100 then
 		AISM.SpawnHorde(targetPos, "horde")
-	elseif rnd < 90 then
-		AISM.SpawnInvasion(vSpawnPos, targetPos, "mutant_invasion", true)
-	else
-		AISM.SpawnInvasion(vSpawnPos, targetPos, "twoheaddog_invasion", true)
+	--elseif rnd < 90 then
+		--AISM.SpawnInvasion(vSpawnPos, targetPos, "mutant_invasion", true)
+	--else
+		--AISM.SpawnInvasion(vSpawnPos, targetPos, "twoheaddog_invasion", true)
 	end
 
 end

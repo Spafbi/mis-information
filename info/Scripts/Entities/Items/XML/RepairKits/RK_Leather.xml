@@ -58,6 +58,7 @@
 		<item name="LeatherJacketRed" percentage="100"/>
 		<item name="LeatherJacketBrown" percentage="100"/>
 		<item name="LeatherJacketBlack" percentage="100"/>
+		<item name="ScavengerShirt" percentage="100"/>
 	</repair>
 
 	<storage>

@@ -28,12 +28,14 @@ SpawnWorldEvent = function(self)
 	--Log("Miscreated:SpawnWorldEvent")
 
 	local eventName
-	local rnd = random(1, 2)
+	local rnd = random(1, 10)
 
-	if rnd == 1 then
+	if rnd <= 5 then
 		eventName = "AirDropPlane"
-	else
+	elseif rnd <= 9 then
 		eventName = "AirPlaneCrash"
+	else
+		eventName = "UFOCrash"	
 	end
 
 	local spawnParams = {}
