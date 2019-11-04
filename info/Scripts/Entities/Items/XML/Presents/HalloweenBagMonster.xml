@@ -14,7 +14,7 @@
 	<usable>
 		<uses>
 			<use>
-				<param name="title" value="Halloween Bag Rare"/>
+				<param name="title" value="@HalloweenBagOpen"/>
 				<param name="action" value="spawn_item"/>
 				<param name="soundUsed" value="Play_book_page_turn_3p"/>
 				<param name="param" value="HalloweenBagCommonLoot"/>

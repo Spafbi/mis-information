@@ -2066,6 +2066,29 @@ geigercounter:			consumable type - used for geiger counter markup
 			tactical = false,
 		},
 
+		-- cacti
+		{
+			text = "Harvest Cactus",
+			fail = "@nothing_usable_was_found",
+			model = { 
+				"objects/natural/vegetation/desert_plants/opuntia/OpuntiaFl02.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/OpuntiaFl03.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/OpuntiaFl04.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/Opuntia02.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/Opuntia03.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/Opuntia04.cgf",
+				"objects/natural/vegetation/desert_plants/opuntia/OpuntiaFl01.cgf",
+			},
+			material = { "objects/natural/vegetation/desert_plants/opuntia/opuntia", },
+			sound = "Play_bush_movement_dry_large",
+			uses = 2,
+			regenerate = 360,
+			percentage = 90,
+			spawn = "ClamSingle", -- or whatever the item is named
+			gridsize = 4,
+			tactical = false,
+		},
+
 		-- more ideas: nothing atm
 	}
 }

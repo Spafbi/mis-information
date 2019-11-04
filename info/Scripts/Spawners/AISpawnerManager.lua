@@ -186,6 +186,22 @@ AISpawnerManager = {
 		},
 
 		{
+			category = "Ram",
+			classes =
+			{
+				{ class = "Ram", percent = 100 },
+			},
+		},
+
+		{
+			category = "GiantScorpion",
+			classes =
+			{
+				{ class = "GiantScorpion", percent = 100 },
+			},
+		},
+
+		{
 			category = "lone_wolf",
 			classes = 
 			{
