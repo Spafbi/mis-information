@@ -5,7 +5,7 @@
 		<param name="Size" value="1"/>
 		<param name="SizeRandom" value="0"/>
 		<param name="RelevanceDistance" value="-1.0"/>
-		<param name="esLootItemCategory" value=""/>
+		<param name="esLootItemCategory" value="RandomGiantScorpionLoot"/>
 		<param name="eiCarryType" value="0"/>
 	</properties>
 
@@ -45,7 +45,7 @@
 
 	<ai>
 		<param name="bKytheraEnabled" value="1"/>
-		<param name="esKytheraProfile" value="GiantRoach"/>
+		<param name="esKytheraProfile" value="GiantScorpion"/>
 	</ai>
 
 	<readabilities>

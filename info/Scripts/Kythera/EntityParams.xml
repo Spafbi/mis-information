@@ -271,8 +271,119 @@
 			</Relaxed>
 		</Stances>
 	</Deer>
-	 
-	<Wolf type="bb">
+
+  <Ram type="bb">
+    <Stances type="bb">
+      <Stand type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">1.0</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">1.3</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">4.0</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">5.2</Speed>
+          </Sprint>
+        </Speeds>
+      </Stand>
+      <Relaxed type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">1.0</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">1.3</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">4.0</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">5.2</Speed>
+          </Sprint>
+        </Speeds>
+      </Relaxed>
+    </Stances>
+  </Ram>
+
+  <GiantScorpion type="bb">
+    <Stances type="bb">
+      <Stand type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">0.7</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">0.9</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">1.3</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">1.7</Speed>
+          </Sprint>
+        </Speeds>
+      </Stand>
+      <Relaxed type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">0.7</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">0.9</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">1.3</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">1.7</Speed>
+          </Sprint>
+        </Speeds>
+      </Relaxed>
+    </Stances>
+  </GiantScorpion>
+  
+  <Donkey type="bb">
+    <Stances type="bb">
+      <Stand type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">1.0</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">1.2</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">4.7</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">6.2</Speed>
+          </Sprint>
+        </Speeds>
+      </Stand>
+      <Relaxed type="bb">
+        <Speeds type="bb">
+          <Slow type="bb">
+            <Speed type="float">1.0</Speed>
+          </Slow>
+          <Walk type="bb">
+            <Speed type="float">1.2</Speed>
+          </Walk>
+          <Run type="bb">
+            <Speed type="float">4.7</Speed>
+          </Run>
+          <Sprint type="bb">
+            <Speed type="float">6.2</Speed>
+          </Sprint>
+        </Speeds>
+      </Relaxed>
+    </Stances>
+  </Donkey>
+  
+  <Wolf type="bb">
 		<Stances type="bb">
 			<Stand type="bb">
 				<Speeds type="bb">

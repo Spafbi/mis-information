@@ -415,7 +415,7 @@ reduced to 25% of the prior item's, like so:
 				--{ category = "RandomConsumable", percent = 100 },-- commented out during halloween event.
 				{ category = "RandomConsumable", percent = 100 },
 				{ category = "RandomAmmo", percent = 100 },
-				{ category = "HalloweenBagSpider", percent = 30 },
+				{ class = "HalloweenBagSpider", percent = 30 },
 			},
 		},
 
@@ -427,6 +427,39 @@ reduced to 25% of the prior item's, like so:
 				{ class = "AnimalGut" },
 				{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
 				{ class = "WolfPelt" },
+			},
+		},
+
+		{
+			category = "RandomRamLoot",
+			group =
+			{
+				{ class = "AnimalFat", min = 2, max = 5 },
+				{ class = "AnimalGut" },
+				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
+				--{ class = "WolfPelt" },
+			},
+		},
+		
+		{
+			category = "RandomDonkeyLoot",
+			group =
+			{
+				{ class = "AnimalFat", min = 2, max = 5 },
+				{ class = "AnimalGut" },
+				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
+				--{ class = "WolfPelt" },
+			},
+		},
+
+		{
+			category = "RandomGiantScorpionLoot",
+			group =
+			{
+				{ class = "AnimalFat", min = 1, max = 3 },
+				{ class = "AnimalGut" },
+				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
+				--{ class = "WolfPelt" },
 			},
 		},
 

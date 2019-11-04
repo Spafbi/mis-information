@@ -30,6 +30,7 @@
  <Skeleton name="crossbow" file="objects/weapons/crossbow/crossbow.chr"/>
  <Skeleton name="deer" file="objects/characters/animals/deer/deer.chr"/>
  <Skeleton name="dirtbike" file="objects/vehicles/dirtbike/dirtbike.cga"/>
+ <Skeleton name="donkey" file="objects/characters/animals/donkey/donkey.chr"/>
  <Skeleton name="dune_buggy" file="objects/vehicles/dune_buggy/dune_buggy.cga"/>
  <Skeleton name="F100Truck" file="objects/vehicles/F100Truck/F100Truck.cga"/>
  <Skeleton name="road_tunnel_fan" file="objects/structures/road_tunnel/fan.cga"/>
