@@ -32,6 +32,7 @@
 		<item name="MilitaryHelmetUrbanCamo3" percentage="100"/>
 		<item name="MilitaryHelmetUrbanCamo4" percentage="100"/>
 		<item name="SwatHelmet" percentage="100"/>
+		<item name="SpaceHelmet" percentage="100"/>
 	</repair>
 
 	<storage>

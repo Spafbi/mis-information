@@ -80,11 +80,16 @@ end
 SpawnAirPlaneCrashLoot = function(self)
 	--Log("AirPlaneCrash - SpawnAirPlaneCrashLoot")
 
+	-- Two meters behind the direction vector
 	local vForwardOffset = {x=0,y=0,z=0}
 	FastScaleVector(vForwardOffset, self:GetDirectionVector(), -2.0)
 
+	-- Offset by the entity location
 	local vSpawnPos = {x=0,y=0,z=0}
 	FastSumVectors(vSpawnPos, vForwardOffset, self:GetWorldPos())
+
+	-- Move up by 1 meter
+	FastSumVectors(vSpawnPos, vSpawnPos, {x=0,y=0,z=1})
 
 	-- Items that spawn in when the plane crashes
 	ISM.SpawnCategory("AirPlaneCrashCrate", vSpawnPos)

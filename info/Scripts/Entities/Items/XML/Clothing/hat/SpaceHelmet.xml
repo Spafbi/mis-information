@@ -8,8 +8,8 @@
 		<param name="healthMax" value="275.0"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>
-		<param name="display_name" value="Space Helmet"/>
-		<param name="description" value="A strange looking helmet found within the debris of a crashed space ship."/>
+		<param name="display_name" value="@SpaceHelmet"/>
+		<param name="description" value="@SpaceHelmetDescription"/>
 	</params>
 
 	<wearable>
@@ -72,4 +72,18 @@
 		</locations>
 	</storage>
 
+	<steam>
+		<param name="tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SpaceHelmet_200.png?crc=3E25A02A"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="6"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="40694"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Clothing;Slot:Hat"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/SpaceHelmet_2048.png?crc=3E25A02A"/>
+	</steam>
 </item>

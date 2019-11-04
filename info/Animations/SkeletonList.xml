@@ -2,7 +2,6 @@
  <Skeleton name="556x100_box" file="objects/magazines/556x100_box/556x100_box.chr"/>
  <Skeleton name="870_tactical" file="objects/weapons/870_tactical/870_tactical.chr"/>
  <Skeleton name="22rifle" file="objects/weapons/22rifle/22rifle.chr"/>
- <Skeleton name="1873" file="objects/weapons/1873/1873.chr"/>
  <Skeleton name="alligator" file="objects/characters/animals/alligator/alligator.chr"/>
  <Skeleton name="armored_truck" file="objects/vehicles/armored_truck/armored_truck_army.cga"/>
  <Skeleton name="aa12" file="objects/weapons/aa12/aa12.chr"/>
@@ -31,6 +30,7 @@
  <Skeleton name="crossbow" file="objects/weapons/crossbow/crossbow.chr"/>
  <Skeleton name="deer" file="objects/characters/animals/deer/deer.chr"/>
  <Skeleton name="dirtbike" file="objects/vehicles/dirtbike/dirtbike.cga"/>
+ <Skeleton name="donkey" file="objects/characters/animals/donkey/donkey.chr"/>
  <Skeleton name="dune_buggy" file="objects/vehicles/dune_buggy/dune_buggy.cga"/>
  <Skeleton name="F100Truck" file="objects/vehicles/F100Truck/F100Truck.cga"/>
  <Skeleton name="road_tunnel_fan" file="objects/structures/road_tunnel/fan.cga"/>
@@ -55,6 +55,7 @@
  <Skeleton name="m9a1" file="objects/weapons/m9a1/m9a1.chr"/>
  <Skeleton name="m40a5" file="objects/weapons/m40/m40a5.chr"/>
  <Skeleton name="makarov" file="objects/weapons/makarov/makarov.chr"/>
+ <Skeleton name="model1873" file="objects/weapons/Model1873/Model1873.chr"/>
  <Skeleton name="model_70" file="objects/weapons/model70/model_70.chr"/>
  <Skeleton name="mk18" file="objects/weapons/mk18/mk18.chr"/>
  <Skeleton name="mp5" file="objects/weapons/mp5/mp5.chr"/>
@@ -66,6 +67,7 @@
  <Skeleton name="px4" file="objects/weapons/px4/px4.chr"/>
  <Skeleton name="quadbike" file="objects/vehicles/quadbike/quadbike.cga"/>
  <Skeleton name="rat" file="objects/characters/animals/rat/rat.chr"/>
+ <Skeleton name="ram" file="objects/characters/animals/ram/ram.chr"/>
  <Skeleton name="recurvebow" file="objects/weapons/recurvebow/recurvebow.chr"/>
  <Skeleton name="red_eared_slider_skel" file="objects/characters/animals/reptiles/turtle/red_eared_slider_skel.chr"/>
  <Skeleton name="rem870" file="objects/weapons/rem870/rem870.chr"/>

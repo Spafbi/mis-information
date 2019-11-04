@@ -38,7 +38,7 @@
 		<param name="Name" value="stand"/>
 		<param name="HeightPivot" value="0.0"/>
 		<param name="HeightCollider" value="0.3"/>
-		<param name="SizeCollider" value="0.25,0.25,0.0"/>
+		<param name="SizeCollider" value="0.25,0.25,0.1"/>
 		<param name="ViewOffset" value="0.0,0.1,0.35"/>
 		<param name="bUseCapsule" value="1"/>
 	</stance>

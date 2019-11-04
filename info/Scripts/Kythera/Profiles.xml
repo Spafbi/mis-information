@@ -267,8 +267,20 @@
 			current target, no matter how low the TargetBiasMultiplier is set -->
 		<CloseRangeBiasDistance type="float">2.0</CloseRangeBiasDistance>
 	</Deer>
-	  
-	<GreyWolf id="120" inheritanceParent="100" type="bb">
+
+  <Ram id="115" inheritanceParent="110" type="bb">
+    <CharacterType type="string">Ram</CharacterType>
+  </Ram>
+
+  <GiantScorpion id="116" inheritanceParent="110" type="bb">
+    <CharacterType type="string">GiantScorpion</CharacterType>
+  </GiantScorpion>
+  
+  <Donkey id="117" inheritanceParent="110" type="bb">
+    <CharacterType type="string">Donkey</CharacterType>
+  </Donkey>
+  
+  <GreyWolf id="120" inheritanceParent="100" type="bb">
 		<Perception type="bb">
 			<Visual type="bb">
 				<MaxDistance type="float">100</MaxDistance>  

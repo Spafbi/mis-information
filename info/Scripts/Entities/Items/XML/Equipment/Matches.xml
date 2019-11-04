@@ -55,7 +55,7 @@
 				<param name="title" value="@MatchesLightCandle"/>
 				<param name="action" value="light_item"/>
 				<param name="soundUsed" value="Play_light_match"/>
-				<param name="targetClassNames" value="candle_animal_fat_small;candle_animal_fat_large;dws_candle_animal_fat_large;wood_column_torch_1_3m;wood_column_torch_2m;wood_column_torch_3m;wood_column_torch_4m;plated_column_torch_1_3m;plated_column_torch_2m;plated_column_torch_3m;plated_column_torch_4m"/>
+				<param name="targetClassNames" value="candle_animal_fat_small;candle_animal_fat_large;dws_candle_animal_fat_large;wood_column_torch_1_3m;wood_column_torch_2m;wood_column_torch_3m;wood_column_torch_4m;plated_column_torch_1_3m;plated_column_torch_2m;plated_column_torch_3m;plated_column_torch_4m;halloween_candle"/>
 			</use>
 			<use>
 				<param name="title" value="@MatchesLightJackOLantern"/>

@@ -18,7 +18,7 @@
 		<param name="tags" value="Category:Vehicle Skin"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SedanBase_Yellow_200.png?crc=645A004E"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="10"/>
+		<param name="amcoins" value="3"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="FFFFFF"/>
 		<param name="itemdefid" value="300005"/>
