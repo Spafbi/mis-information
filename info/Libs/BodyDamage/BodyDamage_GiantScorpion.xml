@@ -1,0 +1,34 @@
+<BodyDamage>
+	<!-- PART DEFINITIONS IN "BodyParts_GiantScorpion.xml" -->
+
+	<Multipliers>
+		<Multiplier part="head"      value="10.0" valueMelee="2">
+			<ammo_12_gauge_pellet value="2.0"/>
+		</Multiplier>
+		<Multiplier part="torso" value="1.0"/>
+		<Multiplier part="leftArm" value="0.65"/>
+		<Multiplier part="rightArm" value="0.65"/>
+		<Multiplier part="leftLeg01" value="0.75"/>
+		<Multiplier part="leftLeg02" value="0.75"/>
+		<Multiplier part="leftLeg03" value="0.75"/>
+		<Multiplier part="leftLeg04" value="0.75"/>
+		<Multiplier part="rightLeg01" value="0.75"/>
+		<Multiplier part="rightLeg02" value="0.75"/>
+		<Multiplier part="rightLeg03" value="0.75"/>
+		<Multiplier part="rightLeg04" value="0.75"/>
+	</Multipliers>
+
+	<ImpulseFilters>
+		<ImpulseFilter part="leftArm" scale = "0.0" passTo="GSC_body_jnt" passOnScale="0.4"/>
+		<ImpulseFilter part="rightArm" scale = "0.0" passTo="GSC_body_jnt" passOnScale="0.4"/>
+		<ImpulseFilter part="leftLeg01" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="leftLeg02" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="leftLeg03" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="leftLeg04" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="rightLeg01" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="rightLeg02" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="rightLeg03" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="rightLeg04" scale="0.0" passTo="GSC_body_jnt" passOnScale="0.5"/>
+  </ImpulseFilters>
+
+</BodyDamage>

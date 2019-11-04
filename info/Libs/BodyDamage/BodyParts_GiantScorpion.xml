@@ -1,0 +1,81 @@
+<BodyDamage>
+	<Parts>
+		<Part name="leftArm" flags="hand">
+			<Bone name="GSC_l_pedipalp_01_jnt"/>
+			<Bone name="GSC_l_pedipalp_02_jnt"/>
+			<Bone name="GSC_l_pedipalp_03_jnt"/>
+			<Bone name="GSC_l_pedipalp_03_lower_jnt"/>
+			<Bone name="GSC_l_pedipalp_03_upper_jnt"/>
+		</Part>
+		<Part name="rightArm" flags="hand">
+			<Bone name="GSC_r_pedipalp_01_jnt"/>
+			<Bone name="GSC_r_pedipalp_02_jnt"/>
+			<Bone name="GSC_r_pedipalp_03_jnt"/>
+			<Bone name="GSC_r_pedipalp_03_lower_jnt"/>
+			<Bone name="GSC_r_pedipalp_03_upper_jnt"/>
+		</Part>
+		<Part name="leftLeg01" flags="knee">
+			<Bone name="GSC_l_leg_10_jnt"/>
+			<Bone name="GSC_l_leg_11_jnt"/>
+			<Bone name="GSC_l_leg_12_jnt"/>
+			<Bone name="GSC_l_leg_13_jnt"/>
+		</Part>
+		<Part name="leftLeg02" flags="knee">
+			<Bone name="GSC_l_leg_20_jnt"/>
+			<Bone name="GSC_l_leg_21_jnt"/>
+			<Bone name="GSC_l_leg_22_jnt"/>
+			<Bone name="GSC_l_leg_23_jnt"/>
+		</Part>
+		<Part name="leftLeg03" flags="knee">
+			<Bone name="GSC_l_leg_30_jnt"/>
+			<Bone name="GSC_l_leg_31_jnt"/>
+			<Bone name="GSC_l_leg_32_jnt"/>
+			<Bone name="GSC_l_leg_33_jnt"/>
+		</Part>
+		<Part name="leftLeg04" flags="knee">
+			<Bone name="GSC_l_leg_40_jnt"/>
+			<Bone name="GSC_l_leg_41_jnt"/>
+			<Bone name="GSC_l_leg_42_jnt"/>
+			<Bone name="GSC_l_leg_43_jnt"/>
+		</Part>
+		<Part name="rightLeg01" flags="knee">
+			<Bone name="GSC_r_leg_10_jnt"/>
+			<Bone name="GSC_r_leg_11_jnt"/>
+			<Bone name="GSC_r_leg_12_jnt"/>
+			<Bone name="GSC_r_leg_13_jnt"/>
+		</Part>
+		<Part name="rightLeg02" flags="knee">
+			<Bone name="GSC_r_leg_20_jnt"/>
+			<Bone name="GSC_r_leg_21_jnt"/>
+			<Bone name="GSC_r_leg_22_jnt"/>
+			<Bone name="GSC_r_leg_23_jnt"/>
+		</Part>
+		<Part name="rightLeg03" flags="knee">
+			<Bone name="GSC_r_leg_30_jnt"/>
+			<Bone name="GSC_r_leg_31_jnt"/>
+			<Bone name="GSC_r_leg_32_jnt"/>
+			<Bone name="GSC_r_leg_33_jnt"/>
+		</Part>
+		<Part name="rightLeg04" flags="knee">
+			<Bone name="GSC_r_leg_40_jnt"/>
+			<Bone name="GSC_r_leg_41_jnt"/>
+			<Bone name="GSC_r_leg_42_jnt"/>
+			<Bone name="GSC_r_leg_43_jnt"/>
+		</Part>
+		<Part name="head" flags="headshot">
+			<Bone name="GSC_head_jnt"/>
+		</Part>
+		<Part name="torso">
+			<Bone name="GSC_body_jnt"/>
+			<Bone name="GSC_tail_00_jnt"/>
+		</Part>
+		<Part name="tail">
+			<Bone name="GSC_tail_01_jnt"/>
+			<Bone name="GSC_tail_02_jnt"/>
+			<Bone name="GSC_tail_03_jnt"/>
+			<Bone name="GSC_tail_04_jnt"/>
+			<Bone name="GSC_tail_05_jnt"/>
+			<Bone name="GSC_tail_06_jnt"/>
+		</Part>
+	</Parts>
+</BodyDamage>

@@ -1,0 +1,7 @@
+<download name="canyonlands" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="canyonlands.xml" dest="canyonlands.xml" size="348" md5="13a6b9b1b61d3a248b44fb3ec103c842"/>
+  <file src="level.pak" dest="level.pak" size="176230266" md5="337a8579b28c2828e611320cacf08f3b"/>
+ </files>
+</download>
