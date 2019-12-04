@@ -85,6 +85,7 @@
    <Tag name="cleaver"/>
    <Tag name="pipewrench"/>
    <Tag name="model1873"/>
+   <Tag name="peacemaker"/>
   </Group>
   <Group name="weaponType">
    <Tag name="nw"/>

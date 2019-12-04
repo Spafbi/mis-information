@@ -13,6 +13,7 @@
 		<GFXs>
 			<!--Flash paths need to start with '/libs/'-->
 			<GFX name = '/libs/ui/ChatWindow/ChatWindow.gfx' />
+			<GFX name = '/libs/ui/Checklist/Checklist.gfx' />
 			<GFX name = '/libs/ui/Inventory/Inventory.gfx' />
 			<GFX name = '/libs/ui/MainMenu/MainMenu.gfx' />
 			<GFX name = '/libs/ui/StatsBar/StatsBar.gfx' />

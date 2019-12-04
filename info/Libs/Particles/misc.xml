@@ -234,4 +234,15 @@
    </Particles>
   </Childs>
  </Particles>
+ <Particles Name="airdrop.smoke_green">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke_pillar">
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="180,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.082,v=1;t=0.83,v=1;t=1)" Color="(x=0.030713448,y=0.9046613,z=0.030713448),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseLighting="0.732" DiffuseBacklighting="0.715" NotAffectedByFog="true" Size="150,Random=0.2,ParticleAge=(flags=32;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="smoke_close">
+    <Params Count="150" Continuous="true" EmitterLifeTime="300" ParticleLifeTime="31,Random=0.19" EmitAngle="20,Random=0.448718" Texture="textures/sprites/smoke/smoke_tiled_a.dds" TextureTiling="TilesX=2,TilesY=2,AnimBlend=true" SoftParticle="true" Alpha="Random=0.252,ParticleAge=(;t=0.027,v=1;t=1)" Color="(x=0.030713448,y=0.9046613,z=0.030713448),ParticleAge=(v=(x=0.604);t=0.392,v=(x=1,y=0.318,z=0.318))" DiffuseLighting="0.732" DiffuseBacklighting="0.715" NotAffectedByFog="true" Size="8,Random=0.2,ParticleAge=(v=0.137;t=0.33,v=1;t=1,v=1)" Speed="4,Random=0.5" AirResistance="0.1" GravityScale="-0.05" RandomAngles="y=359" RandomRotationRate="x=21,y=21,z=21" SortOffset="0.1" VisibleUnderwater="If_False" FillRateCost="2.5" ConfigMin="High"/>
+   </Particles>
+  </Childs>
+ </Particles>
 </ParticleLibrary>

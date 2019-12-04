@@ -1,0 +1,27 @@
+<item name="PricklyPear" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="Prickly Pear"/>
+		<param name="description" value="A fruit found on a cactus."/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/Prickly_Pear/Prickly_Pear.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="85"/> <!-- Calories -->
+		<param name="drinkAmount" value="60"/>
+		<param name="soundConsumed" value="Play_food_raw_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

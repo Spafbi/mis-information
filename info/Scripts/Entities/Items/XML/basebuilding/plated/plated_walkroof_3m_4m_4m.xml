@@ -6,6 +6,8 @@
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@plated_walkroof_3m_4m_4m"/>
 		<param name="description" value="@plated_walkroof_3m_4m_4mDescription"/>
+		
+		<param name="place_roof" value="1"/>
 	</params>
 
 	<base_part class="static" type="1084" name="plated_walkroof_3m_4m_4m" max_health="22500" repair_with="SheetMetal">

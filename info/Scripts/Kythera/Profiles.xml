@@ -1,18 +1,15 @@
-<Profiles id="1"> 
+<Profiles id="1">
+
 	<Base id="100" type="bb">
 		<KytheraControl type="bool">true</KytheraControl>
 		<CharacterFeatures type="bb">
 			<GroundNav type="bool">true</GroundNav>
 			<GroundAvoidance type="bool">true</GroundAvoidance>
 			<GroundObstacle type="bool">true</GroundObstacle>
-			
-			<!-- All Miscreated AI now use MotionHandler by default rather than
-			     Movement and Animation aspects, except for legacy AI with
-			     the ActorOld_ prefix -->
 			<Movement type="bool">false</Movement>
 			<Animation type="bool">false</Animation>
+			<!-- All Miscreated AI now use MotionHandler by default rather than Movement and Animation aspects -->
 			<MotionHandler type="bool">true</MotionHandler>
-			
 			<Weapons type="bool">false</Weapons>
 			<Behavior type="bool">true</Behavior>
 			<Perception type="bool">true</Perception>
@@ -25,7 +22,6 @@
 			<Attachments type="bool">false</Attachments>
 			<DamageTracking type="bool">true</DamageTracking>
 		</CharacterFeatures>
-    
 		<Perception type="bb">
 			<MaxObscuredTime type="float">0.5</MaxObscuredTime>
 			<MaxMemoryTime type="float">60.0</MaxMemoryTime>
@@ -36,7 +32,7 @@
 				<ObjectQueryRate type="float">0.25</ObjectQueryRate>
 				<RaycastRate type="float">1.0000</RaycastRate>
 				<RaycastRateFriendly type="float">2.0000</RaycastRateFriendly>
-				<MaxDistance type="float">75</MaxDistance>  
+				<MaxDistance type="float">75</MaxDistance>
 				<PrimaryFOV type="float">180.0</PrimaryFOV>
 				<SecondaryFOV type="float">270.0</SecondaryFOV>
 				<SecondaryFOVWeight type="float">5.0</SecondaryFOVWeight>
@@ -61,7 +57,7 @@
 			<AgentAvoidTime type="float">2.0</AgentAvoidTime>
 			<BoundaryAvoidTime type="float">1.0</BoundaryAvoidTime>
 			<ExcludeTarget type="bool">true</ExcludeTarget>
-		</Avoidance>	
+		</Avoidance>
 		<!-- Navigation -->
 		<NavMesh type="string">MediumSizedCharacters</NavMesh>
 		<SlowdownAtPathEnd type="bool">false</SlowdownAtPathEnd>
@@ -74,7 +70,7 @@
 		<CharacterType type="string">Human</CharacterType>
 		<IsSimpleCharacter type="bool">false</IsSimpleCharacter>
 		<!-- Minimum time to keep a target before allowing switching to a new one -->
-		<TargetMinSelectionTime type="float">3.0</TargetMinSelectionTime>				
+		<TargetMinSelectionTime type="float">3.0</TargetMinSelectionTime>
 	</Base>
 
 	<Player id="101" inheritanceParent="100" type="bb">
@@ -110,11 +106,9 @@
 		<CharacterType type="string">Mutant</CharacterType>
 		<TargetApproachMaxPathLength type="float">100.0</TargetApproachMaxPathLength>
 		<!-- Target Selection -->
-		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, 
-			the more the current target will be preferred over closer targets -->
+		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">1.0</TargetBiasMultiplier>
-		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the 
-			current target, no matter how low the TargetBiasMultiplier is set -->
+		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the current target, no matter how low the TargetBiasMultiplier is set -->
 		<CloseRangeBiasDistance type="float">3.0</CloseRangeBiasDistance>
 		<!-- Attack -->
 		<MeleeFastMovingHitRange type="float">3.0</MeleeFastMovingHitRange>
@@ -127,10 +121,8 @@
 		<!-- PrimaryProjectileInaccuracyDegrees: Maximum degrees of inaccuracy to apply to throw main projectile-->
 		<PrimaryProjectileInaccuracyDegrees type="float">0.0</PrimaryProjectileInaccuracyDegrees>
 		<PrimaryProjectileAmmoType type="string">ammo_rock_sml</PrimaryProjectileAmmoType>
-		<!-- PackMaxDistanceFromAlpha: If mutant is in a pack, will be removed from pack if
-			more than this distance away from the alpha -->
+		<!-- PackMaxDistanceFromAlpha: If mutant is in a pack, will be removed from pack if more than this distance away from the alpha -->
 		<PackMaxDistanceFromAlpha type="float">30.0</PackMaxDistanceFromAlpha>
-		
 		<!-- Evasive approach currently limited to MutantDefaultBehavior. Affects behavior when players point guns at them -->
 		<EvasiveApproach type="bb">
 			<Probability type="float">0.4</Probability>
@@ -138,7 +130,7 @@
 			<DirectionBias type="float">1.0</DirectionBias>
 		</EvasiveApproach>
 	</Mutant>
-  
+
 	<!-- Spiker variant is slower, but does more damage and sticks to current target more -->
 	<Spiker id="103" inheritanceParent="102" type="bb">
 		<!-- Behavior -->
@@ -148,18 +140,16 @@
 		<!-- Attack -->
 		<MeleeHitDamage type="float">10.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">15.0</MeleeHitBleedPercent>
-		
 		<MeleeLungeSpeed type="float">5.0</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.93</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.6</MeleeLungeDamageEvent>
-		
 		<EvasiveApproach type="bb">
 			<Probability type="float">0.2</Probability>
-            <ApproachDirectness type="float">0.95</ApproachDirectness>
-            <DirectionBias type="float">6.0</DirectionBias>
+			<ApproachDirectness type="float">0.95</ApproachDirectness>
+			<DirectionBias type="float">6.0</DirectionBias>
 		</EvasiveApproach>
 	</Spiker>
-	
+
 	<HumanZombie id="104" inheritanceParent="102" type="bb">
 		<!-- Behavior -->
 		<CharacterType type="string">Mutant</CharacterType>
@@ -168,18 +158,16 @@
 		<!-- Attack -->
 		<MeleeHitDamage type="float">10.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">8.0</MeleeHitBleedPercent>
-		
 		<MeleeLungeSpeed type="float">5.5</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.9</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.47</MeleeLungeDamageEvent>
-		
 		<EvasiveApproach type="bb">
-            <Probability type="float">0.5</Probability>
-            <ApproachDirectness type="float">0.95</ApproachDirectness>
-            <DirectionBias type="float">3.0</DirectionBias>
+			<Probability type="float">0.5</Probability>
+			<ApproachDirectness type="float">0.95</ApproachDirectness>
+			<DirectionBias type="float">3.0</DirectionBias>
 		</EvasiveApproach>
 	</HumanZombie>
-  
+
 	<!-- Crazy variant is faster, but does less damage and has worse perception -->
 	<Crazy id="105" inheritanceParent="102" type="bb">
 		<Perception type="bb">
@@ -197,15 +185,13 @@
 		<!-- Attack -->
 		<MeleeHitDamage type="float">7.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">10.0</MeleeHitBleedPercent>
-		
 		<MeleeLungeSpeed type="float">6.0</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.83</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.43</MeleeLungeDamageEvent>
-		
 		<EvasiveApproach type="bb">
-            <Probability type="float">0.7</Probability>
-            <ApproachDirectness type="float">0.9</ApproachDirectness>
-            <DirectionBias type="float">0.0</DirectionBias>
+			<Probability type="float">0.7</Probability>
+			<ApproachDirectness type="float">0.9</ApproachDirectness>
+			<DirectionBias type="float">0.0</DirectionBias>
 		</EvasiveApproach>
 	</Crazy>
 
@@ -233,14 +219,12 @@
 		<MeleeSlowMovingHitRange type="float">2.0</MeleeSlowMovingHitRange>
 		<MeleeHitDamage type="float">20.0</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">20.0</MeleeHitBleedPercent>
-		
 		<MeleeLungeSpeed type="float">4.5</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.83</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
-		
 		<PrimaryProjectileAmmoType type="string">ammo_rock_lge</PrimaryProjectileAmmoType>
 	</Brute>
-	
+
 	<Deer id="110" inheritanceParent="100" type="bb">
 		<Perception type="bb">
 			<MaxMemoryTime type="float">30.0</MaxMemoryTime>
@@ -260,30 +244,24 @@
 		<CharacterType type="string">Deer</CharacterType>
 		<TargetFleeMaxPathLength type="float">100.0</TargetFleeMaxPathLength>
 		<!-- Target Selection -->
-		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, 
-			the more the current target will be preferred over closer targets -->
+		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">0.6</TargetBiasMultiplier>
-		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the 
-			current target, no matter how low the TargetBiasMultiplier is set -->
+		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the current target, no matter how low the TargetBiasMultiplier is set -->
 		<CloseRangeBiasDistance type="float">2.0</CloseRangeBiasDistance>
 	</Deer>
 
-  <Ram id="115" inheritanceParent="110" type="bb">
-    <CharacterType type="string">Ram</CharacterType>
-  </Ram>
+	<Ram id="115" inheritanceParent="110" type="bb">
+		<CharacterType type="string">Ram</CharacterType>
+	</Ram>
 
-  <GiantScorpion id="116" inheritanceParent="110" type="bb">
-    <CharacterType type="string">GiantScorpion</CharacterType>
-  </GiantScorpion>
-  
-  <Donkey id="117" inheritanceParent="110" type="bb">
-    <CharacterType type="string">Donkey</CharacterType>
-  </Donkey>
-  
-  <GreyWolf id="120" inheritanceParent="100" type="bb">
+	<Donkey id="117" inheritanceParent="110" type="bb">
+		<CharacterType type="string">Donkey</CharacterType>
+	</Donkey>
+
+	<GreyWolf id="120" inheritanceParent="100" type="bb">
 		<Perception type="bb">
 			<Visual type="bb">
-				<MaxDistance type="float">100</MaxDistance>  
+				<MaxDistance type="float">100</MaxDistance>
 				<PrimaryFOV type="float">235.0</PrimaryFOV>
 				<SecondaryFOV type="float">300.0</SecondaryFOV>
 			</Visual>
@@ -323,13 +301,11 @@
 			</Max>
 		</Confidence>
 		<Fleeing type="bb">
-			<!-- Perform first flee and regroup if the combined health of remaining pack
-			     is this fraction of the starting health of the entire pack -->
+			<!-- Perform first flee and regroup if the combined health of remaining pack is this fraction of the starting health of the entire pack -->
 			<FirstFleePackHealthAbsFrac type="float">0.5</FirstFleePackHealthAbsFrac>
 			<!-- Perform first flee and regroup if the pack confidence gets below this level -->
 			<FirstFleeConfidence type="float">0.08</FirstFleeConfidence>
-			<!-- Perform subsequent flee and regroup if the combined health of remaining pack
-			     changes by this fraction since last flee -->
+			<!-- Perform subsequent flee and regroup if the combined health of remaining pack changes by this fraction since last flee -->
 			<SubsequentFleePackHealthChangeFrac type="float">0.25</SubsequentFleePackHealthChangeFrac>
 			<!-- Perform subsequent flee and regroup if the pack confidence gets below this level -->
 			<SubsequentFleeConfidence type="float">0.1</SubsequentFleeConfidence>
@@ -338,17 +314,14 @@
 		</Fleeing>
 		<!-- Target Selection -->
 		<TargetMinSelectionTime type="float">5.0</TargetMinSelectionTime>
-		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, 
-			the more players will be preferred over closer targets -->
+		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, the more players will be preferred over closer targets -->
 		<PlayerBiasMultiplier type="float">0.5</PlayerBiasMultiplier>
-		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, 
-			the more the current target will be preferred over closer targets -->
+		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">0.75</TargetBiasMultiplier>
-		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the 
-			current target, no matter how low the bias multipliers are set -->
+		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the current target, no matter how low the bias multipliers are set -->
 		<CloseRangeBiasDistance type="float">3.0</CloseRangeBiasDistance>
-		<!-- AlphaTargetBiasStartDistance: Distance from alpha's target that we start applying a bias to favor that target
-		     AlphaTargetBiasMaxDistance: Distance at which bias guarantees switching to alpha's target-->
+		<!-- AlphaTargetBiasStartDistance: Distance from alpha's target that we start applying a bias to favor that target -->
+		<!-- AlphaTargetBiasMaxDistance: Distance at which bias guarantees switching to alpha's target -->
 		<AlphaTargetBiasStartDistance type="float">10.0</AlphaTargetBiasStartDistance>
 		<AlphaTargetBiasMaxDistance type="float">30.0</AlphaTargetBiasMaxDistance>
 		<!-- Attack -->
@@ -362,11 +335,11 @@
 		<MeleeLungeDuration type="float">0.77</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
 	</GreyWolf>
-	
+
 	<MutantDog id="130" inheritanceParent="100" type="bb">
 		<Perception type="bb">
 			<Visual type="bb">
-				<MaxDistance type="float">100</MaxDistance>  
+				<MaxDistance type="float">100</MaxDistance>
 				<PrimaryFOV type="float">235.0</PrimaryFOV>
 				<SecondaryFOV type="float">360.0</SecondaryFOV>
 			</Visual>
@@ -385,14 +358,11 @@
 		<TargetApproachMaxPathLength type="float">100.0</TargetApproachMaxPathLength>
 		<!-- Target Selection -->
 		<TargetMinSelectionTime type="float">5.0</TargetMinSelectionTime>
-		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, 
-			the more players will be preferred over closer targets -->
+		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, the more players will be preferred over closer targets -->
 		<PlayerBiasMultiplier type="float">0.5</PlayerBiasMultiplier>
-		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, 
-			the more the current target will be preferred over closer targets -->
+		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">0.75</TargetBiasMultiplier>
-		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the 
-			current target, no matter how low the bias multipliers are set -->
+		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the current target, no matter how low the bias multipliers are set -->
 		<CloseRangeBiasDistance type="float">3.0</CloseRangeBiasDistance>
 		<!-- Attack -->
 		<MeleeFastMovingHitRange type="float">3.0</MeleeFastMovingHitRange>
@@ -401,18 +371,17 @@
 		<MeleeHitBleedPercent type="float">15.0</MeleeHitBleedPercent>
 		<!-- Impulses are not currently synced to client -->
 		<!-- <MeleeHitImpulse type="float">100.0</MeleeHitImpulse> -->
-		<!-- PackMaxDistanceFromAlpha: If mutant dog is in a pack, will be removed from pack if
-			more than this distance away from the alpha -->
+		<!-- PackMaxDistanceFromAlpha: If mutant dog is in a pack, will be removed from pack if more than this distance away from the alpha -->
 		<PackMaxDistanceFromAlpha type="float">50.0</PackMaxDistanceFromAlpha>
 		<MeleeLungeSpeed type="float">4.88</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.8</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
 	</MutantDog>
-	
+
 	<Bear id="140" inheritanceParent="100" type="bb">
 		<Perception type="bb">
 			<Visual type="bb">
-				<MaxDistance type="float">60</MaxDistance>  
+				<MaxDistance type="float">60</MaxDistance>
 				<PrimaryFOV type="float">265.0</PrimaryFOV>
 				<SecondaryFOV type="float">300.0</SecondaryFOV>
 			</Visual>
@@ -424,14 +393,11 @@
 		<DefaultBehavior type="string">BearDefaultBehavior</DefaultBehavior>
 		<TargetSelector type="string">TS_MutantDefault</TargetSelector>
 		<CharacterType type="string">Bear</CharacterType>
-		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, 
-			the more players will be preferred over closer targets -->
+		<!-- PlayerBiasMultiplier: Multiply players distance by this value, the lower the value, the more players will be preferred over closer targets -->
 		<PlayerBiasMultiplier type="float">0.5</PlayerBiasMultiplier>
-		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, 
-			the more the current target will be preferred over closer targets -->
+		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">0.75</TargetBiasMultiplier>
-		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the 
-			current target, no matter how low the bias multipliers are set -->
+		<!-- CloseRangeBiasDistance: Targets closer than this distance will be preferred to the current target, no matter how low the bias multipliers are set -->
 		<CloseRangeBiasDistance type="float">3.0</CloseRangeBiasDistance>
 		<!-- Navigation -->
 		<NavMesh type="string">LargeSizedCharacters</NavMesh>
@@ -441,12 +407,12 @@
 		<MeleeHitDamage type="float">12.75</MeleeHitDamage>
 		<MeleeHitBleedPercent type="float">8.0</MeleeHitBleedPercent>
 		<!-- Impulses are not currently synced to client -->
-		<!-- <MeleeHitImpulse type="float">150.0</MeleeHitImpulse>  -->
+		<!-- <MeleeHitImpulse type="float">150.0</MeleeHitImpulse> -->
 		<MeleeLungeSpeed type="float">4.1</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.77</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.6</MeleeLungeDamageEvent>
 	</Bear>
-	
+
 	<HumanSpider id="150" inheritanceParent="102" type="bb">
 		<Perception type="bb">
 			<MaxObscuredTime type="float">0.5</MaxObscuredTime>
@@ -457,7 +423,7 @@
 				<MaxDistance type="float">70</MaxDistance>
 				<PrimaryFOV type="float">180.0</PrimaryFOV>
 				<SecondaryFOV type="float">300.0</SecondaryFOV>
-				<SecondaryFOVWeight type="float">10.0</SecondaryFOVWeight>		
+				<SecondaryFOVWeight type="float">10.0</SecondaryFOVWeight>
 				<SpeedMultiplier type="bb">
 					<FastSpeed type="float">4.5</FastSpeed>
 					<FastMultiplier type="float">4.5</FastMultiplier>
@@ -471,7 +437,6 @@
 			</Audio>
 		</Perception>
 		<CharacterType type="string">HumanSpider</CharacterType>
-		
 		<DefaultBehavior type="string">HumanSpiderMutantDefaultBehavior</DefaultBehavior>
 		<PrimaryProjectileAmmoType type="string">ammo_venom_spit</PrimaryProjectileAmmoType>
 		<PrimaryProjectileInaccuracyDegrees type="float">0.5</PrimaryProjectileInaccuracyDegrees>
@@ -481,7 +446,7 @@
 		<MeleeLungeDuration type="float">1.07</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.57</MeleeLungeDamageEvent>
 	</HumanSpider>
-	
+
 	<SimpleAnimal id="200" type="bb">
 		<KytheraControl type="bool">true</KytheraControl>
 		<CharacterFeatures type="bb">
@@ -499,7 +464,7 @@
 		<!-- If set to true then we won't support any animated character features in the MotionHandler aspect -->
 		<IsSimpleCharacter type="bool">true</IsSimpleCharacter>
 	</SimpleAnimal>
-		
+
 	<Pig id="201" inheritanceParent="200" type="bb">
 		<!-- Behavior -->
 		<WalkSpeed type="float">0.8</WalkSpeed>
@@ -509,7 +474,7 @@
 		<MaxWanderPathLength type="float">12.0</MaxWanderPathLength>
 		<MaxWanderRadius type="float">20.0</MaxWanderRadius>
 	</Pig>
-	
+
 	<Rooster id="202" inheritanceParent="200" type="bb">
 		<!-- Behavior -->
 		<WalkSpeed type="float">0.45</WalkSpeed>
@@ -519,7 +484,7 @@
 		<MaxWanderPathLength type="float">9.0</MaxWanderPathLength>
 		<MaxWanderRadius type="float">15.0</MaxWanderRadius>
 	</Rooster>
-	
+
 	<Crawler id="300" type="bb">
 		<KytheraControl type="bool">true</KytheraControl>
 		<CharacterFeatures type="bb">
@@ -542,11 +507,10 @@
 			<Attachments type="bool">false</Attachments>
 			<DamageTracking type="bool">true</DamageTracking>
 		</CharacterFeatures>
-    
 		<Perception>
 			<!--Unlikely to last long, so make the most of seeing players.-->
 			<MaxObscuredTime type="float">1.0</MaxObscuredTime>
-			<MaxMemoryTime type="float">60.0</MaxMemoryTime> 
+			<MaxMemoryTime type="float">60.0</MaxMemoryTime>
 			<DecayRate type="float">0.0</DecayRate>
 			<MemoryMultiplier type="float">5.0</MemoryMultiplier>
 			<Proximity>
@@ -554,11 +518,10 @@
 				<BasePerceptionScale type="float">1.0</BasePerceptionScale>
 			</Proximity>
 		</Perception>
-    
 		<NavMesh type="string">MediumSizedCharacters</NavMesh>
 		<TargetSelector type="string">TS_MutantDefault</TargetSelector>
 		<!--Affects what params to choose from entityparams-->
-		<CharacterType type="string">Crawler</CharacterType> 
+		<CharacterType type="string">Crawler</CharacterType>
 		<!--Default is false, but is this perhaps useful?-->
 		<IsSimpleCharacter type="bool">false</IsSimpleCharacter>
 		<!--Get ALL the targets!-->
@@ -571,15 +534,19 @@
 		<MeleeLungeSpeed type="float">2.0</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.8</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.5</MeleeLungeDamageEvent>
-  </Crawler>
-  
-  <BabySpider id="301" inheritanceParent="300" type="bb">
-	<DefaultBehavior type="string">BabySpiderDefaultBehavior</DefaultBehavior>
-  	<PrimaryProjectileAmmoType type="string">BabySpiderSelfDestruct</PrimaryProjectileAmmoType>
+	</Crawler>
 
-  </BabySpider>
-  
-  <GiantRoach id="302" inheritanceParent="300" type="bb">
-	<DefaultBehavior type="string">GiantRoachDefaultBehavior</DefaultBehavior>
-  </GiantRoach>
+	<BabySpider id="301" inheritanceParent="300" type="bb">
+		<DefaultBehavior type="string">BabySpiderDefaultBehavior</DefaultBehavior>
+		<PrimaryProjectileAmmoType type="string">BabySpiderSelfDestruct</PrimaryProjectileAmmoType>
+	</BabySpider>
+
+	<GiantRoach id="302" inheritanceParent="300" type="bb">
+		<DefaultBehavior type="string">GiantRoachDefaultBehavior</DefaultBehavior>
+	</GiantRoach>
+
+	<GiantScorpion id="303" inheritanceParent="300" type="bb">
+		<DefaultBehavior type="string">GiantRoachDefaultBehavior</DefaultBehavior>
+	</GiantScorpion>
+
 </Profiles>

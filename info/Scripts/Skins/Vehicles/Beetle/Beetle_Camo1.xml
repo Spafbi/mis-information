@@ -1,0 +1,13 @@
+<skin name="Beetle_Camo1">
+
+	<params>
+		<param name="display_name" value="Beetle Hunters Skin"/>
+		<param name="description" value="Hunters camo skin for the Beetle"/>
+		<param name="material" value="objects/vehicles/beetle/beetle_camo1"/>
+	</params>
+
+	<items>
+		<item name="beetle"/>
+	</items>
+
+</skin>

@@ -1,0 +1,7 @@
+<GlobalLodSettings>
+ <GeometryLodSettings nSourceLod="0" bObjectHasBase="0" fViewResolution="4.08122" nViewsAround="12" nViewElevations="3" fSilhouetteWeight="5" fVertexWelding="0.001" bCheckTopology="1" bWireframe="1" bExportObj="1" bAddToParentMaterial="1" bUseCageMesh="0" bSourceLod="0"/>
+ <MaterialLodSettings RayTestLength="0.5" RayStartDist="0.25" BakeAlpha="0" BakeUniqueSpecularMap="1" SmoothCage="0" DilationPass="1" BackgroundColour="0" ExportPath="Objects/structures/commercial/fastfood_capital/" FilenameTemplate="Outside_lod[LodId]_[AlphaBake][BakedTextureType].tif" DiffuseTexturePreset="Diffuse_highQ /reduce=1" NormalTexturePreset="NormalmapWithGlossInAlpha_highQ /reduce=1" SpecularTexturePreset="Diffuse_highQ /reduce=1" UseAutoTextureSize="0" AutoTextureRadius1="8" AutoTextureSize1="1024" AutoTextureRadius2="4" AutoTextureSize2="512" AutoTextureRadius3="0" AutoTextureSize3="128">
+  <IndividualLodSettings nLodId="1" nWidth="512" nHeight="512" bEnabled="1"/>
+  <IndividualLodSettings nLodId="2" nWidth="256" nHeight="256" bEnabled="1"/>
+ </MaterialLodSettings>
+</GlobalLodSettings>

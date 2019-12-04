@@ -6,6 +6,8 @@
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@plated_roof_1_3m_2m"/>
 		<param name="description" value="@plated_roof_1_3m_2mDescription"/>
+		
+		<param name="place_roof" value="1"/>
 	</params>
 
 	<base_part class="static" type="1010" name="plated_roof_1_3m_2m" repair_with="SheetMetal">

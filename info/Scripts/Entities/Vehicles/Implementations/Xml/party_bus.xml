@@ -121,18 +121,6 @@
 						<Dials rotationMax="180" ofs="-24"/>
 					</AnimatedJoint>
 				</Part>
-				<Part name="handle1" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle2" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle3" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle4" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle5" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle6" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle7" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle8" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle9" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle10" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle11" class="AnimatedJoint" mass="0" isHidden="1"/>
-				<Part name="handle12" class="AnimatedJoint" mass="0" isHidden="1"/>
 				<Part name="headLightLeft1" class="Light" component="headLightLeft" helper="headLightLeftInnerPos">
 					<Light type="Headlight"/>
 				</Part>
@@ -409,22 +397,6 @@
 					<SteeringWheel fragmentID="IdleDriver">
 						<Car jitterAmpLow="0.02" jitterAmpHi="0.08" jitterFreqLow="9" jitterFreqHi="25" jitterSuspAmp="0.1" jitterSuspResponse="10"/>
 					</SteeringWheel>
-				</SeatAction>
-				<SeatAction class="ShakeParts">
-					<Parts>
-						<Part name="handle1" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle2" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle3" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle4" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle5" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle6" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle7" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle8" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle9" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle10" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle11" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-						<Part name="handle12" amp="0.001" ampRot="2.0" freq="18" suspensionAmp="0.001" suspensionResponse="1.8" suspensionSharpness="20"/>
-					</Parts>
 				</SeatAction>
 			</SeatActions>
 		</Seat>
