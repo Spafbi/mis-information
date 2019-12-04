@@ -20,6 +20,7 @@
 	<storage>
 		<locations>
 			<location category="any"/>
+			<location category="waist"/>
 		</locations>
 	</storage>
 

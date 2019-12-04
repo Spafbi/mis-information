@@ -50,6 +50,7 @@
 		<item name="MotorcycleHelmetCarbon" percentage="100"/>
 		<item name="MotorcycleHelmetGold" percentage="100"/>
 		<item name="MotorcycleHelmetWhite" percentage="100"/>
+		<item name="ScavengerHelmet" percentage="100"/>
 	</repair>
 
 	<storage>

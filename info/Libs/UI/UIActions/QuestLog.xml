@@ -3,37 +3,28 @@
   <Node Id="2" Class="UI:Display:Display" pos="80,20,0" flags="0">
    <Inputs uiElements_Element="QuestLog" instanceID="-1"/>
   </Node>
-  <Node Id="5" Name="Display_the_quest_log_and_unload_it_on_level_end" Class="_commentbox" pos="-346,-44.593376,0" flags="0">
+  <Node Id="5" Name="Display_the_quest_log_and_unload_it_on_level_end" Class="_commentbox" pos="-346,-35.5858,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-   <ResizeBorder X="0" Y="0" Width="1210" Height="240"/>
-   <NodeSize Width="1210" Height="276.87338"/>
+   <ResizeBorder X="0" Y="0" Width="1000" Height="240"/>
+   <NodeSize Width="1000" Height="267.86591"/>
   </Node>
   <Node Id="286" Class="UI:Events:System:OnGameplayEnded" pos="-320,100,0" flags="0">
    <Inputs Port="-1" Idx=""/>
   </Node>
-  <Node Id="295" Name="Quest_log_functionality" Class="_commentbox" pos="-346,235.51132,0" flags="0">
+  <Node Id="295" Name="Quest_log_functionality" Class="_commentbox" pos="-346,244.51891,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
-   <ResizeBorder X="0" Y="0" Width="1620" Height="1290"/>
-   <NodeSize Width="1620" Height="1326.8734"/>
+   <ResizeBorder X="0" Y="0" Width="1000" Height="970"/>
+   <NodeSize Width="1000" Height="997.86591"/>
   </Node>
-  <Node Id="327" Name="From_system_to_quest_log" Class="_comment" pos="-320,1250,0" flags="0"/>
+  <Node Id="327" Name="From_system_to_quest_log" Class="_comment" pos="-320,1080,0" flags="0"/>
   <Node Id="328" Name="From_quest_log_to_system" Class="_comment" pos="-326,584.46027,0" flags="0"/>
   <Node Id="329" Class="Game:Start" pos="-320,20,0" flags="0">
    <Inputs InGame="1" InEditor="1"/>
   </Node>
-  <Node Id="333" Class="UI:Display:Config" pos="880,300,0" flags="0">
-   <Inputs uiElements_Element="QuestLog" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="1" consoleCursor="1" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="0"/>
-  </Node>
-  <Node Id="334" Class="UI:Display:Config" pos="780,820,0" flags="0">
-   <Inputs uiElements_Element="QuestLog" instanceID="-1" cursor="0" mouseEvents="0" keyEvents="0" consoleMouse="0" consoleCursor="0" controllerInput="0" eventsExclusive="0" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="0"/>
-  </Node>
-  <Node Id="344" Class="Audio:Trigger" pos="0,380,0" flags="0">
-   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_button_roll_over" audioTrigger_StopTrigger=""/>
-  </Node>
-  <Node Id="427" Class="UI:Events:QuestLog:UpdateQuestLog" pos="-310,1300,0" flags="0">
+  <Node Id="427" Class="UI:Events:QuestLog:UpdateQuestLog" pos="-310,1130,0" flags="0">
    <Inputs Port="-1" Idx=""/>
   </Node>
-  <Node Id="428" Class="UI:Functions:QuestLog:SetData" pos="0,1300,0" flags="0">
+  <Node Id="428" Class="UI:Functions:QuestLog:SetData" pos="0,1130,0" flags="0">
    <Inputs instanceID="-1" Quests=""/>
   </Node>
   <Node Id="429" Class="UI:Events:QuestLog:HideQuestLog" pos="-320,640,0" flags="0">
@@ -42,33 +33,31 @@
   <Node Id="430" Class="UI:Events:QuestLog:ShowQuestLog" pos="-320,300,0" flags="0">
    <Inputs Port="-1" Idx=""/>
   </Node>
-  <Node Id="431" Class="UI:Functions:QuestLog:OnHideQuestLog" pos="880,640,0" flags="0">
+  <Node Id="431" Class="UI:Functions:QuestLog:OnHideQuestLog" pos="340,610,0" flags="0">
    <Inputs />
   </Node>
-  <Node Id="432" Class="UI:Display:Display" pos="420,300,0" flags="0">
+  <Node Id="432" Class="UI:Display:Display" pos="0,290,0" flags="0">
    <Inputs uiElements_Element="QuestLog" instanceID="-1"/>
   </Node>
   <Node Id="433" Class="UI:Events:QuestLog:HideMouseCursor" pos="-320,960,0" flags="0">
    <Inputs Port="-1" Idx=""/>
   </Node>
-  <Node Id="434" Class="UI:Display:Display" pos="420,640,0" flags="0">
+  <Node Id="434" Class="UI:Display:Display" pos="0,590,0" flags="0">
    <Inputs uiElements_Element="QuestLog" instanceID="-1"/>
   </Node>
-  <Node Id="436" Class="Audio:Trigger" pos="0,730,0" flags="0">
+  <Node Id="436" Class="Audio:Trigger" pos="-20,900,0" flags="0">
    <Inputs entityId="0" audioTrigger_PlayTrigger="Play_button_roll_over" audioTrigger_StopTrigger=""/>
   </Node>
  </Nodes>
  <Edges>
   <Edge nodeIn="2" nodeOut="286" portIn="hide" portOut="onEvent" enabled="1"/>
-  <Edge nodeIn="431" nodeOut="334" portIn="send" portOut="OnSet" enabled="0"/>
+  <Edge nodeIn="2" nodeOut="329" portIn="show" portOut="output" enabled="1"/>
   <Edge nodeIn="428" nodeOut="427" portIn="Quests" portOut="Quests" enabled="1"/>
   <Edge nodeIn="428" nodeOut="427" portIn="Call" portOut="onEvent" enabled="1"/>
-  <Edge nodeIn="344" nodeOut="430" portIn="Play" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="434" nodeOut="429" portIn="hide" portOut="onEvent" enabled="1"/>
   <Edge nodeIn="432" nodeOut="430" portIn="show" portOut="onEvent" enabled="1"/>
-  <Edge nodeIn="333" nodeOut="432" portIn="set" portOut="onShow" enabled="1"/>
-  <Edge nodeIn="434" nodeOut="433" portIn="hide" portOut="onEvent" enabled="1"/>
   <Edge nodeIn="436" nodeOut="433" portIn="Play" portOut="onEvent" enabled="1"/>
-  <Edge nodeIn="334" nodeOut="434" portIn="set" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="431" nodeOut="434" portIn="send" portOut="onHide" enabled="1"/>
  </Edges>
  <GraphTokens />
 </Graph>

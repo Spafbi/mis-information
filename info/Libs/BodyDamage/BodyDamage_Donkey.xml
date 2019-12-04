@@ -13,10 +13,10 @@
 	</Multipliers>
 
 	<ImpulseFilters>
-		<ImpulseFilter part="frontLeftLeg" scale = "0.0" passTo="d_spine_02_jnt" passOnScale="0.5"/>
-		<ImpulseFilter part="frontRightLeg" scale = "0.0" passTo="d_spine_02_jnt" passOnScale="0.5"/>
-		<ImpulseFilter part="backLeftLeg" scale="0.0" passTo="d_hips_jnt" passOnScale="0.5"/>
-		<ImpulseFilter part="backRightLeg" scale="0.0" passTo="d_hips_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="frontLeftLeg" scale = "0.0" passTo="Def_Torso_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="frontRightLeg" scale = "0.0" passTo="Def_Torso_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="backLeftLeg" scale="0.0" passTo="Def_Hip_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="backRightLeg" scale="0.0" passTo="Def_Hip_jnt" passOnScale="0.5"/>
   </ImpulseFilters>
 
 </BodyDamage>

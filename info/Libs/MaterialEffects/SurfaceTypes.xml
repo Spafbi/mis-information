@@ -244,7 +244,7 @@ Special surface types
 	</SurfaceType>
 
 	<SurfaceType name="mat_sand">
-		<Physics friction="0.4" elasticity="0" pierceability="6" sound_obstruction="0.5" />
+		<Physics friction="1.0" elasticity="0" pierceability="6" sound_obstruction="0.5" />
 		<AI fImpactRadius="5" fImpactSoundRadius="30" fFootStepRadius="30" proneMult="0.5" crouchMult="0.8" movingMult="2.0" />
 	</SurfaceType>
 

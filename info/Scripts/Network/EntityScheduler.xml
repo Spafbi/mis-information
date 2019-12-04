@@ -23,6 +23,7 @@
 	<Class name="sedan_taxi_engoa" policy="car" own="own"/>
 	<Class name="sedan_taxi_fullout" policy="car" own="own"/>
 	<Class name="suv_basic" policy="car" own="own"/>
+	<Class name="suv_police" policy="car" own="own"/>
 	<Class name="towcar" policy="car" own="own"/>
 	<Class name="tractor" policy="car" own="own"/>
 	<Class name="truck_5ton" policy="car" own="own"/>
@@ -48,10 +49,12 @@
 	<Class name="Bear" policy="bndt" />
 	<Class name="Deer" policy="bndt" />
 	<Class name="DeerFemale" policy="bndt" />
-	<Class name="GreyWolf" policy="bndt" />
-	<Class name="TwoHeadDog" policy="bndt" />
+	<Class name="Donkey" policy="bndt" />
 	<Class name="GiantRoach" policy="bndt" />
 	<Class name="GiantScorpion" policy="bndt" />
+	<Class name="GreyWolf" policy="bndt" />
+	<Class name="Ram" policy="bndt" />
+	<Class name="TwoHeadDog" policy="bndt" />
 
 	<!-- simple animals -->
 	<Class name="Boar" policy="anml" />

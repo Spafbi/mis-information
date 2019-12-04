@@ -15,7 +15,7 @@
 			<Bank Name="player" Hash="1204549936" StreamHash="157587662" Timestamp="132108305679024798"/>
 			<Bank Name="ui" Hash="3643485511" StreamHash="157587662" Timestamp="132108305679194343"/>
 			<Bank Name="vehicles" Hash="1195780883" StreamHash="157587662" Timestamp="132108305679952312"/>
-			<Bank Name="weapons" Hash="1473689005" StreamHash="157587662" Timestamp="132108305683637095"/>
+			<Bank Name="weapons" Hash="227972273" StreamHash="157587662" Timestamp="132185064692386019"/>
 			<Bank Name="weather" Hash="1137328823" StreamHash="157587662" Timestamp="132108305684255449"/>
 		</Language>
 	</Platform>

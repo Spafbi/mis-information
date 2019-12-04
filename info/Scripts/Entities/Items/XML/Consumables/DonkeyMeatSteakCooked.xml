@@ -1,0 +1,30 @@
+<item name="DonkeyMeatSteakCooked" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@DonkeyMeatSteakCooked"/>
+		<param name="description" value="@DonkeyMeatSteakCookedDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/meat_steaks/meat_steak_cooked.cgf"/>
+	</geometry>
+
+	<consumable>
+		<!-- a cookable item must have cookedItem and cookedTime defined -->
+		<param name="cookable" value="1"/>
+		<param name="cookedItem" value="DonkeyMeatSteakBurned"/>
+		<param name="cookedTime" value="60"/>
+		<param name="foodAmount" value="600"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

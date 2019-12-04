@@ -19,7 +19,7 @@
 		<param name="tag" value="map"/>
 		<param name="prone_no_melee" value="0"/>
 		<animPrecache name="1handedmelee">
-			<precache DBAFile="animations/human/male/weapons/1handedmelee/1handedmelee.dba" thirdperson="1"/>
+			<precache DBAFile="animations/human/male/items/map/map.dba" thirdperson="1"/>
 		</animPrecache>
 		<aimAnims/>
 	</params>
@@ -27,8 +27,8 @@
 	<MovementModifiers speedScale="1.0" speedScaleTactical="0.85" rotationScale="1.0"/>
 
 	<geometry>
-		<thirdperson name="Objects/weapons/map/map.cgf" material="GameSDK/Objects/weapons/map/map_gps.mtl"/>
-		<onground name="Objects/weapons/map/map_onground.cgf" material="GameSDK/Objects/weapons/map/map_gps.mtl"/>
+		<thirdperson name="Objects/weapons/map/map.cgf" material="Objects/weapons/map/map_gps"/>
+		<onground name="Objects/weapons/map/map_onground.cgf" material="Objects/weapons/map/map_gps"/>
 	</geometry>
 
 	<firemodes>

@@ -1,0 +1,392 @@
+<PrefabsLibrary Name="dws">
+ <Prefab Name="residential.house_d" Id="{9492587C-3F75-4285-9714-5F4A15479A4D}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{5F8F3826-66E0-4CE2-A908-0886798B626B}" Name="Elec_Medium17" Pos="5.5859985,0.92468262,1.8886833" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{9CBE4192-F480-4A14-B93F-AFE1B0550BB7}" Name="dws_light_switch3" Pos="0.26330566,-0.97042847,2.359478" FloorNumber="-1" Rotate="0.70710683,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{60ED7285-FE15-4712-89F1-4ADFA997B36C}" Name="dws_ceiling_light_c_off7" Pos="2.0905762,1.7250977,4.117588" FloorNumber="-1" Rotate="0.96592581,0,0,-0.25881904" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{46759C56-0423-4C31-A89B-B725BFFAAE14}" Name="house_d_dws" Pos="7.5619202,-11.50293,-1.4444122" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="9.5" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0.099998474"/>
+     <Point Pos="-15,0,0.099998474"/>
+     <Point Pos="-15,19,0"/>
+     <Point Pos="0,19,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.3_room_singlestory" Id="{D28A4685-457F-4D64-91A5-10A9BD76702A}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="Marco_assets" LayerGUID="{AD197B5E-85D0-4F86-B54C-E223ED59AF2A}" Id="{FFCFA076-2BAD-4FAA-9847-5A1DE6C52B80}" Name="dws_light_switch2" Pos="-7.5461426,-1.5390015,1.4164391" FloorNumber="-1" Rotate="4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Marco_assets" LayerGUID="{AD197B5E-85D0-4F86-B54C-E223ED59AF2A}" Id="{BBD5CE33-8167-4612-ABD4-3493BEB80737}" Name="Elec_Small50" Pos="8.2401123,2.9596558,-0.93702316" FloorNumber="-1" Rotate="1,0,0,8.7422777e-08" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/pipe/pipe.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Marco_assets" LayerGUID="{AD197B5E-85D0-4F86-B54C-E223ED59AF2A}" Id="{82AE9AA8-3864-40EA-AB6E-4B82A1DC5087}" Name="dws_elec" Pos="8.1057739,2.6865845,2.1429977" FloorNumber="-1" Rotate="-4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Small.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{5AF761DD-B231-47E7-8C15-6744AEE7B867}" Name="housevol_3roomss_01" Pos="10.794067,6.1965332,-1.6513824" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="6" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0.099998474"/>
+     <Point Pos="0,-18,0.099998474"/>
+     <Point Pos="-22,-18,0.099998474"/>
+     <Point Pos="-22,0,0.099998474"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Brush" Layer="cape_bay" LayerGUID="{DB55C81B-F938-44D2-B920-61AD239FC721}" Id="{469F083F-A0D7-40C0-8EF7-32A7474E8AB3}" Name="dws_ceiling_light_c_off6" Pos="-8.4434004,-3.8936,2.9200001" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="cape_bay" LayerGUID="{DB55C81B-F938-44D2-B920-61AD239FC721}" Id="{0B321239-3D46-4B98-B324-E0CF46F1EEF0}" Name="dws_ceiling_light_c_off1" Pos="6.5138998,-3.941,2.9000001" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="main_town_NW_farms" LayerGUID="{06B1E442-990D-406E-9E49-D09D5812A292}" Id="{EC64B5BF-0BD4-4D9D-9F29-933987E4B7ED}" Name="dws_light_switch1" Pos="2.2680664,-6.4750977,1.4164391" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.house_b" Id="{9FAE1273-25B0-49F9-BE39-CFB72C0E8067}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{0FB47EFB-B69B-44F1-B395-BCE15D15AA2D}" Name="dws_light_switch5" Pos="-0.063537598,-7.5551453,2.2384033" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{9D18593B-E7DE-403E-9E18-F80358FDC5F7}" Name="dws_ceiling_light_c_off9" Pos="-1.9840698,-2.4544678,4.5587425" FloorNumber="-1" Rotate="0.99996191,0,0,-0.0087265363" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{AF6B3321-29F8-4252-BC32-D93485F82730}" Name="dws_light_switch6" Pos="4.4678345,4.157074,6.6424103" FloorNumber="-1" Rotate="-4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{B5F52324-2406-48EA-A81B-C2AA5664EA7A}" Name="dws_houseb" Pos="-7.7022705,-12.706421,-1.1653061" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="11" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="28,0,0"/>
+     <Point Pos="28,24.5,0"/>
+     <Point Pos="0,24.5,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{6AA647CC-3987-434A-8490-65A202E9DDDF}" Name="dws_ceiling_light_c_off10" Pos="5.0847001,-0.83350003,8.5299997" FloorNumber="-1" Rotate="0.99984771,0,0,0.017452406" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="town_2" LayerGUID="{88E4A5F8-E968-405F-AAA7-171BE573B7BB}" Id="{144AC36E-0F80-4388-AC28-229E74EC9B5C}" Name="Elec_Medium18" Pos="8.3201904,-2.6728516,2.211153" FloorNumber="-1" Rotate="1,0,0,-5.2154064e-08" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.sslh" Id="{6C4BA802-D3ED-46C9-8D7F-EEF297DB527D}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{C0F5C307-97AF-4FB2-8955-E8F1AB89C727}" Name="dws_light_switch7" Pos="1.3036499,4.484314,2.2183189" FloorNumber="-1" Rotate="-4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{A2A90C26-6473-4404-BBBC-635749AFE8E7}" Name="dws_ceiling_light_c_off11" Pos="1.6255493,1.2686768,3.8281593" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{9930B0F3-905C-429F-81D9-F2EAE210D9BF}" Name="Elec_Medium19" Pos="-2.1444702,-5.7109375,1.7620544" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{96B251DA-EB2C-479E-82CC-87B83C1E5DA6}" Name="dws_sslh" Pos="12.544434,10.294922,-1.5618401" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="6.5" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-21.5,0,0"/>
+     <Point Pos="-21.5,-18,0"/>
+     <Point Pos="0,-18,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.sslh_R" Id="{AB945912-A00E-4EDE-8DDD-CFC76EB707A4}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{F41163AC-36CA-4EFF-9442-08442F7D9DD2}" Name="Elec_Medium19" Pos="-4.9649658,-5.7109375,1.7620544" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{0F4EA59C-E34B-4140-BC40-E33892CFCFB9}" Name="dws_ceiling_light_c_off11" Pos="-1.6485596,1.2686768,3.8281593" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="new_house01" LayerGUID="{6A74EBD8-1BB0-4282-9110-E247C4FFA2FA}" Id="{5F5C8964-E693-4F89-9C37-9FEDD5A8AAE0}" Name="dws_light_switch7" Pos="-1.3045654,4.484314,2.2183189" FloorNumber="-1" Rotate="-4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{2541A30B-C655-4992-91D2-163A31FB00D9}" Name="dws_sslh" Pos="8.6147461,10.294922,-1.5618439" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="6.5" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-21.5,0,0"/>
+     <Point Pos="-21.5,-18,0"/>
+     <Point Pos="0,-18,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.thelasthouse" Id="{865A379E-1FF5-462E-B0CC-8EEDBB5A70BD}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="cape_bay" LayerGUID="{DB55C81B-F938-44D2-B920-61AD239FC721}" Id="{22917EDD-3BCD-4637-A8BB-E5ED35C1FFB2}" Name="Elec_Medium20" Pos="2.2607422,-2.9077148,1.2476997" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{408EDA7F-6722-4427-91B2-D8192B8FAD9D}" Id="{19E2A5B4-6B67-48F9-91DF-13DE82413A33}" Name="dws_ceiling_light_c_off12" Pos="-2.2223001,-10.2744,2.9200001" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1073741832">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="main_town" LayerGUID="{133C836B-5CA2-470D-A6CA-DB3DD19FAB7E}" Id="{CEC74C51-EF4D-4E3B-877C-58D57392F034}" Name="dws_light_switch8" Pos="-2.0158691,-6.6831055,1.5856056" FloorNumber="-1" Rotate="-4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="Marco_assets" LayerGUID="{AD197B5E-85D0-4F86-B54C-E223ED59AF2A}" Id="{9F35E021-DD9F-4201-9D81-1E9DE70CFA67}" Name="dws_thelasthouse" Pos="3.5410156,5.4101563,-2.009552" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" MinSpec="3" DisplayFilled="0" Height="12" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-11,0,0"/>
+     <Point Pos="-11,-21,0"/>
+     <Point Pos="0,-21,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.house_a" Id="{42231CBE-9C06-44A6-A856-443B46115080}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{B73A6406-7C08-45D5-A6F7-738995146C48}" Name="dws_light_switch3" Pos="4.2490234,-2.4503174,1.9307404" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{EEC8D829-CDC9-4F7B-A04F-8C615B0231B4}" Name="dws_ceiling_light_c_off7" Pos="-1.75,-0.79858398,3.6055107" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{7007FC57-21E6-4837-B556-5B334B4DAD93}" Name="Elec_Medium17" Pos="4.489502,2.4960938,1.9759483" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{57E46682-AF3E-4FB2-B550-B886F7D2F7CF}" Name="house_a_dws" Pos="6.4023438,-7.1723633,-1.4679909" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="9" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0,0,0.099998474"/>
+     <Point Pos="-13.004761,0.073852539,0.14241219"/>
+     <Point Pos="-13.004761,15.073853,0.14241219"/>
+     <Point Pos="-0.0047607422,15.073853,0.14241219"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.singlestory" Id="{A1328036-8EE9-4406-BDF2-7D32BE61AB14}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{42C84650-C1FA-437C-9A68-890CF04BB061}" Name="dws_light_switch3" Pos="1.1092529,1.2310791,1.939476" FloorNumber="-1" Rotate="1,0,0,-5.1658017e-08" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{92BECEC2-9816-43EA-B1C0-DF165E3E8FFE}" Name="dws_ceiling_light_c_off7" Pos="1.7467041,3.3804932,2.9315147" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{D1C30EE9-37C8-4A55-9611-94F446B249FA}" Name="Elec_Medium17" Pos="4.3961182,0.94567871,1.9846802" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{4135B726-1B32-463C-911E-FC11A8280F64}" Name="singlestory_dws" Pos="6.1845703,-6.9838867,-1.4592571" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="6" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0.50256348,-0.40930176,0.46799278"/>
+     <Point Pos="-12.497437,-0.40930176,0.46799278"/>
+     <Point Pos="-12.497437,14.590698,0.46799278"/>
+     <Point Pos="0.50256348,14.590698,0.46799278"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.modernfamilyhome" Id="{AE8D2281-B552-415C-96BF-0B47E636E6F0}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{EC61E583-0213-47B2-8D67-111E549B46C7}" Name="dws_light_switch9" Pos="1.5556641,5.6079102,3.2735519" FloorNumber="-1" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{23521AB6-7C10-49A8-930F-C5340E799C3C}" Name="dws_ceiling_light_c_off9" Pos="-0.73217773,4.8580322,4.8807487" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{833252F4-CCA1-490A-9376-D3AEB98E62D7}" Name="modernfamilyhome_dws" Pos="-5.7297363,-9.7963867,-4.3307495" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="14.5" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0.52929688,0.071777344,0"/>
+     <Point Pos="14.529297,0.071777344,0"/>
+     <Point Pos="14.529297,28.071777,0"/>
+     <Point Pos="0.52929688,28.071777,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.modernfamilyhouse_2" Id="{494CAEAE-AB67-4499-A636-4019390C6B66}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{07581E20-C3FE-4332-A097-3EFEC473EDEF}" Name="Elec_Medium18" Pos="8.8908691,4.3383789,-2.2108536" FloorNumber="-1" Rotate="9.5369401e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{4261FE10-81F1-4A48-8B46-C34AEBD8481D}" Name="dws_light_switch10" Pos="4.9472656,-2.706543,-2.387764" FloorNumber="-1" Rotate="0.70710683,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{C320E42F-5B63-47BF-A08C-1CBE51ECB12D}" Name="dws_ceiling_light_c_off14" Pos="7.0201416,-1.1408691,-0.53147507" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{D4823F4D-CE42-4DBD-A297-2D68B9941011}" Name="dws_houseb" Pos="-6.4929199,-10.576416,-5.2322311" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="9" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="-0.0095214844,0.042724609,0.075839996"/>
+     <Point Pos="26.990479,0.042724609,0.075839996"/>
+     <Point Pos="26.990479,19.042725,0.075839996"/>
+     <Point Pos="-0.0095214844,19.042725,0.075839996"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="mobilehome" Id="{EC7FF70D-1F3E-40A8-8D7F-B7085E8AC8B0}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{8A26CD1A-99AC-46ED-909F-EB9779437248}" Name="dws_light_switch11" Pos="-3.4716797,-0.51928711,2.2636719" FloorNumber="-1" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{513DBF9E-AEA0-400C-973C-F2742A7734CE}" Name="dws_ceiling_light_c_off13" Pos="1.0405273,3.2493896,3.6683159" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{E3F7339F-4D49-489D-B883-82854B775F5D}" Name="Elec_Medium9" Pos="3.46875,9.0581055,1.7614899" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/Underground/Electrical Boxes/Elec_Medium.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{D277FC41-FC8F-49A9-A9D3-3B2F9FB8607C}" Name="mobilehome_dws" Pos="5.3823242,-9.3480225,-0.84170723" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="5.5" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="-0.35498047,-1.2889404,0"/>
+     <Point Pos="-10.35498,-1.2889404,0"/>
+     <Point Pos="-10.35498,24.71106,0"/>
+     <Point Pos="-0.35498047,24.71106,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="residential.bungalow" Id="{57EDAFCB-35DA-4AD4-8743-8C62B31640DA}" Library="dws">
+  <Objects>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{6A704CDB-1862-4949-A33A-1E522A8948A5}" Name="dws_light_switch12" Pos="0.70214844,-3.6450195,2.6508369" FloorNumber="-1" Rotate="4.3711388e-08,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/misc/light_switch/dws_light_switch.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="GameVolume" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{146BE501-4FA5-462C-9F39-41E254D006F1}" Name="bungalow_dws" Pos="10.33252,13.212646,-1.0742626" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16763904" DisplayFilled="0" Height="7" Closed="1" VolumeClass="6" EntityClass="HouseVolume">
+    <Points>
+     <Point Pos="0.38793945,-0.10522461,0"/>
+     <Point Pos="0.38793945,-27.105225,0"/>
+     <Point Pos="-18.612061,-27.105225,0"/>
+     <Point Pos="-18.612061,-0.10522461,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Brush" Layer="dws_residential" LayerGUID="{FEECA49E-B504-4BC4-960C-1A1A5034EF98}" Id="{A254DBBF-D439-45EA-915A-0B1940A18A55}" Name="dws_ceiling_light_c_off15" Pos="1.4805,-6.6606002,4.3200002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/furniture/appliances/lamps/dws_ceiling_light_c_off.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

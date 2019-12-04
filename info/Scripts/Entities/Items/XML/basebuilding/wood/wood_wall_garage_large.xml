@@ -1,0 +1,25 @@
+<item name="wood_wall_garage_large" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="Wood Wall Garage Large"/>
+		<param name="description" value="A large wood wall with an railing system for a garage door."/>
+	</params>
+
+	<base_part class="static" type="298" name="wood_wall_garage_large">
+		<static filename="objects/basebuilding/wood/wood_wall_garage_large.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

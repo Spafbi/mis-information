@@ -6,6 +6,8 @@
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@plated_roof_murderhole_3m_2m"/>
 		<param name="description" value="@plated_roof_murderhole_3m_2mDescription"/>
+		
+		<param name="place_roof" value="1"/>
 	</params>
 
 	<base_part class="static" type="1154" name="plated_roof_murderhole_3m_2m" repair_with="SheetMetal">

@@ -1,0 +1,29 @@
+<item name="DonkeyMeatSteakRotten" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@DonkeyMeatSteakRotten"/>
+		<param name="description" value="@DonkeyMeatSteakRottenDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/meat_steaks/meat_steak_rotten.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="poisonChance" value="100"/>
+		<param name="foodAmount" value="50"/>
+		<param name="torpidityAmount" value="30"/>
+		<param name="staminaAmount" value="-25"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -1,0 +1,66 @@
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<UIElements name="StatsBar">
+
+	<UIElement name="StatsBar"  mouseevents="0" keyevents="0" cursor="0" controller_input="0" render_lockless="1">
+
+		<GFx file="StatsBar/StatsBar.gfx" layer="1">
+			<Constraints>
+				<Align mode="dynamic" valign="bottom" halign="right" scale="1" max="0" />
+			</Constraints>
+		</GFx>
+
+		<!-- Can get or set a variable -->
+		<variables>
+		</variables>
+
+		<!-- Can get or set an array -->
+		<arrays>
+		</arrays>
+
+		<!-- Functions that can be invoked into actionscript from lua -->
+		<functions>
+			<function name="SetHealth" funcname="_root.setHealth">
+				<param name="Health" desc="Set the player's current health level"/>
+			</function>
+			<function name="SetFood" funcname="_root.setFood">
+				<param name="Food" desc="Set the player's current food level"/>
+			</function>
+			<function name="SetWater" funcname="_root.setWater">
+				<param name="Water" desc="Set the player's current water level"/>
+			</function>
+			<function name="SetTemperature" funcname="_root.setTemperature">
+				<param name="Temperature" desc="Set the player's current temperature level"/>
+			</function>
+			<function name="SetRadiation" funcname="_root.setRadiation">
+				<param name="Radiation" desc="Set the player's current radiation level"/>
+			</function>
+			<function name="SetOxygen" funcname="_root.setOxygen">
+				<param name="Oxygen" desc="Set the player's current oxygen level"/>
+			</function>
+			<function name="SetBleedingLevel" funcname="_root.setBleedingLevel">
+				<param name="BleedingLevel" desc="Set the player's current bleeding level"/>
+			</function>
+			<function name="SetPoisoned" funcname="_root.setPoisoned">
+				<param name="Poisioned" desc="Set if the player is poisoned"/>
+			</function>
+			<function name="SetStance" funcname="_root.setStance">
+        <param name="Stance" desc="Set the player's current stance"/>
+      </function>
+			<function name="SetTorpidity" funcname="_root.setTorpidity">
+				<param name="Torpidity" desc="Set the player's current torpidity level"/>
+			</function>
+			<function name="SetStamina" funcname="_root.setStamina">
+				<param name="Stamina" desc="Set the player's current stamina level"/>
+			</function>
+		</functions>
+
+		<!-- Events fired from actionsript into lua -->
+		<events>
+		</events>
+
+		<movieclips>
+		</movieclips>
+
+	</UIElement>
+	
+</UIElements>

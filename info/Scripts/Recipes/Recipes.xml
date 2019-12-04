@@ -205,7 +205,7 @@
 				</subcats>
 			</cat>
 
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Components">
 						<items>
@@ -755,6 +755,24 @@
 									<material class="Salt" />
 								</materials>
 							</item>
+							<item class="DonkeyMeatSteakCured" time="2">
+								<materials>
+									<material class="DonkeyMeatSteakRaw" />
+									<material class="Salt" />
+								</materials>
+							</item>
+							<item class="RamMeatSteakCured" time="2">
+								<materials>
+									<material class="RamMeatSteakRaw" />
+									<material class="Salt" />
+								</materials>
+							</item>
+							<item class="ScorpionMeatSteakCured" time="2">
+								<materials>
+									<material class="ScorpionMeatSteakRaw" />
+									<material class="Salt" />
+								</materials>
+							</item>
 							<item class="WolfMeatSteakCured" time="2">
 								<materials>
 									<material class="WolfMeatSteakRaw" />
@@ -818,7 +836,7 @@
 				</subcats>
 			</cat>
 
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Components">
 						<items>
@@ -1431,6 +1449,12 @@
 											<material class="ScrapMetal" count="2" />
 										</materials>
 									</item>
+									<item class="garage_door_large" time="5">
+										<materials>
+											<material class="SheetMetal" count="10" />
+											<material class="ScrapMetal" count="5" />
+										</materials>
+									</item>
 									<!-- commented out since cannot be locked and not used for that reason (Matt)
 									<item class="wood_shutter_1_6m_0_9m" time="6">
 										<materials>
@@ -1843,6 +1867,11 @@
 									<item class="wood_wall_2m_4m" time="5">
 										<materials>
 											<material class="Lumber" count="11" />
+										</materials>
+									</item>
+									<item class="wood_wall_garage_large" time="5">
+										<materials>
+											<material class="Lumber" count="20" />
 										</materials>
 									</item>
 									<item class="sandbag_crafted_1m_1m" time="1">
@@ -2264,7 +2293,7 @@
 
 	<guide name="guide_structures_tire_stacks" id="2">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2293,7 +2322,7 @@
 
 	<guide name="guide_structures_wood_bridges_1" id="3">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2328,7 +2357,7 @@
 
 	<guide name="guide_structures_wood_bridges_2" id="4">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2363,7 +2392,7 @@
 
 	<guide name="guide_structures_wood_curves" id="5">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2443,7 +2472,7 @@
 
 	<guide name="guide_structures_wood_gallows" id="6">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2465,7 +2494,7 @@
 
 	<guide name="guide_structures_wood_watchtower" id="7">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2504,7 +2533,7 @@
 
 	<guide name="guide_structures_wood_ramps_1" id="8">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2571,7 +2600,7 @@
 
 	<guide name="guide_structures_wood_ramps_2" id="9">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2603,7 +2632,7 @@
 
 	<guide name="guide_structures_wood_storage" id="10">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2626,7 +2655,7 @@
 
 	<guide name="guide_structures_wood_traps_1" id="11">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2649,7 +2678,7 @@
 
 	<guide name="guide_structures_wood_traps_2" id="12">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2679,7 +2708,7 @@
 
 	<guide name="guide_structures_wood_walkways_1" id="13">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2711,7 +2740,7 @@
 
 	<guide name="guide_structures_wood_walkways_2" id="14">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2743,7 +2772,7 @@
 
 	<guide name="guide_structures_wood_walls_1" id="15">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2781,7 +2810,7 @@
 
 	<guide name="guide_structures_wood_walls_2" id="16">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2876,7 +2905,7 @@
 
 	<guide name="guide_structures_wood_gatehouse" id="18">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -2909,7 +2938,7 @@
 
 	<guide name="guide_powered_parts_1" id="19">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<!-- Waiting on Solar Power Generator Fix https://entrada.atlassian.net/browse/MIS-3150-->
 					<!-- <subcat name="Solar">
@@ -3091,7 +3120,7 @@
 
 	<guide name="guide_structures_wood_stairs_1" id="22">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -3128,7 +3157,7 @@
 
 	<guide name="guide_structures_wood_stairs_2" id="23">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
@@ -3160,7 +3189,7 @@
 
 	<guide name="guide_structures_wood_roofs" id="24">
 		<cats>
-			<cat name="Base building">
+			<cat name="Base Building">
 				<subcats>
 					<subcat name="Structures">
 						<types>
