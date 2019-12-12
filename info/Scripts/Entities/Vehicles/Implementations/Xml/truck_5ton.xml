@@ -150,6 +150,9 @@
 				</DamageBehavior>
 			</DamageBehaviors>
 		</Component>
+		<Component name="FlipAction" damageMax="0" major="0" position="0,0,0.5" size="2,3.5,1.5" useBoundsFromParts="0">
+			<DamageBehaviors />
+		</Component>
 	</Components>
 
 	<Parts>
@@ -337,6 +340,11 @@
 					<Seat value="passenger9"/>
 				</Seats>
 			</Enter>
+		</Action>
+		<Action class="Flip">
+			<Activations>
+				<Activation type="OnUsed" param1="component" param2="FlipAction"/>
+			</Activations>
 		</Action>
 	</Actions>
 

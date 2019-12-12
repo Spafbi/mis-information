@@ -2081,7 +2081,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			sound = "Play_bush_movement_dry_large",
 			uses = 1,
 			regenerate = 360,
-			percentage = 70,
+			percentage = 40,
 			spawn = "RandomCactiContent", -- or whatever the item is named
 			gridsize = 4,
 			tactical = false,

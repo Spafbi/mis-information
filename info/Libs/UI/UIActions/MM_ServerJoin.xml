@@ -6,17 +6,17 @@
   <Node Id="79" Class="UI:Action:Control" pos="0,700,0" flags="0">
    <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|Disconnected|@ui_diag_ok||"/>
   </Node>
-  <Node Id="96" Class="UI:Functions:MP:ConnectToServer" pos="600,420,0" flags="0">
+  <Node Id="96" Class="UI:Functions:MP:ConnectToServer" pos="2270,380,0" flags="0">
    <Inputs Address="localhost"/>
   </Node>
-  <Node Id="99" Class="UI:Functions:MainMenu:GetValue" pos="320,420,0" flags="0">
+  <Node Id="99" Class="UI:Functions:MainMenu:GetValue" pos="1990,380,0" flags="0">
    <Inputs instanceID="-1" name="serverName"/>
   </Node>
   <Node Id="101" Class="UI:Action:End" pos="780,700,0" flags="0">
    <Inputs UseAsState="1" Args=""/>
   </Node>
   <Node Id="103" Name="Go_back_to_Server_Connect_if_connection_failed" Class="_comment" pos="-300,670,0" flags="0"/>
-  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-320,850.31677,0" flags="0">
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-320,850.31671,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="920" Height="160"/>
    <NodeSize Width="920" Height="187.64063"/>
@@ -30,18 +30,18 @@
   <Node Id="122" Class="UI:Action:End" pos="420,900,0" flags="0">
    <Inputs UseAsState="0" Args=""/>
   </Node>
-  <Node Id="138" Class="UI:Functions:MainMenu:ShowStatusMessage" pos="880,420,0" flags="0">
+  <Node Id="138" Class="UI:Functions:MainMenu:ShowStatusMessage" pos="2520,380,0" flags="0">
    <Inputs instanceID="-1" message="@ui_ShowJoinSession"/>
   </Node>
   <Node Id="140" Class="UI:Action:Start" pos="-300,420,0" flags="0">
    <Inputs UseAsState="1"/>
   </Node>
-  <Node Id="141" Name="Setup_page" Class="_commentbox" pos="-320,369.28168,0" flags="0">
+  <Node Id="141" Name="Setup_page" Class="_commentbox" pos="-320,369.28171,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1540" Height="220"/>
    <NodeSize Width="1540" Height="247.64063"/>
   </Node>
-  <Node Id="142" Name="Handle_events" Class="_commentbox" pos="-320,630.17566,0" flags="0">
+  <Node Id="142" Name="Handle_events" Class="_commentbox" pos="-320,630.1756,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1260" Height="180"/>
    <NodeSize Width="1260" Height="207.64063"/>
@@ -49,32 +49,41 @@
   <Node Id="143" Class="UI:Events:System:OnDisconnect" pos="-300,700,0" flags="0">
    <Inputs Port="-1" Idx=""/>
   </Node>
-  <Node Id="146" Class="UI:Functions:MainMenu:DisplayWindow" pos="0,420,0" flags="0">
+  <Node Id="146" Class="UI:Functions:MainMenu:DisplayWindow" pos="1670,380,0" flags="0">
    <Inputs instanceID="-1" window="ServerJoin"/>
   </Node>
-  <Node Id="150" Class="Debug:ConsoleVariable" pos="0,500,0" flags="0">
+  <Node Id="150" Class="Debug:ConsoleVariable" pos="1210,520,0" flags="0">
    <Inputs CVar="gl_skip" Value="1"/>
   </Node>
-  <Node Id="151" Class="UI:Action:Control" pos="270,40,0" flags="0">
+  <Node Id="151" Class="UI:Action:Control" pos="370,480,0" flags="0">
    <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_ModdedServer|@ui_ModdedMessage|@ui_Yes|@ui_No"/>
   </Node>
-  <Node Id="152" Class="UI:Functions:MainMenu:GetValue" pos="-190,130,0" flags="0">
+  <Node Id="152" Class="UI:Functions:MainMenu:GetValue" pos="-70,420,0" flags="0">
    <Inputs instanceID="-1" name="serverMods"/>
   </Node>
-  <Node Id="153" Class="Logic:Condition" pos="810,40,0" flags="0">
+  <Node Id="153" Class="Logic:Condition" pos="900,510,0" flags="0">
    <Inputs Condition="0"/>
   </Node>
-  <Node Id="154" Class="UI:Action:End" pos="1020,40,0" flags="0">
+  <Node Id="154" Class="UI:Action:End" pos="1090,660,0" flags="0">
    <Inputs UseAsState="1" Args=""/>
   </Node>
-  <Node Id="158" Class="String:Compare" pos="70,130,0" flags="0">
+  <Node Id="158" Class="String:Compare" pos="180,420,0" flags="0">
    <Inputs A="" B="1" IgnoreCase="1"/>
   </Node>
-  <Node Id="159" Class="Logic:Any" pos="430,270,0" flags="0" InHideMask="1023" OutHideMask="1">
+  <Node Id="159" Class="Logic:Any" pos="1100,440,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
   </Node>
-  <Node Id="161" Class="Debug:Log" pos="70,250,0" flags="0">
-   <Inputs message=""/>
+  <Node Id="162" Class="UI:Functions:MainMenu:GetValue" pos="1230,380,0" flags="0">
+   <Inputs instanceID="-1" name="canJoinMap"/>
+  </Node>
+  <Node Id="163" Class="UI:Action:Control" pos="1670,500,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="Notification|The selected server is using a map from a Miscreated DLC. Please purchase the map on Steam to join the server.|OK|"/>
+  </Node>
+  <Node Id="165" Class="UI:Action:End" pos="2200,520,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="166" Class="String:Compare" pos="1480,380,0" flags="0">
+   <Inputs A="" B="1" IgnoreCase="1"/>
   </Node>
  </Nodes>
  <Edges>
@@ -93,14 +102,17 @@
   <Edge nodeIn="153" nodeOut="151" portIn="In" portOut="OnEnd" enabled="1"/>
   <Edge nodeIn="158" nodeOut="152" portIn="A" portOut="ReturnVal" enabled="1"/>
   <Edge nodeIn="158" nodeOut="152" portIn="Compare" portOut="ReturnVal" enabled="1"/>
-  <Edge nodeIn="161" nodeOut="152" portIn="input" portOut="ReturnVal" enabled="0"/>
-  <Edge nodeIn="161" nodeOut="152" portIn="message" portOut="ReturnVal" enabled="0"/>
   <Edge nodeIn="154" nodeOut="153" portIn="EndAction" portOut="OnFalse" enabled="1"/>
   <Edge nodeIn="159" nodeOut="153" portIn="in2" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="151" nodeOut="158" portIn="Start" portOut="True" enabled="1"/>
   <Edge nodeIn="159" nodeOut="158" portIn="in1" portOut="False" enabled="1"/>
-  <Edge nodeIn="146" nodeOut="159" portIn="Call" portOut="out" enabled="1"/>
   <Edge nodeIn="150" nodeOut="159" portIn="Set" portOut="out" enabled="1"/>
+  <Edge nodeIn="162" nodeOut="159" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="166" nodeOut="162" portIn="Compare" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="166" nodeOut="162" portIn="A" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="165" nodeOut="163" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="146" nodeOut="166" portIn="Call" portOut="True" enabled="1"/>
+  <Edge nodeIn="163" nodeOut="166" portIn="Start" portOut="False" enabled="1"/>
  </Edges>
  <GraphTokens />
 </Graph>
