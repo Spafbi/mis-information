@@ -23,18 +23,4 @@
 		</locations>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Guide"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/guide_weapons_ranged_3_200.png?crc=63B711FA"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
-		<param name="tradable" value="1"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="120028"/>
-		<param name="marketable" value="1"/>
-		<param name="store_tags" value="Category:Guide"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/guide_weapons_ranged_3_2048.png?crc=63B711FA"/>
-	</steam>
 </item>

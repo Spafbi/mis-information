@@ -48,6 +48,36 @@ VehicleSpawnerManager = {
 		------------------------------------------------
 		------------------------------------------------
 		{
+			category = "beetle",
+			classes =
+			{
+				{
+					class = "beetle", contents = "RandomF100TruckContents",
+					skins =
+					{
+						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
+						{ name = "Beetle_Black", percent = 11.0 },
+						{ name = "Beetle_Blue", percent = 11.0 },
+						{ name = "Beetle_Green", percent = 11.0 },
+						{ name = "Beetle_Orange", percent = 12.0 }, -- Default
+						{ name = "Beetle_Pink", percent = 11.0 },
+						{ name = "Beetle_Purple", percent = 11.0 },
+						{ name = "Beetle_Red", percent = 11.0 },
+						{ name = "Beetle_White", percent = 11.0 },
+						{ name = "Beetle_Yellow", percent = 11.0 },
+					},
+				},
+			},
+			initialMinVehicles = 8,
+			abandonedTimer = 172800,  -- two days
+			abandonedRespawnTimer = 3600, -- one hour
+			destroyedTimer = 120,
+			destroyedRespawnTimer = 7200, -- two hours
+		},
+
+		------------------------------------------------
+		------------------------------------------------
+		{
 			category = "bicycle",
 			classes =
 			{
@@ -341,6 +371,21 @@ VehicleSpawnerManager = {
 						{ name = "SUVBasic_Yellow", percent = 11.0 },
 					},
 				},
+			},
+			initialMinVehicles = 2,
+			abandonedTimer = 172800,  -- two days
+			abandonedRespawnTimer = 3600, -- one hour
+			destroyedTimer = 120,
+			destroyedRespawnTimer = 7200, -- two hours
+		},
+
+		------------------------------------------------
+		------------------------------------------------
+		{
+			category = "suv_police",
+			classes =
+			{
+				{ class = "suv_police", contents = "RandomPoliceSedanContents" },
 			},
 			initialMinVehicles = 2,
 			abandonedTimer = 172800,  -- two days

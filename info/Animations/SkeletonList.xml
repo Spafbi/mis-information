@@ -62,6 +62,7 @@
  <Skeleton name="p350" file="objects/weapons/p350/p350.chr"/>
  <Skeleton name="p90" file="objects/weapons/p90/r90.chr"/>
  <Skeleton name="party_bus" file="objects/vehicles/party_bus/party_bus.cga"/>
+ <Skeleton name="peacemaker" file="objects/weapons/peacemaker/peacemaker.chr"/>
  <Skeleton name="pig" file="objects/characters/animals/pig/pig_skeleton.chr"/>
  <Skeleton name="pigeon_lf" file="objects/characters/animals/birds/pigeon/pigeon_lf.chr"/>
  <Skeleton name="px4" file="objects/weapons/px4/px4.chr"/>
@@ -81,6 +82,7 @@
  <Skeleton name="sedan" file="objects/vehicles/sedan_crown_vic/base/sedan_base.cga"/>
  <Skeleton name="skeleton_male" file="objects/characters/players/male/skeleton/skeleton_male.chr"/>
  <Skeleton name="skeleton_player_generic" file="objects/characters/human/generic/skeleton_player_generic.chr"/>
+ <Skeleton name="small_plane" file="objects/props/misc/vehicles/small_plane/small_plane_promo.cga"/>
  <Skeleton name="snake" file="objects/characters/animals/snake/snake.chr"/>
  <Skeleton name="spider_wolf" file="objects/characters/animals/spider/spider_wolf.chr"/>
  <Skeleton name="spider_large" file="objects/characters/animals/spider_large/spider_large.chr"/>

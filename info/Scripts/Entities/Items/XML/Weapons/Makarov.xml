@@ -281,7 +281,7 @@
 			<type category="b_end_pistol" capacity="1" visible="1"/>
 		</types>
 	</storage>
-	
+
 	<steam>
 		<param name="tags" value="Category:Weapon;Slot:Secondary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Makarov_200.png?crc=317F5D57"/>

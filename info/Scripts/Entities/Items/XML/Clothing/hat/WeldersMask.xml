@@ -16,13 +16,6 @@
 		<param name="skin" value="objects/characters/players/generic/hat/welder_mask/welder_mask.skin"/>
 		<param name="mtl" value="Objects/characters/players/generic/hat/welder_mask/welder_mask.mtl"/> <!-- not currently used in code -->
 		<param name="slot" value="hat"/>
-
-		<param name="overlay_layer" value="4"/>
-		<param name="overlay_3p" value="0"/>
-		<param name="overlay_texture" value="Objects/characters/players/generic/hat/welder_mask/weldermask_overlay_dif.tif"/>
-		<param name="overlay_color" value="1.0,1.0,1.0"/>
-		<param name="overlay_in_time" value="0.5"/>
-		<param name="overlay_out_time" value="0.5"/>
 	</wearable>
 
 	<geometry>

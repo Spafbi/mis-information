@@ -107,6 +107,9 @@
 				<DamageMultiplier damageType="collision" multiplier="0"/> <!-- Disable collision damage on tires -->
 			</DamageMultipliers>
 		</Component>
+		<Component name="FlipAction" damageMax="0" major="0" position="0,0,1" size="2,4,2" useBoundsFromParts="0">
+			<DamageBehaviors />
+		</Component>
 	</Components>
 
 	<Parts>
@@ -241,6 +244,11 @@
 					<Seat value="passenger3"/>
 				</Seats>
 			</Enter>
+		</Action>
+		<Action class="Flip">
+			<Activations>
+				<Activation type="OnUsed" param1="component" param2="FlipAction"/>
+			</Activations>
 		</Action>
 	</Actions>
 

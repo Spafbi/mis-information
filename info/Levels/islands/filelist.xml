@@ -2,6 +2,6 @@
  <index src="filelist.xml" dest="filelist.xml"/>
  <files>
   <file src="islands.xml" dest="islands.xml" size="344" md5="3bc1ffb122b2693cf2b93f31a73a5a8b"/>
-  <file src="level.pak" dest="level.pak" size="310833158" md5="35f693c3bcd47bce900f58bbaa73e3a8"/>
+  <file src="level.pak" dest="level.pak" size="310830887" md5="8ea94b3ce4027c9ada6e18d076cd9c04"/>
  </files>
 </download>

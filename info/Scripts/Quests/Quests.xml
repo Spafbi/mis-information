@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- 
+		There are two ways to make a quest dependent on completing another quest.
+		You can either make it a subelement using the quests element
+		or you can use the requires_name if you don't want to make a long, indented chain
+
+		For an action task an action tag can be reused as long as each has a different classname
+		The classname for a craft task CANNOT be used more than once.
+		The classname for a kill task CANNOT be used more than once.
+-->
+
+<quests>
+
+	<!-- starter tasks -->
+	<quest name="@quest_craft_rags">
+		<tasks>
+			<task description="@task_craft_rags" type="craft" >
+				<craft classname="Rags" />
+			</task>
+		</tasks>
+		<quests>
+			<quest name="@quest_craft_rope">
+				<tasks>
+					<task description="@task_craft_rope" type="craft" >
+						<craft classname="Rope" />
+					</task>
+				</tasks>
+				<quests>
+					<quest name="@quest_find_rock">
+						<tasks>
+							<task description="@task_find_rock" type="action" >
+								<action classname="Rocks" action="@search_rocks" />
+							</task>
+						</tasks>
+						<quests>
+							<quest name="@quest_craft_hatchet">
+								<tasks>
+									<task description="@task_craft_hatchet" type="craft" >
+										<craft classname="CraftedHatchet" />
+									</task>
+								</tasks>
+							</quest>
+						</quests>
+					</quest>
+				</quests>
+			</quest>
+		</quests>
+	</quest>
+
+	<!-- item context menu actions -->
+	<quest name="@quest_inspect_item" requires_name="@quest_craft_hatchet">
+		<tasks>
+			<task description="@task_inspect_item" type="action" >
+				<action action="@item_inspect" />
+			</task>
+		</tasks>
+		<quests>
+			<quest name="@quest_tear_rags">
+				<tasks>
+					<task description="@task_tear_rags" type="action" >
+						<action action="@item_tear_to_rags" />
+					</task>
+				</tasks>
+				<quests>
+					<quest name="@quest_repair_kit">
+						<tasks>
+							<task description="@task_repair_kit" type="action" >
+								<action action="@item_break_down_into_repair_kit" />
+							</task>
+						</tasks>
+						<quests>
+							<quest name="@quest_refill_item">
+								<tasks>
+									<task description="@task_refill_item" type="action" >
+										<action action="refill_item" />
+									</task>
+								</tasks>
+							</quest>
+						</quests>
+					</quest>
+				</quests>
+			</quest>
+		</quests>
+	</quest>
+
+	<!-- making and using a campfire -->
+	<quest name="@quest_craft_firedrill" requires_name="@quest_craft_hatchet">
+		<tasks>
+			<task description="@task_craft_firedrill" type="craft" >
+				<craft classname="FireDrill" />
+			</task>
+		</tasks>
+		<quests>
+			<quest name="@quest_craft_campfire">
+				<tasks>
+					<task description="@task_craft_campfire" type="craft" >
+						<craft classname="CampfirePacked" />
+					</task>
+				</tasks>
+				<quests>
+					<quest name="@quest_place_campfire">
+						<tasks>
+							<task description="@task_place_campfire" type="action" >
+								<action action="@placeable_place" classname="Campfire" />
+							</task>
+						</tasks>
+						<quests>
+							<quest name="@quest_add_wood_campfire">
+								<tasks>
+									<task description="@task_add_wood_campfire" type="action" >
+										<action action="wood_item" classname="Campfire" />
+									</task>
+								</tasks>
+								<quests>
+									<quest name="@quest_light_campfire">
+										<tasks>
+											<task description="@task_light_campfire" type="action" >
+												<action action="light_item" classname="Campfire" />
+											</task>
+										</tasks>
+										<quests>
+											<quest name="@quest_cook_raw_meat_campfire">
+												<tasks>
+													<task description="@task_cook_raw_meat_campfire" type="action" >
+														<action action="food_item" classname="Campfire" />
+													</task>
+												</tasks>
+											</quest>
+										</quests>
+									</quest>
+								</quests>
+							</quest>
+						</quests>
+					</quest>
+				</quests>
+			</quest>
+		</quests>
+	</quest>
+	
+	<!-- search for misc. stuff - 10 quest chain -->
+	<quest name="@quest_search_trash" requires_name="@quest_craft_hatchet">
+		<tasks>
+			<task description="@task_search_trash" type="action" >
+				<action action="@search_trash" />
+			</task>
+		</tasks>
+		<quests>
+			<quest name="@quest_search_kitchen_cabinets">
+				<tasks>
+					<task description="@task_search_kitchen_cabinets" type="action" >
+						<action action="@search" />
+					</task>
+				</tasks>
+				<quests>
+					<quest name="@quest_search_crannies">
+						<tasks>
+							<task description="@task_search_crannies" type="action" >
+								<action action="@search_cranny" />
+							</task>
+						</tasks>
+						<quests>
+							<quest name="@quest_search_food">
+								<tasks>
+									<task description="@task_search_food" type="action" >
+										<action action="@search_food" />
+									</task>
+								</tasks>
+								<quests>
+									<quest name="@quest_search_clothes">
+										<tasks>
+											<task description="@task_search_clothes" type="action" >
+												<action action="@search_clothes" />
+											</task>
+										</tasks>
+										<quests>
+											<quest name="@quest_search_desk">
+												<tasks>
+													<task description="@task_search_desk" type="action" >
+														<action action="@search_desk" />
+													</task>
+												</tasks>
+												<quests>
+													<quest name="@quest_search_vending_machine">
+														<tasks>
+															<task description="@task_search_vending_machine" type="action" >
+																<action action="@search_vending_machine" />
+															</task>
+														</tasks>
+														<quests>
+															<quest name="@quest_search_cash_register">
+																<tasks>
+																	<task description="@task_search_cash_register" type="action" >
+																		<action action="@search_amcoins" />
+																	</task>
+																</tasks>
+																<quests>
+																	<quest name="@quest_search_tool_chest">
+																		<tasks>
+																			<task description="@task_search_tool_chest" type="action" >
+																				<action action="@salvage_tools" />
+																			</task>
+																		</tasks>
+																		<quests>
+																			<quest name="@quest_search_locker">
+																				<tasks>
+																					<task description="@task_search_locker" type="action" >
+																						<action action="@search_locker" />
+																					</task>
+																				</tasks>
+																			</quest>
+																		</quests>
+																	</quest>
+																</quests>
+															</quest>
+														</quests>
+													</quest>
+												</quests>
+											</quest>
+										</quests>
+									</quest>
+								</quests>
+							</quest>
+						</quests>
+					</quest>
+				</quests>
+			</quest>
+		</quests>
+	</quest>
+
+	<!-- doesn't exist on the desert map -->
+	<quest name="Kill Deer">
+		<tasks>
+			<task description="Kill Deer" type="kill" >
+				<kill classname="Deer" />
+			</task>
+		</tasks>
+	</quest>
+
+</quests>

@@ -35,7 +35,7 @@ SpawnWorldEvent = function(self)
 	elseif rnd <= 9 then
 		eventName = "AirPlaneCrash"
 	else
-		eventName = "UFOCrash"	
+		eventName = "AirDropChristmas"	
 	end
 
 	local spawnParams = {}

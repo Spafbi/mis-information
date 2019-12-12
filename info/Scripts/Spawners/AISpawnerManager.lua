@@ -186,6 +186,14 @@ AISpawnerManager = {
 		},
 
 		{
+			category = "Donkey",
+			classes =
+			{
+				{ class = "Donkey", percent = 100 },
+			},
+		},
+
+		{
 			category = "Ram",
 			classes =
 			{

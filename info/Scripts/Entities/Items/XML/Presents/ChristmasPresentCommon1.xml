@@ -1,0 +1,45 @@
+<item name="ChristmasPresentCommon1" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="Christmas Present Common"/>
+		<param name="description" value="A nicely wrapped Christmas present."/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/christmas_presents/present_1.cgf" material="Objects/props/christmas_presents/christmas_presents_blue_red"/>
+	</geometry>
+
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@ChristmasPresentBpartOpenPresent"/>
+				<param name="action" value="spawn_item"/>
+				<param name="soundUsed" value="Play_book_page_turn_3p"/>
+				<param name="param" value="ChristmasPresentCommon"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Consumable"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ChristmasPresentCommon1_200.png?crc=89BFC7A3"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="50012"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Consumable"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/ChristmasPresentCommon1_2048.png?crc=89BFC7A3"/>
+	</steam>
+</item>

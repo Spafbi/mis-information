@@ -11,7 +11,7 @@
 	</params>
 
 	<base_part class="static" type="2056" name="metal_aframe_3m_4m" max_health="30000" repair_with="SheetMetal" towable="1">
-		<static filename="objects/basebuilding/metal/metal_aframe_3m_4m_tow.cgf"/>
+		<static filename="objects/basebuilding/metal/metal_aframe_3m_4m.cgf"/>
 
 		<damage_multipliers>
 			<damage_multiplier damage_type="collision" multiplier="0.1"/>
@@ -51,7 +51,7 @@
 	</base_part>
 
 	<geometry>
-		<thirdperson name="objects/basebuilding/metal/metal_aframe_3m_4m.cgf"/>
+		<thirdperson name="objects/basebuilding/metal/metal_aframe_3m_4m_tow.cgf"/> <!-- Simplified proxy for improved towing -->
 	</geometry>
 
 </item>

@@ -1,0 +1,40 @@
+<item name="EggNog" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="EggNog"/>
+		<param name="description" value="A box filled with delicious Eggnog."/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/eggnog/eggnog.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="consumePartial" value="1"/>
+		<param name="drinkAmount" value="1500"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Consumable"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/EggNog_200.png?crc=24955FA0"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="50015"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Consumable"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/EggNog_2048.png?crc=24955FA0"/>
+	</steam>
+</item>

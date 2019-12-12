@@ -15,13 +15,6 @@
 		<param name="skin" value="Objects/characters/players/generic/eyes/sunglasses_a/sunglasses_a.skin"/>
 		<param name="mtl" value="Objects/characters/players/generic/eyes/sunglasses_a/sunglasses_a1.mtl"/> <!-- not currently used in code -->
 		<param name="slot" value="eyes"/>
-
-		<param name="overlay_layer" value="3"/>
-		<param name="overlay_texture" value="textures/defaults/white.tif"/>
-		<param name="overlay_color" value="0.0,0.0,0.0"/>
-		<param name="overlay_alpha" value="0.07"/>
-		<param name="overlay_in_alpha" value="0.25"/>
-		<param name="overlay_out_alpha" value="0.15"/>
 	</wearable>
 	<geometry>
 		<onground name="Objects/characters/players/generic/eyes/sunglasses_a/sunglasses_a_onground.cgf" material="Objects/characters/players/generic/eyes/sunglasses_a/sunglasses_a1"/>

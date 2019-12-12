@@ -27,6 +27,7 @@
    <Override tags="870_tactical+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="rem870+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="coltpython+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="peacemaker+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="crafted_shotgun+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="aa12+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="acaw+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>

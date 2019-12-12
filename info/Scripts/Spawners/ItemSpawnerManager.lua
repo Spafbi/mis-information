@@ -51,6 +51,11 @@ reduced to 25% of the prior item's, like so:
 4th item = 1.5625% to spawn (if third item spawned)
 ...
 
+The level_specific flag only works on a cateogory
+If it is set to 1, then it will try and match to the specified category name appended with an underscore and the current level name.
+For example, if the current level is islands and the category name is fred, then it would try and find a catgory named fred_islands.
+If fred_islands does not exist, then it will use fred_default instead. This allows you to override categoriers at a map level, if desired.
+
 --]]
 
 
@@ -97,9 +102,49 @@ reduced to 25% of the prior item's, like so:
 				{ category = "RandomFireStarter", percent = 15 },
 				{ class = "Binoculars", percent = 15 },
 				{ class = "Cb_radio", percent = 35 },
-				{ class = "GridMap", percent = 15 },
-				{ class = "Map", percent = 19 },
+				{ category = "GridMap", percent = 15 },
+				{ category = "Map", percent = 19, level_specific=1 },
 				{ class = "TranslationCard", percent = 1 },
+			},
+		},
+
+		{
+			category = "GridMap",
+			classes =
+			{
+				{ category = "GridMap", percent = 100, level_specific=1 },
+			},
+		},
+
+		{
+			category = "Map_default",
+			classes =
+			{
+				{ class = "Map", percent = 100 },
+			},
+		},
+
+		{
+			category = "Map_canyonlands",
+			classes =
+			{
+				{ class = "Map_canyonlands", percent = 100 },
+			},
+		},
+
+		{
+			category = "GridMap_default",
+			classes =
+			{
+				{ class = "GridMap", percent = 100 },
+			},
+		},
+
+		{
+			category = "GridMap_canyonlands",
+			classes =
+			{
+				{ class = "GridMap_canyonlands", percent = 100 },
 			},
 		},
 
@@ -391,7 +436,8 @@ reduced to 25% of the prior item's, like so:
 				--{ category = "RandomGnome", percent = 20 },-- commented out during halloween event.
 				{ category = "RandomMushroom", percent = 80 },
 				{ class = "AmcoinLedger", percent = 15 },
-				{ class = "HalloweenBagBrute", percent = 30 },
+				--{ class = "HalloweenBagBrute", percent = 30 }, -- halloween event.
+				{ class = "ChristmasPresentRare", percent = 30 },
 			},
 		},
 
@@ -415,7 +461,8 @@ reduced to 25% of the prior item's, like so:
 				--{ category = "RandomConsumable", percent = 100 },-- commented out during halloween event.
 				{ category = "RandomConsumable", percent = 100 },
 				{ category = "RandomAmmo", percent = 100 },
-				{ class = "HalloweenBagSpider", percent = 30 },
+				--{ class = "HalloweenBagSpider", percent = 30 },-- Halloween event
+				{ class = "ChristmasPresentRare", percent = 30 },
 			},
 		},
 
@@ -436,8 +483,7 @@ reduced to 25% of the prior item's, like so:
 			{
 				{ class = "AnimalFat", min = 2, max = 5 },
 				{ class = "AnimalGut" },
-				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
-				--{ class = "WolfPelt" },
+				{ class = "RamMeatSteakRaw", min = 1, max = 2 },
 			},
 		},
 		
@@ -447,8 +493,7 @@ reduced to 25% of the prior item's, like so:
 			{
 				{ class = "AnimalFat", min = 2, max = 5 },
 				{ class = "AnimalGut" },
-				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
-				--{ class = "WolfPelt" },
+				{ class = "DonkeyMeatSteakRaw", min = 1, max = 2 },
 			},
 		},
 
@@ -456,10 +501,9 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomGiantScorpionLoot",
 			group =
 			{
-				{ class = "AnimalFat", min = 1, max = 3 },
+				{ class = "AnimalFat" },
 				{ class = "AnimalGut" },
-				--{ class = "WolfMeatSteakRaw", min = 2, max = 3 },
-				--{ class = "WolfPelt" },
+				{ class = "ScorpionMeatSteakRaw" },
 			},
 		},
 
@@ -471,8 +515,8 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomBackpackContents",
 			classes =
 			{
-				-- { category = "RandomChristmasPresent", percent = 2 }, -- christmas
-				{ category = "halloweenBagCommon", percent = 3 },
+				{ category = "RandomChristmasPresent", percent = 3 },
+				--{ category = "halloweenBagCommon", percent = 3 },-- Halloween event
 				{ category = "Map", percent = 2 },
 				{ category = "RandomCraftingGuide", percent = 2 },
 				{ category = "RandomClothes", percent = 3 },
@@ -588,7 +632,7 @@ reduced to 25% of the prior item's, like so:
 				{ class = "C4Bricks", percent = 0.1 },
 				{ class = "Cb_radio", percent = 5 },
 				{ class = "GasMask", percent = 1 },
-				{ class = "GridMap", percent = 3 },
+				{ category = "GridMap_level", percent = 3 },
 				{ class = "Maglite", percent = 3 },
 				{ class = "MagliteSmall", percent = 2 },
 				{ class = "MilitaryCanteenPlastic", percent = 4 },
@@ -638,7 +682,7 @@ reduced to 25% of the prior item's, like so:
 				{ category = "RandomHuntingClothing", percent = 19 },
 				{ category = "RandomCraftingGuide", percent = 1 },
 				{ class = "Cb_radio", percent = 20 },
-				{ class = "Map", percent = 10 },
+				{ category = "Map", percent = 10 },
 				{ class = "Binoculars", percent = 20 },
 				{ class = "HuntingScope", percent = 10 },
 			},
@@ -679,9 +723,8 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomChristmasPresent",
 			classes =
 			{
-				{ class = "ChristmasPresentBpart", percent = 33 },
-				{ class = "ChristmasPresentClothing", percent = 33 },
-				{ class = "ChristmasPresentWeapon", percent = 34 },
+				{ class = "ChristmasPresentCommon1", percent = 50 },
+				{ class = "ChristmasPresentCommon2", percent = 50 },
 			},
 		},
 		
@@ -696,6 +739,40 @@ reduced to 25% of the prior item's, like so:
 
 		-- BASE PARTS
 		-- Used in presents and easter eggs
+		{
+			category = "ChristmasPresentCommon",
+			classes =
+			{
+				{ class = "christmas_light_string", percent = 20 },
+				{ class = "christmas_candle", percent = 10 },
+				{ class = "christmas_gift_pile", percent = 20 },
+				{ class = "christmas_rug_01", percent = 10 },
+				{ class = "christmas_rug_02", percent = 10 },
+				{ class = "SweaterChristmasGreen", percent = 8 },
+				{ class = "SweaterChristmasRed", percent = 8 },
+				{ class = "ChristmasHat", percent = 6 },
+				{ class = "snowman_small", percent = 6 },
+				{ class = "Peacemaker", percent = 2 },
+			},
+		},
+		
+		{
+			category = "ChristmasPresentRare",
+			classes =
+			{
+				{ class = "snowman", percent = 20 },
+				{ class = "christmas_rug_03", percent = 20 },
+				{ class = "SweaterChristmasGreen2", percent = 15 },
+				{ class = "SweaterChristmasRed2", percent = 15 },
+				{ class = "christmas_wreath", percent = 12 },
+				{ class = "christmas_stocking", percent = 10 },
+				{ class = "christmas_snowglobe", percent = 5 },
+				{ class = "ScavengerHelmet", percent = 2 },
+				{ class = "EggNog", percent = 0.5 },
+				{ class = "GingerBreadMan", percent = 0.5 },
+			},
+		},
+		
 		{
 			category = "RandomBpartPresent",
 			classes =
@@ -2160,8 +2237,8 @@ reduced to 25% of the prior item's, like so:
 			classes =
 			{
 				{ category = "RandomCraftingGuide", percent = 11 },
-				-- { category = "RandomChristmasPresent", percent = 2 }, -- christmas
-				{ category = "halloweenBagCommon", percent = 2 },
+				{ category = "RandomChristmasPresent", percent = 2 },
+				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				{ category = "RandomEyes", percent = 7 },
 				{ category = "RandomFace", percent = 7 },
 				{ category = "RandomHands", percent = 12 },
@@ -2710,7 +2787,8 @@ reduced to 25% of the prior item's, like so:
 				{ class = "RavioliCan", percent = 2 },
 				{ class = "SoupCan", percent = 1 },
 				{ class = "TunaCan", percent = 1 },
-				{ category = "halloweenBagCommon", percent = 1 },
+				--{ category = "halloweenBagCommon", percent = 1 },-- halloween
+				{ category = "RandomChristmasPresent", percent = 1 },
 			},
 		},
 
@@ -2923,8 +3001,8 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomCrafting",
 			classes =
 			{
-				-- { category = "RandomChristmasPresent", percent = 2 }, -- christmas
-				{ category = "halloweenBagCommon", percent = 2 },
+				{ category = "RandomChristmasPresent", percent = 2 },
+				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				{ category = "RandomIncapacition", percent = 5 },
 				{ category = "RandomPaintCan", percent = 4 },
 				{ category = "RandomFireStarter", percent = 4 },
@@ -3015,7 +3093,8 @@ reduced to 25% of the prior item's, like so:
 				{ class = "gnome_standard_b", percent = 21 },
 				{ class = "gnome_standard_c", percent = 15 },
 				{ class = "jerry", percent = 20 },
-				{ category = "halloweenBagCommon", percent = 2 },
+				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
+				{ category = "RandomChristmasPresent", percent = 2 },
 			},
 		},
 
@@ -3181,6 +3260,18 @@ reduced to 25% of the prior item's, like so:
 				{ class = "CraftedShortRifle556", percent = 5 },
 				{ class = "CraftedShortShotgun", percent = 10 },
 				{ class = "CraftedShotgun", percent = 10 },
+			},
+		},
+		
+		{
+			category = "RandomDesertItems",
+			classes = 
+			{
+				{ class = "Model1873", percent = 9 },
+				{ class = "Peacemaker", percent = 10 },
+				{ class = "ScavengerPants", percent = 40 },
+				{ class = "ScavengerShirt", percent = 40 },
+				{ class = "ScavengerHelmet", percent = 1 },
 			},
 		},
 
@@ -3520,6 +3611,15 @@ reduced to 25% of the prior item's, like so:
 				{ class = "AppleRotten", percent = 15 },
 			},
 		},
+		
+		{
+			category = "RandomCactiContent",
+			classes =
+			{
+				{ class = "PricklyPear", percent = 60 },
+				{ class = "PricklyPearRotten", percent = 40 },
+			},
+		},
 
 		{
 			category = "RandomBeehiveContent",
@@ -3662,8 +3762,8 @@ reduced to 25% of the prior item's, like so:
 			category = "RandomMilitaryFootlockerContent",
 			classes =
 			{
-				-- { category = "RandomChristmasPresent", percent = 2 }, -- christmas
-				{ category = "halloweenBagCommon", percent = 2 },
+				{ category = "RandomChristmasPresent", percent = 2 },
+				--{ category = "halloweenBagCommon", percent = 2 },--
 				{ category = "RandomMilitaryClothing", percent = 18 },
 				{ category = "RandomWeaponRepairKit", percent = 5 },
 				{ category = "RandomMedical", percent = 5 },
@@ -3680,7 +3780,7 @@ reduced to 25% of the prior item's, like so:
 				{ class = "Maglite", percent = 5 },
 				{ class = "MRE", percent = 10 },
 				{ class = "Cb_radio", percent = 5 },
-				{ class = "GridMap", percent = 5 },
+				{ category = "GridMap_level", percent = 5 },
 				{ class = "Binoculars", percent = 2 },
 				{ class = "SurvivalKnife", percent = 3 },
 				{ class = "HeatPack", percent = 5 },
@@ -3695,8 +3795,8 @@ reduced to 25% of the prior item's, like so:
 				{ category = "RandomMilitaryBodyArmor", percent = 14 },
 				{ category = "RandomMilitaryHelmet", percent = 13 },
 				{ category = "RandomAmmo", percent = 11 },
-				-- { category = "RandomChristmasPresent", percent = 3 }, -- christmas
-				{ category = "halloweenBagCommon", percent = 3 },
+				{ category = "RandomChristmasPresent", percent = 3 },
+				--{ category = "halloweenBagCommon", percent = 3 },-- halloween
 				{ category = "RandomRangedPure", percent = 24 },
 				{ category = "RandomAmmoBox", percent = 6 },
 				{ category = "RandomAccessory", percent = 10 },
@@ -3717,7 +3817,7 @@ reduced to 25% of the prior item's, like so:
 				{ category = "RandomAmmo", percent = 19 },
 				{ class = "Cb_radio", percent = 10 },
 				{ class = "MagliteSmall", percent = 20 },
-				{ class = "GridMap", percent = 19 },
+				{ category = "GridMap_level", percent = 19 },
 				{ class = "WaterPurificationTablets", percent = 1 },
 			},
 		},
@@ -3992,6 +4092,30 @@ reduced to 25% of the prior item's, like so:
 				{ category = "RandomAirDropCrateExplosives", percent = 4 },
 				{ category = "RandomAirDropCrateBaseBuilding", percent = 17 },
 				{ category = "RandomAirDropCrateRadiation", percent = 17 },
+			},
+		},
+		
+		{
+			category = "AirDropSantaCrate",
+			group =
+			{
+				{ category = "RandomChristmasClothing", percent = 100 },
+				{ class = "ChristmasPresentCommon1", percent = 100 },
+				{ class = "ChristmasPresentCommon1", percent = 100 },
+				{ class = "ChristmasPresentCommon2", percent = 100 },
+				{ class = "ChristmasPresentCommon2", percent = 100 },
+				{ class = "ChristmasPresentRare", percent = 100 },
+				{ class = "ChristmasPresentRare", percent = 100 },
+				{ class = "ChristmasHat", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ category = "RandomAmmoBox", percent = 100 },
+				{ class = "AmmoBox_357", percent = 100 },
+				{ class = "ScavengerHelmet", percent = 100 },
+				{ class = "Peacemaker", percent = 100 },
+				{ class = "EggNog", percent = 100 },
+				{ class = "EggNog", percent = 100 },
+				{ class = "GingerBreadMan", percent = 100, min = 2, max = 5 },
+				{ class = "GingerBreadMan", percent = 100, min = 2, max = 5 },
 			},
 		},
 		

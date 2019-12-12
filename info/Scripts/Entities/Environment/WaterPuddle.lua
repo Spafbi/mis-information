@@ -24,6 +24,7 @@ WaterPuddle =
 		geigercounter = 0,
 		electricity = 0,
 		pool_acid = 0,
+		underground = 0,
 
 		-- particle effect for area based pfx hits
 		ParticleEffect = "",

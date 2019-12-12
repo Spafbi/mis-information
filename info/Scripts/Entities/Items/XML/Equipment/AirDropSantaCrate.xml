@@ -1,0 +1,31 @@
+<item name="AirDropSantaCrate" class="AirDropCrate" category="any">
+
+	<params>
+		<param name="mass" value="2000"/>
+		<param name="no_icon" value="1"/>
+		<param name="view_dist_min" value="8192"/>
+		<param name="display_name" value="Santa's Bag"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/christmas_drop/christmas_drop.cgf"/>
+		<aux1 name="objects/props/airdrop/parachute.cgf"/>
+	</geometry>
+
+	<air_drop>
+		<param name="loot_category" value="AirDropSantaCrate"/>
+		<param name="fall_speed" value="3"/>
+		<param name="signal_effect" value="misc.airdrop.smoke_green"/>
+		<param name="landed_effect" value="misc.airdrop.landing"/>
+
+		<light1 helper="light1" light_radius="5" light_bulb_size="0.05" light_color="1,1,1" light_diff_mul="5" light_spec_mul="1" light_hdr_dyn="0" light_style="38" light_anim_speed="1" light_view_dist_ratio="255" light_fake_light="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+		<light2 helper="light2" light_radius="5" light_bulb_size="0.05" light_color="1,1,1" light_diff_mul="5" light_spec_mul="1" light_hdr_dyn="0" light_style="38" light_anim_speed="1" light_view_dist_ratio="255" light_fake_light="1" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.candle" lens_flare_fov="360"/>
+	</air_drop>
+
+	<storage>
+		<types>
+			<type category="any" capacity="17"/>
+		</types>
+	</storage>
+
+</item>

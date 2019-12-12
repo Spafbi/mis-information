@@ -20,12 +20,12 @@
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
 		<param name="tag" value="model1873"/>
-        <param name="adb" value="model1873WeaponAnims.adb"/>
-        <animPrecache name="model1873">
-            <precache DBAFile="animations/weapons/model1873/model1873.dba" thirdperson="0"/>
-            <precache DBAFile="animations/human/male/weapons/model1873/model1873.dba" thirdperson="1"/>
-        </animPrecache>
-        <aimAnims/>
+		<param name="adb" value="model1873WeaponAnims.adb"/>
+		<animPrecache name="model1873">
+			<precache DBAFile="animations/weapons/model1873/model1873.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/model1873/model1873.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
 	</params>
 
 	<!-- Movement scales don't work here for ironsight, so define directly in ZoomMode instead -->
@@ -46,8 +46,8 @@
 			<fire>
 				<param name="hit_type" value="ammo_357"/>
 				<param name="ammo_type" value="ammo_357"/>
-				<param name="rate" value="24"/>
-				<param name="damage" value="80"/>
+				<param name="rate" value="32"/>
+				<param name="damage" value="55"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>

@@ -58,10 +58,10 @@
 	</readabilities>
 
 	<bones>
-		<param name="BONE_FOOT_R" value="d_r_wrist_jnt"/>
-		<param name="BONE_FOOT_L" value="d_l_wrist_jnt"/>
-		<param name="BONE_FOOT_R2" value="d_r_toe_jnt"/>
-		<param name="BONE_FOOT_L2" value="d_l_toe_jnt"/>
+		<param name="BONE_FOOT_R" value="Def_R_Wrist_jnt"/>
+		<param name="BONE_FOOT_L" value="Def_L_Wrist_jnt"/>
+		<param name="BONE_FOOT_R2" value="Def_R_Toe_jnt"/>
+		<param name="BONE_FOOT_L2" value="Def_L_Toe_jnt"/>
 	</bones>
 
 	<charactersounds>

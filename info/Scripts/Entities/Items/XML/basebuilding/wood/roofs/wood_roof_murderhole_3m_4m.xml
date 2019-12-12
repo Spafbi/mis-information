@@ -6,6 +6,8 @@
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@wood_roof_murderhole_3m_4m"/>
 		<param name="description" value="@wood_roof_murderhole_3m_4mDescription"/>
+		
+		<param name="place_roof" value="1"/>
 	</params>
 
 	<base_part class="static" type="155" name="wood_roof_murderhole_3m_4m">
