@@ -483,7 +483,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			{
 				{ class = "AnimalFat", min = 2, max = 5 },
 				{ class = "AnimalGut" },
-				{ class = "RamMeatSteakRaw", min = 2, max = 3 },
+				{ class = "RamMeatSteakRaw", min = 1, max = 2 },
 			},
 		},
 		
@@ -493,7 +493,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			{
 				{ class = "AnimalFat", min = 2, max = 5 },
 				{ class = "AnimalGut" },
-				{ class = "DonkeyMeatSteakRaw", min = 2, max = 3 },
+				{ class = "DonkeyMeatSteakRaw", min = 1, max = 2 },
 			},
 		},
 
@@ -503,7 +503,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			{
 				{ class = "AnimalFat" },
 				{ class = "AnimalGut" },
-				{ class = "ScorpionMeatSteakRaw", min = 1, max = 2 },
+				{ class = "ScorpionMeatSteakRaw" },
 			},
 		},
 

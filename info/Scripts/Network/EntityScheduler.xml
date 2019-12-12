@@ -134,13 +134,13 @@
 	<Class name="BandanaRed" policy="clth" />
 	<Class name="DustMask" policy="clth" />
 	<Class name="GasMask" policy="clth" />
+	<Class name="HazmatMask" policy="clth" />
 	<Class name="HeadSack" policy="clth" />
 	<Class name="HockeyMask" policy="clth" />
 	<Class name="HockeyMaskDp" policy="clth" />
 	<Class name="SkullMask" policy="clth" />
 	<Class name="SkullMaskGold" policy="clth" />
 	<Class name="SkullMaskSilver" policy="clth" />
-	<Class name="SpaceHelmet" policy="clth" />
 
 	<!-- clothing - feet -->
 	<Class name="CanvasShoes" policy="clth" />
@@ -391,6 +391,8 @@
 	<Class name="MotorcycleHelmetCarbon" policy="clth" />
 	<Class name="MotorcycleHelmetGold" policy="clth" />
 	<Class name="MotorcycleHelmetWhite" policy="clth" />
+	<Class name="ScavengerHelmet" policy="clth" />
+	<Class name="SpaceHelmet" policy="clth" />
 	<Class name="SwatHelmet" policy="clth" />
 	<Class name="WeldersMask" policy="clth" />
 
@@ -430,6 +432,7 @@
 	<Class name="CargoShortsGrey" policy="clth" />
 	<Class name="CargoShortsTan" policy="clth" />
 	<Class name="CargoShortsYellow" policy="clth" />
+	<Class name="ScavengerPants" policy="clth" />
 	<Class name="TrackPantsBlack" policy="clth" />
 	<Class name="TrackPantsBlue" policy="clth" />
 	<Class name="TrackPantsGreen" policy="clth" />
@@ -482,14 +485,68 @@
 	<Class name="FlakVestTanCamo1" policy="clth" />
 	<Class name="FootballPads" policy="clth" />
 	<Class name="FootballPadsSpiked" policy="clth" />
-	<Class name="PoliceVestBlue" policy="clth" />
-	<Class name="PoliceVestBlack" policy="clth" />
+	<Class name="GhillieSuit1" policy="clth" />
+	<Class name="GhillieSuit2" policy="clth" />
+	<Class name="GhillieSuit3" policy="clth" />
+	<Class name="GhillieSuit4" policy="clth" />
+	<Class name="HazmatSuitBlue" policy="clth" />
+	<Class name="HazmatSuitGreen" policy="clth" />
+	<Class name="HazmatSuitOrange" policy="clth" />
+	<Class name="HazmatSuitPink" policy="clth" />
+	<Class name="HazmatSuitWhite" policy="clth" />
+	<Class name="HazmatSuitYellow" policy="clth" />
 	<Class name="NoSleevesVestBlack" policy="clth" />
 	<Class name="NoSleevesVestBlue" policy="clth" />
 	<Class name="NoSleevesVestBrown" policy="clth" />
 	<Class name="NoSleevesVestGreen" policy="clth" />
 	<Class name="NoSleevesVestRed" policy="clth" />
 	<Class name="NoSleevesVestTan" policy="clth" />
+	<Class name="PoliceVestBlack" policy="clth" />
+	<Class name="PoliceVestBlue" policy="clth" />
+	<Class name="PuffyJacketAmerica" policy="clth" />
+	<Class name="PuffyJacketBlack" policy="clth" />
+	<Class name="PuffyJacketBlueWhite" policy="clth" />
+	<Class name="PuffyJacketCamo1" policy="clth" />
+	<Class name="PuffyJacketCamo2" policy="clth" />
+	<Class name="PuffyJacketCamo3" policy="clth" />
+	<Class name="PuffyJacketCanada" policy="clth" />
+	<Class name="PuffyJacketEaster" policy="clth" />
+	<Class name="PuffyJacketGold" policy="clth" />
+	<Class name="PuffyJacketGreenWhite" policy="clth" />
+	<Class name="PuffyJacketGrey" policy="clth" />
+	<Class name="PuffyJacketGreyBlack" policy="clth" />
+	<Class name="PuffyJacketGreyBlack2" policy="clth" />
+	<Class name="PuffyJacketKaki" policy="clth" />
+	<Class name="PuffyJacketOrangeGreen" policy="clth" />
+	<Class name="PuffyJacketOrangeTeal" policy="clth" />
+	<Class name="PuffyJacketOrangeWhite" policy="clth" />
+	<Class name="PuffyJacketPinkWhite" policy="clth" />
+	<Class name="PuffyJacketPurpleFushia" policy="clth" />
+	<Class name="PuffyJacketRedBlue" policy="clth" />
+	<Class name="PuffyJacketRedWhite" policy="clth" />
+	<Class name="PuffyJacketSilver" policy="clth" />
+	<Class name="PuffyJacketWhite" policy="clth" />
+	<Class name="PuffyJacketWhiteCamo1" policy="clth" />
+	<Class name="RainJacketBlack" policy="clth" />
+	<Class name="RainJacketBlue" policy="clth" />
+	<Class name="RainJacketBlueGrey" policy="clth" />
+	<Class name="RainJacketCamo1" policy="clth" />
+	<Class name="RainJacketCamo2" policy="clth" />
+	<Class name="RainJacketCamo3" policy="clth" />
+	<Class name="RainJacketDarkGrey" policy="clth" />
+	<Class name="RainJacketGreen" policy="clth" />
+	<Class name="RainJacketGreenGrey" policy="clth" />
+	<Class name="RainJacketGrey" policy="clth" />
+	<Class name="RainJacketGreyBlack" policy="clth" />
+	<Class name="RainJacketKaki" policy="clth" />
+	<Class name="RainJacketLightDarkGrey" policy="clth" />
+	<Class name="RainJacketMarine" policy="clth" />
+	<Class name="RainJacketOrangeBlue" policy="clth" />
+	<Class name="RainJacketPinkPurple" policy="clth" />
+	<Class name="RainJacketRed" policy="clth" />
+	<Class name="RainJacketRedBlue" policy="clth" />
+	<Class name="RainJacketRedGrey" policy="clth" />
+	<Class name="RainJacketYellow" policy="clth" />
 	<Class name="TacticalVestBlack" policy="clth" />
 	<Class name="TacticalVestGreen" policy="clth" />
 	<Class name="TacticalVestGreenCamo1" policy="clth" />
@@ -548,21 +605,10 @@
 	<Class name="CottonShirtRed" policy="clth" />
 	<Class name="CottonShirtTan" policy="clth" />
 	<Class name="GasCanisterPack" policy="clth" />
-	<Class name="GhillieSuit1" policy="clth" />
-	<Class name="GhillieSuit2" policy="clth" />
-	<Class name="GhillieSuit3" policy="clth" />
-	<Class name="GhillieSuit4" policy="clth" />
 	<Class name="GhillieHood1" policy="clth" />
 	<Class name="GhillieHood2" policy="clth" />
 	<Class name="GhillieHood3" policy="clth" />
 	<Class name="GhillieHood4" policy="clth" />
-	<Class name="HazmatMask" policy="clth" />
-	<Class name="HazmatSuitBlue" policy="clth" />
-	<Class name="HazmatSuitGreen" policy="clth" />
-	<Class name="HazmatSuitOrange" policy="clth" />
-	<Class name="HazmatSuitPink" policy="clth" />
-	<Class name="HazmatSuitWhite" policy="clth" />
-	<Class name="HazmatSuitYellow" policy="clth" />
 	<Class name="Hoodie" policy="clth" />
 	<Class name="HoodieBlackGreyDesign1" policy="clth" />
 	<Class name="HoodieBlackWhiteDesign4" policy="clth" />
@@ -612,50 +658,6 @@
 	<Class name="MilitaryJacketUrbanCamo2" policy="clth" />
 	<Class name="MilitaryJacketUrbanCamo3" policy="clth" />
 	<Class name="MilitaryJacketUrbanCamo4" policy="clth" />
-	<Class name="PuffyJacketAmerica" policy="clth" />
-	<Class name="PuffyJacketBlack" policy="clth" />
-	<Class name="PuffyJacketBlueWhite" policy="clth" />
-	<Class name="PuffyJacketCamo1" policy="clth" />
-	<Class name="PuffyJacketCamo2" policy="clth" />
-	<Class name="PuffyJacketCamo3" policy="clth" />
-	<Class name="PuffyJacketCanada" policy="clth" />
-	<Class name="PuffyJacketEaster" policy="clth" />
-	<Class name="PuffyJacketGold" policy="clth" />
-	<Class name="PuffyJacketGreenWhite" policy="clth" />
-	<Class name="PuffyJacketGrey" policy="clth" />
-	<Class name="PuffyJacketGreyBlack" policy="clth" />
-	<Class name="PuffyJacketGreyBlack2" policy="clth" />
-	<Class name="PuffyJacketKaki" policy="clth" />
-	<Class name="PuffyJacketOrangeGreen" policy="clth" />
-	<Class name="PuffyJacketOrangeTeal" policy="clth" />
-	<Class name="PuffyJacketOrangeWhite" policy="clth" />
-	<Class name="PuffyJacketPinkWhite" policy="clth" />
-	<Class name="PuffyJacketPurpleFushia" policy="clth" />
-	<Class name="PuffyJacketRedBlue" policy="clth" />
-	<Class name="PuffyJacketRedWhite" policy="clth" />
-	<Class name="PuffyJacketSilver" policy="clth" />
-	<Class name="PuffyJacketWhite" policy="clth" />
-	<Class name="PuffyJacketWhiteCamo1" policy="clth" />
-	<Class name="RainJacketBlack" policy="clth" />
-	<Class name="RainJacketBlue" policy="clth" />
-	<Class name="RainJacketBlueGrey" policy="clth" />
-	<Class name="RainJacketCamo1" policy="clth" />
-	<Class name="RainJacketCamo2" policy="clth" />
-	<Class name="RainJacketCamo3" policy="clth" />
-	<Class name="RainJacketDarkGrey" policy="clth" />
-	<Class name="RainJacketGreen" policy="clth" />
-	<Class name="RainJacketGreenGrey" policy="clth" />
-	<Class name="RainJacketGrey" policy="clth" />
-	<Class name="RainJacketGreyBlack" policy="clth" />
-	<Class name="RainJacketKaki" policy="clth" />
-	<Class name="RainJacketLightDarkGrey" policy="clth" />
-	<Class name="RainJacketMarine" policy="clth" />
-	<Class name="RainJacketOrangeBlue" policy="clth" />
-	<Class name="RainJacketPinkPurple" policy="clth" />
-	<Class name="RainJacketRed" policy="clth" />
-	<Class name="RainJacketRedBlue" policy="clth" />
-	<Class name="RainJacketRedGrey" policy="clth" />
-	<Class name="RainJacketYellow" policy="clth" />
 	<Class name="Sweater" policy="clth" />
 	<Class name="SweaterBlack" policy="clth" />
 	<Class name="SweaterBlue" policy="clth" />
@@ -826,6 +828,7 @@
 	<Class name="Flashlight" policy="gun"/>
 	<Class name="G18Pistol" policy="gun"/>
 	<Class name="GridMap" policy="gun"/>
+	<Class name="GridMap_canyonlands" policy="gun"/>
 	<Class name="Guitar" policy="gun" />
 	<Class name="Hammer" policy="gun"/>
 	<Class name="Hatchet" policy="gun"/>
@@ -844,6 +847,7 @@
 	<Class name="MagliteSmall" policy="gun"/>
 	<Class name="Makarov" policy="gun" />
 	<Class name="Map" policy="gun"/>
+	<Class name="Map_canyonlands" policy="gun"/>
 	<Class name="Machete" policy="gun" />
 	<Class name="MannequinArm" policy="gun" />
 	<Class name="Megaphone" policy="gun"/>
@@ -876,7 +880,7 @@
 	<Class name="Wasteland22" policy="gun"/>
 	<Class name="WoodPaddle" policy="gun"/>
 	<Class name="TranquilizerGun" policy="gun"/>
-	
+
 	<!-- weapon accessories -->
 	<Class name="CraftedPistolSilencer" policy="gun" />
 	<Class name="CraftedSilencer" policy="gun" />
@@ -1214,6 +1218,8 @@
 	<Class name="PotatoesBurned" policy="cons" />
 	<Class name="PotatoesCooked" policy="cons" />
 	<Class name="PotatoesRotten" policy="cons"/>
+	<Class name="PricklyPear" policy="cons"/>
+	<Class name="PricklyPearRotten" policy="cons"/>
 	<Class name="Pumpkin" policy="cons" />
 	<Class name="PumpkinBurned" policy="cons" />
 	<Class name="PumpkinCooked" policy="cons" />
@@ -1222,6 +1228,11 @@
 	<Class name="RadishesBurned" policy="cons" />
 	<Class name="RadishesCooked" policy="cons" />
 	<Class name="RadishesRotten" policy="cons"/>
+	<Class name="RamMeatSteakBurned" policy="cons"/>
+	<Class name="RamMeatSteakCooked" policy="cons"/>
+	<Class name="RamMeatSteakCured" policy="cons"/>
+	<Class name="RamMeatSteakRaw" policy="cons"/>
+	<Class name="RamMeatSteakRotten" policy="cons"/>
 	<Class name="RavioliCan" policy="cons"/>
 	<Class name="Salt" policy="cons"/>
 	<Class name="Seaweed" policy="cons" />
@@ -1934,7 +1945,7 @@
 	<Class name="DangerousRigidBody" policy="phys"/>
 	<Class name="DeadBody" policy="phys"/>
 	<Class name="ShootingTarget" policy="phys"/>
-	
+
 	<!-- misc -->
 	<Class name="Comment" policy="obj"/>
 	<Class name="SpawnPoint" policy="obj"/>

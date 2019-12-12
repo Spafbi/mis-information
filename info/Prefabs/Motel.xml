@@ -9769,6 +9769,24 @@
      <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
     </CollisionFiltering>
    </Object>
+   <Object Type="Brush" Layer="canyonlands_prefabs" LayerGUID="{DA049D83-3A3C-4FDA-A93C-C5EA483339B0}" Id="{9483FB33-3D9F-4F39-B01F-829205B73F7D}" Name="rain_occlude14" Pos="27.287109,62.515625,7.9922981" FloorNumber="-1" Rotate="1,0,0,0" Scale="23.217628,9.605567,0.42270273" ColorRGB="16777215" Material="Materials/collider_nodraw_invisible" MatLayersMask="0" Prefab="Objects/default/primitive_box.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="canyonlands_prefabs" LayerGUID="{DA049D83-3A3C-4FDA-A93C-C5EA483339B0}" Id="{1EA39B6A-2D58-41B5-B762-B3938243A923}" Name="rain_occlude16" Pos="21.37915,18.855957,4.9722977" FloorNumber="-1" Rotate="0.70710683,0,0,-0.70710677" Scale="18.424507,9.5104609,0.42270273" ColorRGB="16777215" Material="Materials/collider_nodraw_invisible" MatLayersMask="0" Prefab="Objects/default/primitive_box.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="canyonlands_prefabs" LayerGUID="{DA049D83-3A3C-4FDA-A93C-C5EA483339B0}" Id="{8AE36726-3AAF-4BBB-A900-915560AA8314}" Name="rain_occlude15" Pos="18.49707,21.866455,4.9722977" FloorNumber="-1" Rotate="1,0,0,0" Scale="18.424511,9.5104628,0.42270273" ColorRGB="16777215" Material="Materials/collider_nodraw_invisible" MatLayersMask="0" Prefab="Objects/default/primitive_box.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
   </Objects>
  </Prefab>
 </PrefabsLibrary>
