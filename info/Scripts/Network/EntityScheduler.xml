@@ -856,6 +856,7 @@
 	<Class name="NailsPaddle" policy="gun"/>
 	<Class name="NoWeapon" policy="gun" />
 	<Class name="P350" policy="gun" />
+	<Class name="Peacemaker" policy="gun"/>
 	<Class name="Pickaxe" policy="gun"/>
 	<Class name="PipeWrench" policy="gun" />
 	<Class name="PoliceBaton" policy="gun"/>
