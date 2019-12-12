@@ -36,7 +36,7 @@
 			<protection_amount type="pool_acid" percentage="5.0"/>
 			<protection_amount type="rain_radiation" percentage="10.0"/>
 			<protection_amount type="eye_light" percentage="10.0"/>
-			<protection_amount type="gas_smoke" percentage="90.0"/>
+			<protection_amount type="gas_smoke" percentage="100"/>
 			<protection_amount type="gas_radiation" percentage="20.0"/>
 			<protection_amount type="electricity" percentage="5"/>
             <protection_amount type="cold" percentage="3.0"/>

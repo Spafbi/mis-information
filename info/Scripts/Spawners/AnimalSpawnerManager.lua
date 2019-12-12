@@ -21,6 +21,11 @@ AnimalSpawnerManager = {
 			class = "Pig",
 			max = 15,
 		},
+
+		{
+			class = "Boar",
+			max = 15,
+		},
 	},
 }
 

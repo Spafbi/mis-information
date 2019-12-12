@@ -1,0 +1,26 @@
+<item name="DonkeyMeatSteakCured" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="stack_size" value="5"/>		
+		<param name="display_name" value="@DonkeyMeatSteakCured"/>
+		<param name="description" value="@DonkeyMeatSteakCuredDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/meat_steaks/meat_steak_cured.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="450"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>
