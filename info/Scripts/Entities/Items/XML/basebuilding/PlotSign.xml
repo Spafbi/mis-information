@@ -58,6 +58,13 @@
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
 		</damage_multipliers>
 	</placeable>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.generic_bpart_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
 	<geometry>
 		<thirdperson name="Objects/basebuilding/other/plot_sign/plot_sign.cgf"/>

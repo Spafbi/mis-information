@@ -11,7 +11,7 @@
 		<param name="place_offset" value="-2.7"/>
 	</params>
 
-	<base_part class="static" type="278" name="rock_foundation_4m_4m_4m" max_health="22500" repair_with="Rocks">&gt;
+	<base_part class="static" type="278" name="rock_foundation_4m_4m_4m" max_health="22500" repair_with="Rocks" repair_sound="Play_wall_repair">&gt;
 		<static filename="objects/basebuilding/rock/rock_foundation_4m_4m_4m.cgf"/>
 		
 		<damage_multipliers>
@@ -50,6 +50,13 @@
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
 		</damage_multipliers>
 	</base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.rock_bpart_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
 	<geometry>
 		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>

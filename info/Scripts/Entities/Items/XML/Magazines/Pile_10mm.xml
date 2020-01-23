@@ -31,6 +31,13 @@
 		<thirdperson name="Objects/ammo/10mm/pile_10mm.cgf"/>
 	</geometry>
 
+	<usable>
+		<param name="title" value="@ConvertToGunpowder"/>
+		<param name="action" value="convert"/>
+		<param name="param" value="Gunpowder"/>
+		<param name="soundUsed" value=""/>
+	</usable>
+
 	<storage>
 		<locations>
 			<location category="any"/>

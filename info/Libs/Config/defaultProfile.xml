@@ -1,4 +1,4 @@
-<profile version="131">
+<profile version="132">
 	<!-- platforms - Used to define which keys to map for each action based on the platform that is in use -->
 	<platforms>
 		<PC keyboard="1" xboxpad="1" ps4pad="1" />
@@ -29,7 +29,7 @@
 		<action name="placement_down" onPress="1" onRelease="1" keyboard="lshift" xboxpad="xi_thumbl" />
 
 		<action name="ui_start_chat" onPress="1" keyboard="enter" />
-		<action name="ui_show_inventory" onPress="1" noModifiers="0" keyboard="g" xboxpad="xi_back" />
+		<action name="ui_show_inventory" onPress="1" onRelease="1" noModifiers="0" keyboard="g" xboxpad="xi_back" />
 		<action name="ui_ingame_menu" onPress="1" keyboard="escape" xboxpad="xi_start" />
 		<action name="ui_toggle_hud" onPress="1" keyboard="np_period" />
 		<action name="ui_back" onPress="1" onRelease="1" keyboard="escape" xboxpad="xi_b" />

@@ -245,4 +245,59 @@
    </Particles>
   </Childs>
  </Particles>
+ <Particles Name="basebuilding.wall_destroyed">
+  <Params Count="10" ParticleLifeTime="6,Random=0.574" PositionOffset="y=1.5" RandomOffset="x=1.5,z=1.5" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/wood/wood_plank_basebuilding.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="Random=0.3" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+  <Childs>
+   <Particles Name="audio">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" StartTrigger="Play_wall_destroy" StopTrigger="do_nothing"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="30" ParticleLifeTime="4,Random=0.446" PositionOffset="y=0.4" RandomOffset="x=1,y=1,z=1" OffsetRoundness="0.3" EmitAngle="86.3,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.438,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(v=0.635;t=0.17,v=1;t=0.784,v=1;t=1)" Color="(x=0.16513222,y=0.10946172,z=0.07421357)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" Size="3,Random=0.178,ParticleAge=(v=0.63;t=1,v=1)" Speed="3.5" AirResistance="2.4,RotationalDragScale=0.165,WindScale=0" GravityScale="-0.1" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="basebuilding.generic_bpart_destroyed">
+  <Params Count="10" ParticleLifeTime="6,Random=0.574" PositionOffset="y=0.85" RandomOffset="x=0.7,z=0.7" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/wood/wood_plank_basebuilding.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="0.5,Random=0.5" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+  <Childs>
+   <Particles Name="audio">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" StartTrigger="Play_wall_destroy" StopTrigger="do_nothing"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="basebuilding.plated_wall_destroyed">
+  <Params Count="4" ParticleLifeTime="6,Random=0.574" PositionOffset="y=1.5" RandomOffset="x=1.5,z=1.5" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/plated/sheet_metal.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="Random=0.5" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+  <Childs>
+   <Particles Name="audio">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" StartTrigger="Play_wall_destroy" StopTrigger="do_nothing"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="30" ParticleLifeTime="4,Random=0.446" PositionOffset="y=0.4" RandomOffset="x=1,y=1,z=1" OffsetRoundness="0.3" EmitAngle="86.3,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.438,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(v=0.635;t=0.17,v=1;t=0.784,v=1;t=1)" Color="(x=0.16513222,y=0.10946172,z=0.07421357)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" Size="3,Random=0.178,ParticleAge=(v=0.63;t=1,v=1)" Speed="3.5" AirResistance="2.4,RotationalDragScale=0.165,WindScale=0" GravityScale="-0.1" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="wood">
+    <Params Count="4" ParticleLifeTime="6,Random=0.574" PositionOffset="y=1.5" RandomOffset="x=1.5,z=1.5" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/wood/wood_plank_basebuilding.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="Random=0.3" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="basebuilding.rock_bpart_destroyed">
+  <Params Count="10" ParticleLifeTime="6,Random=0.574" PositionOffset="y=0.85" RandomOffset="x=0.7,z=0.7" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/craftingmats/rockpile/rock_pile.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="1.2,Random=0.5" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+  <Childs>
+   <Particles Name="wood">
+    <Params Count="4" ParticleLifeTime="6,Random=0.574" PositionOffset="y=1.5" RandomOffset="x=1.5,z=1.5" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/wood/wood_plank_basebuilding.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="Random=0.3" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="30" ParticleLifeTime="4,Random=0.446" PositionOffset="y=0.4" RandomOffset="x=1,y=1,z=1" OffsetRoundness="0.3" EmitAngle="86.3,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.438,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(v=0.635;t=0.17,v=1;t=0.784,v=1;t=1)" Color="(x=0.16513222,y=0.10946172,z=0.07421357)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" Size="3,Random=0.178,ParticleAge=(v=0.63;t=1,v=1)" Speed="3.5" AirResistance="2.4,RotationalDragScale=0.165,WindScale=0" GravityScale="-0.1" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" StartTrigger="Play_wall_destroy" StopTrigger="do_nothing"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="basebuilding.barbed_wire_destroyed">
+  <Params Count="2" ParticleLifeTime="6,Random=0.574" PositionOffset="y=0.85" RandomOffset="x=0.7,z=0.7" OffsetRoundness="1" EmitAngle="35,Random=0.762" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/basebuilding/metal/barbed_wire/metal_barbedwire_2m.cgf" Alpha="0.15,ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="Random=0.5" Speed="5,Random=0.812" GravityScale="0.7" InitAngles="x=90" RandomAngles="y=360" RotationRate="x=50,z=50" RandomRotationRate="x=50,y=50,z=50" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollisionCutoffDistance="100" MaxCollisionEvents="5" FinalCollision="Stop" SurfaceType="wood" Elasticity="0.5" DynamicFriction="1.13" SortOffset="3"/>
+  <Childs>
+   <Particles Name="audio">
+    <Params Count="1" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="5" StartTrigger="Play_collision_chainlink_default" StopTrigger="do_nothing"/>
+   </Particles>
+  </Childs>
+ </Particles>
 </ParticleLibrary>

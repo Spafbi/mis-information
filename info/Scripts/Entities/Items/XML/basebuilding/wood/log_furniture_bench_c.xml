@@ -8,9 +8,16 @@
         <param name="description" value="@log_furniture_bench_cDescription"/>
     </params>
 
-    <base_part class="static" type="127" name="log_furniture_bench_c" max_health="750">
+    <base_part class="static" type="127" name="log_furniture_bench_c" max_health="750" repair_sound="Play_wall_repair">
         <static filename="objects/basebuilding/wood/bench_c.cgf"/>
     </base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.generic_bpart_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
     <geometry>
         <thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
