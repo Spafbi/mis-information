@@ -8,7 +8,7 @@
 		<param name="description" value="@wood_targetDescription"/>
 	</params>
 
-	<base_part class="static" type="12" name="wood_target" max_health="5000">
+	<base_part class="static" type="12" name="wood_target" max_health="5000" repair_sound="Play_wall_repair">
 		<static filename="Objects/basebuilding/other/wood_target/wood_target.cgf"/>
 
 		<!-- Modified for lower bullet damage (default = 0.1) and higher melee damage due to nature of use -->
@@ -31,6 +31,13 @@
 			<damage_multiplier damage_type="torch" multiplier="1.0"/>
 		</damage_multipliers>
 	</base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.generic_bpart_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
 	<geometry>
 		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>

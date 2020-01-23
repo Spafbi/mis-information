@@ -8,7 +8,7 @@
 		<param name="description" value="@planter_boxDescription"/>
 	</params>
 
-	<base_part class="planter" type="173" name="planter_box" max_health="5000">
+	<base_part class="planter" type="173" name="planter_box" max_health="5000" repair_sound="Play_wall_repair">
 		<planter filename="objects/basebuilding/wood/wood_planter_2m_2m.cgf" filename_aux="objects/basebuilding/wood/wood_planter_filled_2m_2m.cgf" material="GameSDK\Objects\basebuilding\wood\wood_planter.mtl" material_aux="GameSDK\Objects\basebuilding\wood\wood_planter_fertilized.mtl"/>
 		<base_actions>
 			<base_action class="planter">
@@ -16,6 +16,13 @@
 			</base_action>
 		</base_actions>
 	</base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.generic_bpart_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
 	<geometry>
 		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>

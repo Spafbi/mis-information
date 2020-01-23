@@ -2,7 +2,7 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="1250"/> <!-- metal parts must have a mass > 50 -->
+		<param name="mass" value="250"/> <!-- metal parts must have a mass > 50 -->
 		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
 		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
 		<param name="no_icon" value="1"/>

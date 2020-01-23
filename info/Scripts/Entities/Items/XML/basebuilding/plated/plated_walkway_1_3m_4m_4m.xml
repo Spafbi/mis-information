@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_walkway_1_3m_4m_4mDescription"/>
 	</params>
 
-	<base_part class="static" type="1031" name="plated_walkway_1_3m_4m_4m" max_health="15000" repair_with="SheetMetal">
+	<base_part class="static" type="1031" name="plated_walkway_1_3m_4m_4m" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/plated/plated_walkway_1_3m_4m_4m.cgf"/>
 
 		<damage_multipliers>
@@ -47,6 +47,13 @@
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
 		</damage_multipliers>
 	</base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.plated_wall_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
 
 	<geometry>
 		<thirdperson name="objects/basebuilding/plated/plated_part.cgf"/>
