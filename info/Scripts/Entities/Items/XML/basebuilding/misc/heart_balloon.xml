@@ -1,0 +1,38 @@
+<item name="heart_balloon" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="Heart Balloon"/>
+		<param name="description" value="A trio of heart shaped balloons."/>
+	</params>
+
+	<base_part class="static" type="308" name="heart_balloon" max_health="5000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/other/valentine_baloon/valentine_balloon.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/valentine_baloon/valentine_balloon.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/heart_balloon_200.png?crc=5CB1F4B1"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30346"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/heart_balloon_2048.png?crc=5CB1F4B1"/>
+	</steam>
+</item>

@@ -7,7 +7,7 @@
 		<param name="description" value="@CraftedExplosiveArrowx8_0000Description"/>
 		<param name="is_ammo_pile" value="1"/>
 		<param name="hide_as_attachment" value="1"/>
-		<param name="tag" value="CraftedArrowx8"/>
+		<param name="tag" value="CraftedExplosiveArrow"/>
 	</params>
 
 	<magazine>

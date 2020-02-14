@@ -201,10 +201,10 @@
   <BlendRagdoll scopes="FullBody3P+AimPose+Torso3P+Weapon+Audio1+Audio2"/>
   <emote scopes="Torso1P+Torso3P+Weaponpose+Audio2">
    <Override tags="emotep_drinkingstream" scopes="FullBody3P+AimPose+Torso3P"/>
-   <Override tags="emotep_searchcontainer_high" scopes="GenericBelowAiming+AimPose"/>
-   <Override tags="emotep_searchcontainer_low" scopes="GenericBelowAiming+AimPose"/>
-   <Override tags="emotep_search_ownbody" scopes="GenericBelowAiming+AimPose"/>
-   <Override tags="emotep_searchcontainer_med" scopes="GenericBelowAiming+AimPose"/>
+   <Override tags="emotep_searchcontainer_high" scopes="GenericBelowAiming+AimPose+Weaponpose"/>
+   <Override tags="emotep_searchcontainer_low" scopes="GenericBelowAiming+AimPose+Weaponpose"/>
+   <Override tags="emotep_search_ownbody" scopes="GenericBelowAiming+AimPose+Weaponpose"/>
+   <Override tags="emotep_searchcontainer_med" scopes="GenericBelowAiming+AimPose+Weaponpose"/>
    <Override tags="katana+crouch+emotep_healing" scopes="Torso3P"/>
    <Override tags="crafted_bow+emote_whistle" fragTags="outro" scopes="Torso3P"/>
    <Override tags="crafted_bow+emote_whistle" fragTags="intro" scopes="Torso3P"/>

@@ -55,6 +55,7 @@
 		<magazine name="CraftedArrowx8_F000"/>
 		<magazine name="ExplosiveArrowx8_0000"/>
 		<magazine name="CraftedExplosiveArrowx8_0000"/>
+		<magazine name="CupidArrowx8"/>
 	</magazines>
 
 	<geometry>
@@ -327,6 +328,7 @@
 		<accessory name="CraftedArrowx8_F000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo"/></accessory>
 		<accessory name="ExplosiveArrowx8_0000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_al_ex"/></accessory>
 		<accessory name="CraftedExplosiveArrowx8_0000" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo_ex"/></accessory>
+		<accessory name="CupidArrowx8" category="magazine" exclusive="1"> <attach helper="arrow_mag"/> <detach/> <show helper="mag_arrow_wo_cu"/></accessory>
 
 		<accessory name="ReflexSightBow" zoommode="reflexsightbow" category="ironsight" exclusive="1">
 			<attach helper="reflex_sight"/>
