@@ -1,0 +1,27 @@
+<item name="ChocolateBox" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="display_name" value="Chocolate Box"/>
+		<param name="description" value="A fancy box of chocolate."/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/consumables/chocolate_box/chocolate_box.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="type" value="2"/>	
+		<param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="1000"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

@@ -658,6 +658,7 @@
 	<Class name="MilitaryJacketUrbanCamo2" policy="clth" />
 	<Class name="MilitaryJacketUrbanCamo3" policy="clth" />
 	<Class name="MilitaryJacketUrbanCamo4" policy="clth" />
+	<Class name="ScavengerShirt" policy="clth" />
 	<Class name="Sweater" policy="clth" />
 	<Class name="SweaterBlack" policy="clth" />
 	<Class name="SweaterBlue" policy="clth" />
@@ -1049,7 +1050,8 @@
 	<Class name="CraftedArrowx8_0BRP" policy="gun"/>
 	<Class name="CraftedArrowx8_F000" policy="gun"/>
 	<Class name="CraftedExplosiveArrowx8_0000" policy="gun" />
-	<Class name="ExplosiveArrowx8_0000" policy="gun"/>
+  <Class name="CupidArrowx8" policy="gun" />
+  <Class name="ExplosiveArrowx8_0000" policy="gun"/>
 	<Class name="M40x5" policy="gun"/>
 	<Class name="Pile_10mm" policy="gun"/>
 	<Class name="Pile_12GaugeBeanbag" policy="gun"/>
@@ -1124,8 +1126,8 @@
 	<Class name="CraftedArrow_0B0P" policy="proj"/>
 	<Class name="CraftedArrow_0BR0" policy="proj"/>
 	<Class name="CraftedArrow_0BRP" policy="proj"/>
-	<Class name="CraftedArrow_F000" policy="proj"/>
-	<Class name="ExplosiveArrow_0000" policy="proj"/>
+  <Class name="CraftedArrow_F000" policy="proj"/>
+  <Class name="CupidArrow_0000" policy="proj"/>
 	<Class name="Flare" policy="proj"/>
 	<Class name="Flashbang" policy="proj"/>
 	<Class name="Grenade" policy="proj"/>
@@ -1168,11 +1170,13 @@
 	<Class name="CarrotsCooked" policy="cons" />
 	<Class name="CarrotsRotten" policy="cons"/>
 	<Class name="CerealBox" policy="cons"/>
-	<Class name="ChickenBurned" policy="cons"/>
+  <Class name="Champagne" policy="cons"/>
+  <Class name="ChickenBurned" policy="cons"/>
 	<Class name="ChickenCooked" policy="cons"/>
 	<Class name="ChickenRaw" policy="cons"/>
-	<Class name="ChickenRotten" policy="cons"/>
-	<Class name="CivCanteen01" policy="cons"/>
+  <Class name="ChickenRotten" policy="cons"/>
+  <Class name="ChocolateBox" policy="cons"/>
+  <Class name="CivCanteen01" policy="cons"/>
 	<Class name="ClamSingle" policy="cons" />
 	<Class name="CocktailGinAndTonic" policy="cons" />
 	<Class name="CocktailRedEye" policy="cons" />
@@ -1186,12 +1190,19 @@
 	<Class name="DeerMeatSteakRaw" policy="cons"/>
 	<Class name="DeerMeatSteakRotten" policy="cons"/>
 	<Class name="DogFoodCan" policy="cons"/>
+	<Class name="DonkeyMeatSteakBurned" policy="cons" />
+	<Class name="DonkeyMeatSteakCooked" policy="cons" />
+	<Class name="DonkeyMeatSteakCured" policy="cons" />
+	<Class name="DonkeyMeatSteakRaw" policy="cons" />
+	<Class name="DonkeyMeatSteakRotten" policy="cons" />
 	<Class name="DrPepperCan" policy="cons"/>
 	<Class name="EggChicken" policy="cons" />
 	<Class name="EggChickenBurned" policy="cons" />
 	<Class name="EggChickenCooked" policy="cons" />
 	<Class name="EggChickenRotten" policy="cons" />
+	<Class name="EggNog" policy="cons" />
 	<Class name="EnergyDrinkCan" policy="cons"/>
+	<Class name="GingerBreadMan" policy="cons" />
 	<Class name="HamBurned" policy="cons"/>
 	<Class name="HamCooked" policy="cons"/>
 	<Class name="HamCured" policy="cons"/>
@@ -1235,6 +1246,11 @@
 	<Class name="RamMeatSteakRotten" policy="cons"/>
 	<Class name="RavioliCan" policy="cons"/>
 	<Class name="Salt" policy="cons"/>
+	<Class name="ScorpionMeatSteakBurned" policy="cons" />
+	<Class name="ScorpionMeatSteakCooked" policy="cons" />
+	<Class name="ScorpionMeatSteakCured" policy="cons" />
+	<Class name="ScorpionMeatSteakRaw" policy="cons" />
+	<Class name="ScorpionMeatSteakRotten" policy="cons" />
 	<Class name="Seaweed" policy="cons" />
 	<Class name="SnapPeas" policy="cons"/>
 	<Class name="SnapPeasBurned" policy="cons" />
@@ -1536,8 +1552,9 @@
 	<Class name="flagpole_sweden" policy="obj" />
 	<Class name="flagpole_turkey" policy="obj" />
 	<Class name="flagpole_uk" policy="obj" />
-	<Class name="flagpole_white" policy="obj" />
-	<Class name="gnome_bronze" policy="obj"/>
+  <Class name="flagpole_white" policy="obj" />
+  <Class name="flower_vase" policy="obj" />
+  <Class name="gnome_bronze" policy="obj"/>
 	<Class name="gnome_creep" policy="obj"/>
 	<Class name="gnome_giant_c" policy="obj" />
 	<Class name="gnome_gold" policy="obj"/>
@@ -1549,7 +1566,8 @@
 	<Class name="halloween_creepy_bear" policy="obj" />
 	<Class name="halloween_creepy_bunny" policy="obj" />
 	<Class name="halloween_light_string" policy="obj" />
-	<Class name="hesco_barrier" policy="obj" />
+  <Class name="heart_candle" policy="obj" />
+  <Class name="hesco_barrier" policy="obj" />
 	<Class name="jack_o_lantern" policy="obj" />
 	<Class name="jerry" policy="obj" />
 	<Class name="log_furniture_bench_a" policy="obj"/>

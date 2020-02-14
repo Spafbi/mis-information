@@ -135,6 +135,9 @@
    <Tag name="stanagx30"/>
    <Tag name="Arrowx8"/>
    <Tag name="CraftedArrowx8"/>
+   <Tag name="CupidArrow"/>
+   <Tag name="CraftedExplosiveArrow"/>
+   <Tag name="ExplosiveArrow"/>
    <Tag name="12gaugex8_aa12"/>
    <Tag name="762x30"/>
    <Tag name="Pile_Flare"/>
