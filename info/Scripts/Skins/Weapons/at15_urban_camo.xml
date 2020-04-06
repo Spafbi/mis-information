@@ -1,0 +1,13 @@
+<skin name="at15_urban_camo">
+ 
+    <params>
+        <param name="display_name" value="At15 Urban Camo"/>
+        <param name="description" value="A Weapon Skin for the At15 Urban Camo"/>
+        <param name="material" value="Objects/weapons/at15/at15_urban_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AT15"/>
+    </items>
+
+</skin>

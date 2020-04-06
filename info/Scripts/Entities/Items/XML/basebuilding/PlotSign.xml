@@ -51,11 +51,12 @@
 			<damage_multiplier damage_type="blunt" multiplier="0.0"/>
 			<damage_multiplier damage_type="flare" multiplier="0.0"/>
 			<!-- Melee -->
-			<damage_multiplier damage_type="hammer" multiplier="0.5"/>
-			<damage_multiplier damage_type="hatchet" multiplier="0.5"/>
+			<damage_multiplier damage_type="hammer" multiplier="1.2"/>
+			<damage_multiplier damage_type="hatchet" multiplier="1.2"/>
 			<damage_multiplier damage_type="knife" multiplier="0.25"/>
-			<damage_multiplier damage_type="pickaxe" multiplier="0.6"/>
+			<damage_multiplier damage_type="pickaxe" multiplier="1.4"/>
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+			<damage_multiplier damage_type="sledgehammer" multiplier="4.45"/>
 		</damage_multipliers>
 	</placeable>
 	

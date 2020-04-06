@@ -1,0 +1,13 @@
+<skin name="asval_pixel_orange">
+ 
+    <params>
+        <param name="display_name" value="Asval Pixel Orange"/>
+        <param name="description" value="A Weapon Skin for the Asval Pixel Orange"/>
+        <param name="material" value="Objects/weapons/asval/asval_pixel_orange.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKVal"/>
+    </items>
+
+</skin>

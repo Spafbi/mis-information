@@ -47,7 +47,7 @@
 				<param name="hit_type" value="ammo_357"/>
 				<param name="ammo_type" value="ammo_357"/>
 				<param name="rate" value="32"/>
-				<param name="damage" value="55"/>
+				<param name="damage" value="50"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>

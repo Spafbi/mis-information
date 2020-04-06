@@ -26,10 +26,9 @@
 			<protection_amount type="cold" percentage="10"/>
 		</environmental>
 		<protectBodyPart name="torso"> <!-- Use valid bodyparts defined in Libs/BodyDamage/BodyParts_*.xml -->
-			<protection_amount hit_type="default" percentage="50.0"/> <!-- Default damage reduction of 75% unless specified below -->
-			<protection_amount hit_type="ammo_308" percentage="40.0"/>
-			<protection_amount hit_type="ammo_7_62x39" percentage="40.0"/>
-			<protection_amount hit_type="ammo_7_62x51" percentage="40.0"/>
+			<protection_amount hit_type="default" percentage="55.0"/> <!-- Default damage reduction of 75% unless specified below -->
+			<protection_amount hit_type="blunt" percentage="80.0"/>
+			<protection_amount hit_type="melee" percentage="80.0"/>
 		</protectBodyPart>
 	</protection>
 

@@ -1,0 +1,41 @@
+<item name="token_black" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="stack_size" value="9"/>
+		<param name="display_name" value="Token Black"/>
+		<param name="description" value="A black token to play Nine Men's Morris."/>
+		
+		<param name="place_restrict_snap" value="mpiece01_snap;mpiece02_snap;mpiece03_snap;mpiece04_snap;mpiece05_snap;mpiece06_snap;mpiece07_snap;mpiece08_snap;mpiece09_snap;mpiece10_snap;mpiece11_snap;mpiece12_snap;mpiece13_snap;mpiece14_snap;mpiece15_snap;mpiece16_snap;mpiece17_snap;mpiece18_snap;mpiece19_snap;mpiece20_snap;mpiece21_snap;mpiece22_snap;mpiece23_snap;mpiece24_snap"/>
+	</params>
+
+	<base_part class="static" type="338" name="token_black" max_health="10" repair_with="Lumber">
+		<static filename="objects/basebuilding/other/ninemen_morris/nmm_black.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/ninemen_morris/nmm_black.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/token_black_200.png?crc=FA1A85F7"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30377"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/token_black_2048.png?crc=FA1A85F7"/>
+	</steam>
+</item>

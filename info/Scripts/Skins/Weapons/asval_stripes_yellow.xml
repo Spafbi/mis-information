@@ -1,0 +1,27 @@
+<skin name="asval_stripes_yellow">
+ 
+    <params>
+        <param name="display_name" value="Asval Stripes Yellow"/>
+        <param name="description" value="A Skin for Asval Stripes Yellow"/>
+        <param name="material" value="Objects/weapons/asval/asval_stripes_yellow.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKVal"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/asval_stripes_yellow_200.png?crc=E4F5FA90"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200208"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/asval_stripes_yellow_2048.png?crc=E4F5FA90"/>
+	</steam>
+</skin>

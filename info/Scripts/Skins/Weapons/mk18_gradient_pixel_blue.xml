@@ -1,0 +1,13 @@
+<skin name="mk18_gradient_pixel_blue">
+ 
+    <params>
+        <param name="display_name" value="Mk18 Gradient Pixel Blue"/>
+        <param name="description" value="A skin for the Mk18 Gradient Pixel Blue"/>
+        <param name="material" value="Objects/weapons/mk18/mk18_gradient_pixel_blue.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="Mk18"/>
+    </items>
+
+</skin>

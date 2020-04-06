@@ -8,7 +8,7 @@
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.25"/>
 		<param name="bleed_percent" value="15"/>
-		<param name="electricity" value="45"/>
+		<param name="electricity" value="30"/>
 		<param name="select_delayed_grab_3P" value="1"/>
 		<param name="select_override" value="0.5"/> <!-- Delay after selecting to prevent insta-use -->
 		<param name="attach_to_back" value="1"/>

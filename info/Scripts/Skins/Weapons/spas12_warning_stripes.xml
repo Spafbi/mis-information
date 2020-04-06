@@ -1,0 +1,13 @@
+<skin name="spas12_warning_stripes">
+ 
+    <params>
+        <param name="display_name" value="Spas12 Warning Stripes"/>
+        <param name="description" value="A Weapon Skin for the Spas12 Warning Stripes"/>
+        <param name="material" value="Objects/weapons/Spas12/spas12_warning_stripes.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="SAS12"/>
+    </items>
+
+</skin>

@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="1.0"/>
-		<param name="display_name" value="Christmas Present Rare"/>
-		<param name="description" value="A nicely wrapped Christmas present."/>
+		<param name="display_name" value="@ChristmasPresentRare"/>
+		<param name="description" value="@ChristmasPresentRareDescription"/>
 	</params>
 
 	<geometry>

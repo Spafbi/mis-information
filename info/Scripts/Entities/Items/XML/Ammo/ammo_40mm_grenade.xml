@@ -1,0 +1,62 @@
+<ammo name="ammo_40mm_grenade" class="Grenade">
+	<geometry>
+		<firstperson name="objects/ammo/40mm_grenade/40mmgrenade.cgf" />
+	</geometry>
+
+	<flags>
+		<param name="serverspawn" value="1" />
+		<param name="predictspawn" value="0" />
+	</flags>
+	
+	<whiz>
+		<param name="sound" value="Play_bullet_whiz" />
+		<param name="distance" value="10.0" />
+	</whiz>
+
+	<physics type="particle">
+		<param name="mass" value="0.35" />
+		<param name="speed" value="50" />
+		<param name="min_bounce_speed" value="0.5" />
+		<param name="single_contact" value="0" />
+		<param name="traceable" value="1" />
+		<param name="spin" value="0, 0, 0" />
+		<param name="spin_random" value="0, 0, 0" />
+		<param name="material" value="mat_metal_grenade" />
+		<param name="pierceability" value="14" />
+	</physics>
+
+	<explosion>
+		<param name="pressure" value="1000" />
+		<param name="torpidity" value="10" />
+		<param name="stamina" value="15" />
+		<param name="min_radius" value="3" />
+		<param name="max_radius" value="15" />
+		<param name="min_phys_radius" value="3" />
+		<param name="max_phys_radius" value="8" />
+		<param name="sound_radius" value="150" />
+		<param name="hole_size" value="2" />
+		<param name="terrain_hole_size" value="3" />
+		<param name="radialblurdist" value="30" />
+		<param name="type" value="frag" />
+	</explosion>
+
+	<params>
+		<param name="damage" value="200"/> <!-- explosion uses this damage if the damage is set to 0 in the weapon's xml file -->
+		<param name="lifetime" value="5.0" /> <!-- Will detonate in 5s after being thrown -->
+		<param name="showtime" value="0" /> <!-- dont wait before showing the arrow -->
+		<param name="bleed_percent" value="0" />
+		<param name="fire_percent" value="0" />
+		<param name="poison_percent" value="0" />
+		<param name="irradiate_percent" value="0" />
+		<param name="hit_type" value="blunt" />
+		<param name="aitype" value="grenade" />
+		<param name="bulletType" value="1" /> <!-- arrow, see BasicActor.lua - death_impulses -->
+	</params>
+
+	<grenade>
+		<param name="onImpactLifetime" value="0" /> <!-- Don't decrease time to detonate just because it hit a surface -->
+		<param name="detonateOnImpact" value="1" />
+		<param name="detonateOnActorImpact" value="0" />
+		<param name="allowDetonationDelay" value="1" />
+	</grenade>
+</ammo>

@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="2.0"/>
-		<param name="display_name" value="Small Snowman"/>
-		<param name="description" value="A small snowman."/>
+		<param name="display_name" value="@snowman_small"/>
+		<param name="description" value="@snowman_smallDescription"/>
 	</params>
 
 	<base_part class="static" type="291" name="snowman_small" max_health="1000" repair_with="DuctTape">

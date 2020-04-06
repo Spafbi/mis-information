@@ -76,6 +76,12 @@
   <contextData name="pipewrench" context="Weapon" tags="pipewrench" model="objects/weapons/pipe_wrench/pipe_wrench.cgf" attachment="weapon"/>
   <contextData name="model1873" database="Animations/Mannequin/ADB/model1873WeaponAnims.adb" context="Weapon" tags="model1873" model="objects/weapons/Model1873/Model1873.cdf" attachment="weapon"/>
   <contextData name="peacemaker" database="Animations/Mannequin/ADB/peacemakerWeaponAnims.adb" context="Weapon" tags="peacemaker" model="objects/weapons/peacemaker/peacemaker.cdf" attachment="weapon"/>
+  <contextData name="sledgehammer" context="Weapon" tags="sledgehammer" model="objects/weapons/sledgehammer/sledgehammer.cgf" attachment="weapon"/>
+  <contextData name="asval" database="Animations/Mannequin/ADB/asvalWeaponAnims.adb" context="Weapon" tags="asval" model="objects/weapons/asval/asval.cdf" attachment="weapon"/>
+  <contextData name="spas12" database="Animations/Mannequin/ADB/spas12WeaponAnims.adb" context="Weapon" tags="spas12" model="objects/weapons/Spas12/spas12.cdf" attachment="weapon"/>
+  <contextData name="mac10" database="Animations/Mannequin/ADB/mac10WeaponAnims.adb" context="Weapon" tags="mac10" model="objects/weapons/mac10/mac10.cdf" attachment="weapon"/>
+  <contextData name="m97" database="Animations/Mannequin/ADB/m97WeaponAnims.adb" context="Weapon" tags="m97" model="objects/weapons/m97/m97.cdf" attachment="weapon"/>
+  <contextData name="ak5d" database="Animations/Mannequin/ADB/ak5dWeaponAnims.adb" context="Weapon" tags="ak5d" model="objects/weapons/ak5d/ak5d.cdf" attachment="weapon"/>
   </contexts>
  <History StartTime="0" EndTime="0">
   <FragmentID Time="0" FragmentID="motionIdle"/>

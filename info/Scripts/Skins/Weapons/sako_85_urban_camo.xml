@@ -1,0 +1,13 @@
+<skin name="sako_85_urban_camo">
+ 
+    <params>
+        <param name="display_name" value="Sako 85 Urban Camo"/>
+        <param name="description" value="A Weapon Skin for the Sako 85 Urban Camo"/>
+        <param name="material" value="Objects/weapons/huntingrifle_85/sako_85_urban_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="Sako_85"/>
+    </items>
+
+</skin>

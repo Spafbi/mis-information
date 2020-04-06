@@ -1,0 +1,38 @@
+<item name="ninemens_board" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="Nine Men's Morris Board"/>
+		<param name="description" value="A wooden board to play Nine Men's Morris."/>
+	</params>
+
+	<base_part class="static" type="336" name="ninemens_board" max_health="200" repair_with="Lumber">
+		<static filename="objects/basebuilding/other/ninemen_morris/nmm_board.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/ninemen_morris/nmm_board.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ninemens_board_200.png?crc=7057A7A0"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30348"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/ninemens_board_2048.png?crc=7057A7A0"/>
+	</steam>
+</item>

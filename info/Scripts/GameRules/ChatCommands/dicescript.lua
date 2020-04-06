@@ -1,0 +1,1 @@
+Script.LoadScript('Scripts/Entities/Items/ScriptDice.lua');

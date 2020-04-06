@@ -1,0 +1,38 @@
+<BodyDamage>
+	<!-- PART DEFINITIONS IN "BodyParts_crazy.xml" -->
+
+
+	<Multipliers>
+		<Multiplier part="head" value="3.0" valueMelee="2">
+			<ammo_12_gauge_pellet value="2.0"/>
+		</Multiplier>
+		<Multiplier part="torso"     value="1.0"/>
+		<Multiplier part="armRight"  value="0.5"/>
+		<Multiplier part="armLeft"   value="0.5"/>
+		<Multiplier part="legLeft"   value="0.5"/>
+		<Multiplier part="legRight"  value="0.5"/>
+		<Multiplier part="legLeftSmall"   value="0.5"/>
+		<Multiplier part="legRightSmall"  value="0.5"/>
+		<Multiplier part="footLeft"  value="0.2"/>
+		<Multiplier part="footRight" value="0.2"/>
+		<Multiplier part="footLeftSmall"  value="0.2"/>
+		<Multiplier part="footRightSmall" value="0.2"/>
+		<Multiplier part="handLeft"  value="0.2"/>
+		<Multiplier part="handRight" value="0.2"/>
+	</Multipliers>
+
+	<ImpulseFilters>
+		<ImpulseFilter part="armRight"  scale="0.0" passTo="HS_spine1" passOnScale="0.5"/>
+		<ImpulseFilter part="armLeft"   scale="0.0" passTo="HS_spine1" passOnScale="0.5"/>
+		<ImpulseFilter part="legLeft"   scale="0.0" passTo="HS_spine1" passOnScale="-0.5"/>
+		<ImpulseFilter part="legRight"  scale="0.0" passTo="HS_spine1" passOnScale="-0.5"/>
+		<ImpulseFilter part="legLeftSmall"   scale="0.0" passTo="HS_spine1" passOnScale="-0.5"/>
+		<ImpulseFilter part="legRightSmall"  scale="0.0" passTo="HS_spine1" passOnScale="-0.5"/>
+		<ImpulseFilter part="handLeft"  scale="0.0" passTo="HS_spine1" passOnScale="0.1"/>
+		<ImpulseFilter part="handRight" scale="0.0" passTo="HS_spine1" passOnScale="0.1"/>
+		<ImpulseFilter part="footLeft"  scale="0.0" passTo="HS_spine1" passOnScale="-0.1"/>
+		<ImpulseFilter part="footRight" scale="0.0" passTo="HS_spine1" passOnScale="-0.1"/>
+		<ImpulseFilter part="footLeftSmall"  scale="0.0" passTo="HS_spine1" passOnScale="-0.1"/>
+		<ImpulseFilter part="footRightSmall" scale="0.0" passTo="HS_spine1" passOnScale="-0.1"/>
+	</ImpulseFilters>
+</BodyDamage>

@@ -25,6 +25,7 @@
    <Override tags="m16+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="mk18+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="870_tactical+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="spas12+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="rem870+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="coltpython+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="peacemaker+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
@@ -33,6 +34,7 @@
    <Override tags="acaw+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="akm+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="ak74u+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="asval+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="bulldog+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="crafted_rifle+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="crafted_smg+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
@@ -60,6 +62,9 @@
    <Override tags="ump+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="wasteland22+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="model1873+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="mac10+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m97+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ak5d+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
   </select>
   <deselect scopes="Torso3P+Audio1"/>
   <idle scopes="Torso1P+Torso3P+Weapon+Audio1+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>

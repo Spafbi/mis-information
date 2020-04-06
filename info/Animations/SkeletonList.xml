@@ -4,11 +4,13 @@
  <Skeleton name="22rifle" file="objects/weapons/22rifle/22rifle.chr"/>
  <Skeleton name="alligator" file="objects/characters/animals/alligator/alligator.chr"/>
  <Skeleton name="armored_truck" file="objects/vehicles/armored_truck/armored_truck_army.cga"/>
+ <Skeleton name="ak5d" file="objects/weapons/ak5d/ak5d.chr"/>
  <Skeleton name="aa12" file="objects/weapons/aa12/aa12.chr"/>
  <Skeleton name="acaw" file="objects/weapons/acaw/acaw.chr"/>
  <Skeleton name="ak74u" file="objects/weapons/ak74u/ak74u.chr"/>
  <Skeleton name="akm" file="objects/weapons/akm/akm.chr"/>
  <Skeleton name="ap85" file="objects/weapons/ap85/ap85.chr"/>
+ <Skeleton name="asval" file="objects/weapons/asval/asval.chr"/>
  <Skeleton name="at15" file="objects/weapons/at15/at15.chr"/>
  <Skeleton name="bald_eagle" file="objects/characters/animals/birds/bald_eagle/bald_eagle.chr"/>
  <Skeleton name="bat" file="objects/characters/animals/bat/bat.chr"/>
@@ -53,8 +55,10 @@
  <Skeleton name="m40a5_fp" file="objects/weapons/m40/m40a5_fp.chr"/>
  <Skeleton name="m84_flashbang" file="objects/weapons/m84_flashbang/m84_flashbang.chr"/>
  <Skeleton name="m9a1" file="objects/weapons/m9a1/m9a1.chr"/>
+ <Skeleton name="m97" file="objects/weapons/m97/m97.chr"/>
  <Skeleton name="m40a5" file="objects/weapons/m40/m40a5.chr"/>
  <Skeleton name="makarov" file="objects/weapons/makarov/makarov.chr"/>
+ <Skeleton name="mac10" file="objects/weapons/mac10/mac10.chr"/>
  <Skeleton name="model1873" file="objects/weapons/Model1873/Model1873.chr"/>
  <Skeleton name="model_70" file="objects/weapons/model70/model_70.chr"/>
  <Skeleton name="mk18" file="objects/weapons/mk18/mk18.chr"/>
@@ -84,6 +88,7 @@
  <Skeleton name="skeleton_player_generic" file="objects/characters/human/generic/skeleton_player_generic.chr"/>
  <Skeleton name="small_plane" file="objects/props/misc/vehicles/small_plane/small_plane_promo.cga"/>
  <Skeleton name="snake" file="objects/characters/animals/snake/snake.chr"/>
+ <Skeleton name="spas12" file="objects/weapons/Spas12/spas12.chr"/>
  <Skeleton name="spider_wolf" file="objects/characters/animals/spider/spider_wolf.chr"/>
  <Skeleton name="spider_large" file="objects/characters/animals/spider_large/spider_large.chr"/>
  <Skeleton name="spiker" file="objects/characters/bandits/spiker/skeleton/skeleton.chr"/>

@@ -411,7 +411,7 @@
 
 	<!-- Hit type -->
 	<Policy name="hTyp" impl="RangedInt">
-		<Range min="0" max="63"/>
+		<Range min="0" max="127"/>
 	</Policy>
 
 	<!-- EI Adam: Not used -->

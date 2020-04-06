@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.6"/>
-		<param name="display_name" value="Heart Candle"/>
-		<param name="description" value="A heart shaped candle."/>
+		<param name="display_name" value="@heart_candle"/>
+		<param name="description" value="@heart_candleDescription"/>
 	</params>
 
 	<base_part class="static" type="301" name="heart_candle" max_health="600" limit="10" repair_with="AnimalFat">

@@ -1,0 +1,27 @@
+<skin name="ak5d_orange">
+ 
+    <params>
+        <param name="display_name" value="Ak5d Orange"/>
+        <param name="description" value="A Skin for Ak5d Orange"/>
+        <param name="material" value="Objects/weapons/ak5d/ak5d_orange.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AK5D"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ak5d_orange_200.png?crc=04CDE85C"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200160"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/ak5d_orange_2048.png?crc=04CDE85C"/>
+	</steam>
+</skin>

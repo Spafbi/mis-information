@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Garage Door Large"/>
-		<param name="description" value="A large metal garage door."/>
+		<param name="display_name" value="@garage_door_large"/>
+		<param name="description" value="@garage_door_largeDescription"/>
 		
 		<param name="place_restrict_snap" value="garage_snap"/>
 	</params>
@@ -55,6 +55,7 @@
 			<damage_multiplier damage_type="knife" multiplier="0.0"/>
 			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+			<damage_multiplier damage_type="sledgehammer" multiplier="3.34"/>
 		</damage_multipliers>
 	</base_part>
 
@@ -75,4 +76,18 @@
 		</locations>
 	</storage>
 
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/garage_door_large_200.png?crc=6E5BD976"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30385"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/garage_door_large_2048.png?crc=6E5BD976"/>
+	</steam>
 </item>

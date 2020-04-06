@@ -1,0 +1,27 @@
+<skin name="asval_painted_red">
+ 
+    <params>
+        <param name="display_name" value="Asval Painted Red"/>
+        <param name="description" value="A Weapon Skin for the Asval Painted Red"/>
+        <param name="material" value="Objects/weapons/asval/asval_painted_red.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKVal"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/asval_painted_red_200.png?crc=0C5838B3"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200201"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/asval_painted_red_2048.png?crc=0C5838B3"/>
+	</steam>
+</skin>

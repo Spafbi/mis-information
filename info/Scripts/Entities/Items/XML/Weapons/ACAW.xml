@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_7_62x51"/> <!-- Name of the hit type. This is used to set damage done to vehicles in vehicle XMLs -->
 				<param name="ammo_type" value="ammo_7_62x51"/> <!-- Type of bullet the weapon will fire -->
 				<param name="rate" value="24"/> <!-- Rate of fire for the weapon (bullets fired per minute) -->
-				<param name="damage" value="80"/>
+				<param name="damage" value="60"/>
 				<param name="bullet_chamber" value="1"/> <!-- Indicates whether the weapon has a bullet in the bullet chamber after reload (basically an extra bullet) -->
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="knocks_target" value="0"/>
@@ -215,6 +215,41 @@
 				<param name="proneScale" value="0.25"/>
 			</zoomSway>
 		</zoommode>
+		
+		<zoommode name="reflexsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="reflex"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_reflex"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.01"/>
+				<param name="maxY" value="0.005"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+
 
 		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
 			<zoomSway>
@@ -386,8 +421,43 @@
 			<attach helper="hunting_scope"/>
 			<detach/>
 		</accessory>
+		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<!-- BARREL RIGHT -->
+		<accessory name="FlashlightRifle" category="barrelright" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
+		<!-- BARREL END -->
+		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
 	</accessories>
-
+	
 	<storage>
 		<locations>
 			<location category="primary"/>
@@ -395,6 +465,8 @@
 		<types>
 			<type category="acaw_mag" capacity="1" visible="1"/>
 			<type category="scope_rifle" capacity="1" visible="1"/>
+			<type category="barrel_right" capacity="1" visible="1"/>
+			<type category="barrel_end" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

@@ -1,0 +1,38 @@
+<item name="piece_yellow" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="Yellow Game Piece"/>
+		<param name="description" value="A yellow game piece to play board game."/>
+	</params>
+
+	<base_part class="static" type="343" name="piece_yellow" max_health="200" repair_with="Lumber">
+		<static filename="objects/basebuilding/other/snl_board/piece_yellow.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/snl_board/piece_yellow.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/piece_yellow_200.png?crc=8B568649"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30373"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/piece_yellow_2048.png?crc=8B568649"/>
+	</steam>
+</item>

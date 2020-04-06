@@ -1,0 +1,13 @@
+<skin name="asval_camo_urban">
+ 
+    <params>
+        <param name="display_name" value="Asval Camo Urban"/>
+        <param name="description" value="A Skin for Asval Camo Urban"/>
+        <param name="material" value="Objects/weapons/asval/asval_camo_urban.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKVal"/>
+    </items>
+
+</skin>

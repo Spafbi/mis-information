@@ -37,7 +37,7 @@
 	</magazines>
 
 	<geometry>
-		<firstperson name="Objects/weapons/mk18/mk18.cdf"/>
+		<firstperson name="Objects/weapons/mk18/mk18_fp.cdf"/>
 		<thirdperson name="Objects/weapons/mk18/mk18.cdf"/>
 		<onground name="Objects/weapons/mk18/mk18_onground.cgf"/>
 	</geometry>
@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_5_56x45"/>
 				<param name="ammo_type" value="ammo_5_56x45"/>
 				<param name="rate" value="360"/>
-				<param name="damage" value="54"/>
+				<param name="damage" value="45"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -339,6 +339,25 @@
 			<attach helper="optic_scope"/>
 			<detach/>
 		</accessory>
+		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<!-- BARREL UNDER -->
+		<accessory name="M203" category="barrelunder" exclusive="1">
+			<attach helper="m203"/>
+			<detach/>
+			<show helper="m203"/>
+		</accessory>
+		<!-- BARREL BOTTOM -->
+		<accessory name="FlashlightMounted" category="barrelbottom" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
+		<accessory name="FlashlightPistol" category="barrelbottom" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
 		<!-- BARREL LEFT -->
 		<accessory name="LaserSight" category="barrelleft" exclusive="1">
 			<attach helper="laser_sight"/>
@@ -350,11 +369,6 @@
 		</accessory>
 		<accessory name="LaserSightBlue" category="barrelleft" exclusive="1">
 			<attach helper="laser_sight"/>
-			<detach/>
-		</accessory>
-		<!-- BARREL RIGHT -->
-		<accessory name="FlashlightRifle" category="barrelright" exclusive="1">
-			<attach helper="flashlight"/>
 			<detach/>
 		</accessory>
 		<!-- BARREL END -->
@@ -402,8 +416,9 @@
 			<type category="stanag_mag" capacity="1" visible="1"/>
 			<type category="scope_rifle" capacity="1" visible="1"/>
 			<type category="barrel_left" capacity="1" visible="1"/>
-			<type category="barrel_right" capacity="1" visible="1"/>
+			<type category="barrel_bottom" capacity="1" visible="1"/>
 			<type category="barrel_end" capacity="1" visible="1"/>
+			<type category="barrel_under" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

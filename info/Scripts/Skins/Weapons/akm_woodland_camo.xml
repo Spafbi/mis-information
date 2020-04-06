@@ -1,0 +1,13 @@
+<skin name="akm_woodland_camo">
+ 
+    <params>
+        <param name="display_name" value="Akm Woodland Camo"/>
+        <param name="description" value="A Weapon Skin for the Akm Woodland Camo"/>
+        <param name="material" value="Objects/weapons/akm/akm_woodland_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKM"/>
+    </items>
+
+</skin>

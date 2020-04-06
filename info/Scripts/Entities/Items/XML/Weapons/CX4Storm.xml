@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_acp_45"/>
 				<param name="ammo_type" value="ammo_acp_45"/>
 				<param name="rate" value="360"/>
-				<param name="damage" value="49"/>
+				<param name="damage" value="40"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -356,6 +356,41 @@
 				</zoommodes>
 			</params>
 		</accessory>
+		<!-- BARREL END -->
+		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+		<accessory name="CraftedSilencer" category="barrelend" exclusive="1" health_reduction_per_shot="49.0"> <!-- CraftedSilencer has 50 HP -->
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
 		<!-- SCOPES -->
 		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
@@ -367,6 +402,10 @@
 		</accessory>
 		<accessory name="OpticScope" zoommode="opticscope" category="scope" exclusive="1">
 			<attach helper="optic_scope"/>
+			<detach/>
+		</accessory>
+		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>
 		<!-- BARREL LEFT -->
@@ -382,6 +421,15 @@
 			<attach helper="laser_sight"/>
 			<detach/>
 		</accessory>
+		<!-- BARREL BOTTOM -->
+		<accessory name="FlashlightPistol" category="barrelbottom" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
+		<accessory name="FlashlightMounted" category="barrelbottom" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
 	</accessories>
 
 	<storage>
@@ -393,6 +441,8 @@
 			<type category="scope_rifle" capacity="1" visible="1"/>
 			<type category="barrel_left" capacity="1" visible="1"/>
 			<type category="barrel_under" capacity="1" visible="1"/>
+			<type category="barrel_bottom" capacity="1" visible="1"/>
+			<type category="barrel_end" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

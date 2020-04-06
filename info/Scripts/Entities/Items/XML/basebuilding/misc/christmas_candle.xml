@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.6"/>
 		<param name="stack_size" value="1"/>
-		<param name="display_name" value="Christmas Candle"/>
-		<param name="description" value="A set of four christmas themed candles."/>
+		<param name="display_name" value="@christmas_candle"/>
+		<param name="description" value="@christmas_candleDescription"/>
 	</params>
 
 	<base_part class="static" type="304" name="christmas_candle" max_health="600" repair_with="AnimalFat">

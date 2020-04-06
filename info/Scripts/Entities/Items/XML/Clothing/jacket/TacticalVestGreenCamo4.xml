@@ -19,10 +19,15 @@
 		<onground name="objects/characters/players/male/jacket/tactical_vest/tacticalvest_onground.cgf" material="objects/characters/players/male/jacket/tactical_vest/tactical_vest_green_camo4"/>
 	</geometry>
 
-	<protection level="0">
+	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
 		<environmental>
-			<protection_amount type="cold" percentage="3"/>
+			<protection_amount type="physical" percentage="2.0"/>
+			<protection_amount type="cold" percentage="5"/>
+			<protection_amount type="heat" percentage="2"/>
 		</environmental>
+		<protectBodyPart name="torso"> <!-- Use valid bodyparts defined in Libs/BodyDamage/BodyParts_*.xml -->
+			<protection_amount hit_type="default" percentage="25.0"/> <!-- Default damage reduction of 75% unless specified below -->
+		</protectBodyPart>
 	</protection>
 
 	<storage>

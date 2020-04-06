@@ -1,0 +1,27 @@
+<skin name="mp5_painted_green">
+ 
+    <params>
+        <param name="display_name" value="Mp5 Painted Green"/>
+        <param name="description" value="A weapon sking for the Mp5 Painted Green"/>
+        <param name="material" value="Objects/weapons/mp5/mp5_painted_green.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="MP5"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/mp5_painted_green_200.png?crc=51C2905F"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200299"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/mp5_painted_green_2048.png?crc=51C2905F"/>
+	</steam>
+</skin>

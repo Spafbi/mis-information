@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_9mm"/>
 				<param name="ammo_type" value="ammo_9mm"/>
 				<param name="rate" value="240"/>
-				<param name="damage" value="40"/>
+				<param name="damage" value="30"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -248,6 +248,10 @@
 		</accessory>
 		<!-- BARREL BOTTOM -->
 		<accessory name="FlashlightPistol" category="barrelbottom" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
+		<accessory name="FlashlightMounted" category="barrelbottom" exclusive="1">
 			<attach helper="flashlight"/>
 			<detach/>
 		</accessory>

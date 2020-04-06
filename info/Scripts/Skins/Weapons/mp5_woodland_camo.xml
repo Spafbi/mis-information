@@ -1,0 +1,13 @@
+<skin name="mp5_woodland_camo">
+ 
+    <params>
+        <param name="display_name" value="Mp5 Woodland Camo"/>
+        <param name="description" value="A weapon sking for the Mp5 Woodland Camo"/>
+        <param name="material" value="Objects/weapons/mp5/mp5_woodland_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="MP5"/>
+    </items>
+
+</skin>

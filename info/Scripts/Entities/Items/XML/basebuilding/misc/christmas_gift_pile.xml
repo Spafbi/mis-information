@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="2.0"/>
-		<param name="display_name" value="Christmas Gift Pile"/>
-		<param name="description" value="A pile of wrapped gift."/>
+		<param name="display_name" value="@christmas_gift_pile"/>
+		<param name="description" value="@christmas_gift_pileDescription"/>
 	</params>
 
 	<base_part class="static" type="296" name="christmas_gift_pile" max_health="1000" repair_with="DuctTape">

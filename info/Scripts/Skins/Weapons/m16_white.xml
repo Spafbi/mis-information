@@ -1,0 +1,27 @@
+<skin name="m16_white">
+ 
+    <params>
+        <param name="display_name" value="M16 White"/>
+        <param name="description" value="A skin for the M16 White"/>
+        <param name="material" value="Objects/weapons/m16/m16_white.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="M16"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/m16_white_200.png?crc=4460C659"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200242"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/m16_white_2048.png?crc=4460C659"/>
+	</steam>
+</skin>

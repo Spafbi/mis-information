@@ -8,10 +8,13 @@
 	</params>
 
 	<geometry>
-		<thirdperson name="objects/basebuilding/wood/wood_crate_big.cgf"/>
+		<thirdperson name="objects/basebuilding/wood/locked_crate_large.cgf"/>
 	</geometry>
 
 	<storage>
+		<params>
+			<param name="has_lock" value="1"/>
+		</params>
 		<types>
 			<type category="any" capacity="25"/>
 		</types>

@@ -1,0 +1,46 @@
+<item name="wood_wall_3m_4m_02" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="3x4 Wall 02"/>
+		<param name="description" value="A 3 meters high by 4 meters long wood wall."/>
+	</params>
+
+	<base_part class="static" type="350" name="wood_wall_3m_4m_02" repair_sound="Play_wall_repair">
+		<static filename="objects/basebuilding/wood_02/wood_wall_3m_4m_02.cgf"/>
+	</base_part>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.wall_destroyed"/>
+		<param name="effect_scale" value="1"/>
+	</explosion>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/wood_wall_3m_4m_02_200.png?crc=2D66D168"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30399"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/wood_wall_3m_4m_02_2048.png?crc=2D66D168"/>
+	</steam>
+</item>

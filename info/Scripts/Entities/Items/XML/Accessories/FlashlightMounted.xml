@@ -1,0 +1,57 @@
+<item name="FlashlightMounted" class="FlashlightAcc" category="any">
+	<params>
+		<param name="display_name" value="@FlashlightMounted"/>
+		<param name="description" value="@FlashlightMountedDescription"/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/weapons/attachments/flashlight/pistol_flashlight.cgf"/>
+		<!--<onground name="Objects/weapons/attachments/flashlight/pistol_flashlight_onground.cgf" /> This causes TP mesh to be invisible when attached to weapon! -->
+	</geometry>
+
+	<flashlight>
+		<param name="helper" value="light_term"/>
+		<param name="light_radius" value="35.0"/>
+		<param name="light_color" value="0.8,0.8,1.0"/>
+		<param name="light_diff_mul" value="3.0"/>
+		<param name="light_spec_mul" value="1"/>
+		<param name="light_hdr_dyn" value="0"/>
+		<param name="light_offset" value="0,0,0"/>
+		<param name="light_rotation" value="0,0,90"/>
+		<param name="light_style" value="0"/>
+		<param name="light_anim_speed" value="0.0"/>
+		<param name="light_cast_shadows" value="1"/>
+		<param name="light_bulb_size" value="4"/>
+		<param name="light_view_dist_ratio" value="100"/>
+		<param name="light_volumetric_fog" value="1"/>
+		<param name="light_material" value="materials/lights/lens_flares/generic/lens_optics"/>
+		<param name="light_project_fov" value="60.0"/>
+		<param name="light_project_texture" value="Textures/lights/flashlight_projector.tif"/>
+		<param name="lens_flare_name" value="miscreated.flashlight.flashlight_small"/>
+		<param name="lens_flare_fov" value="140"/>
+	</flashlight>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="barrel_bottom"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/FlashlightMounted_200.png?crc=4F4B91DA"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="2"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="20018"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:Weapon;Slot:Accessory"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/FlashlightMounted_2048.png?crc=4F4B91DA"/>
+	</steam>
+</item>

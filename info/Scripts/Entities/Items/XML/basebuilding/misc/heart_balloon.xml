@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Heart Balloon"/>
-		<param name="description" value="A trio of heart shaped balloons."/>
+		<param name="display_name" value="@heart_balloon"/>
+		<param name="description" value="@heart_balloonDescription"/>
 	</params>
 
 	<base_part class="static" type="308" name="heart_balloon" max_health="5000" repair_with="DuctTape">

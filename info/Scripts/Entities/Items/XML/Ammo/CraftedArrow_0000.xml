@@ -37,7 +37,7 @@
 
 	<!-- Standard Arrow -->
 	<params>
-		<param name="damage" value="48" />
+		<param name="damage" value="35" />
 		<param name="bleed_percent" value="33" />
 		<param name="fire_percent" value="0" />
 		<param name="poison_percent" value="0" />

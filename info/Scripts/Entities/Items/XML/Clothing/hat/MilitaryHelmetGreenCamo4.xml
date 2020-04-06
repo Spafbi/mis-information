@@ -29,16 +29,7 @@
             <protection_amount type="cold" percentage="2"/>
 		</environmental>
 		<protectBodyPart name="head">
-			<!-- SURVIVE 3+ HEADSHOTS -->
-			<protection_amount hit_type="blunt" percentage="75.0"/>
-			<protection_amount hit_type="melee" percentage="75.0"/>
-			<!-- SURVIVE 2 HEADSHOTS -->
-			<protection_amount hit_type="ammo_22" percentage="88.0"/> <!-- Takes down to 57/59% -->
-			<!-- SURVIVE 1 HEADSHOTS -->
-			<protection_amount hit_type="ammo_10mm" percentage="85.0"/> <!-- Takes down to 26% -->
-			<protection_amount hit_type="ammo_357" percentage="85.0"/> <!-- Takes down to 23% -->
-			<protection_amount hit_type="ammo_9mm" percentage="85.0"/> <!-- Takes down to 39% -->
-			<protection_amount hit_type="ammo_acp_45" percentage="85.0"/> <!-- Takes down to 28% -->
+			<protection_amount hit_type="default" percentage="55.0"/>
 		</protectBodyPart>
 	</protection>
 
