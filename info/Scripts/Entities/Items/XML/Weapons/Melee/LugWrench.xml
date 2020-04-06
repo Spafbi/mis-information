@@ -38,7 +38,7 @@
 				<param name="helper" value="collision"/>
 				<param name="hit_type" value="repair"/>
 				<param name="range" value="1.7"/>
-				<param name="damage" value="20"/><!-- heals vehicles for 40% of this, so 8 -->
+				<param name="damage" value="15"/><!-- heals vehicles for 40% of this, so 8 -->
 				<param name="impulse" value="10"/>
 				<param name="impulse_actor" value="30"/>
 				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->

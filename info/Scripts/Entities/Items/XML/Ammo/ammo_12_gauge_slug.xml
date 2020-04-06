@@ -42,7 +42,7 @@
 
 	<params>
 		<param name="hit_type" value="ammo_12_gauge_slug" />
-		<param name="damage" value="85.0" />
+		<param name="damage" value="60.0" />
 		<param name="torpidity" value="10.0" />
 		<param name="stamina" value="10.0" />
 		<param name="knocks_target" value="0"/>

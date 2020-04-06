@@ -1,0 +1,13 @@
+<skin name="mac10_desert_camo">
+ 
+    <params>
+        <param name="display_name" value="Mac10 Desert Camo"/>
+        <param name="description" value="A Skin for Mac10 Desert Camo"/>
+        <param name="material" value="Objects/weapons/mac10/mac10_desert_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="MAK10"/>
+    </items>
+
+</skin>

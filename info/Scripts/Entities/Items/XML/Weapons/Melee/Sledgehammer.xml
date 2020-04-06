@@ -1,0 +1,69 @@
+<item name="Sledgehammer" class="Weapon" category="primary" priority="1" weaponParams="1">
+	<params>
+		<param name="display_name" value="@Sledgehammer"/>
+		<param name="description" value="@SledgehammerDescription"/>
+		<param name="itemClass" value="1hmelee"/>
+		<param name="suffix" value="shoulder"/>
+		<param name="mass" value="12.0"/>
+		<param name="healthMax" value="100.0"/>
+		<param name="damage_scale" value="0.1"/>
+		<param name="bleed_percent" value="0"/>
+		<param name="select_delayed_grab_3P" value="1"/>
+		<param name="select_override" value="1"/> <!-- Delay after selecting to prevent insta-use -->
+		<param name="attach_to_back" value="1"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="0.05"/> <!-- Time delay to prevent player from firing after sprinting stopped -->
+		<param name="sprintToZoomDelay" value="0.1"/> <!-- Time delay to prevent player from zoom after sprinting stopped -->
+		<param name="runToSprintBlendTime" value="0.3"/>
+		<param name="sprintToRunBlendTime" value="0.15"/>
+		<param name="relaxedToTacticalBlendTime" value="0.45"/>
+		<param name="tag" value="sledgehammer"/>
+		<animPrecache name="axe">
+			<precache DBAFile="animations/human/male/weapons/axe/axe.dba" thirdperson="1"/>
+		</animPrecache>
+		<aimAnims/>
+	</params>
+
+	<MovementModifiers speedScaleTactical="0.65" speedScale="0.9" rotationScale="0.9" firingSpeedScale="0.65"/>
+
+	<geometry>
+		<thirdperson name="objects/weapons/sledgehammer/sledgehammer.cgf"/>
+		<onground name="objects/weapons/sledgehammer/sledgehammer_onground.cgf"/>
+	</geometry>
+
+	<firemodes>
+		<firemode name="melee" type="Melee">
+			<melee>
+				<param name="helper" value="collision"/>
+				<param name="hit_type" value="sledgehammer"/>
+				<param name="range" value="2.0"/>
+				<param name="damage" value="60"/>
+				<param name="impulse" value="15"/>
+				<param name="impulse_actor" value="40"/>
+				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->
+				<param name="impulse_vehicle" value="50"/>
+				<param name="delay" value="0.7"/>
+				<param name="aiDelay" value="0.05"/>
+				<param name="duration" value="2.0"/>
+				<param name="knockdown_chance" value="0.0"/>  <!-- 0 to 100 -->
+				<param name="impulse_up_percentage" value="0.0"/>
+				<param name="use_melee_weapon_delay" value="-1.0"/> <!-- use the hardcoded delay above -->
+				<param name="weapon_restore_delay" value="0.0"/>
+				<param name="trigger_client_reaction" value="1"/> <!-- causes the tag "meleeReaction" from the weapon to be played on the target -->
+				<param name="sound_radius" value="15"/>
+			</melee>
+			<SurfaceBehaviors> <!-- allows the melee weapon to harvest resources -->
+				<param name="default" deteriorationFactor="0.66"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+				<param name="mat_metal_harvest" harvestFactor="1.00" deteriorationFactor="0.3"/>
+			</SurfaceBehaviors>
+		</firemode>
+	</firemodes>
+
+	<storage>
+		<locations>
+			<location category="primary"/>
+		</locations>
+	</storage>
+
+</item>

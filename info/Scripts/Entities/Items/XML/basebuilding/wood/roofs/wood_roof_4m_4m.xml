@@ -10,7 +10,7 @@
 		<param name="place_roof" value="1"/>
 	</params>
 
-	<base_part class="static" type="170" name="wood_roof_4m_4m" >
+	<base_part class="static" type="170" name="wood_roof_4m_4m">
 		<static filename="objects/basebuilding/wood/wood_roof_4m_4m.cgf"/>
 	</base_part>
 

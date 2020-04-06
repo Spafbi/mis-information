@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="2.0"/>
-		<param name="display_name" value="Christmas Snowglobe"/>
-		<param name="description" value="A Christmas themed snowglobe."/>
+		<param name="display_name" value="@christmas_snowglobe"/>
+		<param name="description" value="@christmas_snowglobeDescription"/>
 	</params>
 
 	<base_part class="static" type="297" name="christmas_snowglobe" max_health="1000" repair_with="DuctTape">

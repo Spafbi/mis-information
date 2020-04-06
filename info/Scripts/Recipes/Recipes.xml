@@ -1189,6 +1189,13 @@
 											<material class="ScrapMetal" />
 										</materials>
 									</item>
+									<item class="wall_lantern" time="5">
+										<materials>
+											<material class="camping_lantern" />
+											<material class="SheetMetal" count="2" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
 									<item class="candle_animal_fat_small" time="4">
 										<materials>
 											<material class="AnimalFat" count="2"/>
@@ -1327,6 +1334,81 @@
 									</item>
 								</items>
 							</type>
+							
+							<type name="Games">
+								<items>
+									<item class="tictactoe_board" time="5">
+										<materials>
+											<material class="Lumber" count="4" />
+										</materials>
+									</item>
+									<item class="snl_board" time="5">
+										<materials>
+											<material class="Lumber" count="4" />
+										</materials>
+									</item>
+									<item class="ninemens_board" time="5">
+										<materials>
+											<material class="Lumber" count="4" />
+										</materials>
+									</item>
+									<item class="o_piece" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="x_piece" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="token_white" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="token_black" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_red" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_blue" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_green" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_yellow" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_purple" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="piece_orange" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+									<item class="ScriptDice" time="1">
+										<materials>
+											<material class="Lumber" count="1" />
+										</materials>
+									</item>
+								</items>
+							</type>
 
 							<type name="Furniture">
 								<items>
@@ -1345,7 +1427,48 @@
 									<item class="wood_table" time="3">
 										<materials>
 											<material class="WoodPile" count="2" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
+									<item class="wood_shelf_1m" time="3">
+										<materials>
+											<material class="ScrapMetal" count="1" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
+									<item class="wood_shelf_2m" time="3">
+										<materials>
+											<material class="ScrapMetal" count="1" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
+									<item class="wood_shelf_3m" time="3">
+										<materials>
+											<material class="ScrapMetal" count="1" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
+									<item class="wood_shelf_modern" time="3">
+										<materials>
+											<material class="Lumber" count="4" />
+										</materials>
+									</item>
+									<item class="wood_stool" time="3">
+										<materials>
+											<material class="WoodPile" />
 											<material class="Lumber" />
+										</materials>
+									</item>
+									<item class="wood_bench" time="3">
+										<materials>
+											<material class="WoodPile" count="2" />
+											<material class="Lumber" count="2" />
+										</materials>
+									</item>
+									<item class="wood_table_02" time="3">
+										<materials>
+											<material class="WoodPile" count="2" />
+											<material class="Lumber" count="2" />
 										</materials>
 									</item>
 									<item class="wood_coffeetable" time="3">
@@ -1449,6 +1572,12 @@
 											<material class="ScrapMetal" count="2" />
 										</materials>
 									</item>
+									<item class="wood_door_lockable_02" time="5">
+										<materials>
+											<material class="Lumber" count="3" />
+											<material class="ScrapMetal" count="2" />
+										</materials>
+									</item>
 									<item class="garage_door_large" time="5">
 										<materials>
 											<material class="SheetMetal" count="10" />
@@ -1463,6 +1592,12 @@
 										</materials>
 									</item> -->
 									<item class="wood_shutter_small_lockable" time="4">
+										<materials>
+											<material class="Lumber" count="2" />
+											<material class="ScrapMetal" />
+										</materials>
+									</item>
+									<item class="wood_shutter_lockable_02" time="4">
 										<materials>
 											<material class="Lumber" count="2" />
 											<material class="ScrapMetal" />
@@ -1787,6 +1922,11 @@
 											<material class="Lumber" count="4" />
 										</materials>
 									</item>
+									<item class="wood_stairs_3m_4m_4m_02" time="5">
+										<materials>
+											<material class="Lumber" count="10" />
+										</materials>
+									</item>
 								</items>
 							</type>
 
@@ -1829,6 +1969,11 @@
 											<material class="Lumber" count="9" />
 										</materials>
 									</item>
+									<item class="wood_walkway_3m_4m_4m_02" time="5">
+										<materials>
+											<material class="Lumber" count="9" />
+										</materials>
+									</item>
 								</items>
 							</type>
 
@@ -1840,6 +1985,21 @@
 										</materials>
 									</item>
 									<item class="wood_wall_3m_4m" time="5">
+										<materials>
+											<material class="Lumber" count="12" />
+										</materials>
+									</item>
+									<item class="wood_wall_3m_4m_02" time="5">
+										<materials>
+											<material class="Lumber" count="12" />
+										</materials>
+									</item>
+									<item class="wood_wall_door_3m_4m_02" time="5">
+										<materials>
+											<material class="Lumber" count="12" />
+										</materials>
+									</item>
+									<item class="wood_wall_window_3m_4m_02" time="5">
 										<materials>
 											<material class="Lumber" count="12" />
 										</materials>

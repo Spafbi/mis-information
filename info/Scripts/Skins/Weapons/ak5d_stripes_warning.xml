@@ -1,0 +1,13 @@
+<skin name="ak5d_stripes_warning">
+ 
+    <params>
+        <param name="display_name" value="Ak5d Stripes Warning"/>
+        <param name="description" value="A Weapon Skin for the Ak5d Stripes Warning"/>
+        <param name="material" value="Objects/weapons/ak5d/ak5d_stripes_warning.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AK5D"/>
+    </items>
+
+</skin>

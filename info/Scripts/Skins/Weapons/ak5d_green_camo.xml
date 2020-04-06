@@ -1,0 +1,13 @@
+<skin name="ak5d_green_camo">
+ 
+    <params>
+        <param name="display_name" value="Ak5d Green Camo"/>
+        <param name="description" value="A Skin for Ak5d Green Camo"/>
+        <param name="material" value="Objects/weapons/ak5d/ak5d_green_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AK5D"/>
+    </items>
+
+</skin>

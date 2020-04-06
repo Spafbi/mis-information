@@ -304,6 +304,11 @@
 				</firemodes>
 			</params>
 		</accessory>
+		<!-- BARREL RIGHT -->
+		<accessory name="FlashlightRifle" category="barrelright" exclusive="1">
+			<attach helper="flashlight"/>
+			<detach/>
+		</accessory>
 	</accessories>
 
 	<storage>
@@ -312,6 +317,7 @@
 		</locations>
 		<types>
 			<type category="12gauge_mag" capacity="1"/>
+			<type category="barrel_right" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

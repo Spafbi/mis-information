@@ -2,7 +2,7 @@
 	<!-- PART DEFINITIONS IN "BodyParts_Ram.xml" -->
 
 	<Multipliers>
-		<Multiplier part="head"      value="10.0" valueMelee="2">
+		<Multiplier part="head" value="3.0" valueMelee="2">
 			<ammo_12_gauge_pellet value="2.0"/>
 		</Multiplier>
 		<Multiplier part="torso" value="1.0"/>

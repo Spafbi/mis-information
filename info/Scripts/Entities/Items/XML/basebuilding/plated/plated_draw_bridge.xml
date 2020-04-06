@@ -55,6 +55,7 @@
 			<damage_multiplier damage_type="knife" multiplier="0.0"/>
 			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+			<damage_multiplier damage_type="sledgehammer" multiplier="3.34"/>
 		</damage_multipliers>
 	</base_part>
 	

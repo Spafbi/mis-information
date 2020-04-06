@@ -1,0 +1,29 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/PlayerControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Player" enabled="1" database="Animations/Mannequin/ADB/PlayerAnims1P.adb" context="Char1P" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Audio" enabled="1" database="Animations/Mannequin/ADB/playerSounds.adb" context="Audio"/>
+  <contextData name="NoWeapon" enabled="1" context="Weapon" tags="NoWeapon"/>
+  <contextData name="m40a5" database="Animations/Mannequin/ADB/m40a5WeaponAnims.adb" context="Weapon" tags="m40a5" model="objects/weapons/m40/m40a5.cdf" attachment="weapon"/>
+  <contextData name="at15" database="Animations/Mannequin/ADB/at15WeaponAnims.adb" context="Weapon" tags="at15" model="objects/weapons/at15/at15.cdf" attachment="weapon"/>
+  <contextData name="m16" database="Animations/Mannequin/ADB/m16WeaponAnims.adb" context="Weapon" tags="m16" model="objects/weapons/m16/m16.cdf" attachment="weapon"/>
+  <contextData name="mk18" database="Animations/Mannequin/ADB/mk18WeaponAnims.adb" context="Weapon" tags="mk18" model="objects/weapons/mk18/mk18.cdf" attachment="weapon"/>
+  <contextData name="rem700" database="Animations/Mannequin/ADB/rem700WeaponAnims.adb" context="Weapon" tags="rem700" model="objects/weapons/rem700/remington700.cdf" attachment="weapon"/>
+  <contextData name="sako_85" database="Animations/Mannequin/ADB/sako_85WeaponAnims.adb" context="Weapon" tags="sako_85" model="objects/weapons/huntingrifle_85/sako_85.cdf" attachment="weapon"/>
+  <contextData name="model70" database="Animations/Mannequin/ADB/model70WeaponAnims.adb" context="Weapon" tags="model70" model="objects/weapons/model70/model_70.cdf" attachment="weapon"/>
+  <contextData name="p90" database="Animations/Mannequin/ADB/p90WeaponAnims.adb" context="Weapon" tags="p90" model="objects/weapons/p90/r90.cdf" attachment="weapon"/>
+  <contextData name="ump" database="Animations/Mannequin/ADB/umpWeaponAnims.adb" context="Weapon" tags="ump" model="objects/weapons/ump/ump.cdf" attachment="weapon"/>
+  <contextData name="storm" database="Animations/Mannequin/ADB/stormWeaponAnims.adb" context="Weapon" tags="storm" model="objects/weapons/storm/storm_carbine.cdf" attachment="weapon"/>
+  <contextData name="acaw" database="Animations/Mannequin/ADB/acawWeaponAnims.adb" context="Weapon" tags="acaw" model="objects/weapons/acaw/acaw.cdf" attachment="weapon"/>
+  <contextData name="kriss_v" database="Animations/Mannequin/ADB/kriss_vWeaponAnims.adb" context="Weapon" tags="kriss_v" model="objects/weapons/kriss_v/kriss_v.cdf" attachment="weapon"/>
+  <contextData name="crossbow" database="Animations/Mannequin/ADB/crossbowWeaponAnims.adb" context="Weapon" tags="crossbow" model="objects/weapons/crossbow/crossbow.cdf" attachment="weapon"/>
+  <contextData name="ak5d" database="Animations/Mannequin/ADB/ak5dWeaponAnims.adb" context="Weapon" tags="ak5d" model="objects/weapons/ak5d/ak5d.cdf" attachment="weapon"/>
+  <contextData name="akm" database="Animations/Mannequin/ADB/akmWeaponAnims.adb" context="Weapon" tags="akm" model="objects/weapons/akm/akm.cdf" attachment="weapon"/>
+  <contextData name="mp5" database="Animations/Mannequin/ADB/mp5WeaponAnims.adb" context="Weapon" tags="mp5" model="objects/weapons/mp5/mp5.cdf" attachment="weapon"/>
+  <contextData name="ak74u" database="Animations/Mannequin/ADB/ak74uWeaponAnims.adb" context="Weapon" tags="ak74u" model="objects/weapons/ak74u/ak74u.cdf" attachment="weapon"/>
+  <contextData name="asval" database="Animations/Mannequin/ADB/asvalWeaponAnims.adb" context="Weapon" tags="asval" model="objects/weapons/asval/asval.cdf" attachment="weapon"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="idlePose"/>
+ </History>
+</MannequinPreview>

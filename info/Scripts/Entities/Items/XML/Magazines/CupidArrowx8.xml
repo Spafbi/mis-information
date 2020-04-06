@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.0"/>
-		<param name="display_name" value="Cupid Arrow"/>
-		<param name="description" value="A bundle of arrows, with a heart shaped tip."/>
+		<param name="display_name" value="@CupidArrowx8"/>
+		<param name="description" value="@CupidArrowx8Description"/>
 		<param name="is_ammo_pile" value="1"/>
 		<param name="hide_as_attachment" value="1"/>
 		<param name="tag" value="CupidArrow"/>

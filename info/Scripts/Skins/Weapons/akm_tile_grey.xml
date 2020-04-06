@@ -1,0 +1,13 @@
+<skin name="akm_tile_grey">
+ 
+    <params>
+        <param name="display_name" value="Akm Tile Grey"/>
+        <param name="description" value="A Weapon Skin for the Akm Tile Grey"/>
+        <param name="material" value="Objects/weapons/akm/akm_tile_grey.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKM"/>
+    </items>
+
+</skin>

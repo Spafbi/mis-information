@@ -28,7 +28,7 @@
 
 	<!-- Poison & Radiation Arrow -->
 	<params>
-		<param name="damage" value="48" />
+		<param name="damage" value="40" />
 		<param name="torpidity" value="30" />
 		<param name="stamina" value="20" />
 		<param name="bleed_percent" value="33" />

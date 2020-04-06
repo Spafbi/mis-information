@@ -20,7 +20,7 @@
 		</base_parts>
 		<base_actions>
 			<base_action class="toggle_light">
-				<toggle_light sound_on="" sound_off=""/>
+				<toggle_light sound_on="Play_pickup_ammo_3p" sound_off="Play_pickup_ammo_3p"/>
 			</base_action>
 		</base_actions>
 	</base_part>

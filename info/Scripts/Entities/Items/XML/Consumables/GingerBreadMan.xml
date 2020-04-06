@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.2"/>
 		<param name="stack_size" value="5"/>		
-		<param name="display_name" value="Ginger Bread Cookie"/>
-		<param name="description" value="A christmas themed gingerbread cookie."/>
+		<param name="display_name" value="@GingerBreadMan"/>
+		<param name="description" value="@GingerBreadManDescription"/>
 	</params>
 
 	<geometry>

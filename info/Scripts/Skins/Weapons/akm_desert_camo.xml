@@ -1,0 +1,13 @@
+<skin name="akm_desert_camo">
+ 
+    <params>
+        <param name="display_name" value="Akm Desert Camo"/>
+        <param name="description" value="A Weapon Skin for the Akm Desert Camo"/>
+        <param name="material" value="Objects/weapons/akm/akm_desert_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKM"/>
+    </items>
+
+</skin>

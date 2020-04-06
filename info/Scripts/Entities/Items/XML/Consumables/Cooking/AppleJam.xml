@@ -1,0 +1,28 @@
+<item name="AppleJam" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.2"/>
+		<param name="display_name" value="@AppleJam"/>
+		<param name="description" value="@AppleJamDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/default/primitive_cube.cgf"/>
+	</geometry>
+
+	<consumable>
+	    <param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="100"/> <!-- Calories -->
+		<param name="drinkAmount" value="100"/>
+		<param name="staminaAmount" value="100"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

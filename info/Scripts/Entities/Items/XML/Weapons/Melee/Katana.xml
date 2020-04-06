@@ -38,7 +38,7 @@
 				<param name="helper" value="collision"/>
 				<param name="hit_type" value="hatchet"/>
 				<param name="range" value="2.0"/>
-				<param name="damage" value="49"/>
+				<param name="damage" value="38"/>
 				<param name="impulse" value="15"/>
 				<param name="impulse_actor" value="40"/>
 				<param name="impulse_ai_to_player" value="0"/> <!-- < -1 uses impulse actor instead -->

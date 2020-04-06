@@ -1,0 +1,54 @@
+<item name="wall_lantern" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.8"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="Wall Lantern"/>
+		<param name="description" value="A camping lantern that you can hang on your wall."/>
+		
+		<param name="place_restrict_snap" value="sticky"/>
+	</params>
+
+	<base_part class="static" type="330" name="wall_lantern" max_health="1000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/other/wall_lantern/wall_lantern.cgf"/>
+		<base_parts>
+			<base_part class="light">
+				<light helper="light" light_bulb_size="0.05" light_radius="20" light_color="2,0.75,0.25" light_diff_mul="2" light_spec_mul="1" light_hdr_dyn="0" light_offset="0,0,0" light_style="0" light_anim_speed="0" light_cast_shadows="0" light_view_dist_ratio="20" light_material="materials/lights/lens_flares/generic/lens_optics" lens_flare_name="miscreated.bpart.camping_lantern" lens_flare_fov="360"/>
+				<envareas>
+					<envarea enabled="0" scaleEffectsFromCenter="1" bb1="-2,-2,-1.5" bb2="2,2,2" temperature="5" humidity="-0.05" light="0.6"/>
+				</envareas>
+			</base_part>
+		</base_parts>
+		<base_actions>
+			<base_action class="toggle_light">
+				<toggle_light sound_on="Play_pickup_ammo_3p" sound_off="Play_pickup_ammo_3p"/>
+			</base_action>
+		</base_actions>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="objects/basebuilding/other/camping_lantern/camping_lantern.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/wall_lantern_200.png?crc=A7FA3B82"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30379"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/wall_lantern_2048.png?crc=A7FA3B82"/>
+	</steam>
+</item>

@@ -1,0 +1,13 @@
+<skin name="m16_desert_camo">
+ 
+    <params>
+        <param name="display_name" value="M16 Desert Camo"/>
+        <param name="description" value="A skin for the M16 Desert Camo"/>
+        <param name="material" value="Objects/weapons/m16/m16_desert_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="M16"/>
+    </items>
+
+</skin>

@@ -38,4 +38,5 @@
 	<hit_type name="knife" flags="IsMeleeAttack"/>
 	<hit_type name="pickaxe" flags="IsMeleeAttack"/>
 	<hit_type name="torch" flags="IsMeleeAttack"/>
+	<hit_type name="sledgehammer" flags="IsMeleeAttack"/>
 </HitTypes>

@@ -1,0 +1,13 @@
+<skin name="spas12_desert_camo">
+ 
+    <params>
+        <param name="display_name" value="Spas12 Desert Camo"/>
+        <param name="description" value="A Skin for Spas12 Desert Camo"/>
+        <param name="material" value="Objects/weapons/Spas12/spas12_desert_camo.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="SAS12"/>
+    </items>
+
+</skin>

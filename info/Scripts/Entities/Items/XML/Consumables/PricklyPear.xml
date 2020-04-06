@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.2"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Prickly Pear"/>
-		<param name="description" value="A fruit found on a cactus."/>
+		<param name="display_name" value="@PricklyPear"/>
+		<param name="description" value="@PricklyPearDescription"/>
 	</params>
 
 	<geometry>

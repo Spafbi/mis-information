@@ -5,7 +5,7 @@
 		<param name="selectable" value="0"/>
 		<param name="auto_wear" value="1"/>
 		<param name="mass" value="1"/>
-		<param name="healthMax" value="200.0"/>
+		<param name="healthMax" value="150.0"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@SwatHelmet"/>
@@ -19,25 +19,18 @@
 	<geometry>
 		<onground name="objects/characters/players/generic/hat/swat_helmet/swathelmet_onground.cgf" material="objects/characters/players/generic/hat/swat_helmet/swat_helmet.mtl"/>
 	</geometry>
-	<protection level="3"> <!-- Only used for the UI tool tip protection amount -->
+	
+	<protection level="2"> <!-- Only used for the UI tool tip protection amount -->
 		<environmental>
 			<protection_amount type="explosion" percentage="4.0"/>
 			<protection_amount type="rain_acid" percentage="4"/>
             <protection_amount type="cold" percentage="2"/>
 		</environmental>
 		<protectBodyPart name="head">
-			<!-- SURVIVE 3+ HEADSHOTS -->
-			<protection_amount hit_type="blunt" percentage="75.0"/>
-			<protection_amount hit_type="melee" percentage="75.0"/>
-			<!-- SURVIVE 2 HEADSHOTS -->
-			<protection_amount hit_type="ammo_22" percentage="88.0"/> <!-- Takes down to 57/59% -->
-			<!-- SURVIVE 1 HEADSHOTS -->
-			<protection_amount hit_type="ammo_10mm" percentage="85.0"/> <!-- Takes down to 26% -->
-			<protection_amount hit_type="ammo_357" percentage="85.0"/> <!-- Takes down to 23% -->
-			<protection_amount hit_type="ammo_9mm" percentage="85.0"/> <!-- Takes down to 39% -->
-			<protection_amount hit_type="ammo_acp_45" percentage="85.0"/> <!-- Takes down to 28% -->
+			<protection_amount hit_type="default" percentage="35.0"/>
 		</protectBodyPart>
 	</protection>
+	
 	<explosion> <!-- Only used to show PFX on destroy -->
 		<param name="damage" value="0"/>
 		<param name="pressure" value="0"/>
@@ -52,6 +45,7 @@
 		<param name="radial_blur_dist" value="0"/>
 		<param name="hit_type" value="frag"/>
 	</explosion>
+	
 	<storage>
 		<locations>
 			<location category="any"/>

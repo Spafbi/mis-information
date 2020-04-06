@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Christmas Rug"/>
-		<param name="description" value="A christmas themed rug."/>
+		<param name="display_name" value="@christmas_rug_03"/>
+		<param name="description" value="@christmas_rug_03Description"/>
 	</params>
 
 	<base_part class="static" type="295" name="christmas_rug_03" max_health="200" repair_with="Rags">

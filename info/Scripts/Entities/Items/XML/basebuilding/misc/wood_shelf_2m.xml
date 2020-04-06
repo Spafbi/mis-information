@@ -1,0 +1,41 @@
+<item name="wood_shelf_2m" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="stack_size" value="5"/>
+		<param name="display_name" value="Wood shelf 2m"/>
+		<param name="description" value="A 2 meters long wood shelf."/>
+		
+		<param name="place_restrict_snap" value="sticky"/>
+	</params>
+
+	<base_part class="static" type="310" name="wood_shelf_2m" max_health="1000" repair_with="lumber">
+		<static filename="objects/basebuilding/other/wood_shelf/wood_shelf_2m.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+	<steam>
+		<param name="tags" value="Category:BaseBuilding"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/wood_shelf_2m_200.png?crc=B11FB2A4"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="1"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FF001E"/>
+		<param name="itemdefid" value="30381"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:BaseBuilding"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/wood_shelf_2m_2048.png?crc=B11FB2A4"/>
+	</steam>
+</item>

@@ -1,0 +1,27 @@
+<skin name="akm_zebra_green">
+ 
+    <params>
+        <param name="display_name" value="Akm Zebra Green"/>
+        <param name="description" value="A Weapon Skin for the Akm Zebra Green"/>
+        <param name="material" value="Objects/weapons/akm/akm_zebra_green.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="AKM"/>
+    </items>
+
+	<steam>
+		<param name="tags" value="Category:Skin"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/akm_zebra_green_200.png?crc=3B46C23D"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="0"/>
+		<param name="tradable" value="1"/>
+		<param name="name_color" value="FFFFFF"/>
+		<param name="itemdefid" value="200190"/>
+		<param name="marketable" value="1"/>
+		<param name="store_tags" value="Category:Skin"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/akm_zebra_green_2048.png?crc=3B46C23D"/>
+	</steam>
+</skin>

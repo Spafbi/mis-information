@@ -33,20 +33,10 @@
 			<protection_amount type="ray_radiation" percentage="50"/>
 		</environmental>
 		<protectBodyPart name="head">
-			<!-- SURVIVE 3+ HEADSHOTS -->
-			<protection_amount hit_type="blunt" percentage="75.0"/>
-			<protection_amount hit_type="melee" percentage="75.0"/>
-			<!-- SURVIVE 2 HEADSHOTS -->
-			<protection_amount hit_type="ammo_22" percentage="88.0"/> <!-- Takes down to 57/59% -->
-			<!-- SURVIVE 1 HEADSHOTS -->
-			<protection_amount hit_type="ammo_10mm" percentage="85.0"/> <!-- Takes down to 26% -->
-			<protection_amount hit_type="ammo_357" percentage="85.0"/> <!-- Takes down to 23% -->
-			<protection_amount hit_type="ammo_9mm" percentage="85.0"/> <!-- Takes down to 39% -->
-			<protection_amount hit_type="ammo_acp_45" percentage="85.0"/> <!-- Takes down to 28% -->
-			<protection_amount hit_type="ammo_5_56x45" percentage="85.0"/> 
-			<protection_amount hit_type="ammo_7_62x39" percentage="75.0"/>
-			<protection_amount hit_type="ammo_308" percentage="75.0"/>
-			<protection_amount hit_type="ammo_223" percentage="75.0"/>
+		    <protection_amount hit_type="default" percentage="65.0"/>
+			<!-- PROTECT AGAINST MELEE -->
+			<protection_amount hit_type="blunt" percentage="80.0"/>
+			<protection_amount hit_type="melee" percentage="80.0"/>	
 		</protectBodyPart>
 	</protection>
 

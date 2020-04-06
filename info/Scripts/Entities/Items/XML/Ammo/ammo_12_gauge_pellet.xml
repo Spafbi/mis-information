@@ -38,7 +38,7 @@
 
 	<params>
 		<param name="hit_type" value="ammo_12_gauge_pellet" />
-		<param name="damage" value="20.0" />
+		<param name="damage" value="20.0" /> <!-- Per pellets damage. x6 pellets -->
 		<param name="torpidity" value="5.0" />
 		<param name="stamina" value="5.0" />
 		<param name="knocks_target" value="0"/>

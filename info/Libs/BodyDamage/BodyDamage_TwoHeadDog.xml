@@ -1,0 +1,22 @@
+<BodyDamage>
+	<!-- PART DEFINITIONS IN "BodyParts_TwoHeadDog.xml" -->
+
+	<Multipliers>
+		<Multiplier part="head" value="3.0" valueMelee="2">
+			<ammo_12_gauge_pellet value="2.0"/>
+		</Multiplier>
+		<Multiplier part="torso" value="1.0"/>
+		<Multiplier part="frontLeftLeg" value="0.75"/>
+		<Multiplier part="frontRightLeg" value="0.75"/>
+		<Multiplier part="backLeftLeg" value="0.75"/>
+		<Multiplier part="backRightLeg" value="0.75"/>
+	</Multipliers>
+
+	<ImpulseFilters>
+		<ImpulseFilter part="frontLeftLeg" scale = "0.0" passTo="Def_Spine02_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="frontRightLeg" scale = "0.0" passTo="Def_Spine02_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="backLeftLeg" scale="0.0" passTo="Def_Spine02_jnt" passOnScale="0.5"/>
+		<ImpulseFilter part="backRightLeg" scale="0.0" passTo="Def_Spine02_jnt" passOnScale="0.5"/>
+  </ImpulseFilters>
+
+</BodyDamage>

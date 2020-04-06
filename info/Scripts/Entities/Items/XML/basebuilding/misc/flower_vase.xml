@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Flower Vase"/>
-		<param name="description" value="A vase filled up with a dozen of roses."/>
+		<param name="display_name" value="@flower_vase"/>
+		<param name="description" value="@flower_vaseDescription"/>
 	</params>
 
 	<base_part class="static" type="307" name="flower_vase" max_health="5000" repair_with="DuctTape">

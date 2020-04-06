@@ -29,10 +29,8 @@
 		<protectBodyPart name="torso"> <!-- Use valid bodyparts defined in Libs/BodyDamage/BodyParts_*.xml -->
 			<protection_amount hit_type="default" percentage="25.0"/> <!-- Default damage reduction of 75% unless specified below -->
 			<!-- PROTECT AGAINST MELEE -->
-			<protection_amount hit_type="blunt" percentage="75.0"/>
-			<protection_amount hit_type="melee" percentage="75.0"/>
-			<!-- SURVIVE 1 HEADSHOT -->
-			<protection_amount hit_type="ammo_22" percentage="75.0"/> <!-- Takes down to 10/16% -->
+			<protection_amount hit_type="blunt" percentage="50.0"/>
+			<protection_amount hit_type="melee" percentage="50.0"/>
 		</protectBodyPart>
 	</protection>
 

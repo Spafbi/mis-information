@@ -86,6 +86,12 @@
    <Tag name="pipewrench"/>
    <Tag name="model1873"/>
    <Tag name="peacemaker"/>
+   <Tag name="sledgehammer"/>
+   <Tag name="asval"/>
+   <Tag name="spas12"/>
+   <Tag name="mac10"/>
+   <Tag name="m97"/>
+   <Tag name="ak5d"/>
   </Group>
   <Group name="weaponType">
    <Tag name="nw"/>
@@ -157,6 +163,10 @@
    <Tag name="9mmx19_ap85"/>
    <Tag name="acp_45x10_px4"/>
    <Tag name="acp_45x30"/>
+   <Tag name="762x20_Akval"/>
+   <Tag name="9x19_mac10"/>
+   <Tag name="Pile_40mmGrenade"/>
+   <Tag name="556x30_ak5d"/>
   </Group>
   <Group name="playMode">
    <Tag name="MP"/>

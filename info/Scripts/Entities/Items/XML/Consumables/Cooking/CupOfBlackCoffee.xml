@@ -1,0 +1,27 @@
+<item name="CupOfBlackCoffee" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.2"/>
+		<param name="display_name" value="@CupOfBlackCoffee"/>
+		<param name="description" value="@CupOfBlackCoffeeDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/coffee/cup_of_coffee.cgf"/>
+	</geometry>
+
+	<consumable>
+		<param name="foodAmount" value="10"/> <!-- Calories -->
+		<param name="drinkAmount" value="75"/>
+		<param name="staminaAmount" value="-85"/>
+		<param name="soundConsumed" value="Play_container_drink"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

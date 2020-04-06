@@ -1,0 +1,13 @@
+<skin name="mac10_stripes_yellow">
+ 
+    <params>
+        <param name="display_name" value="Mac10 Stripes Yellow"/>
+        <param name="description" value="A Skin for Mac10 Stripes Yellow"/>
+        <param name="material" value="Objects/weapons/mac10/mac10_stripes_yellow.mtl"/>
+    </params>
+ 
+    <items>
+        <item name="MAK10"/>
+    </items>
+
+</skin>

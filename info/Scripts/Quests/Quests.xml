@@ -12,6 +12,188 @@
 
 <quests>
 
+	<!-- base building tasks -->
+	<quest name="@quest_craft_plotsign" requires_name="@quest_craft_hatchet">
+		<tasks>
+			<task description="@task_craft_plotsign" type="craft" >
+				<craft classname="PlotSignPacked" />
+			</task>
+		</tasks>
+		<quests>
+			<quest name="@quest_place_plotsign">
+				<tasks>
+					<task description="@task_place_plotsign" type="action" >
+						<action action="@placeable_place" classname="PlotSign" />
+					</task>
+				</tasks>
+				<quests>
+					<quest name="@quest_craft_foundation">
+						<tasks>
+							<task description="@task_craft_foundation" type="craft" >
+								<craft classname="rock_foundation_4m_4m_4m" />
+							</task>
+						</tasks>
+						<quests>
+							<quest name="@quest_place_foundation">
+								<tasks>
+									<task description="@task_place_foundation" type="action" >
+										<action action="@placeable_place" classname="rock_foundation_4m_4m_4m" />
+									</task>
+								</tasks>
+								<quests>
+									<quest name="@quest_craft_platform">
+										<tasks>
+											<task description="@task_craft_platform" type="craft" >
+												<craft classname="wood_walkway_3m_4m_4m" />
+											</task>
+										</tasks>
+										<quests>
+											<quest name="@quest_place_platform">
+												<tasks>
+													<task description="@task_place_platform" type="action" >
+														<action action="@placeable_place" classname="wood_walkway_3m_4m_4m" />
+													</task>
+												</tasks>
+												<quests>
+													<quest name="@quest_craft_wall">
+														<tasks>
+															<task description="@task_craft_wall" type="craft" >
+																<craft classname="wood_wall_3m_4m" />
+															</task>
+														</tasks>
+														<quests>
+															<quest name="@quest_place_wall">
+																<tasks>
+																	<task description="@task_place_wall" type="action" >
+																		<action action="@placeable_place" classname="wood_wall_3m_4m" />
+																	</task>
+																</tasks>
+																<quests>
+																	<quest name="@quest_craft_wall_door">
+																		<tasks>
+																			<task description="@task_craft_wall_door" type="craft" >
+																				<craft classname="wood_wall_door_3m_4m" />
+																			</task>
+																		</tasks>
+																		<quests>
+																			<quest name="@quest_place_wall_door">
+																				<tasks>
+																					<task description="@task_place_wall_door" type="action" >
+																						<action action="@placeable_place" classname="wood_wall_door_3m_4m" />
+																					</task>
+																				</tasks>
+																				<quests>
+																					<quest name="@quest_craft_door">
+																						<tasks>
+																							<task description="@task_craft_door" type="craft" >
+																								<craft classname="wood_door_lockable_1m_2m" />
+																							</task>
+																						</tasks>
+																						<quests>
+																							<quest name="@quest_place_door">
+																								<tasks>
+																									<task description="@task_place_door" type="action" >
+																										<action action="@placeable_place" classname="wood_door_lockable_1m_2m" />
+																									</task>
+																								</tasks>
+																								<quests>
+																									<quest name="@quest_craft_crate">
+																										<tasks>
+																											<task description="@task_craft_crate" type="craft" >
+																												<craft classname="wood_crate_small_packed" />
+																											</task>
+																										</tasks>
+																										<quests>
+																											<quest name="@quest_place_crate">
+																												<tasks>
+																													<task description="@task_place_crate" type="action" >
+																														<action action="@placeable_place" classname="wood_crate_small_packed" />
+																													</task>
+																												</tasks>
+																												<quests>
+																													<quest name="@quest_craft_bed">
+																														<tasks>
+																															<task description="@task_craft_bed" type="craft" >
+																																<craft classname="crafted_bed" />
+																															</task>
+																														</tasks>
+																														<quests>
+																															<quest name="@quest_place_bed">
+																																<tasks>
+																																	<task description="@task_place_bed" type="action" >
+																																		<action action="@placeable_place" classname="crafted_bed" />
+																																	</task>
+																																</tasks>
+																																<quests>
+																																	<quest name="@quest_craft_furnace">
+																																		<tasks>
+																																			<task description="@task_craft_furnace" type="craft" >
+																																				<craft classname="stone_furnace_packed" />
+																																			</task>
+																																		</tasks>
+																																		<quests>
+																																			<quest name="@quest_place_furnace">
+																																				<tasks>
+																																					<task description="@task_place_furnace" type="action" >
+																																						<action action="@placeable_place" classname="stone_furnace_packed" />
+																																					</task>
+																																				</tasks>
+																																				<quests>
+																																					<quest name="@quest_craft_workbench">
+																																						<tasks>
+																																							<task description="@task_craft_workbench" type="craft" >
+																																								<craft classname="workbench" />
+																																							</task>
+																																						</tasks>
+																																						<quests>
+																																							<quest name="@quest_place_workbench">
+																																								<tasks>
+																																									<task description="@task_place_workbench" type="action" >
+																																										<action action="@placeable_place" classname="workbench" />
+																																									</task>
+																																								</tasks>
+																																							</quest>
+																																						</quests>
+																																					</quest>
+																																				</quests>
+																																			</quest>
+																																		</quests>
+																																	</quest>
+																																</quests>
+																															</quest>
+																														</quests>
+																													</quest>
+																												</quests>
+																											</quest>
+																										</quests>
+																									</quest>
+																								</quests>
+																							</quest>
+																						</quests>
+																					</quest>
+																				</quests>
+																			</quest>
+																		</quests>
+																	</quest>
+																</quests>
+															</quest>
+														</quests>
+													</quest>
+												</quests>
+											</quest>
+										</quests>
+									</quest>
+								</quests>
+							</quest>
+						</quests>
+					</quest>
+				</quests>
+			</quest>
+		</quests>
+	</quest>
+
+
+
 	<!-- starter tasks -->
 	<quest name="@quest_craft_rags">
 		<tasks>
@@ -226,15 +408,6 @@
 				</quests>
 			</quest>
 		</quests>
-	</quest>
-
-	<!-- doesn't exist on the desert map -->
-	<quest name="Kill Deer">
-		<tasks>
-			<task description="Kill Deer" type="kill" >
-				<kill classname="Deer" />
-			</task>
-		</tasks>
 	</quest>
 
 </quests>

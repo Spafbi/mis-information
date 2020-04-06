@@ -22,7 +22,7 @@
 		<onground name="Objects/characters/players/generic/hat/helmet_a/helmet.cgf" material="objects/characters/players/generic/hat/helmet_b/helmet_b"/>
 	</geometry>
 
-	<protection level="2"> <!-- Only used for the UI tool tip protection amount -->
+	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
 		<environmental>
 			<protection_amount type="physical" percentage="2.0"/>
 			<protection_amount type="explosion" percentage="3.0"/>
@@ -30,11 +30,7 @@
             <protection_amount type="cold" percentage="4.5"/>
 		</environmental>
 		<protectBodyPart name="head">
-			<!-- PROTECT AGAINST MELEE -->
-			<protection_amount hit_type="blunt" percentage="75.0"/>
-			<protection_amount hit_type="melee" percentage="75.0"/>
-			<!-- SURVIVE 1 HEADSHOT -->
-			<protection_amount hit_type="ammo_22" percentage="75.0"/> <!-- Takes down to 10/16% -->
+			<protection_amount hit_type="default" percentage="25.0"/>
 		</protectBodyPart>
 	</protection>
 

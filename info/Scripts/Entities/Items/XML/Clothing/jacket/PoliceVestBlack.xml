@@ -3,7 +3,7 @@
 		<param name="selectable" value="0"/>
 		<param name="auto_wear" value="1"/>
 		<param name="mass" value="5.5"/>
-		<param name="healthMax" value="200.0"/>
+		<param name="healthMax" value="150.0"/>
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@PoliceVestBlack"/>
 		<param name="description" value="@PoliceVestBlackDescription"/>
@@ -26,10 +26,7 @@
 			<protection_amount type="heat" percentage="5"/>
 		</environmental>
 		<protectBodyPart name="torso"> <!-- Use valid bodyparts defined in Libs/BodyDamage/BodyParts_*.xml -->
-			<protection_amount hit_type="default" percentage="25.0"/> <!-- Default damage reduction of 75% unless specified below -->
-			<protection_amount hit_type="ammo_308" percentage="15.0"/>
-			<protection_amount hit_type="ammo_7_62x39" percentage="10.0"/>
-			<protection_amount hit_type="ammo_7_62x51" percentage="10.0"/>
+			<protection_amount hit_type="default" percentage="35.0"/> <!-- Default damage reduction of 75% unless specified below -->
 		</protectBodyPart>
 	</protection>
 

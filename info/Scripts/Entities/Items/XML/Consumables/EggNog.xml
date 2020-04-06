@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="EggNog"/>
-		<param name="description" value="A box filled with delicious Eggnog."/>
+		<param name="display_name" value="@EggNog"/>
+		<param name="description" value="@EggNogDescription"/>
 	</params>
 
 	<geometry>

@@ -22,7 +22,7 @@
 		<onground name="objects/characters/players/generic/hat/bike_helmet/bike_helmet_onground.cgf" material="objects/characters/players/generic/hat/bike_helmet/bike_helmet_mat_yellow"/>
 	</geometry>
 
-	<protection level="1"> <!-- Only used for the UI tool tip protection amount -->
+	<protection level="0"> <!-- Only used for the UI tool tip protection amount -->
 		<environmental>
 			<protection_amount type="physical" percentage="1.0"/>
 			<protection_amount type="rain_acid" percentage="1"/>

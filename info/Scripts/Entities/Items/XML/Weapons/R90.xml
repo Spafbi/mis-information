@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_5_70x28"/>
 				<param name="ammo_type" value="ammo_5_70x28"/>
 				<param name="rate" value="700"/>
-				<param name="damage" value="40"/>
+				<param name="damage" value="32"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -371,6 +371,10 @@
 		</accessory>
 		<accessory name="OpticScope" zoommode="opticscope" category="scope" exclusive="1">
 			<attach helper="optic_scope"/>
+			<detach/>
+		</accessory>
+		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>
 		<!-- BARREL LEFT -->
