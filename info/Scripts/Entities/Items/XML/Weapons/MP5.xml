@@ -236,20 +236,6 @@
 				<param name="proneScale" value="0.25"/>
 			</zoomSway>
 		</zoommode>
-
-		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
-			<zoomSway>
-				<param name="maxX" value="0.015"/>
-				<param name="maxY" value="0.015"/>
-				<param name="stabilizeTime" value="3.0"/>
-				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
-				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
-				<param name="minScale" value="0.5"/>
-				<param name="scaleAfterFiring" value="0.5"/>
-				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
-				<param name="proneScale" value="0.25"/>
-			</zoomSway>
-		</zoommode>
 		
 		<zoommode name="reflexsight" type="IronSight">
 			<zoom>
@@ -276,6 +262,20 @@
 				<param name="maxX" value="0.01"/>
 				<param name="maxY" value="0.005"/>
 				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+		
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.015"/>
+				<param name="maxY" value="0.015"/>
+				<param name="stabilizeTime" value="3.0"/>
 				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
 				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
 				<param name="minScale" value="0.5"/>
@@ -360,6 +360,41 @@
 			<detach/>
 			<show helper="mag_10mmx30"/>
 		</accessory>
+		<!-- BARREL END -->
+		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
+		<accessory name="CraftedSilencer" category="barrelend" exclusive="1" health_reduction_per_shot="24.0"> <!-- CraftedSilencer has 50 HP -->
+			<attach helper="silencer"/>
+			<detach/>
+			<params>
+				<firemodes>
+					<firemode type="default">
+						<fire>
+							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
+							<param name="sound_radius" value="10.0"/>
+						</fire>
+						<muzzleflash>
+							<thirdperson effect="" helper="muzzleflash_effect"/>
+						</muzzleflash>
+					</firemode>
+				</firemodes>
+			</params>
+		</accessory>
 		<!-- SCOPES -->
 		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
@@ -386,6 +421,7 @@
 		<types> <!-- Categories cannot be longer than 14 char! -->
 			<type category="10mm_mag" capacity="1" visible="1"/>
 			<type category="scope_rifle" capacity="1" visible="1"/>
+			<type category="barrel_end" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

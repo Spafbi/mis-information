@@ -22,6 +22,7 @@
   <contextData name="mp5" database="Animations/Mannequin/ADB/mp5WeaponAnims.adb" context="Weapon" tags="mp5" model="objects/weapons/mp5/mp5.cdf" attachment="weapon"/>
   <contextData name="ak74u" database="Animations/Mannequin/ADB/ak74uWeaponAnims.adb" context="Weapon" tags="ak74u" model="objects/weapons/ak74u/ak74u.cdf" attachment="weapon"/>
   <contextData name="asval" database="Animations/Mannequin/ADB/asvalWeaponAnims.adb" context="Weapon" tags="asval" model="objects/weapons/asval/asval.cdf" attachment="weapon"/>
+  <contextData name="vss" database="Animations/Mannequin/ADB/vssWeaponAnims.adb" context="Weapon" tags="vss" model="objects/weapons/asval/vss.cdf" attachment="weapon"/>
  </contexts>
  <History StartTime="0" EndTime="0">
   <FragmentID Time="0" FragmentID="idlePose"/>

@@ -47,7 +47,7 @@
 				<param name="hit_type" value="ammo_223"/>
 				<param name="ammo_type" value="ammo_223"/>
 				<param name="rate" value="26"/>
-				<param name="damage" value="52"/>
+				<param name="damage" value="57"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -60,8 +60,8 @@
 				<param name="sound_radius" value="200"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="10"/>
-				<param name="attack" value="8"/>
+				<param name="max_recoil" value="8"/>
+				<param name="attack" value="7"/>
 				<param name="decay" value="0.5"/> <!-- Not used in Miscreated due to magazine changes. Always end_decay -->
 				<param name="end_decay" value="0.5"/> <!-- Speed at which your gun returns to its resting position after firing. Lower is faster -->
 				<param name="maxx" value="0.5"/> <!-- Horizontal camera shake -->

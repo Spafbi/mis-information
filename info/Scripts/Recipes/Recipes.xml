@@ -885,6 +885,61 @@
 							</item>
 						</items>
 					</subcat>
+					
+					<subcat name="Easter">
+						<items>
+							<item class="KatanaBlackWidow" time="10">
+								<materials>
+									<material class="EggBlue" count="10" />
+								</materials>
+							</item>
+							<item class="BaseballBatHerMajesty" time="10">
+								<materials>
+									<material class="EggBlue" count="10" />
+								</materials>
+							</item>
+							<item class="AxePatrick" time="10">
+								<materials>
+									<material class="EggBlue" count="10" />
+								</materials>
+							</item>
+							<item class="ColtPythonGrimeyRick" time="20">
+								<materials>
+									<material class="EggGreen" count="10" />
+								</materials>
+							</item>
+							<item class="Mk18Reaver" time="20">
+								<materials>
+									<material class="EggGreen" count="13" />
+								</materials>
+							</item>
+							<item class="AKMGold" time="20">
+								<materials>
+									<material class="EggGreen" count="15" />
+								</materials>
+							</item>
+							<item class="VSS" time="30">
+								<materials>
+									<material class="EggPink" count="20" />
+								</materials>
+							</item>
+							<item class="M16Vietnam" time="30">
+								<materials>
+									<material class="EggPink" count="20" />
+								</materials>
+							</item>
+							<item class="M4A1" time="30">
+								<materials>
+									<material class="EggPink" count="17" />
+								</materials>
+							</item>
+							<item class="PSOScope" time="10">
+								<materials>
+									<material class="EggPink" count="5" />
+								</materials>
+							</item>
+						</items>
+					</subcat>
 
 					<subcat name="Decorations">
 						<types>

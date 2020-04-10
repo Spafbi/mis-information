@@ -121,12 +121,12 @@
 				<param name="rate" value="360"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
-				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="max_recoil" value="2.0"/> <!-- Should be additive result of MaxX and MaxY -->
 				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1.5"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="1.5"/> <!-- Vertical camera shake -->
+				<param name="maxx" value="1.0"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="1.0"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -241,20 +241,6 @@
 				<param name="proneScale" value="0.25"/>
 			</zoomSway>
 		</zoommode>
-
-		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
-			<zoomSway>
-				<param name="maxX" value="0.015"/>
-				<param name="maxY" value="0.015"/>
-				<param name="stabilizeTime" value="3.0"/>
-				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
-				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
-				<param name="minScale" value="0.5"/>
-				<param name="scaleAfterFiring" value="0.5"/>
-				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
-				<param name="proneScale" value="0.25"/>
-			</zoomSway>
-		</zoommode>
 		
 		<zoommode name="reflexsight" type="IronSight">
 			<zoom>
@@ -281,6 +267,20 @@
 				<param name="maxX" value="0.01"/>
 				<param name="maxY" value="0.005"/>
 				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+		
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
+			<zoomSway>
+				<param name="maxX" value="0.015"/>
+				<param name="maxY" value="0.015"/>
+				<param name="stabilizeTime" value="3.0"/>
 				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
 				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
 				<param name="minScale" value="0.5"/>
@@ -389,7 +389,7 @@
 			<location category="primary"/>
 		</locations>
 		<types>
-			<type category="762_mag" capacity="1" visible="1"/>
+			<type category="762_mag_akval" capacity="1" visible="1"/>
 			<type category="scope_rifle" capacity="1" visible="1"/>
 		</types>
 	</storage>

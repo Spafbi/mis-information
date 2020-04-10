@@ -1,29 +1,30 @@
-<item name="MAK10" class="Weapon" category="secondary" priority="1" weaponParams="1">
+<item name="M4A1" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="MAK10"/>
-		<param name="description" value="A MAK10 sub machine gun."/>
+		<param name="display_name" value="M4A1"/>
+		<param name="description" value="An old M4A1 automatic aussault rifle."/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
-		<param name="mass" value="3.1"/>
+		<param name="mass" value="3.5"/>
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.1"/>
 		<param name="bleed_percent" value="20"/>
+		<param name="has_first_select" value="1"/>
 		<param name="select_delayed_grab_3P" value="1"/>
 		<param name="select_override" value="0.85"/> <!-- Delay after selecting to prevent insta-use -->
 		<param name="attach_to_back" value="1"/>
-		<param name="has_first_select" value="1"/>
-		<param name="bone_attachment_01" value="stow_secondary1"/>
-		<param name="bone_attachment_02" value="stow_secondary2"/>
-		<param name="sprintToFireDelay" value="0.95"/>
+		<param name="bone_attachment_01" value="stow_primary1"/>
+		<param name="bone_attachment_02" value="stow_primary2"/>
+		<param name="sprintToFireDelay" value="0.5"/>
 		<param name="sprintToZoomDelay" value="0.2"/>
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
-		<param name="tag" value="mac10"/>
-		<param name="adb" value="mac10WeaponAnims.adb"/>
-		<animPrecache name="mac10">
-			<precache DBAFile="animations/weapons/mac10/mac10.dba" thirdperson="0"/>
-            <precache DBAFile="animations/human/male/weapons/mac10/mac10_3p.dba" thirdperson="1"/>
+		<param name="tag" value="at15"/>
+		<param name="adb" value="at15WeaponAnims.adb"/>
+		<animPrecache name="at15">
+			<precache DBAFile="animations/weapons/at15/at15.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/at15/at15_1p.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/at15/at15_3p.dba" thirdperson="1"/>
 		</animPrecache>
 		<aimAnims/>
 	</params>
@@ -32,49 +33,48 @@
 	<MovementModifiers speedScale="0.95" speedScaleTactical="0.85"/>
 
 	<magazines>
-		<magazine name="9x19_mac10"/>
+		<magazine name="STANAGx30"/>
 	</magazines>
 
 	<geometry>
-		<thirdperson name="Objects/weapons/mac10/mac10.cdf"/>
-		<onground name="Objects/weapons/mac10/mac10_onground.cgf"/>
+		<firstperson name="Objects/weapons/at15/m4a1.cdf"/>
+		<thirdperson name="Objects/weapons/at15/m4a1.cdf"/>
+		<onground name="Objects/weapons/at15/m4a1_onground.cgf"/>
 	</geometry>
 
 	<firemodes>
 		<firemode type="default">
 			<fire>
-				<param name="hit_type" value="ammo_9mm"/>
-				<param name="ammo_type" value="ammo_9mm"/>
-				<param name="rate" value="800"/>
-				<param name="damage" value="30"/>
+				<param name="hit_type" value="ammo_5_56x45"/>
+				<param name="ammo_type" value="ammo_5_56x45"/>
+				<param name="rate" value="680"/>
+				<param name="damage" value="53"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
 				<param name="min_damage_for_knockDown_leg" value="200"/>
 				<param name="ironsight_fire_anim_damp" value="0.5"/> <!-- Lower values compress animation output -->
-				<param name="holdbreath_fire_anim_damp" value="0.75"/> <!-- Lower values compress anim when holding breath (in addition to ironsight_fire_anim_damp) -->
+				<param name="holdbreath_fire_anim_damp" value="0.65"/> <!-- Lower values compress anim when holding breath -->
 				<param name="holdbreath_ffeedback_damp" value="1.0"/>
 				<param name="stabilization" value="0.0"/>
 				<param name="tag" value="single"/>
 				<param name="sound_radius" value="200"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="2.5"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="first_attack" value="2.3"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
-				<param name="attack" value="2.3"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
-				<param name="decay" value="0.2"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
+				<param name="max_recoil" value="1.4"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="attack" value="2.0"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1.0"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="1.5"/> <!-- Vertical camera shake -->
+				<param name="maxx" value="0.8"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="0.6"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
 				<param name="recoil_jump_m" value="0.5"/>
 				<param name="recoil_holdBreathActive_m" value="1.0"/> <!-- Can't hold breath without zooming. Modify this in zoom mode instead -->
 				<hints>
-					<hint x="-0.2" y="0.5"/> <!-- Attack left, climb up -->
-					<hint x="0.0" y="0.3"/> <!-- Dip down slightly -->
-					<hint x="0.2" y="0.5"/> <!-- Attack right, climb up -->
+					<hint x="-0.15" y="0.3"/>
+					<hint x="0.15" y="0.3"/>
 				</hints>
 			</recoil>
 			<spread> <!-- This whole block doesn't seem to work! -->
@@ -97,11 +97,11 @@
 				<thirdperson effect="weapon_fx.common.barrel_smoke" helper="smoke_effect"/>
 			</muzzlesmoke>
 			<reject>
-				<thirdperson effect="weapon_fx.shells.10mm.shell_eject" helper="shells"/>
+				<thirdperson effect="weapon_fx.shells.5_56x45.shell_eject" helper="shells"/>
 			</reject>
 		</firemode>
-
-		<firemode name="Rapid" type="Rapid">
+		
+		<firemode name="Automatic" type="Rapid">
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>
@@ -110,11 +110,17 @@
 			</rapid>
 		</firemode>
 
+		<firemode name="Single" type="Single">
+			<fire>
+				<param name="rate" value="450"/>
+			</fire>
+		</firemode>
+
 		<firemode name="melee" type="Melee">
 			<melee>
 				<param name="helper" value="collision"/>
 				<param name="hit_type" value="blunt"/>
-				<param name="range" value="1.8"/>
+				<param name="range" value="1.4"/>
 				<param name="damage" value="14"/> <!-- +2 from kick -->
 				<param name="impulse" value="10"/>
 				<param name="impulse_actor" value="30"/>
@@ -139,15 +145,15 @@
 	<zoommodes>
 		<zoommode type="default">
 			<zoomSway> <!-- This block is ignored in the "default" zoom mode. Has to be overridden below in "hipfire" -->
-				<param name="maxX" value="0.025"/>
-				<param name="maxY" value="0.030"/>
-				<param name="stabilizeTime" value="3.0"/>
-				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
-				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
-				<param name="minScale" value="0.5"/>
-				<param name="scaleAfterFiring" value="0.5"/>
-				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
-				<param name="proneScale" value="0.25"/>
+				<param name="maxX" value=""/>
+				<param name="maxY" value=""/>
+				<param name="stabilizeTime" value=""/>
+				<param name="holdBreathScale" value=""/>
+				<param name="holdBreathTime" value=""/>
+				<param name="minScale" value=""/>
+				<param name="scaleAfterFiring" value=""/>
+				<param name="crouchScale" value=""/>
+				<param name="proneScale" value=""/>
 			</zoomSway>
 			<spreadMod> <!-- This whole block doesn't seem to work! -->
 				<param name="min_mod" value="0.1"/>
@@ -165,21 +171,21 @@
 			<recoilMod>
 				<param name="max_recoil_mod" value="1.0"/>
 				<param name="attack_mod" value="1.05"/>
-				<param name="decay_mod" value="0.9"/>
-				<param name="end_decay_mod" value="0.9"/>
-				<param name="maxx_mod" value="0.6"/>
-				<param name="maxy_mod" value="0.8"/>
+				<param name="decay_mod" value="0.95"/>
+				<param name="end_decay_mod" value="0.95"/>
+				<param name="maxx_mod" value="0.75"/>
+				<param name="maxy_mod" value="0.75"/>
 				<param name="recoil_crouch_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 				<param name="recoil_prone_m_mod" value="2.0"/> <!-- Higher number = less recoil -->
 				<param name="recoil_jump_m_mod" value="1.0"/>
 				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
 		</zoommode>
-		
+
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
-					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+					<stage value="2.0" rotationSpeedScale="1" movementSpeedScale="1"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
 				</stages>
 				<param name="suffix" value="iron"/>
 				<param name="suffixAG" value="_iron"/>
@@ -191,15 +197,15 @@
 				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
 				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
 				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
-				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
-				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
-				<param name="zoom_out_delay" value="0.0"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="zoom_in_time" value="0.1"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.1"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
 				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
 				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
 			</zoom>
 			<zoomSway>
-				<param name="maxX" value="0.002"/>
-				<param name="maxY" value="0.002"/>
+				<param name="maxX" value="0.0075"/> <!-- Lower because of fore-grip -->
+				<param name="maxY" value="0.005"/>
 				<param name="stabilizeTime" value="2.0"/>
 				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
 				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
@@ -210,10 +216,11 @@
 			</zoomSway>
 		</zoommode>
 
+
 		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
 			<zoomSway>
-				<param name="maxX" value="0.008"/>
-				<param name="maxY" value="0.008"/>
+				<param name="maxX" value="0.01"/> <!-- Lower because of fore-grip -->
+				<param name="maxY" value="0.01"/> <!-- Lower because of fore-grip -->
 				<param name="stabilizeTime" value="3.0"/>
 				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
 				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
@@ -227,13 +234,13 @@
 
 	<accessories>
 		<!-- MAGAZINE -->
-		<accessory name="9x19_mac10" category="magazine" exclusive="1">
-			<attach helper="mag_9x19_mac10"/>
+		<accessory name="STANAGx30" category="magazine" exclusive="1">
+			<attach helper="mag_stanag"/>
 			<detach/>
-			<show helper="mag_9x19_mac10"/>
+			<show helper="mag_stanag"/>
 		</accessory>
 		<!-- BARREL END -->
-		<accessory name="PistolSilencer" category="barrelend" exclusive="1">
+		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
 			<attach helper="silencer"/>
 			<detach/>
 			<params>
@@ -271,27 +278,12 @@
 
 	<storage>
 		<locations>
-			<location category="secondary"/>
-			<location category="any"/>
+			<location category="primary"/>
 		</locations>
 		<types> <!-- Categories cannot be longer than 14 char! -->
-			<type category="mag_9x19_mac10" capacity="1" visible="1"/>
-			<type category="b_end_pistol" capacity="1" visible="1"/>
+			<type category="stanag_mag" capacity="1" visible="1"/>
+			<type category="barrel_end" capacity="1" visible="1"/>
 		</types>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MAK10_200.png?crc=7A5E00A6"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="110094"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/MAK10_2048.png?crc=7A5E00A6"/>
-	</steam>
 </item>

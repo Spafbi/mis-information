@@ -1211,7 +1211,6 @@
 	<Class name="CornCan" policy="cons"/>
 	<Class name="CupOfBlackCoffee" policy="cons" />
 	<Class name="CupOfCoffee" policy="cons" />
-	<Class name="CupOfCoffee" policy="cons" />
 	<Class name="DeerMeatSteakBurned" policy="cons"/>
 	<Class name="DeerMeatSteakCooked" policy="cons"/>
 	<Class name="DeerMeatSteakCured" policy="cons"/>
