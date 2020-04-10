@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_7_62x51"/> <!-- Name of the hit type. This is used to set damage done to vehicles in vehicle XMLs -->
 				<param name="ammo_type" value="ammo_7_62x51"/> <!-- Type of bullet the weapon will fire -->
 				<param name="rate" value="24"/> <!-- Rate of fire for the weapon (bullets fired per minute) -->
-				<param name="damage" value="60"/>
+				<param name="damage" value="75"/>
 				<param name="bullet_chamber" value="1"/> <!-- Indicates whether the weapon has a bullet in the bullet chamber after reload (basically an extra bullet) -->
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="knocks_target" value="0"/>

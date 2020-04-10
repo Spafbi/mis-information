@@ -48,7 +48,7 @@
 				<param name="hit_type" value="ammo_5_56x45"/>
 				<param name="ammo_type" value="ammo_5_56x45"/>
 				<param name="rate" value="600"/>
-				<param name="damage" value="43"/> <!-- +2 from Mk18 -->
+				<param name="damage" value="50"/> <!-- +2 from Mk18 -->
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -61,12 +61,12 @@
 				<param name="sound_radius" value="200"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="3"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="max_recoil" value="2"/> <!-- Should be additive result of MaxX and MaxY -->
 				<param name="first_attack" value="1.15"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="attack" value="1.15"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1.5"/> <!-- Horizontal camera shake -->
+				<param name="maxx" value="0.5"/> <!-- Horizontal camera shake -->
 				<param name="maxy" value="1.5"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>

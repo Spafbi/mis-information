@@ -78,6 +78,7 @@
   <contextData name="peacemaker" database="Animations/Mannequin/ADB/peacemakerWeaponAnims.adb" context="Weapon" tags="peacemaker" model="objects/weapons/peacemaker/peacemaker.cdf" attachment="weapon"/>
   <contextData name="sledgehammer" context="Weapon" tags="sledgehammer" model="objects/weapons/sledgehammer/sledgehammer.cgf" attachment="weapon"/>
   <contextData name="asval" database="Animations/Mannequin/ADB/asvalWeaponAnims.adb" context="Weapon" tags="asval" model="objects/weapons/asval/asval.cdf" attachment="weapon"/>
+  <contextData name="vss" database="Animations/Mannequin/ADB/vssWeaponAnims.adb" context="Weapon" tags="vss" model="objects/weapons/asval/vss.cdf" attachment="weapon"/>
   <contextData name="spas12" database="Animations/Mannequin/ADB/spas12WeaponAnims.adb" context="Weapon" tags="spas12" model="objects/weapons/Spas12/spas12.cdf" attachment="weapon"/>
   <contextData name="mac10" database="Animations/Mannequin/ADB/mac10WeaponAnims.adb" context="Weapon" tags="mac10" model="objects/weapons/mac10/mac10.cdf" attachment="weapon"/>
   <contextData name="m97" database="Animations/Mannequin/ADB/m97WeaponAnims.adb" context="Weapon" tags="m97" model="objects/weapons/m97/m97.cdf" attachment="weapon"/>

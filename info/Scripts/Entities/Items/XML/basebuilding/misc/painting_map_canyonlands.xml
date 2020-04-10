@@ -1,0 +1,26 @@
+<item name="painting_map_canyonlands" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="Painting Map Canyonlands"/>
+		<param name="description" value="A large painting you can hang on your wall."/>
+		
+		<param name="place_restrict_snap" value="sticky"/>
+	</params>
+
+	<base_part class="static" type="365" name="painting_map_canyonlands" max_health="1000" repair_with="Rags">
+		<static filename="Objects/basebuilding/other/painting/painting_map_canyonlands.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

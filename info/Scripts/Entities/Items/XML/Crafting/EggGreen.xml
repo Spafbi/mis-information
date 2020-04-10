@@ -1,0 +1,21 @@
+<item name="EggGreen" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="stack_size" value="250"/>
+		<param name="display_name" value="Egg Green"/>
+		<param name="description" value="A green easter egg. Used as currency to create weapons."/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/eggs/egg3.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

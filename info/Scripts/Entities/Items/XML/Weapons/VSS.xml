@@ -1,11 +1,11 @@
-<item name="AK74U" class="Weapon" category="primary" priority="12" weaponParams="1">
+<item name="VSS" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="@AK74U"/>
-		<param name="description" value="@AK74UDescription"/>
+		<param name="display_name" value="VSS"/>
+		<param name="description" value="An old VSS sniper rifle."/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
-		<param name="mass" value="2.7"/>
-		<param name="healthMax" value="100.0"/>
+		<param name="mass" value="3.8"/>
+		<param name="healthMax" value="200.0"/>
 		<param name="damage_scale" value="0.1"/>
 		<param name="bleed_percent" value="20"/>
 		<param name="select_delayed_grab_3P" value="1"/>
@@ -19,11 +19,11 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
-		<param name="tag" value="ak74u"/>
-		<param name="adb" value="ak74uWeaponAnims.adb"/>
-		<animPrecache name="ak74u">
-			<precache DBAFile="animations/weapons/ak74u/ak74u.dba" thirdperson="0"/>
-			<precache DBAFile="animations/human/male/weapons/akm/akm.dba" thirdperson="1"/>
+		<param name="tag" value="vss"/>
+		<param name="adb" value="vssWeaponAnims.adb"/>
+		<animPrecache name="asval">
+			<precache DBAFile="animations/weapons/asval/asval.dba" thirdperson="0"/>
+			<precache DBAFile="animations/human/male/weapons/asval/asval.dba" thirdperson="1"/>
 		</animPrecache>
 		<aimAnims/>
 	</params>
@@ -32,22 +32,22 @@
 	<MovementModifiers speedScale="0.95" speedScaleTactical="0.85"/>
 
 	<magazines>
-		<magazine name="545x30"/>
+		<magazine name="762x20_Akval"/>
 	</magazines>
 
 	<geometry>
-		<firstperson name="Objects/weapons/ak74u/ak74u.cdf"/>
-		<thirdperson name="Objects/weapons/ak74u/ak74u.cdf"/>
-		<onground name="Objects/weapons/ak74u/ak74u_onground.cgf"/>
+		<firstperson name="Objects/weapons/asval/vss.cdf"/>
+		<thirdperson name="Objects/weapons/asval/vss.cdf"/>
+		<onground name="Objects/weapons/asval/vss_onground.cgf"/>
 	</geometry>
 
 	<firemodes>
 		<firemode type="default">
 			<fire>
-				<param name="hit_type" value="ammo_5_45x39"/>
-				<param name="ammo_type" value="ammo_5_45x39"/>
-				<param name="rate" value="600"/>
-				<param name="damage" value="40"/>
+				<param name="hit_type" value="ammo_7_62x39"/>
+				<param name="ammo_type" value="ammo_7_62x39"/>
+				<param name="rate" value="150"/>
+				<param name="damage" value="60"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
@@ -58,15 +58,16 @@
 				<param name="stabilization" value="0.0"/>
 				<param name="tag" value="single"/>
 				<param name="sound_radius" value="250"/>
+				<param name="is_silenced" value="1"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="3.5"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="first_attack" value="1.4"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
+				<param name="max_recoil" value="1.5"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="first_attack" value="0.7"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
 				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.45"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
-				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
+				<param name="end_decay" value="0.3"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
 				<param name="maxx" value="1"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="2.5"/> <!-- Vertical camera shake -->
+				<param name="maxy" value="1.7"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based off hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -93,7 +94,7 @@
 				<param name="spread_holdBreathActive_m" value="1.0"/>
 			</spread>
 			<muzzleflash aiVisibilityRadius="2.0">
-				<thirdperson effect="weapon_fx.common.muzzle_flash_random" helper="muzzleflash_effect"/>
+				<thirdperson effect="weapon_fx.common.muzzle_flash_dir_up" helper="muzzleflash_effect"/>
 			</muzzleflash>
 			<muzzlesmoke>
 				<thirdperson effect="weapon_fx.common.barrel_smoke" helper="smoke_effect"/>
@@ -103,21 +104,9 @@
 			</reject>
 		</firemode>
 
-		<firemode name="Automatic" type="Rapid">
-			<fire>
-				<param name="rate" value="600"/>
-			</fire>
-			<rapid>
-				<param name="min_speed" value="0.001"/>
-				<param name="max_speed" value="0.001"/>
-				<param name="acceleration" value="2.35"/>
-				<param name="deceleration" value="-3.0"/>
-			</rapid>
-		</firemode>
-
 		<firemode name="Single" type="Single">
 			<fire>
-				<param name="rate" value="360"/>
+				<param name="rate" value="150"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
 				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
@@ -137,7 +126,7 @@
 				</hints>
 			</recoil>
 			<muzzlesmoke>
-				<thirdperson effect="" helper="smoke_effect"/> <!-- Don't muzzle smoke in semi-auto -->
+				<thirdperson effect="" helper="smoke_effect"/>
 			</muzzlesmoke>
 		</firemode>
 
@@ -173,11 +162,11 @@
 				<param name="maxX" value=""/>
 				<param name="maxY" value=""/>
 				<param name="stabilizeTime" value=""/>
-				<param name="holdBreathScale" value=""/>
-				<param name="holdBreathTime" value=""/>
+				<param name="holdBreathScale" value=""/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value=""/> <!-- dampening time until hold breath is fully in effect -->
 				<param name="minScale" value=""/>
 				<param name="scaleAfterFiring" value=""/>
-				<param name="crouchScale" value=""/>
+				<param name="crouchScale" value=""/> <!-- We can scale it for different stances, reducing it while crouched -->
 				<param name="proneScale" value=""/>
 			</zoomSway>
 			<spreadMod> <!-- This whole block doesn't seem to work! -->
@@ -206,7 +195,7 @@
 				<param name="recoil_holdBreathActive_m_mod" value="1.5"/> <!-- Higher number = less recoil -->
 			</recoilMod>
 		</zoommode>
-
+		
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
@@ -240,28 +229,14 @@
 				<param name="proneScale" value="0.25"/>
 			</zoomSway>
 		</zoommode>
-
-		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
-			<zoomSway>
-				<param name="maxX" value="0.015"/>
-				<param name="maxY" value="0.015"/>
-				<param name="stabilizeTime" value="3.0"/>
-				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
-				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
-				<param name="minScale" value="0.5"/>
-				<param name="scaleAfterFiring" value="0.5"/>
-				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
-				<param name="proneScale" value="0.25"/>
-			</zoomSway>
-		</zoommode>
 		
-		<zoommode name="opticscope" type="Scope" enabled="0">
+		<zoommode name="huntingscope" type="Scope" enabled="0">
 			<zoom>
 				<stages>
-					<stage value="4.0" rotationSpeedScale="0.5" movementSpeedScale="0.5"/> <!-- Reduce input sensitivity by 50% with optic scope, slow character movement -->
+					<stage value="4.0" rotationSpeedScale="0.25" movementSpeedScale="0.5"/> <!-- Reduce input sensitivity by 75% with hunting scope, slow character movement -->
 				</stages>
-				<param name="suffix" value="optic"/> <!-- Mannequin Tag -->
-				<param name="suffixAG" value="_optic"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="suffix" value="sniper"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_sniper"/> <!-- 99% sure not used, old AnimationGraph system -->
 				<param name="iron" value="scope_"/>
 				<param name="dof" value="1"/>
 				<param name="dof_focusMin" value="1.0"/>
@@ -319,34 +294,19 @@
 			<scope>
 				<param name="dark_in_time" value="0"/> <!-- Time (in seconds) taken to switch to Aux1 scope model when initiating zoom -->
 				<param name="dark_out_time" value="0"/> <!-- Time (in seconds) taken to switch to FP scope model when leaving zoom -->
+				<param name="overlay_texture" value="Textures/Weapons/scope_peripheral_vision_diff.tif"/>
+				<param name="overlay_mode" value="0"/>
+				<param name="overlay_in_time" value="0.15"/>
+				<param name="overlay_out_time" value="0.1"/>
 			</scope>
 		</zoommode>
 		
-		<zoommode name="reflexsight" type="IronSight">
-			<zoom>
-				<stages>
-					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
-				</stages>
-				<param name="suffix" value="reflex"/> <!-- Mannequin Tag -->
-				<param name="suffixAG" value="_reflex"/> <!-- 99% sure not used, old AnimationGraph system -->
-				<param name="dof" value="1"/>
-				<param name="dof_focusMin" value="1.0"/>
-				<param name="dof_focusMax" value="100.0"/>
-				<param name="dof_focusLimit" value="300.0"/>
-				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
-				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
-				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
-				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
-				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
-				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
-				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
-				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
-				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
-			</zoom>
+		
+		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
 			<zoomSway>
-				<param name="maxX" value="0.01"/>
-				<param name="maxY" value="0.005"/>
-				<param name="stabilizeTime" value="2.0"/>
+				<param name="maxX" value="0.015"/>
+				<param name="maxY" value="0.015"/>
+				<param name="stabilizeTime" value="3.0"/>
 				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
 				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
 				<param name="minScale" value="0.5"/>
@@ -359,61 +319,14 @@
 
 	<accessories>
 		<!-- MAGAZINE -->
-		<accessory name="545x30" category="magazine" exclusive="1">
-			<attach helper="mag_545"/>
+		<accessory name="762x20_Akval" category="magazine" exclusive="1">
+			<attach helper="mag_762"/>
 			<detach/>
-			<show helper="mag_545"/>
-		</accessory>
-		<!-- BARREL END -->
-		<accessory name="RifleSilencer" category="barrelend" exclusive="1">
-			<attach helper="silencer"/>
-			<detach/>
-			<params>
-				<firemodes>
-					<firemode type="default">
-						<fire>
-							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
-							<param name="sound_radius" value="10.0"/>
-						</fire>
-						<muzzleflash>
-							<thirdperson effect="" helper="muzzleflash_effect"/>
-						</muzzleflash>
-					</firemode>
-				</firemodes>
-			</params>
-		</accessory>
-		<accessory name="CraftedSilencer" category="barrelend" exclusive="1" health_reduction_per_shot="24.0"> <!-- CraftedSilencer has 50 HP -->
-			<attach helper="silencer"/>
-			<detach/>
-			<params>
-				<firemodes>
-					<firemode type="default">
-						<fire>
-							<param name="is_silenced" value="1"/> <!-- Tells AI system shot is silent -->
-							<param name="sound_radius" value="10.0"/>
-						</fire>
-						<muzzleflash>
-							<thirdperson effect="" helper="muzzleflash_effect"/>
-						</muzzleflash>
-					</firemode>
-				</firemodes>
-			</params>
+			<show helper="mag_762"/>
 		</accessory>
 		<!-- SCOPES -->
-		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
-			<attach helper="reflex_sight"/>
-			<detach/>
-		</accessory>
-		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
-			<attach helper="reflex_sight"/>
-			<detach/>
-		</accessory>
-		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
-			<attach helper="reflex_sight"/>
-			<detach/>
-		</accessory>
-		<accessory name="OpticScope" zoommode="opticscope" category="scope" exclusive="1">
-			<attach helper="optic_scope"/>
+		<accessory name="PSOScope" zoommode="huntingscope" category="scope" exclusive="1">
+			<attach helper="scope_rifle"/>
 			<detach/>
 		</accessory>
 	</accessories>
@@ -423,23 +336,9 @@
 			<location category="primary"/>
 		</locations>
 		<types>
-			<type category="545_mag" capacity="1" visible="1"/>
+			<type category="762_mag_akval" capacity="1" visible="1"/>
 			<type category="scope_rifle" capacity="1" visible="1"/>
 		</types>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AK74U_200.png?crc=4353D7DD"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="10"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="110071"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AK74U_2048.png?crc=4353D7DD"/>
-	</steam>
 </item>

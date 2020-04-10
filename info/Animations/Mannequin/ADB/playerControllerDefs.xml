@@ -35,6 +35,7 @@
    <Override tags="akm+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="ak74u+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="asval+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="vss+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="bulldog+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="crafted_rifle+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="crafted_smg+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
