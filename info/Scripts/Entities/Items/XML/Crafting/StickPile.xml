@@ -3,7 +3,7 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.75"/>
-		<param name="stack_size" value="128"/>
+		<param name="stack_size" value="250"/>
 		<param name="stack_size_spawned" value="4"/>
 		<param name="display_name" value="@StickPile"/>
 		<param name="description" value="@StickPileDescription"/>

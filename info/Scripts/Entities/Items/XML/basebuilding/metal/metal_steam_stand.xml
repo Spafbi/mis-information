@@ -2,16 +2,13 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="250"/> <!-- towable parts must have a mass > 50 -->
-		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
-		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
-		<param name="no_icon" value="1"/>
+		<param name="mass" value="4.0"/> 
 		<param name="display_name" value="@metal_steam_stand"/>
 		<param name="description" value="@metal_steam_standDescription"/>
 	</params>
 
-	<base_part class="static" type="2998" name="metal_steam_stand" max_health="15000" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
-		<static filename="objects/basebuilding/other/kiosk/bpart_kiosk.cgf"/>
+	<base_part class="powered" type="2998" name="metal_steam_stand" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+		<powered filename="objects/basebuilding/other/kiosk/bpart_kiosk.cgf" power_consumption="1"/>
 		<envareas>
 			<envarea enabled="1" scaleEffectsFromCenter="1" bb1="-3.5,-3.5,-1" bb2="3.5,3.5,3.0" temperature="4"/>
 		</envareas>
@@ -52,6 +49,11 @@
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
 			<damage_multiplier damage_type="sledgehammer" multiplier="3.34"/>
 		</damage_multipliers>
+		<base_actions>
+			<base_action class="toggle_powered">
+				<toggle_powered sound_connect_power="Play_power_connect" sound_toggle_switch="Play_lights_switch"/>
+			</base_action>
+		</base_actions>
 	</base_part>
 	
 	<explosion>
@@ -62,7 +64,16 @@
 	</explosion>
 
 	<geometry>
-		<thirdperson name="objects/basebuilding/other/kiosk/bpart_kiosk.cgf"/> <!-- Simplified proxy for improved towing -->
+		<thirdperson name="objects/basebuilding/plated/plated_part.cgf"/> <!-- Simplified proxy for improved towing -->
 	</geometry>
+	
+	<storage>
+		<params>
+			<param name="steam" value="1"/>
+		</params>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
 
 </item>

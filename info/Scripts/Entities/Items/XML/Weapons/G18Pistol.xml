@@ -113,7 +113,12 @@
 			</reject>
 		</firemode>
 
-		<firemode name="Single" type="Single"/>
+		<firemode name="Single" type="Single">
+			<fire>
+				<param name="rate" value="240"/>
+				<param name="health_reduction_per_shot" value="0.5"/>
+			</fire>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>

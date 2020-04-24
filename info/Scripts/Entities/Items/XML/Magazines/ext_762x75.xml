@@ -1,0 +1,40 @@
+<item name="ext_762x75" class="Magazine" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.6"/> <!-- 7.9g per bullet /2 + 350g for magazine -->
+		<param name="display_name" value="7.62 Drum"/>
+		<param name="description" value="A 75 rounds 7.62 drum magazine."/>
+		<param name="tag" value="ext_762x75"/>
+	</params>
+
+	<magazine>
+		<!-- must only be one magazine element in this section-->
+		<magazine capacity="75"/> <!-- max number of rounds this magazine can hold -->
+
+		<!-- Ammo block -->
+		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->
+		<!-- We have to specify at least the ammo name (must be a registered projectile in the weapon system)  -->
+		<!-- amount indicates that the magazine will give the player that many rounds when initially spawned -->
+		<ammos>
+			<ammo name="ammo_7_62x39" amount="30" pile="Pile_762x39"/>
+			<!-- ** right now only the first ammo item is used ** -->
+			<!-- rounds in the magazine when you first pick it up by default -->
+			<!-- insert other ammo types that can be used in this magazine as well -->
+		</ammos>
+		<param name="sound_load" value="Play_magazine_load"/>
+		<param name="sound_unload" value="Play_magazine_unload"/>
+	</magazine>
+
+	<geometry>
+		<onground name="Objects/magazines/ext_762x75/ext_762x75.cgf"/> <!-- We only display onground model. TP model controlled in Mannequin -->
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="762_mag"/>
+		</locations>
+	</storage>
+
+</item>

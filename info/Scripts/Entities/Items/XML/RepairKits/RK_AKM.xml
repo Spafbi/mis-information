@@ -19,6 +19,7 @@
 		<item name="RK_AKM" percentage="100"/>
 		<item name="AKM" percentage="100"/>
 		<item name="AKMGold" percentage="100"/>
+		<item name="RPK" percentage="100"/>
 	</repair>
 
 	<storage>

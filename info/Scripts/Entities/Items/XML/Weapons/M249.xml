@@ -100,6 +100,10 @@
 		</firemode>
 
 		<firemode name="Automatic" type="Rapid">
+			<fire>
+				<param name="rate" value="725" />
+				<param name="health_reduction_per_shot" value="0.22"/>
+			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>

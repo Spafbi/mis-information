@@ -83,6 +83,7 @@
   <contextData name="mac10" database="Animations/Mannequin/ADB/mac10WeaponAnims.adb" context="Weapon" tags="mac10" model="objects/weapons/mac10/mac10.cdf" attachment="weapon"/>
   <contextData name="m97" database="Animations/Mannequin/ADB/m97WeaponAnims.adb" context="Weapon" tags="m97" model="objects/weapons/m97/m97.cdf" attachment="weapon"/>
   <contextData name="ak5d" database="Animations/Mannequin/ADB/ak5dWeaponAnims.adb" context="Weapon" tags="ak5d" model="objects/weapons/ak5d/ak5d.cdf" attachment="weapon"/>
+  <contextData name="rpk" database="Animations/Mannequin/ADB/rpkWeaponAnims.adb" context="Weapon" tags="rpk" model="objects/weapons/rpk/rpk.cdf" attachment="weapon"/>
   </contexts>
  <History StartTime="0" EndTime="0">
   <FragmentID Time="0" FragmentID="motionIdle"/>

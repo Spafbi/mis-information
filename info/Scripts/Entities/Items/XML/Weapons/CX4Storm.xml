@@ -101,7 +101,12 @@
 			</reject>
 		</firemode>
 
-		<firemode name="Single" type="Single"/>
+		<firemode name="Single" type="Single">
+			<fire>
+				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.4"/>
+			</fire>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>
@@ -397,6 +402,14 @@
 			<detach/>
 		</accessory>
 		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>

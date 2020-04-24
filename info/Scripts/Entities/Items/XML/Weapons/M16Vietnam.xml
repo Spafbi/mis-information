@@ -5,7 +5,7 @@
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.8"/>
-		<param name="healthMax" value="200.0"/>
+		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.1"/>
 		<param name="bleed_percent" value="20"/>
 		<param name="has_first_select" value="1"/>
@@ -14,7 +14,7 @@
 		<param name="attach_to_back" value="1"/>
 		<param name="bone_attachment_01" value="stow_primary1"/>
 		<param name="bone_attachment_02" value="stow_primary2"/>
-		<param name="sprintToFireDelay" value="0.6"/>
+		<param name="sprintToFireDelay" value="0.95"/>
 		<param name="sprintToZoomDelay" value="0.2"/>
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
@@ -34,6 +34,7 @@
 
 	<magazines>
 		<magazine name="STANAGx30"/>
+		<magazine name="ext_556x75"/>
 	</magazines>
 
 	<geometry>
@@ -53,8 +54,8 @@
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
 				<param name="min_damage_for_knockDown_leg" value="200"/>
-				<param name="ironsight_fire_anim_damp" value="0.5"/> <!-- Lower values compress animation output -->
-				<param name="holdbreath_fire_anim_damp" value="0.65"/> <!-- Lower values compress anim when holding breath -->
+				<param name="ironsight_fire_anim_damp" value="0.9"/> <!-- Lower values compress animation output -->
+				<param name="holdbreath_fire_anim_damp" value="0.75"/> <!-- Lower values compress anim when holding breath -->
 				<param name="holdbreath_ffeedback_damp" value="1.0"/>
 				<param name="stabilization" value="0.0"/>
 				<param name="tag" value="single"/>
@@ -102,6 +103,10 @@
 		</firemode>
 		
 		<firemode name="Automatic" type="Rapid">
+		    <fire>
+				<param name="rate" value="600" />
+				<param name="health_reduction_per_shot" value="0.07"/>
+			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>
@@ -111,9 +116,13 @@
 		</firemode>
 
 		<firemode name="Burst" type="Burst">
+			<fire>
+				<param name="rate" value="800"/>
+				<param name="health_reduction_per_shot" value="0.07"/>
+			</fire>
 			<burst>
 				<param name="nshots" value="3"/>
-				<param name="rate" value="90"/> <!-- delay between trigger squeezes, not delay between each bullet -->
+				<param name="rate" value="120"/> <!-- delay between trigger squeezes, not delay between each bullet -->
 			</burst>
 			<recoil> <!-- Special vertical-emphasis recoil for 3-shot burst -->
 				<param name="max_recoil" value="1.5"/>
@@ -137,6 +146,7 @@
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="400"/>
+				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 		</firemode>
 
@@ -161,7 +171,7 @@
 				<param name="sound_radius" value="10"/>
 			</melee>
 			<SurfaceBehaviors>
-				<param name="default" deteriorationFactor="1"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
+				<param name="default" deteriorationFactor="0.5"/> <!-- Loses 1% health per-hit on all surfaces ("default"), will expand later -->
 			</SurfaceBehaviors>
 		</firemode>
 	</firemodes>
@@ -262,6 +272,11 @@
 			<attach helper="mag_stanag"/>
 			<detach/>
 			<show helper="mag_stanag"/>
+		</accessory>
+		<accessory name="ext_556x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_556_cmag"/>
+			<detach/>
+			<show helper="mag_ext_556_cmag"/>
 		</accessory>
 		<!-- BARREL END -->
 		<accessory name="RifleSilencer" category="barrelend" exclusive="1">

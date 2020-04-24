@@ -18,6 +18,7 @@
 	<repair>
 		<item name="RK_M16" percentage="100"/>
 		<item name="M16" percentage="100"/>
+		<item name="M16Vietnam" percentage="100"/>
 	</repair>
 
 	<storage>

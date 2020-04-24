@@ -32,7 +32,7 @@
 		<param name="hole_size" value="2" />
 		<param name="terrain_hole_size" value="3" />
 		<param name="radialblurdist" value="15" />
-		<param name="type" value="frag" />
+		<param name="type" value="blunt" />
 	</explosion>
 
 	<params>

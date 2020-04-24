@@ -70,6 +70,15 @@ function Item:PerformAction(user, action)
 	return self.item:PerformAction(user.id, action);
 end
 
+function Item:SaveValue()
+	--Log("[ Item ] SaveValue");
+	return "";
+end
+
+function Item:RestoreValue(value)
+	--Log("[ Item ] RestoreValue: value="..value);
+end
+
 -- EI END
 
 ----------------------------------------------------------------------------------------------------

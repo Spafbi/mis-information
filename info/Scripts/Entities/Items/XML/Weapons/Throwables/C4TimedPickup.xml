@@ -10,7 +10,7 @@
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="selectable" value="1"/>
-		<param name="sprintToFireDelay" value="0.05"/>
+		<param name="sprintToFireDelay" value="1"/>
 		<param name="sprintToZoomDelay" value="0.1"/>
 		<param name="runToSprintBlendTime" value="0.3"/>
 		<param name="sprintToRunBlendTime" value="0.15"/>
@@ -39,7 +39,7 @@
 			<fire>
 				<param name="ammo_type" value="C4Timed"/>
 				<param name="hit_type" value="blunt"/> <!-- HitType set in Ammo as Frag -->
-				<param name="rate" value="60"/>
+				<param name="rate" value="20"/>
 				<param name="damage" value="250"/>
 				<param name="helper" value="grenade"/>
 				<param name="helper_fp" value="grenade"/>
@@ -55,11 +55,7 @@
 				<param name="prime_delay" value="0.6"/>
 				<param name="prime_timer" value="false"/> <!-- can primed project blow up while being held -->
 				<param name="throw_delay" value="0.5"/>
-				<param name="delay" value="0.15"/>
-				<param name="hold_duration" value="1.0"/>
-				<param name="hold_min_scale" value="0.4"/>
-				<param name="hold_max_scale" value="1.5"/>
-				<param name="strength_scale" value="1.0"/>
+				<param name="delay" value="0.5"/>
 			</throw>
 		</firemode>
 

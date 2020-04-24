@@ -33,6 +33,7 @@
 
 	<magazines>
 		<magazine name="762x30"/>
+		<magazine name="ext_762x75"/>
 	</magazines>
 
 	<geometry>
@@ -104,7 +105,8 @@
 
 		<firemode name="Automatic" type="Rapid">
 			<fire>
-				<param name="rate" value="600"/>
+				<param name="rate" value="600" />
+				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
@@ -117,6 +119,7 @@
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
 				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
@@ -239,6 +242,74 @@
 				<param name="proneScale" value="0.25"/>
 			</zoomSway>
 		</zoommode>
+		
+		<zoommode name="reflexsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="reflex"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_reflex"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.01"/>
+				<param name="maxY" value="0.005"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
+		
+		<zoommode name="reflexsight" type="IronSight">
+			<zoom>
+				<stages>
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+				</stages>
+				<param name="suffix" value="reflex"/> <!-- Mannequin Tag -->
+				<param name="suffixAG" value="_reflex"/> <!-- 99% sure not used, old AnimationGraph system -->
+				<param name="dof" value="1"/>
+				<param name="dof_focusMin" value="1.0"/>
+				<param name="dof_focusMax" value="100.0"/>
+				<param name="dof_focusLimit" value="300.0"/>
+				<param name="dof_shoulderMinZ" value="0.15"/> <!-- Range of DOF effect -->
+				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
+				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
+				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
+				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
+				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
+			</zoom>
+			<zoomSway>
+				<param name="maxX" value="0.01"/>
+				<param name="maxY" value="0.005"/>
+				<param name="stabilizeTime" value="2.0"/>
+				<param name="holdBreathScale" value="0.2"/> <!-- % to scale to when breath is held -->
+				<param name="holdBreathTime" value="1.0"/> <!-- dampening time until hold breath is fully in effect -->
+				<param name="minScale" value="0.5"/>
+				<param name="scaleAfterFiring" value="0.5"/>
+				<param name="crouchScale" value="0.25"/> <!-- We can scale it for different stances, reducing it while crouched -->
+				<param name="proneScale" value="0.25"/>
+			</zoomSway>
+		</zoommode>
 
 		<zoommode name="hipfire" type="IronSight"> <!-- Must be last "Ironsight" to work for Shoulder override... -->
 			<zoomSway>
@@ -261,6 +332,37 @@
 			<attach helper="mag_762"/>
 			<detach/>
 			<show helper="mag_762"/>
+		</accessory>
+		<accessory name="ext_762x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_762x75"/>
+			<detach/>
+			<show helper="mag_ext_762x75"/>
+		</accessory>
+		<!-- SCOPES -->
+		<accessory name="IronsightKit" zoommode="ironsight" category="scope" exclusive="1">
+			<attach helper="iron_sight"/>
+			<detach/>
+			<show helper="iron_sight"/>
+		</accessory>
+		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
 		</accessory>
 		<!-- BARREL LEFT -->
 		<accessory name="LaserSight" category="barrelleft" exclusive="1">
@@ -290,6 +392,7 @@
 			<type category="762_mag" capacity="1" visible="1"/>
 			<type category="barrel_left" capacity="1" visible="1"/>
 			<type category="barrel_right" capacity="1" visible="1"/>
+			<type category="scope_rifle" capacity="1" visible="1"/>
 		</types>
 	</storage>
 

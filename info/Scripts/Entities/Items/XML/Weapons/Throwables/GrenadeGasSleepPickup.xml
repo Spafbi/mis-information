@@ -5,7 +5,6 @@
 		<param name="itemClass" value="small_throwable"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="0.5"/>
-		<param name="healthMax" value="75.0"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="selectable" value="1"/>

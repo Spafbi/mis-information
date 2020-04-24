@@ -332,5 +332,13 @@ function RegisterCallbackReturnAware(obj, funcname, precb, postcb)
   end
 end
 
+-- EI helper to make sure UI reload is only done once (can be shared through multiple mods)
+function ReloadModUIOnlyOnce()
+	if _G.requireuireload == nil then
+		_G.requireuireload = false
+	 	System.ExecuteCommand('gfx_reload_all_mod')
+	end
+end
+
 -- Load common mods
 Script.LoadScriptFolder("scripts/mods", true, true)

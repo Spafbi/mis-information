@@ -23,6 +23,9 @@
   <contextData name="ak74u" database="Animations/Mannequin/ADB/ak74uWeaponAnims.adb" context="Weapon" tags="ak74u" model="objects/weapons/ak74u/ak74u.cdf" attachment="weapon"/>
   <contextData name="asval" database="Animations/Mannequin/ADB/asvalWeaponAnims.adb" context="Weapon" tags="asval" model="objects/weapons/asval/asval.cdf" attachment="weapon"/>
   <contextData name="vss" database="Animations/Mannequin/ADB/vssWeaponAnims.adb" context="Weapon" tags="vss" model="objects/weapons/asval/vss.cdf" attachment="weapon"/>
+  <contextData name="m4a1" database="Animations/Mannequin/ADB/m4a1WeaponAnims.adb" context="Weapon" tags="m4a1" model="objects/weapons/at15/m4a1.cdf" attachment="weapon"/>
+  <contextData name="ddm4" database="Animations/Mannequin/ADB/ddm4WeaponAnims.adb" context="Weapon" tags="ddm4" model="objects/weapons/at15/ddm4.cdf" attachment="weapon"/>
+  <contextData name="rpk" database="Animations/Mannequin/ADB/rpkWeaponAnims.adb" context="Weapon" tags="rpk" model="objects/weapons/rpk/rpk.cdf" attachment="weapon"/>
  </contexts>
  <History StartTime="0" EndTime="0">
   <FragmentID Time="0" FragmentID="idlePose"/>

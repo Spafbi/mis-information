@@ -3,7 +3,7 @@
 	<params>
 		<param name="selectable" value="0" />
 		<param name="mass" value="3.0" />
-		<param name="stack_size" value="64" />
+		<param name="stack_size" value="250" />
 		<param name="display_name" value="@SheetMetal" />
 		<param name="description" value="@SheetMetalDescription" />
 	</params>

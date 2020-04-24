@@ -104,6 +104,10 @@
 		</firemode>
 
 		<firemode name="Rapid" type="Rapid">
+			<fire>
+				<param name="rate" value="600" />
+				<param name="health_reduction_per_shot" value="0.22"/>
+			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>
@@ -115,6 +119,7 @@
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.22"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
 				<param name="max_recoil" value="3"/> <!-- Should be additive result of MaxX and MaxY -->
@@ -405,6 +410,14 @@
 			<detach/>
 		</accessory>
 		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>
