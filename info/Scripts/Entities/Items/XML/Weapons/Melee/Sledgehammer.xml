@@ -4,7 +4,7 @@
 		<param name="description" value="@SledgehammerDescription"/>
 		<param name="itemClass" value="1hmelee"/>
 		<param name="suffix" value="shoulder"/>
-		<param name="mass" value="12.0"/>
+		<param name="mass" value="6.0"/>
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.1"/>
 		<param name="bleed_percent" value="0"/>

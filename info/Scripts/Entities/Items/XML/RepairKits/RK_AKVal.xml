@@ -18,6 +18,7 @@
 	<repair>
 		<item name="RK_AKVal" percentage="100"/>
 		<item name="AKVal" percentage="100"/>
+		<item name="VSS" percentage="100"/>
 	</repair>
 
 	<storage>
@@ -26,4 +27,18 @@
 		</locations>
 	</storage>
 
+	<steam>
+		<param name="tags" value="Category:RepairKit"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_AKVal_200.png?crc=71240500"/>
+		<param name="store_hidden" value="0"/>
+		<param name="amcoins" value="3"/>
+		<param name="tradable" value="0"/>
+		<param name="name_color" value="FF0000"/>
+		<param name="itemdefid" value="130049"/>
+		<param name="marketable" value="0"/>
+		<param name="store_tags" value="Category:RepairKit"/>
+		<param name="background_color" value="2A2A2A"/>
+		<param name="hidden" value="0"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/RK_AKVal_2048.png?crc=71240500"/>
+	</steam>
 </item>

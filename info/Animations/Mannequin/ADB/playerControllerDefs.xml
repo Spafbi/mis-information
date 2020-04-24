@@ -22,6 +22,8 @@
   <melee_interact scopes="Torso1P+Torso3P"/>
   <select scopes="Torso3P+Audio1">
    <Override tags="at15+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m4a1+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ddm4+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="m16+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="mk18+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="870_tactical+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
@@ -33,6 +35,7 @@
    <Override tags="aa12+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="acaw+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="akm+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="rpk+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="ak74u+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="asval+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="vss+tactical" fragTags="first" scopes="Torso3P+Weapon+Audio1"/>
@@ -121,6 +124,8 @@
    <Override tags="mk18+tactical" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="m16+tactical" scopes="Torso3P+Weapon+Audio1"/>
    <Override tags="at15" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="m4a1" scopes="Torso3P+Weapon+Audio1"/>
+   <Override tags="ddm4" scopes="Torso3P+Weapon+Audio1"/>
   </pickedup>
   <pickedup_ammo scopes="Audio2">
    <Override tags="shotgun" scopes="Audio1"/>

@@ -34,6 +34,7 @@
 
 	<magazines>
 		<magazine name="STANAGx30"/>
+		<magazine name="ext_556x75"/>
 	</magazines>
 
 	<geometry>
@@ -102,17 +103,21 @@
 		</firemode>
 
 		<firemode name="Burst" type="Burst">
+			<fire>
+				<param name="rate" value="800"/>
+				<param name="health_reduction_per_shot" value="0.35"/>
+			</fire>
 			<burst>
 				<param name="nshots" value="3"/>
 				<param name="rate" value="120"/> <!-- delay between trigger squeezes, not delay between each bullet -->
 			</burst>
 			<recoil> <!-- Special vertical-emphasis recoil for 3-shot burst -->
-				<param name="max_recoil" value="3.25"/>
+				<param name="max_recoil" value="1.5"/>
 				<param name="attack" value="1.5"/>
-				<param name="decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
-				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="0.25"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="3.0"/> <!-- Vertical camera shake -->
+				<param name="decay" value="0.2"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
+				<param name="end_decay" value="0.2"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
+				<param name="maxx" value="0.3"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="1.2"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/>
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -128,6 +133,7 @@
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.35"/>
 			</fire>
 		</firemode>
 
@@ -426,6 +432,11 @@
 			<detach/>
 			<show helper="mag_stanag"/>
 		</accessory>
+		<accessory name="ext_556x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_556_cmag"/>
+			<detach/>
+			<show helper="mag_ext_556_cmag"/>
+		</accessory>
 		<!-- BARREL UNDER -->
 		<accessory name="ForegripVertical" category="barrelunder" exclusive="1">
 			<attach helper="foregrip"/>
@@ -463,6 +474,14 @@
 		</accessory>
 		<!-- SCOPES -->
 		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>

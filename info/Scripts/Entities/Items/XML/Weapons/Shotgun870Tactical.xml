@@ -116,7 +116,12 @@
 			</shotgun>
 		</firemode>
 
-		<firemode name="Shotgun" type="Shotgun"/>
+		<firemode name="Shotgun" type="Shotgun">
+			<fire>
+				<param name="rate" value="55"/>
+				<param name="health_reduction_per_shot" value="0.7"/>
+			</fire>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>
@@ -375,6 +380,14 @@
 			<show helper="iron_sight"/>
 		</accessory>
 		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>

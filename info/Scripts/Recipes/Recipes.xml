@@ -95,7 +95,7 @@
 							</item>
 						</items>
 					</subcat>
-
+					
 					<subcat name="Magazines">
 						<items>
 							<item class="9mmx10" time="5" amount="0">
@@ -204,7 +204,7 @@
 					</subcat>
 				</subcats>
 			</cat>
-
+			
 			<cat name="Base Building">
 				<subcats>
 					<subcat name="Components">
@@ -219,13 +219,13 @@
 									<material class="IronIngot" />
 								</materials>
 							</item>
-						</items>
+					    </items>
 					</subcat>
 				</subcats>
 			</cat>
 		</cats>
 	</guide>
-
+	
 	<guide name="default" id="0">
 		<cats>
 			<cat name="Weapons">
@@ -845,16 +845,6 @@
 									<material class="Lumber" count="2" />
 								</materials>
 							</item>
-							<item class="SheetMetal" time="0.5">
-								<materials>
-									<material class="IronIngot" count="2" />
-								</materials>
-							</item>
-							<item class="Nails" time="1" amount="16">
-								<materials>
-									<material class="IronIngot" />
-								</materials>
-							</item>
 							<item class="Lumber" time="0.5">
 								<materials>
 									<material class="WoodPile" count="2" />
@@ -1315,6 +1305,32 @@
 											<material class="ElectricalParts" />
 											<material class="power_pole" />
 											<material class="PaintCan_Yellow" />
+										</materials>
+									</item>
+								</items>
+							</type>
+							
+							<type name="Trophy">
+								<items>
+									<item class="trophy_deer_female" time="5">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Nails" count="10" />
+											<material class="DeerPelt" />
+										</materials>
+									</item>
+									<item class="trophy_deer_male" time="5">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Nails" count="10" />
+											<material class="DeerPelt" />
+										</materials>
+									</item>
+									<item class="trophy_wolf" time="5">
+										<materials>
+											<material class="Lumber" count="5" />
+											<material class="Nails" count="10" />
+											<material class="WolfPelt" />
 										</materials>
 									</item>
 								</items>
@@ -2051,7 +2067,7 @@
 									</item>
 									<item class="wood_wall_door_3m_4m_02" time="5">
 										<materials>
-											<material class="Lumber" count="12" />
+											<material class="Lumber" count="10" />
 										</materials>
 									</item>
 									<item class="wood_wall_window_3m_4m_02" time="5">
@@ -2321,7 +2337,7 @@
 							</item>
 							<item class="Boltx5_0000" time="0.5" amount="5">
 								<materials>
-									<material class="ScrapMetal" count="10"/>
+									<material class="ScrapMetal" count="5"/>
 									<material class="Rags" count="5"/>
 								</materials>
 							</item>
@@ -3675,6 +3691,30 @@
 								</materials>
 							</item>
 						</items>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+	
+	<guide name="guide_structures_wood_storage_2" id="30">
+		<cats>
+			<cat name="Base Building">
+				<subcats>
+					<subcat name="Structures">
+						<types>
+							<type name="Storage">
+								<items>
+									<item class="metal_steam_stand" time="30">
+										<materials>
+											<material class="SheetMetal" count="64" />
+											<material class="ElectricalParts" count="5" />
+											<material class="Amalgaduino" count="3" />
+										</materials>
+									</item>
+								</items>
+							</type>
+						</types>
 					</subcat>
 				</subcats>
 			</cat>

@@ -14,13 +14,13 @@
 		<param name="attach_to_back" value="1"/>
 		<param name="bone_attachment_01" value="stow_primary1"/>
 		<param name="bone_attachment_02" value="stow_primary2"/>
-		<param name="sprintToFireDelay" value="0.5"/>
+		<param name="sprintToFireDelay" value="0.95"/>
 		<param name="sprintToZoomDelay" value="0.2"/>
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
-		<param name="tag" value="at15"/>
-		<param name="adb" value="at15WeaponAnims.adb"/>
+		<param name="tag" value="m4a1"/>
+		<param name="adb" value="m4a1WeaponAnims.adb"/>
 		<animPrecache name="at15">
 			<precache DBAFile="animations/weapons/at15/at15.dba" thirdperson="0"/>
 			<precache DBAFile="animations/human/male/weapons/at15/at15_1p.dba" thirdperson="0"/>
@@ -34,6 +34,7 @@
 
 	<magazines>
 		<magazine name="STANAGx30"/>
+		<magazine name="ext_556x75"/>
 	</magazines>
 
 	<geometry>
@@ -47,25 +48,25 @@
 			<fire>
 				<param name="hit_type" value="ammo_5_56x45"/>
 				<param name="ammo_type" value="ammo_5_56x45"/>
-				<param name="rate" value="680"/>
+				<param name="rate" value="700"/>
 				<param name="damage" value="53"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
 				<param name="min_damage_for_knockDown_leg" value="200"/>
-				<param name="ironsight_fire_anim_damp" value="0.5"/> <!-- Lower values compress animation output -->
-				<param name="holdbreath_fire_anim_damp" value="0.65"/> <!-- Lower values compress anim when holding breath -->
+				<param name="ironsight_fire_anim_damp" value="0.9"/> <!-- Lower values compress animation output -->
+				<param name="holdbreath_fire_anim_damp" value="0.75"/> <!-- Lower values compress anim when holding breath -->
 				<param name="holdbreath_ffeedback_damp" value="1.0"/>
 				<param name="stabilization" value="0.0"/>
 				<param name="tag" value="single"/>
 				<param name="sound_radius" value="200"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="1.4"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="attack" value="2.0"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="max_recoil" value="1.0"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="0.8"/> <!-- Horizontal camera shake -->
+				<param name="maxx" value="0.4"/> <!-- Horizontal camera shake -->
 				<param name="maxy" value="0.6"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
@@ -102,18 +103,16 @@
 		</firemode>
 		
 		<firemode name="Automatic" type="Rapid">
+		    <fire>
+				<param name="rate" value="700" />
+				<param name="health_reduction_per_shot" value="0.07"/>
+			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>
 				<param name="acceleration" value="2.35"/>
 				<param name="deceleration" value="-3.0"/>
 			</rapid>
-		</firemode>
-
-		<firemode name="Single" type="Single">
-			<fire>
-				<param name="rate" value="450"/>
-			</fire>
 		</firemode>
 
 		<firemode name="melee" type="Melee">
@@ -185,7 +184,7 @@
 		<zoommode name="ironsight" type="IronSight">
 			<zoom>
 				<stages>
-					<stage value="2.0" rotationSpeedScale="1" movementSpeedScale="1"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
+					<stage value="2.0" rotationSpeedScale="0.75" movementSpeedScale="0.8"/> <!-- Reduce input sensitivity by 25% when ironsight, slow character movement -->
 				</stages>
 				<param name="suffix" value="iron"/>
 				<param name="suffixAG" value="_iron"/>
@@ -197,8 +196,8 @@
 				<param name="dof_shoulderMinZScale" value="4.0"/> <!-- Multiplier for DOF effect -->
 				<param name="dof_minZ" value="0.25"/> <!-- Range of DOF effect in Ironsight -->
 				<param name="dof_minZScale" value="1.0"/> <!-- Multiplier for DOF effect in Ironsight -->
-				<param name="zoom_in_time" value="0.1"/> <!-- Time to bring weapon up into ironsight position -->
-				<param name="zoom_out_time" value="0.1"/> <!-- Time to return weapon back to shoulder position -->
+				<param name="zoom_in_time" value="0.2"/> <!-- Time to bring weapon up into ironsight position -->
+				<param name="zoom_out_time" value="0.2"/> <!-- Time to return weapon back to shoulder position -->
 				<param name="zoom_out_delay" value="0.05"/> <!-- Delay to begin transition back to shoulder pose after RMB has been released -->
 				<param name="holdbreath_fov" value="0.75"/> <!-- Amount to scale FOV, based off Stage zoom value. Lower = more zoom -->
 				<param name="holdbreath_fov_speed" value="5.0"/> <!-- Speed to change holdbreath_fov amount. Higher = faster zoom -->
@@ -238,6 +237,11 @@
 			<attach helper="mag_stanag"/>
 			<detach/>
 			<show helper="mag_stanag"/>
+		</accessory>
+		<accessory name="ext_556x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_556_cmag"/>
+			<detach/>
+			<show helper="mag_ext_556_cmag"/>
 		</accessory>
 		<!-- BARREL END -->
 		<accessory name="RifleSilencer" category="barrelend" exclusive="1">

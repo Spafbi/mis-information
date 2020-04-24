@@ -34,6 +34,7 @@
 
 	<magazines>
 		<magazine name="STANAGx30"/>
+		<magazine name="ext_556x75"/>
 	</magazines>
 
 	<geometry>
@@ -101,7 +102,12 @@
 			</reject>
 		</firemode>
 
-		<firemode name="Single" type="Single"/>
+		<firemode name="Single" type="Single">
+			<fire>
+				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.35"/>
+			</fire>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>
@@ -326,8 +332,21 @@
 			<detach/>
 			<show helper="mag_stanag"/>
 		</accessory>
+		<accessory name="ext_556x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_556_cmag"/>
+			<detach/>
+			<show helper="mag_ext_556_cmag"/>
+		</accessory>
 		<!-- SCOPES -->
 		<accessory name="T1Micro" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>

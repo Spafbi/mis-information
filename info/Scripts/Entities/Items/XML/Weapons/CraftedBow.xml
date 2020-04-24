@@ -109,6 +109,10 @@
 		</firemode>
 
 		<firemode type="Throw" name="Bow">
+		    <fire>
+				<param name="rate" value="25"/>
+				<param name="health_reduction_per_shot" value="1"/>
+			</fire>
 			<throw>
 				<param name="prime_enabled" value="false"/> <!-- can projectile be "primed" -->
 				<param name="throw_delay" value="0"/>

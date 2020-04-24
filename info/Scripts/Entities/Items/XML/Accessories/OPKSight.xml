@@ -1,0 +1,23 @@
+<item name="OPKSight" class="Item" category="any">
+	<params>
+		<param name="display_name" value="OPK sight"/>
+		<param name="description" value="A reflex sight from russia."/>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.25"/>
+		<param name="hide_as_attachment" value="0"/>
+		<param name="dontRotateOnSpawn" value="1"/>
+		<param name="scopeAttachment" value="0"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/weapons/attachments/okp_7/okp_7_onground.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+			<location category="scope_rifle"/>
+		</locations>
+	</storage>
+
+</item>

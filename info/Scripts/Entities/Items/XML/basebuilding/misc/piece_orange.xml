@@ -26,10 +26,10 @@
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/piece_orange_200.png?crc=C500E97B"/>
 		<param name="store_hidden" value="0"/>
 		<param name="amcoins" value="1"/>
-		<param name="tradable" value="1"/>
+		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="30370"/>
-		<param name="marketable" value="1"/>
+		<param name="marketable" value="0"/>
 		<param name="store_tags" value="Category:BaseBuilding"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>

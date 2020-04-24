@@ -102,6 +102,10 @@
 		</firemode>
 
 		<firemode name="Rapid" type="Rapid">
+		    <fire>
+				<param name="rate" value="800"/>
+				<param name="health_reduction_per_shot" value="0.22"/>
+			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
 				<param name="max_speed" value="0.001"/>
@@ -284,7 +288,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MAK10_200.png?crc=7A5E00A6"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="15"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110094"/>

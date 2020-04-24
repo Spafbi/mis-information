@@ -93,6 +93,9 @@
    <Tag name="m97"/>
    <Tag name="ak5d"/>
    <Tag name="vss"/>
+   <Tag name="m4a1"/>
+   <Tag name="ddm4"/>
+   <Tag name="rpk"/>
   </Group>
   <Group name="weaponType">
    <Tag name="nw"/>
@@ -168,6 +171,8 @@
    <Tag name="9x19_mac10"/>
    <Tag name="Pile_40mmGrenade"/>
    <Tag name="556x30_ak5d"/>
+   <Tag name="762x39x30"/>
+   <Tag name="ext_762x75"/>
   </Group>
   <Group name="playMode">
    <Tag name="MP"/>

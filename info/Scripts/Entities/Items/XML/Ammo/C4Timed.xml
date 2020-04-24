@@ -9,11 +9,11 @@
 	</flags>
 
 	<physics type="rigid">
-		<param name="mass" value="10" />
+		<param name="mass" value="2" />
 		<param name="speed" value="15" />
 		<param name="traceable" value="1" />
 		<param name="spin" value="45, 45, 45" />
-		<param name="spin_random" value="720, 720, 720" />
+		<param name="spin_random" value="0, 0, 0" />
 		<param name="material" value="mat_stickybomb" />
 	</physics>
 
@@ -39,7 +39,7 @@
 
 	<params>
 		<param name="lifetime" value="5.0" /> <!-- Time taken to explode, in seconds, after being thrown -->
-		<param name="showtime" value="0.05" />
+		<param name="showtime" value="0.25" />
 		<param name="aitype" value="grenade" />
 	</params>
 

@@ -3,7 +3,7 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="itemClass" value="RK_Sledgehammer"/>
-		<param name="mass" value="1.0"/>
+		<param name="mass" value="6.0"/>
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.25"/>
 		<param name="destroyWhenDegraded" value="1"/>		

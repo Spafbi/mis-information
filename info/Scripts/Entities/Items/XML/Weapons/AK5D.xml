@@ -34,6 +34,7 @@
 
 	<magazines>
 		<magazine name="556x30_ak5d"/>
+		<magazine name="ext_556x75"/>
 	</magazines>
 
 	<geometry>
@@ -107,6 +108,7 @@
 		<firemode name="Automatic" type="Rapid">
 			<fire>
 				<param name="rate" value="600"/>
+				<param name="health_reduction_per_shot" value="0.22"/>
 			</fire>
 			<rapid>
 				<param name="min_speed" value="0.001"/>
@@ -119,6 +121,7 @@
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="360"/>
+				<param name="health_reduction_per_shot" value="0.22"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
 				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
@@ -437,6 +440,11 @@
 			<detach/>
 			<show helper="mag_556x30_ak5d"/>
 		</accessory>
+		<accessory name="ext_556x75" category="magazine" exclusive="1">
+			<attach helper="mag_ext_556_cmag"/>
+			<detach/>
+			<show helper="mag_ext_556_cmag"/>
+		</accessory>
 		<!-- BARREL UNDER -->
 		<accessory name="ForegripVertical" category="barrelunder" exclusive="1">
 			<attach helper="foregrip"/>
@@ -478,6 +486,14 @@
 			<detach/>
 		</accessory>
 		<accessory name="ReflexSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="OPKSight" zoommode="reflexsight" category="scope" exclusive="1">
+			<attach helper="reflex_sight"/>
+			<detach/>
+		</accessory>
+		<accessory name="R3Sight" zoommode="reflexsight" category="scope" exclusive="1">
 			<attach helper="reflex_sight"/>
 			<detach/>
 		</accessory>
@@ -575,7 +591,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AK5D_200.png?crc=EBD5F076"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="15"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110091"/>

@@ -845,6 +845,7 @@
 	<Class name="m1911a1" policy="gun"/>
 	<Class name="M249" policy="gun"/>
 	<Class name="M40A5" policy="gun"/>
+	<Class name="M4V5" policy="gun"/>
 	<Class name="M97" policy="gun" />
 	<Class name="M9A1" policy="gun" />
 	<Class name="MAK10" policy="gun" />
@@ -874,6 +875,7 @@
 	<Class name="RecurveBow" policy="gun"/>
 	<Class name="Rem700" policy="gun"/>
 	<Class name="Rem870" policy="gun"/>
+	<Class name="RPK" policy="gun"/>
 	<Class name="ruger22" policy="gun"/>
 	<Class name="Sako_85" policy="gun"/>
 	<Class name="SAS12" policy="gun" />

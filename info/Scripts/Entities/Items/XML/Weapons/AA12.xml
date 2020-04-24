@@ -117,7 +117,18 @@
 			</shotgun>
 		</firemode>
 
-		<firemode name="FullAutoShotgun" type="AutomaticShotgun"/>
+		<firemode name="Automatic" type="Rapid">
+			<fire>
+				<param name="rate" value="300" />
+				<param name="health_reduction_per_shot" value="0.6"/>
+			</fire>
+			<rapid>
+				<param name="min_speed" value="0.001"/>
+				<param name="max_speed" value="0.001"/>
+				<param name="acceleration" value="2.35"/>
+				<param name="deceleration" value="-3.0"/>
+			</rapid>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>

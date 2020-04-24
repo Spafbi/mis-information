@@ -410,34 +410,28 @@
 	</Seats>
 
 	<MovementParams>
-		<!-- vMaxSteerMax = Speed where steering angle is reduced by full kvSteerMax -->
-		<!-- v0SteerMax = Max steering angle for wheels -->
-		<!-- kvSteerMax = Steering angle gets reduced by this amount -->
-		<!-- pedalLimitMax = Additional pedal limitation at maximum steer -->
-		<StdWheeled 
-				steerSpeed="20" steerSpeedMin="80" vMaxSteerMax="17" v0SteerMax="35" kvSteerMax="30" steerRelaxation="300"
-				pedalLimitMax="0.2" rpmInterpSpeed="4" rpmRelaxSpeed="2" rpmGearShiftSpeed="4" engineIgnitionTime="1.5">
-			<!-- axleFriction = Amount of friction applied while driving -->
-			<!-- axleFrictionMax = Amount of friction applied while braking/coasting/idle -->
-			<!-- brakeTorque = Rate at which vehicle slows under braking -->
-			<!-- stabilizer = Dampens vehicle roll during turns -->
-			<Wheeled 
-					axleFriction="500" axleFrictionMax="2500" brakeTorque="2000" maxBrakingFriction="0.75"
-					damping="0.1" stabilizer="0.1" slipThreshold="0.02" dynFriction="1.0" suspDampingMin="-0.15" suspDampingMax="-0.65"
-					engineMinRPM="100" engineStartRPM="250" engineIdleRPM="250" engineMaxRPM="1400" enginePower="750"
-					engineShiftDownRPM="550" engineShiftUpRPM="1100" clutchSpeed="1.5" gearDirSwitchRPM="1500"
-					maxSpeed="20" maxSteer="0.52" maxTimeStep="0.02" minEnergy="0.04" maxGear="3">
-				<gearRatios>
-					<gearRatio value="-10"/> <!-- -7.0 m/s,-25 Km/h -->
-					<gearRatio value="0"/>
-					<gearRatio value="9.9"/> <!-- 7.10 m/s, 26 Km/h -->
-					<gearRatio value="6.0"/> <!-- 11.0 m/s, 40 Km/h -->
-					<gearRatio value="3.1"/> <!-- 17.1 m/s, 62 Km/h -->
-				</gearRatios>
-			</Wheeled>
+		<ArcadeWheeled steerSpeed="30" steerSpeedMin="75" steerSpeedScale="0.75" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="45" steerRelaxation="150" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="1.5">
+			<Handling>
+				<Power acceleration="5" decceleration="0.1" topSpeed="14" reverseSpeed="5"/> <!-- Decceleration is off-pedal slow rate -->
+				<WheelSpin grip1="5" grip2="8" gripRecoverSpeed="15" accelMultiplier1="2" accelMultiplier2="1"/>
+				<HandBrake decceleration="15" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="3.0" backFrictionScale="0.1" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
+				<SpeedReduction reductionAmount="0.1" reductionRate="1"/> <!-- slow vehicle when turning -->
+				<Friction back="5" front="5" offset="-2.0"/>
+				<Correction lateralSpring="1" angSpring="1"/>
+				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
+				<Inertia radius="6.0"/> <!-- general physics feel, size, roll, weight of vehicle -->
+			</Handling>
+			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
+				<Ratios>
+					<Ratio value="0.5"/>
+					<Ratio value="0.8"/>
+					<Ratio value="0.95"/>
+				</Ratios>
+			</FakeGears>
+			<WheeledLegacy damping="0.01" engineIdleRPM="500" engineMaxRPM="3000" engineMinRPM="500" stabilizer="0" maxTimeStep="0.02" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>
 			<Boost endurance="0" regeneration="0" strength="0"/>
-			<SoundParams engineSoundPosition="enginePos" runSoundDelay="0.0" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3"/>
-		</StdWheeled>
+			<SoundParams engineSoundPosition="vehicleBurnPos" runSoundDelay="0.0" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.3" />
+		</ArcadeWheeled>
 	</MovementParams>
 
 	<Particles mfxRow="vfx_truck_5ton">

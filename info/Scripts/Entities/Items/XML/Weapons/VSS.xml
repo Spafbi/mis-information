@@ -33,6 +33,7 @@
 
 	<magazines>
 		<magazine name="762x20_Akval"/>
+		<magazine name="ext_762x30"/>
 	</magazines>
 
 	<geometry>
@@ -46,7 +47,7 @@
 			<fire>
 				<param name="hit_type" value="ammo_7_62x39"/>
 				<param name="ammo_type" value="ammo_7_62x39"/>
-				<param name="rate" value="150"/>
+				<param name="rate" value="250"/>
 				<param name="damage" value="60"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
@@ -61,13 +62,13 @@
 				<param name="is_silenced" value="1"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="1.5"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="max_recoil" value="16"/> <!-- Should be additive result of MaxX and MaxY -->
 				<param name="first_attack" value="0.7"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
 				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.45"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.3"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="1.7"/> <!-- Vertical camera shake -->
+				<param name="maxx" value="8"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="8"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based off hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -106,15 +107,16 @@
 
 		<firemode name="Single" type="Single">
 			<fire>
-				<param name="rate" value="150"/>
+				<param name="rate" value="250"/>
+				<param name="health_reduction_per_shot" value="0.2"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
-				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
-				<param name="decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
-				<param name="end_decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1.5"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="1.5"/> <!-- Vertical camera shake -->
+				<param name="max_recoil" value="10"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="attack" value="2"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="decay" value="0.7"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
+				<param name="end_decay" value="1"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
+				<param name="maxx" value="3"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="7"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -323,6 +325,11 @@
 			<attach helper="mag_762"/>
 			<detach/>
 			<show helper="mag_762"/>
+		</accessory>
+		<accessory name="ext_762x30" category="magazine" exclusive="1">
+			<attach helper="mag_762x39x30"/>
+			<detach/>
+			<show helper="mag_762x39x30"/>
 		</accessory>
 		<!-- SCOPES -->
 		<accessory name="PSOScope" zoommode="huntingscope" category="scope" exclusive="1">

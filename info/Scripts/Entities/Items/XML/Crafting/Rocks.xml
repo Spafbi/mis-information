@@ -6,7 +6,7 @@
 		<param name="itemClass" value="small_throwable"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="2.0"/>
-		<param name="stack_size" value="64"/>
+		<param name="stack_size" value="250"/>
 		<param name="stack_size_spawned" value="1"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>

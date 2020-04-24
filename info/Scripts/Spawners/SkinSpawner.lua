@@ -22,6 +22,28 @@ SkinSpawner = {
 	skinCategories =
 	{
 		{
+			category = "beetle",
+			skins =
+			{
+				{ name = "Beetle_Black", percent = 8.0 },
+				{ name = "Beetle_Blue", percent = 9.0 },
+				{ name = "Beetle_Camo1", percent = 5.0 },
+				{ name = "Beetle_Camo2", percent = 5.0 },
+				{ name = "Beetle_Camo3", percent = 5.0 },
+				{ name = "Beetle_Camo4", percent = 5.0 },
+				{ name = "Beetle_Green", percent = 9.0 },
+				{ name = "Beetle_Orange", percent = 9.0 },
+				{ name = "Beetle_Pink", percent = 9.0 },
+				{ name = "Beetle_Purple", percent = 9.0 },
+				{ name = "Beetle_Red", percent = 9.0 },
+				{ name = "Beetle_White", percent = 9.0 }, -- Default skin
+				{ name = "Beetle_Yellow", percent = 9.0 },
+			},
+			minDistance = 180, -- top speed * 30 seconds / 3
+			percent = .1443,
+		},
+
+		{
 			category = "dune_buggy",
 			skins =
 			{

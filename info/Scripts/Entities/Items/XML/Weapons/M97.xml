@@ -102,7 +102,12 @@
 			</spread>
 		</firemode>
 
-		<firemode name="Single" type="Single"/>
+		<firemode name="Single" type="Single">
+			<fire>
+				<param name="rate" value="17"/>
+				<param name="health_reduction_per_shot" value="2"/>
+			</fire>
+		</firemode>
 
 		<firemode name="melee" type="Melee">
 			<melee>
@@ -242,7 +247,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Secondary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/M97_200.png?crc=445EC54E"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="15"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110093"/>

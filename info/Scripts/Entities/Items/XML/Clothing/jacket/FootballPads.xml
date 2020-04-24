@@ -2,7 +2,7 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="auto_wear" value="1"/>
-		<param name="mass" value="5.5"/>
+		<param name="mass" value="3.5"/>
 		<param name="healthMax" value="200.0"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="destroyWhenDegraded" value="1"/>
