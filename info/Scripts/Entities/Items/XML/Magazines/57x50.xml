@@ -6,6 +6,7 @@
 		<param name="display_name" value="@57x50"/>
 		<param name="description" value="@57x50Description"/>
 		<param name="tag" value="57x50"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

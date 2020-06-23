@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@CamoNetting"/>
 		<param name="description" value="@CamoNettingDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

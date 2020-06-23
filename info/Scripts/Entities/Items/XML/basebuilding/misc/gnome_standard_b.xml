@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@gnome_standard_b"/>
 		<param name="description" value="@gnome_standard_bDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<base_part class="static" type="134" name="gnome_standard_b" max_health="5000" repair_with="DuctTape">

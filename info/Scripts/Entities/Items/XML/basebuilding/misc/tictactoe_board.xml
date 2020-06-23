@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="TicTacToe Board"/>
-		<param name="description" value="A wooden board to play Tic Tac Toe."/>
+		<param name="display_name" value="@tictactoe_board"/>
+		<param name="description" value="@tictactoe_boardDescription"/>
 	</params>
 
 	<base_part class="static" type="332" name="tictactoe_board" max_health="200" repair_with="Lumber">

@@ -15,6 +15,7 @@
 		<param name="nonHostileUse" value="1"/>
 		<param name="dontRotateOnSpawn" value="1"/>
 		<param name="tag" value="throwable"/>
+		<param name="vendor_cost" value="3"/>
 		<animPrecache name="Throwable">
 			<precache DBAFile="animations/human/male/weapons/throw/throw.dba" thirdperson="1"/>
 		</animPrecache>

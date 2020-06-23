@@ -3,8 +3,9 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.1"/>
-		<param name="display_name" value="Guide Storage 2"/>
-		<param name="description" value="A guide that unlock a crafting recipe."/>
+		<param name="display_name" value="@guide_structures_wood_storage_2"/>
+		<param name="description" value="@guide_structures_wood_storage_2Description"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

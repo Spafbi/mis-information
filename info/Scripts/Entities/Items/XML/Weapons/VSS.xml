@@ -1,7 +1,7 @@
 <item name="VSS" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="VSS"/>
-		<param name="description" value="An old VSS sniper rifle."/>
+		<param name="display_name" value="@VSS"/>
+		<param name="description" value="@VSSDescription"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.8"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="25"/>
 		<param name="tag" value="vss"/>
 		<param name="adb" value="vssWeaponAnims.adb"/>
 		<animPrecache name="asval">

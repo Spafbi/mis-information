@@ -30,11 +30,12 @@ consumableType:				int of fluid type (for refills etc) (defaults to 2: clean (or
 						7 Alcohol,
 useWithAction:			string of action (default "none")
 drinkAmount:			consumable type
-foodAmount:
+foodAmount:	
 poisonChance:
 radiationAmount:
 staminaAmount:
 geigercounter:			consumable type - used for geiger counter markup
+safezone:				true if usable in safezones as well (defaults to false) - damagescale=1 in waterpuddle entity gamevolume
 --]]
 	
 	actionables =
@@ -165,6 +166,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			geigercounter = 1,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_dirty_water",
@@ -180,6 +182,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			gridsize = 4,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_dirty_water",
@@ -193,6 +196,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			poisonChance = 95,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_clean_water",
@@ -206,6 +210,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			drinkAmount = 300,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_sea_water",
@@ -220,6 +225,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			geigercounter = 1.5,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "drink_dirty_water",
@@ -234,6 +240,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			geigercounter = 3.5,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_from_toilet",
@@ -265,6 +272,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			drinkAmount = 400,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_from_hydrant",
@@ -280,6 +288,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			staminaAmount = -30,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@grab_arm",
@@ -344,6 +353,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			drinkAmount = 150,
 			tactical = 0,
 			swim = 0,
+			safezone = true,
 		},
 		{
 			text = "@drink_from_container",
@@ -371,6 +381,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			useWithAction = "refill_item",
 			drinkAmount = 200,
 			torpidityAmount = 25,
+			safezone = true,
 		},
 		{
 			text = "@drink_from_pump",
@@ -471,6 +482,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			regenerate = 120,
 			percentage = 40,
 			spawn = "RandomDrinkVendingMachineContent",
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -782,6 +794,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			percentage = 4,
 			spawn = "SmallHidingPlaceContent",
 			precheck = true,
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -840,6 +853,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			percentage = 3,
 			spawn = "MediumHidingPlaceContent",
 			precheck = true,
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -1778,6 +1792,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			regenerate = 10,
 			percentage = 100,
 			spawn = "Map",
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -1883,6 +1898,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			percentage = 65,
 			spawn = "RandomBeehiveContent",
 			forceinteraction = true,
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -2001,6 +2017,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			tactical = false,
 			check = false,
 			forceinteraction = true,
+			safezone = true,
 		},
 
 		--------------------------------------------------
@@ -2023,6 +2040,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			gridsize = 4,
 			tactical = false,
 			check = false,
+			safezone = true,
 		},
 
 		-- seaweed
@@ -2048,6 +2066,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			gridsize = 4,
 			tactical = false,
 			forceinteraction = true,
+			safezone = true,
 		},
 		
 		-- clams (on beaches)
@@ -2065,6 +2084,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			spawn = "ClamSingle",
 			gridsize = 4,
 			tactical = false,
+			safezone = true,
 		},
 
 		-- cacti
@@ -2085,6 +2105,7 @@ geigercounter:			consumable type - used for geiger counter markup
 			spawn = "RandomCactiContent", -- or whatever the item is named
 			gridsize = 4,
 			tactical = false,
+			safezone = true,
 		},
 
 		-- more ideas: nothing atm

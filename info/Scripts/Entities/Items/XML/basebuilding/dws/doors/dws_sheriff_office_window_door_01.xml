@@ -5,7 +5,7 @@
 		<param name="no_icon" value="1"/>
 	</params>
 
-	<base_part class="door" type="271" name="dws_sheriff_office_window_door_01" max_health="1000">
+	<base_part class="door" type="271" name="dws_sheriff_office_window_door_01" max_health="500">
 		<door filename="Objects/props/Doors/sheriff_office_doors/dws_sheriff_office_window_door_01.cgf" rotate_base="-180" rotate_range="90" rotate_speed="180" rotate_axis="z" rotate_dir="" 
 			sound_open="Play_door_metal_open" sound_opened="Play_door_metal_opened" sound_close="Play_door_metal_close" sound_closed="Play_door_metal_closed"/>
 		<base_actions>

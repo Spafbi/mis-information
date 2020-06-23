@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="3x4 Wall Window 02"/>
-		<param name="description" value="A large wood wall with a window"/>
+		<param name="display_name" value="@wood_wall_window_3m_4m_02"/>
+		<param name="description" value="@wood_wall_window_3m_4m_02Description"/>
 	</params>
 
 	<base_part class="static" type="352" name="wood_wall_window_3m_4m_02" repair_sound="Play_wall_repair">

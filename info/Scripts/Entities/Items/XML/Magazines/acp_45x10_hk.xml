@@ -6,6 +6,7 @@
 		<param name="display_name" value="@acp_45x10_hk"/>
 		<param name="description" value="@acp_45x10_hkDescription"/>
 		<param name="tag" value="acp_45x10_hk"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

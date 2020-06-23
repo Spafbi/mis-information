@@ -9,6 +9,7 @@
 		<param name="damage_scale" value="0.5"/>
 		<param name="display_name" value="@WoolGlovesCamo3"/>
 		<param name="description" value="@WoolGlovesCamo3Description"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<wearable>

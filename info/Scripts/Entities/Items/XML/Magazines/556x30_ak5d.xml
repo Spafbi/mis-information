@@ -3,9 +3,10 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.7"/> <!-- 4.1g per bullet /2 + 500g for magazine -->
-		<param name="display_name" value="556x30"/>
-		<param name="description" value="A 30 rounds 5.56 magazine for the AK5D"/>
+		<param name="display_name" value="@556x30_ak5d"/>
+		<param name="description" value="@556x30_ak5dDescription"/>
 		<param name="tag" value="556x30_ak5d"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

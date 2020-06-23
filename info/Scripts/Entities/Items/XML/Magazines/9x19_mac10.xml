@@ -3,9 +3,10 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.3"/> <!-- 8 grams per bullet / 2 + 150 grams for magazine -->
-		<param name="display_name" value="9mmx30"/>
-		<param name="description" value="A 30 rounds magazine for a MAK10 smg."/>
+		<param name="display_name" value="@9x19_mac10"/>
+		<param name="description" value="@9x19_mac10Description"/>
 		<param name="tag" value="9x19_mac10"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

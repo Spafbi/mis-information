@@ -5,6 +5,7 @@
 		<param name="mass" value="5.0"/>
 		<param name="display_name" value="@AmmoBox_7_62x39"/>
 		<param name="description" value="@AmmoBox_7_62x39Description"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<magazine>

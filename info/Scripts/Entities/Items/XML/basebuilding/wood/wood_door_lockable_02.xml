@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="2"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Lockable Wooden Door 02"/>
-		<param name="description" value="A wooden door with a lock on it."/>
+		<param name="display_name" value="@wood_door_lockable_02"/>
+		<param name="description" value="@wood_door_lockable_02Description"/>
 	</params>
 
 	<base_part class="door" type="331" name="wood_door_lockable_02" max_health="5000" repair_sound="Play_wall_repair">

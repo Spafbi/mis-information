@@ -7,8 +7,8 @@
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.25"/>
 		<param name="destroyWhenDegraded" value="1"/>		
-		<param name="display_name" value="Sledgehammer Repair Kit"/>
-		<param name="description" value="A repair kit suitable to repair a sledgehammer."/>
+		<param name="display_name" value="@RK_Sledgehammer"/>
+		<param name="description" value="@RK_SledgehammerDescription"/>
 	</params>
 
 	<geometry>

@@ -6,6 +6,7 @@
 		<param name="display_name" value="@9mmx10_makarov"/>
 		<param name="description" value="@9mmx10_makarovDescription"/>
 		<param name="tag" value="9mmx10_makarov"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

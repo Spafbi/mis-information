@@ -21,27 +21,81 @@
 	</Damages>
 
 	<Components>
-		<Component name="hull" damageMax="3000" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
-			<DamageBehaviors> <!-- Four damage levels, 25%, 50%, 75% and 100% (destroyed) -->
-				<DamageBehavior class="Effect" damageRatioMin="0.25" damageRatioMax="0.5">
-					<Effect effect="HullSmoke25" disableAfterExplosion="1"/>
-				</DamageBehavior>
-				<DamageBehavior class="Effect" damageRatioMin="0.50" damageRatioMax="0.75">
-					<Effect effect="HullSmoke50" disableAfterExplosion="1"/>
-				</DamageBehavior>
-				<DamageBehavior class="Effect" damageRatioMin="0.75">
-					<Effect effect="HullSmoke75" disableAfterExplosion="1"/>
-				</DamageBehavior>
+		<Component damageMax="4000" name="hull" position="0,0,0" size="1,1,1" useBoundsFromParts="1">
+			<DamageBehaviors>
 				<DamageBehavior class="Group" damageRatioMin="1">
 					<Group name="Destroy"/>
 				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.90">
+					<Effect disableAfterExplosion="1" effect="BurnEngine"/>
+				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.25">
+					<Effect disableAfterExplosion="1" effect="HullSmoke25"/>
+				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.50">
+					<Effect disableAfterExplosion="1" effect="HullSmoke50"/>
+				</DamageBehavior>
+				<DamageBehavior class="Effect" damageRatioMin="0.75">
+					<Effect disableAfterExplosion="1" effect="HullSmoke75"/>
+				</DamageBehavior>
+				<DamageBehavior class="Burn" damageRatioMin="0.90">
+					<Burn damage="1" helper="vehicleBurnPos" interval="0.5" radius="3" selfDamage="10"/>
+				</DamageBehavior>
+				<DamageBehavior class="MovementNotification" damageRatioMin="0.90"/>
 			</DamageBehaviors>
 		</Component>
-		<Component name="engine" damageMax="100" position="0,2,1" size="1.5,1.3,0.6" useBoundsFromParts="0" hullAffection="2">
-			<DamageBehaviors />
+		<Component name="engine" damageMax="10" position="0,2,1" size="0.05,0.05,0.05" useBoundsFromParts="0" hullAffection="2" major="1">
 			<DamageMultipliers>
-				<DamageMultiplier damageType="collision" multiplier="0"/> <!-- Disable collision damage on engine -->
-			</DamageMultipliers>
+			    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+			    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+			    <DamageMultiplier damageType="explosion" multiplier="0.0" splash="1.0"/>
+			    <DamageMultiplier damageType="acid" multiplier="0.0" splash="0.0"/>
+			    <DamageMultiplier damageType="frag" multiplier="0.0" splash="0.0"/>
+			    <DamageMultiplier damageType="repair" multiplier="0.0"/>
+				<DamageMultiplier damageType="collision" multiplier="0.0"/>
+			    <DamageMultiplier damageType="explosion" multiplier="0.0"/>
+			    <DamageMultiplier damageType="frag" multiplier="0.0"/>
+			    <DamageMultiplier damageType="fire" multiplier="0.0"/>
+			    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+			    <DamageMultiplier damageType="repair" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_10mm" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_12_gauge_beanbag" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_12_gauge_pellet" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_12_gauge_slug" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_22" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_223" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_308" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_357" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_5_45x39" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_5_56x45" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_5_70x28" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_7_62x39" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_7_62x51" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_9mm" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_acp_45" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_rock_lge" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_rock_sml" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_rock_player" multiplier="0.0"/>
+			    <DamageMultiplier damageType="ammo_tranquilizer_dart" multiplier="0.0"/>
+			    <DamageMultiplier damageType="arrow" multiplier="0.0"/>
+			    <DamageMultiplier damageType="blunt" multiplier="0.0"/>
+			    <DamageMultiplier damageType="flare" multiplier="0.0"/>
+			    <DamageMultiplier damageType="hammer" multiplier="0.0"/>
+			    <DamageMultiplier damageType="hatchet" multiplier="0.0"/>
+			    <DamageMultiplier damageType="knife" multiplier="0.0"/>
+			    <DamageMultiplier damageType="pickaxe" multiplier="0."/>
+			    <DamageMultiplier damageType="torch" multiplier="0.0"/>
+			    <DamageMultiplier damageType="sledgehammer" multiplier="0.0"/>
+		    </DamageMultipliers>
+			<DamageBehaviors>
+				<DamageBehavior class="Effect" damageRatioMin="0.5">
+					<Effect effect="EngineBurn" disableAfterExplosion="1"/>
+				</DamageBehavior>
+				<DamageBehavior class="Burn" damageRatioMin="0.90">
+					<Burn damage="1" helper="vehicleBurnPos" interval="0.5" radius="3" selfDamage="250"/>
+				</DamageBehavior>
+				<DamageBehavior class="MovementNotification" damageRatioMin="5"/>
+			</DamageBehaviors>
 		</Component>
 		<Component name="enterFrontLeft" damageMax="0" position="-1,0.5,1" size="1,1,2" useBoundsFromParts="0">
 			<DamageBehaviors />
@@ -441,9 +495,10 @@
 				maxPower="1"  maxPowerSizeScale="1" maxPowerCountScale="1" maxPowerSpeedScale="1"/>
 		</Exhaust>
 		<DamageEffects>
-			<DamageEffect name="HullSmoke25" helper="vehicleSmokePos" effect="vehicles.Sedan.Damage.HullSmoke25"/>
-			<DamageEffect name="HullSmoke50" helper="vehicleSmokePos" effect="vehicles.Sedan.Damage.HullSmoke50"/>
-			<DamageEffect name="HullSmoke75" helper="vehicleSmokePos" effect="vehicles.Sedan.Damage.HullSmoke75"/>
+			<DamageEffect name="HullSmoke25" helper="vehicleBurnPos" effect="vehicles.Sedan.Damage.HullSmoke25"/>
+			<DamageEffect name="HullSmoke50" helper="vehicleBurnPos" effect="vehicles.Sedan.Damage.HullSmoke50"/>
+			<DamageEffect name="HullSmoke75" helper="vehicleBurnPos" effect="vehicles.Sedan.Damage.HullSmoke75"/>
+			<DamageEffect name="BurnEngine" helper="vehicleBurnPos" effect="vehicles.f100.damage.burnengine"/>
 			<DamageEffect name="VehicleDestroyed" helper="vehicleCenterPos" effect="vehicles.Sedan.Damage.Destroyed"/> <!-- Effect called in DamagesGroups -->
 			<DamageEffect name="SmokeStack" helper="vehicleCenterPos" effect="vehicles.Sedan.Damage.SmokeStack"/> <!-- Effect called in DamagesGroups -->
 			<DamageEffect name="BlownTirePFX" helper="" effect="vehicles.Common.Ground.Blown_Tire" gravityDirection="0,0,1"/>

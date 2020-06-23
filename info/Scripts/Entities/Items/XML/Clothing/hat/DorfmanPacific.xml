@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@DorfmanPacific"/>
 		<param name="description" value="@DorfmanPacificDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/generic/hat/dorfman_pacific/dorfman_pacific.skin"/>

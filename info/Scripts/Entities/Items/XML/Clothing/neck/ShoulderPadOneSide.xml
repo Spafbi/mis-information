@@ -8,6 +8,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@ShoulderPadOneSide"/>
 		<param name="description" value="@ShoulderPadOneSideDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/male/neck/shoulder_pad/shoulder_pad.skin"/>

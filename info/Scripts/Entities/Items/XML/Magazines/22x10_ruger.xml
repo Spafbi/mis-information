@@ -6,6 +6,7 @@
 		<param name="display_name" value="@22x10_ruger"/>
 		<param name="description" value="@22x10_rugerDescription"/>
 		<param name="tag" value="22x10_ruger"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

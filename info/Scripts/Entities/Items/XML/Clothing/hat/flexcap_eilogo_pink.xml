@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@flexcap_eilogo_pink"/>
 		<param name="description" value="@flexcap_eilogo_pinkDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<wearable>

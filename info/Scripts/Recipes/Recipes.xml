@@ -742,50 +742,54 @@
 			<cat name="Consumable">
 				<subcats>
 					<subcat name="Food">
-						<items>
-							<item class="BearMeatCured" time="2">
-								<materials>
-									<material class="BearMeatRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="DeerMeatSteakCured" time="2">
-								<materials>
-									<material class="DeerMeatSteakRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="DonkeyMeatSteakCured" time="2">
-								<materials>
-									<material class="DonkeyMeatSteakRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="RamMeatSteakCured" time="2">
-								<materials>
-									<material class="RamMeatSteakRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="ScorpionMeatSteakCured" time="2">
-								<materials>
-									<material class="ScorpionMeatSteakRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="WolfMeatSteakCured" time="2">
-								<materials>
-									<material class="WolfMeatSteakRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-							<item class="HamCured" time="2">
-								<materials>
-									<material class="HamRaw" />
-									<material class="Salt" />
-								</materials>
-							</item>
-						</items>
+					    <types>
+							<type name="Cured Meat">
+						        <items>
+							        <item class="BearMeatCured" time="2">
+								       <materials>
+									        <material class="BearMeatRaw" />
+									        <material class="Salt" />
+								       </materials>
+							        </item>
+							        <item class="DeerMeatSteakCured" time="2">
+								        <materials>
+									        <material class="DeerMeatSteakRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+							        <item class="DonkeyMeatSteakCured" time="2">
+								        <materials>
+									        <material class="DonkeyMeatSteakRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+							        <item class="RamMeatSteakCured" time="2">
+								        <materials>
+									        <material class="RamMeatSteakRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+							        <item class="ScorpionMeatSteakCured" time="2">
+								        <materials>
+									        <material class="ScorpionMeatSteakRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+							        <item class="WolfMeatSteakCured" time="2">
+								        <materials>
+									        <material class="WolfMeatSteakRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+							        <item class="HamCured" time="2">
+								        <materials>
+									        <material class="HamRaw" />
+									        <material class="Salt" />
+								        </materials>
+							        </item>
+						        </items>
+					        </type>
+						</types>
 					</subcat>
 
 					<subcat name="Water">
@@ -829,6 +833,18 @@
 								<materials>
 									<material class="SpriteCan" />
 									<material class="MiniBottleVodka" />
+								</materials>
+							</item>
+							<item class="CocktailGinAndTonic" time="2">
+								<materials>
+									<material class="SpriteCan" />
+									<material class="MiniBottleGin" />
+								</materials>
+							</item>
+							<item class="BlackCoffeeCold" time="5">
+								<materials>
+									<material class="CoffeeBag" />
+									<material class="WaterBottle" />
 								</materials>
 							</item>
 						</items>
@@ -3710,6 +3726,210 @@
 											<material class="SheetMetal" count="64" />
 											<material class="ElectricalParts" count="5" />
 											<material class="Amalgaduino" count="3" />
+										</materials>
+									</item>
+								</items>
+							</type>
+						</types>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+	
+	<guide name="guide_cooking_1" id="31">
+		<cats>
+			<cat name="Consumable">
+				<subcats>
+					<subcat name="Food">
+						<types>
+							<type name="Sandwiches">
+								<items>
+									<item class="BearSandwich" time="10">
+										<materials>
+											<material class="BearMeatCooked" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="ChickenSandwich" time="10">
+										<materials>
+											<material class="ChickenCooked" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="DeerSandwich" time="10">
+										<materials>
+											<material class="DeerMeatSteakCooked" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="HamSandwich" time="10">
+										<materials>
+											<material class="HamCooked" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="WolfSandwich" time="10">
+										<materials>
+											<material class="WolfMeatSteakCooked" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="JellySandwich" time="10">
+										<materials>
+											<material class="Jelly" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="PBJSandwich" time="10">
+										<materials>
+											<material class="Jelly" count="1" />
+											<material class="PeanutButter" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+									<item class="PeanutButterSandwich" time="10">
+										<materials>
+											<material class="PeanutButter" count="1" />
+											<material class="Bread" count="2" />
+										</materials>
+									</item>
+								</items>
+							</type>
+						</types>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+	
+	<guide name="guide_cooking_2" id="32">
+		<cats>
+			<cat name="Consumable">
+				<subcats>
+					<subcat name="Food">
+						<types>
+							<type name="Roast">
+								<items>
+									<item class="RawSeasonedBearSteaks" time="10">
+										<materials>
+											<material class="BearMeatRaw" count="2" />
+											<material class="Carrots" count="1" />
+											<material class="BrushPeas" count="1" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="RawSeasonedChicken" time="10">
+										<materials>
+											<material class="ChickenRaw" count="1" />
+											<material class="Carrots" count="1" />
+											<material class="BrushPeas" count="1" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="RawSeasonedDeerSteaks" time="10">
+										<materials>
+											<material class="DeerMeatSteakRaw" count="2" />
+											<material class="Carrots" count="1" />
+											<material class="BrushPeas" count="1" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="RawSeasonedHamSteaks" time="10">
+										<materials>
+											<material class="HamRaw" count="2" />
+											<material class="Carrots" count="1" />
+											<material class="BrushPeas" count="1" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="RawSeasonedWolfSteaks" time="10">
+										<materials>
+											<material class="WolfMeatSteakRaw" count="2" />
+											<material class="Carrots" count="1" />
+											<material class="BrushPeas" count="1" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+								</items>
+							</type>
+						</types>
+					</subcat>
+				</subcats>
+			</cat>
+		</cats>
+	</guide>
+	
+	<guide name="guide_cooking_3" id="33">
+		<cats>
+			<cat name="Consumable">
+				<subcats>
+					<subcat name="Food">
+						<types>
+							<type name="Stew">
+								<items>
+									<item class="BearStewRaw" time="10">
+										<materials>
+											<material class="BearMeatRaw" count="2" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="ChickenStewRaw" time="10">
+										<materials>
+											<material class="ChickenRaw" count="1" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="DeerStewRaw" time="10">
+										<materials>
+											<material class="DeerMeatSteakRaw" count="2" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="HamStewRaw" time="10">
+										<materials>
+											<material class="HamRaw" count="2" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="WolfStewRaw" time="10">
+										<materials>
+											<material class="WolfMeatSteakRaw" count="2" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="ClamChowderRaw" time="10">
+										<materials>
+											<material class="ClamSingle" count="3" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="MushroomStewRaw" time="10">
+										<materials>
+											<material class="MushroomFood" count="3" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="SeaweedSoupRaw" time="10">
+										<materials>
+											<material class="Seaweed" count="3" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
+										</materials>
+									</item>
+									<item class="VeggieStewRaw" time="10">
+										<materials>
+											<material class="Tomatoes" count="2" />
+											<material class="BrushPeas" count="2" />
+											<material class="Carrots" count="2" />
+											<material class="Potatoes" count="2" />
 										</materials>
 									</item>
 								</items>

@@ -7,8 +7,9 @@
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.25"/>
 		<param name="destroyWhenDegraded" value="1"/>		
-		<param name="display_name" value="Repair Kit (M97)"/>
-		<param name="description" value="Repair kit for the M97."/>
+		<param name="display_name" value="@RK_M97"/>
+		<param name="description" value="@RK_M97Description"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

@@ -121,26 +121,26 @@ Player =
 				name = "prone",
 
 				-- z = (half height), x = radius
-				--size = {x=0.125,y=0,z=0.125}, -- capsule worked up to 45Â° 
-				--size = {x=0.15,y=0,z=0.2},-- capsule worked up to 30Â°
+				--size = {x=0.125,y=0,z=0.125}, -- capsule worked up to 45° 
+				--size = {x=0.15,y=0,z=0.2},-- capsule worked up to 30°
 				--size = {x=0.3,y=0,z=0.29},-- orientated big capsule does work ok for very low slopes
 				--size = {x=0.3,y=0,z=0.25},-- orientated capsule worked ok low slopes
-				--size = {x=0.13,y=0,z=0.15},-- orientated capsule works up to 45Â°
-				--size = {x=0.15,y=0,z=0.16},-- orientated capsule works up to 45Â°
-				--size = {x=0.3,y=0,z=0.16},-- orientated capsule works up to 20Â° with heighcollider 0.36
-				--size = {x=0.2,y=0,z=0.16},-- orientated capsule works up to 45Â° with heighcollider 0.38
-				--size = {x=0.25,y=0,z=0.16},-- orientated capsule should works up to 30Â° with heighcollider 0.38
-				--size = {x=0.25,y=0,z=0.16},-- orientated capsule should works up to 40Â° with heighcollider 0.4
+				--size = {x=0.13,y=0,z=0.15},-- orientated capsule works up to 45°
+				--size = {x=0.15,y=0,z=0.16},-- orientated capsule works up to 45°
+				--size = {x=0.3,y=0,z=0.16},-- orientated capsule works up to 20° with heighcollider 0.36
+				--size = {x=0.2,y=0,z=0.16},-- orientated capsule works up to 45° with heighcollider 0.38
+				--size = {x=0.25,y=0,z=0.16},-- orientated capsule should works up to 30° with heighcollider 0.38
+				--size = {x=0.25,y=0,z=0.16},-- orientated capsule should works up to 40° with heighcollider 0.4
 
 				-- <--- best possible result after long session of tweaking for stepsize, slope, tight places, uneven terrain
 				--      but camera protection doesnt work as one can turn into  wall and also cylinder can't be longer
 				useCapsule = 1,
 				zLeeway = -0.5, --negative leeway means rotate capsule to forward
-				size = {x=0.23,y=0,z=0.16},-- orientated capsuleworks up to 45Â° with heighcollider 0.43 
+				size = {x=0.23,y=0,z=0.16},-- orientated capsuleworks up to 45° with heighcollider 0.43 
 				heightCollider = 0.43, -- offset capsule
 				
 				-- <--- best fallback for avoiding camera collisions
-				--      but char doesnt fit into tighter uneven areas and max slope is 20Â°
+				--      but char doesnt fit into tighter uneven areas and max slope is 20°
 				--useCapsule = 0,
 				--zLeeway = 0.5, -- positive leeway means keep upward capsule rotation
 				--size = {x=0.85,y=0,z=0.17}, -- cylinder
@@ -617,6 +617,12 @@ function Player:PerformAction(user, action)
 	--Log("[ Player ] PerformAction: action="..action);
 
 	return g_gameRules.game:PerformAction(user.id, self.id, action);
+end
+
+function Player:CheckEntityOpenable(target)
+	--Log("[ Player ] CheckEntityOpenable" .. tostring(target))
+
+	return true -- here modders can override openable state of inventory/target inventory(clientside), it gets called each frame once inventory is open 
 end
 -- // EI End
 

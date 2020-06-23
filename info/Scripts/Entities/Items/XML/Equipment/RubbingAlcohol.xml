@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@RubbingAlcohol"/>
 		<param name="description" value="@RubbingAlcoholDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<geometry>

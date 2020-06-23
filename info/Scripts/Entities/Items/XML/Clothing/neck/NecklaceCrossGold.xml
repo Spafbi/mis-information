@@ -7,6 +7,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="display_name" value="@NecklaceCrossGold"/>
 		<param name="description" value="@NecklaceCrossGoldDescription"/>
+		<param name="vendor_cost" value="30"/>
 	</params>
 
 	<wearable>

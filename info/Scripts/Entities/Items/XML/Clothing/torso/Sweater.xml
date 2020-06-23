@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.2"/>
 		<param name="display_name" value="@Sweater"/>
 		<param name="description" value="@SweaterDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

@@ -5,6 +5,7 @@
 		<param name="mass" value="2.5"/>
 		<param name="display_name" value="@small_generator"/>
 		<param name="description" value="@small_generatorDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

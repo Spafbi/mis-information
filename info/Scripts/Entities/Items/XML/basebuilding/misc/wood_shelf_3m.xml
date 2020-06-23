@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Wood shelf 3m"/>
-		<param name="description" value="A 3 meters long wood shelf."/>
+		<param name="display_name" value="@wood_shelf_3m"/>
+		<param name="description" value="@wood_shelf_3mDescription"/>
 		
 		<param name="place_restrict_snap" value="sticky"/>
 	</params>

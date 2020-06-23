@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="1.0"/>
-		<param name="display_name" value="Dice"/>
-		<param name="description" value="A 6 faces dice."/>
+		<param name="display_name" value="@ScriptDice"/>
+		<param name="description" value="@ScriptDiceDescription"/>
 	</params>
 
 	<geometry>

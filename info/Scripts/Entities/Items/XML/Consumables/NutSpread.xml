@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@NutSpread"/>
 		<param name="description" value="@NutSpreadDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<geometry>

@@ -1,0 +1,29 @@
+<item name="Jelly" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@Jelly"/>
+		<param name="description" value="@JellyDescription"/>
+		<param name="vendor_cost" value="1"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/peanut_butter_jar/jelly_jar.cgf"/>
+	</geometry>
+
+	<consumable>
+	    <param name="type" value="2"/>
+	    <param name="consumePartial" value="0"/>
+		<param name="foodAmount" value="200"/> <!-- Calories -->
+		<param name="drinkAmount" value="100"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

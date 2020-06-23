@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@PuffyJacketCanada"/>
 		<param name="description" value="@PuffyJacketCanadaDescription"/>
+		<param name="vendor_cost" value="7"/>
 	</params>
 
 	<wearable>

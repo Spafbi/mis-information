@@ -7,6 +7,7 @@
 		<param name="description" value="@Pile_TranquilizerDartDescription"/>
 		<param name="is_ammo_pile" value="1"/>
 		<param name="hide_as_attachment" value="1"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<magazine>

@@ -1,7 +1,7 @@
 <item name="RPK" class="Weapon" category="primary" priority="1" weaponParams="1">
 	<params>
-		<param name="display_name" value="The Comrade"/>
-		<param name="description" value="An old worn out russian rifle."/>
+		<param name="display_name" value="@RPK"/>
+		<param name="description" value="@RPKDescription"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.8"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="24"/>
 		<param name="tag" value="rpk"/>
 		<param name="adb" value="rpkWeaponAnims.adb"/>
 		<animPrecache name="rpk">
@@ -106,7 +107,7 @@
 
 		<firemode name="Automatic" type="Rapid">
 			<fire>
-				<param name="rate" value="600" />
+				<param name="rate" value="600"/>
 				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<rapid>

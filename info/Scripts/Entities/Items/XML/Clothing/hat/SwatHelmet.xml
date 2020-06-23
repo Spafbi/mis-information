@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@SwatHelmet"/>
 		<param name="description" value="@SwatHelmetDescription"/>
+		<param name="vendor_cost" value="7"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/generic/hat/swat_helmet/swat_helmet.skin"/>

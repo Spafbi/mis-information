@@ -3,12 +3,16 @@
 	<params>
 		<param name="droppable" value="0"/>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="6"/>
+		<param name="mass" value="1"/>
+		<param name="healthMax" value="20"/>
+		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@Campfire"/>
 		<param name="view_dist_min" value="150"/> <!-- minimum 150m draw distance -->
 	</params>
 
 	<placeable>
+	    <param name="packup_class" value="CampfirePacked"/>
+		<param name="packup_sound" value="Play_pickup_metal"/>
 	</placeable>
 
 	<campfire>
@@ -17,6 +21,13 @@
 		<sound start_trigger="Play_campfire" end_trigger="Stop_campfire"/>
 		<wood obj="objects/props/campfire/woodpile.cgf" mat="objects/props/campfire/campfire"/>
 	</campfire>
+	
+	<explosion>
+		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
+		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
+		<param name="effect" value="misc.basebuilding.rock_bpart_destroyed"/>
+		<param name="effect_scale" value="0.4"/>
+	</explosion>
 
 	<envareas>
 		<!-- dynamic envareas (all get enabled by campfire lit state) -->

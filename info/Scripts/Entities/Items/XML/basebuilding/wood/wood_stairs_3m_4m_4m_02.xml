@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Wood Stairs 3m 4m 4m "/>
-		<param name="description" value="A wooden platform with stairs."/>
+		<param name="display_name" value="@wood_stairs_3m_4m_4m_02"/>
+		<param name="description" value="@wood_stairs_3m_4m_4m_02Description"/>
 	</params>
 
 	<base_part class="static" type="360" name="wood_stairs_3m_4m_4m_02" max_health="15000" repair_sound="Play_wall_repair">

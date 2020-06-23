@@ -173,6 +173,7 @@
    <Tag name="556x30_ak5d"/>
    <Tag name="762x39x30"/>
    <Tag name="ext_762x75"/>
+   <Tag name="ext_556_cmag"/>
   </Group>
   <Group name="playMode">
    <Tag name="MP"/>

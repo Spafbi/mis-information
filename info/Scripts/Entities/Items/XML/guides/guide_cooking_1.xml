@@ -1,0 +1,27 @@
+<item name="guide_cooking_1" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.1"/>
+		<param name="display_name" value="@guide_cooking_1"/>
+		<param name="description" value="@guide_cooking_1Description"/>
+		<param name="vendor_cost" value="10"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/props/crafting_guides/cook_book_01.cgf"/>
+	</geometry>
+
+	<usable>
+		<param name="action" value="guide"/>
+		<param name="param" value="31"/>
+		<param name="soundUsed" value="Play_book_page_turn"/>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+	
+</item>

@@ -3,8 +3,9 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Painting Landscape 03"/>
-		<param name="description" value="A large painting you can hang on your wall."/>
+		<param name="display_name" value="@painting_landscape_03"/>
+		<param name="description" value="@painting_landscape_03Description"/>
+		<param name="vendor_cost" value="6"/>
 		
 		<param name="place_restrict_snap" value="sticky"/>
 	</params>

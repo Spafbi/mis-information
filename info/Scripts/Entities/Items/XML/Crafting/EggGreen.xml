@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.1"/>
 		<param name="stack_size" value="250"/>
-		<param name="display_name" value="Egg Green"/>
-		<param name="description" value="A green easter egg. Used as currency to create weapons."/>
+		<param name="display_name" value="@EggGreen"/>
+		<param name="description" value="@EggGreenDescription"/>
 	</params>
 
 	<geometry>

@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@ScavengerHelmet"/>
 		<param name="description" value="@ScavengerHelmetDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<wearable>

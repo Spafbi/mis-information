@@ -1,7 +1,7 @@
 <item name="MAK10" class="Weapon" category="secondary" priority="1" weaponParams="1">
 	<params>
-		<param name="display_name" value="MAK10"/>
-		<param name="description" value="A MAK10 sub machine gun."/>
+		<param name="display_name" value="@MAK10"/>
+		<param name="description" value="@MAK10Description"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.1"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="11"/>
 		<param name="tag" value="mac10"/>
 		<param name="adb" value="mac10WeaponAnims.adb"/>
 		<animPrecache name="mac10">

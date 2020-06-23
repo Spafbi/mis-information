@@ -1,7 +1,7 @@
 <item name="M16Vietnam" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="M16 Vietnam"/>
-		<param name="description" value="An old M16 used during the vietnam war."/>
+		<param name="display_name" value="@M16Vietnam"/>
+		<param name="description" value="@M16VietnamDescription"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.8"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="22"/>
 		<param name="tag" value="m16"/>
 		<param name="adb" value="m16WeaponAnims.adb"/>
 		<animPrecache name="m16">
@@ -104,7 +105,7 @@
 		
 		<firemode name="Automatic" type="Rapid">
 		    <fire>
-				<param name="rate" value="600" />
+				<param name="rate" value="600"/>
 				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<rapid>

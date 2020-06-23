@@ -9,6 +9,7 @@
 		<param name="damage_scale" value="0.2"/>
 		<param name="display_name" value="@LeatherJacketBlack"/>
 		<param name="description" value="@LeatherJacketBlackDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

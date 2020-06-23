@@ -1,4 +1,6 @@
 <SkeletonList>
+ <Skeleton name="npc_female_01" file="objects/characters/npc/npc_female_01/npc_female_01.chr"/>
+ <Skeleton name="npc_male_01" file="objects/characters/npc/npc_male_01/npc_male_01.chr"/>
  <Skeleton name="556x100_box" file="objects/magazines/556x100_box/556x100_box.chr"/>
  <Skeleton name="870_tactical" file="objects/weapons/870_tactical/870_tactical.chr"/>
  <Skeleton name="22rifle" file="objects/weapons/22rifle/22rifle.chr"/>

@@ -6,11 +6,12 @@
 		<param name="display_name" value="@10mmx15"/>
 		<param name="description" value="@10mmx15Description"/>
 		<param name="tag" value="10mmx15"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>
 		<!-- must only be one magazine element in this section-->
-		<magazine capacity="15"/> <!-- max number of rounds this magazine can hold -->
+		<magazine capacity="30"/> <!-- max number of rounds this magazine can hold -->
 
 		<!-- Ammo block -->
 		<!-- A magazine can support one or more types of ammo. For every ammo type, we add a <ammo ... /> line -->

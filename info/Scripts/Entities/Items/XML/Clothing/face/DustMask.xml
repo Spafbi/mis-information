@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
         <param name="display_name" value="@DustMask"/>
         <param name="description" value="@DustMaskDescription"/>
+		<param name="vendor_cost" value="2"/>
     </params>
     <wearable>
         <param name="skin" value="Objects/characters/players/male/face/hygienemask/hygienemask.skin"/>

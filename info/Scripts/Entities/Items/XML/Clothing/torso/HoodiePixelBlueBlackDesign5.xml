@@ -9,6 +9,7 @@
 		<param name="damage_scale" value="0.2"/>
 		<param name="display_name" value="@HoodiePixelBlueBlackDesign5"/>
 		<param name="description" value="@HoodiePixelBlueBlackDesign5Description"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<wearable>

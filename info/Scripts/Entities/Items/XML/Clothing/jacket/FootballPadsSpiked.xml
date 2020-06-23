@@ -8,6 +8,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@FootballPadsSpiked"/>
 		<param name="description" value="@FootballPadsSpikedDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 	
 	<wearable>

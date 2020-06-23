@@ -6,6 +6,7 @@
 		<param name="display_name" value="@acp_45x30"/>
 		<param name="description" value="@acp_45x30Description"/>
 		<param name="tag" value="acp_45x30"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

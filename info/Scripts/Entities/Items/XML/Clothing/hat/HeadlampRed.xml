@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@HeadlampRed"/>
 		<param name="description" value="@HeadlampRedDescription"/>
+		<param name="vendor_cost" value="7"/>
 	</params>
 
 	<wearable>

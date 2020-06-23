@@ -10,6 +10,7 @@
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@DuffelBag"/>
 		<param name="description" value="@DuffelBagDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/male/back/backpack/duffel_bag/duffel_bag.skin"/>

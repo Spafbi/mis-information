@@ -3,9 +3,10 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="1.6"/> <!-- 7.9g per bullet /2 + 350g for magazine -->
-		<param name="display_name" value="7.62 Drum"/>
-		<param name="description" value="A 75 rounds 7.62 drum magazine."/>
+		<param name="display_name" value="@ext_762x75"/>
+		<param name="description" value="@ext_762x75Description"/>
 		<param name="tag" value="ext_762x75"/>
+		<param name="vendor_cost" value="15"/>
 	</params>
 
 	<magazine>

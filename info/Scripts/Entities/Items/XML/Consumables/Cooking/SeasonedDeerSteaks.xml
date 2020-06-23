@@ -8,14 +8,14 @@
 	</params>
 
 	<geometry>
-		<thirdperson name="Objects/default/primitive_cube.cgf"/>
+		<thirdperson name="objects/props/stewpot/deer_roast_cooked.cgf"/>
 	</geometry>
 
 	<consumable>
+	    <param name="type" value="2"/>
 	    <param name="consumePartial" value="1"/>
-		<param name="foodAmount" value="100"/> <!-- Calories -->
-		<param name="drinkAmount" value="100"/>
-		<param name="staminaAmount" value="100"/>
+		<param name="foodAmount" value="8500"/> <!-- Calories -->
+		<param name="drinkAmount" value="1000"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

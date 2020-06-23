@@ -3,9 +3,10 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.85"/> <!-- 4.1g per bullet /2 + 200g for magazine -->
-		<param name="display_name" value="5.56 C-mag"/>
-		<param name="description" value="A 5.56 C-mag."/>
-		<param name="tag" value="ext_556x75"/>
+		<param name="display_name" value="@ext_556x75"/>
+		<param name="description" value="@ext_556x75Description"/>
+		<param name="tag" value="ext_556_cmag"/>
+		<param name="vendor_cost" value="15"/>
 	</params>
 
 	<magazine>

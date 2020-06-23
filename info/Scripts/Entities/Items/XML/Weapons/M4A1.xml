@@ -1,7 +1,7 @@
 <item name="M4A1" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="M4A1"/>
-		<param name="description" value="An old M4A1 automatic aussault rifle."/>
+		<param name="display_name" value="@M4A1"/>
+		<param name="description" value="@M4A1Description"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.5"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="20"/>
 		<param name="tag" value="m4a1"/>
 		<param name="adb" value="m4a1WeaponAnims.adb"/>
 		<animPrecache name="at15">
@@ -104,7 +105,7 @@
 		
 		<firemode name="Automatic" type="Rapid">
 		    <fire>
-				<param name="rate" value="700" />
+				<param name="rate" value="700"/>
 				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<rapid>

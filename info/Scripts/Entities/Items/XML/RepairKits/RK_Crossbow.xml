@@ -9,6 +9,7 @@
 		<param name="destroyWhenDegraded" value="1"/>		
 		<param name="display_name" value="@RK_Crossbow"/>
 		<param name="description" value="@RK_CrossbowDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

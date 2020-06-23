@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Climb N' Slide Game"/>
-		<param name="description" value="An old board of Climb N' Slide."/>
+		<param name="display_name" value="@snl_board"/>
+		<param name="description" value="@snl_boardDescription"/>
 	</params>
 
 	<base_part class="static" type="339" name="snl_board" max_health="200" repair_with="Lumber">

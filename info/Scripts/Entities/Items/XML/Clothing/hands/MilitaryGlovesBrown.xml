@@ -9,6 +9,7 @@
 		<param name="damage_scale" value="0.3"/>
 		<param name="display_name" value="@MilitaryGlovesBrown"/>
 		<param name="description" value="@MilitaryGlovesBrownDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

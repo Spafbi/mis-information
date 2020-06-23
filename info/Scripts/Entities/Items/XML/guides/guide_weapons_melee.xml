@@ -5,6 +5,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="display_name" value="@guide_weapons_melee"/>
 		<param name="description" value="@guide_weapons_meleeDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

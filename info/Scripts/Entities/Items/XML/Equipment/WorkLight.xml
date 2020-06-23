@@ -5,6 +5,7 @@
 		<param name="mass" value="2.0"/>
 		<param name="display_name" value="@WorkLight"/>
 		<param name="description" value="@WorkLightDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

@@ -4,6 +4,7 @@
 		<param name="description" value="@FlashlightPistolDescription"/>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.2"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<geometry>

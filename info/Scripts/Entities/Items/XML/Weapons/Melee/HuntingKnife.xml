@@ -20,6 +20,7 @@
 		<param name="relaxedToTacticalBlendTime" value="0.2"/>
 		<param name="tag" value="huntingknife"/>
 		<param name="prone_no_melee" value="0"/>
+		<param name="vendor_cost" value="3"/>
 		<animPrecache name="1handedmelee">
 			<precache DBAFile="animations/human/male/weapons/1handedmelee/1handedmelee.dba" thirdperson="1"/>
 		</animPrecache>

@@ -1,0 +1,65 @@
+<item name="DeerStewRaw" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@DeerStewRaw"/>
+		<param name="description" value="@DeerStewRawDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/stewpot/deer_stew_raw.cgf"/>
+	</geometry>
+
+	<consumable>
+	    <param name="cookable" value="1"/>
+		<param name="cookedItem" value="DeerStew"/>
+		<param name="cookedTime" value="250"/>
+	    <param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="100"/> <!-- Calories -->
+		<param name="drinkAmount" value="100"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+	
+	<usable>
+		<uses>
+			<use>
+				<param name="title" value="@ChickenRawCookInOven"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_oven"/>
+				<param name="targetClassNames" value="powered_oven"/>
+			</use>
+			<use>
+				<param name="title" value="@ChickenRawCookOnGrill"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_grill_base;dws_grill2"/>
+			</use>
+			<use>
+				<param name="title" value="@ChickenRawCookOnStove"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_cabinStove"/>
+			</use>
+			<use>
+				<param name="title" value="@ChickenRawCookOnFirepit"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="dws_firepit_outdoors_1;dws_firepit_outdoors_2"/>
+			</use>
+			<use>
+				<param name="title" value="@ChickenRawCookOnCampfire"/>
+				<param name="action" value="food_item"/>
+				<param name="soundUsed" value="Play_food_in_grill"/>
+				<param name="targetClassNames" value="Campfire"/>
+			</use>
+		</uses>
+	</usable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

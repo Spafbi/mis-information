@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@gnome_creep"/>
 		<param name="description" value="@gnome_creepDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<base_part class="static" type="138" name="gnome_creep" max_health="5000" repair_with="DuctTape">

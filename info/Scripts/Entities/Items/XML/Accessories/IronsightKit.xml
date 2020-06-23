@@ -6,6 +6,7 @@
 		<param name="mass" value="0.25"/>
 		<param name="hide_as_attachment" value="0"/>
 		<param name="scopeAttachment" value="0"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

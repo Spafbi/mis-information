@@ -5,6 +5,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="display_name" value="@guide_structures_wood_ramps_1"/>
 		<param name="description" value="@guide_structures_wood_ramps_1Description"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="3"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Wood Table 02"/>
-		<param name="description" value="A wood table."/>
+		<param name="display_name" value="@wood_table_02"/>
+		<param name="description" value="@wood_table_02Description"/>
 	</params>
 
 	<base_part class="static" type="335" name="wood_table_02" max_health="1000" repair_sound="Play_wall_repair">

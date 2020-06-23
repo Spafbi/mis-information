@@ -5,6 +5,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@Antibiotics"/>
 		<param name="description" value="@AntibioticsDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

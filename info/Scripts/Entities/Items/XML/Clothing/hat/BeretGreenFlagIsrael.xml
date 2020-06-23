@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@BeretGreenFlagIsrael"/>
 		<param name="description" value="@BeretGreenFlagIsraelDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

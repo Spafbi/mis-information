@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@FootballHelmetStripedRed"/>
 		<param name="description" value="@FootballHelmetStripedRedDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

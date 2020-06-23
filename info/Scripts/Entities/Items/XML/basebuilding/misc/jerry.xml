@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@jerry"/>
 		<param name="description" value="@jerryDescription"/>
+		<param name="vendor_cost" value="25"/>
 	</params>
 
 	<base_part class="static" type="3501" name="jerry" max_health="1000" repair_with="DuctTape">

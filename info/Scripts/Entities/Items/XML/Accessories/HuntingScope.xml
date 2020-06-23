@@ -7,6 +7,7 @@
 		<param name="scopeAttachment" value="1"/>
 		<param name="hide_as_attachment" value="0"/>
 		<param name="dontRotateOnSpawn" value="1"/>
+		<param name="vendor_cost" value="8"/>
 	</params>
 
 	<geometry>

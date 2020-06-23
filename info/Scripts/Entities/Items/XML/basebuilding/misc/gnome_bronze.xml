@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@gnome_bronze"/>
 		<param name="description" value="@gnome_bronzeDescription"/>
+		<param name="vendor_cost" value="20"/>
 	</params>
 
 	<base_part class="static" type="11" name="gnome_bronze" max_health="8000" repair_with="ScrapMetal">

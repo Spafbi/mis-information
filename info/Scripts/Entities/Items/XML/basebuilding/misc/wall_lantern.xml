@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.8"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Wall Lantern"/>
-		<param name="description" value="A camping lantern that you can hang on your wall."/>
+		<param name="display_name" value="@wall_lantern"/>
+		<param name="description" value="@wall_lanternDescription"/>
 		
 		<param name="place_restrict_snap" value="sticky"/>
 	</params>

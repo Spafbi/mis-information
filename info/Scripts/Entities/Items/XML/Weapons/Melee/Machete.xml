@@ -19,6 +19,7 @@
 		<param name="sprintToRunBlendTime" value="0.15"/>
 		<param name="relaxedToTacticalBlendTime" value="0.24"/>
 		<param name="tag" value="machete"/>
+		<param name="vendor_cost" value="9"/>
 		<animPrecache name="machete">
 			<precache DBAFile="animations/human/male/weapons/hatchet/hatchet_3p.dba" thirdperson="1"/>
 		</animPrecache>

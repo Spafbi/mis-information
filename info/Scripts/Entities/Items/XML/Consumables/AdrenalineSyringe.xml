@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@AdrenalineSyringe"/>
 		<param name="description" value="@AdrenalineSyringeDescription"/>
+		<param name="vendor_cost" value="20"/>
 	</params>
 
 	<geometry>

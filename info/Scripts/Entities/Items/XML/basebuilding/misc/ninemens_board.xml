@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Nine Men's Morris Board"/>
-		<param name="description" value="A wooden board to play Nine Men's Morris."/>
+		<param name="display_name" value="@ninemens_board"/>
+		<param name="description" value="@ninemens_boardDescription"/>
 	</params>
 
 	<base_part class="static" type="336" name="ninemens_board" max_health="200" repair_with="Lumber">

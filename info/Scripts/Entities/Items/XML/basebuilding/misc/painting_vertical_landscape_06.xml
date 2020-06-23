@@ -1,0 +1,27 @@
+<item name="painting_vertical_landscape_06" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="0.5"/>
+		<param name="display_name" value="@painting_vertical_landscape_05"/>
+		<param name="description" value="@painting_vertical_landscape_05Description"/>
+		<param name="vendor_cost" value="6"/>
+		
+		<param name="place_restrict_snap" value="sticky"/>
+	</params>
+
+	<base_part class="static" type="370" name="painting_vertical_landscape_06" max_health="1000" repair_with="Rags">
+		<static filename="Objects/basebuilding/other/painting/bpart_painting_vertical_landscape_06.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/wood/wood_part.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

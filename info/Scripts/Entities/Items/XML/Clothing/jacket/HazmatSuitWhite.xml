@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@HazmatSuitWhite"/>
 		<param name="description" value="@HazmatSuitWhiteDescription"/>
+		<param name="vendor_cost" value="10"/>
 	</params>
 
 	<wearable>

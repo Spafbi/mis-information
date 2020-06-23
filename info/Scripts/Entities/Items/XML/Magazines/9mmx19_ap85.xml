@@ -6,6 +6,7 @@
 		<param name="display_name" value="@9mmx19_ap85"/>
 		<param name="description" value="@9mmx19_ap85Description"/>
 		<param name="tag" value="9mmx19"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

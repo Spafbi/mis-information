@@ -5,6 +5,7 @@
         <param name="mass" value="5.5"/>
         <param name="display_name" value="@camping_table"/>
         <param name="description" value="@camping_tableDescription"/>
+		<param name="vendor_cost" value="3"/>
     </params>
 
     <base_part class="static" type="5" name="camping_table" max_health="1000" repair_with="DuctTape">

@@ -9,6 +9,7 @@
 		<param name="damage_scale" value="0.3"/>
 		<param name="display_name" value="@HitopsBlue"/>
 		<param name="description" value="@HitopsBlueDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/male/feet/converses/converses.skin"/>

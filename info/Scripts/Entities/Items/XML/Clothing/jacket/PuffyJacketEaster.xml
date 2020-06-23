@@ -5,6 +5,7 @@
 		<param name="mass" value="1.60"/>
 		<param name="display_name" value="@PuffyJacketEaster"/>
 		<param name="description" value="@PuffyJacketEasterDescription"/>
+		<param name="vendor_cost" value="15"/>
 	</params>
 
 	<wearable>

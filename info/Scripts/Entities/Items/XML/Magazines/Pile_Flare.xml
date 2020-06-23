@@ -8,6 +8,7 @@
 		<param name="is_ammo_pile" value="1"/>
 		<param name="hide_as_attachment" value="1"/>
 		<param name="tag" value="Pile_Flare"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<magazine>

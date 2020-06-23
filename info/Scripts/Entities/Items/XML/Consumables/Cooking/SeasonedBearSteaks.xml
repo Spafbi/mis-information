@@ -1,0 +1,28 @@
+<item name="SeasonedbearSteaks" class="Consumable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="@SeasonedbearSteaks"/>
+		<param name="description" value="@SeasonedbearSteaksDescription"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="objects/props/stewpot/bear_roast_cooked.cgf"/>
+	</geometry>
+
+	<consumable>
+	    <param name="type" value="2"/>
+	    <param name="consumePartial" value="1"/>
+		<param name="foodAmount" value="10000"/> <!-- Calories -->
+		<param name="drinkAmount" value="1000"/>
+		<param name="soundConsumed" value="Play_food_soft_eat"/>
+	</consumable>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

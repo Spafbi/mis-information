@@ -5,6 +5,7 @@
 		<param name="mass" value="0.5"/>
 		<param name="display_name" value="@PeachesCan"/>
 		<param name="description" value="@PeachesCanDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<geometry>

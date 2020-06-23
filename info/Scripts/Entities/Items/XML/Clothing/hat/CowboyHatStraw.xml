@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@CowboyHatStraw"/>
 		<param name="description" value="@CowboyHatStrawDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 	<wearable>
 		<param name="skin" value="Objects/characters/players/generic/hat/cowboy_hat/cowboy_hat.skin"/>

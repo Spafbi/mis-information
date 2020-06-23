@@ -5,6 +5,7 @@
 		<param name="mass" value="1.0"/>
 		<param name="display_name" value="@PropaneHeaterTop"/>
 		<param name="description" value="@PropaneHeaterTopDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<geometry>

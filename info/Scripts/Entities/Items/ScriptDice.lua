@@ -111,6 +111,34 @@ function ScriptDice:PerformAction(user, action)
     end
 end
 
+function ScriptDice:GetContextActions(item2, actions, targetId, targetPartId)
+	
+	if (self.face ~= nil) then
+		actions[#actions+1] = "Current face " .. self.face
+	end
+
+	actions[#actions+1] = "Roll dice"
+
+	return actions 
+end
+
+function ScriptDice:PerformContextAction(action, targetId, targetPartId)
+	local handled = false -- lua handled action?
+	local keep = true -- item kept after action 
+
+	if (action == "Roll dice") then
+		handled = true
+		self.face = random(1, 6)
+	end
+
+	if (handled or string.match(action, "Current")) then
+		handled = true
+		g_gameRules.game:SendTextMessage(0, self.item:GetOwnerId(), "Roll result: " .. self.face)
+    end
+
+	return handled, keep -- always need to return both values (otherwise treated as unhandled passing on to c++)
+end
+
 -- EI End
 
 ----------------------------------------------------------------------------------------------------
@@ -127,7 +155,7 @@ function ScriptDice.Client:OnInit()
         self:OnReset();
         self.bInitialized = 1;
     end
-    self:CacheResources();
+    --self:CacheResources();
 end
 
 function ScriptDice:GetMaxHealth()
@@ -139,7 +167,7 @@ ScriptDice:Expose();
 
 local function CreateScriptDiceTable()
     _G['ScriptDice'] = new(ScriptDice);
-    Log('Added dice to the dable');
+    Log('Added dice to the table');
 end
 
 CreateScriptDiceTable();

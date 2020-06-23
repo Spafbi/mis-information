@@ -5,6 +5,7 @@
 		<param name="mass" value="1.5"/>
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@DeerPelt"/>
+		<param name="vendor_cost" value="10"/>
 	</params>
 
 	<geometry>

@@ -6,6 +6,7 @@
 		<param name="display_name" value="@12Gaugex8_Slug_AA12"/>
 		<param name="description" value="@12Gaugex8_Slug_AA12Description"/>
 		<param name="tag" value="12gaugex8_aa12"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<magazine>

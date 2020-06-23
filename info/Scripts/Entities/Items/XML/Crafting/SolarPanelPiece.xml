@@ -6,6 +6,7 @@
 		<param name="stack_size" value="16"/>
 		<param name="display_name" value="@SolarPanelPiece"/>
 		<param name="description" value="@SolarPanelPieceDescription"/>
+		<param name="vendor_cost" value="10"/>
 	</params>
 
 	<geometry>

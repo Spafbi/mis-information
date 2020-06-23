@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@AntiradiationPills"/>
 		<param name="description" value="@AntiradiationPillsDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

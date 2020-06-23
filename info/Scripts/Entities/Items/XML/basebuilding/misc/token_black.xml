@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
 		<param name="stack_size" value="9"/>
-		<param name="display_name" value="Token Black"/>
-		<param name="description" value="A black token to play Nine Men's Morris."/>
+		<param name="display_name" value="@token_black"/>
+		<param name="description" value="@token_blackDescription"/>
 		
 		<param name="place_restrict_snap" value="mpiece01_snap;mpiece02_snap;mpiece03_snap;mpiece04_snap;mpiece05_snap;mpiece06_snap;mpiece07_snap;mpiece08_snap;mpiece09_snap;mpiece10_snap;mpiece11_snap;mpiece12_snap;mpiece13_snap;mpiece14_snap;mpiece15_snap;mpiece16_snap;mpiece17_snap;mpiece18_snap;mpiece19_snap;mpiece20_snap;mpiece21_snap;mpiece22_snap;mpiece23_snap;mpiece24_snap"/>
 	</params>

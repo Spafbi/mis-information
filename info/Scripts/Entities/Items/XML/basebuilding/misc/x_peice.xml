@@ -3,9 +3,9 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="X piece"/>
+		<param name="display_name" value="@x_piece"/>
 		<param name="stack_size" value="5"/>
-		<param name="description" value="A cross shaped piece to play Tic Tac Toe."/>
+		<param name="description" value="@x_pieceDescription"/>
 		
 		<param name="place_restrict_snap" value="piece01_snap;piece02_snap;piece03_snap;piece04_snap;piece05_snap;piece06_snap;piece07_snap;piece08_snap;piece09_snap"/>
 	</params>

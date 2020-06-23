@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@HeatPack"/>
 		<param name="description" value="@HeatPackDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

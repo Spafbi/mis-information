@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.5"/>
-		<param name="display_name" value="Yellow Game Piece"/>
-		<param name="description" value="A yellow game piece to play board game."/>
+		<param name="display_name" value="@piece_yellow"/>
+		<param name="description" value="@piece_yellowDescription"/>
 	</params>
 
 	<base_part class="static" type="343" name="piece_yellow" max_health="200" repair_with="Lumber">

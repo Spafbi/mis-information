@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="22"/>
 		<param name="tag" value="mk18"/>
 		<param name="adb" value="mk18WeaponAnims.adb"/>
 		<animPrecache name="mk18">
@@ -106,7 +107,7 @@
 
 		<firemode name="Automatic" type="Rapid">
 			<fire>
-				<param name="rate" value="600" />
+				<param name="rate" value="600"/>
 				<param name="health_reduction_per_shot" value="0.07"/>
 			</fire>
 			<rapid>

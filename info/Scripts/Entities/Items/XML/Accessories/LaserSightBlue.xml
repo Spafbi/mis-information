@@ -6,6 +6,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="hide_as_attachment" value="0"/>
 		<param name="dontRotateOnSpawn" value="1"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>

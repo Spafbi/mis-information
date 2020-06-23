@@ -290,7 +290,7 @@
  </EntityPrototype>
  <EntityPrototype Name="Birds.pigeon_12m_takeoff" Id="{C845B71B-9289-495D-89EC-24CA5C76CFB5}" Library="animals" Class="Birds" Description="">
   <Properties>
-   <Boid nCount="1" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
+   <Boid nCount="12" gravity_at_death="-9.81" bInvulnerable="1" Mass="10" object_Model="objects/characters/animals/birds/pigeon/pigeon_lf.cdf"/>
    <Flocking AttractDistMax="20" AttractDistMin="1" bEnableFlocking="0" FactorAlign="3" FactorCohesion="2" FactorSeparation="1" FieldOfViewAngle="250"/>
    <Ground FactorAlign="1" FactorCohesion="2" FactorOrigin="1" FactorSeparation="0.1" HeightOffset="0" OnGroundIdleDurationMax="3.2" OnGroundIdleDurationMin="1.6" OnGroundWalkDurationMax="6" OnGroundWalkDurationMin="4" WalkSpeed="0.2" WalkToIdleDuration="3"/>
    <Movement FactorAvoidLand="10" FactorHeight="0.4" FactorOrigin="10" FactorTakeOff="10" FlightTime="10" HeightMax="20" HeightMin="1" LandDecelerationHeight="2" MaxAnimSpeed="4" SpeedMax="8" SpeedMin="3"/>

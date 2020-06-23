@@ -6,6 +6,8 @@
 		<param name="stack_size_spawned" value="6"/>
 		<param name="display_name" value="@EggChicken"/>
 		<param name="description" value="@EggChickenDescription"/>
+		<param name="vendor_cost" value="15"/>
+		
 	</params>
 
 	<geometry>

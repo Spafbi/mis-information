@@ -6,6 +6,7 @@
 		<param name="stack_size" value="10"/>
 		<param name="display_name" value="@SawBlade"/>
 		<param name="description" value="@SawBladeDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

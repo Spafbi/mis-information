@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.45"/>
+		<param name="vendor_cost" value="14"/>
 		<param name="tag" value="spas12"/>
 		<param name="adb" value="spas12WeaponAnims.adb"/>
 		<animPrecache name="spas12">

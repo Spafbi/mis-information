@@ -9,6 +9,7 @@
 		<param name="destroyWhenDegraded" value="1"/>		
 		<param name="display_name" value="@RK_Mk18"/>
 		<param name="description" value="@RK_Mk18Description"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

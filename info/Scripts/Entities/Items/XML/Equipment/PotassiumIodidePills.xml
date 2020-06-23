@@ -6,6 +6,7 @@
 		<param name="stack_size" value="3"/>
 		<param name="display_name" value="@PotassiumIodidePills"/>
 		<param name="description" value="@PotassiumIodidePillsDescription"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

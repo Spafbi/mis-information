@@ -1,7 +1,7 @@
 <item name="AK5D" class="Weapon" category="primary" priority="12" weaponParams="1">
 	<params>
-		<param name="display_name" value="AK5D"/>
-		<param name="description" value="A automatic assault rifle from swedish origin."/>
+		<param name="display_name" value="@AK5D"/>
+		<param name="description" value="@AK5DDescription"/>
 		<param name="itemClass" value="at15"/>
 		<param name="suffix" value="shoulder"/>
 		<param name="mass" value="3.8"/>
@@ -19,6 +19,7 @@
 		<param name="runToSprintBlendTime" value="0.4"/>
 		<param name="sprintToRunBlendTime" value="0.4"/>
 		<param name="relaxedToTacticalBlendTime" value="0.35"/>
+		<param name="vendor_cost" value="15"/>
 		<param name="tag" value="ak5d"/>
 		<param name="adb" value="ak5dWeaponAnims.adb"/>
 		<animPrecache name="ak5d">
@@ -62,13 +63,13 @@
 				<param name="sound_radius" value="250"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="3.5"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="first_attack" value="1.4"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
-				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="max_recoil" value="4.5"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="first_attack" value="3"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
+				<param name="attack" value="0.8"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.45"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
 				<param name="maxx" value="1"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="2.5"/> <!-- Vertical camera shake -->
+				<param name="maxy" value="3.5"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based off hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -499,10 +500,6 @@
 		</accessory>
 		<accessory name="OpticScope" zoommode="opticscope" category="scope" exclusive="1">
 			<attach helper="optic_scope"/>
-			<detach/>
-		</accessory>
-		<accessory name="HuntingScope" zoommode="huntingscope" category="scope" exclusive="1">
-			<attach helper="hunting_scope"/>
 			<detach/>
 		</accessory>
 		<accessory name="ReddotSight" zoommode="reflexsight" category="scope" exclusive="1">

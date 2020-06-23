@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@CargoPantsUrbanCamo4"/>
 		<param name="description" value="@CargoPantsUrbanCamo4Description"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

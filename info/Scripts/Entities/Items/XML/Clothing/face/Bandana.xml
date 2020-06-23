@@ -8,6 +8,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@Bandana"/>
 		<param name="description" value="@BandanaDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

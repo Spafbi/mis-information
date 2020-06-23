@@ -3,6 +3,7 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.3"/>
+		<param name="stack_size" value="10"/>
 		<param name="display_name" value="@Bread"/>
 		<param name="description" value="@BreadDescription"/>
 	</params>
@@ -12,10 +13,9 @@
 	</geometry>
 
 	<consumable>
-	    <param name="consumePartial" value="1"/>
-		<param name="foodAmount" value="100"/> <!-- Calories -->
-		<param name="drinkAmount" value="100"/>
-		<param name="staminaAmount" value="100"/>
+	    <param name="type" value="2"/>
+	    <param name="consumePartial" value="0"/>
+		<param name="foodAmount" value="500"/> <!-- Calories -->
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

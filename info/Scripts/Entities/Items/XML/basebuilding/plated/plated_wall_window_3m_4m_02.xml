@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Plated 3x4 Wall Window 02"/>
-		<param name="description" value="A metal reinforced wood wall with a window."/>
+		<param name="display_name" value="@plated_wall_window_3m_4m_02"/>
+		<param name="description" value="@plated_wall_window_3m_4m_02Description"/>
 	</params>
 
 	<base_part class="static" type="1352" name="plated_wall_window_3m_4m_02" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">

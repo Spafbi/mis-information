@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.1"/>
 		<param name="display_name" value="@FlakVestGreen"/>
 		<param name="description" value="@FlakVestGreenDescription"/>
+		<param name="vendor_cost" value="12"/>
 	</params>
 
 	<wearable>

@@ -692,4 +692,12 @@
    </Particles>
   </Childs>
  </Particles>
+ <Particles Name="hit_metal.a_hammer">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="sparks_vhigh">
+    <Params Count="50" ParticleLifeTime="0.2" EmitAngle="15,Random=1" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/sparks/spark_a.tif" Color="Random=1,ParticleAge=(t=0.12,v=(x=1,y=1,z=1);t=0.267,v=(x=0.992,y=0.34,z=0.09);t=0.792,v=(x=0.247))" DiffuseLighting="0" DiffuseBacklighting="1" EmissiveLighting="12" Size="0.01,Random=0.525,ParticleAge=(t=0.18,v=1;t=1)" Stretch="0.1,ParticleAge=(t=1,v=0.09)" Speed="7,Random=0.901" GravityScale="1" TurbulenceSize="Random=1" TurbulenceSpeed="27.4" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" SurfaceType="metal" Elasticity="0.3" ConfigMin="VeryHigh"/>
+   </Particles>
+  </Childs>
+ </Particles>
 </ParticleLibrary>

@@ -3,9 +3,10 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.45"/> <!-- 7.9g per bullet /2 + 350g for magazine -->
-		<param name="display_name" value="Extended 7.62"/>
-		<param name="description" value="An extended 30 rounds 7.62 mag."/>
+		<param name="display_name" value="@ext_762x30"/>
+		<param name="description" value="@ext_762x30Description"/>
 		<param name="tag" value="762x39x30"/>
+		<param name="vendor_cost" value="8"/>
 	</params>
 
 	<magazine>

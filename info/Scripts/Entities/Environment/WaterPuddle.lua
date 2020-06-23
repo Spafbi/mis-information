@@ -25,6 +25,7 @@ WaterPuddle =
 		electricity = 0,
 		pool_acid = 0,
 		underground = 0,
+		damagescale = 0, -- safezones (use 1 to block all damage in both directions)
 
 		-- particle effect for area based pfx hits
 		ParticleEffect = "",

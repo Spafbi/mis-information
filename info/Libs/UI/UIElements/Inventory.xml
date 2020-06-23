@@ -1,0 +1,146 @@
+﻿<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<UIElements name="Inventory">
+
+	<UIElement name="Inventory"  mouseevents="1" keyevents="1" cursor="1" controller_input="1" render_lockless="1">
+
+		<GFx file="Inventory/Inventory.gfx" layer="0">
+			<Constraints>
+				<!--<Align mode="fullscreen" scale="0" />-->
+				<Align mode="dynamic" valign="center" halign="center" scale="1" max="0" />
+			</Constraints>
+		</GFx>
+
+		<!-- Can get or set a variable -->
+		<variables>
+			<!--
+			<variable name="primaryTitle" varname="_root.playerInventory.primaryTitle.text"/>
+			<variable name="secondaryTitle" varname="_root.playerInventory.secondaryTitle.text"/>
+			<variable name="meleeTitle" varname="_root.playerInventory.meleeTitle.text"/>
+			<variable name="gearTitle" varname="_root.playerInventory.gearTitle.text"/>
+			<variable name="toolbeltTitle" varname="_root.playerInventory.toolbeltTitle.text"/>
+			<variable name="backpackTitle" varname="_root.playerInventory.backpackTitle.text"/>
+			-->
+			<variable name="itemData" varname="_root.itemData"/>
+		</variables>
+
+		<!-- Can get or set an array -->
+		<arrays>
+			<!-- <array name="itemData" varname="_root.playerInventory.itemData"/> -->
+		</arrays>
+
+		<!-- Functions that can be invoked into actionscript from lua -->
+		<functions>
+			<function name="LoadItemData" funcname="_root.loadItemData"/>
+
+			<function name="OnBeginCraftingItem" funcname="_root.onBeginCraftingItem">
+				<param name="name" desc=""/>
+				<param name="time" desc=""/>
+			</function>
+			
+			<function name="OnCancelCraftingItem" funcname="_root.onCancelCraftingItem">
+			</function>
+
+			<function name="OnFinishedCraftingItem" funcname="_root.onFinishedCraftingItem">
+				<param name="itemData" desc=""/>
+			</function>
+
+			<function name="OnFinalizedCraftingItem" funcname="_root.onFinalizedCraftingItem">
+				<param name="itemData" desc=""/>
+			</function>
+
+			<function name="OnRefreshRecipes" funcname="_root.onRefreshRecipes">
+			</function>
+
+			<function name="OnItemsRequestResult" funcname="_root.onItemsRequestResult">
+				<param name="EntityId" desc="EntityId the items are for" type="int" />
+				<param name="itemData" desc="JSON string representing the items that were requested" type="string"/>
+			</function>
+
+			<function name="OnUpdateTargetWindow" funcname="_root.onUpdateTargetWindow">
+				<param name="EntityId" desc="EntityId of the targeted item" type="int" />
+			</function>
+
+			<function name="OnUpdateClan" funcname="_root.refreshClanState">
+			</function>
+
+			<function name="OnClanMembers" funcname="_root.onClanMembersResult">
+				<param name="clanMembersData" desc="JSON string representing the clan members" type="string"/>
+			</function>
+
+			<function name="OnRefreshSteamInventory" funcname="_root.handleSteamRefreshed">
+			</function>
+
+			<function name="OnSetVendorInventoryItemCount" funcname="_root.onSetVendorInventoryItemCount">
+				<param name="vendorId" desc="" type="int"/>
+				<param name="numItems" desc="" type="int"/>
+			</function>
+
+			<function name="OnSetVendorInventoryItemPage" funcname="_root.onSetVendorInventoryItemPage">
+				<param name="vendorId" desc="" type="int"/>
+				<param name="page" desc="" type="int"/>
+				<param name="pageData" desc="" type="string"/>
+			</function>
+		
+		</functions>
+
+		<!-- Events fired from actionsript into lua -->
+		<events>
+			<event name="OnCraftItem" fscommand="OnCraftItem" desc="The player is attempting to craft an item">
+				<param name="EntityId0" desc="EntityId0 item" type="int" />
+				<param name="EntityId1" desc="EntityId1 item" type="int" />
+				<param name="EntityId2" desc="EntityId2 item" type="int" />
+				<param name="EntityId3" desc="EntityId3 item" type="int" />
+				<param name="EntityId4" desc="EntityId4 item" type="int" />
+				<param name="EntityId5" desc="EntityId5 item" type="int" />
+				<param name="EntityId6" desc="EntityId6 item" type="int" />
+				<param name="EntityId7" desc="EntityId7 item" type="int" />
+			</event>
+
+			<event name="OnCraftItemCancel" fscommand="OnCraftItemCancel" desc="Request to cancel the current item">
+			</event>
+			
+			<event name="OnItemPlaced" fscommand="OnItemPlaced" desc="The player wants to place an item with 'id'">
+				<param name="EntityId" desc="EntityId of the item that wants to be placed" type="int" />
+				<param name="FromEntityId" desc="The EntityID where the item is from" type="int" />
+				<param name="FromSlot" desc="Slot where the item was from" type="string"/>
+			</event>
+
+			<event name="OnItemConsumed" fscommand="OnItemConsumed" desc="The player consumed an item with 'id'">
+				<param name="EntityId" desc="EntityId of the item that was consumed" type="int" />
+				<param name="FromEntityId" desc="The EntityID where the item is from" type="int" />
+				<param name="FromSlot" desc="Slot where the item was from" type="string"/>
+			</event>
+
+			<event name="OnItemUsed" fscommand="OnItemUsed" desc="The player used an item with 'id'">
+				<param name="EntityId" desc="EntityId of the item that was consumed" type="int" />
+				<param name="FromEntityId" desc="The EntityID where the item is from" type="int" />
+				<param name="FromSlot" desc="Slot where the item was from" type="string"/>
+			</event>
+
+			<event name="OnItemSelected" fscommand="OnItemSelected" desc="The player selected an item with 'id'">
+				<param name="EntityId" desc="EntityId of the item that was selected" type="int" />
+				<param name="FromEntityId" desc="The EntityID where the item is from" type="int" />
+				<param name="FromSlot" desc="Slot where the item was from" type="string"/>
+			</event>
+
+			<event name="OnItemMoved" fscommand="OnItemMoved" desc="The player moved item with EntityId from OriginationEntityId's OriginationSlot to DestinationEntityId's DestinationSlot swapping with SwappedEntityId(possibly)">
+				<param name="EntityId" desc="id of the item that got moved" type="int" />
+				<param name="OriginationSlot" desc="Slot where the item was moved from" type="string"/>
+				<param name="DestinationSlot" desc="Slot where the item was moved to" type="string"/>
+				<param name="DestinationEntityId" desc="The EntityID where the item is being moved to (0 = world)" type="int" />
+				<param name="OriginationEntityId" desc="The EntityID where the item is being moved from (0 = world)" type="int" />
+				<param name="SwappedEntityId" desc="The EntityID the item is being swapped with (0 = not swapping)" type="int" />
+			</event>
+
+			<event name="OnItemsRequest" fscommand="OnItemsRequest" desc="The inventory has requested the items for a storage item with 'id'">
+				<param name="EntityId" desc="EntityId of the item whose contents were requested" type="int" />
+			</event>
+		</events>
+
+		<movieclips>
+			<MovieClip name="playerPreview" instancename="container.playerWindow.playerPreview" />
+		</movieclips>
+
+	</UIElement>
+	
+</UIElements>

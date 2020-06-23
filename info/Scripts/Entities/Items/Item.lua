@@ -56,6 +56,7 @@ function Item:IsActionable(user)
 	end
 end
 
+-- these two are inworld actions
 function Item:GetActions(user)
 --	Log("[ Item ] GetActions");
 
@@ -70,6 +71,35 @@ function Item:PerformAction(user, action)
 	return self.item:PerformAction(user.id, action);
 end
 
+-- these two are the inventory context menu actions (modding support)
+function Item:GetContextActions(item2, actions, targetId, targetPartId)
+	-- Log("[ Item ] GetContextActions item2="..tostring(item2).. " noactions="..#actions.. " target="..tostring(targetId) .. " part=".. tostring(targetPartId))
+	-- purely clientside / meaning only local actor performs this call
+		-- you can also reorder/remove default item actions from the table
+		-- item2 entity of potentially second item involved
+		-- actions contains default actions (can remove)
+	    -- targetId is looked at entity (e.g. plotsign in case of base)
+	    -- targetPartId is basepart id / to convert to physidpart add 10
+
+	--actions[#actions+1] = "Hello world" -- sample add "Hello world action at end"
+
+	return actions -- always need to return table otherwise default one is used
+end
+
+function Item:PerformContextAction(action, targetId, targetPartId)
+	-- Log("[ Item ] PerformContextAction: action="..action.. " target="..tostring(targetId) .. " part=".. tostring(targetPartId)); 
+	-- purely clientside, mods need to perform RMIs to server / meaning only local actor performs this call
+	    -- targetId is looked at entity (e.g. plotsign in case of base)
+	    -- targetPartId is basepart id / to convert to physidpart add 10
+
+	local handled = false -- lua handled action?
+	local keep = true -- item kept after action (for ui)? (handled needs to be = true for non default items, to set this)
+
+	-- this is just for lua implementation, built in actions performed outside (return true to cancel default behaviour)
+	return handled, keep -- always need to return both values (otherwise treated as unhandled passing on to c++)
+end
+
+-- persistence handling (lua json field in database)
 function Item:SaveValue()
 	--Log("[ Item ] SaveValue");
 	return "";

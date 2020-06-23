@@ -5,6 +5,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@Honeycomb"/>
+		<param name="vendor_cost" value="5"/>
 	</params>
 
 	<geometry>

@@ -6,6 +6,7 @@
 		<param name="stack_size" value="5"/>
 		<param name="display_name" value="@AdvancedBandage"/>
 		<param name="description" value="@AdvancedBandageDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<geometry>

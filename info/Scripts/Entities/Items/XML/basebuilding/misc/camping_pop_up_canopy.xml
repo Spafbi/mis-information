@@ -5,6 +5,7 @@
 		<param name="mass" value="8.5"/>
 		<param name="display_name" value="@camping_pop_up_canopy"/>
 		<param name="description" value="@camping_pop_up_canopyDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<base_part class="static" type="9" name="camping_pop_up_canopy" max_health="1000" repair_with="DuctTape">

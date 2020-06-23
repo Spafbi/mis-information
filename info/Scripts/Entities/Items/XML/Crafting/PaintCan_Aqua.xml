@@ -6,6 +6,7 @@
 		<param name="stack_size" value="2"/>
 		<param name="display_name" value="@PaintCan_Aqua"/>
 		<param name="description" value="@PaintCan_AquaDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

@@ -4,6 +4,7 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.6"/>
 		<param name="display_name" value="@WaterBottle"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

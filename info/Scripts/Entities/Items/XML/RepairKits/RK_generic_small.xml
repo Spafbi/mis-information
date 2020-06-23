@@ -7,8 +7,8 @@
 		<param name="healthMax" value="100.0"/>
 		<param name="damage_scale" value="0.25"/>
 		<param name="destroyWhenDegraded" value="1"/>		
-		<param name="display_name" value="Crafted Repair Kit"/>
-		<param name="description" value="A small hand crafted repair kit that can repair most common weapons for a small ammount."/>
+		<param name="display_name" value="@RK_generic_small"/>
+		<param name="description" value="@RK_generic_smallDescription"/>
 	</params>
 
 	<geometry>

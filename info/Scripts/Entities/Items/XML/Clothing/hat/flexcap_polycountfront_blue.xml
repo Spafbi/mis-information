@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@flexcap_polycountfront_blue"/>
 		<param name="description" value="@flexcap_polycountfront_blueDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<wearable>

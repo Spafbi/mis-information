@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="5"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="3x4x4 Platform 02"/>
-		<param name="description" value="A 3 meter high wooden platform held by beams. Perfect for roofs."/>
+		<param name="display_name" value="@wood_walkway_3m_4m_4m_02"/>
+		<param name="description" value="@wood_walkway_3m_4m_4m_02Description"/>
 	</params>
 
 	<base_part class="static" type="353" name="wood_walkway_3m_4m_4m_02" repair_sound="Play_wall_repair">

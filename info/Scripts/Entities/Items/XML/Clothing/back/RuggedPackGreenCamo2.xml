@@ -10,6 +10,7 @@
 		<param name="damage_scale" value="0.2"/>
 		<param name="display_name" value="@RuggedPackGreenCamo2"/>
 		<param name="description" value="@RuggedPackGreenCamo2Description"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/male/back/backpack/rugged/backpack_rugged.skin"/>

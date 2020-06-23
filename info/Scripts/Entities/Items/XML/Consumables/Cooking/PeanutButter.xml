@@ -5,6 +5,7 @@
 		<param name="mass" value="1.0"/>
 		<param name="display_name" value="@PeanutButter"/>
 		<param name="description" value="@PeanutButterDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>
@@ -12,10 +13,10 @@
 	</geometry>
 
 	<consumable>
-	    <param name="consumePartial" value="1"/>
-		<param name="foodAmount" value="100"/> <!-- Calories -->
+	    <param name="type" value="2"/>
+	    <param name="consumePartial" value="0"/>
+		<param name="foodAmount" value="300"/> <!-- Calories -->
 		<param name="drinkAmount" value="100"/>
-		<param name="staminaAmount" value="100"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

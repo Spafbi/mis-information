@@ -155,7 +155,9 @@
   <Motion_Move scopes="FullBody1P+Torso1P+Motion1P+Sway1P+GroundAlignment1P+FullBody3P+AimPose+Torso3P+GroundAlignment3P+Weapon+WeaponForceFeedback+Audio1+Audio2+AttachmentTop+AttachmentBottom+SlaveChar+SlaveObject"/>
   <MotionIdle scopes="FullBody3P"/>
   <MotionTurn scopes="FullBody3P"/>
-  <MotionMovement scopes="FullBody3P"/>
+  <MotionMovement scopes="FullBody3P">
+   <Override tags="prone+fromStand" scopes="FullBody3P+proneFP+proneFR+proneBP+proneBR"/>
+  </MotionMovement>
   <MotionJump scopes="FullBody3P+Audio1">
    <Override tags="throwable+forward" scopes="FullBody3P+AimPose+Audio1"/>
    <Override tags="chemlight+forward" scopes="FullBody3P+AimPose+Audio1"/>

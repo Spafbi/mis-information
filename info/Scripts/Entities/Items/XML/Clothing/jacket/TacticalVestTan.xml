@@ -7,6 +7,7 @@
 		<param name="damage_scale" value="0.2"/>
 		<param name="display_name" value="@TacticalVestTan"/>
 		<param name="description" value="@TacticalVestTanDescription"/>
+		<param name="vendor_cost" value="6"/>
 	</params>
 	<wearable>
 		<param name="skin" value="objects/characters/players/male/jacket/tactical_vest/tactical_vest.skin"/>

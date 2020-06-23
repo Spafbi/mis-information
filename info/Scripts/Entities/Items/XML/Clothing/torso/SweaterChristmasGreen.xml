@@ -5,6 +5,7 @@
 		<param name="mass" value="0.75"/>
 		<param name="display_name" value="@SweaterChristmasGreen"/>
 		<param name="description" value="@SweaterChristmasGreenDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 
 	<wearable>

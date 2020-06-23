@@ -1,12 +1,12 @@
 <item name="R3Sight" class="Item" category="any">
 	<params>
-		<param name="display_name" value="R3 sight"/>
-		<param name="description" value="A small reflex sight with backlit lenses."/>
+		<param name="display_name" value="@R3Sight"/>
+		<param name="description" value="@R3SightDescription"/>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="0.25"/>
 		<param name="hide_as_attachment" value="0"/>
 		<param name="dontRotateOnSpawn" value="1"/>
-		<param name="scopeAttachment" value="0"/>
+		<param name="scopeAttachment" value="8"/>
 	</params>
 
 	<geometry>

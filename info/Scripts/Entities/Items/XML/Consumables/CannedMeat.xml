@@ -5,6 +5,7 @@
 		<param name="mass" value="0.75"/>
 		<param name="display_name" value="@CannedMeat"/>
 		<param name="description" value="@CannedMeatDescription"/>
+		<param name="vendor_cost" value="3"/>
 	</params>
 
 	<geometry>

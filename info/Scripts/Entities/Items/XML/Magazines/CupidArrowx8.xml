@@ -8,6 +8,7 @@
 		<param name="is_ammo_pile" value="1"/>
 		<param name="hide_as_attachment" value="1"/>
 		<param name="tag" value="CupidArrow"/>
+		<param name="vendor_cost" value="10"/>
 	</params>
 
 	<magazine>

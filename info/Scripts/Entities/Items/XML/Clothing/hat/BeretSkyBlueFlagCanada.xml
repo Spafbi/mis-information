@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@BeretSkyBlueFlagCanada"/>
 		<param name="description" value="@BeretSkyBlueFlagCanadaDescription"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<wearable>

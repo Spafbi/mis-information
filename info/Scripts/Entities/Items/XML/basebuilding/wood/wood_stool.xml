@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="3"/>
-		<param name="display_name" value="Wood Stool"/>
-		<param name="description" value="A wood stool."/>
+		<param name="display_name" value="@wood_stool"/>
+		<param name="description" value="@wood_stoolDescription"/>
 	</params>
 
 	<base_part class="static" type="346" name="wood_stool" max_health="1000" repair_sound="Play_wall_repair">

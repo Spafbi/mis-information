@@ -1,0 +1,22 @@
+<item name="CoffeeBag" class="Item" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.3"/>
+		<param name="stack_size" value="1"/>
+		<param name="display_name" value="@CoffeeBag"/>
+		<param name="description" value="@CoffeeBagDescription"/>
+		<param name="vendor_cost" value="2"/>
+	</params>
+
+	<geometry>
+		<thirdperson name="Objects/consumables/coffee/CoffeeBag.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>

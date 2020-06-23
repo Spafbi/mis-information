@@ -10,6 +10,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@GasMask"/>
 		<param name="description" value="@GasMaskDescription"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 	<wearable>
 		<param name="skin" value="Objects/characters/players/male/face/gasmask/gasmask.skin"/>

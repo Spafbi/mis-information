@@ -5,6 +5,7 @@
 		<param name="mass" value="0.1"/>
 		<param name="display_name" value="@TargetPaper"/>
 		<param name="description" value="@TargetPaperDescription"/>
+		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>

@@ -1,0 +1,313 @@
+<PrefabsLibrary Name="outpost">
+ <Prefab Name="outpost_door" Id="{774FD170-69BB-4BD7-BF90-41D8A793EB49}" Library="outpost">
+  <Objects>
+   <Object Type="ParticleEntity" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{BA73AE6E-4681-4D92-A607-1B4C9C91C854}" Name="vehicles.Common.Ground.Light.Concrete.small_dust1" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,0.66064453,0.044898987" FloorNumber="-1" Rotate="0.70710671,0.70710683,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="vehicles.Common.Ground.Light.Concrete.small_dust" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{22D1DFAF-4F46-4573-85E5-A51F165033D1}" Name="ElevatorSwitch1" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,0.74047852,0.53949738" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.47000003,1,6.1697998" ColorRGB="65535" Material="Materials/collider_nodraw_invisible" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ElevatorSwitch">
+    <Properties fDelay="0.5" bEnabled="1" nFloor="0" objModel="Objects/default/primitive_box.cgf" soclasses_SmartObjectClass="ElevatorSwitch" UseMessage="Use Elevator">
+     <Sounds soundSoundOnPress=""/>
+    </Properties>
+    <EntityLinks>
+     <Link TargetId="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Name="up" Version="1"/>
+    </EntityLinks>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" Name="outpost_door_audio" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,2.2924805,0.88004303" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="AudioTriggerSpot">
+    <Properties bEnabled="1" fMaxDelay="2" fMinDelay="1" bPlayOnX="0" bPlayOnY="0" bPlayOnZ="0" bPlayRandom="0" audioTriggerPlayTriggerName="" fRadiusRandom="10" bSerializePlayState="1" eiSoundObstructionType="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Name="Elevator1" Pos="0.82519531,-9.3947754,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Elevator">
+    <Properties bAutomatic="1" nDestinationFloor="1" nFloorCount="2" fFloorHeight="4.5" nInitialFloor="0" objModel="Objects/structures/outpost_container/dws_outpost_gate.cgf" soclasses_SmartObjectClass="Elevator">
+     <Slide fAcceleration="1" sAxis="y" fSpeed="0.5" fStopTime="5"/>
+     <Sounds soundSoundOnMove="" soundSoundOnStart="" soundSoundOnStop=""/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{C700B32F-0E6D-46E0-B3D6-2CEEBD769CA6}" Name="Outpost_door" Pos="-0.54223633,-7.105957,2.0133381" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="outpost_door" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:Elevator" pos="-310,-140,0" flags="0" EntityGUID="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" EntityGUID_64="4069ADBEEA807C73">
+       <Inputs entityId="0" Down="0" Up="0"/>
+      </Node>
+      <Node Id="5" Class="Audio:Trigger" pos="20,-130,0" flags="0" EntityGUID="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" EntityGUID_64="424237F12BE4F6C8">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="Play_elevator_start" audioTrigger_StopTrigger="Play_elevator_stop"/>
+      </Node>
+      <Node Id="6" Class="Audio:Trigger" pos="20,10,0" flags="0" EntityGUID="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" EntityGUID_64="424237F12BE4F6C8">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="Play_elevator_start" audioTrigger_StopTrigger="Play_elevator_stop"/>
+      </Node>
+      <Node Id="10" Class="entity:ParticleEffect" pos="30,160,0" flags="0" EntityGUID="{BA73AE6E-4681-4D92-A607-1B4C9C91C854}" EntityGUID_64="4D924681BA73AE6E">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="11" Class="Game:Start" pos="-370,170,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="12" Class="Logic:Any" pos="-160,100,0" flags="0" InHideMask="1020">
+       <Inputs />
+      </Node>
+      <Node Id="13" Class="Logic:Any" pos="-160,180,0" flags="0" InHideMask="1016">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="5" nodeOut="2" portIn="Play" portOut="StartedSlidingUp" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="2" portIn="Stop" portOut="StoppedSlidingUp" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Play" portOut="StartedSlidingDown" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Stop" portOut="StoppedSlidingDown" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="2" portIn="in2" portOut="StartedSlidingDown" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="2" portIn="in1" portOut="StartedSlidingUp" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="2" portIn="in1" portOut="StoppedSlidingDown" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="2" portIn="in2" portOut="StoppedSlidingUp" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="11" portIn="Kill" portOut="output" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="11" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="12" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="13" portIn="Disable" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Brush" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{D6F35012-E064-48C3-B56B-6D654DF43037}" Name="outpost_container_gate1" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/structures/outpost_container/outpost_container_gate.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="outpost_door1" Id="{E5D86F8A-E8CC-4488-A3A3-AC80EC70714E}" Library="outpost">
+  <Objects>
+   <Object Type="ParticleEntity" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{BA73AE6E-4681-4D92-A607-1B4C9C91C854}" Name="vehicles.Common.Ground.Light.Concrete.small_dust1" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,0.66064453,0.044898987" FloorNumber="-1" Rotate="0.70710671,0.70710683,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="vehicles.Common.Ground.Light.Concrete.small_dust" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+   </Object>
+   <Object Type="AudioTriggerSpot" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" Name="outpost_door_audio" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,2.2924805,0.88004303" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="AudioTriggerSpot">
+    <Properties bEnabled="1" fMaxDelay="2" fMinDelay="1" bPlayOnX="0" bPlayOnY="0" bPlayOnZ="0" bPlayRandom="0" audioTriggerPlayTriggerName="" fRadiusRandom="10" bSerializePlayState="1" eiSoundObstructionType="1" audioTriggerStopTriggerName="" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="Brush" Layer="outpost" LayerGUID="{8F6C093C-2BA6-42A8-A075-6A5B9AB380E6}" Id="{D6F35012-E064-48C3-B56B-6D654DF43037}" Name="outpost_container_gate1" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/structures/outpost_container/outpost_container_gate.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{C700B32F-0E6D-46E0-B3D6-2CEEBD769CA6}" Name="Outpost_door" Pos="-0.54223633,-7.105957,2.0133381" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="outpost_door" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:Elevator" pos="-460,-90,0" flags="0" EntityGUID="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" EntityGUID_64="4069ADBEEA807C73">
+       <Inputs entityId="0" Down="0" Up="0"/>
+      </Node>
+      <Node Id="5" Class="Audio:Trigger" pos="20,-90,0" flags="0" EntityGUID="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" EntityGUID_64="424237F12BE4F6C8">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="Play_elevator_start" audioTrigger_StopTrigger="Play_elevator_stop"/>
+      </Node>
+      <Node Id="6" Class="Audio:Trigger" pos="20,30,0" flags="0" EntityGUID="{2BE4F6C8-37F1-4242-B029-B22A99391FCA}" EntityGUID_64="424237F12BE4F6C8">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="Play_elevator_start" audioTrigger_StopTrigger="Play_elevator_stop"/>
+      </Node>
+      <Node Id="10" Class="entity:ParticleEffect" pos="20,150,0" flags="0" EntityGUID="{BA73AE6E-4681-4D92-A607-1B4C9C91C854}" EntityGUID_64="4D924681BA73AE6E">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="11" Class="Game:Start" pos="-390,160,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="12" Class="Logic:Any" pos="-140,60,0" flags="0" InHideMask="1020">
+       <Inputs />
+      </Node>
+      <Node Id="13" Class="Logic:Any" pos="-160,170,0" flags="0" InHideMask="1016">
+       <Inputs />
+      </Node>
+      <Node Id="15" Class="entity:ElevatorSwitch" pos="-190,380,0" flags="1" EntityGUID="{22D1DFAF-4F46-4573-85E5-A51F165033D1}" EntityGUID_64="45734F4622D1DFAF">
+       <Inputs entityId="0" Disable="0" Enable="0" Use="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="5" nodeOut="2" portIn="Play" portOut="StartedSlidingUp" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="2" portIn="Stop" portOut="StoppedSlidingUp" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Play" portOut="StartedSlidingDown" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="2" portIn="Stop" portOut="StoppedSlidingDown" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="2" portIn="in2" portOut="StartedSlidingDown" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="2" portIn="in1" portOut="StartedSlidingUp" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="2" portIn="in1" portOut="StoppedSlidingDown" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="2" portIn="in2" portOut="StoppedSlidingUp" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="2" portIn="Enable" portOut="StoppedSlidingDown" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="11" portIn="Kill" portOut="output" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="11" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="12" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="12" portIn="Disable" portOut="out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="13" portIn="Disable" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Name="Elevator1" Pos="0.82470703,-9.2705078,-0.28074646" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Elevator">
+    <Properties bAutomatic="1" nDestinationFloor="1" nFloorCount="2" fFloorHeight="4.5" nInitialFloor="0" objModel="Objects/structures/outpost_container/dws_outpost_gate.cgf" soclasses_SmartObjectClass="Elevator">
+     <Slide fAcceleration="1" sAxis="y" fSpeed="0.2" fStopTime="5"/>
+     <Sounds soundSoundOnMove="" soundSoundOnStart="" soundSoundOnStop=""/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{22D1DFAF-4F46-4573-85E5-A51F165033D1}" Name="ElevatorSwitch1" Parent="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Pos="0,0.74047852,0.53949738" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.47000003,1,6.1697998" ColorRGB="65535" Material="Materials/collider_nodraw_invisible" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ElevatorSwitch">
+    <Properties fDelay="0.5" bEnabled="1" nFloor="0" objModel="Objects/default/primitive_box.cgf" soclasses_SmartObjectClass="ElevatorSwitch" UseMessage="Open Door">
+     <Sounds soundSoundOnPress=""/>
+    </Properties>
+    <EntityLinks>
+     <Link TargetId="{EA807C73-ADBE-4069-8713-6336D0EE0D45}" Name="up" Version="1"/>
+    </EntityLinks>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="floodlight_1" Id="{2A6D62F8-C3C0-44AB-9605-BD7EE6CE66D9}" Library="outpost">
+  <Objects>
+   <Object Type="Brush" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{56FA9D9A-4E81-44F3-B68B-98E2A9206EA4}" Name="floodlight6" Pos="-0.00012207031,-0.020019531,1.4648418" FloorNumber="-1" Rotate="0.99984771,-0.017452406,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/industrial/misc/floodlight02.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{1E200574-8A7E-44FF-8711-717A7178998E}" Name="floodlight01_stand6" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,1.1920927e-007,0" ColorRGB="16777215" MatLayersMask="0" Prefab="objects/props/industrial/misc/floodlight02_stand.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{1DD180E8-F865-462C-B8B1-EB184CC38DDB}" Name="Light6" Pos="-0.18884277,-0.10083008,1.4680004" FloorNumber="-1" Rotate="0.50000006,0.5,0.5,0.5" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="0.12" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.887923,0.701102" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="180" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{B3005998-125C-4DC9-8698-EEC0D43C68D7}" Name="Light9" Pos="0.19036865,-0.10083008,1.4680004" FloorNumber="-1" Rotate="0.50000006,0.5,0.5,0.5" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="0.12" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.887923,0.701102" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="180" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{8427E5A6-DE63-4D85-B7F2-C3CCD5166DE4}" Name="Light10" Pos="0.19091797,-0.14282227,1.4680023" FloorNumber="-1" Rotate="0.5,-0.49999997,0.49999997,-0.49999997" ColorRGB="65535" Material="Materials/lights/light_beams/lightbeam_still_outpost" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="10" Radius="30" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.745404,0.381326" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="70" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="miscreated.outside_light.flare" bFlareEnable="1" fFlareFOV="100" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{704B0FF5-B60D-4790-88E0-3F0FD055D385}" Name="Light8" Pos="-0.18884277,-0.14282227,1.4679985" FloorNumber="-1" Rotate="0.5,-0.49999997,0.49999997,-0.49999997" ColorRGB="65535" Material="Materials/lights/light_beams/lightbeam_still_outpost" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="10" Radius="30" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.745404,0.381326" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="70" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="miscreated.outside_light.flare" bFlareEnable="1" fFlareFOV="100" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="floodlight_up_1" Id="{59D7B8E9-6D2F-4E3C-BD07-130567D1D824}" Library="outpost">
+  <Objects>
+   <Object Type="Brush" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{55ADFD29-C11D-4DAA-AE27-A1EEA23A89DE}" Name="floodlight01_stand6" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,1.1920927e-007,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/industrial/misc/floodlight01_stand.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{FDD2DD9A-2DA2-4A01-A729-E8B4749192E9}" Name="floodlight6" Pos="0.018615723,0.0068969727,0.16465378" FloorNumber="-1" Rotate="0.98565936,-0.16874743,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/industrial/misc/floodlight01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{A701A539-BEB9-42EB-9D29-B1230FED7746}" Name="Light6" Pos="0.018737793,-0.069274902,0.19187164" FloorNumber="-1" Rotate="0.56998694,0.41846731,0.56998694,0.41846731" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="0.12" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.887923,0.701102" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="180" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{12D06803-D333-4EA8-A7D0-738240D1B1F2}" Name="Light8" Pos="0.018737793,-0.109375,0.20445061" FloorNumber="-1" Rotate="-0.41846734,0.56998694,-0.41846734,0.56998694" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="5" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="10" Radius="30" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.737911,0.376262" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="100" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="miscreated.minelamp.flare" bFlareEnable="1" fFlareFOV="100" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="floodlight_down_1" Id="{304B0CFB-3697-410A-9AC7-7382D254054B}" Library="outpost">
+  <Objects>
+   <Object Type="Brush" Layer="cqc_lighting" LayerGUID="{CB0840D2-B726-42E6-8CB6-09BEA1E7D257}" Id="{57FECB12-4266-44D6-B31D-612F0EA56378}" Name="floodlight01_stand7" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,1.1920927e-007,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/industrial/misc/floodlight01_stand.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{1EFA6153-D8E0-48A2-8242-F8AE3A237628}" Name="floodlight7" Pos="0.018615723,0.0071411133,0.16625214" FloorNumber="-1" Rotate="0.98826838,0.15272714,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/props/industrial/misc/floodlight01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="250" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{2635A4FE-AE81-4F1F-85A2-5001E64978C8}" Name="Light44" Pos="0.018798828,-0.083496094,0.13752747" FloorNumber="-1" Rotate="0.40775046,0.57770199,-0.40775046,-0.57770199" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="240" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="0.12" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.887923,0.701102" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="1" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="180" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="miscreated.outside_light.flare" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{BF759386-7311-4AA5-97DD-3E10826642A2}" Name="Light12" Pos="0.018737793,-0.070068359,0.14215088" FloorNumber="-1" Rotate="0.40775046,0.57770199,0.40775046,0.57770199" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="240" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.05" Radius="0.12" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.887923,0.701102" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="180" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{1B270C27-F748-4003-850B-3A825E07705D}" Name="Light11" Pos="0.018798828,-0.11035156,0.12806702" FloorNumber="-1" Rotate="0.57770199,-0.40775043,0.57770199,-0.40775043" ColorRGB="65535" Material="Materials/lights/light_beams/lightbeam_still_outpost" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="1" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="10" Radius="30" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.745404,0.381326" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="1" bVolumetricFog="1"/>
+     <Projector fProjectorFov="70" fProjectorNearPlane="0" texture_Texture="textures/lights/generic/rectangle_half_010.dds"/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="1" fFlareFOV="100" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="wall_lantern" Id="{1B85AAD5-2D88-45CF-BA58-5818B5EA783F}" Library="outpost">
+  <Objects>
+   <Object Type="Brush" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{BBEA6640-000F-43D0-829F-7A96AA10676B}" Name="wall_lantern_world1" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/basebuilding/other/wall_lantern/wall_lantern_world.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0" gcc_trap="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="safezone" LayerGUID="{0F4302FC-4FFE-475A-AD5E-B468017B9E9F}" Id="{41333387-A1A0-4803-A1EF-BC2B6284ED33}" Name="Light47" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" Material="EngineAssets/Materials/lens_optics" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="8" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="3" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="0.5" Radius="10" _nVersion="0">
+     <Color clrDiffuse="0.913099,0.679543,0.23074" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" bAmbient="0" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" nTimeGroup="0" bVolumetricFog="1"/>
+     <Projector fProjectorFov="90" fProjectorNearPlane="0" texture_Texture=""/>
+     <Shadows nCastShadows="0" fShadowBias="1" nShadowMinResPercent="0" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="10" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="0" fPlaneHeight="1" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="miscreated.minelamp.flare" bFlareEnable="1" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>
