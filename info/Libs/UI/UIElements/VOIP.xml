@@ -1,4 +1,4 @@
-﻿<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
 <UIElements name="VOIP">
 
 	<UIElement name="VOIP"  mouseevents="0" keyevents="0" cursor="0" controller_input="0" render_lockless="1">

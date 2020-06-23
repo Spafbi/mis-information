@@ -1,4 +1,4 @@
-﻿<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
 <UIElements name="Inventory">
 
 	<UIElement name="Inventory"  mouseevents="1" keyevents="1" cursor="1" controller_input="1" render_lockless="1">
