@@ -5095,6 +5095,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "Jelly", percent = 100 },
 				{ class = "CoffeeBag", percent = 100 },
 				{ class = "MRE", percent = 100 },
+				{ class = "Bread", percent = 100 },
 			},
 		},
 		

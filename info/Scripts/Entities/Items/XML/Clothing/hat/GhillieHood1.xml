@@ -8,7 +8,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@GhillieHood1"/>
 		<param name="description" value="@GhillieHood1Description"/>
-		<param name="vendor_cost" value="3"/>
+		<param name="vendor_cost" value="4"/>
 	</params>
 	
 	<geometry>

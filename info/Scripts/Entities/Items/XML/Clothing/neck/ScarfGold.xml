@@ -8,7 +8,6 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="display_name" value="@ScarfGold"/>
 		<param name="description" value="@ScarfGoldDescription"/>
-		<param name="vendor_cost" value="1"/>
 	</params>
 
 	<geometry>
