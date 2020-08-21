@@ -2019,7 +2019,7 @@
 
 							<type name="Storage">
 								<items>
-									<item class="wood_crate_small_packed" time="7">
+									<item class="wood_crate" time="7">
 										<materials>
 											<material class="WoodPile" count="2" />
 											<material class="Lumber" count="5" />
@@ -2876,7 +2876,7 @@
 			</cat>
 		</cats>
 	</guide>
-
+<!--
 	<guide name="guide_structures_wood_storage" id="10">
 		<cats>
 			<cat name="Base Building">
@@ -2899,7 +2899,7 @@
 			</cat>
 		</cats>
 	</guide>
-
+-->
 	<guide name="guide_structures_wood_traps_1" id="11">
 		<cats>
 			<cat name="Base Building">
@@ -3712,7 +3712,7 @@
 			</cat>
 		</cats>
 	</guide>
-	
+<!--
 	<guide name="guide_structures_wood_storage_2" id="30">
 		<cats>
 			<cat name="Base Building">
@@ -3736,7 +3736,7 @@
 			</cat>
 		</cats>
 	</guide>
-	
+-->
 	<guide name="guide_cooking_1" id="31">
 		<cats>
 			<cat name="Consumable">

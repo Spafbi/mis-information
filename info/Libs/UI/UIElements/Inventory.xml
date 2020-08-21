@@ -80,7 +80,11 @@
 				<param name="page" desc="" type="int"/>
 				<param name="pageData" desc="" type="string"/>
 			</function>
-		
+
+			<function name="OnAddVendorItem" funcname="_root.onAddVendorItem">
+				<param name="itemData" desc="" type="string"/>
+			</function>
+
 		</functions>
 
 		<!-- Events fired from actionsript into lua -->

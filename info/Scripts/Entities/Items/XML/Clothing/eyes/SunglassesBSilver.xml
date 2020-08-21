@@ -35,7 +35,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Eyes"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SunglassesBSilver_200.png?crc=7C4EFCAA"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40047"/>

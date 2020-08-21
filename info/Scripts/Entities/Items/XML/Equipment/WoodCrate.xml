@@ -1,5 +1,6 @@
 <item name="WoodCrate" class="Item" category="any">
 
+	<!-- Used for airplane crashes -->
 	<params>
 		<param name="droppable" value="0"/>
 		<param name="selectable" value="0"/>
@@ -16,8 +17,11 @@
 	</geometry>
 
 	<storage>
+		<params>
+			<param name="crate" value="1"/>
+		</params>
 		<types>
-			<type category="any" capacity="10"/>
+			<type category="any" capacity="40"/>
 		</types>
 	</storage>
 

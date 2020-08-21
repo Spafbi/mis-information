@@ -12,15 +12,15 @@
   <Node Id="8" Class="UI:Action:Control" pos="-460,0,0" flags="0">
    <Inputs uiActions_UIAction="InventoryHide" Strict="0" Args=""/>
   </Node>
-  <Node Id="9" Name="Show/Hide_Inventory" Class="_commentbox" pos="-1120,-370.8045,0" flags="0">
+  <Node Id="9" Name="Show/Hide_Inventory" Class="_commentbox" pos="-1120,-370.78296,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="940" Height="480"/>
-   <NodeSize Width="940" Height="507.6622"/>
+   <NodeSize Width="940" Height="507.64063"/>
   </Node>
-  <Node Id="10" Name="Inventory_Item_Movement" Class="_commentbox" pos="-860,-650.7821,0" flags="0">
+  <Node Id="10" Name="Inventory_Item_Movement" Class="_commentbox" pos="-860,-650.76044,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="680" Height="240"/>
-   <NodeSize Width="680" Height="267.6622"/>
+   <NodeSize Width="680" Height="267.64063"/>
   </Node>
   <Node Id="11" Class="UI:Events:Inventory:OnItemConsumed" pos="-840,-1040,0" flags="0">
    <Inputs instanceID="-1" Port="-1" Idx=""/>
@@ -28,10 +28,10 @@
   <Node Id="12" Class="Inventory:ConsumeEntityInventoryItem" pos="-500,-1040,0" flags="0">
    <Inputs EntityId="0" FromEntityId="0" FromSlot=""/>
   </Node>
-  <Node Id="13" Name="Inventory_Item_Handling" Class="_commentbox" pos="-860,-1230.8062,0" flags="0">
+  <Node Id="13" Name="Inventory_Item_Handling" Class="_commentbox" pos="-860,-1230.7845,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="680" Height="540"/>
-   <NodeSize Width="680" Height="567.66223"/>
+   <NodeSize Width="680" Height="567.64063"/>
   </Node>
   <Node Id="14" Class="UI:Events:Inventory:OnItemSelected" pos="-840,-920,0" flags="0">
    <Inputs instanceID="-1" Port="-1" Idx=""/>
@@ -129,23 +129,23 @@
   <Node Id="59" Class="UI:Functions:Inventory:OnClanMembers" pos="280,-480,0" flags="0">
    <Inputs instanceID="-1" clanMembersData=""/>
   </Node>
-  <Node Id="60" Name="Crafting" Class="_commentbox" pos="-80,-1369.7932,0" flags="0">
+  <Node Id="60" Name="Crafting" Class="_commentbox" pos="-80,-1369.7716,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="920" Height="680"/>
-   <NodeSize Width="920" Height="707.66223"/>
+   <NodeSize Width="920" Height="707.64063"/>
   </Node>
-  <Node Id="61" Name="Clan_System" Class="_commentbox" pos="-80,-649.77209,0" flags="0">
+  <Node Id="61" Name="Clan_System" Class="_commentbox" pos="-80,-649.75043,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="640" Height="240"/>
-   <NodeSize Width="640" Height="267.6622"/>
+   <NodeSize Width="640" Height="267.64063"/>
   </Node>
   <Node Id="62" Name="Called_from_the_Inventory_Flash_UI_when_an_item_has_been_consumed_in_a_player&apos;s_inventory" Class="_comment" pos="-840,-1190,0" flags="0"/>
   <Node Id="63" Name="Called_from_the_Inventory_Flash_UI_when_an_item_is_moved_in_a_player&apos;s_inventory" Class="_comment" pos="-840,-610,0" flags="0"/>
   <Node Id="64" Name="Toggle_the_inventory_screen_off_and_on_-_&quot;G&quot;_key_by_default" Class="_comment" pos="-1100,-330,0" flags="0"/>
-  <Node Id="65" Name="Misc" Class="_commentbox" pos="-80,-369.77283,0" flags="0">
+  <Node Id="65" Name="Misc" Class="_commentbox" pos="-80,-369.75122,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="750" Height="580"/>
-   <NodeSize Width="750" Height="607.66223"/>
+   <NodeSize Width="750" Height="607.64063"/>
   </Node>
   <Node Id="73" Class="Audio:Trigger" pos="520,-1300,0" flags="0">
    <Inputs entityId="0" audioTrigger_PlayTrigger="Play_crafting_craft_3p" audioTrigger_StopTrigger="do_nothing"/>
@@ -172,10 +172,10 @@
   <Node Id="87" Class="UI:Functions:Inventory:OnRefreshSteamInventory" pos="320,160,0" flags="0">
    <Inputs instanceID="-1"/>
   </Node>
-  <Node Id="88" Name="Vendors" Class="_commentbox" pos="-80,250,0" flags="0">
+  <Node Id="88" Name="Vendors" Class="_commentbox" pos="-80,250.02159,0" flags="0">
    <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="930" Height="580"/>
-   <NodeSize Width="930" Height="607.66223"/>
+   <NodeSize Width="930" Height="607.64063"/>
   </Node>
   <Node Id="89" Class="UI:Events:Inventory:OnSetVendorInventoryItemPage" pos="-60,420,0" flags="0">
    <Inputs Port="-1" Idx=""/>
@@ -188,6 +188,12 @@
   </Node>
   <Node Id="92" Class="UI:Functions:Inventory:OnSetVendorInventoryItemCount" pos="340,300,0" flags="0">
    <Inputs instanceID="-1" vendorId="0" numItems="0"/>
+  </Node>
+  <Node Id="95" Class="UI:Events:Inventory:OnAddVendorItem" pos="30,580,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="96" Class="UI:Functions:Inventory:OnAddVendorItem" pos="330,580,0" flags="0">
+   <Inputs instanceID="-1" itemData=""/>
   </Node>
  </Nodes>
  <Edges>
@@ -252,6 +258,8 @@
   <Edge nodeIn="92" nodeOut="91" portIn="numItems" portOut="NumItems" enabled="1"/>
   <Edge nodeIn="92" nodeOut="91" portIn="vendorId" portOut="VendorId" enabled="1"/>
   <Edge nodeIn="92" nodeOut="91" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="96" nodeOut="95" portIn="itemData" portOut="itemData" enabled="1"/>
+  <Edge nodeIn="96" nodeOut="95" portIn="Call" portOut="onEvent" enabled="1"/>
  </Edges>
  <GraphTokens />
 </Graph>

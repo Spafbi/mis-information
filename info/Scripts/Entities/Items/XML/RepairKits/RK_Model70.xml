@@ -31,7 +31,7 @@
 		<param name="tags" value="Category:RepairKit"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/RK_Model70_200.png?crc=142FACC5"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="5"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF0000"/>
 		<param name="itemdefid" value="130019"/>

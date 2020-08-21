@@ -61,7 +61,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Hat"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/FootballHelmetStripedRed_200.png?crc=4A1D984E"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40261"/>

@@ -37,9 +37,9 @@
 
 	<steam>
 		<param name="tags" value="Category:Clothing;Slot:Hands"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo2_200.png?crc=F34342E4"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo2_200.png?crc=A5FC4143"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40110"/>
@@ -47,6 +47,6 @@
 		<param name="store_tags" value="Category:Clothing;Slot:Hands"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo2_2048.png?crc=F34342E4"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/WoolGlovesCamo2_2048.png?crc=A5FC4143"/>
 	</steam>
 </item>

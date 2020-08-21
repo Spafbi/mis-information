@@ -1,10 +1,10 @@
-<item name="SeasonedbearSteaks" class="Consumable" category="any">
+<item name="SeasonedBearSteaks" class="Consumable" category="any">
 
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="1.0"/>
-		<param name="display_name" value="@SeasonedbearSteaks"/>
-		<param name="description" value="@SeasonedbearSteaksDescription"/>
+		<param name="display_name" value="@SeasonedBearSteaks"/>
+		<param name="description" value="@SeasonedBearSteaksDescription"/>
 	</params>
 
 	<geometry>

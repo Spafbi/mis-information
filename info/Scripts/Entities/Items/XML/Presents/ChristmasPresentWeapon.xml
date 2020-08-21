@@ -32,7 +32,7 @@
 		<param name="tags" value="Category:Present"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/ChristmasPresentWeapon_200.png?crc=0CBA85BF"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="50007"/>

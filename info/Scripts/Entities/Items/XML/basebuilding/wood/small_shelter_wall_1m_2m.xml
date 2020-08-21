@@ -33,7 +33,7 @@
 		<param name="tags" value="Category:BaseBuilding"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/small_shelter_wall_1m_2m_200.png?crc=3F79023F"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="30138"/>

@@ -39,7 +39,7 @@
 		<param name="tags" value="Category:AmmoBox"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Crafted_AmmoBox_357_200.png?crc=B1102850"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="80087"/>

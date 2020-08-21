@@ -18,7 +18,6 @@
 -- 2) Breakability index (same meaning as for the explosion shapes)
 
 
-Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape.cgf", 7, 2, 1, "",0,"");
-Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape2.cgf", 1.3, 3, 1, "",0,"");
-Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape3.cgf", 1.3, 5, 1, 
-							   "Objects/default/explosion_shape/trunk_splinters_a.cgf",1.6,"breakable_objects.tree_break.small");
+-- Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape.cgf", 7, 2, 1, "",0,"");
+-- Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape2.cgf", 1.3, 3, 1, "",0,"");
+-- Physics.RegisterExplosionShape("Objects/default/explosion_shape/tree_broken_shape3.cgf", 1.3, 5, 1, "Objects/default/explosion_shape/trunk_splinters_a.cgf",1.6,"breakable_objects.tree_break.small");

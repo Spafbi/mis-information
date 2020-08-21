@@ -44,9 +44,9 @@
 
 	<steam>
 		<param name="tags" value="Category:Clothing;Slot:Jacket"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PuffyJacketCamo2_200.png?crc=E7ABBEAC"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PuffyJacketCamo2_200.png?crc=7283F18D"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="2"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40348"/>
@@ -54,6 +54,6 @@
 		<param name="store_tags" value="Category:Clothing;Slot:Jacket"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PuffyJacketCamo2_2048.png?crc=E7ABBEAC"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/PuffyJacketCamo2_2048.png?crc=7283F18D"/>
 	</steam>
 </item>
