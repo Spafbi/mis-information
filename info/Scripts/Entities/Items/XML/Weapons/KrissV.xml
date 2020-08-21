@@ -481,7 +481,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/KrissV_200.png?crc=014EA33F"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="10"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110037"/>

@@ -26,7 +26,7 @@
 		<param name="tags" value="Category:BaseBuilding"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/gnome_silver_200.png?crc=51CBF750"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="1EFF00"/>
 		<param name="itemdefid" value="30010"/>

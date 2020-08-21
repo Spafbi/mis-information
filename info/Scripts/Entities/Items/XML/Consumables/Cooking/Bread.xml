@@ -6,7 +6,7 @@
 		<param name="stack_size" value="10"/>
 		<param name="display_name" value="@Bread"/>
 		<param name="description" value="@BreadDescription"/>
-		<param name="vendor_cost" value="10"/>
+		<param name="vendor_cost" value="2"/>
 	</params>
 
 	<geometry>
@@ -16,7 +16,7 @@
 	<consumable>
 	    <param name="type" value="2"/>
 	    <param name="consumePartial" value="0"/>
-		<param name="foodAmount" value="500"/> <!-- Calories -->
+		<param name="foodAmount" value="100"/> <!-- Calories -->
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

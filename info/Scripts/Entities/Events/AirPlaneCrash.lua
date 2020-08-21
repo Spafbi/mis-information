@@ -92,9 +92,9 @@ SpawnAirPlaneCrashLoot = function(self)
 	FastSumVectors(vSpawnPos, vSpawnPos, {x=0,y=0,z=1})
 
 	-- Items that spawn in when the plane crashes
-	ISM.SpawnCategory("AirPlaneCrashCrate", vSpawnPos)
-	ISM.SpawnCategory("AirPlaneCrashBackpack", vSpawnPos)
-	ISM.SpawnCategory("AirPlaneCrashBackpack", vSpawnPos)
-	ISM.SpawnCategory("AirPlaneCrashBackpack", vSpawnPos)
+	ISM.SpawnCategory("AirPlaneCrashCrateMilitary", vSpawnPos)
+	ISM.SpawnCategory("AirPlaneCrashCrateCivilian", vSpawnPos)
+	ISM.SpawnCategory("AirPlaneCrashCrateCivilian", vSpawnPos)
+	ISM.SpawnCategory("AirPlaneCrashCrateCivilian", vSpawnPos)
 
 end

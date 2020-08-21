@@ -12,7 +12,7 @@
 
 	<steam>
 		<param name="tags" value="Category:Vehicle Skin"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo2_200.png?crc=3364ADDA"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo2_200.png?crc=13C75E9D"/>
 		<param name="store_hidden" value="0"/>
 		<param name="amcoins" value="3"/>
 		<param name="tradable" value="1"/>
@@ -22,6 +22,6 @@
 		<param name="store_tags" value="Category:Vehicle Skin"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo2_2048.png?crc=3364ADDA"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/TruckSemi_Camo2_2048.png?crc=13C75E9D"/>
 	</steam>
 </skin>

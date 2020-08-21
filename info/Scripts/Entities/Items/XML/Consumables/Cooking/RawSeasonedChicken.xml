@@ -13,7 +13,7 @@
 
 	<consumable>
 	    <param name="cookable" value="1"/>
-		<param name="cookedItem" value="RawSeasonedChicken"/>
+		<param name="cookedItem" value="SeasonedChicken"/>
 		<param name="cookedTime" value="250"/>
 	    <param name="consumePartial" value="1"/>
 		<param name="foodAmount" value="100"/> <!-- Calories -->

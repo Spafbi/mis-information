@@ -45,7 +45,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Accessory"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/FlashlightPistol_200.png?crc=9526C59B"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="2"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="20000"/>

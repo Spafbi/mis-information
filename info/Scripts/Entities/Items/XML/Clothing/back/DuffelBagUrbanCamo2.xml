@@ -32,9 +32,9 @@
 
 	<steam>
 		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DuffelBagUrbanCamo2_200.png?crc=B9FDC594"/>
+		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DuffelBagUrbanCamo2_200.png?crc=F6D461E4"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="5"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40012"/>
@@ -42,6 +42,6 @@
 		<param name="store_tags" value="Category:Clothing;Slot:Backpack"/>
 		<param name="background_color" value="2A2A2A"/>
 		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/DuffelBagUrbanCamo2_2048.png?crc=B9FDC594"/>
+		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/DuffelBagUrbanCamo2_2048.png?crc=F6D461E4"/>
 	</steam>
 </item>

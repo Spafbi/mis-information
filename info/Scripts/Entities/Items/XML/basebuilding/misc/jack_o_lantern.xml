@@ -41,7 +41,7 @@
 		<param name="tags" value="Category:BaseBuilding"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/jack_o_lantern_200.png?crc=B81205D4"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="1"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="EAEA00"/>
 		<param name="itemdefid" value="30014"/>

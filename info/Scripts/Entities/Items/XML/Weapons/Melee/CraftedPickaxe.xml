@@ -75,7 +75,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Secondary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedPickaxe_200.png?crc=F7B23059"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110020"/>

@@ -819,12 +819,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomBpartPresent",
 			classes =
 			{
-				{ class = "wood_watchtower", percent = 17 },
-				{ class = "wood_watchtower_tire", percent = 17 },
-				{ class = "wood_gate_lockable_3m_4m", percent = 17 },
-				{ class = "wood_gatehouse", percent = 17 },
-				{ class = "wood_crate_large_packed", percent = 16 },
-				{ class = "wood_door_lockable_1m_2m", percent = 16 },
+				{ class = "wood_watchtower", percent = 20 },
+				{ class = "wood_watchtower_tire", percent = 20 },
+				{ class = "wood_gate_lockable_3m_4m", percent = 20 },
+				{ class = "wood_gatehouse", percent = 20 },
+				{ class = "wood_door_lockable_1m_2m", percent = 20 },
 			},
 		},
 
@@ -1848,13 +1847,12 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomCraftingGuide",
 			classes =
 			{
-				-- generic (18)
-				{ class = "guide_medical_bandages", percent = 5 },
-				{ class = "guide_weapons_melee", percent = 4 },
-				{ class = "guide_structures_tire_stacks", percent = 4 },
-				{ class = "guide_structures_wood_storage", percent = 5 },
+				-- generic (20)
+				{ class = "guide_medical_bandages", percent = 7 },
+				{ class = "guide_weapons_melee", percent = 7 },
+				{ class = "guide_structures_tire_stacks", percent = 6 },
 
-				-- basic (37)
+				-- basic (34)
 				{ class = "guide_structures_wood_bridges_1", percent = 3 },
 				{ class = "guide_structures_wood_ramps_1", percent = 3 },
 				{ class = "guide_structures_wood_stairs_1", percent = 3 },
@@ -1866,12 +1864,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "guide_traps_1", percent = 3 },
 				{ class = "guide_explosives_1", percent = 3 },
 				{ class = "guide_weapons_ranged_1", percent = 4 },
-				{ class = "guide_structures_wood_storage_2", percent = 3 },
 
-				-- advanced (37)
+				-- advanced (38)
 				{ class = "guide_structures_wood_bridges_2", percent = 3 },
 				{ class = "guide_structures_wood_ramps_2", percent = 4 },
-				{ class = "guide_structures_wood_stairs_2", percent = 3 },
+				{ class = "guide_structures_wood_stairs_2", percent = 4 },
 				{ class = "guide_structures_wood_traps_2", percent = 3 },
 				{ class = "guide_structures_wood_walkways_2", percent = 5 },
 				{ class = "guide_structures_wood_walls_2", percent = 7 },
@@ -4597,7 +4594,6 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "guide_structures_wood_stairs_2", percent = 100 },
 				{ class = "guide_structures_wood_walls_2", percent = 100 },
 				{ class = "guide_structures_wood_walkways_2", percent = 100 },
-				{ class = "guide_structures_wood_storage_2", percent = 100 },
 				{ class = "guide_structures_wood_bridges_2", percent = 100 },
 			},
 		},
@@ -4625,7 +4621,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "MRE", percent = 100 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
 				{ category = "RandomEpicWeaponPure", percent = 100 },
-				{ class = "DuffelBagBlack", percent = 100 },
+				{ class = "DuffelBagBlack", percent = 100 }			
 			},
 		},
 		
@@ -4743,10 +4739,18 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 		},
 
 		{
-			category = "AirPlaneCrashCrate",
+			category = "AirPlaneCrashCrateMilitary",
 			classes =
 			{
 				{ class = "WoodCrate", contents="RandomCrateAirPlaneContents", percent = 100 },
+			},
+		},
+
+		{
+			category = "AirPlaneCrashCrateCivilian",
+			classes =
+			{
+				{ class = "WoodCrate", contents="RandomBackpackAirPlaneContents", percent = 100 },
 			},
 		},
 		
@@ -5118,20 +5122,18 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomTraderCraftingGuides",
 			classes =
 			{
-				{ class = "guide_medical_bandages", percent = 4 },
-				{ class = "guide_weapons_melee", percent = 4 },
+				{ class = "guide_medical_bandages", percent = 5 },
+				{ class = "guide_weapons_melee", percent = 5 },
 				{ class = "guide_structures_tire_stacks", percent = 4 },
-				{ class = "guide_structures_wood_storage", percent = 4 },
 				{ class = "guide_structures_wood_bridges_1", percent = 4 },
 				{ class = "guide_structures_wood_ramps_1", percent = 4 },
 				{ class = "guide_structures_wood_stairs_1", percent = 4 },
 				{ class = "guide_structures_wood_traps_1", percent = 4 },
 				{ class = "guide_structures_wood_walkways_1", percent = 4 },
-				{ class = "guide_structures_wood_walls_1", percent = 4 },
-				{ class = "guide_structures_wood_roofs", percent = 4 },
+				{ class = "guide_structures_wood_walls_1", percent = 5 },
+				{ class = "guide_structures_wood_roofs", percent = 5 },
 				{ class = "guide_powered_parts_1", percent = 4 },
 				{ class = "guide_traps_1", percent = 4 },
-				{ class = "guide_structures_wood_storage_2", percent = 4 },
 				{ class = "guide_structures_wood_bridges_2", percent = 4 },
 				{ class = "guide_structures_wood_ramps_2", percent = 4 },
 				{ class = "guide_structures_wood_stairs_2", percent = 4 },

@@ -66,7 +66,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Hat"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SpaceHelmet_200.png?crc=3E25A02A"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="6"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40694"/>

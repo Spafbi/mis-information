@@ -34,7 +34,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Backpack"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/DuffelBag_200.png?crc=DB2D2911"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="5"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40000"/>

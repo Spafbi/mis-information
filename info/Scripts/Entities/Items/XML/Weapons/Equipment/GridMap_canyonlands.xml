@@ -67,7 +67,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Belt"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/GridMap_canyonlands_200.png?crc=2DB152E9"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
+		<param name="amcoins" value="0"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110096"/>
