@@ -8,7 +8,7 @@
 		<param name="description" value="@wood_crateDescription"/>
 	</params>
 
-	<base_part class="static" type="371" name="wood_crate" max_health="1500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="static" type="371" name="wood_crate" max_health="1000" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/wood/locked_crate_large.cgf"/>
 
 		<damage_multipliers>

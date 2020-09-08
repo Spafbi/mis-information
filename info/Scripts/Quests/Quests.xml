@@ -100,14 +100,14 @@
 																									<quest name="@quest_craft_crate">
 																										<tasks>
 																											<task description="@task_craft_crate" type="craft" >
-																												<craft classname="wood_crate_small_packed" />
+																												<craft classname="wood_crate" />
 																											</task>
 																										</tasks>
 																										<quests>
 																											<quest name="@quest_place_crate">
 																												<tasks>
 																													<task description="@task_place_crate" type="action" >
-																														<action action="@placeable_place" classname="wood_crate_small_packed" />
+																														<action action="@placeable_place" classname="wood_crate" />
 																													</task>
 																												</tasks>
 																												<quests>
