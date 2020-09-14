@@ -2,7 +2,7 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="13.0"/>
+		<param name="mass" value="5"/>
 		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
 		<param name="display_name" value="@JerryCanDiesel"/>
 		<param name="description" value="@JerryCanDieselDescription"/>

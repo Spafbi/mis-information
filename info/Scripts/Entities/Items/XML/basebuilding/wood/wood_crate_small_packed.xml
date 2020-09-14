@@ -2,16 +2,16 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="2"/>
+		<param name="mass" value="4"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="@wood_crate_small_packed"/>
-		<param name="description" value="@wood_crate_small_packedDescription"/>
+		<param name="display_name" value="@wood_crate"/>
+		<param name="description" value="@wood_crateDescription"/>
 	</params>
 
-	<base_part class="entity" type="85" name="wood_crate_small_packed" max_health="3000" limit="4" repair_sound="Play_wall_repair">
-		<entity class="wood_crate_small"/>
-	
-	    <damage_multipliers>
+	<base_part class="static" type="371" name="wood_crate" max_health="500" repair_sound="Play_wall_repair">
+		<static filename="objects/basebuilding/wood/locked_crate_large.cgf"/>
+
+		<damage_multipliers>
 			<damage_multiplier damage_type="collision" multiplier="0.1"/>
 			<damage_multiplier damage_type="explosion" multiplier="0.0"/>
 			<damage_multiplier damage_type="frag" multiplier="0.0"/>
@@ -47,36 +47,29 @@
 			<damage_multiplier damage_type="torch" multiplier="0.0"/>
 		</damage_multipliers>
 	</base_part>
-	
+
 	<explosion>
 		<param name="sound_radius" value="50"/> <!-- max radius the AI will react to the explosion sound -->
 		<param name="hole_size" value="3"/> <!-- radius to remove entities within -->
 		<param name="effect" value="misc.basebuilding.generic_bpart_destroyed"/>
 		<param name="effect_scale" value="1"/>
 	</explosion>
-
+	
 	<geometry>
 		<thirdperson name="objects/basebuilding/wood/wood_part.cgf"/>
 	</geometry>
 
 	<storage>
+		<params>
+			<param name="crate" value="1"/>
+			<param name="has_lock" value="1"/>
+		</params>
+		<types>
+			<type category="any" capacity="40"/>
+		</types>
 		<locations>
 			<location category="any"/>
 		</locations>
-	</storage>
+	</storage>	
 
-	<steam>
-		<param name="tags" value="Category:BaseBuilding"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/wood_crate_small_packed_200.png?crc=7DCC22EE"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="30165"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:BaseBuilding"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/wood_crate_small_packed_2048.png?crc=7DCC22EE"/>
-	</steam>
 </item>

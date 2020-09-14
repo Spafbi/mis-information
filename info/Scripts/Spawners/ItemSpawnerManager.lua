@@ -3163,11 +3163,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomTent",
 			classes =
 			{
-				{ category = "RandomCampingTent", percent = 20 },
-				{ category = "RandomEasyCampTent", percent = 20 },
-				{ category = "RandomPupTent", percent = 20 },
-				{ category = "RandomTrekkingTent", percent = 20 },
+				{ category = "RandomEasyCampTent", percent = 30 },
+				{ category = "RandomPupTent", percent = 30 },			
 				{ category = "RandomTwoPersonTent", percent = 20 },
+				{ category = "RandomTrekkingTent", percent = 15 },
+				{ category = "RandomCampingTent", percent = 5 },
 			},
 		},
 
@@ -3443,7 +3443,8 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "HeatPack", percent = 20 },
 				{ class = "camping_pop_up_canopy", percent = 15 },
 				{ class = "camping_table", percent = 15 },
-				{ class = "camping_water_jug", percent = 15 },
+				{ class = "camping_water_jug", percent = 14 },
+				{ category = "RandomTent", percent = 1 },
 			},
 		},
 
@@ -4145,7 +4146,8 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "small_generator", percent = 8 },
 				{ class = "powered_generator_small", percent = 2 },
 				{ class = "Wheel", percent = 20 },
-				{ class = "WorkLight", percent = 15 },
+				{ class = "WorkLight", percent = 13 },
+				{ category = "RandomTent", percent = 2 },
 			},
 		},
 
@@ -4177,6 +4179,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "SurvivalKnife", percent = 3 },
 				{ class = "HeatPack", percent = 5 },
 				{ class = "WaterPurificationTablets", percent = 1 },
+				{ category = "RandomTent", percent = 1 },
 			},
 		},
 
@@ -4236,7 +4239,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			classes =
 			{
 				{ class = "AmcoinLedger", percent = 2 },
-				{ category = "RandomClothes", percent = 67 },
+				{ category = "RandomClothes", percent = 66 },
 				{ category = "RandomFireStarter", percent = 5 },
 				{ category = "RandomNormalRepairKit", percent = 5 },
 				{ category = "RandomWeaponRepairKit", percent = 5 },
@@ -4244,6 +4247,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomTrashContent", percent = 5 },
 				{ category = "RandomPistol", percent = 5 },
 				{ class = "WaterPurificationTablets", percent = 1 },
+				{ category = "RandomTent", percent = 1 },
 			},
 		},
 
@@ -4539,6 +4543,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "C4TimedPickup", percent = 100, min = 1, max = 2 },
 				{ category = "RandomEpicWeaponPure", percent = 100 },
 				{ class = "DuffelBagGreen", percent = 100 },
+				{ category = "RandomTent", percent = 10 },
 			},
 		},
 		
@@ -4652,6 +4657,8 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				--{ class = "EggGreen", percent = 100, min = 1, max = 5 },
 				--{ class = "EggPink", percent = 100, min = 1, max = 5 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
+				{ category = "RandomTent", percent = 10 },
+
 			},
 		},
 		
@@ -4777,6 +4784,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomMaintenance", percent = 100 },
 				{ category = "RandomAmmo", percent = 100 },
 				{ category = "RandomPistol", percent = 100 },
+				{ category = "RandomTent", percent = 10 },
 			},
 		},
 
@@ -4795,6 +4803,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomMilitaryClothing", percent = 100 },
 				{ category = "RandomMilitaryClothing", percent = 100 },
 				{ class = "MRE", percent = 100 },
+				{ category = "RandomTent", percent = 5 },				
 			},
 		},
 		
