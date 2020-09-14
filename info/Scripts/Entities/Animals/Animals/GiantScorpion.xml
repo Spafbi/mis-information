@@ -5,6 +5,7 @@
 		<param name="Size" value="1"/>
 		<param name="SizeRandom" value="0"/>
 		<param name="RelevanceDistance" value="-1.0"/>
+		<param name="NetTickRate" value="0.1"/>
 		<param name="esLootItemCategory" value="RandomGiantScorpionLoot"/>
 		<param name="eiCarryType" value="0"/>
 	</properties>

@@ -2,7 +2,7 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="9.0"/>
+		<param name="mass" value="4"/>
 		<param name="display_name" value="@Wheel"/>
 		<param name="description" value="@WheelDescription"/>
 	</params>

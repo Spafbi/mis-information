@@ -419,22 +419,6 @@ safezone:				true if usable in safezones as well (defaults to false) - damagesca
 			staminaAmount = -10,
 			poisonChance = 10,
 		},
-		{
-			text = "@drink_from_valve",
-			fail = "@drink_water_empty",
-			model = { 
-				"Objects/props/Nitrogen_Tank/nitrogentank_red.cgf",
-			},
-			sound = "Play_drinkStream_drink",
-			uses = 1,
-			regenerate = 180,
-			percentage = 90,
-			consumableType = 1,
-			useWithAction = "refill_gastank",
-			drinkAmount = 1,
-			torpidityAmount = 33,
-			staminaAmount = -33,
-		},
 
 		--------------------------------------------------
 		-- Stick sources

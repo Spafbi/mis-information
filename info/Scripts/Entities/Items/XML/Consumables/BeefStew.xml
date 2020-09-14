@@ -19,13 +19,6 @@
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 	
-	<usable>
-		<param name="title" value="Convert to scrap metal"/>
-		<param name="action" value="convert"/>
-		<param name="param" value="ScrapMetal"/>
-		<param name="soundUsed" value=""/>
-	</usable>
-
 	<storage>
 		<locations>
 			<location category="any"/>

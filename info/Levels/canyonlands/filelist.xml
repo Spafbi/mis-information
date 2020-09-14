@@ -2,6 +2,6 @@
  <index src="filelist.xml" dest="filelist.xml"/>
  <files>
   <file src="canyonlands.xml" dest="canyonlands.xml" size="348" md5="13a6b9b1b61d3a248b44fb3ec103c842"/>
-  <file src="level.pak" dest="level.pak" size="164857099" md5="52d5e60b1ba348fdcd0185d11dc90128"/>
+  <file src="level.pak" dest="level.pak" size="164803556" md5="64f2ad69d96ce2abdb8536b662b3e465"/>
  </files>
 </download>

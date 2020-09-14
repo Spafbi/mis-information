@@ -2,7 +2,7 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="12.5"/>
+		<param name="mass" value="4"/>
 		<param name="healthMax" value="50.0"/>
 		<param name="damage_scale" value="0.5"/>
 		<param name="display_name" value="@CarBattery"/>

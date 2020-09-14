@@ -158,9 +158,9 @@ for i,vehicle in pairs(VehicleSystem.VehicleImpls) do
 		BroadcastEvent(self, "Destroy");
 	end
 
-	MakeRespawnable(gVehicle);
-	gVehicle.Properties.Respawn.bAbandon=1;
-	gVehicle.Properties.Respawn.nAbandonTimer=90;
+	--MakeRespawnable(gVehicle);
+	--gVehicle.Properties.Respawn.bAbandon=1;
+	--gVehicle.Properties.Respawn.nAbandonTimer=90;
 
 	local FlowEvents =
 	{
