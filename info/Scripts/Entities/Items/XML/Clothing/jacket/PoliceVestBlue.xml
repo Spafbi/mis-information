@@ -60,7 +60,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Jacket"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PoliceVestBlue_200.png?crc=B94EC619"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="4"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40343"/>

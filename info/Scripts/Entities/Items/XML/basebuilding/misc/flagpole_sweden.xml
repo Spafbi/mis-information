@@ -25,7 +25,7 @@
 		<param name="tags" value="Category:BaseBuilding"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/flagpole_sweden_200.png?crc=66BD7FF4"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="3"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="30308"/>

@@ -46,7 +46,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Torso"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/SweaterChristmasRed2_200.png?crc=70934C5E"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="1"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="EAEA00"/>
 		<param name="itemdefid" value="40574"/>

@@ -50,7 +50,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Torso"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MilitaryJacketUrbanCamo3_200.png?crc=2069B205"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="3"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40566"/>

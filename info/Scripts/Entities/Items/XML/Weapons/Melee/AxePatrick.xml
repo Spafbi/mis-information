@@ -70,7 +70,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AxePatrick_200.png?crc=F33A566F"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="3"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110005"/>

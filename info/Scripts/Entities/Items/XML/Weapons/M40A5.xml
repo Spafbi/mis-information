@@ -505,7 +505,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/M40A5_200.png?crc=BC26B1D1"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="15"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110042"/>

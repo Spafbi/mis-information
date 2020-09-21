@@ -60,7 +60,7 @@
 		<param name="tags" value="Category:Clothing;Slot:Hat"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/MilitaryHelmetTanCamo4_200.png?crc=74B05069"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="5"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="40311"/>

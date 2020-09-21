@@ -42,7 +42,7 @@
 		<param name="tags" value="Category:Magazine"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/357x14_200.png?crc=34FB4A32"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="3"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="80078"/>

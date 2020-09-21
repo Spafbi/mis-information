@@ -478,7 +478,7 @@
 		<param name="tags" value="Category:Weapon;Slot:Primary"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/Mk18Reaver_200.png?crc=D0DCB53D"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="13"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="110048"/>

@@ -23,7 +23,7 @@
 		<param name="tags" value="Category:Crafting"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/PaintCan_Black_200.png?crc=4334B0CB"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="1"/>
 		<param name="tradable" value="1"/>
 		<param name="name_color" value="FFFFFF"/>
 		<param name="itemdefid" value="60003"/>

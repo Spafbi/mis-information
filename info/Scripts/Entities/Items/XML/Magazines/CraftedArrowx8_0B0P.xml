@@ -43,7 +43,7 @@
 		<param name="tags" value="Category:AmmoPile"/>
 		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedArrowx8_0B0P_200.png?crc=A71853FD"/>
 		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="0"/>
+		<param name="amcoins" value="1"/>
 		<param name="tradable" value="0"/>
 		<param name="name_color" value="FF001E"/>
 		<param name="itemdefid" value="80036"/>

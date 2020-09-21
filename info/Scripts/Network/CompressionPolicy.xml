@@ -512,7 +512,7 @@
 
 	<!-- actor health -->
 	<Policy name="hlth" impl="AdaptiveFloat">
-		<Params min="-1" max="150" nbits="8" height="4"/>
+		<Params min="-1" max="600" nbits="10" height="4"/>
 	</Policy>
 
 	<!-- actor frozen -->

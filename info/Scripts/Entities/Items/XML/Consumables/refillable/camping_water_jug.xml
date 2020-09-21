@@ -2,7 +2,7 @@
 
 	<params>
 		<param name="selectable" value="0"/>
-		<param name="mass" value="6.5"/>
+		<param name="mass" value="3.5"/>
 		<param name="display_name" value="@camping_water_jug"/>
 		<param name="description" value="@camping_water_jugDescription"/>
 		<param name="vendor_cost" value="3"/>
