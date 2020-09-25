@@ -105,19 +105,6 @@
 			</reject>
 		</firemode>
 
-		<firemode name="Automatic" type="Rapid">
-			<fire>
-				<param name="rate" value="600"/>
-				<param name="health_reduction_per_shot" value="0.07"/>
-			</fire>
-			<rapid>
-				<param name="min_speed" value="0.001"/>
-				<param name="max_speed" value="0.001"/>
-				<param name="acceleration" value="2.35"/>
-				<param name="deceleration" value="-3.0"/>
-			</rapid>
-		</firemode>
-
 		<firemode name="Single" type="Single">
 			<fire>
 				<param name="rate" value="360"/>
@@ -143,6 +130,19 @@
 			<muzzlesmoke>
 				<thirdperson effect="" helper="smoke_effect"/>
 			</muzzlesmoke>
+		</firemode>
+
+		<firemode name="Automatic" type="Rapid">
+			<fire>
+				<param name="rate" value="600"/>
+				<param name="health_reduction_per_shot" value="0.07"/>
+			</fire>
+			<rapid>
+				<param name="min_speed" value="0.001"/>
+				<param name="max_speed" value="0.001"/>
+				<param name="acceleration" value="2.35"/>
+				<param name="deceleration" value="-3.0"/>
+			</rapid>
 		</firemode>
 
 		<firemode name="melee" type="Melee">
