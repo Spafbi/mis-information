@@ -246,7 +246,7 @@
 	</Policy>
 
 	<Policy name="ui32" impl="RangedUnsignedInt">
-		<Range min="0" max="4294967294"/>
+		<Range min="0" max="4294967295"/>
 	</Policy>
 
 	<!-- prediction handle -->

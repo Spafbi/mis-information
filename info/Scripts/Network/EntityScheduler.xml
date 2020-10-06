@@ -1593,7 +1593,6 @@
 
 	<Class name="animated_search_light" policy="obj"/>
 	<Class name="arcade_cabinet" policy="obj" />
-	<Class name="BearClaws" policy="obj" />
 	<Class name="camping_chair" policy="obj"/>
 	<Class name="camping_lantern" policy="obj"/>
 	<Class name="camping_pop_up_canopy" policy="obj"/>
