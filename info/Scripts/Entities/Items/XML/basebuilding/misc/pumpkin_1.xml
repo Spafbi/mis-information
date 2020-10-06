@@ -1,0 +1,24 @@
+<item name="pumpkin_1" class="Placeable" category="any">
+
+	<params>
+		<param name="selectable" value="0"/>
+		<param name="mass" value="1.0"/>
+		<param name="display_name" value="Jack-o lantern 01"/>
+		<param name="description" value="A jack-o lantern."/>
+	</params>
+
+	<base_part class="static" type="401" name="pumpkin_1" max_health="1000" repair_with="DuctTape">
+		<static filename="objects/basebuilding/other/jack_o_lantern/Pumpkin_1.cgf"/>
+	</base_part>
+
+	<geometry>
+		<thirdperson name="Objects/basebuilding/other/jack_o_lantern/Pumpkin_1.cgf"/>
+	</geometry>
+
+	<storage>
+		<locations>
+			<location category="any"/>
+		</locations>
+	</storage>
+
+</item>
