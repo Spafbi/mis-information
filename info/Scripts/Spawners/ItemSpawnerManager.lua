@@ -852,7 +852,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "wood_coffin", percent = 9.6 },
 				{ class = "Model1873", percent = 0.5 },
 				{ category = "RandomEpicWeaponTrader", percent = 0.5 },
-				{ category = "RandomAccessory", percent = 5 },
+				{ category = "RandomEpicAttachmentTrader", percent = 5 },
 			},
 		},
 		
@@ -880,7 +880,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "halloween_creepy_bear", percent = 24.5 },
 				{ class = "SkullMask", percent = 10 },
 				{ class = "SkullMaskGold", percent = 5 },
-				{ category = "RandomAccessory", percent = 5 },
+				{ category = "RandomEpicAttachmentTrader", percent = 5 },
 				{ class = "AK5D", percent = 5 },
 				{ category = "RandomEpicWeaponTrader", percent = 0.5 },
 				{ class = "SpaceHelmet", percent = 0.5 },

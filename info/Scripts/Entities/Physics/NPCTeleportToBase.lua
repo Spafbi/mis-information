@@ -671,50 +671,9 @@ function NPCTeleportToBase:PerformAction(user, action)
 	--Log("[ NPCTeleportToBase ] PerformAction: action="..action);
 
 	if action == "@teleport_to_base" then
-		self.server:SVRequestTeleportToBase(user.id);
+		local player = System.GetEntity(user.id)
+		player.player:RequestTeleportToBase(20);
 	end
-end
-
-function NPCTeleportToBase.Server:SVRequestTeleportToBase(userId)
-	local player = System.GetEntity(userId)
-
-	local steamId = player.player:GetSteam64Id();
-		
-	local bases = BaseBuildingSystem.GetPlotSigns()
-
-	for i,b in pairs(bases) do 
-		if b.plotsign:GetOwnerSteam64Id() == steamId then
-
-			-- Teleport the player to the plotsign location instead of their bed
-			-- due to the delay with streaming in base parts
-			-- This will cause them to stand on top of the plotsign - the .1 is just to help
-			-- keep the player from sinking under the plotsign for some reason
-			player.player:TeleportTo(SumVectors(b:GetWorldPos(), {x=0, y=0, z=0.1}));
-			return;
---[[
-			local numParts = b.plotsign:GetPartCount()
-			if numParts > 0 then
-				for p = 0, numParts - 1 do
-
-					local partId = b.plotsign:GetPartId(p)
-
-					-- crafted bed
-					if b.plotsign:GetPartTypeId(partId) == 5070 then
-
-						-- raise the position up slightly to keep players from falling under the bed
-						player.player:TeleportTo(SumVectors(b.plotsign:GetPartWorldPos(partId), {x=0, y=0, z=0.5}));
-						return;
-					end
-				end
-			end
-
-			g_gameRules.game:SendTextMessage(4, userId, "A bed was not found in the base");
-			return;
---]]
-		end
-	end
-
-	g_gameRules.game:SendTextMessage(4, userId, "You do not have a base on this server");
 end
 
 -- EI END

@@ -2127,6 +2127,7 @@
 	<Class name="AirDropCrate" policy="obj"/>
 	<Class name="AirDropSantaCrate" policy="obj" />
 	<Class name="AirPlaneCrash" policy="obj"/>
+	<Class name="UFOCrash" policy="obj" />
 	<Class name="UFOCrate" policy="obj" />
 
 	<!-- basic physicalized objects -->
