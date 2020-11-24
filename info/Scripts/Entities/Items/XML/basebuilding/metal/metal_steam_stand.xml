@@ -68,9 +68,6 @@
 	</geometry>
 	
 	<storage>
-		<params>
-			<param name="steam" value="1"/>
-		</params>
 		<locations>
 			<location category="any"/>
 		</locations>
