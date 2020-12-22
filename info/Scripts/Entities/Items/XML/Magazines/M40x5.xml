@@ -38,18 +38,4 @@
 		</locations>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Magazine"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/M40x5_200.png?crc=2F382491"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="3"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="80040"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:Magazine"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/M40x5_2048.png?crc=2F382491"/>
-	</steam>
 </item>

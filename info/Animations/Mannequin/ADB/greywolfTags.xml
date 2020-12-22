@@ -1,0 +1,21 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="Health">
+   <Tag name="Alive" priority="5"/>
+   <Tag name="Dead" priority="5"/>
+  </Group>
+  <Group name="Stance">
+   <Tag name="Sit"/>
+   <Tag name="Laying"/>
+  </Group>
+  <Group name="Gait">
+   <Tag name="NoGait"/>
+   <Tag name="Walk"/>
+   <Tag name="Run"/>
+   <Tag name="Sprint"/>
+   <Tag name="Stalk"/>
+  </Group>
+  <Tag name="Disabled"/>
+  <Tag name="Scope_HitDeathDetail"/>
+ </Tags>
+</TagDefinition>

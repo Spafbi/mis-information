@@ -1,0 +1,38 @@
+<ATLConfig atl_name="weather">
+	<AudioTriggers>
+
+		<ATLTrigger atl_name="Play_nuclear_thunder">
+			<WwiseEvent wwise_name="Play_nuclear_thunder"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_nuclear_winter">
+			<WwiseEvent wwise_name="Play_nuclear_winter"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_rain">
+			<WwiseRtpc wwise_name="environment_sound"/>
+			<WwiseEvent wwise_name="Play_rain"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_thunder">
+			<WwiseEvent wwise_name="Play_thunder"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wind">
+			<WwiseEvent wwise_name="Play_wind"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wind_trees">
+			<WwiseEvent wwise_name="Play_wind_trees"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_nuclear_winter">
+			<WwiseEvent wwise_name="Stop_nuclear_winter"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_rain">
+			<WwiseEvent wwise_name="Stop_rain"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_wind">
+			<WwiseEvent wwise_name="Stop_wind"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_wind_trees">
+			<WwiseEvent wwise_name="Stop_wind_trees"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

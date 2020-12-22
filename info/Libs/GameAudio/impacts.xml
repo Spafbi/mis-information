@@ -1,0 +1,331 @@
+<ATLConfig atl_name="impacts">
+	<AudioTriggers>
+
+		<!-- BULLET -->
+		<ATLTrigger atl_name="Play_bullet_impact_concrete" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_default" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_fabric" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_fabric"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_flesh" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_flesh"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_glass" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_grass" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_gravel" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_head" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_head"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_leaves" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_metal" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_metal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_mud" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_plastic" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_plastic"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_rock" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_rubber" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rubber"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_sand" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_sand"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_soil" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_vegetation" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_water" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_wheel" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wheel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_wood" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_impact_wood_breakable" path="bullet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+
+		<!-- HATCHET -->
+		<ATLTrigger atl_name="Play_hatchet_impact_concrete" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_default" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_fabric" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_fabric"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_flesh" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_flesh"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_glass" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_grass" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_gravel" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_head" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_head"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_leaves" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_metal" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_metal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_mud" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_plastic" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_plastic"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_rock" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_rubber" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_rubber"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_sand" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_soil" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_vegetation" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_water" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_wheel" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wheel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_wood" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_hatchet_impact_wood_breakable" path="hatchet">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+
+		<!-- FISTS -->
+		<ATLTrigger atl_name="Play_fists_impact_concrete" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_default" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_fabric" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_fabric"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_flesh" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_flesh"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_glass" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_grass" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_gravel" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_head" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_head"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_leaves" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_metal" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_metal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_mud" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_plastic" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_plastic"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_rock" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_rubber" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_rubber"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_sand" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_soil" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_vegetation" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_vegetation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_water" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_wheel" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_wheel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_wood" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fists_impact_wood_breakable" path="fists">
+			<WwiseEvent wwise_name="Play_bullet_impact_wood"/>
+		</ATLTrigger>
+
+		<!-- GLASS BOTTLE -->
+		<ATLTrigger atl_name="Play_glass_bottle_impact_chainlink" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_metal_chainlink"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_concrete" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_default" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_fabric" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_fabric"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_flesh" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_flesh"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_glass" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_grass" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_gravel" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_gravel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_metal" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_metal_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_mud" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_plastic" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_plastic"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_rock" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_sand" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_canopy"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_soil" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_vegetation" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_canopy"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_water" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_wheel" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_wood" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_wood_solid"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_glass_bottle_impact_wood_breakable" path="glass_bottle">
+			<WwiseEvent wwise_name="Play_molotov_hit_mat_wood_hollow"/>
+		</ATLTrigger>
+
+		<!-- GUITAR -->
+		<ATLTrigger atl_name="Play_guitar_hit_mat_canopy" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_canopy"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_carpet" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_carpet"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_dirt" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_fabric" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_fabric"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_flesh" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_flesh"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_garbage_bag" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_garbage_bag"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_glass" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_grass" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_gravel" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_gravel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_metal_chainlink" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_metal_chainlink"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_metal_grate" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_metal_grate"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_metal_pipe" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_metal_pipe"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_metal_sheet" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_metal_sheet"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_metal_thick" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_metal_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_mud" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_plastic" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_plastic"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_rock" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_rubble_mixed" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_rubble_mixed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_sheetrock" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_sheetrock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_water" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_wood_hollow" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_wood_hollow"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_guitar_hit_mat_wood_solid" path="guitar">
+			<WwiseEvent wwise_name="Play_guitar_hit_mat_wood_solid"/>
+		</ATLTrigger>
+
+		<!-- MISC -->
+		<ATLTrigger atl_name="Play_tire_pop">
+			<WwiseEvent wwise_name="Play_tire_pop"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

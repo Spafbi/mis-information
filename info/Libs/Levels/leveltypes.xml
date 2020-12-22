@@ -1,0 +1,5 @@
+<LevelTypes>
+	<LevelType value="PracticeRoom" />
+	<LevelType value="Utility" />
+	<LevelType value="Menu" />
+</LevelTypes>

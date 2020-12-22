@@ -1,0 +1,8 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="TargetCoverBodyDirection">
+   <Tag name="ToCoverLft"/>
+   <Tag name="ToCoverRgt"/>
+  </Group>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,9 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="TargetMovement">
+   <Tag name="TargetMoving"/>
+   <Tag name="TargetNotMoving"/>
+   <Tag name="TargetGround"/>
+  </Group>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,104 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="7" Class="UI:Functions:Settings:GetResolutionList" pos="-10,-490,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="36" Name="Setup_page" Class="_commentbox" pos="-280,-769.69855,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2020" Height="1640"/>
+   <NodeSize Width="2020" Height="1667.6414"/>
+  </Node>
+  <Node Id="39" Name="Handle_events" Class="_commentbox" pos="-280,929.30609,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2360" Height="1070"/>
+   <NodeSize Width="2360" Height="1097.6414"/>
+  </Node>
+  <Node Id="52" Class="UI:Functions:Settings:GetCurrGraphics" pos="270,-490,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="61" Class="UI:Events:Settings:OnGraphicChanged" pos="-216.45125,-264.39929,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="60,1150,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ApplyChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="80" Class="Logic:Condition" pos="560,1150,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="81" Class="UI:Events:Settings:OnResolutionItem" pos="-260,-700,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="87" Name="Setup_resolutions" Class="_comment" pos="-260,-730,0" flags="0"/>
+  <Node Id="89" Name="Reset_to_current_state" Class="_comment" pos="-260,970,0" flags="0"/>
+  <Node Id="90" Name="Apply_Display_Changes" Class="_comment" pos="-260,1100,0" flags="0"/>
+  <Node Id="104" Class="UI:Functions:MainMenu:AddStepperOption" pos="100,-700,0" flags="0">
+   <Inputs instanceID="-1" id="resolutionStepper" caption="" value=""/>
+  </Node>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-240,690.19244,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="840" Height="140"/>
+   <NodeSize Width="840" Height="167.64142"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-220,740,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="40,740,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="440,740,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="229" Class="UI:Functions:MainMenu:ApplyWindowSettings" pos="760,1150,0" flags="0">
+   <Inputs instanceID="-1" name="DisplayOptions"/>
+  </Node>
+  <Node Id="230" Class="UI:Events:MainMenu:ApplyDisplayOptions" pos="-260,1150,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="231" Class="UI:Events:MainMenu:RevertDisplayOptions" pos="-260,1010,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="232" Class="UI:Action:Start" pos="-240,-490,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="233" Class="UI:Functions:MainMenu:DisplayWindow" pos="80,-270,0" flags="0">
+   <Inputs instanceID="-1" window="DisplayOptions"/>
+  </Node>
+  <Node Id="234" Class="UI:Action:Control" pos="60,990,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_RevertChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="235" Class="UI:Action:End" pos="1470,980,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="237" Class="Logic:Condition" pos="560,990,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="238" Class="UI:Functions:Settings:RevertDisplayOptions" pos="770,990,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="239" Class="UI:Functions:MainMenu:RevertWindowSettings" pos="1090,990,0" flags="0">
+   <Inputs instanceID="-1" name="DisplayOptions"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="52" nodeOut="7" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="233" nodeOut="61" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="229" nodeOut="80" portIn="Call" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="value" portOut="ID" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="caption" portOut="ResString" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="230" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="234" nodeOut="231" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="232" portIn="send" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="234" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="234" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="238" nodeOut="237" portIn="send" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="239" nodeOut="238" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="235" nodeOut="239" portIn="EndAction" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

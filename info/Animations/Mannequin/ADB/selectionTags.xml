@@ -1,0 +1,18 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="type">
+   <Tag name="primary"/>
+   <Tag name="secondary"/>
+  </Group>
+  <Group name="basic_ammo">
+   <Tag name="ammo_empty"/>
+   <Tag name="ammo_last1"/>
+   <Tag name="ammo_clipRemaining"/>
+  </Group>
+  <Group name="special_selection">
+   <Tag name="fast_select" priority="1"/>
+   <Tag name="first" priority="1"/>
+   <Tag name="special_first" priority="1"/>
+  </Group>
+ </Tags>
+</TagDefinition>

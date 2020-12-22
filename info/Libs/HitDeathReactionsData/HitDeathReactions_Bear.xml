@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!-- DTD for defining part categories and avoid duplication as much as possible -->
+<!DOCTYPE HitDeathReactions_Bear [
+	<!-- Internal General XML Entity to store groups -->
+
+	<!-- Running speeds: 0.0 = Static; 2.5 = Walking; 6.6 = Running -->
+	<!ENTITY RunningSpeed "
+		5.59
+	">
+	<!ENTITY WalkingSpeed "
+		1.1
+	">
+
+	<!-- Projectile classes groups -->
+	<!ENTITY SmallCaliberProjectiles '
+		<Projectile value="ammo_9mm"/>
+	'>
+
+	<!ENTITY MediumCaliberProjectiles '
+		<Weapon value="AT15"/>
+		<Weapon value="ColtPython"/>
+		<Weapon value="M40A5"/>
+		<Weapon value="Model70"/>
+		<Weapon value="Rem870"/>
+		<Weapon value="Wasteland22"/>
+	'>
+
+	<!ENTITY ExplosionTypes '
+		<HitType value="frag"/>
+		<HitType value="explosion"/>
+		<HitType value="helicopterRocket"/>
+		<HitType value="aacannon"/>
+		<HitType value="stamp"/>
+	'>
+
+	<!ENTITY HeavyHitTypes '
+		<HitType value="heavyBullet"/>
+		<HitType value="gaussbullet"/>
+	'>
+]>
+
+<DeathHitReactionsParams>
+	<!-- HIT REACTIONS-->
+	<!-- 90° directions: forward, left, right, back -->
+	<!-- 180° directions: ahead, leftSide, rightSide, behind -->
+	<HitDeathReactionsConfig
+		collReactionStartDist="0.4"
+		maxRagdolImpulse="1000"
+	/>
+
+	<!-- HIT REACTIONS -->
+	<HitReactionParams>
+	</HitReactionParams>
+
+	<!-- DEATH REACTIONS -->
+	<DeathReactionParams>
+		<DeathReactionParam shotOrigin="leftSide" manqReaction="0" ragdollOnCollision="1">
+		</DeathReactionParam>
+		<DeathReactionParam shotOrigin="rightSide" manqReaction="0" ragdollOnCollision="1">
+		</DeathReactionParam>
+	</DeathReactionParams>
+
+</DeathHitReactionsParams>

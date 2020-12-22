@@ -1,0 +1,8 @@
+<FXLib>
+
+	<Effect name="swim">
+		<Audio trigger="Play_swim_3p">
+		</Audio>
+	</Effect>
+
+</FXLib>

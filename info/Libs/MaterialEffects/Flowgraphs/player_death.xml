@@ -1,0 +1,34 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="271" Class="Interpol:Float" pos="40,-300,0" flags="0">
+   <Inputs StartValue="0.75" EndValue="0" Time="6" UpdateFrequency="0"/>
+  </Node>
+  <Node Id="272" Class="Interpol:Float" pos="40,-540,0" flags="0">
+   <Inputs StartValue="-0.5" EndValue="0" Time="4" UpdateFrequency="0"/>
+  </Node>
+  <Node Id="274" Class="MaterialFX:HUDStartFX" pos="-400,-300,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="292" Class="MaterialFX:HUDEndFX" pos="360,-180,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="339" Class="Image:ColorCorrection" pos="360,-540,0" flags="0">
+   <Inputs entityId="0" Enabled="1" Disabled="0" Global_User_ColorC="-1" Global_User_ColorM="0" Global_User_ColorY="0" Global_User_ColorK="0" Global_User_Brightness="1" Global_User_Contrast="1" Global_User_Saturation="1" Global_User_ColorHue="0"/>
+  </Node>
+  <Node Id="344" Class="Camera:ViewShakeEx" pos="360,-60,0" flags="0">
+   <Inputs entityId="0" Restrict="0" View="1" GroundOnly="0" Smooth="0" Angle="0.7,0.7,0.7" Shift="0.01,0.01,0.01" Frequency="12" Randomness="0.5" Distance="0" RangeMin="0" RangeMax="30" SustainDuration="0" FadeInDuration="0" FadeOutDuration="1.5" Preset="0"/>
+  </Node>
+  <Node Id="350" Class="Image:FilterBlur" pos="360,-300,0" flags="0">
+   <Inputs entityId="0" Enabled="1" Disabled="0" FilterBlurring_Type="1" FilterBlurring_Amount="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="292" nodeOut="271" portIn="Trigger" portOut="Done" enabled="1"/>
+  <Edge nodeIn="350" nodeOut="271" portIn="FilterBlurring_Amount" portOut="Value" enabled="1"/>
+  <Edge nodeIn="339" nodeOut="272" portIn="Global_User_ColorC" portOut="Value" enabled="1"/>
+  <Edge nodeIn="271" nodeOut="274" portIn="Start" portOut="Started" enabled="1"/>
+  <Edge nodeIn="272" nodeOut="274" portIn="Start" portOut="Started" enabled="1"/>
+  <Edge nodeIn="344" nodeOut="274" portIn="Trigger" portOut="Started" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

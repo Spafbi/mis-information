@@ -1,0 +1,24 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="basic_ammo">
+   <Tag name="ammo_empty"/>
+   <Tag name="ammo_last1"/>
+   <Tag name="ammo_clipRemaining"/>
+  </Group>
+  <Group name="detailed_ammo">
+   <Tag name="ammo_last2" priority="1"/>
+   <Tag name="ammo_last3" priority="1"/>
+  </Group>
+  <Group name="inventory_ammo">
+   <Tag name="inventory_last1" priority="1"/>
+   <Tag name="inventory_last2" priority="1"/>
+  </Group>
+  <Group name="doubleclip">
+   <Tag name="doubleclip_fast" priority="1"/>
+  </Group>
+  <Group name="ammo_charge">
+   <Tag name="ammo_partiallycharged" priority="1"/>
+   <Tag name="ammo_fullycharged" priority="1"/>
+  </Group>
+ </Tags>
+</TagDefinition>

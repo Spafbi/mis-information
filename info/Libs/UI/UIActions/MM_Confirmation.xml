@@ -1,0 +1,39 @@
+<Graph Description="" Group="MM_Common" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="71" Class="UI:Action:Start" pos="-400,-60,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="77" Class="UI:Action:End" pos="300,100,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="78" Name="Confirmation_Dialog" Class="_commentbox" pos="-420,-109.86355,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="880" Height="280"/>
+   <NodeSize Width="880" Height="307.64063"/>
+  </Node>
+  <Node Id="79" Class="UI:Util:FromArray" pos="-120,-20,0" flags="0" InHideMask="1" OutHideMask="63">
+   <Inputs Array=""/>
+  </Node>
+  <Node Id="84" Class="UI:Events:MainMenu:OnConfirm" pos="-400,100,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="86" Class="UI:Functions:MainMenu:ShowConfirmationWindow" pos="100,-60,0" flags="0">
+   <Inputs instanceID="-1" title="" message="" btn1Caption="" btn2Caption=""/>
+  </Node>
+  <Node Id="87" Class="UI:Functions:MainMenu:HideConfirmationWindow" pos="-80,100,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="79" nodeOut="71" portIn="Array" portOut="Args" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="71" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="79" portIn="title" portOut="Val1" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="79" portIn="message" portOut="Val2" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="79" portIn="btn1Caption" portOut="Val3" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="79" portIn="btn2Caption" portOut="Val4" enabled="1"/>
+  <Edge nodeIn="77" nodeOut="84" portIn="Args" portOut="Accepted" enabled="1"/>
+  <Edge nodeIn="87" nodeOut="84" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="77" nodeOut="87" portIn="EndAction" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

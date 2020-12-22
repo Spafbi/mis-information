@@ -1,0 +1,137 @@
+<FXLib>
+
+	<!-- a_bushes -->
+
+	<Effect name="bush1">
+		<Audio trigger="Play_bush_movement_green_large" />
+	</Effect>
+
+	<Effect name="bush2">
+		<Audio trigger="Play_bush_movement_green_large" />
+	</Effect>
+
+	<Effect name="bush3">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="bush6">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="cliff_bush_green_mini">
+		<Audio trigger="Play_bush_movement_green_large" />
+	</Effect>
+
+	<Effect name="cliff_bush_yellow_mini">
+		<Audio trigger="Play_bush_movement_green_large" />
+	</Effect>
+
+	<!-- a_grass -->
+
+	<Effect name="bullrush">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="f_marsh_grass_b">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+	
+	<Effect name="f_marsh_grass_c">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="f_marsh_reed_b">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="f_marsh_reed_c">
+		<Audio trigger="Play_bush_movement_green_large" />
+	</Effect>
+
+	<Effect name="f_meadow_grass_a">
+		<Audio trigger="Play_bush_movement_dry_medium" />
+	</Effect>
+	
+	<Effect name="indiangrass">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="f_meadow_grass_b">
+		<Audio trigger="Play_bush_movement_dry_medium" />
+	</Effect>
+
+	<Effect name="f_meadow_grass_d">
+		<Audio trigger="Play_bush_movement_dry_small" />
+	</Effect>
+
+	<Effect name="f_meadow_grass_e">
+		<Audio trigger="Play_bush_movement_dry_medium" />
+	</Effect>
+
+	<Effect name="f_meadow_grass_f">
+		<Audio trigger="Play_bush_movement_dry_large" />
+	</Effect>
+
+	<!-- a_ground_plants -->
+	
+	<Effect name="bracken_patch_tb">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="broom_patch">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="evergreen_huckleberry">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="f_marsh_scrub_a">
+		<Audio trigger="Play_bush_movement_dry_medium" />
+	</Effect>
+
+	<Effect name="f_marsh_scrub_b">
+		<Audio trigger="Play_bush_movement_dry_small" />
+	</Effect>
+
+	<Effect name="fern">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="fern_bush">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="ground_cover_fernbush_large_a">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="ground_cover_fernbush_large_b">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="ground_cover_fernbush_small_a">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="hard_fern1_cluster">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="heather">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="nettle_cluster_tb">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+	<Effect name="nettle_patch">
+		<Audio trigger="Play_bush_movement_green_small" />
+	</Effect>
+
+	<Effect name="weed_tall">
+		<Audio trigger="Play_bush_movement_green_medium" />
+	</Effect>
+
+</FXLib>

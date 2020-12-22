@@ -1,0 +1,12 @@
+<TagDefinition version="2">
+ <Tags>
+  <Tag name="melee" />
+  <Tag name="melee_multipart" subTagDef="Animations/Mannequin/ADB/MeleeTags.xml"/>
+  <Tag name="melee_weapon" subTagDef="animations/mannequin/ADB/MeleeWeaponTags.xml"/>
+  <Tag name="idle"/>
+  <Tag name="idle_break"/>
+  <Tag name="fire"/>
+  <Tag name="hit"/>
+  <Tag name="kick"/>
+ </Tags>
+</TagDefinition>

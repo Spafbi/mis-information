@@ -1,0 +1,282 @@
+<ATLConfig atl_name="collisions">
+	<AudioTriggers>
+
+		<!-- CHAINLINK -->
+		<ATLTrigger atl_name="Play_collision_chainlink_default">
+			<WwiseEvent wwise_name="Play_metal_chainlink_on_ground"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_chainlink_glass">
+			<WwiseEvent wwise_name="Play_metal_chainlink_on_glass_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_chainlink_metal">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_metal_chainlink"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_chainlink_rock">
+			<WwiseEvent wwise_name="Play_metal_chainlink_on_rubble_mixed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_chainlink_soil">
+			<WwiseEvent wwise_name="Play_metal_chainlink_on_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_chainlink_wood">
+			<WwiseEvent wwise_name="Play_metal_chainlink_on_wood_hollow"/>
+		</ATLTrigger>
+
+		<!-- DIRT -->
+		<ATLTrigger atl_name="Play_collision_dirt_default">
+			<WwiseEvent wwise_name="Play_dirt_on_ground"/>
+		</ATLTrigger>
+
+		<!-- FABRIC -->
+		<ATLTrigger atl_name="Play_collision_fabric_default">
+			<WwiseEvent wwise_name="Play_fabric_on_ground"/>
+		</ATLTrigger>
+
+		<!-- GLASS -->
+		<ATLTrigger atl_name="Play_collision_glass_default">
+			<WwiseEvent wwise_name="Play_glass_thin_on_ground"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_glass_on_wood">
+			<WwiseEvent wwise_name="Play_wood_hollow_on_glass_thick"/>
+		</ATLTrigger>
+
+		<!-- GRASS -->
+		<ATLTrigger atl_name="Play_collision_grass_default">
+			<WwiseEvent wwise_name="Play_grass_on_ground"/>
+		</ATLTrigger>
+
+		<!-- GRENADE -->
+		<ATLTrigger atl_name="Play_collision_grenade_default">
+			<WwiseEvent wwise_name="Play_grenade_default"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_grenade_on_soil">
+			<WwiseEvent wwise_name="Play_grenade_on_soil"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_grenade_on_grass">
+			<WwiseEvent wwise_name="Play_grenade_on_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_grenade_on_wood_solid">
+			<WwiseEvent wwise_name="Play_grenade_on_wood_solid"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_grenade_on_rock">
+			<WwiseEvent wwise_name="Play_grenade_on_rock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_grenade_on_wood_hollow">
+			<WwiseEvent wwise_name="Play_grenade_on_wood_hollow"/>
+		</ATLTrigger>
+
+		<!-- METAL -->
+		<ATLTrigger atl_name="Play_collision_metal_on_carpet">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_carpet"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_dirt">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_dirt"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_glass">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_glass_thick"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_glass_unbreakable">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_glass_thick"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_grass">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_grass"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_gravel">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_gravel"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_metal"> 
+			<WwiseEvent wwise_name="Play_metal_sheet_on_metal_pipe"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_metal_thick"> 
+			<WwiseEvent wwise_name="Play_metal_sheet_on_metal_thick"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_mud">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_mud"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_rock">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_rubble_mixed"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_sand">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_sand"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_on_wood">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_wood_solid"/> 
+		</ATLTrigger>
+
+		<!-- METAL SHELL -->
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_carpet"> 
+			<WwiseEvent wwise_name="Play_bullet_shell_carpet"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_concrete">
+			<WwiseEvent wwise_name="Play_bullet_shell_concrete"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_default">
+			<WwiseEvent wwise_name="Play_bullet_shell_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_dirt">
+			<WwiseEvent wwise_name="Play_bullet_shell_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_glass">
+			<WwiseEvent wwise_name="Play_bullet_shell_glass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_grass">
+			<WwiseEvent wwise_name="Play_bullet_shell_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_gravel">
+			<WwiseEvent wwise_name="Play_bullet_shell_gravel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_metal">
+			<WwiseEvent wwise_name="Play_bullet_shell_metal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_sand">
+			<WwiseEvent wwise_name="Play_bullet_shell_sand"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_water">
+			<WwiseEvent wwise_name="Play_bullet_shell_water"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_shell_on_wood">
+			<WwiseEvent wwise_name="Play_bullet_shell_wood"/>
+		</ATLTrigger>
+
+		<!-- METAL THICK -->
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_canopy">
+			<WwiseEvent wwise_name="Play_metal_thick_on_canopy"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_carpet">
+			<WwiseEvent wwise_name="Play_metal_thick_on_carpet"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_dirt">
+			<WwiseEvent wwise_name="Play_metal_thick_on_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_glass_thick">
+			<WwiseEvent wwise_name="Play_metal_thick_on_glass_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_grass">
+			<WwiseEvent wwise_name="Play_metal_thick_on_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_gravel">
+			<WwiseEvent wwise_name="Play_metal_thick_on_gravel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_ground">
+			<WwiseEvent wwise_name="Play_metal_thick_on_ground"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_metal_chainlink">
+			<WwiseEvent wwise_name="Play_metal_thick_on_metal_chainlink"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_metal_grate">
+			<WwiseEvent wwise_name="Play_metal_thick_on_metal_grate"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_metal_pipe">
+			<WwiseEvent wwise_name="Play_metal_thick_on_metal_pipe"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_mud">
+			<WwiseEvent wwise_name="Play_metal_thick_on_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_rock">
+			<WwiseEvent wwise_name="Play_metal_thick_on_rubble_mixed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_sand">
+			<WwiseEvent wwise_name="Play_metal_thick_on_sand"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_metal_thick_on_wood">
+			<WwiseEvent wwise_name="Play_metal_thick_on_wood_solid"/>
+		</ATLTrigger>
+
+
+		<!-- ROCK -->
+		<ATLTrigger atl_name="Play_collision_rock_default">
+			<WwiseEvent wwise_name="Play_rock_on_ground"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_carpet">
+			<WwiseEvent wwise_name="Play_rock_on_carpet"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_glass">
+			<WwiseEvent wwise_name="Play_rock_on_glass_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_grass">
+			<WwiseEvent wwise_name="Play_rock_on_grass"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_gravel">
+			<WwiseEvent wwise_name="Play_rock_on_gravel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_metal">
+			<WwiseEvent wwise_name="Play_rock_on_metal_thick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_mud">
+			<WwiseEvent wwise_name="Play_rock_on_mud"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_rock">
+			<WwiseEvent wwise_name="Play_rock_on_dirt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_sand">
+			<WwiseEvent wwise_name="Play_rock_on_sand"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_soil">
+			<WwiseEvent wwise_name="Play_rock_on_ground"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_vegetation">
+			<WwiseEvent wwise_name="Play_rock_on_canopy"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_rock_on_wood_hollow">
+			<WwiseEvent wwise_name="Play_rock_on_wood_hollow"/>
+		</ATLTrigger>
+
+		<!-- RUBBER -->
+		<ATLTrigger atl_name="Play_collision_rubber_default">
+			<WwiseEvent wwise_name="Play_fabric_on_ground"/> <!-- No unique rubber sound available -->
+		</ATLTrigger>
+
+		<!-- SAND -->
+		<ATLTrigger atl_name="Play_collision_sand_default">
+			<WwiseEvent wwise_name="Play_sand_on_ground"/>
+		</ATLTrigger>
+
+		<!-- VEGETATION -->
+		<ATLTrigger atl_name="Play_collision_vegetation_default"> 
+			<WwiseEvent wwise_name="Play_canopy_on_ground"/> 
+		</ATLTrigger>
+
+		<!-- WATER -->
+		<ATLTrigger atl_name="Play_collision_water_default"> 
+			<WwiseEvent wwise_name="Play_water"/> 
+		</ATLTrigger>
+
+		<!-- WOOD -->
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_canopy">
+			<WwiseEvent wwise_name="Play_wood_solid_on_canopy"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_carpet">
+			<WwiseEvent wwise_name="Play_wood_solid_on_carpet"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_dirt">
+			<WwiseEvent wwise_name="Play_wood_solid_on_dirt"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_glass_thick">
+			<WwiseEvent wwise_name="Play_wood_solid_on_glass_thick"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_grass">
+			<WwiseEvent wwise_name="Play_wood_solid_on_grass"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_gravel">
+			<WwiseEvent wwise_name="Play_wood_solid_on_gravel"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_ground">
+			<WwiseEvent wwise_name="Play_wood_solid_on_ground"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_on_metal">
+			<WwiseEvent wwise_name="Play_metal_sheet_on_wood_hollow"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_mud">
+			<WwiseEvent wwise_name="Play_wood_solid_on_mud"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_rock">
+			<WwiseEvent wwise_name="Play_wood_solid_on_rubble_mixed"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_sand">
+			<WwiseEvent wwise_name="Play_wood_solid_on_sand"/> 
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_collision_wood_solid_on_wood_hollow">
+			<WwiseEvent wwise_name="Play_wood_solid_on_wood_hollow"/> 
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

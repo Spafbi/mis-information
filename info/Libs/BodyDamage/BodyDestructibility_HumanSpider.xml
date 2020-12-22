@@ -1,0 +1,21 @@
+<BodyDestructibility>
+	<DestructibleParts>
+		<!-- Attachments -->
+		
+		<!-- Bones -->
+		<Bone name="HS_Head" >
+			<Health ratio=".1" eventOnDestruction="head_explode"/>
+		</Bone>
+	</DestructibleParts>
+
+	<Events>
+		<Event name="head_explode" >	
+			<Effect name="bullet.hit_flesh.c"/>
+		</Event>
+	</Events>
+
+  <HealthRatioEvents />
+
+  <ExplosionDeath />
+
+</BodyDestructibility>

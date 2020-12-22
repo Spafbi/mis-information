@@ -1,0 +1,26 @@
+<Clothes>
+
+	<!-- This file is not currently being used. The initial items are hard-coded into the GameRules.cpp file -->
+
+	<BaseSkin>
+		<!-- These are the default clothes when spawning -->
+		<Skin slot="torso"     binding="objects/characters/players/male/torso/default/torso.skin" material="objects/characters/players/male/torso/default/torso"/>
+		<Skin slot="arms"      binding="objects/characters/players/male/arms/default/arms.skin" material="objects/characters/players/male/arms/default/arms"/>
+		<Skin slot="hands"     binding="objects/characters/players/male/hands/default/hands.skin" material="objects/characters/players/male/hands/default/hands"/>
+		<Skin slot="legs"      binding="objects/characters/players/male/legs/default/underwear.skin" material="objects/characters/players/male/legs/default/underwear"/>
+		<Skin slot="legs_skin" binding="objects/characters/players/male/legs/default/legs.skin" material="objects/characters/players/male/legs/default/legs"/>
+		<Skin slot="feet"      binding="objects/characters/players/male/feet/default/feet.skin" material="objects/characters/players/male/feet/default/feet"/>
+
+		<!-- These are empty slots when spawning -->
+		<Skin slot="back"      binding="" material=""/>
+		<Skin slot="eyes"      binding="" material=""/>
+		<Skin slot="face"      binding="" material=""/>
+		<Skin slot="hat"       binding="" material=""/>
+		<Skin slot="neck"      binding="" material=""/>
+	</BaseSkin>
+	<DefaultItems>
+		<Item name="OxfordLongShirt"/>
+		<Item name="BlueJeans"/>
+		<Item name="CanvasShoes"/>
+	</DefaultItems>
+</Clothes>

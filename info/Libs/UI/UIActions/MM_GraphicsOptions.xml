@@ -1,0 +1,78 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="35" Class="UI:Functions:MainMenu:DisplayWindow" pos="61.965454,638.88501,0" flags="0">
+   <Inputs instanceID="-1" window="GraphicsOptions"/>
+  </Node>
+  <Node Id="39" Name="Handle_events" Class="_commentbox" pos="-280,929.27661,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1730" Height="380"/>
+   <NodeSize Width="1730" Height="407.6712"/>
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="40,1130,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ApplyChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="80" Class="Logic:Condition" pos="550,1130,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="89" Name="Reset_to_current_state" Class="_comment" pos="-260,970,0" flags="0"/>
+  <Node Id="90" Name="Apply_Graphics_Changes" Class="_comment" pos="-260,1100,0" flags="0"/>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-280,749.9696,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1030" Height="140"/>
+   <NodeSize Width="1030" Height="167.6712"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-260,800,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="-20,800,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="380,800,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="229" Class="UI:Functions:MainMenu:ApplyWindowSettings" pos="760,1130,0" flags="0">
+   <Inputs instanceID="-1" name="GraphicsOptions"/>
+  </Node>
+  <Node Id="230" Class="UI:Events:MainMenu:RevertGraphicsOptions" pos="-260,1010,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="231" Class="UI:Events:MainMenu:ApplyGraphicsOptions" pos="-260,1150,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="234" Class="UI:Action:Start" pos="-260,630,0" flags="0">
+   <Inputs UseAsState="0"/>
+  </Node>
+  <Node Id="235" Class="UI:Action:Control" pos="78.158981,993.97833,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_RevertChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="236" Class="UI:Action:End" pos="1430,980,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="238" Class="Logic:Condition" pos="578.159,993.97833,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="239" Class="UI:Functions:Settings:RevertGraphicsOptions" pos="780,990,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="240" Class="UI:Functions:MainMenu:RevertWindowSettings" pos="1100,990,0" flags="0">
+   <Inputs instanceID="-1" name="GraphicsOptions"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="80" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="229" nodeOut="80" portIn="Call" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="235" nodeOut="230" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="231" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="234" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="238" nodeOut="235" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="238" nodeOut="235" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="239" nodeOut="238" portIn="send" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="240" nodeOut="239" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="236" nodeOut="240" portIn="EndAction" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

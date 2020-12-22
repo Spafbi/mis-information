@@ -1,0 +1,7 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/greywolfControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Greywolf" enabled="1" database="Animations/Mannequin/ADB/greywolf.adb" context="Char3P" model="objects/characters/animals/greywolf/greywolf.cdf"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

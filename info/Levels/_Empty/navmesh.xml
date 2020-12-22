@@ -1,0 +1,21 @@
+<NavMeshParams id="65635">
+ <DefaultNavMeshName type="string">MediumSizedCharacters</DefaultNavMeshName>
+ <MediumSizedCharacters id="65636" type="bb">
+  <AgentHeight type="float">1.800000</AgentHeight>
+  <AgentMaxClimb type="float">0.70000</AgentMaxClimb>
+  <AgentMaxSlope type="float">50.000000</AgentMaxSlope>
+  <AgentRadius type="float">0.400000</AgentRadius>
+  <CellHeight type="float">0.050000</CellHeight>
+  <CellSize type="float">0.100000</CellSize>
+  <Regenerate type="bool">false</Regenerate>
+ </MediumSizedCharacters>
+ <LargeSizedCharacters id="65637" type="bb">
+  <AgentHeight type="float">2.50000</AgentHeight>
+  <AgentMaxClimb type="float">0.70000</AgentMaxClimb>
+  <AgentMaxSlope type="float">50.000000</AgentMaxSlope>
+  <AgentRadius type="float">0.50000</AgentRadius>
+  <CellHeight type="float">0.050000</CellHeight>
+  <CellSize type="float">0.200000</CellSize>
+  <Regenerate type="bool">false</Regenerate>
+ </LargeSizedCharacters>
+</NavMeshParams>

@@ -1,0 +1,14 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="5" Class="UI:Events:UsableMenu:HideUsableMenu" pos="-710,-280,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="7" Class="UI:Display:Display" pos="-350,-280,0" flags="0">
+   <Inputs uiElements_Element="UsableMenu" instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="7" nodeOut="5" portIn="hide" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

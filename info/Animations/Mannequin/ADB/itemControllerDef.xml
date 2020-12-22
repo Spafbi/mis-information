@@ -1,0 +1,66 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/itemTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/itemActions.xml"/>
+ <FragmentDefs>
+  <burst_fire scopes="Audio1"/>
+  <rapid_fire scopes="Audio1" flags="Persistent"/>
+  <cock scopes="Audio1"/>
+  <stop_rapid_fire scopes="Audio1"/>
+  <melee />
+  <melee_multipart scopes="Audio1"/>
+  <melee_weapon scopes="Audio1"/>
+  <melee_interact />
+  <select scopes="Audio1"/>
+  <deselect scopes="Audio1"/>
+  <idle scopes="Audio1"/>
+  <idle_break scopes="Audio1"/>
+  <idle_lastGrenade scopes="Audio1"/>
+  <jump scopes="Audio1"/>
+  <fire scopes="Audio1">
+   <Override tags="rapid" scopes=""/>
+   <Override tags="burst" scopes=""/>
+  </fire>
+  <throw scopes="Audio1"/>
+  <hold scopes="Audio1"/>
+  <prime scopes="Audio1"/>
+  <raise />
+  <lower />
+  <reload scopes="Audio1"/>
+  <begin_reload scopes="Audio1"/>
+  <reload_shell scopes="Audio1"/>
+  <exit_reload scopes="Audio1"/>
+  <enter_modify scopes="Audio1" flags="Persistent"/>
+  <leave_modify scopes="Audio1"/>
+  <change_firemode scopes="Audio1"/>
+  <intoPlant scopes="Audio1"/>
+  <fromPlant scopes="Audio1"/>
+  <plant scopes="Audio1"/>
+  <grab scopes="Audio1"/>
+  <drop scopes="Audio1"/>
+  <rip_off scopes="Body+Audio1+Audio2"/>  
+  <spin_down scopes="Audio1"/>
+  <spin_down_tail scopes="Audio1"/>
+  <hit scopes="Audio2"/>
+  <empty_clip scopes="Audio2"/>
+  <pickedup scopes="Audio2"/>
+  <pickedup_ammo scopes="Audio2"/>
+  <zoom_in scopes="Audio2"/>
+  <zoom_out scopes="Audio2"/>
+  <zoom_lean scopes="Audio2"/>
+  <shot_last_bullet scopes="Audio2"/>
+  <spin_up scopes="Audio1"/>
+  <aimPose />
+  <unprime scopes="Audio1"/>
+  <pre_fire />
+  <barrel_spin />
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <Weapon />
+  <Audio />
+ </ScopeContextDefs> 
+ <ScopeDefs>
+  <Body layer="0" numLayers="1" context="Weapon"/>
+  <Audio1 layer="0" numLayers="0" context="Audio"/>
+  <Audio2 layer="0" numLayers="0" context="Audio"/>
+ </ScopeDefs>
+</ControllerDef>

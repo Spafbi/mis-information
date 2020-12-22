@@ -1,0 +1,35 @@
+<Graph Description="" Group="MM_Display" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="6" Class="UI:Action:Control" pos="920,80,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Main" Strict="0" Args=""/>
+  </Node>
+  <Node Id="25" Name="Init_MainMenu_and_display_the_Main_page" Class="_commentbox" pos="-420,20.120083,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1800" Height="340"/>
+   <NodeSize Width="1800" Height="376.86847"/>
+  </Node>
+  <Node Id="75" Class="UI:MovieClip:Visible" pos="560,80,0" flags="0">
+   <Inputs uiMovieclips_MovieClips="MainMenu:Cursor" instanceID="-1" Visible="0" Alpha="0"/>
+  </Node>
+  <Node Id="76" Class="UI:Action:Start" pos="-400,80,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="77" Class="UI:Action:End" pos="1220,80,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="78" Class="UI:Display:Display" pos="-140,80,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="84" Class="UI:Display:Config" pos="220,80,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="0" consoleCursor="0" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="3"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="77" nodeOut="6" portIn="EndAction" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="75" portIn="Start" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="78" nodeOut="76" portIn="show" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="84" nodeOut="78" portIn="set" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="75" nodeOut="84" portIn="Set" portOut="OnSet" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

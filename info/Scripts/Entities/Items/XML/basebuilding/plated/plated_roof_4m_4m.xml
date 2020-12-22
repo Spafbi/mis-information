@@ -10,7 +10,7 @@
 		<param name="place_roof" value="1"/>
 	</params>
 
-	<base_part class="static" type="1170" name="plated_roof_4m_4m" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="static" type="1170" name="plated_roof_4m_4m" max_health="22500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/plated/plated_roof_4m_4m.cgf"/>
 
 		<damage_multipliers>

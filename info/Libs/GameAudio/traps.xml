@@ -1,0 +1,16 @@
+<ATLConfig atl_name="traps">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_bearTrap_close">
+			<WwiseEvent wwise_name="Play_bearTrap_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bearTrap_set">
+			<WwiseEvent wwise_name="Play_bearTrap_set"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_canTrap_large">
+			<WwiseEvent wwise_name="Play_canTrap_large"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_canTrap_small">
+			<WwiseEvent wwise_name="Play_canTrap_small"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

@@ -1,0 +1,7 @@
+<BodyDestructibility>
+  <DestructibleParts />
+	<Events /> 
+  <HealthRatioEvents />
+  <ExplosionDeath />
+  <!--<MikeDeath />-->
+</BodyDestructibility>

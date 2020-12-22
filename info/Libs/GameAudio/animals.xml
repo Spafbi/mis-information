@@ -1,0 +1,72 @@
+<ATLConfig atl_name="animals">
+	<AudioTriggers>
+
+		<!-- BEAR -->
+		<ATLTrigger atl_name="Play_bear_alert">
+			<WwiseEvent wwise_name="Play_bear_alert"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bear_attack_roar">
+			<WwiseEvent wwise_name="Play_bear_attack_roar"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bear_attack_swipe">
+			<WwiseEvent wwise_name="Play_bear_attack_swipe"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bear_death">
+			<WwiseEvent wwise_name="Play_bear_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bear_idle">
+			<WwiseEvent wwise_name="Play_bear_idle"/>
+		</ATLTrigger>
+
+		<!-- CHICKEN -->
+		<ATLTrigger atl_name="Play_chicken_death">
+			<WwiseEvent wwise_name="Play_chicken_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_chicken_idle">
+			<WwiseEvent wwise_name="Play_chicken_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_chicken_scared">
+			<WwiseEvent wwise_name="Play_chicken_scared"/>
+		</ATLTrigger>
+
+		<!-- DEER -->
+		<ATLTrigger atl_name="Play_deer_bush_movement">
+			<WwiseEvent wwise_name="Play_deer_bush_movement"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_deer_idle">
+			<WwiseEvent wwise_name="Play_deer_idle"/>
+		</ATLTrigger>
+
+		<!-- PIG -->
+		<ATLTrigger atl_name="Play_pig_death">
+			<WwiseEvent wwise_name="Play_pig_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pig_idle">
+			<WwiseEvent wwise_name="Play_pig_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pig_run">
+			<WwiseEvent wwise_name="Play_pig_run"/>
+		</ATLTrigger>
+
+		<!-- WOLF -->
+		<ATLTrigger atl_name="Play_wolf_attack">
+			<WwiseEvent wwise_name="Play_wolf_attack"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wolf_death">
+			<WwiseEvent wwise_name="Play_wolf_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wolf_footsteps">
+			<WwiseEvent wwise_name="Play_wolf_footsteps"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wolf_growl">
+			<WwiseEvent wwise_name="Play_wolf_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wolf_howl">
+			<WwiseEvent wwise_name="Play_wolf_howl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_wolf_hurt">
+			<WwiseEvent wwise_name="Play_wolf_hurt"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

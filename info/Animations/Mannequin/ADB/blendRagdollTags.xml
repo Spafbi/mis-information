@@ -1,0 +1,14 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="Type">
+   <Tag name="blendOut"/>
+   <Tag name="blendIn"/>
+  </Group>
+  <Group name="BlendOutTag">
+   <Tag name="standup"/>
+  </Group>
+  <Group name="BlendInTag">
+   <Tag name="ragdoll"/>
+  </Group>
+ </Tags>
+</TagDefinition>

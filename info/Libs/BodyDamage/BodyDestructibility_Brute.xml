@@ -1,0 +1,115 @@
+<BodyDestructibility>
+	<DestructibleParts>
+		<!-- Attachments -->
+		<!-- ratio defines how many hitpoints this attachment has, based off the max health value for the character; eg ratio of 0.1 on a 1000HP character = 100HP armor piece -->
+		<!-- eventOnDestruction maps to an event (defined below) when the attachment has reached 0 health, play a PFX, hide/unhide attachments, etc -->
+		<Attachment name="armor_head">
+			<Health ratio="0.007" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_helmet_break" eventOnActorDeath="armor_helmet_break" />
+		</Attachment>
+		<Attachment name="armor_chest_left">
+			<Health ratio="0.005" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_chest_left_break" eventOnActorDeath="armor_chest_left_break" />
+		</Attachment>
+		<Attachment name="armor_chest_right">
+			<Health ratio="0.005" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_chest_right_break" eventOnActorDeath="armor_chest_right_break" />
+		</Attachment>
+		<Attachment name="armor_back_left">
+			<Health ratio="0.005" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_back_left_break" eventOnActorDeath="armor_back_left_break" />
+		</Attachment>
+		<Attachment name="armor_back_right">
+			<Health ratio="0.005" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_back_right_break" eventOnActorDeath="armor_back_right_break" />
+		</Attachment>
+		<Attachment name="armor_shin_left">
+			<Health ratio="0.004" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_shin_left_break" eventOnActorDeath="armor_shin_left_break" />
+		</Attachment>
+		<Attachment name="armor_shin_right">
+			<Health ratio="0.004" ratioToDestroyOnDeath="0.01" eventOnDestruction="armor_shin_right_break" eventOnActorDeath="armor_shin_right_break" />
+		</Attachment>
+
+		<!-- Bones -->
+		<!-- Like above, except based on hitting bones rather than physicalized attachments -->
+		<!--<Bone name="Bip01 Head"> Unique headshot event?
+			<Health ratio="1" ratioToDestroyOnDeath="0.01" eventOnDestruction="head_explode" eventOnActorDeath="head_explode" />
+		</Bone>-->
+	</DestructibleParts>
+
+	<Events>
+		<!-- HEAD -->
+		<Event name="armor_helmet_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_head"/>
+			</AttachmentsToHide>
+			<!--<AttachmentToUnhide> Unhide a damaged helmet model?
+				<Attachment name="armor_head_destroyed" />
+			</AttachmentToUnhide>-->
+			<Effect name="character.mutant.brute.armor_helmet_break"/>
+		</Event>
+		<!--<Event name="head_explode"> Unique headshot event?
+			<AttachmentsToHide>
+				<Attachment name="armor_head"/>
+			</AttachmentsToHide>
+			<Effect name="explosions.jerrycan_diesel.burning"/>
+			<DisableEvents>
+				<Event name="armor_helmet_break"/>
+			</DisableEvents>
+		</Event>-->
+		<!-- CHEST -->
+		<Event name="armor_chest_left_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_chest_left"/>
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_chest_left_break"/>
+		</Event>
+		<Event name="armor_chest_right_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_chest_right" />
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_chest_right_break"/>
+		</Event>
+		<!-- BACK -->
+		<Event name="armor_back_left_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_back_left"/>
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_back_left_break"/>
+		</Event>
+		<Event name="armor_back_right_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_back_right"/>
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_back_right_break"/>
+		</Event>
+		<!-- LEGS -->
+		<Event name="armor_shin_left_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_shin_left"/>
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_shin_left_break"/>
+		</Event>
+		<Event name="armor_shin_right_break">
+			<AttachmentsToHide>
+				<Attachment name="armor_shin_right"/>
+			</AttachmentsToHide>
+			<Effect name="character.mutant.brute.armor_shin_right_break"/>
+		</Event>
+		<!-- HEALTH -->
+		<!-- <Event name="healthRatio50"> Unique event at 50% health?
+			<Effect name="character.mutant.brute.gibs_small" />
+		</Event>
+		<Event name="death">
+			<Effect name="character.mutant.brute.death"/>
+			<StopEvents>
+				<Event name="healthRatio50"/>
+			</StopEvents>
+		</Event> -->
+	</Events>
+
+	<HealthRatioEvents>
+		<!--<HealthRatio ratio="0.75" bone="Bip01 Spine1" event="" material="Objects/characters/mutants/brutemutant/brute_mutant_health75"/> Material swaps for health stages?
+		<HealthRatio ratio="0.50" bone="Bip01 Spine1" event="" material="Objects/characters/mutants/brutemutant/brute_mutant_health50"/>
+		<HealthRatio ratio="0.25" bone="Bip01 Spine1" event="" material="Objects/characters/mutants/brutemutant/brute_mutant_health25"/>
+		<HealthRatio ratio="0.00" bone="Bip01 Spine1" event="death" material=""/> -->
+	</HealthRatioEvents>
+
+	<ExplosionDeath />
+
+</BodyDestructibility>

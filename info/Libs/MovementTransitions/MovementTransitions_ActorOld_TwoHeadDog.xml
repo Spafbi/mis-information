@@ -1,0 +1,26 @@
+<MovementTransitions>
+	<General minDistAfterDirectionChange = "2.5"/>
+	<Transitions>
+		<!--Full support for start (without strafing)-->
+		<Start animGraphSignal="CODE_MT_IdleToWalk" stance="relaxed" pseudoSpeed="walk"    minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="relaxed" pseudoSpeed="run"     minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="relaxed" pseudoSpeed="sprint"  minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToWalk" stance="alerted" pseudoSpeed="walk"    minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="alerted" pseudoSpeed="run"     minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="alerted" pseudoSpeed="sprint"  minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToWalk" stance="stand"   pseudoSpeed="walk"    minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="stand"   pseudoSpeed="run"     minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		<Start animGraphSignal="CODE_MT_IdleToRun"  stance="stand"   pseudoSpeed="sprint"  minDist = "0.50" travelAngle=  "0" travelAngleTolerance="180"/>
+		
+		<!--Full support for stop (without strafing) -->
+		<!--<Stop animGraphSignal="CODE_MT_WalkToIdle"  stance="relaxed" pseudoSpeed="walk"    minDist = "2.50" maxDist = "2.60" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_WalkToIdle"  stance="alerted" pseudoSpeed="walk"    minDist = "2.50" maxDist = "2.60" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_WalkToIdle"  stance="stand"   pseudoSpeed="walk"    minDist = "2.50" maxDist = "2.60" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="relaxed" pseudoSpeed="run"     minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="relaxed" pseudoSpeed="sprint"  minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="alerted" pseudoSpeed="run"     minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="alerted" pseudoSpeed="sprint"  minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="stand"   pseudoSpeed="run"     minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>
+		<Stop animGraphSignal="CODE_MT_RunToIdle"   stance="stand"   pseudoSpeed="sprint"  minDist = "2.90" maxDist = "3.00" prepareDist = "3.50" travelAngle=  "0" travelAngleTolerance="10" prepareTravelAngleTolerance="45"/>-->
+	</Transitions>
+</MovementTransitions>

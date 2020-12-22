@@ -1,0 +1,58 @@
+<ATLConfig atl_name="basebuilding">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_power_connect_fp">
+   <WwiseEvent wwise_name="Play_lights_connect_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_lights_switch_fp">
+   <WwiseEvent wwise_name="Play_lights_switch_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_door_unlock_fp">
+   <WwiseEvent wwise_name="Play_door_unlock_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_door_lock_fp">
+   <WwiseEvent wwise_name="Play_door_lock_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_door_unlock_3p">
+   <WwiseEvent wwise_name="Play_door_unlock_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_door_lock_3p">
+   <WwiseEvent wwise_name="Play_door_lock_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_lights_switch_3p">
+   <WwiseEvent wwise_name="Play_lights_switch_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_power_connect_3p">
+   <WwiseEvent wwise_name="Play_lights_connect_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_powerpole_sparks">
+   <WwiseEvent wwise_name="Play_powerpole_sparks"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_powerpole_electric_loop">
+   <WwiseEvent wwise_name="Stop_powerpole_electric_loop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_powerpole_electric_loop">
+   <WwiseEvent wwise_name="Play_powerpole_electric_loop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_lights_hum">
+   <WwiseEvent wwise_name="Stop_lights_hum"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_lights_hum">
+   <WwiseEvent wwise_name="Play_lights_hum"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_wall_damage">
+   <WwiseEvent wwise_name="Play_wall_damage"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_wall_destroy">
+   <WwiseEvent wwise_name="Play_wall_destroy"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_wall_repair">
+   <WwiseEvent wwise_name="Play_wall_repair"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_crafting_dismantle_3p">
+   <WwiseEvent wwise_name="Play_crafting_dismantle_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_crafting_dismantle_fp">
+   <WwiseEvent wwise_name="Play_crafting_dismantle_fp"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

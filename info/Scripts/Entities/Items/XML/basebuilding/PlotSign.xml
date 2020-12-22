@@ -22,7 +22,7 @@
 			<!-- standard hit types -->
 			<damage_multiplier damage_type="default" multiplier="1.0"/>
 			<damage_multiplier damage_type="collision" multiplier="0.1"/>
-			<damage_multiplier damage_type="explosion" multiplier="20.0"/>
+			<damage_multiplier damage_type="explosion" multiplier="14.0"/>
 			<damage_multiplier damage_type="frag" multiplier="8"/>
 			<damage_multiplier damage_type="fire" multiplier="1.0"/>
 			<damage_multiplier damage_type="melee" multiplier="0.0"/>

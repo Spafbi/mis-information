@@ -1,0 +1,16 @@
+<ATLConfig atl_name="tent">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_puptent_setup_fp">
+   <WwiseEvent wwise_name="Play_puptent_setup_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_puptent_teardown_fp">
+   <WwiseEvent wwise_name="Play_puptent_teardown_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_puptent_setup_3p">
+   <WwiseEvent wwise_name="Play_puptent_setup_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_puptent_teardown_3p">
+   <WwiseEvent wwise_name="Play_puptent_teardown_3p"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

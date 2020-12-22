@@ -1,0 +1,8 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/bearControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Bear" enabled="1" database="Animations/Mannequin/ADB/bear.adb" context="Char3P" model="objects/characters/animals/bear/bear.cdf"/>
+  <contextData name="BearAudio" enabled="1" database="Animations/Mannequin/ADB/bearSounds.adb" context="Audio"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

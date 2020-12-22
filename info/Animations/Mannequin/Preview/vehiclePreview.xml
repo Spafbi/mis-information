@@ -1,0 +1,11 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/vehicleControllerDefs.xml"/>
+ <contexts>
+  <contextData name="VehicleExample" enabled="1" database="Animations/Mannequin/ADB/hmmwvAnims.adb" context="hull" model="objects/vehicles/hmmwv/hmmwv.cga"/>
+  <contextData name="DriverExample" enabled="1" database="Animations/Mannequin/ADB/humanVehicleAnims.adb" context="Driver" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger1" enabled="1" database="Animations/Mannequin/ADB/humanVehicleAnims.adb" context="Passenger1" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger2" enabled="1" database="Animations/Mannequin/ADB/humanVehicleAnims.adb" context="Passenger2" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger3" enabled="1" database="Animations/Mannequin/ADB/humanVehicleAnims.adb" context="Passenger3" model="objects/characters/players/male/human_male.cdf"/>
+ </contexts>
+ <History StartTime="-4.3160208e+008" EndTime="-4.3160208e+008"/>
+</MannequinPreview>

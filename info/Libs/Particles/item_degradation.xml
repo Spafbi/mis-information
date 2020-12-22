@@ -1,0 +1,59 @@
+<ParticleLibrary Name="item_degradation" SandboxVersion="3.8.6.49" ParticleVersion="26">
+ <Particles Name="generic.debris_medium">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="50" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="wind_force">
+    <Params Count="1" ParticleLifeTime="0.05" EmitAngle="90" Speed="30" ForceGeneration="Wind" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="50" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="generic.debris_small">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="wind_force">
+    <Params Count="1" ParticleLifeTime="0.05" EmitAngle="90" Speed="30" ForceGeneration="Wind" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="generic.debris_small_metal">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Material="Objects/effects/debris/broken_wheel_metal" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="wind_force">
+    <Params Count="1" ParticleLifeTime="0.05" EmitAngle="90" Speed="30" ForceGeneration="Wind" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" EmitAngle="90,Random=1" Facing="Free" Material="Objects/effects/debris/broken_wheel_metal" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+   <Particles Name="spark">
+    <Params Count="5" ParticleLifeTime="0.3,Random=0.733" EmitAngle="180,Random=1" OrientToVelocity="true" BlendType="Additive" Texture="textures/sprites/sparks/spark_stretched1_tiled2.dds" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="ParticleAge=(v=1;t=1)" EmissiveLighting="5" Size="0.05,Random=0.2,ParticleAge=(v=1;t=1)" Stretch="0.02,ParticleAge=(v=1;t=1)" Speed="15,Random=0.3" AirResistance="0.64" GravityScale="0.5,Random=0.525"/>
+   </Particles>
+   <Particles Name="audio">
+    <Params Count="1" EmitterLifeTime="1" StartTrigger="Play_flashbang_explode"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

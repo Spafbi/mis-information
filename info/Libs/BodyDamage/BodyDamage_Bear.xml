@@ -1,0 +1,22 @@
+<BodyDamage>
+	<!-- PART DEFINITIONS IN "BodyParts_Bear.xml" -->
+
+	<Multipliers>
+		<Multiplier part="head" value="2.0"> <!-- head is only 2x damage for the bear -->
+			<ammo_12_gauge_pellet value="1.0"/>
+		</Multiplier>
+		<Multiplier part="torso" value="0.75"/>
+		<Multiplier part="frontLeftLeg" value="0.4"/>
+		<Multiplier part="frontRightLeg" value="0.4"/>
+		<Multiplier part="backLeftLeg" value="0.4"/>
+		<Multiplier part="backRightLeg" value="0.4"/>
+	</Multipliers>
+
+	<ImpulseFilters>
+		<ImpulseFilter part="frontLeftLeg" scale = "0.0" passTo="bear_spine02_jnt" passOnScale="0.1"/>
+		<ImpulseFilter part="frontRightLeg" scale = "0.0" passTo="bear_spine02_jnt" passOnScale="0.1"/>
+		<ImpulseFilter part="backLeftLeg" scale="0.0" passTo="bear_spine02_jnt" passOnScale="0.1"/>
+		<ImpulseFilter part="backRightLeg" scale="0.0" passTo="bear_spine02_jnt" passOnScale="0.1"/>
+  </ImpulseFilters>
+
+</BodyDamage>

@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_walkstairs_3m_4m_4mDescription"/>
 	</params>
 
-	<base_part class="static" type="1016" name="plated_walkstairs_3m_4m_4m" max_health="22500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="static" type="1016" name="plated_walkstairs_3m_4m_4m" max_health="30000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/plated/plated_walkstairs_3m_4m_4m.cgf"/>
 
 		<damage_multipliers>

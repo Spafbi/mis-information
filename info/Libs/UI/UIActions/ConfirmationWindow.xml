@@ -1,0 +1,55 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="67" Class="Actor:ActionFilter" pos="20,440,0" flags="0">
+   <Inputs entityId="0" Filter="only_ui"/>
+  </Node>
+  <Node Id="68" Class="UI:Events:MainMenu:ShowConfirmationWindow" pos="-380,260,0" flags="1">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="75" Class="UI:MovieClip:Visible" pos="740,-20,0" flags="0">
+   <Inputs uiMovieclips_MovieClips="MainMenu:Cursor" instanceID="-1" Visible="0" Alpha="0"/>
+  </Node>
+  <Node Id="78" Name="Confirmation_Dialog" Class="_commentbox" pos="-400,-79.991379,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1860" Height="600"/>
+   <NodeSize Width="1860" Height="636.93481"/>
+  </Node>
+  <Node Id="84" Class="UI:Events:MainMenu:OnConfirm" pos="-380,410,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="86" Class="UI:Functions:MainMenu:ShowConfirmationWindow" pos="1100,240,0" flags="0">
+   <Inputs instanceID="-1" title="" message="" btn1Caption="" btn2Caption=""/>
+  </Node>
+  <Node Id="87" Class="UI:Functions:MainMenu:HideConfirmationWindow" pos="20,380,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="89" Class="UI:Display:Display" pos="20,-20,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="90" Class="UI:Display:Config" pos="400,-20,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="0" consoleCursor="0" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="5"/>
+  </Node>
+  <Node Id="136" Class="UI:Functions:MainMenu:DisplayWindow" pos="1080,-20,0" flags="0">
+   <Inputs instanceID="-1" window="Empty"/>
+  </Node>
+  <Node Id="137" Class="UI:Functions:MainMenu:HideStatusMessage" pos="20,220,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="67" nodeOut="68" portIn="Enable" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="68" portIn="btn1Caption" portOut="Btn1Caption" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="68" portIn="btn2Caption" portOut="Btn2Caption" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="68" portIn="message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="68" portIn="title" portOut="Title" enabled="1"/>
+  <Edge nodeIn="89" nodeOut="68" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="137" nodeOut="68" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="75" portIn="Call" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="136" nodeOut="75" portIn="Call" portOut="OnSet" enabled="0"/>
+  <Edge nodeIn="67" nodeOut="84" portIn="Disable" portOut="Accepted" enabled="1"/>
+  <Edge nodeIn="87" nodeOut="84" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="90" nodeOut="89" portIn="set" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="75" nodeOut="90" portIn="Set" portOut="OnSet" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

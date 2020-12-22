@@ -1,0 +1,55 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="133" Class="UI:Functions:MainMenu:SetValue" pos="260,-280,0" flags="0">
+   <Inputs instanceID="-1" name="playerName" value=""/>
+  </Node>
+  <Node Id="134" Class="UI:Events:MP:OnSetValue" pos="-180,-280,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="135" Name="Generic_setting_of_values" Class="_commentbox" pos="-200,-329.86365,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="880" Height="910"/>
+   <NodeSize Width="880" Height="937.64063"/>
+  </Node>
+  <Node Id="140" Class="UI:Events:MainMenu:RequestLoadingValue" pos="-170,-160,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="141" Class="UI:Functions:MP:RequestLoadingValue" pos="260,-160,0" flags="0">
+   <Inputs name=""/>
+  </Node>
+  <Node Id="142" Class="UI:Functions:Settings:RequestSettingValue" pos="290,20,0" flags="0">
+   <Inputs name=""/>
+  </Node>
+  <Node Id="143" Class="UI:Events:MainMenu:RequestSettingValue" pos="-140,20,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="144" Class="UI:Events:Settings:OnSetValue" pos="-90,130,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="145" Class="UI:Functions:MainMenu:SetValue" pos="290,130,0" flags="0">
+   <Inputs instanceID="-1" name="" value=""/>
+  </Node>
+  <Node Id="146" Class="UI:Events:MainMenu:UpdateSettingValue" pos="-120,260,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="147" Class="UI:Functions:Settings:UpdateSettingValue" pos="290,260,0" flags="0">
+   <Inputs name="" value=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="133" nodeOut="134" portIn="name" portOut="name" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="134" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="134" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="140" portIn="name" portOut="name" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="140" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="142" nodeOut="143" portIn="name" portOut="name" enabled="1"/>
+  <Edge nodeIn="142" nodeOut="143" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="144" portIn="name" portOut="name" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="144" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="144" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="146" portIn="name" portOut="name" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="146" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="146" portIn="value" portOut="value" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

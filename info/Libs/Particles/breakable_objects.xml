@@ -1,0 +1,60 @@
+<ParticleLibrary Name="breakable_objects" SandboxVersion="3.8.6.49" ParticleVersion="26">
+ <Particles Name="tree_break.small">
+  <Params Count="3" ParticleLifeTime="6,Random=0.564" RandomOffset="x=0.5,y=0.3,z=0.5" Texture="textures/sprites/smoke/smoke_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.5,ParticleAge=(;t=0.024,v=1;t=0.263,v=1;t=1)" DiffuseLighting="0.5" Size="2.16,Random=0.178,ParticleAge=(v=0.706;t=1,v=1)" Stretch="ParticleAge=(v=1;t=0.44)" Speed="0.6,Random=0.683" AirResistance="0.2" GravityScale="0.02" RandomAngles="y=359" RandomRotationRate="y=15"/>
+  <Childs>
+   <Particles Name="geo3">
+    <Params Count="3" ParticleLifeTime="3,Random=0.208" EmitAngle="180,Random=1" Facing="Free" Texture="textures/sprites/wood/wood_chip_tiled.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/natural/trees/explosion_shape/tree_splinter.cgf" GeometryPieces="RandomPiece" Alpha="ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" CastShadows="true" Size="0.7,Random=0.5" Speed="8,Random=0.881" GravityScale="1,Random=0.366" RandomRotationRate="x=300,y=300,z=300" Elasticity="0.198" DynamicFriction="10" SortOffset="-0.02"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="shatter.edges">
+  <Params Count="1" ParticleLifeTime="3,Random=0.465" EmitAngle="72.6" Texture="textures/sprites/smoke/smoke_tiled_a.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.25,ParticleAge=(;t=0.024,v=1;t=0.263,v=1;t=1)" Size="2,ParticleAge=(v=0.255;t=0.18,v=0.706;t=1,v=1)" Speed="1,Random=0.545" AirResistance="0.05" GravityScale="-0.05" FillRateCost="3.74"/>
+  <Childs>
+   <Particles Name="wood_chips">
+    <Params Count="6,Random=0.297" ParticleLifeTime="2,Random=0.208" EmitAngle="180,Random=1" Facing="Free" Texture="textures/sprites/wood/wood_chip_tiled.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.2" DiffuseBacklighting="0.1" Size="0.1,Random=1,ParticleAge=(t=0.69,v=1;t=1,v=0.63)" Speed="8,Random=0.881" GravityScale="1,Random=0.366" RandomAngles="x=180,y=180,z=180" RandomRotationRate="x=300,y=300,z=300" Elasticity="0.099" DynamicFriction="10" SortOffset="-0.02" ConfigMin="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="shatter.destroy">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="2">
+    <Params Count="10" ParticleLifeTime="4,Random=0.644" RandomOffset="x=1.3,y=1.3,z=1.3" EmitAngle="180,Random=1" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.25,ParticleAge=(v=0.5;t=0.255,v=1;t=1,flags=4)" DiffuseLighting="0.3" DiffuseBacklighting="0.5" Size="1.7,Random=0.525,ParticleAge=(v=0.34;t=1,v=1)" AirResistance="0.58" GravityScale="0.356" RandomAngles="z=180" RandomRotationRate="z=55"/>
+   </Particles>
+   <Particles Name="3">
+    <Params Count="4" ParticleLifeTime="2,Random=0.406" EmitAngle="180,Random=1" Facing="Free" Texture="textures/sprites/glass/glass_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" Alpha="Random=0.366,ParticleAge=(t=0.51,v=1;t=1)" DiffuseBacklighting="0.5" EmissiveLighting="0.5" Size="0.16,Random=0.495" Speed="2" GravityScale="1.3,ParticleAge=(;t=0.196,v=1)" RandomAngles="x=180,y=180,z=180" RandomRotationRate="x=500,y=555,z=553" CollideTerrain="true" Elasticity="0.257" DynamicFriction="10"/>
+   </Particles>
+   <Particles Name="4">
+    <Params Count="10" ParticleLifeTime="2,Random=0.406" RandomOffset="x=1,y=1,z=1" EmitAngle="180,Random=1" Facing="Free" Texture="textures/sprites/glass/glass_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" Alpha="Random=0.396,ParticleAge=(t=0.51,v=1;t=1)" EmissiveLighting="1" Size="0.11,Random=0.455" Speed="12,Random=0.376" GravityScale="1.3" RandomAngles="x=180,y=180,z=180" RandomRotationRate="x=500,y=555,z=553" CollideTerrain="true" Elasticity="0.257" DynamicFriction="10"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="joint_break.concrete">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="dirt1">
+    <Params Count="2" SpawnDelay="0.03" ParticleLifeTime="0.3" PositionOffset="y=0.2" EmitAngle="180,Random=1" OrientToVelocity="true" Texture="textures/sprites/dirt/dirt_a.tif" Alpha="ParticleAge=(flags=32;t=0.176,v=1;t=1)" DiffuseBacklighting="1" Size="1.4,ParticleAge=(v=0.275;t=1,v=1)" Speed="5,Random=0.3589744" RandomRotationRate="y=31" ConfigMin="Medium"/>
+   </Particles>
+   <Particles Name="dust3">
+    <Params Count="18" SpawnDelay="0.03" ParticleLifeTime="1.5,Random=0.54717" EmitAngle="180,Random=1" BlendType="Additive" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.5,EmitterStrength=(v=1;t=1),ParticleAge=(v=1;t=1)" Color="(x=0.373,y=0.373,z=0.373)" DiffuseLighting="0.1" DiffuseBacklighting="0.1" Size="0.8,Random=0.297,EmitterStrength=(v=0.455;t=1,v=1),ParticleAge=(v=0.067,flags=32;t=0.28,v=0.84;t=1,v=1)" Stretch="0.12" Speed="1,Random=0.634" AirResistance="0.29" RandomAngles="y=180" RandomRotationRate="x=21,y=21,z=21" CameraMinDistance="2" FillRateCost="3"/>
+   </Particles>
+   <Particles Name="flare">
+    <Params Count="15" SpawnDelay="0.03" ParticleLifeTime="1.5,Random=0.54717" EmitAngle="180,Random=1" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.25,ParticleAge=(v=0.59,flags=32;t=0.216,v=1;t=1)" DiffuseLighting="0.33" DiffuseBacklighting="0.33" Size="1.5,Random=0.297,EmitterStrength=(v=0.455;t=1,v=1),ParticleAge=(v=0.09,flags=32;t=0.21,v=0.776,flags=36;t=1,v=1)" Stretch="0.05" Speed="2,Random=0.307,EmitterStrength=(v=1;t=0.74,v=0.82;t=1,flags=4)" AirResistance="0.29" RandomAngles="y=180" RandomRotationRate="x=21,y=21,z=21" CameraMinDistance="2" FillRateCost="3" ConfigMin="Medium"/>
+   </Particles>
+   <Particles Name="a5">
+    <Params Count="5" ParticleLifeTime="0.4,Random=0.149" EmitAngle="180,Random=1" Texture="textures/sprites/dirt/dirt_a.tif" Alpha="ParticleAge=(v=0.43,flags=32;t=0.24,v=1;t=1)" DiffuseBacklighting="1" Size="0.75,Random=0.425,EmitterStrength=(v=0.52;t=1,v=1),ParticleAge=(v=0.66;t=1,v=1)" Stretch="0.07,Random=0.28" Speed="8,Random=0.782" RandomAngles="x=180,y=359,z=180" RandomRotationRate="y=31" CameraMinDistance="3" FillRateCost="2" ConfigMin="Medium"/>
+   </Particles>
+   <Particles Name="stones">
+    <Params Count="15,Random=0.4" EmitterLifeTime="Random=0.2" ParticleLifeTime="4,Random=0.2" EmitAngle="180,Random=1" Facing="Free" Texture="textures/sprites/stones/stones_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" Material="Materials/generic/concrete/concrete_broken" Geometry="objects/natural/rocks/erosion/landslide_rock_small_a.cgf" CastShadows="true" Size="0.125,Random=0.3" Speed="4" GravityScale="1,Random=0.2" RandomAngles="x=180,y=180,z=180" RandomRotationRate="x=300,y=300,z=300" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" CollideDynamicObjects="true" Elasticity="0.198" DynamicFriction="10" SortOffset="-0.02"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="joint_break.wood">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="geo3">
+    <Params Count="5" Continuous="true" ParticleLifeTime="2,Random=0.208" EmitAngle="180,Random=1" Facing="Free" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/natural/trees/explosion_shape/tree_splinter.cgf" GeometryPieces="RandomPiece" Alpha="ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" CastShadows="true" Size="0.75,Random=1" Speed="8,Random=0.881" GravityScale="1,Random=0.366" RotationRate="x=300,y=300,z=300" Elasticity="0.099" DynamicFriction="10" ConfigMin="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

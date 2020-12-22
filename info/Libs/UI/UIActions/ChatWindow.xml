@@ -1,0 +1,139 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-680,-420,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Display:Display" pos="-340,-420,0" flags="0">
+   <Inputs uiElements_Element="ChatWindow" instanceID="-1"/>
+  </Node>
+  <Node Id="4" Class="UI:Action:End" pos="40,-420,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="5" Name="Display_the_chat_window_and_unload_it_on_level_end" Class="_commentbox" pos="-700,-470.14795,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="900" Height="240"/>
+   <NodeSize Width="900" Height="267.96729"/>
+  </Node>
+  <Node Id="286" Class="UI:Events:System:OnGameplayEnded" pos="-680,-300,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="295" Name="Chat_functionality" Class="_commentbox" pos="-700,-190.0432,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1800" Height="1260"/>
+   <NodeSize Width="1800" Height="1287.9673"/>
+  </Node>
+  <Node Id="303" Class="Logic:Any" pos="-160,180,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="315" Class="UI:Events:ChatWindow:SendGlobalChatMessage" pos="-680,300,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="316" Class="UI:Events:ChatWindow:SendLocalChatMessage" pos="-680,380,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="317" Class="UI:Events:ChatWindow:SendWhisperChatMessage" pos="-680,460,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="318" Class="UI:Functions:MP:SendGlobalChatMessage" pos="-160,300,0" flags="0">
+   <Inputs Message=""/>
+  </Node>
+  <Node Id="319" Class="UI:Functions:MP:SendLocalChatMessage" pos="-160,380,0" flags="0">
+   <Inputs Message=""/>
+  </Node>
+  <Node Id="320" Class="UI:Functions:MP:SendWhisperChatMessage" pos="-160,460,0" flags="0">
+   <Inputs Message=""/>
+  </Node>
+  <Node Id="321" Class="UI:Events:MP:GlobalChatMessageReceived" pos="-680,600,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="322" Class="UI:Events:MP:LocalChatMessageReceived" pos="-680,700,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="323" Class="UI:Events:MP:WhisperChatMessageReceived" pos="-680,800,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="324" Class="UI:Functions:ChatWindow:AppendGlobalChatMessage" pos="-160,600,0" flags="0">
+   <Inputs instanceID="-1" Player="" Message=""/>
+  </Node>
+  <Node Id="325" Class="UI:Functions:ChatWindow:AppendLocalChatMessage" pos="-160,700,0" flags="0">
+   <Inputs instanceID="-1" Player="" Message=""/>
+  </Node>
+  <Node Id="326" Class="UI:Functions:ChatWindow:AppendWhisperChatMessage" pos="-160,800,0" flags="0">
+   <Inputs instanceID="-1" Player="" Message=""/>
+  </Node>
+  <Node Id="327" Name="From_system_to_chat_window" Class="_comment" pos="-680,570,0" flags="0"/>
+  <Node Id="328" Name="From_chat_ui_to_system" Class="_comment" pos="-680,150,0" flags="0"/>
+  <Node Id="329" Class="Game:Start" pos="-680,-360,0" flags="0">
+   <Inputs InGame="1" InEditor="0"/>
+  </Node>
+  <Node Id="331" Class="UI:Functions:ChatWindow:StartChat" pos="580,-140,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="332" Class="UI:Events:ChatWindow:StopChat" pos="-680,180,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="333" Class="UI:Display:Config" pos="200,-140,0" flags="0">
+   <Inputs uiElements_Element="ChatWindow" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="1" consoleCursor="1" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="0"/>
+  </Node>
+  <Node Id="334" Class="UI:Display:Config" pos="200,180,0" flags="0">
+   <Inputs uiElements_Element="ChatWindow" instanceID="-1" cursor="0" mouseEvents="0" keyEvents="0" consoleMouse="0" consoleCursor="0" controllerInput="0" eventsExclusive="0" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="0"/>
+  </Node>
+  <Node Id="335" Class="UI:Events:MP:NextChatChannel" pos="-680,900,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="336" Class="UI:Functions:ChatWindow:NextChatChannel" pos="-160,900,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="337" Class="UI:Functions:MP:OnStartChat" pos="880,-140,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="338" Class="UI:Functions:MP:OnStopChat" pos="580,180,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="339" Class="UI:Events:MP:StartChatting" pos="-680,-140,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="341" Class="UI:Events:MP:StopChatting" pos="-680,1020,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="342" Class="UI:Functions:ChatWindow:DoStopChat" pos="-160,1020,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="344" Class="Audio:Trigger" pos="-160,-40,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_button_roll_over" audioTrigger_StopTrigger=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="2" portIn="EndAction" portOut="onUnload" enabled="0"/>
+  <Edge nodeIn="2" nodeOut="286" portIn="unload" portOut="onEvent" enabled="0"/>
+  <Edge nodeIn="334" nodeOut="303" portIn="set" portOut="out" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="315" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="318" nodeOut="315" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="318" nodeOut="315" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="316" portIn="in3" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="319" nodeOut="316" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="319" nodeOut="316" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="317" portIn="in4" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="320" nodeOut="317" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="320" nodeOut="317" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="324" nodeOut="321" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="324" nodeOut="321" portIn="Player" portOut="Player" enabled="1"/>
+  <Edge nodeIn="324" nodeOut="321" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="325" nodeOut="322" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="325" nodeOut="322" portIn="Player" portOut="Player" enabled="1"/>
+  <Edge nodeIn="325" nodeOut="322" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="326" nodeOut="323" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="326" nodeOut="323" portIn="Player" portOut="Player" enabled="1"/>
+  <Edge nodeIn="326" nodeOut="323" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="329" portIn="show" portOut="output" enabled="0"/>
+  <Edge nodeIn="337" nodeOut="331" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="332" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="331" nodeOut="333" portIn="Call" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="338" nodeOut="334" portIn="send" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="336" nodeOut="335" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="333" nodeOut="339" portIn="set" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="344" nodeOut="339" portIn="Play" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="342" nodeOut="341" portIn="Call" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,23 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ServerOnly">
+ <Nodes>
+  <Node Id="28" Class="Time:Delay" pos="420,700,0" flags="0">
+   <Inputs delay="4" resetOnInput="0"/>
+  </Node>
+  <Node Id="187" Class="MaterialFX:HUDStartFX" pos="60,620,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="188" Class="MaterialFX:HUDEndFX" pos="930,500,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="192" Class="Image:ScreenFader" pos="420,500,0" flags="0">
+   <Inputs FadeGroup="1" UseCurColor="1" FadeInTime="3" FadeOutTime="0" color_FadeColor="1,1,1" tex_TextureName="textures/sprites/hud/dirt1_hud_diff.tif" UpdateAlways="0" StopFader="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="192" nodeOut="28" portIn="FadeIn" portOut="out" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="187" portIn="in" portOut="Started" enabled="1"/>
+  <Edge nodeIn="192" nodeOut="187" portIn="FadeOut" portOut="Started" enabled="1"/>
+  <Edge nodeIn="188" nodeOut="192" portIn="Trigger" portOut="FadedIn" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

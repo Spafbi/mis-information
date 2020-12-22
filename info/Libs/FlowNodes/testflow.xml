@@ -1,0 +1,63 @@
+<FlowGraph>
+
+	<Nodes>
+		<Start id="start" activated="false"/>
+		<Log id="testLog" msg="Hello World!"/>
+		
+		<Log id="outputTrue" msg="Got to true"/>
+		<Log id="outputFalse" msg="Got to false"/>
+		
+		<Condition id="cond" state="true"/>
+		
+		<Delay id="delay" delay="0.0"/>
+		
+		<Join id="join"/>
+
+		<Pulse id="pulse" delay="0.2"/>
+
+		<TestScripted id="testScripted"/>
+
+<!--	
+		<Composite id="pulse">
+			<Ports>
+				<Outgoing id="output"/>
+			</Ports>
+		
+			<Nodes>
+				<Start id="start" activated="false"/>
+				<Delay id="heartbeat" delay="0.0"/>
+			</Nodes>
+			
+			<Edges>
+				<Edge from="start:output" to="@composite:output"/>
+				<Edge from="start:output" to="heartbeat:input"/>
+				<Edge from="heartbeat:output" to="heartbeat:input"/>
+				<Edge from="heartbeat:output" to="heartbeat:input"/>
+				<Edge from="heartbeat:output" to="heartbeat:input"/>
+				<Edge from="heartbeat:output" to="heartbeat:input"/>
+				<Edge from="heartbeat:output" to="@composite:output"/>
+			</Edges>
+		</Composite>
+-->
+	</Nodes>
+	
+	<Edges>
+		<Edge from="pulse:output" to="cond:input"/>
+		
+		<Edge from="start:output" to="delay:input"/>
+		<Edge from="delay:output" to="cond:input-false"/>
+		
+		<Edge from="start:output" to="cond:input-true"/>
+		
+		<Edge from="cond:output-true" to="outputTrue:input"/>
+		<Edge from="cond:output-false" to="outputFalse:input"/>
+		
+		<Edge from="outputTrue:output" to="join:input"/>
+		<Edge from="outputFalse:output" to="join:input"/>
+		
+		<Edge from="join:output" to="testLog:input"/>
+
+		<Edge from="pulse:output" to="testScripted:input"/>
+	</Edges>
+
+</FlowGraph>

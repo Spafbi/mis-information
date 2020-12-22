@@ -1,0 +1,278 @@
+<ATLConfig atl_name="environment">
+	<AudioTriggers>
+
+		<!-- LOOPS -->
+		<ATLTrigger atl_name="Play_crickets_bed_forest">
+			<WwiseEvent wwise_name="Play_crickets_bed_forest"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crickets_bed_forest">
+			<WwiseEvent wwise_name="Stop_crickets_bed_forest"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crickets_bed_meadow">
+			<WwiseEvent wwise_name="Play_crickets_bed_meadow"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crickets_bed_meadow">
+			<WwiseEvent wwise_name="Stop_crickets_bed_meadow"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crickets_bed_swamp">
+			<WwiseEvent wwise_name="Play_crickets_bed_swamp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crickets_bed_swamp">
+			<WwiseEvent wwise_name="Stop_crickets_bed_swamp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crickets_bed_town">
+			<WwiseEvent wwise_name="Play_crickets_bed_town"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crickets_bed_town">
+			<WwiseEvent wwise_name="Stop_crickets_bed_town"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_frogs_bed">
+			<WwiseEvent wwise_name="Play_frogs_bed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_frogs_bed">
+			<WwiseEvent wwise_name="Stop_frogs_bed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ominous_hum">
+			<WwiseEvent wwise_name="Play_ominous_hum"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_ominous_hum">
+			<WwiseEvent wwise_name="Stop_ominous_hum"/>
+		</ATLTrigger>
+
+		<!-- ONESHOTS -->
+		<ATLTrigger atl_name="Play_blackbird">
+			<WwiseEvent wwise_name="Play_blackbird"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_blackbird">
+			<WwiseEvent wwise_name="Stop_blackbird"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cardinal">
+			<WwiseEvent wwise_name="Play_cardinal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_cardinal">
+			<WwiseEvent wwise_name="Stop_cardinal"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_chickadee">
+			<WwiseEvent wwise_name="Play_chickadee"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_chickadee">
+			<WwiseEvent wwise_name="Stop_chickadee"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_cicadas_single">
+			<WwiseEvent wwise_name="Play_cicadas_single"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_cicadas_single">
+			<WwiseEvent wwise_name="Stop_cicadas_single"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crickets_single">
+			<WwiseEvent wwise_name="Play_crickets_single"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crickets_single">
+			<WwiseEvent wwise_name="Stop_crickets_single"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fly">
+			<WwiseEvent wwise_name="Play_fly"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_fly">
+			<WwiseEvent wwise_name="Stop_fly"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_magpie">
+			<WwiseEvent wwise_name="Play_magpie"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_magpie">
+			<WwiseEvent wwise_name="Stop_magpie"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_mosquito">
+			<WwiseEvent wwise_name="Play_mosquito"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_mosquito">
+			<WwiseEvent wwise_name="Stop_mosquito"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_osprey">
+			<WwiseEvent wwise_name="Play_osprey"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_osprey">
+			<WwiseEvent wwise_name="Stop_osprey"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_owl">
+			<WwiseEvent wwise_name="Play_owl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_owl">
+			<WwiseEvent wwise_name="Stop_owl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_robin">
+			<WwiseEvent wwise_name="Play_robin"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_robin">
+			<WwiseEvent wwise_name="Stop_robin"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_squirrel">
+			<WwiseEvent wwise_name="Play_squirrel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_squirrel">
+			<WwiseEvent wwise_name="Stop_squirrel"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_woodpecker">
+			<WwiseEvent wwise_name="Play_woodpecker"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_woodpecker">
+			<WwiseEvent wwise_name="Stop_woodpecker"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_bees_swarm">
+			<WwiseEvent wwise_name="Play_bees_swarm"/>
+		</ATLTrigger>
+
+		<!-- NUCLEAR -->
+		<ATLTrigger atl_name="Play_siren_nuclear_start">
+			<WwiseEvent wwise_name="Play_siren_nuclear_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_siren_nuclear">
+			<WwiseEvent wwise_name="Stop_siren_nuclear"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_siren_tornado_start">
+			<WwiseEvent wwise_name="Play_siren_tornado_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_siren_tornado">
+			<WwiseEvent wwise_name="Stop_siren_tornado"/>
+		</ATLTrigger>
+
+		<!-- ENV HAZARD -->
+		<ATLTrigger atl_name="Play_env_hazard_acid_hiss">
+			<WwiseEvent wwise_name="Play_env_hazard_acid_hiss"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_env_hazard_acid_loop">
+			<WwiseEvent wwise_name="Play_env_hazard_acid_loop"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_env_hazard_acid_loop">
+			<WwiseEvent wwise_name="Stop_env_hazard_acid_loop"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_env_hazard_electric_shock">
+			<WwiseEvent wwise_name="Play_env_hazard_electric_shock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_env_hazard_water_sparks">
+			<WwiseEvent wwise_name="Play_env_hazard_water_sparks"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_env_hazard_water_sparks">
+			<WwiseEvent wwise_name="Stop_env_hazard_water_sparks"/>
+		</ATLTrigger>
+
+
+
+  <ATLTrigger atl_name="Play_elevator_start">
+   <WwiseEvent wwise_name="Play_elevator_start"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_elevator_stop">
+   <WwiseEvent wwise_name="Play_elevator_stop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_windmill_creaks">
+   <WwiseEvent wwise_name="Play_windmill_creaks"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_windmill_creaks">
+   <WwiseEvent wwise_name="Stop_windmill_creaks"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_flies_large_idle">
+   <WwiseEvent wwise_name="Play_flies_large_idle"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_flies_large_idle">
+   <WwiseEvent wwise_name="Stop_flies_large_idle"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_flies_small_idle">
+   <WwiseEvent wwise_name="Play_flies_small_idle"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_flies_small_idle">
+   <WwiseEvent wwise_name="Stop_flies_small_idle"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_campfire">
+   <WwiseEvent wwise_name="Play_campfire"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_campfire">
+   <WwiseEvent wwise_name="Stop_campfire"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_puptent_flap_in_wind">
+   <WwiseEvent wwise_name="Play_puptent_flap_in_wind"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_puptent_flap_in_wind">
+   <WwiseEvent wwise_name="Stop_puptent_flap_in_wind"/>
+  </ATLTrigger>
+
+  <ATLTrigger atl_name="Play_shore_waves">
+   <WwiseEvent wwise_name="Play_shore_waves"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_shore_waves">
+   <WwiseEvent wwise_name="Stop_shore_waves"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_cave_ambience">
+   <WwiseEvent wwise_name="Play_cave_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_cave_ambience">
+   <WwiseEvent wwise_name="Stop_cave_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_forest_ambience">
+   <WwiseEvent wwise_name="Play_forest_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_forest_ambience">
+   <WwiseEvent wwise_name="Stop_forest_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_swamp_ambience">
+   <WwiseEvent wwise_name="Play_swamp_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_swamp_ambience">
+   <WwiseEvent wwise_name="Stop_swamp_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_churchbell">
+   <WwiseEvent wwise_name="Play_churchbell"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_churchbell">
+   <WwiseEvent wwise_name="Stop_churchbell"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_underwater_ambience">
+   <WwiseEvent wwise_name="Play_underwater_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_underwater_ambience">
+   <WwiseEvent wwise_name="Stop_underwater_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_waterfall_ambience">
+   <WwiseEvent wwise_name="Play_waterfall_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_waterfall_ambience">
+   <WwiseEvent wwise_name="Stop_waterfall_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_town_ambience">
+   <WwiseEvent wwise_name="Play_town_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_town_ambience">
+   <WwiseEvent wwise_name="Stop_town_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_crickets">
+   <WwiseEvent wwise_name="Play_crickets"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_crickets">
+   <WwiseEvent wwise_name="Stop_crickets"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_river_ambience">
+   <WwiseEvent wwise_name="Play_river_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_river_ambience">
+   <WwiseEvent wwise_name="Stop_river_ambience"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sewer_fan">
+   <WwiseEvent wwise_name="Play_sewer_fan"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_sewer_fan">
+   <WwiseEvent wwise_name="Stop_sewer_fan"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sewer_pipeWater">
+   <WwiseEvent wwise_name="Play_sewer_pipeWater"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_sewer_pipeWater">
+   <WwiseEvent wwise_name="Stop_sewer_pipeWater"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sewer_steam">
+   <WwiseEvent wwise_name="Play_sewer_steam"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_sewer_steam">
+   <WwiseEvent wwise_name="Stop_sewer_steam"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

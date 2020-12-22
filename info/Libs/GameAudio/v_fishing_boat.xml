@@ -1,0 +1,27 @@
+<ATLConfig atl_name="v_fishing_boat">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_fishing_boat_ambience">
+			<WwiseEvent wwise_name="Play_fishing_boat_ambience"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fishing_boat_splash">
+			<WwiseEvent wwise_name="Play_fishing_boat_bounce_on_waves"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fishing_boat_damage">
+			<WwiseEvent wwise_name="Play_fishing_boat_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fishing_boat_run">
+			<WwiseEvent wwise_name="Play_fishing_boat_run"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fishing_boat_start">
+			<WwiseEvent wwise_name="Play_fishing_boat_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fishing_boat_stop">
+			<WwiseEvent wwise_name="Play_fishing_boat_stop"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_fishing_boat_damage">
+			<WwiseEvent wwise_name="Stop_fishing_boat_damage"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

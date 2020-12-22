@@ -1,0 +1,11 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/brute_mutantControllerDefs.xml"/>
+ <contexts>
+  <contextData name="brute_mutant" enabled="1" database="Animations/Mannequin/ADB/brute_mutant.adb" context="Char3P" model="objects/characters/mutants/brutemutant/brute_mutant.cdf"/>
+  <contextData name="brute_mutantAudio" enabled="1" database="Animations/Mannequin/ADB/brute_mutantSounds.adb" context="Audio"/>
+  <contextData name="Weapon" context="Weapon" tags="meleeWeapon"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="Motion_Idle"/>
+ </History>
+</MannequinPreview>

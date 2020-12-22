@@ -18,7 +18,7 @@
 		<param name="cookedTime" value="200"/>
 		<param name="rottenItem" value="ChickenRotten"/>
 		<param name="rottenTime" value="400"/>
-		<param name="poisonChance" value="55"/>
+		<param name="poisonChance" value="100"/>
 		<param name="foodAmount" value="150"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>

@@ -1,0 +1,366 @@
+<EntityPrototypeLibrary Name="Props_Destroyable" SandboxVersion="3.65.1170.281">
+ <EntityPrototype Name="Storage.Civil_Crate_Closed" Id="{F9BBEB2E-C6E5-48D3-919E-C94216D79D1A}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="1" esFaction="" bInteractLargeObject="0" object_Model="objects/props/industrial/boxes/civil_box/civil_box_a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="1" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="0" Delay="0" EffectScale="1" MinPhysRadius="0" MinRadius="0" ParticleEffect="explosions.doors.wood" PhysRadius="0" Pressure="0" Radius="2" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1500" bOnlyEnemyFire="1"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="200" bPushableByPlayers="0" bRigidBody="1" bRigidBodyActive="1" bRigidBodyAfterDeath="1">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Lights.Mine_Lamp" Id="{A7CAA29D-5FF2-41F5-AF16-DC6405A431B6}" Library="Props_Destroyable" Class="DestroyableLight" Description="">
+  <Properties esFaction="" bPickable="0" bUsable="0" UseMessage="">
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <Damage fDamageTreshold="0" bExplode="0" fHealth="20" bPlayerOnly="0"/>
+   <DamageMultipliers fBullet="1" fCollision="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="100" bOnlyEnemyFire="0"/>
+   <Model object_Model="objects/props/mine/mining_lamp_a.cgf" object_ModelDestroyed="" SubObject_Name="" SubObject_NameDestroyed=""/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="20" bPushableByPlayers="1" bRigidBody="1" bRigidBodyActive="1" bRigidBodyAfterDeath="1">
+    <MP bHackDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.01"/>
+   </Physics>
+   <Sound fAISoundRadius="30" soundDestroy="" soundIdle="" soundRun="" soundTurnOff="" soundTurnOn="">
+    <vOffset x="0" y="0" z="0"/>
+   </Sound>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="150" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Storage.Wooden_Barrel_Large" Id="{006DB547-1199-4AC6-8598-2579757EFD61}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/maritime/wooden_barrel/wooden_barrel_a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="1" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="0" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.doors.wood" PhysRadius="5" Pressure="0" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="1"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="150" bPushableByPlayers="0" bRigidBody="1" bRigidBodyActive="1" bRigidBodyAfterDeath="1">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="125" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Storage.Wooden_Barrel_Small" Id="{1D669179-D632-4475-BD02-ACC88ED96DF8}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/maritime/wooden_barrel/wooden_barrel_b.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="1" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="0" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.doors.wood" PhysRadius="5" Pressure="0" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPushableByPlayers="0" bRigidBody="1" bRigidBodyActive="1" bRigidBodyAfterDeath="1">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="1" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="150" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Marine.LobsterCage" Id="{73058F5F-E3F4-4855-9698-9F8AC2EFBA3B}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/maritime/lobster_cage/lobster_cage.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="1" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="50" bPushableByPlayers="1" bRigidBody="1" bRigidBodyActive="1" bRigidBodyAfterDeath="1">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="1" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost01a" Id="{599341E1-A85C-4691-9730-85BCAA31DF72}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_01a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost01b" Id="{A3815255-EF97-4F44-BC64-160B6298282A}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_01b.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost01c" Id="{C9371AEA-D995-4FDB-A72C-DF34AFED2609}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_01c.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost02a" Id="{F4E9AA0B-0035-4F6A-8A4E-59C355FB154C}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_02a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost02b" Id="{50FB211C-930F-4A43-8A47-E7CEAFD0E9C5}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_02b.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost03a" Id="{C41E5062-A8CC-4D84-B9BF-BBA1285FCF7E}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_03a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.LampPost04a" Id="{5FBF408E-4743-4BF0-B5DA-C25B45DB335F}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/lamp_post_04a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Mine.PowerPole01a" Id="{94154843-8A6D-4DEA-8629-00412919F585}" Library="Props_Destroyable" Class="DestroyableObject" Description="">
+  <Properties bAutoGenAIHidePts="0" fDamageTreshold="0" DestroyedSubObject="" DmgFactorWhenCollidingAI="1" bExplode="0" esFaction="" bInteractLargeObject="0" object_Model="objects/props/misc/lamp_post/power_pole_01a.cgf" object_ModelDestroyed="" ModelSubObject="" bOnlyAllowPlayerToFullyDestroyObject="0" bPickable="0" bPlayerOnly="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <AutoAimTarget AfterThrownTargetableTime="3" InnerRadiusVolumeFactor="0.35" bMakeTargetableOnThrown="0" OuterRadiusVolumeFactor="0.6" SnapRadiusVolumeFactor="1.25"/>
+   <Breakage fExplodeImpulse="0" fLifeTime="10" bSurfaceEffects="1"/>
+   <DamageMultipliers fBullet="1" fCollision="1" fProjectileClass="1"/>
+   <Explosion Damage="1000" Delay="0" EffectScale="1" MinPhysRadius="2.5" MinRadius="5" ParticleEffect="explosions.grenade_air.explosion" PhysRadius="5" Pressure="1000" Radius="10" SoundRadius="0">
+    <DelayEffect bHasDelayEffect="0" ParticleEffect="">
+     <Params AttachForm="none" AttachType="none" bCountPerUnit="0" CountScale="1" bPrime="0" Scale="1" bSizePerUnit="0" SpawnPeriod="0"/>
+     <vOffset x="0" y="0" z="0"/>
+     <vRotation x="0" y="0" z="0"/>
+    </DelayEffect>
+    <Direction x="0" y="0" z="1"/>
+    <vOffset x="0" y="0" z="0"/>
+   </Explosion>
+   <Health bInvulnerable="0" MaxHealth="1000" bOnlyEnemyFire="0"/>
+   <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="-1" bPushableByPlayers="0" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="0">
+    <MP bDontSyncPos="0"/>
+    <Simulation damping="0" max_time_step="0.02" sleep_speed="0.04"/>
+   </Physics>
+   <Sounds fAISoundRadius="30" sound_Alive="" sound_Dead="" sound_Dying="" bStopSoundsOnDestroyed="1"/>
+   <TacticalInfo LookupName="" bScannable="0"/>
+   <Vulnerability bBullet="1" bCollision="1" bExplosion="1" bMelee="0" bOther="1" projectileClass=""/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Domestic/Furniture.Shelf_Wood_Big" Id="{AFB7D125-2ED9-4060-8346-14B79AE91C7F}" Library="Props_Destroyable" Class="BreakableObject" Description="">
+  <Properties nBreakableType="0" fDensity="5000" esFaction="" fMass="-1" objModel="objects/props/furniture/shelves/shelf_wooden_100_150_b_con.cgf" bPickable="0" bResting="0" bRigidBody="0" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <PhysicsBreakable crack_weaken="0.5" max_bend_torque="0.01" max_pull_force="0.01" max_push_force="0.01" max_shift_force="0.01" max_twist_torque="0.01">
+    <GroundPlanes negativeX="0" negativeY="0" negativeZ="0" positiveX="0" positiveY="0" positiveZ="0.05"/>
+   </PhysicsBreakable>
+   <PhysicsBuoyancy water_damping="1.5" water_density="1" water_resistance="0"/>
+   <PhysicsSimulation damping="0" max_time_step="0.01" sleep_speed="0.04"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Domestic/Furniture.Shelf_Wood_Sml" Id="{5793673C-C9E9-48B6-92CE-F5F161FB7F71}" Library="Props_Destroyable" Class="BreakableObject" Description="">
+  <Properties nBreakableType="0" fDensity="5000" esFaction="" fMass="-1" objModel="objects/props/furniture/shelves/shelf_wooden_150_50_a_con.cgf" bPickable="0" bResting="0" bRigidBody="0" bUsable="0" UseMessage="">
+   <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <PhysicsBreakable crack_weaken="0.5" max_bend_torque="0.01" max_pull_force="0.01" max_push_force="0.01" max_shift_force="0.01" max_twist_torque="0.01">
+    <GroundPlanes negativeX="0" negativeY="0" negativeZ="0" positiveX="0" positiveY="0" positiveZ="0.05"/>
+   </PhysicsBreakable>
+   <PhysicsBuoyancy water_damping="1.5" water_density="1" water_resistance="0"/>
+   <PhysicsSimulation damping="0" max_time_step="0.01" sleep_speed="0.04"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

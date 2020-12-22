@@ -10,7 +10,7 @@
 		<param name="description" value="@metal_door_lockable_1m_2mDescription"/>
 	</params>
 
-	<base_part class="door" type="2088" name="metal_door_lockable_1m_2m" max_health="15000" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
+	<base_part class="door" type="2088" name="metal_door_lockable_1m_2m" max_health="18750" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
 		<door filename="objects/basebuilding/metal/metal_door.cgf" rotate_base="-90" rotate_range="90" rotate_speed="30" rotate_axis="z" rotate_axis_front="y" sound_open="Play_door_metal_open" sound_opened="" sound_close="Play_door_metal_close" sound_closed="Play_door_metal_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
 		<base_actions>
 			<base_action class="toggle_door">

@@ -1,0 +1,165 @@
+<ATLConfig atl_name="g_switches">
+ <AudioSwitches>
+  <ATLSwitch atl_name="1stOr3rdP">
+   <ATLSwitchState atl_name="1stP">
+    <WwiseSwitch wwise_name="FirstPerson_ThirdPerson">
+     <WwiseValue wwise_name="first_person"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="3rdP">
+    <WwiseSwitch wwise_name="FirstPerson_ThirdPerson">
+     <WwiseValue wwise_name="third_person"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="ObstrOcclCalcType">
+   <ATLSwitchState atl_name="Ignore">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="ignore"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="SingleRay">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="single_ray"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="MultiRay">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="multi_ray"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="SurfaceType">
+   <ATLSwitchState atl_name="carpet">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="carpet"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="concrete">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="concrete"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="dirt">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="dirt"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="grass">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="grass"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="gravel">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="gravel"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="water_deep">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="water_deep"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="water_shallow">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="water_shallow"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="wood_hollow">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="wood_hollow"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="wood_solid">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="wood_solid"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="metal">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="metal"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="mud">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="mud"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="sand">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="sand"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="explosion_size">
+   <ATLSwitchState atl_name="large">
+    <WwiseSwitch wwise_name="explosion_size">
+     <WwiseValue wwise_name="large"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="medium">
+    <WwiseSwitch wwise_name="explosion_size">
+     <WwiseValue wwise_name="medium"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="small">
+    <WwiseSwitch wwise_name="explosion_size">
+     <WwiseValue wwise_name="small"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="house_in_out">
+   <ATLSwitchState atl_name="house_inside">
+    <WwiseSwitch wwise_name="v_listener">
+     <WwiseValue wwise_name="inside"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="house_outside">
+    <WwiseSwitch wwise_name="v_listener">
+     <WwiseValue wwise_name="outside"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="in_out">
+   <ATLSwitchState atl_name="inside">
+    <WwiseSwitch wwise_name="v_listener">
+     <WwiseValue wwise_name="inside"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="outside">
+    <WwiseSwitch wwise_name="v_listener">
+     <WwiseValue wwise_name="outside"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="ladder_surface">
+   <ATLSwitchState atl_name="metal">
+    <WwiseSwitch wwise_name="surface">
+     <WwiseValue wwise_name="metal"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="wood">
+    <WwiseSwitch wwise_name="ladder_surface">
+     <WwiseValue wwise_name="wood"/>
+    </WwiseSwitch>
+   </ATLSwitchState>
+  </ATLSwitch>
+  <ATLSwitch atl_name="underwater">
+   <ATLSwitchState atl_name="above_water">
+    <WwiseState wwise_name="underwater">
+     <WwiseValue wwise_name="above_water"/>
+    </WwiseState>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="None">
+    <WwiseState wwise_name="underwater">
+     <WwiseValue wwise_name="None"/>
+    </WwiseState>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="underwater">
+    <WwiseState wwise_name="underwater">
+     <WwiseValue wwise_name="underwater"/>
+    </WwiseState>
+   </ATLSwitchState>
+  </ATLSwitch>
+ </AudioSwitches>
+</ATLConfig>

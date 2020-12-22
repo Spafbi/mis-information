@@ -1,0 +1,62 @@
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<UIElements name="ChatWindow">
+
+	<UIElement name="ChatWindow"  mouseevents="0" keyevents="0" cursor="0" controller_input="0" render_lockless="1">
+
+		<GFx file="ChatWindow/ChatWindow.gfx" layer="2">
+			<Constraints>
+				<Align mode="dynamic" valign="bottom" halign="left" scale="1" max="0" />
+			</Constraints>
+		</GFx>
+
+		<!-- Can get or set a variable -->
+		<variables>
+		</variables>
+
+		<!-- Can get or set an array -->
+		<arrays>
+		</arrays>
+
+		<!-- Functions that can be invoked into actionscript from lua -->
+		<functions>
+			<function name="DoStopChat" funcname="_root.stopChat">
+			</function>
+			<function name="StartChat" funcname="_root.startChat">
+			</function>
+			<function name="NextChatChannel" funcname="_root.nextChatChannel">
+			</function>
+			<function name="AppendGlobalChatMessage" funcname="_root.appendGlobalChatMessage">
+				<param name="Player" desc="" type="String" />
+				<param name="Message" desc="The message to append" type="String"/>
+			</function>
+			<function name="AppendLocalChatMessage" funcname="_root.appendLocalChatMessage">
+				<param name="Player" desc="" type="String" />
+				<param name="Message" desc="The message to append" type="String"/>
+			</function>
+			<function name="AppendWhisperChatMessage" funcname="_root.appendWhisperChatMessage">
+				<param name="Player" desc="" type="String" />
+				<param name="Message" desc="The message to append" type="String"/>
+			</function>
+		</functions>
+
+		<!-- Events fired from actionsript into lua -->
+		<events>
+			<event name="StopChat" fscommand="StopChat" desc="">
+			</event>
+			<event name="SendGlobalChatMessage" fscommand="SendGlobalChatMessage" desc="">
+				<param name="Message" desc="chat message" type="string"  />
+			</event>
+			<event name="SendLocalChatMessage" fscommand="SendLocalChatMessage" desc="">
+				<param name="Message" desc="chat message" type="string"  />
+			</event>
+			<event name="SendWhisperChatMessage" fscommand="SendWhisperChatMessage" desc="">
+				<param name="Message" desc="chat message" type="string"  />
+			</event>
+		</events>
+
+		<movieclips>
+		</movieclips>
+
+	</UIElement>
+	
+</UIElements>

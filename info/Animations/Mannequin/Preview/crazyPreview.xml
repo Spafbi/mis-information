@@ -1,0 +1,11 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/crazyControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Crazy" enabled="1" database="Animations/Mannequin/ADB/crazy.adb" context="Char3P" model="objects/characters/bandits/crazy/crazy.cdf"/>
+  <contextData name="CrazyAudio" enabled="1" database="Animations/Mannequin/ADB/crazySounds.adb" context="Audio"/>
+  <contextData name="Weapon" context="Weapon" tags="meleeWeapon"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="Motion_Idle"/>
+ </History>
+</MannequinPreview>

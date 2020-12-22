@@ -1,0 +1,32 @@
+<ATLConfig atl_name="v_dirtbike">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_dirtbike_bump">
+			<WwiseEvent wwise_name="Play_atv_bump_on_road"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_damage">
+			<WwiseEvent wwise_name="Play_atv_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_horn">
+			<WwiseEvent wwise_name="Play_atv_horn"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_run">
+			<WwiseEvent wwise_name="Play_dirtbike_run_ambience"/> <!-- Unique -->
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_slip">
+			<WwiseEvent wwise_name="Play_atv_slip"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_start">
+			<WwiseEvent wwise_name="Play_dirtbike_start"/> <!-- Unique -->
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dirtbike_stop">
+			<WwiseEvent wwise_name="Play_dirtbike_stop"/> <!-- Unique -->
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_dirtbike_damage">
+			<WwiseEvent wwise_name="Stop_atv_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_dirtbike_horn">
+			<WwiseEvent wwise_name="Stop_atv_horn"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

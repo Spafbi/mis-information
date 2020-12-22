@@ -1,0 +1,15 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="CoverAction">
+   <Tag name="CoverLftBlind" priority="4"/>
+   <Tag name="CoverLftPeek" priority="4"/>
+   <Tag name="CoverLftShoot" priority="4"/>
+   <Tag name="CoverRgtBlind" priority="4"/>
+   <Tag name="CoverRgtPeek" priority="4"/>
+   <Tag name="CoverRgtShoot" priority="4"/>
+   <Tag name="CoverMidBlind" priority="4"/>
+   <Tag name="CoverMidPeek" priority="4"/>
+   <Tag name="CoverMidShoot" priority="4"/>
+  </Group>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,266 @@
+<FXLib>
+
+	<Effect name="bf_concrete">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="concrete" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_dirt">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="dirt" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.dirt</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_fabric">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="carpet" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_flesh">
+		<Audio trigger="Play_jump_on_3p">
+			<!--<Switch name="SurfaceType" state="flesh" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_glass">
+		<Audio trigger="Play_jump_on_3p">
+			<!--<Switch name="SurfaceType" state="glass" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_grass">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="grass" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_gravel">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="gravel" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_metal">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_metal_chainlink">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_metal_grate">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_metal_thick">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_metal_thin">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_mud">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="mud" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.dirt</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_plastic">
+		<Audio trigger="Play_jump_on_3p">
+			<!--<Switch name="SurfaceType" state="plastic" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_rubber">
+		<Audio trigger="Play_jump_on_3p">
+			<!--<Switch name="SurfaceType" state="rubber" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_sand">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="sand" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.dirt</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_vegetation">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="grass" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_water_deep">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="water_deep" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_water_shallow">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="water_shallow" />
+		</Audio>
+	</Effect>
+
+	<Effect name="bf_wood_hollow">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="wood_hollow" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="bf_wood_solid">
+		<Audio trigger="Play_jump_on_3p">
+			<Switch name="SurfaceType" state="wood_solid" />
+		</Audio>
+		<RandEffect>
+			<Particle>
+				<Name minscale="1" maxscale="1.3" maxscaledist="100">collisions.bodyfall.generic</Name>
+			</Particle>
+		</RandEffect>
+	</Effect>
+
+	<!-- SDK Entries
+
+	<Effect name="crouch_on">
+		<Audio trigger="Play_c_npc_fol_crouch_on">
+		</Audio>
+	</Effect>
+
+	<Effect name="crouch_off">
+		<Audio trigger="Play_c_npc_fol_crouch_off">
+		</Audio>
+	</Effect>
+
+	<Effect name="jump_on">
+		<Audio trigger="Play_c_npc_fol_jump_on">
+		</Audio>
+	</Effect>
+
+	<Effect name="jump_off">
+		<Audio trigger="Play_c_npc_fol_jump_off">
+		</Audio>
+	</Effect>
+
+	<Effect name="gear">
+		<Audio trigger="Play_c_npc_fol_gear">
+		</Audio>
+	</Effect>
+
+	<Effect name="slow">
+		<Audio trigger="Play_c_npc_fol_gear_slow">
+		</Audio>
+	</Effect>
+
+	<Effect name="medium">
+		<Audio trigger="Play_c_npc_fol_gear_medium">
+		</Audio>
+	</Effect>
+
+	<Effect name="fast">
+	<Audio trigger="Play_c_npc_fol_gear_fast">
+		</Audio>
+	</Effect>
+
+	<Effect name="turn">
+		<Audio trigger="Play_c_npc_fol_turn">
+		</Audio>
+	</Effect>
+
+	<Effect name="bodyhit">
+		<Audio trigger="Play_c_npc_fol_bodyhit">
+		</Audio>
+	</Effect>
+
+	<Effect name="throw">
+		<Audio trigger="Play_c_npc_fol_throw_generic">
+		</Audio>
+	</Effect>
+
+	<Effect name="grab">
+		<Audio trigger="Play_c_npc_fol_grab_generic">
+		</Audio>
+	</Effect>
+
+	<Effect name="bag_movement">
+		<Audio trigger="Play_c_npc_fol_bag_movement">
+		</Audio>
+	</Effect>
+
+	<Effect name="swim">
+		<Audio trigger="Play_c_player_fol_swim">
+		</Audio>
+	</Effect>
+
+	<Effect name="swim_sprint">
+		<Audio trigger="Play_c_player_fol_swim_sprint">
+		</Audio>
+	</Effect>
+
+	<Effect name="swim_idle">
+		<Audio trigger="Play_c_player_fol_swim_idle">
+		</Audio>
+	</Effect>-->
+
+	<Effect name="default">
+		<Audio trigger="Play_jump_on_3p">
+		</Audio>
+	</Effect>
+
+</FXLib>

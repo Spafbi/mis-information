@@ -1,0 +1,11 @@
+<!-- These effects are called in PlayerHealthEffect.cpp -->
+<!-- When called they execute a flowgraph by name, which can trigger off logic such as screen effects -->
+<FXLib>
+	<Effect name="player_damage">
+		<FlowGraph name="player_damage" maxdist="1"/>
+	</Effect>
+
+	<Effect name="player_death">
+		<FlowGraph name="player_death" maxdist="1"/>
+	</Effect>
+</FXLib>

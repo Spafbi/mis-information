@@ -1,0 +1,27 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="78" Class="Interpol:Float" pos="60,440,0" flags="0">
+   <Inputs StartValue="0.6" EndValue="0" Time="2" UpdateFrequency="0"/>
+  </Node>
+  <Node Id="79" Class="MaterialFX:HUDEndFX" pos="360,480,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="80" Class="MaterialFX:HUDStartFX" pos="-220,400,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="81" Class="Image:EffectWaterDroplets" pos="360,360,0" flags="0">
+   <Inputs entityId="0" Enabled="1" Disabled="0" WaterDroplets_Amount="0"/>
+  </Node>
+  <Node Id="82" Class="Actor:LocalPlayer" pos="60,360,0" flags="0">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="79" nodeOut="78" portIn="Trigger" portOut="Done" enabled="1"/>
+  <Edge nodeIn="81" nodeOut="78" portIn="WaterDroplets_Amount" portOut="Value" enabled="1"/>
+  <Edge nodeIn="78" nodeOut="80" portIn="Start" portOut="Started" enabled="1"/>
+  <Edge nodeIn="82" nodeOut="80" portIn="update" portOut="Started" enabled="1"/>
+  <Edge nodeIn="81" nodeOut="82" portIn="entityId" portOut="entityId" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

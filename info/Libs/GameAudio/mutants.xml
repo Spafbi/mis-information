@@ -1,0 +1,225 @@
+<ATLConfig atl_name="mutants">
+	<AudioTriggers>
+
+		<!-- MISC -->
+		<ATLTrigger atl_name="Play_ai_attack_metal_door">
+			<WwiseEvent wwise_name="Play_ai_attack_metal_door"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ai_attack_wood_door">
+			<WwiseEvent wwise_name="Play_ai_attack_wood_door"/>
+		</ATLTrigger>
+
+		<!-- BABY SPIDER -->
+		<ATLTrigger atl_name="Play_baby_spider_buildup">
+			<WwiseEvent wwise_name="Play_baby_spider_buildup"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_baby_spider_death">
+			<WwiseEvent wwise_name="Play_baby_spider_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_baby_spider_explosion">
+			<WwiseEvent wwise_name="Play_baby_spider_explosion"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_baby_spider_melee">
+			<WwiseEvent wwise_name="Play_baby_spider_melee"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_baby_spider_movement">
+			<WwiseEvent wwise_name="Play_baby_spider_movement"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_baby_spider_movement">
+			<WwiseEvent wwise_name="Stop_baby_spider_movement"/>
+		</ATLTrigger>
+
+		<!-- BRUTE -->
+		<ATLTrigger atl_name="Play_brute_mutant_attack">
+			<WwiseEvent wwise_name="Play_brute_mutant_attack"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_aggressive">
+			<WwiseEvent wwise_name="Play_brute_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_brute_mutant_aggressive">
+			<WwiseEvent wwise_name="Stop_brute_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_death">
+			<WwiseEvent wwise_name="Play_brute_mutant_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_footsteps">
+			<WwiseEvent wwise_name="Play_brute_mutant_footsteps"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_hurt">
+			<WwiseEvent wwise_name="Play_brute_mutant_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_idle">
+			<WwiseEvent wwise_name="Play_brute_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_brute_mutant_idle">
+			<WwiseEvent wwise_name="Stop_brute_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_player_spotted">
+			<WwiseEvent wwise_name="Play_brute_mutant_player_spotted"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_brute_mutant_roar">
+			<WwiseEvent wwise_name="Play_brute_mutant_roar"/>
+		</ATLTrigger>
+
+		<!-- CRAZY -->
+		<ATLTrigger atl_name="Play_crazy_mutant_aggressive">
+			<WwiseEvent wwise_name="Play_crazy_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crazy_mutant_aggressive">
+			<WwiseEvent wwise_name="Stop_crazy_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_attack">
+			<WwiseEvent wwise_name="Play_crazy_mutant_attack"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_death">
+			<WwiseEvent wwise_name="Play_crazy_mutant_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_footsteps">
+			<WwiseEvent wwise_name="Play_crazy_mutant_footsteps"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_hurt">
+			<WwiseEvent wwise_name="Play_crazy_mutant_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_idle">
+			<WwiseEvent wwise_name="Play_crazy_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crazy_mutant_idle">
+			<WwiseEvent wwise_name="Stop_crazy_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crazy_mutant_player_spotted">
+			<WwiseEvent wwise_name="Play_crazy_mutant_player_spotted"/>
+		</ATLTrigger>
+
+		<!-- DOG MUTANT -->
+		<ATLTrigger atl_name="Play_dog_mutant_attack_leap">
+			<WwiseEvent wwise_name="Play_dog_mutant_attack_leap"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_attack_standing">
+			<WwiseEvent wwise_name="Play_dog_mutant_attack_standing"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_death">
+			<WwiseEvent wwise_name="Play_dog_mutant_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_growl">
+			<WwiseEvent wwise_name="Play_dog_mutant_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_dog_mutant_growl">
+			<WwiseEvent wwise_name="Stop_dog_mutant_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_howl">
+			<WwiseEvent wwise_name="Play_dog_mutant_howl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_hurt">
+			<WwiseEvent wwise_name="Play_dog_mutant_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_dog_mutant_idle">
+			<WwiseEvent wwise_name="Play_dog_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_dog_mutant_idle">
+			<WwiseEvent wwise_name="Stop_dog_mutant_idle"/>
+		</ATLTrigger>
+
+		<!-- HUMAN MUTANT -->
+		<ATLTrigger atl_name="Play_human_mutant_aggressive">
+			<WwiseEvent wwise_name="Play_human_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_human_mutant_aggressive">
+			<WwiseEvent wwise_name="Stop_human_mutant_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_attack">
+			<WwiseEvent wwise_name="Play_human_mutant_attack"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_death">
+			<WwiseEvent wwise_name="Play_human_mutant_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_footsteps">
+			<WwiseEvent wwise_name="Play_human_mutant_footsteps"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_hurt">
+			<WwiseEvent wwise_name="Play_human_mutant_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_idle">
+			<WwiseEvent wwise_name="Play_human_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_human_mutant_idle">
+			<WwiseEvent wwise_name="Stop_human_mutant_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_human_mutant_player_spotted">
+			<WwiseEvent wwise_name="Play_human_mutant_player_spotted"/>
+		</ATLTrigger>
+
+		<!-- HUMAN SPIDER -->
+		<ATLTrigger atl_name="Play_spider_acid_hit">
+			<WwiseEvent wwise_name="Play_spider_acid_hit"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_alert_growl">
+			<WwiseEvent wwise_name="Play_spider_alert_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_alert_roar">
+			<WwiseEvent wwise_name="Play_spider_alert_roar"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_hurt">
+			<WwiseEvent wwise_name="Play_spider_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_idle">
+			<WwiseEvent wwise_name="Play_spider_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_melee_roar">
+			<WwiseEvent wwise_name="Play_spider_melee_roar"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_melee_running_roar">
+			<WwiseEvent wwise_name="Play_spider_melee_running_roar"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_melee_swipe">
+			<WwiseEvent wwise_name="Play_spider_melee_swipe"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_out_of_reach_growl">
+			<WwiseEvent wwise_name="Play_spider_out_of_reach_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_out_of_reach_long">
+			<WwiseEvent wwise_name="Play_spider_out_of_reach_long"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_out_of_reach_short">
+			<WwiseEvent wwise_name="Play_spider_out_of_reach_short"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_spit_growl">
+			<WwiseEvent wwise_name="Play_spider_spit_growl"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spider_spit_spit">
+			<WwiseEvent wwise_name="Play_spider_spit_spit"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_spider_idle">
+			<WwiseEvent wwise_name="Stop_spider_idle"/>
+		</ATLTrigger>
+
+		<!-- SPIKER -->
+		<ATLTrigger atl_name="Play_spiker_aggressive">
+			<WwiseEvent wwise_name="Play_spiker_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_spiker_aggressive">
+			<WwiseEvent wwise_name="Stop_spiker_aggressive"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_attack">
+			<WwiseEvent wwise_name="Play_spiker_attack"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_death">
+			<WwiseEvent wwise_name="Play_spiker_death"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_footsteps">
+			<WwiseEvent wwise_name="Play_spiker_footsteps"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_hurt">
+			<WwiseEvent wwise_name="Play_spiker_hurt"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_idle">
+			<WwiseEvent wwise_name="Play_spiker_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_spiker_idle">
+			<WwiseEvent wwise_name="Stop_spiker_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_spiker_player_spotted">
+			<WwiseEvent wwise_name="Play_spiker_player_spotted"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

@@ -1,0 +1,18 @@
+<TagDefinition version="2">
+ <Imports>
+  <Import filename="Animations/Mannequin/ADB/itemActions.xml"/>
+ </Imports>
+ <Tags>
+  <Tag name="FPIdle"/>
+  <Tag name="FPSway"/>
+  <Tag name="FPMovement"/>
+  <Tag name="FPLand"/>
+  <Tag name="FPNone"/>
+  <Tag name="bump"/>
+  <Tag name="friendly_enter"/>
+  <Tag name="friendly_leave"/>
+  <Tag name="weapon_lower_enter"/>
+  <Tag name="weapon_lower_leave"/>
+  <Tag name="Motion_Idle"/>
+ </Tags>
+</TagDefinition>

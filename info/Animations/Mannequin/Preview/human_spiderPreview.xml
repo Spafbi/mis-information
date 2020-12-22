@@ -1,0 +1,9 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/human_spiderControllerDefs.xml"/>
+ <contexts>
+  <contextData name="human_spider" enabled="1" database="Animations/Mannequin/ADB/human_spider.adb" context="Char3P" model="objects/characters/mutants/human_spider/human_spider.cdf"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="Motion_Idle"/>
+ </History>
+</MannequinPreview>

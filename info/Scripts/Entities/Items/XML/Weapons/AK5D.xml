@@ -63,13 +63,13 @@
 				<param name="sound_radius" value="250"/>
 			</fire>
 			<recoil>
-				<param name="max_recoil" value="4.5"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="first_attack" value="3"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
-				<param name="attack" value="0.8"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="max_recoil" value="3.5"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="first_attack" value="1.4"/> <!-- This prevents users from tap-firing in Rapid fire and getting no recoil -->
+				<param name="attack" value="1.2"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
 				<param name="decay" value="0.45"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
 				<param name="end_decay" value="0.4"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
 				<param name="maxx" value="1"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="3.5"/> <!-- Vertical camera shake -->
+				<param name="maxy" value="2.5"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based off hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -112,12 +112,12 @@
 				<param name="health_reduction_per_shot" value="0.22"/>
 			</fire>
 			<recoil> <!-- Less vertical emphasis for semi-auto -->
-				<param name="max_recoil" value="3.0"/> <!-- Should be additive result of MaxX and MaxY -->
-				<param name="attack" value="1.4"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
-				<param name="decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
-				<param name="end_decay" value="0.5"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
-				<param name="maxx" value="1.5"/> <!-- Horizontal camera shake -->
-				<param name="maxy" value="1.5"/> <!-- Vertical camera shake -->
+				<param name="max_recoil" value="10"/> <!-- Should be additive result of MaxX and MaxY -->
+				<param name="attack" value="2"/> <!-- Rate at which max_recoil will be achieved (in conjunction with just about everything) -->
+				<param name="decay" value="0.7"/> <!-- Time taken for your gun to return to its resting position DURING RAPID firing. Lower is faster -->
+				<param name="end_decay" value="1"/> <!-- Time taken for your gun to return to its resting position AFTER firing. Lower is faster -->
+				<param name="maxx" value="3"/> <!-- Horizontal camera shake -->
+				<param name="maxy" value="7"/> <!-- Vertical camera shake -->
 				<param name="randomness" value="0.2"/> <!-- Randomize output based of hints directions -->
 				<param name="recoil_crouch_m" value="1.0"/>
 				<param name="recoil_prone_m" value="1.0"/>
@@ -584,18 +584,4 @@
 		</types>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/AK5D_200.png?crc=EBD5F076"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="15"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="110091"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/AK5D_2048.png?crc=EBD5F076"/>
-	</steam>
 </item>

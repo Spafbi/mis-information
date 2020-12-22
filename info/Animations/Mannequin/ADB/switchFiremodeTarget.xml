@@ -1,0 +1,26 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="sourceFireMode">
+   <Tag name="from_gauss"/>
+   <Tag name="from_gren"/>
+   <Tag name="from_holo"/>
+   <Tag name="from_shotgun"/>
+   <Tag name="from_rapid"/>
+   <Tag name="from_single"/>
+   <Tag name="from_single_shotgun"/>
+   <Tag name="from_auto_shotgun"/>
+   <Tag name="from_burst"/>
+  </Group>
+  <Group name="targetFireMode">
+   <Tag name="to_gauss"/>
+   <Tag name="to_gren"/>
+   <Tag name="to_holo"/>
+   <Tag name="to_shotgun"/>
+   <Tag name="to_rapid"/>
+   <Tag name="to_single"/>
+   <Tag name="to_single_shotgun"/>
+   <Tag name="to_auto_shotgun"/>
+   <Tag name="to_burst"/>
+  </Group>
+ </Tags>
+</TagDefinition>

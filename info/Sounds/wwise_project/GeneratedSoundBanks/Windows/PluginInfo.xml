@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="miscreatedaudio" Platform="Windows" Key="83B6DECE-4" Motion="false">
+	<Plugins>
+		<Plugin Name="Wwise Silence" ID="6619138" />
+		<Plugin Name="Wwise RoomVerb" ID="7733251" />
+	</Plugins>
+</PluginInfo>

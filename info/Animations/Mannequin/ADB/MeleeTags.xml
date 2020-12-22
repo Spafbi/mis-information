@@ -1,0 +1,17 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="part">
+   <Tag name="into"/>
+   <Tag name="hit"/>
+   <Tag name="miss"/>
+  </Group>
+  <Group name="mp_enviro">
+   <Tag name="secondSwing"/>
+  </Group>
+	<Group name="basic_ammo">
+	 <Tag name="ammo_empty"/>
+	 <Tag name="ammo_clipRemaining"/>
+	 <Tag name="ammo_last1"/>
+	</Group>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,417 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="7" Class="UI:Functions:Settings:GetResolutionList" pos="2060,-720,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="29" Name="Video_Main_Page" Class="_commentbox" pos="1780,-779.12885,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="610" Height="880"/>
+   <NodeSize Width="610" Height="916.92694"/>
+  </Node>
+  <Node Id="34" Class="UI:Action:Start" pos="1800,-720,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="35" Class="UI:Functions:MainMenu:DisplayWindow" pos="1450,-420,0" flags="0">
+   <Inputs instanceID="-1" window="VideoOptions"/>
+  </Node>
+  <Node Id="36" Name="Setup_page" Class="_commentbox" pos="-280,-778.98425,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2020" Height="1640"/>
+   <NodeSize Width="2020" Height="1676.9269"/>
+  </Node>
+  <Node Id="39" Name="Handle_events" Class="_commentbox" pos="-280,920.02039,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2360" Height="1070"/>
+   <NodeSize Width="2360" Height="1106.9269"/>
+  </Node>
+  <Node Id="42" Class="UI:Functions:Settings:SetGraphics" pos="970,1510,0" flags="0">
+   <Inputs Resolution="0" Quality="0" Fullscreen="0" Borderless="0"/>
+  </Node>
+  <Node Id="52" Class="UI:Functions:Settings:GetCurrGraphics" pos="2060,-660,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="61" Class="UI:Events:Settings:OnGraphicChanged" pos="-260,-420,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="70" Class="UI:Functions:Settings:GetCurrGraphics" pos="60,1000,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="80,1200,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ApplyChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="80" Class="Logic:Condition" pos="600,1200,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="81" Class="UI:Events:Settings:OnResolutionItem" pos="-260,-700,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="87" Name="Setup_resolutions" Class="_comment" pos="-260,-730,0" flags="0"/>
+  <Node Id="88" Name="Update_Data" Class="_comment" pos="-260,-450,0" flags="0"/>
+  <Node Id="89" Name="Reset_to_current_state" Class="_comment" pos="-260,970,0" flags="0"/>
+  <Node Id="90" Name="Apply_Video_Changes" Class="_comment" pos="-260,1450,0" flags="0"/>
+  <Node Id="99" Class="UI:Functions:MainMenu:GetValue" pos="80,1660,0" flags="0">
+   <Inputs instanceID="-1" name="videoResolution"/>
+  </Node>
+  <Node Id="100" Class="UI:Functions:MainMenu:GetValue" pos="80,1820,0" flags="0">
+   <Inputs instanceID="-1" name="fullscreen"/>
+  </Node>
+  <Node Id="102" Class="UI:Functions:MainMenu:SetValue" pos="100,-400,0" flags="0">
+   <Inputs instanceID="-1" name="fullscreen" value=""/>
+  </Node>
+  <Node Id="103" Class="UI:Functions:MainMenu:SetValue" pos="100,-500,0" flags="0">
+   <Inputs instanceID="-1" name="videoResolution" value=""/>
+  </Node>
+  <Node Id="104" Class="UI:Functions:MainMenu:AddStepperOption" pos="100,-700,0" flags="0">
+   <Inputs instanceID="-1" id="resolutionStepper" caption="" value=""/>
+  </Node>
+  <Node Id="109" Class="UI:Events:Settings:OnResolutions" pos="100,-300,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="110" Class="Logic:All" pos="1280,-420,0" flags="0" InHideMask="127" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="111" Class="Debug:ConsoleVariable" pos="100,-240,0" flags="0">
+   <Inputs CVar="sys_spec" Value=""/>
+  </Node>
+  <Node Id="112" Class="Math:Equal" pos="380,-240,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="113" Class="Math:SetNumber" pos="540,-180,0" flags="0">
+   <Inputs in="0"/>
+  </Node>
+  <Node Id="114" Class="Math:SetNumber" pos="540,-240,0" flags="0">
+   <Inputs in="2"/>
+  </Node>
+  <Node Id="115" Class="Logic:Any" pos="720,-220,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="116" Class="UI:Functions:MainMenu:SetValue" pos="860,-240,0" flags="0">
+   <Inputs instanceID="-1" name="videoQuality" value=""/>
+  </Node>
+  <Node Id="117" Class="UI:Events:MainMenu:RevertVideoOptions" pos="-260,1000,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="118" Class="UI:Events:MainMenu:ApplyVideoOptions" pos="-260,1480,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="880,700.97998,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="840" Height="140"/>
+   <NodeSize Width="840" Height="176.92693"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="900,760,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="1160,760,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="1560,760,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="124" Class="UI:Functions:MainMenu:GetValue" pos="1420,1040,0" flags="0">
+   <Inputs instanceID="-1" name="vsync"/>
+  </Node>
+  <Node Id="126" Class="UI:Functions:MainMenu:GetValue" pos="1420,1680,0" flags="0">
+   <Inputs instanceID="-1" name="shadowsQuality"/>
+  </Node>
+  <Node Id="127" Class="UI:Functions:MainMenu:GetValue" pos="1420,1600,0" flags="0">
+   <Inputs instanceID="-1" name="shadingQuality"/>
+  </Node>
+  <Node Id="129" Class="UI:Functions:MainMenu:GetValue" pos="1420,1200,0" flags="0">
+   <Inputs instanceID="-1" name="effectsQuality"/>
+  </Node>
+  <Node Id="130" Class="UI:Functions:MainMenu:GetValue" pos="1420,1280,0" flags="0">
+   <Inputs instanceID="-1" name="detailQuality"/>
+  </Node>
+  <Node Id="131" Class="UI:Functions:MainMenu:GetValue" pos="1420,1360,0" flags="0">
+   <Inputs instanceID="-1" name="particlesQuality"/>
+  </Node>
+  <Node Id="132" Class="UI:Functions:MainMenu:GetValue" pos="1420,1440,0" flags="0">
+   <Inputs instanceID="-1" name="postProcessing"/>
+  </Node>
+  <Node Id="133" Class="UI:Functions:MainMenu:GetValue" pos="1420,1520,0" flags="0">
+   <Inputs instanceID="-1" name="waterQuality"/>
+  </Node>
+  <Node Id="135" Class="UI:Functions:MainMenu:GetValue" pos="1420,1760,0" flags="0">
+   <Inputs instanceID="-1" name="motionBlur"/>
+  </Node>
+  <Node Id="136" Class="UI:Functions:MainMenu:GetValue" pos="1420,1840,0" flags="0">
+   <Inputs instanceID="-1" name="antialiasingMode"/>
+  </Node>
+  <Node Id="137" Class="UI:Functions:MainMenu:GetValue" pos="1420,1920,0" flags="0">
+   <Inputs instanceID="-1" name="lensFlares"/>
+  </Node>
+  <Node Id="138" Class="UI:Functions:Settings:SetLensFlares" pos="1740,1920,0" flags="0">
+   <Inputs LensFlares="0"/>
+  </Node>
+  <Node Id="140" Class="UI:Functions:Settings:SetMotionBlur" pos="1740,1760,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="142" Class="UI:Functions:Settings:SetShadowsQuality" pos="1740,1680,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="143" Class="UI:Functions:Settings:SetShadingQuality" pos="1740,1600,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="144" Class="UI:Functions:Settings:SetWaterQuality" pos="1740,1520,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="145" Class="UI:Functions:Settings:SetPostProcessing" pos="1740,1440,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="146" Class="UI:Functions:Settings:SetParticlesQuality" pos="1740,1360,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="147" Class="UI:Functions:Settings:SetDetailQuality" pos="1740,1280,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="148" Class="UI:Functions:Settings:SetEffectsQuality" pos="1740,1200,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="149" Class="UI:Functions:Settings:SetVSync" pos="1740,1040,0" flags="0">
+   <Inputs Vsync="0"/>
+  </Node>
+  <Node Id="179" Class="UI:Functions:MainMenu:SetValue" pos="100,-40,0" flags="0">
+   <Inputs instanceID="-1" name="vsync" value=""/>
+  </Node>
+  <Node Id="181" Class="UI:Functions:MainMenu:SetValue" pos="100,160,0" flags="0">
+   <Inputs instanceID="-1" name="effectsQuality" value=""/>
+  </Node>
+  <Node Id="182" Class="UI:Functions:MainMenu:SetValue" pos="100,260,0" flags="0">
+   <Inputs instanceID="-1" name="detailQuality" value=""/>
+  </Node>
+  <Node Id="183" Class="UI:Functions:MainMenu:SetValue" pos="100,360,0" flags="0">
+   <Inputs instanceID="-1" name="particlesQuality" value=""/>
+  </Node>
+  <Node Id="184" Class="UI:Functions:MainMenu:SetValue" pos="100,460,0" flags="0">
+   <Inputs instanceID="-1" name="postProcessing" value=""/>
+  </Node>
+  <Node Id="185" Class="UI:Functions:MainMenu:SetValue" pos="100,560,0" flags="0">
+   <Inputs instanceID="-1" name="waterQuality" value=""/>
+  </Node>
+  <Node Id="186" Class="UI:Functions:MainMenu:SetValue" pos="100,660,0" flags="0">
+   <Inputs instanceID="-1" name="shadingQuality" value=""/>
+  </Node>
+  <Node Id="187" Class="UI:Functions:MainMenu:SetValue" pos="100,760,0" flags="0">
+   <Inputs instanceID="-1" name="shadowsQuality" value=""/>
+  </Node>
+  <Node Id="189" Class="UI:Functions:MainMenu:SetValue" pos="800,-40,0" flags="0">
+   <Inputs instanceID="-1" name="motionBlur" value=""/>
+  </Node>
+  <Node Id="190" Class="UI:Functions:MainMenu:SetValue" pos="800,60,0" flags="0">
+   <Inputs instanceID="-1" name="antialiasingMode" value=""/>
+  </Node>
+  <Node Id="191" Class="UI:Functions:MainMenu:SetValue" pos="800,160,0" flags="0">
+   <Inputs instanceID="-1" name="lensFlares" value=""/>
+  </Node>
+  <Node Id="194" Class="UI:Functions:Settings:GetVSync" pos="2060,-600,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="196" Class="UI:Functions:Settings:GetEffectsQuality" pos="2060,-540,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="197" Class="UI:Functions:Settings:GetDetailQuality" pos="2060,-480,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="198" Class="UI:Functions:Settings:GetParticlesQuality" pos="2060,-420,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="199" Class="UI:Functions:Settings:GetPostProcessing" pos="2060,-360,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="200" Class="UI:Functions:Settings:GetWaterQuality" pos="2060,-300,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="201" Class="UI:Functions:Settings:GetShadingQuality" pos="2060,-240,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="202" Class="UI:Functions:Settings:GetShadowsQuality" pos="2060,-180,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="203" Class="UI:Functions:Settings:GetMotionBlur" pos="2060,-60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="205" Class="UI:Functions:Settings:GetLensFlares" pos="2060,60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="207" Class="UI:Events:Settings:OnGetEffectsQuality" pos="-260,160,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="208" Class="UI:Events:Settings:OnGetDetailQuality" pos="-260,260,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="209" Class="UI:Events:Settings:OnGetParticlesQuality" pos="-260,360,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="210" Class="UI:Events:Settings:OnGetPostProcessing" pos="-260,460,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="211" Class="UI:Events:Settings:OnGetWaterQuality" pos="-260,560,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="212" Class="UI:Events:Settings:OnGetShadingQuality" pos="-260,660,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="213" Class="UI:Events:Settings:OnGetShadowsQuality" pos="-260,760,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="215" Class="UI:Events:Settings:OnGetMotionBlur" pos="440,-40,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="217" Class="UI:Events:Settings:OnGetLensFlares" pos="440,160,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="218" Class="UI:Events:Settings:OnGetVSync" pos="-260,-40,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="219" Class="UI:Functions:Settings:SetAntialiasingMode" pos="1740,1840,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+  <Node Id="220" Class="UI:Functions:MainMenu:GetValue" pos="1420,1120,0" flags="0">
+   <Inputs instanceID="-1" name="texturesQuality"/>
+  </Node>
+  <Node Id="222" Class="UI:Events:Settings:OnGetAntialiasingMode" pos="440,60,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="223" Class="UI:Functions:MainMenu:SetValue" pos="100,60,0" flags="0">
+   <Inputs instanceID="-1" name="texturesQuality" value=""/>
+  </Node>
+  <Node Id="224" Class="UI:Functions:Settings:GetAntialiasingMode" pos="2060,0,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="225" Class="UI:Functions:Settings:GetTexturesQuality" pos="2060,-120,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="226" Class="UI:Events:Settings:OnGetTexturesQuality" pos="-260,60,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="227" Class="UI:Functions:Settings:SetTexturesQuality" pos="1740,1120,0" flags="0">
+   <Inputs Value="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="52" nodeOut="7" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="34" portIn="send" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="35" portIn="Reset" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="124" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="126" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="127" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="129" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="130" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="131" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="136" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="137" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="220" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="194" nodeOut="52" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="61" portIn="value" portOut="FullScreen" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="61" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="103" nodeOut="61" portIn="value" portOut="Resolution" enabled="1"/>
+  <Edge nodeIn="103" nodeOut="61" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="61" portIn="Get" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="80" portIn="send" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="value" portOut="ID" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="caption" portOut="ResString" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="81" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="99" portIn="Resolution" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="100" portIn="Fullscreen" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="102" portIn="in2" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="103" portIn="in1" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="109" portIn="in3" portOut="Array" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="110" portIn="Call" portOut="Out" enabled="1"/>
+  <Edge nodeIn="112" nodeOut="111" portIn="A" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="111" portIn="in" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="112" portIn="set" portOut="false" enabled="1"/>
+  <Edge nodeIn="114" nodeOut="112" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="113" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="114" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="116" nodeOut="115" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="116" nodeOut="115" portIn="value" portOut="out" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="116" portIn="in4" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="70" nodeOut="117" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="118" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="118" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="118" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="124" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="126" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="127" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="129" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="130" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="131" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="136" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="137" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="220" nodeOut="118" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="149" nodeOut="124" portIn="Vsync" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="149" nodeOut="124" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="142" nodeOut="126" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="142" nodeOut="126" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="143" nodeOut="127" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="143" nodeOut="127" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="148" nodeOut="129" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="148" nodeOut="129" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="130" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="147" nodeOut="130" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="146" nodeOut="131" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="146" nodeOut="131" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="132" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="145" nodeOut="132" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="144" nodeOut="133" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="144" nodeOut="133" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="140" nodeOut="135" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="140" nodeOut="135" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="219" nodeOut="136" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="219" nodeOut="136" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="137" portIn="LensFlares" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="137" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="196" nodeOut="194" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="197" nodeOut="196" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="198" nodeOut="197" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="199" nodeOut="198" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="200" nodeOut="199" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="201" nodeOut="200" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="202" nodeOut="201" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="225" nodeOut="202" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="224" nodeOut="203" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="181" nodeOut="207" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="181" nodeOut="207" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="182" nodeOut="208" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="182" nodeOut="208" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="183" nodeOut="209" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="183" nodeOut="209" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="184" nodeOut="210" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="184" nodeOut="210" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="185" nodeOut="211" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="185" nodeOut="211" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="186" nodeOut="212" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="186" nodeOut="212" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="187" nodeOut="213" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="187" nodeOut="213" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="189" nodeOut="215" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="189" nodeOut="215" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="191" nodeOut="217" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="191" nodeOut="217" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="179" nodeOut="218" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="179" nodeOut="218" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="227" nodeOut="220" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="227" nodeOut="220" portIn="send" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="190" nodeOut="222" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="190" nodeOut="222" portIn="value" portOut="value" enabled="1"/>
+  <Edge nodeIn="205" nodeOut="224" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="203" nodeOut="225" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="223" nodeOut="226" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="223" nodeOut="226" portIn="value" portOut="value" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

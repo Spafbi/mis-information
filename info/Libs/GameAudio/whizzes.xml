@@ -1,0 +1,16 @@
+<ATLConfig atl_name="whizzes">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Play_bullet_ricochet">
+			<WwiseEvent wwise_name="Play_bullet_ricochet"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_sonic_boom">
+			<WwiseEvent wwise_name="Play_bullet_sonic_boom"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bullet_whiz">
+			<WwiseEvent wwise_name="Play_bullet_whiz"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_bullet_whiz">
+			<WwiseEvent wwise_name="Stop_bullet_whiz"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

@@ -1,0 +1,63 @@
+<BodyDamage>
+	<Parts>
+		<Part name="armLeft" flags="arm">
+			<Bone name="HS_L_Armupper"/>
+			<Bone name="HS_L_Armlower"/>
+		</Part>
+		<Part name="armRight" flags="arm">
+			<Bone name="HS_R_Armupper"/>
+			<Bone name="HS_R_Armlower"/>
+		</Part>
+		<Part name="handLeft" flags="hand">
+			<Bone name="HS_L_wrist"/>
+			<Bone name="HS_L_hand"/>
+		</Part>
+		<Part name="handRight" flags="hand">
+			<Bone name="HS_R_wrist"/>
+			<Bone name="HS_R_hand"/>
+		</Part>
+		<Part name="head" flags="headshot">
+			<Bone name="HS_Head"/>
+		</Part>
+		<Part name="footLeft" flags="foot">
+			<Bone name="HS_leg_L_3"/>
+			<Bone name="HS_leg_L_4"/>
+		</Part>
+		<Part name="footRight" flags="foot">
+			<Bone name="HS_leg_R_3"/>
+			<Bone name="HS_leg_R_4"/>
+		</Part>
+		<Part name="legLeft" flags="knee">
+			<Bone name="HS_leg_L_1"/>
+			<Bone name="HS_leg_L_2"/>
+		</Part>
+		<Part name="legRight" flags="knee">
+			<Bone name="HS_leg_R_1"/>
+			<Bone name="HS_leg_R_2"/>
+		</Part>
+		<Part name="footLeftSmall" flags="foot">
+			<Bone name="HS_leg_small_L_3"/>
+		</Part>
+		<Part name="footRightSmall" flags="foot">
+			<Bone name="HS_leg_small_R_3"/>
+		</Part>
+		<Part name="legLeftSmall" flags="knee">
+			<Bone name="HS_leg_small_L_1"/>
+			<Bone name="HS_leg_small_L_2"/>
+		</Part>
+		<Part name="legRightSmall" flags="knee">
+			<Bone name="HS_leg_small_R_1"/>
+			<Bone name="HS_leg_small_R_2"/>
+		</Part>
+		<Part name="torso">
+			<Bone name="HS_spine1"/>
+			<Bone name="HS_spine2"/>
+			<Bone name="HS_spine3"/>
+			<Bone name="HS_R_clav"/>
+			<Bone name="HS_L_clav"/>
+		</Part>
+		<Part name="pelvis" flags="pelvis">
+			<Bone name="HS_hip"/>
+		</Part>
+	</Parts>
+</BodyDamage>

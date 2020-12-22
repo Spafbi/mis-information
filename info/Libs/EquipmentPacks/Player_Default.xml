@@ -1,0 +1,6 @@
+<EquipPack name="Player_Default" primary="NoWeapon">
+ <Items>
+  <NoWeapon type="ItemGivable" setup=""/>
+ </Items>
+ <Ammos/>
+</EquipPack>

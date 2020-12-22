@@ -1,0 +1,87 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-500,300,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="33" Name="Setup_page" Class="_commentbox" pos="-520,249.25963,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="860" Height="120"/>
+   <NodeSize Width="860" Height="147.85512"/>
+  </Node>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-520,409.33057,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="860" Height="160"/>
+   <NodeSize Width="860" Height="187.85512"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-500,460,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="-240,460,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="180,460,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="132" Class="UI:Functions:MainMenu:DisplayWindow" pos="-240,300,0" flags="0">
+   <Inputs instanceID="-1" window="Keybind"/>
+  </Node>
+  <Node Id="133" Class="UI:Functions:Settings:OnEnterInputCaptureMode" pos="760,780,0" flags="0">
+   <Inputs actionmap="" action="" input="" devicetype="0" deviceindex="0"/>
+  </Node>
+  <Node Id="134" Class="UI:Functions:Settings:OnRequestKeybinds" pos="760,400,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="135" Class="UI:Events:Settings:OnInputCaptured" pos="400,600,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="137" Class="UI:Events:Settings:OnInputBindsRequested" pos="400,500,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="138" Class="UI:Events:MainMenu:OnEnterInputCaptureMode" pos="400,780,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="139" Class="UI:Events:MainMenu:OnRequestKeybinds" pos="400,400,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="140" Class="UI:Functions:MainMenu:OnInputBindsRequested" pos="760,500,0" flags="0">
+   <Inputs instanceID="-1" json=""/>
+  </Node>
+  <Node Id="141" Class="UI:Functions:MainMenu:OnInputCaptured" pos="760,600,0" flags="0">
+   <Inputs instanceID="-1" actionmap="" action="" input="" devicetype="0" deviceindex="0"/>
+  </Node>
+  <Node Id="142" Class="UI:Events:MainMenu:OnResetKeybinds" pos="400,300,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="143" Class="UI:Functions:Settings:OnResetKeybinds" pos="760,300,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="145" Name="Handle_Events" Class="_commentbox" pos="380,249.81596,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="720" Height="660"/>
+   <NodeSize Width="720" Height="687.8551"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="132" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="action" portOut="action" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="actionmap" portOut="actionmap" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="deviceindex" portOut="deviceindex" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="devicetype" portOut="devicetype" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="input" portOut="input" enabled="1"/>
+  <Edge nodeIn="141" nodeOut="135" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="140" nodeOut="137" portIn="json" portOut="json" enabled="1"/>
+  <Edge nodeIn="140" nodeOut="137" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="action" portOut="action" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="actionmap" portOut="actionmap" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="deviceindex" portOut="deviceindex" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="devicetype" portOut="devicetype" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="input" portOut="input" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="138" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="134" nodeOut="139" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="143" nodeOut="142" portIn="send" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

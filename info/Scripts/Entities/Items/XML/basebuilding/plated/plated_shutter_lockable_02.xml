@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_shutter_lockable_02Description"/>
 	</params>
 
-	<base_part class="door" type="1355" name="plated_shutter_lockable_02" max_health="7500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="door" type="1355" name="plated_shutter_lockable_02" max_health="11250" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<door filename="objects/basebuilding/wood_02/plated_shutter_02.cgf" rotate_base="-90" rotate_range="90" rotate_speed="90" rotate_axis="z" rotate_axis_front="y" sound_open="Play_door_wood_open" sound_opened="" sound_close="Play_door_wood_close" sound_closed="Play_door_wood_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
 		
 		<damage_multipliers>

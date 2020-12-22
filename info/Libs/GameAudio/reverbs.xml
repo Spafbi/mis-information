@@ -1,0 +1,26 @@
+<ATLConfig atl_name="reverbs">
+ <AudioEnvironments>
+  <ATLEnvironment atl_name="warehouse">
+   <WwiseAuxBus wwise_name="Warehouse"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="shed">
+   <WwiseAuxBus wwise_name="Shed"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="room_medium">
+   <WwiseAuxBus wwise_name="Room_Medium"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="cave">
+   <WwiseAuxBus wwise_name="Cave"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="room_small">
+   <WwiseAuxBus wwise_name="Room_Small"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="room_large">
+   <WwiseAuxBus wwise_name="Room_Large"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="outside">
+   <WwiseAuxBus wwise_name="Outside"/>
+   <WwiseRtpc wwise_name="environment_sound"/>
+  </ATLEnvironment>
+ </AudioEnvironments>
+</ATLConfig>

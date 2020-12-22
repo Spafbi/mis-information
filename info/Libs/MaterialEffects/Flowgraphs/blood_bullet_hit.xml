@@ -1,0 +1,23 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="28" Class="Time:Delay" pos="640,520,0" flags="0">
+   <Inputs delay="4" resetOnInput="0"/>
+  </Node>
+  <Node Id="187" Class="MaterialFX:HUDStartFX" pos="280,440,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="188" Class="MaterialFX:HUDEndFX" pos="1160,320,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="199" Class="Image:ScreenFader" pos="640,320,0" flags="0">
+   <Inputs FadeGroup="1" UseCurColor="1" FadeInTime="3" FadeOutTime="0" color_FadeColor="1,1,1" tex_TextureName="textures/sprites/hud/blood1_hud_diff.tif" UpdateAlways="0" StopFader="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="199" nodeOut="28" portIn="FadeIn" portOut="out" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="187" portIn="in" portOut="Started" enabled="1"/>
+  <Edge nodeIn="199" nodeOut="187" portIn="FadeOut" portOut="Started" enabled="1"/>
+  <Edge nodeIn="188" nodeOut="199" portIn="Trigger" portOut="FadedIn" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

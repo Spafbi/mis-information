@@ -1,0 +1,35 @@
+<Graph Description="" Group="MM_Common" enabled="0" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="33" Name="Handle_default_events" Class="_commentbox" pos="-380,-389.86365,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="720" Height="640"/>
+   <NodeSize Width="720" Height="667.64063"/>
+  </Node>
+  <Node Id="87" Name="We_want_to_leave_each_menu_state_if_the_MainMenu_gets_hidden" Class="_comment" pos="-360,90,0" flags="0"/>
+  <Node Id="88" Class="UI:Display:UIElementListener" pos="-360,120,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="89" Class="UI:Action:End" pos="20,120,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="90" Class="UI:Events:MainMenu:OnButtonClick" pos="-360,-320,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="91" Class="Audio:Trigger" pos="20,-320,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_button_click" audioTrigger_StopTrigger="do_nothing"/>
+  </Node>
+  <Node Id="93" Class="UI:Events:MainMenu:OnButtonHover" pos="-360,-140,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="94" Class="Audio:Trigger" pos="20,-140,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_button_roll_over" audioTrigger_StopTrigger="do_nothing"/>
+  </Node>
+  <Node Id="98" Name="Play_menu_button_sound_effects" Class="_comment" pos="-360,-350,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="89" nodeOut="88" portIn="EndAction" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="90" portIn="Play" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="94" nodeOut="93" portIn="Play" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

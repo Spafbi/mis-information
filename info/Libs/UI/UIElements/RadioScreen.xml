@@ -1,0 +1,58 @@
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<UIElements name="RadioScreen">
+
+	<UIElement name="RadioScreen" mouseevents="0" keyevents="0" cursor="0" controller_input="0" render_lockless="1">
+
+		<GFx file="RadioScreen/RadioScreen.gfx" layer="1">
+			<Constraints>
+				<Align mode="dynamic" valign="center" halign="left" scale="1" max="0" />
+			</Constraints>
+		</GFx>
+
+		<!-- Can get or set a variable -->
+		<variables>
+		</variables>
+
+		<!-- Can get or set an array -->
+		<arrays>
+		</arrays>
+
+		<!-- Functions that can be invoked into actionscript from lua -->
+		<functions>
+			<function name="setGPSData" funcname="_root.setGPSData">
+				<param name="northing" desc=""/>
+				<param name="ndeg" desc=""/>
+				<param name="nmin" desc=""/>
+				<param name="nsec" desc=""/>
+				<param name="easting" desc=""/>
+				<param name="edeg" desc=""/>
+				<param name="emin" desc=""/>
+				<param name="esec" desc=""/>
+				<param name="elevation" desc=""/>
+				<param name="speed" desc=""/>
+				<param name="rot" desc=""/>
+			</function>
+			<function name="setBootProgress" funcname="_root.setBootProgress">
+				<param name="percent" desc=""/>
+			</function>
+			<function name="setMode" funcname="_root.setMode">
+				<param name="mode" desc=""/>
+			</function>
+			<function name="setRadioData" funcname="_root.setRadioData">
+				<param name="freq" desc=""/>
+				<param name="freqband" desc=""/>
+				<param name="channel" desc=""/>
+				<param name="clock" desc=""/>
+			</function>
+		</functions>
+
+		<!-- Events fired from actionsript into lua -->
+		<events>
+		</events>
+
+		<movieclips>
+		</movieclips>
+
+	</UIElement>
+	
+</UIElements>

@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_door_lockable_02Description"/>
 	</params>
 
-	<base_part class="door" type="1331" name="plated_door_lockable_02" max_health="7500" repair_sound="Play_wall_repair" repair_with="SheetMetal">
+	<base_part class="door" type="1331" name="plated_door_lockable_02" max_health="11250" repair_sound="Play_wall_repair" repair_with="SheetMetal">
 		<door filename="objects/basebuilding/other/wood_door_lockable_02/plated_door_lockable_02.cgf" rotate_base="-90" rotate_range="90" rotate_speed="90" rotate_axis="z" rotate_axis_front="y" sound_open="Play_door_wood_open" sound_opened="" sound_close="Play_door_wood_close" sound_closed="Play_door_wood_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
 		<base_actions>
 			<base_action class="toggle_door">
