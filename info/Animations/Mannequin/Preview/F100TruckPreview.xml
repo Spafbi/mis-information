@@ -1,0 +1,13 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/vehicleControllerDefs.xml"/>
+ <contexts>
+  <contextData name="F100Truck" enabled="1" database="Animations/Mannequin/ADB/f100truckAnims.adb" context="hull" model="objects/vehicles/f100truck/f100truck.cga"/>
+  <contextData name="Driver" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Driver" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger1" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger1" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger2" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger2" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger3" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger3" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger4" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger4" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger5" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger5" model="objects/characters/players/male/human_male.cdf"/>
+ </contexts>
+ <History StartTime="-4.3160208e+008" EndTime="-4.3160208e+008"/>
+</MannequinPreview>

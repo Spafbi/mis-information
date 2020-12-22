@@ -1,0 +1,55 @@
+<ATLConfig atl_name="boids">
+	<AudioTriggers>
+
+		<ATLTrigger atl_name="Play_scared_bat">
+			<WwiseEvent wwise_name="Play_boid_bat_scared"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_crow">
+			<WwiseEvent wwise_name="Play_crow_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_crow">
+			<WwiseEvent wwise_name="Play_boid_generic_wing_flaps"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_eagle">
+			<WwiseEvent wwise_name="Play_eagle_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_eagle">
+			<WwiseEvent wwise_name="Play_boid_generic_wing_flaps"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_frog">
+			<WwiseEvent wwise_name="Play_frog_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_frog">
+			<WwiseEvent wwise_name="Play_frog_scared"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_pidgeon">
+			<WwiseEvent wwise_name="Play_pidgeon_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_pidgeon">
+			<WwiseEvent wwise_name="Play_boid_generic_wing_flaps"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_rat">
+			<WwiseEvent wwise_name="Play_boid_rat_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_rat">
+			<WwiseEvent wwise_name="Play_boid_rat_scared"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_idle_seagull">
+			<WwiseEvent wwise_name="Play_seagull_idle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_scared_seagull">
+			<WwiseEvent wwise_name="Play_boid_generic_wing_flaps"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Play_scared_snake">
+			<WwiseEvent wwise_name="Play_snake_scared"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

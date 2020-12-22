@@ -2172,9 +2172,9 @@
 							</item>
 							<item class="C4Bricks" time="2" amount="1">
 								<materials>
-									<material class="Gunpowder" count="32"/>
-									<material class="Sulphur" count="6"/>
-									<material class="BioFuel" count="2"/>
+									<material class="Gunpowder" count="64"/>
+									<material class="Sulphur" count="12"/>
+									<material class="BioFuel" count="4"/>
 								</materials>
 							</item>
 							<item class="BioFuel" time="0.5">
@@ -2526,8 +2526,8 @@
 						<items>
 							<item class="AntibioticBandage" time="1">
 								<materials>
-									<material class="WaterBottle" />
-									<material class="MushroomHeal" />
+									<material class="Antibiotics" />
+									<material class="RubbingAlcohol" />
 									<material class="Bandage" />
 								</materials>
 							</item>

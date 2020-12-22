@@ -1,0 +1,27 @@
+<ATLConfig atl_name="v_jetski">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_jetski_ambience">
+			<WwiseEvent wwise_name="Play_jetski_ambience"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jetski_splash">
+			<WwiseEvent wwise_name="Play_jetski_bounce_on_waves"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jetski_damage">
+			<WwiseEvent wwise_name="Play_jetski_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jetski_run">
+			<WwiseEvent wwise_name="Play_jetski_run"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jetski_start">
+			<WwiseEvent wwise_name="Play_jetski_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jetski_stop">
+			<WwiseEvent wwise_name="Play_jetski_stop"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_jetski_damage">
+			<WwiseEvent wwise_name="Stop_jetski_damage"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

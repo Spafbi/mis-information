@@ -14,7 +14,7 @@
 	<consumable>
 		<param name="foodAmount" value="50"/>
 		<param name="drinkAmount" value="30"/>
-		<param name="poisonChance" value="95"/>
+		<param name="poisonChance" value="100"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

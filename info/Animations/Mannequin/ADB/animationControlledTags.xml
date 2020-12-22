@@ -1,0 +1,9 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="animationControlled">
+   <Tag name="HeavyLand"/>
+   <Tag name="KickLargeObject"/>
+   <Tag name="KnockDown"/>
+  </Group>
+ </Tags>
+</TagDefinition>

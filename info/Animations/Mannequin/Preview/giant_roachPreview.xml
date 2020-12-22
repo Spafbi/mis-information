@@ -1,0 +1,7 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/giant_roachControllerDefs.xml"/>
+ <contexts>
+  <contextData name="giant_roach" enabled="1" database="Animations/Mannequin/ADB/giant_roach.adb" context="Char3P" model="objects/characters/animals/giant_roach/giant_roach.cdf"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

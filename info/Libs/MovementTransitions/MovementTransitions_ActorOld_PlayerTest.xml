@@ -1,0 +1,7 @@
+<MovementTransitions>
+	<General minDistAfterDirectionChange = "2.5"/>
+
+	<Transitions>
+	</Transitions>
+
+</MovementTransitions>

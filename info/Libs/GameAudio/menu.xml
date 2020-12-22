@@ -1,0 +1,22 @@
+<ATLConfig atl_name="menu">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_server_message">
+   <WwiseEvent wwise_name="Play_server_message"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_button_click">
+   <WwiseEvent wwise_name="Play_main_menu_select"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_button_roll_over">
+   <WwiseEvent wwise_name="Play_main_menu_cursor_hover"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Stop_menu_ambience">
+   <WwiseEvent wwise_name="Stop_main_menu_music"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_menu_ambience">
+   <WwiseEvent wwise_name="Play_main_menu_music"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_menu_back">
+   <WwiseEvent wwise_name="Play_main_menu_back"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

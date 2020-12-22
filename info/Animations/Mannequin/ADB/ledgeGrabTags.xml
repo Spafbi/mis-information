@@ -1,0 +1,21 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="enter">
+   <Tag name="floor" priority="1"/>
+   <Tag name="fall" priority="1"/>
+  </Group>
+  <Group name="type">
+   <Tag name="ledge" priority="1"/>
+   <Tag name="vault" priority="1"/>
+   <Tag name="quick" priority="1"/>
+  </Group>
+  <Group name="exit">
+   <Tag name="up" priority="1"/>
+   <Tag name="over" priority="1"/>
+   <Tag name="drop" priority="1"/>
+  </Group>
+  <Tag name="endCrouched" priority="1"/>
+  <Tag name="floorSprint" priority="1"/>
+  <Tag name="high" priority="1"/>
+ </Tags>
+</TagDefinition>

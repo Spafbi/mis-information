@@ -1,0 +1,18 @@
+<DeathHitReactionsParams>
+	<HitDeathReactionsConfig collReactionStartDist="0.4" maxRagdolImpulse="1000" maximumReactionTime="6.0"/>
+	
+	<HitReactionParams>
+	</HitReactionParams>
+	
+	<DeathReactionParams>
+		<!-- Front shot death -->
+		<DeathReactionParam manqReaction="0" noRagdollOnEnd="1">
+		</DeathReactionParam>
+		
+		<!-- <DeathReactionParam interactiveAction="PlayerKnockDown" reactionFunc="PlayerDeathTest" noRagdollOnEnd="1"/> -->
+	
+		<DeathReactionParam reactionFunc="DeathImpulse_Reaction">
+		</DeathReactionParam>
+	</DeathReactionParams>
+	
+</DeathHitReactionsParams>

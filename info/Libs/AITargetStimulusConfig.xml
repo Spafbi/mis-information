@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AITargetStimulusConfig version="1">
+	<!-- 	Syntax for this file:
+	
+		Required - version: Version of the file compared to the version of the system
+	
+		***** "Config" tag *****
+		Required parameters:
+			name: unique identifier for the configuration
+		Optional parameters:
+			template: identifier of a configuration to inherit (See Inheritance section below)
+			 
+		***** "Stimulus" subtag of "Stimuli" ***** 
+		Required parameters:
+			name: name of the stimulus
+			peak: peak level reached at the end of the attack (can be omitted if template is specified in config)
+		Optional parameters:
+			attack: the time taken for initial run-up of level from nil to peak
+			decay: the time taken for subsequent run down from the attack level to the sustain level
+			sustain: ratio of peak level maintained during the duration of the stimulus
+			release: time taken to decay from the sustain level to zero once stimulus is released
+			hostileOnly: specify if the stimulus should only be considered for hostile targets (1) or for everyone (0)
+			
+		***** "Pulse" subtag of "Pulses" of "Stimulus" *****
+		Required parameters:
+			name: name of the pulse, as referenced by code
+			value: initial value of the pulse, summed on top of the current envelope value
+			duration: the time of the linear depletion of the pulse
+			
+		***** "[Modifier]" subtag of "Modifiers" of "Stimulus" *****
+		Tag name:
+			The name of the tag states which modifier to apply to the stimulus. The following are valid modifiers:
+				* "Distance" - Multiply the track value by the distance between the agent and target
+		Optional parameters:
+			limit: Ceiling of the modifier value to convert it into a ratio
+			value: Scalar value to be applied to the modifier value
+			
+		***** Inheritance ***** 
+		Based on the "template" attribute, a configuration can inherit from another one using the following rules.
+			1. If the parent defines a stimulus and the configuration does not, the configuration copies the parent's definition.
+			2. If the parent defines a stimulus and the configuration also defines it, the configuration applies its own parameters
+				 on top of the parent's definition and uses this.
+				 
+		For pulses, stimulus inherited by a child will also inherit the pulses defined for that stimulus, if that pulse is not
+		already defined for the child's definition of that stimulus. The value and duration remain paired in either case.
+			
+		***** Generic Stimuli Name ***** 
+		The following are the generic names used by the system to match up with perception-generated stimuli.
+		
+		Visual Stimuli:
+			"VisualPrimary" - When the object has unbroken sighting on the target within its primary FOV
+			"VisualSecondary" - When the object has unbroken sighting on the target within its secondary FOV
+			
+		Sound Stimuli:
+			"SoundGeneric" - Generic sounds (AISOUND_GENERIC type)
+			"SoundCollision" - Basic collision sounds (AISOUND_COLLISION type)
+			"SoundCollisionLoud" - Large collision sounds (AISOUND_COLLISION_LOUD type)
+			"SoundMovement" - Basic movement sounds (AISOUND_MOVEMENT type)
+			"SoundMovementLoud" - Large movement sounds (AISOUND_MOVEMENT_LOUD type)
+			"SoundWeapon" - Weapon-related sounds (AISOUND_WEAPON type)
+			"SoundExplosion" - Explosion-related sounds (AISOUND_EXPLOSION type)
+			
+		Bullet Rain Stimuli:
+			"BulletRain" - When the object is bullet rained and/or hit from a projectile
+			
+	-->
+
+	<Config name="empty">
+		<Stimuli>
+		</Stimuli>
+	</Config>
+
+	<Config name="default">
+		<Stimuli>
+
+			<Stimulus name="VisualPrimary" hostileOnly="1" peak="5.0" attack="2.0" decay="3.0" sustain="0.2" release="5.0">
+				<Modifiers>
+					<Distance limit="200" value="50" />
+				</Modifiers>
+			</Stimulus>
+
+			<Stimulus name="VisualSecondary" hostileOnly="1" peak="3.0" attack="2.0" decay="3.0" sustain="0.2" release="5.0">
+				<Modifiers>
+					<Distance limit="200" value="50" />
+				</Modifiers>
+			</Stimulus>
+
+		</Stimuli>
+	</Config>
+
+	<Config name="Human">
+		<Stimuli>
+		
+			<!-- Audio stimuli rules:
+					 - Weapon are very interesting and catch the attention briefly when fired
+					 - Movement creates a base level modified by distance; ~10m away is more important than hostile weapon sounds
+					 - Explosions distract but quickly go away
+			-->
+			<Stimulus name="SoundMovement" hostileOnly="1" peak="1.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<Distance limit="50" value="6"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="SoundMovementLoud" hostileOnly="1" peak="1.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<Distance limit="50" value="6"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="SoundCollision" hostileOnly="1" peak="30.0" sustain="1.0" release="45.0">
+				<Modifiers>
+					<Distance limit="60" value="1"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="SoundCollisionLoud" hostileOnly="1" peak="50.0" sustain="1.0" release="45.0">
+				<Modifiers>
+					<Distance limit="60" value="1"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="SoundWeapon" hostileOnly="1" peak="3.0" attack="0.15" decay="5.0" sustain="0.33" release="30.0">
+				<Modifiers>
+					<Distance limit="150" value="6"/>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="SoundExplosion" hostileOnly="1" peak="500.0" attack="0.15" decay="3.0" sustain="1.0"/>
+
+			<!-- Visual stimuli rules: Only care about hostile targets, and really concentrate on them -->
+			<Stimulus name="VisualPrimary" hostileOnly="1" ignore="1.0" peak="5.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<Distance limit="200" value="50"/>
+					<DistanceIgnore limit="10" value="1"/>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="VisualSecondary" hostileOnly="1" ignore="1.0" peak="3.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<Distance limit="200" value="50"/>
+					<DistanceIgnore limit="20" value="1"/>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+			
+			<!-- Bullet rain and melee events causes a brief peak -->
+			<Stimulus name="BulletRain" hostileOnly="1" peak="1000.0" sustain="1.0" release="5.0">
+				<Modifiers>
+					<Distance limit="200" value="1"/>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="MeleeHit" hostileOnly="1" peak="1000.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+			<Stimulus name="MeleeHitNear" hostileOnly="1" peak="500.0" sustain="1.0" release="30.0">
+				<Modifiers>
+					<ClassThreat value="1.0"/>
+				</Modifiers>
+			</Stimulus>
+
+		</Stimuli>
+	</Config>
+
+	<Config name="Deer" template="Human">
+		<Stimuli/>
+	</Config>
+
+	<Config name="DeerFemale" template="Deer">
+		<Stimuli/>
+	</Config>
+
+	<Config name="Spiker" template="Human">
+		<Stimuli/>
+	</Config>
+
+</AITargetStimulusConfig>

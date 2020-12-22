@@ -1,0 +1,32 @@
+<ATLConfig atl_name="v_suv">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_suv_basic_bump">
+			<WwiseEvent wwise_name="Play_sedan_bump_on_road"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_damage">
+			<WwiseEvent wwise_name="Play_sedan_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_horn">
+			<WwiseEvent wwise_name="Play_sedan_horn"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_run">
+			<WwiseEvent wwise_name="Play_sedan_run_ambience"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_slip">
+			<WwiseEvent wwise_name="Play_sedan_slip"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_start">
+			<WwiseEvent wwise_name="Play_sedan_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_suv_basic_stop">
+			<WwiseEvent wwise_name="Play_sedan_stop"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_suv_basic_damage">
+			<WwiseEvent wwise_name="Stop_sedan_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_suv_basic_horn">
+			<WwiseEvent wwise_name="Stop_sedan_horn"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

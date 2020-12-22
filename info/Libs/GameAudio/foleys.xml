@@ -1,0 +1,417 @@
+<ATLConfig atl_name="foleys">
+	<AudioTriggers>
+		<!-- Foleys = sounds created from direct, physical human input -->
+		<!-- i.e; a footstep, slamming door, lightswitch click all require direct physical human input for creation of the sound at sound-off -->
+		<!-- the hum of a generator, fire on the grill and terminal sounds may be instigated by a human but aren't physically created by a human -->
+
+		<!-- PLAYER -->
+		<ATLTrigger atl_name="Play_backpack_close_3p">
+			<WwiseEvent wwise_name="Play_backpack_close_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_close_fp">
+			<WwiseEvent wwise_name="Play_backpack_close_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_move_item_3p">
+			<WwiseEvent wwise_name="Play_backpack_move_item_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_move_item_fp">
+			<WwiseEvent wwise_name="Play_backpack_move_item_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_open_3p">
+			<WwiseEvent wwise_name="Play_backpack_open_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_open_fp">
+			<WwiseEvent wwise_name="Play_backpack_open_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_place_item_3p">
+			<WwiseEvent wwise_name="Play_backpack_place_item_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_backpack_place_item_fp">
+			<WwiseEvent wwise_name="Play_backpack_place_item_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bandage_use_3p">
+			<WwiseEvent wwise_name="Play_bandage_use_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bandage_use_fp">
+			<WwiseEvent wwise_name="Play_bandage_use_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_book_page_turn_3p">
+			<WwiseEvent wwise_name="Play_book_page_turn_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_book_page_turn_fp">
+			<WwiseEvent wwise_name="Play_book_page_turn_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_dry_large">
+			<WwiseEvent wwise_name="Play_vegetation_dry_large"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_dry_medium">
+			<WwiseEvent wwise_name="Play_vegetation_dry_medium"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_dry_small">
+			<WwiseEvent wwise_name="Play_vegetation_dry_small"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_green_large">
+			<WwiseEvent wwise_name="Play_vegetation_green_large"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_green_medium">
+			<WwiseEvent wwise_name="Play_vegetation_green_medium"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bush_movement_green_small">
+			<WwiseEvent wwise_name="Play_vegetation_green_small"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_clothes_equip_3p">
+			<WwiseEvent wwise_name="Play_clothes_equip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_clothes_equip_fp">
+			<WwiseEvent wwise_name="Play_clothes_equip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_clothes_unequip_3p">
+			<WwiseEvent wwise_name="Play_clothes_unequip_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_clothes_unequip_fp">
+			<WwiseEvent wwise_name="Play_clothes_unequip_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_container_drink_3p">
+			<WwiseEvent wwise_name="Play_container_drink_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_container_drink_fp">
+			<WwiseEvent wwise_name="Play_container_drink_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_container_fill_3p">
+			<WwiseEvent wwise_name="Play_container_fill_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_container_fill_fp">
+			<WwiseEvent wwise_name="Play_container_fill_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_close_3p">
+			<WwiseEvent wwise_name="Play_crafting_close_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_close_fp">
+			<WwiseEvent wwise_name="Play_crafting_close_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_craft_3p">
+			<WwiseEvent wwise_name="Play_crafting_craft_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_craft_fp">
+			<WwiseEvent wwise_name="Play_crafting_craft_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_loop_3p">
+			<WwiseEvent wwise_name="Play_crafting_loop_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crafting_loop_3p">
+			<WwiseEvent wwise_name="Stop_crafting_loop_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_loop_fp">
+			<WwiseEvent wwise_name="Play_crafting_loop_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_crafting_loop_fp">
+			<WwiseEvent wwise_name="Stop_crafting_loop_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_move_item_3p">
+			<WwiseEvent wwise_name="Play_crafting_move_item_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_move_item_fp">
+			<WwiseEvent wwise_name="Play_crafting_move_item_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_open_3p">
+			<WwiseEvent wwise_name="Play_crafting_open_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crafting_open_fp">
+			<WwiseEvent wwise_name="Play_crafting_open_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crouch_off_3p">
+			<WwiseEvent wwise_name="Play_crouch_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crouch_off_fp">
+			<WwiseEvent wwise_name="Play_crouch_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crouch_on_3p">
+			<WwiseEvent wwise_name="Play_crouch_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_crouch_on_fp">
+			<WwiseEvent wwise_name="Play_crouch_on_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_crouch_3p">
+			<WwiseEvent wwise_name="Play_drinkStream_crouch_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_crouch_fp">
+			<WwiseEvent wwise_name="Play_drinkStream_crouch_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_drink_3p">
+			<WwiseEvent wwise_name="Play_drinkStream_drink_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_drink_fp">
+			<WwiseEvent wwise_name="Play_drinkStream_drink_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_waterScoop_3p">
+			<WwiseEvent wwise_name="Play_drinkStream_waterScoop_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_drinkStream_waterScoop_fp">
+			<WwiseEvent wwise_name="Play_drinkStream_waterScoop_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_duct_tape_3p">
+			<WwiseEvent wwise_name="Play_duct_tape_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_duct_tape_fp">
+			<WwiseEvent wwise_name="Play_duct_tape_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fabric_tear_3p">
+			<WwiseEvent wwise_name="Play_fabric_tear_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_fabric_tear_fp">
+			<WwiseEvent wwise_name="Play_fabric_tear_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_hard_eat_3p">
+			<WwiseEvent wwise_name="Play_food_hard_eat_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_hard_eat_fp">
+			<WwiseEvent wwise_name="Play_food_hard_eat_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_raw_eat_fp">
+			<WwiseEvent wwise_name="Play_food_raw_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_raw_eat_3p">
+			<WwiseEvent wwise_name="Play_food_raw_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_soft_eat_3p">
+			<WwiseEvent wwise_name="Play_food_soft_eat_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_food_soft_eat_fp">
+			<WwiseEvent wwise_name="Play_food_soft_eat_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jump_off_3p">
+			<WwiseEvent wwise_name="Play_jump_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jump_off_fp">
+			<WwiseEvent wwise_name="Play_jump_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jump_on_3p">
+			<WwiseEvent wwise_name="Play_jump_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_jump_on_fp">
+			<WwiseEvent wwise_name="Play_jump_on_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ladder_foot_3p">
+			<WwiseEvent wwise_name="Play_ladder_foot_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ladder_foot_fp">
+			<WwiseEvent wwise_name="Play_ladder_foot_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ladder_hand_3p">
+			<WwiseEvent wwise_name="Play_ladder_hand_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_ladder_hand_fp">
+			<WwiseEvent wwise_name="Play_ladder_hand_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_light_lighter_3p">
+			<WwiseEvent wwise_name="Play_light_lighter_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_light_lighter_fp">
+			<WwiseEvent wwise_name="Play_light_lighter_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_light_match_3p">
+			<WwiseEvent wwise_name="Play_light_match_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_light_match_fp">
+			<WwiseEvent wwise_name="Play_light_match_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_light_switch_toggle">
+			<WwiseEvent wwise_name="Play_light_switch_toggle"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_magazine_load_3p">
+			<WwiseEvent wwise_name="Play_magazine_load_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_magazine_load_fp">
+			<WwiseEvent wwise_name="Play_magazine_load_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_magazine_unload_3p">
+			<WwiseEvent wwise_name="Play_magazine_unload_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_magazine_unload_fp">
+			<WwiseEvent wwise_name="Play_magazine_unload_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_map_close_3p">
+			<WwiseEvent wwise_name="Play_map_close_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_map_close_fp">
+			<WwiseEvent wwise_name="Play_map_close_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_map_open_3p">
+			<WwiseEvent wwise_name="Play_map_open_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_map_open_fp">
+			<WwiseEvent wwise_name="Play_map_open_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_movement_3p">
+			<WwiseEvent wwise_name="Play_movement_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_movement_fp">
+			<WwiseEvent wwise_name="Play_movement_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_ammo_3p">
+			<WwiseEvent wwise_name="Play_pickup_ammo_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_ammo_fp">
+			<WwiseEvent wwise_name="Play_pickup_ammo_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_fabric_3p">
+			<WwiseEvent wwise_name="Play_pickup_fabric_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_fabric_fp">
+			<WwiseEvent wwise_name="Play_pickup_fabric_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_gun_3p">
+			<WwiseEvent wwise_name="Play_pickup_gun_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_gun_fp">
+			<WwiseEvent wwise_name="Play_pickup_gun_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_metal_3p">
+			<WwiseEvent wwise_name="Play_pickup_metal_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_metal_fp">
+			<WwiseEvent wwise_name="Play_pickup_metal_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_plastic_3p">
+			<WwiseEvent wwise_name="Play_pickup_pastic_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_plastic_fp">
+			<WwiseEvent wwise_name="Play_pickup_plastic_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_wood_3p">
+			<WwiseEvent wwise_name="Play_pickup_wood_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pickup_wood_fp">
+			<WwiseEvent wwise_name="Play_pickup_wood_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pills_eat_3p">
+			<WwiseEvent wwise_name="Play_pills_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_pills_eat_fp">
+			<WwiseEvent wwise_name="Play_pills_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_prone_off_3p">
+			<WwiseEvent wwise_name="Play_prone_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_prone_off_fp">
+			<WwiseEvent wwise_name="Play_prone_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_prone_on_3p">
+			<WwiseEvent wwise_name="Play_prone_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_prone_on_fp">
+			<WwiseEvent wwise_name="Play_prone_on_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_raise_lower_weapon_3p">
+			<WwiseEvent wwise_name="Play_raise_lower_weapon_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_raise_lower_weapon_fp">
+			<WwiseEvent wwise_name="Play_raise_lower_weapon_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_rounds_split_3p">
+			<WwiseEvent wwise_name="Play_rounds_split_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_rounds_split_fp">
+			<WwiseEvent wwise_name="Play_rounds_split_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_sandbag_fill_3p">
+			<WwiseEvent wwise_name="Play_sandbag_fill_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_sandbag_fill_fp">
+			<WwiseEvent wwise_name="Play_sandbag_fill_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_soda_open_3p">
+			<WwiseEvent wwise_name="Play_soda_open_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_soda_open_fp">
+			<WwiseEvent wwise_name="Play_soda_open_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_swim_3p">
+			<WwiseEvent wwise_name="Play_swim_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_swim_fp">
+			<WwiseEvent wwise_name="Play_swim_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_throw_overhand_3p">
+			<WwiseEvent wwise_name="Play_overhand_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_throw_overhand_fp">
+			<WwiseEvent wwise_name="Play_overhand_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_throw_underhand_3p">
+			<WwiseEvent wwise_name="Play_underhand_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_throw_underhand_fp">
+			<WwiseEvent wwise_name="Play_underhand_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_toolbox_search_3p">
+			<WwiseEvent wwise_name="Play_toolbox_search_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_toolbox_search_fp">
+			<WwiseEvent wwise_name="Play_toolbox_search_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_zoom_3p">
+			<WwiseEvent wwise_name="Play_zoom_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_zoom_fp">
+			<WwiseEvent wwise_name="Play_zoom_fp"/>
+		</ATLTrigger>
+
+		<!-- DOORS -->
+		<ATLTrigger atl_name="Play_door_actionable_close" path="doors">
+			<WwiseEvent wwise_name="Play_door_actionable_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_actionable_closed" path="doors">
+			<WwiseEvent wwise_name="Play_door_actionable_closed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_actionable_open" path="doors">
+			<WwiseEvent wwise_name="Play_door_actionable_open"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_fridge_close" path="doors">
+			<WwiseEvent wwise_name="Play_door_fridge_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_fridge_closed" path="doors">
+			<WwiseEvent wwise_name="Play_door_fridge_closed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_fridge_open" path="doors">
+			<WwiseEvent wwise_name="Play_door_fridge_open"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_metal_close" path="doors">
+			<WwiseEvent wwise_name="Play_door_metal_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_metal_closed" path="doors">
+			<WwiseEvent wwise_name="Play_door_metal_closed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_metal_knock" path="doors">
+			<WwiseEvent wwise_name="Play_door_metal_knock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_metal_open" path="doors">
+			<WwiseEvent wwise_name="Play_door_metal_open"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_shipping_container_close" path="doors">
+			<WwiseEvent wwise_name="Play_door_shipping_container_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_shipping_container_open" path="doors">
+			<WwiseEvent wwise_name="Play_door_shipping_container_open"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_wood_close" path="doors">
+			<WwiseEvent wwise_name="Play_door_wood_solid_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_wood_closed" path="doors">
+			<WwiseEvent wwise_name="Play_door_wood_solid_closed"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_wood_knock" path="doors">
+			<WwiseEvent wwise_name="Play_door_wood_knock"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_door_wood_open" path="doors">
+			<WwiseEvent wwise_name="Play_door_wood_solid_open"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_industrial_garage_door_close" path="doors">
+			<WwiseEvent wwise_name="Play_industrial_garage_door_close"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_industrial_garage_door_open" path="doors">
+			<WwiseEvent wwise_name="Play_industrial_garage_door_open"/>
+		</ATLTrigger>
+
+	</AudioTriggers>
+</ATLConfig>

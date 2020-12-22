@@ -10,8 +10,46 @@
 		<param name="description" value="@gnome_giant_cDescription"/>
 	</params>
 
-	<base_part class="static" type="2500" name="gnome_giant_c" max_health="15000" repair_with="DuctTape" towable="1">
+	<base_part class="static" type="2500" name="gnome_giant_c" max_health="37500" repair_with="DuctTape" towable="1">
 		<static filename="objects/props/misc/garden_gnome/gnome_standard_c_giant.cgf"/>
+		
+		<damage_multipliers>
+			<damage_multiplier damage_type="collision" multiplier="0.1"/>
+			<damage_multiplier damage_type="explosion" multiplier="4"/>
+			<damage_multiplier damage_type="frag" multiplier="3"/>
+			<damage_multiplier damage_type="fire" multiplier="1.0"/>
+			<damage_multiplier damage_type="melee" multiplier="0.0"/>
+			<damage_multiplier damage_type="repair" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_10mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_beanbag" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_pellet" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_12_gauge_slug" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_22" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_223" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_308" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_357" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_45x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_56x45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_5_70x28" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x39" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_7_62x51" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_9mm" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_acp_45" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_lge" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_sml" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_rock_player" multiplier="0.0"/>
+			<damage_multiplier damage_type="ammo_tranquilizer_dart" multiplier="0.0"/>
+			<damage_multiplier damage_type="arrow" multiplier="0.0"/>
+			<damage_multiplier damage_type="blunt" multiplier="0.0"/>
+			<damage_multiplier damage_type="flare" multiplier="0.0"/>
+			<damage_multiplier damage_type="hammer" multiplier="0.0"/>
+			<damage_multiplier damage_type="hatchet" multiplier="0.0"/>
+			<damage_multiplier damage_type="knife" multiplier="0.0"/>
+			<damage_multiplier damage_type="pickaxe" multiplier="0."/>
+			<damage_multiplier damage_type="torch" multiplier="0.0"/>
+			<damage_multiplier damage_type="sledgehammer" multiplier="0.0"/>
+		</damage_multipliers>
+		
 	</base_part>
 
 	<geometry>

@@ -291,18 +291,4 @@
 		</types>
 	</storage>
 
-	<steam>
-		<param name="tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="icon_url" value="http://miscreatedgame.com/shots/item_images/CraftedSMG_200.png?crc=86AD7695"/>
-		<param name="store_hidden" value="0"/>
-		<param name="amcoins" value="10"/>
-		<param name="tradable" value="0"/>
-		<param name="name_color" value="FF001E"/>
-		<param name="itemdefid" value="110023"/>
-		<param name="marketable" value="0"/>
-		<param name="store_tags" value="Category:Weapon;Slot:Primary"/>
-		<param name="background_color" value="2A2A2A"/>
-		<param name="hidden" value="0"/>
-		<param name="icon_url_large" value="http://miscreatedgame.com/shots/item_images/CraftedSMG_2048.png?crc=86AD7695"/>
-	</steam>
 </item>

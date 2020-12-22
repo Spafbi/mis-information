@@ -1,0 +1,36 @@
+<PrefabsLibrary Name="day_spa">
+ <Prefab Name="daySpa.building_l" Id="{9E275FA5-AD8D-452C-BEDA-A3D62E93898A}" Library="day_spa">
+  <Objects>
+   <Object Type="Brush" Layer="rain02" LayerGUID="{C5A55143-4C80-4084-A5E8-A3AA68CC2BCA}" Id="{C31E35CB-5F39-4A56-B243-BC476C2B3BA5}" Name="base_building_a16" Pos="11.59082,6.4082031,0" FloorNumber="-1" Rotate="1,0,0,8.7422777e-008" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\structures\day_spa\base_building_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="75" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1073741832">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="rain02" LayerGUID="{C5A55143-4C80-4084-A5E8-A3AA68CC2BCA}" Id="{93293E7A-C70B-4E90-90E1-B8C2813C922D}" Name="crown_accent_a45" Pos="11.59082,6.3811035,0.053695679" FloorNumber="-1" Rotate="1,0,0,8.7422777e-008" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/structures/day_spa/crown_accent_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="15" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1073741832">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="rain02" LayerGUID="{C5A55143-4C80-4084-A5E8-A3AA68CC2BCA}" Id="{915AB2A4-1D29-4C0F-BE9E-3F08297D3E9D}" Name="pillars_square21" Pos="11.59082,6.7080078,0" FloorNumber="-1" Rotate="1,0,0,8.7422777e-008" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/structures/day_spa/pillars_square_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="0" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="50" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1073741832">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="rain02" LayerGUID="{C5A55143-4C80-4084-A5E8-A3AA68CC2BCA}" Id="{4D9FD2BC-0102-4156-BBFF-6F7D6500BF0B}" Name="roof_cap_a17" Pos="11.59082,6.4082031,0" FloorNumber="-1" Rotate="1,0,0,8.7422777e-008" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\structures\day_spa\roof_cap_a.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="50" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{505FAC72-C797-4055-8FC0-9238D0622F56}" Id="{D85C0884-4BE7-45B5-A803-2E7DAEA52695}" Name="base_building_ac_glass7" Pos="11.59082,6.4082031,0" FloorNumber="-1" Rotate="1,0,0,8.7422777e-08" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/structures/day_spa/base_building_ac_glass.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+     <Ignore collision_class_terrain="0" collision_class_wheeled="0" collision_class_living="0" collision_class_articulated="0" collision_class_soft="0" collision_class_particle="0" gcc_player_capsule="0" gcc_player_body="0" gcc_vehicle="0" gcc_large_kickable="0" gcc_ragdoll="0" gcc_rigid="0" gcc_vtol="0" gcc_ai="0"/>
+    </CollisionFiltering>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

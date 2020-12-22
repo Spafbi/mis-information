@@ -1,0 +1,28 @@
+<ATLConfig atl_name="footsteps">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_footsteps_prone_3p" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_prone_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footstep_player_barefeet_fp" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_barefeet_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footstep_player_barefeet_3p" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_barefeet_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footstep_player_3p" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footstep_player_fp" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footsteps_prone_fp" path="footstep_player">
+   <WwiseEvent wwise_name="Play_footsteps_prone_fp"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_footstep_npc" path="footstep_npc_shoes">
+   <WwiseEvent wwise_name="Play_footsteps_3p"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_animal_medium_footstep" path="footstep_animal_medium">
+   <WwiseEvent wwise_name="Play_deer_footsteps"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

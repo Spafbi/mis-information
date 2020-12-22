@@ -1,0 +1,18 @@
+<TagDefinition version="2">
+ <Imports>
+  <Import filename="Animations/Mannequin/ADB/itemActions.xml"/>
+ </Imports>
+ <Tags>
+  <Tag name="Motion_Idle"/>
+  <Tag name="Motion_Move"/>
+  <Tag name="CODE_MT_idleToMove"/>
+  <Tag name="Motion_IdleTurn"/>
+  <Tag name="CODE_MT_walkToIdle"/>
+  <Tag name="CODE_MT_runToIdle"/>
+  <Tag name="hitDeath" subTagDef="Animations/Mannequin/ADB/hitDeathTags.xml"/>
+  <Tag name="AI_BecomeAlerted" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="AI_Melee" subTagDef="Animations/Mannequin/ADB/AIMeleeTags.xml"/>
+  <Tag name="AI_TargetUnreachable"/>
+  <Tag name="AI_ThrowRock"/>
+ </Tags>
+</TagDefinition>

@@ -8,7 +8,7 @@
 		<param name="destroyWhenDegraded" value="1"/>
 		<param name="place_terrain_only" value="1"/>
 		<param name="display_name" value="@TrapPropane2m"/>
-		<param name="view_dist_min" value="75"/> <!-- minimum 75m draw distance (relevance +5m) -->
+		<param name="view_dist_min" value="150"/> <!-- minimum 75m draw distance (relevance +5m) -->
 		<param name="no_icon" value="1"/>
 	</params>
 

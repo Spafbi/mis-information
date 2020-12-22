@@ -1,0 +1,22 @@
+<TagDefinition version="2">
+ <Tags>
+  <!-- Note: Leave 'state' tags on the top so it is easier to track the indeces, always add at the end-->
+  <Group name="state">
+   <Tag name="open"/>
+   <Tag name="closed"/>
+  </Group>
+  <Group name="type">
+   <Tag name="fireDoor"/>
+   <Tag name="OpenElevatorDoor"/>
+   <Tag name="OpenCarparkFence"/>
+   <Tag name="KickDoor"/>
+   <Tag name="elevatorDoorMP"/>
+   <Tag name="rollupDoor"/>
+   <Tag name="valve"/>
+   <Tag name="BossInteraction"/>
+   <Tag name="WallPunch"/>
+   <Tag name="woodenwallkick"/>
+   <Tag name="KickplaneDoor"/>
+  </Group>
+ </Tags>
+</TagDefinition>

@@ -1,0 +1,13 @@
+<MetaData>
+ <Attributes>
+  <loading_video value=""/>
+  <loading_image value="Levels/_Empty/LoadingLevel.dds"/>
+  <unloading_image value="Levels/_Empty/LoadingLevel.dds"/>
+  <DescriptionText text="@Loading_screen_info_islands"/>
+ </Attributes>
+ <Gamerules MP2="Miscreated"/>
+ <HeaderText text="_Empty"/>
+ <DescriptionText text="_Empty"/>
+ <Display Name="_Empty"/>
+ <MiniMap Filename="" startX="331.76276" startY="173.65878" endX="891.76276" endY="733.65881" width="2048" height="2048"/>
+</MetaData>

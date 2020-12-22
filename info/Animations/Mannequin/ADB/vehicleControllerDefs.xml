@@ -1,0 +1,135 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/vehicleTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/vehicleFragments.xml"/>
+ <FragmentDefs>
+  <EnterDoorDriver scopes="Driver"/>
+  <EnterDoorPassenger1 scopes="Passenger1"/>
+  <IdleDriver scopes="Driver+DrivingWheel"/>
+  <ExitDoorDriver scopes="Driver"/>
+  <EnterDoorPassenger2 scopes="Passenger2"/>
+  <EnterDoorPassenger3 scopes="Passenger3"/>
+  <EnterDoorPassenger4 scopes="Passenger2"/>
+  <EnterDoorPassenger5 scopes="Passenger3"/>
+  <EnterDoorPassenger6 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5"/>
+  <EnterDoorPassenger7 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5"/>
+  <EnterDoorPassenger8 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5"/>
+  <EnterDoorPassenger9 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5"/>
+  <EnterDoorPassenger10 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5+Passenger6+Passenger7+Passenger8+Passenger9"/>
+  <IdlePassenger1 scopes="Passenger1"/>
+  <IdlePassenger2 scopes="Passenger2"/>
+  <IdlePassenger3 scopes="Passenger3"/>
+  <IdlePassenger4 scopes="Passenger4"/>
+  <IdlePassenger5 scopes="Passenger5"/>
+  <IdlePassenger6 scopes="Passenger6"/>
+  <IdlePassenger7 scopes="Passenger7"/>
+  <IdlePassenger8 scopes="Passenger8"/>
+  <IdlePassenger9 scopes="Passenger9"/>
+  <IdlePassenger10 scopes="Passenger10"/>
+  <IdlePassenger11 scopes="Passenger11"/>
+  <IdlePassenger12 scopes="Passenger12"/>
+  <IdlePassenger13 scopes="Passenger13"/>
+  <IdlePassenger14 scopes="Passenger14"/>
+  <IdlePassenger15 scopes="Passenger15"/>
+  <IdlePassenger16 scopes="Passenger16"/>
+  <IdlePassenger17 scopes="Passenger17"/>
+  <IdlePassenger18 scopes="Passenger18"/>
+  <IdlePassenger19 scopes="Passenger19"/>
+  <IdlePassenger20 scopes="Passenger20"/>
+  <IdlePassenger21 scopes="Passenger21"/>
+  <IdlePassenger22 scopes="Passenger22"/>
+  <IdlePassenger23 scopes="Passenger23"/>
+  <IdlePassenger24 scopes="Passenger24"/>
+  <IdlePassenger25 scopes="Passenger25"/>
+  <IdlePassenger26 scopes="Passenger26"/>
+  <IdlePassenger27 scopes="Passenger27"/>
+  <IdlePassenger28 scopes="Passenger28"/>
+  <IdlePassenger29 scopes="Passenger29"/>
+  <ExitDoorPassenger1 scopes="Passenger1"/>
+  <ExitDoorPassenger2 scopes="Passenger2"/>
+  <ExitDoorPassenger3 scopes="Passenger3"/>
+  <ExitDoorPassenger4 scopes="Passenger4"/>
+  <ExitDoorPassenger5 scopes="Passenger5"/>
+  <ExitDoorPassenger6 scopes="Passenger6"/>
+  <ExitDoorPassenger7 scopes="Passenger7"/>
+  <ExitDoorPassenger8 scopes="Passenger8"/>
+  <ExitDoorPassenger9 scopes="Passenger9"/>
+  <ExitDoorPassenger10 scopes="Driver+Passenger1+Passenger2+Passenger3+Passenger4+Passenger5+Passenger6+Passenger7+Passenger8+Passenger9"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <hull />
+  <Driver />
+  <Passenger1 />
+  <Passenger2 />
+  <Passenger3 />
+  <Passenger4 />
+  <Passenger5 />
+  <Passenger6 />
+  <Passenger7 />
+  <Passenger8 />
+  <Passenger9 />
+  <Passenger10 />
+  <Passenger11 />
+  <Passenger12 />
+  <Passenger13 />
+  <Passenger14 />
+  <Passenger15 />
+  <Passenger16 />
+  <Passenger17 />
+  <Passenger18 />
+  <Passenger19 />
+  <Passenger20 />
+  <Passenger21 />
+  <Passenger22 />
+  <Passenger23 />
+  <Passenger24 />
+  <Passenger25 />
+  <Passenger26 />
+  <Passenger27 />
+  <Passenger28 />
+  <Passenger29 />
+  <Passenger30 />
+  <DrivingWheel />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <Driver layer="0" numLayers="3" context="Driver"/>
+  <Passenger1 layer="0" numLayers="1" context="Passenger1"/>
+  <Passenger2 layer="0" numLayers="1" context="Passenger2"/>
+  <Passenger3 layer="0" numLayers="1" context="Passenger3"/>
+  <Passenger4 layer="0" numLayers="1" context="Passenger4"/>
+  <Passenger5 layer="0" numLayers="1" context="Passenger5"/>
+  <Passenger6 layer="0" numLayers="1" context="Passenger6"/>
+  <Passenger7 layer="0" numLayers="1" context="Passenger7"/>
+  <Passenger8 layer="0" numLayers="1" context="Passenger8"/>
+  <Passenger9 layer="0" numLayers="1" context="Passenger9"/>
+  <Passenger10 layer="0" numLayers="1" context="Passenger10"/>
+  <Passenger11 layer="0" numLayers="1" context="Passenger11"/>
+  <Passenger12 layer="0" numLayers="1" context="Passenger12"/>
+  <Passenger13 layer="0" numLayers="1" context="Passenger13"/>
+  <Passenger14 layer="0" numLayers="1" context="Passenger14"/>
+  <Passenger15 layer="0" numLayers="1" context="Passenger15"/>
+  <Passenger16 layer="0" numLayers="1" context="Passenger16"/>
+  <Passenger17 layer="0" numLayers="1" context="Passenger17"/>
+  <Passenger18 layer="0" numLayers="1" context="Passenger18"/>
+  <Passenger19 layer="0" numLayers="1" context="Passenger19"/>
+  <Passenger20 layer="0" numLayers="1" context="Passenger20"/>
+  <Passenger21 layer="0" numLayers="1" context="Passenger21"/>
+  <Passenger22 layer="0" numLayers="1" context="Passenger22"/>
+  <Passenger23 layer="0" numLayers="1" context="Passenger23"/>
+  <Passenger24 layer="0" numLayers="1" context="Passenger24"/>
+  <Passenger25 layer="0" numLayers="1" context="Passenger25"/>
+  <Passenger26 layer="0" numLayers="1" context="Passenger26"/>
+  <Passenger27 layer="0" numLayers="1" context="Passenger27"/>
+  <Passenger28 layer="0" numLayers="1" context="Passenger28"/>
+  <Passenger29 layer="0" numLayers="1" context="Passenger29"/>
+  <Passenger30 layer="0" numLayers="1" context="Passenger30"/>
+  <DrivingWheel layer="10" numLayers="1" context="hull"/>
+  <Body layer="0" numLayers="3" context="hull"/>
+  <DoorDriver layer="3" numLayers="1" context="hull"/>
+  <DoorPassenger1 layer="4" numLayers="1" context="hull"/>
+  <DoorPassenger2 layer="5" numLayers="1" context="hull"/>
+  <DoorPassenger3 layer="6" numLayers="1" context="hull"/>
+  <DoorPassenger4 layer="7" numLayers="1" context="hull"/>
+  <DoorPassenger5 layer="8" numLayers="1" context="hull"/>
+  <DoorGunner layer="9" numLayers="1" context="hull"/>
+ </ScopeDefs>
+</ControllerDef>

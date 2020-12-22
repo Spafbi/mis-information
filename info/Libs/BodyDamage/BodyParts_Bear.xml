@@ -1,0 +1,33 @@
+<BodyDamage>
+	<Parts>
+		<Part name="frontLeftLeg" flags="knee">
+			<Bone name="bear_l_wrist_jnt"/>
+			<Bone name="bear_l_elbow_jnt"/>
+			<Bone name="bear_l_shoulder_jnt"/>
+		</Part>
+		<Part name="frontRightLeg" flags="knee">
+			<Bone name="bear_r_wrist_jnt"/>
+			<Bone name="bear_r_elbow_jnt"/>
+			<Bone name="bear_r_shoulder_jnt"/>
+		</Part>
+		<Part name="backLeftLeg" flags="knee">
+			<Bone name="bear_l_foot_jnt"/>
+			<Bone name="bear_l_knee_jnt"/>
+			<Bone name="bear_l_thigh_jnt"/>
+		</Part>
+		<Part name="backRightLeg" flags="knee">
+			<Bone name="bear_r_foot_jnt"/>
+			<Bone name="bear_r_knee_jnt"/>
+			<Bone name="bear_r_thigh_jnt"/>
+		</Part>
+		<Part name="head" flags="headshot">
+			<Bone name="bear_head_jnt"/>
+		</Part>
+		<Part name="torso">
+			<Bone name="bear_spine_jnt"/>
+			<Bone name="bear_spine01_jnt"/>
+			<Bone name="bear_spine02_jnt"/>
+			<Bone name="bear_neck_jnt"/>
+		</Part>
+	</Parts>
+</BodyDamage>

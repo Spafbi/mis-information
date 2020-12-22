@@ -1,0 +1,29 @@
+<ATLConfig atl_name="g_preloaddata">
+ <AudioPreloads>
+  <ATLPreloadRequest atl_name="init" atl_type="AutoLoad">
+   <ATLPlatforms>
+    <Platform atl_name="pc" atl_config_group_name="default"/>
+    <Platform atl_name="ps4" atl_config_group_name="default"/>
+    <Platform atl_name="xboxone" atl_config_group_name="default"/>
+    <Platform atl_name="mac" atl_config_group_name="default"/>
+    <Platform atl_name="linux" atl_config_group_name="default"/>
+   </ATLPlatforms>
+   <ATLConfigGroup atl_name="default">
+    <WwiseFile wwise_name="ambiences.bnk"/>
+    <WwiseFile wwise_name="bullets.bnk"/>
+    <WwiseFile wwise_name="collisions.bnk"/>
+    <WwiseFile wwise_name="creatures.bnk"/>
+    <WwiseFile wwise_name="foleys.bnk"/>
+    <WwiseFile wwise_name="footsteps.bnk"/>
+    <WwiseFile wwise_name="music.bnk"/>
+    <WwiseFile wwise_name="objects.bnk"/>
+    <WwiseFile wwise_name="particles.bnk"/>
+    <WwiseFile wwise_name="player.bnk"/>
+    <WwiseFile wwise_name="ui.bnk"/>
+    <WwiseFile wwise_name="vehicles.bnk"/>
+    <WwiseFile wwise_name="weapons.bnk"/>
+    <WwiseFile wwise_name="weather.bnk"/>
+   </ATLConfigGroup>
+  </ATLPreloadRequest>
+ </AudioPreloads>
+</ATLConfig>

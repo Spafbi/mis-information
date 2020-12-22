@@ -1,0 +1,7 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/deerControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Deer" enabled="1" database="Animations/Mannequin/ADB/deer.adb" context="Char3P" model="objects/characters/animals/deer/deer.cdf"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

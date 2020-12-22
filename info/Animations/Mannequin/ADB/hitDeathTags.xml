@@ -1,0 +1,157 @@
+<TagDefinition version="2">
+ <Imports>
+  <Import filename="Animations/Mannequin/ADB/AICoverActionTransitionTags.xml"/>
+  <Import filename="Animations/Mannequin/ADB/AICoverActionTags.xml"/>
+  <Import filename="Animations/Mannequin/ADB/AICoverBodyDirectionChangeTags.xml"/>
+ </Imports>
+ <Tags>
+  <Group name="shotOrigin">
+   <Tag name="so_forward" priority="3"/>
+   <Tag name="so_back" priority="3"/>
+   <Tag name="so_right" priority="3"/>
+   <Tag name="so_left" priority="3"/>
+   <Tag name="so_ahead" priority="3"/>
+   <Tag name="so_behind" priority="3"/>
+   <Tag name="so_leftside" priority="3"/>
+   <Tag name="so_rightside" priority="3"/>
+  </Group>
+  <Group name="movementDirection">
+   <Tag name="md_forward"/>
+   <Tag name="md_back"/>
+   <Tag name="md_right"/>
+   <Tag name="md_left"/>
+   <Tag name="md_ahead"/>
+  </Group>
+  <Group name="AllowedStances">
+   <Tag name="STANCE_STAND"/>
+   <Tag name="STANCE_RELAXED"/>
+   <Tag name="STANCE_STEALTH"/>
+   <Tag name="STANCE_ALERTED"/>
+   <Tag name="STANCE_LOW_COVER"/>
+   <Tag name="STANCE_HIGH_COVER"/>
+   <Tag name="STANCE_CROUCH"/>
+   <Tag name="STANCE_SIT"/>
+   <Tag name="StandingStances"/>
+   <Tag name="CoverStances"/>
+   <Tag name="StandingStancesAndCrouch"/>
+   <Tag name="StandingAndCoverStances"/>
+  </Group>
+  <Group name="AllowedParts">
+   <Tag name="LowerBody"/>
+   <Tag name="Head"/>
+   <Tag name="UpperBody"/>
+   <Tag name="RightShoulder"/>
+   <Tag name="RightArm"/>
+   <Tag name="RightLeg"/>
+   <Tag name="LeftLeg"/>
+   <Tag name="Legs"/>
+   <Tag name="LeftArm"/>
+   <Tag name="Arms"/>
+   <Tag name="UpperTorso"/>
+   <Tag name="LowerTorso"/>
+   <Tag name="Torso"/>
+   <Tag name="Groin"/>
+   <Tag name="RightTorso"/>
+   <Tag name="RightTorsoAndArm"/>
+   <Tag name="RightArmAndShoulder"/>
+   <Tag name="MainBody"/>
+  </Group>
+  <Group name="hit_type">
+   <Tag name="melee" priority="2"/>
+   <Tag name="collision" priority="2"/>
+   <Tag name="frag" priority="2"/>
+   <Tag name="explosion" priority="2"/>
+   <Tag name="stealthKill" priority="2"/>
+   <Tag name="punish" priority="2"/>
+   <Tag name="punishFall" priority="2"/>
+   <Tag name="mike_burn" priority="2"/>
+   <Tag name="fall" priority="2"/>
+   <Tag name="normal" priority="2"/>
+   <Tag name="fire" priority="2"/>
+   <Tag name="bullet" priority="2"/>
+   <Tag name="environmentalThrow" priority="2"/>
+   <Tag name="meleeLeft" priority="2"/>
+   <Tag name="meleeRight" priority="2"/>
+   <Tag name="meleeKick" priority="2"/>
+   <Tag name="meleeUppercut" priority="2"/>
+   <Tag name="vehicleDestruction" priority="2"/>
+   <Tag name="electricity" priority="2"/>
+   <Tag name="stealthKill_Maximum" priority="2"/>
+   <Tag name="eventDamage" priority="2"/>
+   <Tag name="environmentalMelee" priority="2"/>
+   <Tag name="bleed" priority="2"/>
+   <Tag name="hunger" priority="2"/>
+   <Tag name="thirst" priority="2"/>
+   <Tag name="radiation" priority="2"/>
+   <Tag name="freeze" priority="2"/>
+   <Tag name="overheat" priority="2"/>
+   <Tag name="repair" priority="2"/>
+   <Tag name="drown" priority="2"/>
+   <Tag name="smoke" priority="2"/>
+   <Tag name="event" priority="2"/>
+   <Tag name="impulse_hit" priority="2"/>
+   <Tag name="disableCollisions" priority="2"/>
+   <Tag name="heavyBullet" priority="2"/>
+   <Tag name="HighVelocityHitTypes" priority="2"/>
+   <Tag name="ExplosionTypes" priority="2"/>
+   <Tag name="HeavyHitTypes" priority="2"/>
+   <Tag name="MeleeFinishingMove" priority="2"/>
+   <Tag name="ElectricArrow" priority="2"/>
+   <Tag name="ammo_10mm" priority="2"/>
+   <Tag name="ammo_12_gauge_beanbag" priority="2"/>
+   <Tag name="ammo_12_gauge_pellet" priority="2"/>
+   <Tag name="ammo_12_gauge_slug" priority="2"/>
+   <Tag name="ammo_tranquilizer_dart" priority="2"/>
+   <Tag name="ammo_22" priority="2"/>
+   <Tag name="ammo_223" priority="2"/>
+   <Tag name="ammo_308" priority="2"/>
+   <Tag name="ammo_357" priority="2"/>
+   <Tag name="ammo_5_45x39" priority="2"/>
+   <Tag name="ammo_5_56x45" priority="2"/>
+   <Tag name="ammo_5_70x28" priority="2"/>
+   <Tag name="ammo_7_62x39" priority="2"/>
+   <Tag name="ammo_7_62x51" priority="2"/>
+   <Tag name="ammo_9mm" priority="2"/>
+   <Tag name="ammo_acp_45" priority="2"/>
+   <Tag name="ammo_rock_lge" priority="2"/>
+   <Tag name="ammo_rock_sml" priority="2"/>
+   <Tag name="ammo_venom_spit" priority="2"/>
+   <Tag name="arrow" priority="2"/>
+   <Tag name="blunt" priority="2"/>
+   <Tag name="flare" priority="2"/>
+   <Tag name="hammer" priority="2"/>
+   <Tag name="hatchet" priority="2"/>
+   <Tag name="knife" priority="2"/>
+   <Tag name="pickaxe" priority="2"/>
+   <Tag name="torch" priority="2"/>
+  </Group>
+  <Group name="Projectiles">
+   <Tag name="SmallCaliberProjectiles"/>
+   <Tag name="MediumCaliberProjectiles"/>
+   <Tag name="HeavyCaliberProjectiles"/>
+   <Tag name="SmallAndMediumCaliberProjectiles"/>
+   <Tag name="ElectricProjectiles"/>
+  </Group>
+  <Group name="Weapons">
+   <Tag name="MediumCaliberWeapons"/>
+  </Group>
+  <Group name="Type">
+   <Tag name="hit" priority="1"/>
+   <Tag name="death" priority="1"/>
+   <Tag name="collisionreaction" priority="1"/>
+   <Tag name="detail" priority="1"/>
+   <Tag name="post_death"/>
+  </Group>
+  <Group name="DestructionEvent">
+   <Tag name="jelly_explode"/>
+   <Tag name="armor_chest_r_explode"/>
+   <Tag name="armor_chest_l_explode"/>
+   <Tag name="head_damaged"/>
+   <Tag name="mortar_explode"/>
+   <Tag name="healthRatio25"/>
+   <Tag name="healthRatio50"/>
+   <Tag name="healthRatio75"/>
+  </Group>
+  <Tag name="targetFP"/>
+ </Tags>
+</TagDefinition>

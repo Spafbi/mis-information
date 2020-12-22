@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12075</WindowHeight>
+  <WindowWidth>10710</WindowWidth>
+  <WindowTopX>195</WindowTopX>
+  <WindowTopY>75</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s66">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="31" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:AutoFitWidth="0" ss:Width="153.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="136.5"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="59.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="92.25"/>
+   <Row ss:StyleID="s62">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AI state</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">facial sequence file</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IDLE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">idle_01</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">idle_02</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">idle_03</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">idle_04</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ALERT</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">alert_01</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">alert_02</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">alert_03</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">alert_04</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMBAT</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">combat_01</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">combat_02</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">combat_03</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s64">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">combat_04</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5" ss:Span="8"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>Column B</Sort>
+  </Sorting>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

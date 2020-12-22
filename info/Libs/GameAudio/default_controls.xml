@@ -1,0 +1,19 @@
+<ATLConfig atl_name="default_controls">
+ <AudioRTPCs>
+  <ATLRtpc atl_name="object_speed"/>
+ </AudioRTPCs>
+ <AudioSwitches>
+  <ATLSwitch atl_name="object_velocity_tracking">
+   <ATLSwitchState atl_name="on">
+    <ATLSwitchRequest atl_name="object_velocity_tracking">
+     <ATLValue atl_name="on"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="off">
+    <ATLSwitchRequest atl_name="object_velocity_tracking">
+     <ATLValue atl_name="off"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+  </ATLSwitch>
+ </AudioSwitches>
+</ATLConfig>

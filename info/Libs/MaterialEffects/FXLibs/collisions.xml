@@ -1,0 +1,340 @@
+<FXLib>
+
+	<!-- FABRIC -->
+	<Effect name="fabric_default">
+		<Audio trigger="Play_collision_fabric_default" />
+	</Effect>
+
+	<!-- GLASS -->
+	<Effect name="glass_glass"> <!-- Rename to glass_default -->
+		<Audio trigger="Play_collision_glass_default" />
+		<Particle>
+			<Name>collisions.small.glass</Name>
+		</Particle>
+	</Effect>
+	<Effect name="glass_metal">
+		<Audio trigger="Play_collision_glass_default" />
+		<Particle>
+			<Name>collisions.small.glass</Name>
+		</Particle>
+	</Effect>
+	<Effect name="glass_wood">
+		<Audio trigger="Play_collision_glass_on_wood" />
+		<Particle>
+			<Name>collisions.small.glass</Name>
+		</Particle>
+	</Effect>
+
+	<!-- GRASS -->
+	<Effect name="grass_default">
+		<Audio trigger="Play_collision_grass_default" />
+		<Particle>
+			<Name>collisions.small.leaves</Name>
+		</Particle>
+	</Effect>
+
+	<!-- GRENADE -->
+	<Effect name="grenade_default">
+		<Audio trigger="Play_collision_grenade_default" />
+		<Particle>
+			<Name>collisions.small.default</Name>
+		</Particle>
+	</Effect>
+	<Effect name="grenade_grass">
+		<Audio trigger="Play_collision_grenade_on_grass" />
+		<Particle>
+			<Name>collisions.small.leaves</Name>
+		</Particle>
+	</Effect>
+	<Effect name="grenade_metal">
+		<Audio trigger="Play_collision_metal_on_metal" />
+		<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+	<Effect name="grenade_rock">
+		<Audio trigger="Play_collision_grenade_on_rock" />
+		<Particle>
+			<Name>collisions.small.rock</Name>
+		</Particle>
+	</Effect>
+	<Effect name="grenade_soil">
+		<Audio trigger="Play_collision_grenade_on_soil" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+	<Effect name="grenade_wood">
+		<Audio trigger="Play_collision_grenade_on_wood_solid" />
+		<Particle>
+			<Name>collisions.small.wood</Name>
+		</Particle>
+	</Effect>
+
+	<!-- RUBBER -->
+	<Effect name="rubber_default">
+		<Audio trigger="Play_collision_rubber_default" />
+	</Effect>
+
+
+	<!-- SAND -->
+	<Effect name="sand_default">
+		<Audio trigger="Play_collision_sand_default" />
+		<Particle>
+			<Name>collisions.small.default</Name>
+		</Particle>
+	</Effect>
+
+	<!-- SOIL -->
+	<Effect name="soil_default">
+		<Audio trigger="Play_collision_dirt_default" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+
+	<!-- METAL -->
+	<Effect name="metal_metal">
+		<Audio trigger="Play_collision_metal_on_metal" />
+			<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rock">
+		<Audio trigger="Play_collision_metal_on_rock" />
+		<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+
+	<!-- METAL RAY PROXY -->
+	<Effect name="metal_rayproxy_default">
+		<Audio trigger="Play_collision_chainlink_default" />
+		<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rayproxy_glass">
+		<Audio trigger="Play_collision_chainlink_glass" />
+		<Particle>
+			<Name>collisions.small.glass</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rayproxy_metal">
+		<Audio trigger="Play_collision_chainlink_metal" />
+		<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rayproxy_rock">
+		<Audio trigger="Play_collision_chainlink_rock" />
+		<Particle>
+			<Name>collisions.small.metal_metal</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rayproxy_soil">
+		<Audio trigger="Play_collision_chainlink_soil" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_rayproxy_wood">
+		<Audio trigger="Play_collision_chainlink_wood" />
+		<Particle>
+			<Name>collisions.small.wood</Name>
+		</Particle>
+	</Effect>
+
+	<!-- METAL SHELL -->
+	<Effect name="metal_shell_default">
+		<Audio trigger="Play_collision_metal_shell_default" />
+	</Effect>
+	<Effect name="metal_shell_carpet">
+		<Audio trigger="Play_collision_metal_shell_on_carpet" />
+	</Effect>
+	<Effect name="metal_shell_concrete">
+		<Audio trigger="Play_collision_metal_shell_on_concrete" />
+	</Effect>
+	<Effect name="metal_shell_dirt">
+		<Audio trigger="Play_collision_metal_shell_on_dirt" />
+	</Effect>
+	<Effect name="metal_shell_glass">
+		<Audio trigger="Play_collision_metal_shell_on_glass" />
+	</Effect>
+	<Effect name="metal_shell_grass">
+		<Audio trigger="Play_collision_metal_shell_on_grass" />
+	</Effect>
+	<Effect name="metal_shell_gravel">
+		<Audio trigger="Play_collision_metal_shell_on_gravel" />
+	</Effect>
+	<Effect name="metal_shell_metal">
+		<Audio trigger="Play_collision_metal_shell_on_metal" />
+	</Effect>
+	<Effect name="metal_shell_sand">
+		<Audio trigger="Play_collision_metal_shell_on_sand" />
+	</Effect>
+	<Effect name="metal_shell_water">
+		<Audio trigger="Play_collision_metal_shell_on_water" />
+		<Particle>
+			<Name>collisions.shells.water</Name>
+		</Particle>
+	</Effect>
+	<Effect name="metal_shell_wood">
+		<Audio trigger="Play_collision_metal_shell_on_wood" />
+	</Effect>
+
+	<!-- ROCK -->
+	<Effect name="rock_rock"> <!-- rename to rock_default -->
+		<Audio trigger="Play_collision_rock_on_rock" />
+		<Particle>
+			<Name>collisions.small.rock</Name>
+		</Particle>
+	</Effect>
+	<Effect name="rock_soil">
+		<Audio trigger="Play_collision_rock_on_soil" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+
+	<!-- VEGETATION -->
+	<Effect name="vegetation_default">
+		<Audio trigger="Play_collision_vegetation_default" />
+		<Particle>
+			<Name>collisions.small.leaves</Name>
+		</Particle>
+	</Effect>
+
+	<!-- VEHICLE LIGHT -->
+	<Effect name="veh_light_metal">
+	</Effect>
+	<Effect name="veh_light_metal_rayproxy">
+	</Effect>
+	<Effect name="veh_light_veh_light">
+	</Effect>
+	<Effect name="veh_light_veh_medium">
+	</Effect>
+	<Effect name="veh_light_veh_heavy">
+	</Effect>
+	<Effect name="veh_light_wood">
+	</Effect>
+	<Effect name="veh_light_rock">
+	</Effect>
+	<Effect name="veh_light_soil">
+	</Effect>
+	<Effect name="veh_light_grass">
+	</Effect>
+	<Effect name="veh_light_vegetation">
+	</Effect>
+	<Effect name="veh_light_fabric">
+	</Effect>
+	<Effect name="veh_light_rubber">
+	</Effect>
+
+	<!-- VEHICLE MEDIUM -->
+	<Effect name="veh_medium_metal">
+	</Effect>
+	<Effect name="veh_medium_metal_rayproxy">
+	</Effect>
+	<Effect name="veh_medium_veh_light">
+	</Effect>
+	<Effect name="veh_medium_veh_medium">
+	</Effect>
+	<Effect name="veh_medium_veh_heavy">
+	</Effect>
+	<Effect name="veh_medium_wood">
+	</Effect>
+	<Effect name="veh_medium_rock">
+	</Effect>
+	<Effect name="veh_medium_soil">
+	</Effect>
+	<Effect name="veh_medium_grass">
+	</Effect>
+	<Effect name="veh_medium_vegetation">
+	</Effect>
+	<Effect name="veh_medium_fabric">
+	</Effect>
+	<Effect name="veh_medium_rubber">
+	</Effect>
+
+	<!-- VEHICLE HEAVY -->
+	<Effect name="veh_heavy_metal">
+	</Effect>
+	<Effect name="veh_heavy_metal_rayproxy">
+	</Effect>
+	<Effect name="veh_heavy_veh_light">
+	</Effect>
+	<Effect name="veh_heavy_veh_medium">
+	</Effect>
+	<Effect name="veh_heavy_veh_heavy">
+	</Effect>
+	<Effect name="veh_heavy_wood">
+	</Effect>
+	<Effect name="veh_heavy_rock">
+	</Effect>
+	<Effect name="veh_heavy_soil">
+	</Effect>
+	<Effect name="veh_heavy_grass">
+	</Effect>
+	<Effect name="veh_heavy_vegetation">
+	</Effect>
+	<Effect name="veh_heavy_fabric">
+	</Effect>
+	<Effect name="veh_heavy_rubber">
+	</Effect>
+
+	<!-- VENOM -->
+	<Effect name="venom_default">
+		<Audio trigger="Play_collision_water_default" /> <!-- Change to acidic hiss -->
+		<Particle>
+			<Name>collisions.small.venom</Name>
+		</Particle>
+	</Effect>
+
+	<!-- WATER -->
+	<Effect name="water_default">
+		<Audio trigger="Play_collision_water_default" />
+		<Particle>
+			<Name>collisions.small.water</Name>
+		</Particle>
+	</Effect>
+
+	<!-- WOOD -->
+	<Effect name="wood_grass">
+		<Audio trigger="Play_collision_wood_solid_on_grass" />
+		<Particle>
+			<Name>collisions.small.leaves</Name>
+		</Particle>
+	</Effect>
+	<Effect name="wood_metal">
+		<Audio trigger="Play_collision_wood_on_metal" />
+		<Particle>
+			<Name>collisions.small.wood</Name>
+		</Particle>
+	</Effect>
+	<Effect name="wood_rock">
+		<Audio trigger="Play_collision_wood_solid_on_rock" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+	<Effect name="wood_soil">
+		<Audio trigger="Play_collision_wood_solid_on_dirt" />
+		<Particle>
+			<Name>collisions.small.soil</Name>
+		</Particle>
+	</Effect>
+	<Effect name="wood_vegetation">
+		<Audio trigger="Play_collision_wood_solid_on_canopy" />
+		<Particle>
+			<Name>collisions.small.leaves</Name>
+		</Particle>
+	</Effect>
+	<Effect name="wood_wood">
+		<Audio trigger="Play_collision_wood_solid_on_wood_hollow" />
+		<Particle>
+			<Name>collisions.small.wood</Name>
+		</Particle>
+	</Effect>
+
+</FXLib>

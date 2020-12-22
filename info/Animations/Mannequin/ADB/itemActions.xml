@@ -1,0 +1,54 @@
+<TagDefinition version="2">
+ <Tags>
+  <Tag name="burst_fire" subTagDef="Animations/Mannequin/ADB/ammoCountTags.xml"/>
+  <Tag name="rapid_fire"/>
+  <Tag name="cock"/>
+  <Tag name="stop_rapid_fire"/>
+  <Tag name="melee"/>
+  <Tag name="melee_weapon" subTagDef="animations/mannequin/ADB/MeleeWeaponTags.xml"/>
+  <Tag name="melee_interact"/>
+  <Tag name="select" subTagDef="Animations/Mannequin/ADB/selectionTags.xml"/>
+  <Tag name="deselect" subTagDef="Animations/Mannequin/ADB/selectionTags.xml"/>
+  <Tag name="idle" subTagDef="Animations/Mannequin/ADB/ammoCountTags.xml"/>
+  <Tag name="idle_break"/>
+  <Tag name="idle_lastGrenade"/>
+  <Tag name="jump"/>
+  <Tag name="fire" subTagDef="Animations/Mannequin/ADB/ammoCountTags.xml"/>
+  <Tag name="throw"/>
+  <Tag name="hold"/>
+  <Tag name="hold_cancel"/>
+  <Tag name="prime"/>
+  <Tag name="raise"/>
+  <Tag name="lower"/>
+  <Tag name="reload" subTagDef="Animations/Mannequin/ADB/ammoCountTags.xml"/>
+  <Tag name="begin_reload"/>
+  <Tag name="reload_shell"/>
+  <Tag name="exit_reload" subTagDef="Animations/Mannequin/ADB/ammoCountTags.xml"/>
+  <Tag name="enter_modify"/>
+  <Tag name="leave_modify"/>
+  <Tag name="change_firemode" subTagDef="animations/mannequin/adb/switchfiremodetarget.xml"/>
+  <Tag name="intoPlant"/>
+  <Tag name="fromPlant"/>
+  <Tag name="plant"/>
+  <Tag name="grab" subTagDef="Animations/Mannequin/ADB/grabTags.xml"/>
+  <Tag name="drop"/>
+  <Tag name="rip_off"/>
+  <Tag name="spin_down"/>
+  <Tag name="spin_down_tail"/>
+  <Tag name="hit"/>
+  <Tag name="empty_clip"/>
+  <Tag name="pickedup"/>
+  <Tag name="pickedup_ammo"/>
+  <Tag name="zoom_in"/>
+  <Tag name="zoom_out"/>
+  <Tag name="zoom_lean"/>
+  <Tag name="shot_last_bullet"/>
+  <Tag name="spin_up"/>
+  <Tag name="aimPose"/>
+  <Tag name="unprime"/>
+  <Tag name="pre_fire"/>
+  <Tag name="barrel_spin"/>
+  <Tag name="idlePose"/>
+  <Tag name="kick"/>
+ </Tags>
+</TagDefinition>

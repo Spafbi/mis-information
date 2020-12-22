@@ -1,0 +1,26 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="TargetCoverAction">
+   <Tag name="ToCoverLftBlind" priority="4"/>
+   <Tag name="ToCoverLftPeek" priority="4"/>
+   <Tag name="ToCoverLftShoot" priority="4"/>
+   <Tag name="ToCoverRgtBlind" priority="4"/>
+   <Tag name="ToCoverRgtPeek" priority="4"/>
+   <Tag name="ToCoverRgtShoot" priority="4"/>
+   <Tag name="ToCoverMidBlind" priority="4"/>
+   <Tag name="ToCoverMidPeek" priority="4"/>
+   <Tag name="ToCoverMidShoot" priority="4"/>
+  </Group>
+  <Group name="SourceCoverAction">
+   <Tag name="FromCoverLftBlind" priority="4"/>
+   <Tag name="FromCoverLftPeek" priority="4"/>
+   <Tag name="FromCoverLftShoot" priority="4"/>
+   <Tag name="FromCoverRgtBlind" priority="4"/>
+   <Tag name="FromCoverRgtPeek" priority="4"/>
+   <Tag name="FromCoverRgtShoot" priority="4"/>
+   <Tag name="FromCoverMidBlind" priority="4"/>
+   <Tag name="FromCoverMidPeek" priority="4"/>
+   <Tag name="FromCoverMidShoot" priority="4"/>
+  </Group>
+ </Tags>
+</TagDefinition>

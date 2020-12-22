@@ -1,0 +1,83 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="29" Name="Audio_Main_Page" Class="_commentbox" pos="-280,-630.77448,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="920" Height="200"/>
+   <NodeSize Width="920" Height="227.64249"/>
+  </Node>
+  <Node Id="34" Class="UI:Action:Start" pos="-260,-560,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="35" Class="UI:Functions:MainMenu:DisplayWindow" pos="20,-560,0" flags="0">
+   <Inputs instanceID="-1" window="AudioOptions"/>
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="60,-70,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_RevertChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="89" Name="Reset_to_current_state" Class="_comment" pos="-260,-70,0" flags="0"/>
+  <Node Id="90" Name="Apply_Audio_Changes" Class="_comment" pos="-260,170,0" flags="0"/>
+  <Node Id="110" Name="Handle_events" Class="_commentbox" pos="-280,-129.66891,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1720" Height="640"/>
+   <NodeSize Width="1720" Height="667.64252"/>
+  </Node>
+  <Node Id="119" Class="UI:Events:MainMenu:RevertAudioOptions" pos="-260,-40,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-260,-300,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="40,190,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_Notification|@ui_ApplyChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="122" Class="Logic:Condition" pos="550,190,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="125" Class="UI:Events:MainMenu:ApplyAudioOptions" pos="-260,200,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="129" Name="Default_events_processing" Class="_commentbox" pos="-280,-389.86819,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="920" Height="220"/>
+   <NodeSize Width="920" Height="247.64249"/>
+  </Node>
+  <Node Id="130" Class="UI:Action:Control" pos="20,-300,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="131" Class="UI:Action:End" pos="460,-300,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="229" Class="UI:Functions:MainMenu:ApplyWindowSettings" pos="760,190,0" flags="0">
+   <Inputs instanceID="-1" name="AudioOptions"/>
+  </Node>
+  <Node Id="230" Class="UI:Action:End" pos="1420,-60,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="231" Class="UI:Functions:Settings:RevertAudioOptions" pos="790,-70,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="232" Class="Logic:Condition" pos="590,-70,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="233" Class="UI:Functions:MainMenu:RevertWindowSettings" pos="1090,-70,0" flags="1">
+   <Inputs instanceID="-1" name="AudioOptions"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="35" nodeOut="34" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="232" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="232" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="119" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="130" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="130" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="229" nodeOut="122" portIn="Call" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="125" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="131" nodeOut="130" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="233" nodeOut="231" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="231" nodeOut="232" portIn="send" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="230" nodeOut="233" portIn="EndAction" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

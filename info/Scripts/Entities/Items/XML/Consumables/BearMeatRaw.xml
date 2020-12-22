@@ -22,7 +22,7 @@
 		<param name="curedItem" value="BearMeatCured"/>
 		<param name="curedTime" value="300"/>
 		<param name="foodAmount" value="250"/>
-		<param name="poisonChance" value="30"/>
+		<param name="poisonChance" value="100"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

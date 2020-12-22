@@ -1,0 +1,12 @@
+<TagDefinition version="2">
+ <Tags>
+  <Tag name="Motion_Idle"/>
+  <Tag name="Motion_Move"/>
+  <Tag name="Motion_IdleTurn"/>
+  <Tag name="hitDeath" subTagDef="Animations/Mannequin/ADB/hitDeathTags.xml"/>
+  <Tag name="AI_Melee" subTagDef="Animations/Mannequin/ADB/AIMeleeTags.xml"/>
+  <Tag name="AI_PreExplosion"/>
+  <Tag name="AI_Spawn"/>
+  <Tag name="AI_Despawn"/>
+ </Tags>
+</TagDefinition>

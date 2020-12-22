@@ -10,7 +10,7 @@
 		<param name="place_restrict_snap" value="garage_snap"/>
 	</params>
 
-	<base_part class="door" type="299" name="garage_door_large" max_health="15000" repair_sound="Play_wall_repair" repair_with="SheetMetal">
+	<base_part class="door" type="299" name="garage_door_large" max_health="22500" repair_sound="Play_wall_repair" repair_with="SheetMetal">
 		<door filename="objects/basebuilding/plated/garage_door_large.cgf" rotate_base="0" move_range="4.3" move_speed="1.5" move_axis="z" move_axis_dir="+" sound_open="Play_industrial_garage_door_open" sound_opened="" sound_close="Play_industrial_garage_door_close" sound_closed="Play_door_wood_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
 		<base_actions>
 			<base_action class="toggle_door">

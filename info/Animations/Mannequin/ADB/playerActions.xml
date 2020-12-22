@@ -1,0 +1,38 @@
+<TagDefinition version="2">
+ <Imports>
+  <Import filename="Animations/Mannequin/ADB/itemActions1P.xml"/>
+ </Imports>
+ <Tags>
+  <Tag name="Motion_Move"/>
+  <Tag name="MotionIdle" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="MotionTurn"/>
+  <Tag name="MotionMovement" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="MotionJump"/>
+  <Tag name="MotionInAir"/>
+  <Tag name="MotionMounted"/>
+  <Tag name="slide"/>
+  <Tag name="ledgeGrab" subTagDef="Animations/Mannequin/ADB/ledgeGrabTags.xml"/>
+  <Tag name="interact" subTagDef="Animations/Mannequin/ADB/interactiveActionTags.xml"/>
+  <Tag name="LadderClimb" subTagDef="animations/mannequin/adb/laddertags.xml"/>
+  <Tag name="LadderGetOff" subTagDef="animations/mannequin/adb/laddertags.xml"/>
+  <Tag name="LadderGetOn" subTagDef="animations/mannequin/adb/laddertags.xml"/>
+  <Tag name="animationControlled" subTagDef="Animations/Mannequin/ADB/animationControlledTags.xml"/>
+  <Tag name="hitDeath" subTagDef="Animations/Mannequin/ADB/hitDeathTags.xml"/>
+  <Tag name="grabObjectSimple"/>
+  <Tag name="dropObjectSimple"/>
+  <Tag name="throwObjectSimple"/>
+  <Tag name="grabNPCKill"/>
+  <Tag name="WeaponPose"/>
+  <Tag name="BlendRagdoll" subTagDef="Animations/Mannequin/ADB/blendRagdollTags.xml"/>
+  <Tag name="emote" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="lean"/>
+  <Tag name="leanZ"/>
+  <Tag name="leanY"/>
+  <Tag name="lookDir"/>
+  <Tag name="breathing" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="proneFR"/>
+  <Tag name="proneFP"/>
+  <Tag name="proneBP"/>
+  <Tag name="proneBR"/>
+ </Tags>
+</TagDefinition>

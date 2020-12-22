@@ -1,0 +1,226 @@
+<ATLConfig atl_name="player">
+	<AudioTriggers>
+		<!-- Player = sounds created by humans, not involving any third party objects -->
+		<!-- i.e; the sound of vomitting, breathing, grunting, etc all come directly from the human body without external involvement -->
+		<!-- the rustling of clothes when crouching are Foley because they can't be made from the human body alone -->
+
+		<!-- UNISEX -->
+		<ATLTrigger atl_name="Play_ear_ringing">
+			<WwiseEvent wwise_name="Play_ear_ringing"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_ear_ringing">
+			<WwiseEvent wwise_name="Stop_ear_ringing"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_radiation">
+			<WwiseEvent wwise_name="Play_player_radiation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_player_radiation">
+			<WwiseEvent wwise_name="Stop_player_radiation"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hunger_3p">
+			<WwiseEvent wwise_name="Play_player_hunger_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hunger_fp">
+			<WwiseEvent wwise_name="Play_player_hunger_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_vomit_splash">
+			<WwiseEvent wwise_name="Play_vomit_splash"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_whistle_3p">
+			<WwiseEvent wwise_name="Play_whistle_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_whistle_fp">
+			<WwiseEvent wwise_name="Play_whistle_fp"/>
+		</ATLTrigger>
+
+		<!-- FEMALE -->
+		<ATLTrigger atl_name="Play_female_catch_breath_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_catch_breath_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_catch_breath_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_catch_breath_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_cold_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_cold_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_cold_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_cold_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_death_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_death_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_death_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_death_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_drown_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_drown_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_drown_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_drown_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_drown_warning_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_drown_warning_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_drown_warning_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_drown_warning_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_hold_breath_in_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_hold_breath_in_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_hold_breath_in_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_hold_breath_in_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_hold_breath_out_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_hold_breath_out_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_hold_breath_out_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_hold_breath_out_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_low_health" path="female">
+			<WwiseEvent wwise_name="Play_female_low_health"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_female_low_health" path="female">
+			<WwiseEvent wwise_name="Stop_female_low_health"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_out_of_breath_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_out_of_breath_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_out_of_breath_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_out_of_breath_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_pain_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_pain_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_pain_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_pain_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_sick" path="female">
+			<WwiseEvent wwise_name="Play_female_sick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_sprint_off_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_sprint_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_sprint_off_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_sprint_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_sprint_on_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_sprint_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_sprint_on_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_sprint_on_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_thirsty_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_thirsty_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_thirsty_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_thirsty_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_vomit_retch_long_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_vomit_retch_long_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_vomit_retch_long_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_vomit_retch_long_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_vomit_retch_short_3p" path="female">
+			<WwiseEvent wwise_name="Play_female_vomit_retch_short_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_female_vomit_retch_short_fp" path="female">
+			<WwiseEvent wwise_name="Play_female_vomit_retch_short_fp"/>
+		</ATLTrigger>
+
+		<!-- MALE -->
+		<ATLTrigger atl_name="Play_player_catch_breath_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_catch_breath_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_catch_breath_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_catch_breath_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_cold_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_cold_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_cold_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_cold_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_death_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_death_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_death_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_death_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_drown_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_drown_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_drown_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_drown_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_drown_warning_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_drown_warning_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_drown_warning_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_drown_warning_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hold_breath_in_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_hold_breath_in_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hold_breath_in_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_hold_breath_in_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hold_breath_out_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_hold_breath_out_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_hold_breath_out_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_hold_breath_out_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_low_health" path="male">
+			<WwiseEvent wwise_name="Play_player_low_health"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_player_low_health" path="male">
+			<WwiseEvent wwise_name="Stop_player_low_health"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_out_of_breath_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_out_of_breath_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_out_of_breath_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_out_of_breath_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_pain_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_pain_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_pain_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_pain_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_sick" path="male">
+			<WwiseEvent wwise_name="Play_player_sick"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_sprint_off_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_sprint_off_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_sprint_off_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_sprint_off_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_sprint_on_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_sprint_on_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_sprint_on_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_sprint_on_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_thirsty_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_thirsty_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_thirsty_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_thirsty_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_vomit_retch_long_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_vomit_retch_long_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_vomit_retch_long_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_vomit_retch_long_fp"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_vomit_retch_short_3p" path="male">
+			<WwiseEvent wwise_name="Play_player_vomit_retch_short_3p"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_player_vomit_retch_short_fp" path="male">
+			<WwiseEvent wwise_name="Play_player_vomit_retch_short_fp"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

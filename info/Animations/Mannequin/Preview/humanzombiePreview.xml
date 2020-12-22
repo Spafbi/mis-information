@@ -1,0 +1,11 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/humanzombieControllerDefs.xml"/>
+ <contexts>
+  <contextData name="humanzombie" enabled="1" database="Animations/Mannequin/ADB/humanzombie.adb" context="Char3P" model="objects/characters/mutants/humanzombie/humanzombie.cdf"/>
+  <contextData name="humanzombieAudio" enabled="1" database="Animations/Mannequin/ADB/humanzombieSounds.adb" context="Audio"/>
+  <contextData name="Weapon" context="Weapon" tags="meleeWeapon"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="Motion_Idle"/>
+ </History>
+</MannequinPreview>

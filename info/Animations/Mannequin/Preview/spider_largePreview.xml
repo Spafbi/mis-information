@@ -1,0 +1,7 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/spider_largeControllerDefs.xml"/>
+ <contexts>
+  <contextData name="spider_large" enabled="1" database="Animations/Mannequin/ADB/spider_large.adb" context="Char3P" model="objects/characters/animals/spider_large/spider_large.cdf"/>
+ </contexts>
+ <History StartTime="135.32835" EndTime="235.32835"/>
+</MannequinPreview>

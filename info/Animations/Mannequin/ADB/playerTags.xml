@@ -1,0 +1,169 @@
+<TagDefinition version="2">
+ <Imports>
+  <Import filename="Animations/Mannequin/ADB/itemTags.xml"/>
+ </Imports>
+ <Tags>
+  <Group name="stance">
+   <Tag name="crouch" priority="10"/>
+   <Tag name="jump" priority="10"/>
+   <Tag name="swim" priority="10"/>
+   <Tag name="underwater" priority="10"/>
+   <Tag name="sit" priority="10"/>
+   <Tag name="prone" priority="10"/>
+   <Tag name="unconscious" priority="10"/>
+   <Tag name="wounded" priority="10"/>
+   <Tag name="throw_hold"/>
+  </Group>
+  <Group name="transition">
+   <Tag name="fromSit" priority="10"/>
+   <Tag name="fromProne" priority="10"/>
+   <Tag name="fromCrouch" priority="10"/>
+   <Tag name="fromStand" priority="10"/>
+   <Tag name="fromUnconscious" priority="10"/>
+   <Tag name="fromWounded" priority="10"/>
+  </Group>
+  <Group name="zoom">
+   <Tag name="shoulder"/>
+   <Tag name="iron"/>
+   <Tag name="reflex"/>
+   <Tag name="hunting"/>
+   <Tag name="assault"/>
+   <Tag name="sniper"/>
+   <Tag name="optic"/>
+   <Tag name="rear_iron"/>
+  </Group>
+  <Group name="moveDir">
+   <Tag name="forward"/>
+   <Tag name="backward"/>
+   <Tag name="left"/>
+   <Tag name="right"/>
+  </Group>
+  <Group name="moveSpeed">
+   <Tag name="move"/>
+   <Tag name="sprint"/>
+   <Tag name="walk"/>
+  </Group>
+  <Group name="lean">
+   <Tag name="rightLean"/>
+   <Tag name="leftLean"/>
+  </Group>
+  <Group name="leanZ">
+   <Tag name="forwardLean"/>
+   <Tag name="backwardLean"/>
+  </Group>
+  <Group name="leanY">
+   <Tag name="peekUp"/>
+   <Tag name="turtleDown"/>
+  </Group>
+  <Group name="lookDir">
+   <Tag name="leftLook"/>
+   <Tag name="rightLook"/>
+  </Group>
+  <Group name="breathing">
+   <Tag name="outofbreath"/>
+  </Group>
+  <Group name="voice">
+   <Tag name="speaking_low"/>
+   <Tag name="speaking_med"/>
+   <Tag name="speaking_high"/>
+  </Group>
+  <Group name="emote">
+   <Tag name="emote_playguitar"/>
+   <Tag name="emotep_suicide"/>
+   <Tag name="emote_salute"/>
+   <Tag name="emote_heart"/>
+   <Tag name="emote_wave"/>
+   <Tag name="emote_heavywaving"/>
+   <Tag name="emote_stop"/>
+   <Tag name="emote_middlefinger"/>
+   <Tag name="emote_thumbsup"/>
+   <Tag name="emote_thumbsdown"/>
+   <Tag name="emote_victoryfinger"/>
+   <Tag name="emote_victoryarm"/>
+   <Tag name="emotep_covereyes"/>
+   <Tag name="emote_scold"/>
+   <Tag name="emote_nodhead"/>
+   <Tag name="emote_shakehead"/>
+   <Tag name="emote_clap"/>
+   <Tag name="emote_cheer"/>
+   <Tag name="emote_pointfinger"/>
+   <Tag name="emote_taunt"/>
+   <Tag name="emote_beckon"/>
+   <Tag name="emote_comehere"/>
+   <Tag name="emote_whistle"/>
+   <Tag name="emote_facepalm"/>
+   <Tag name="emote_doh"/>
+   <Tag name="emote_slitthroat"/>
+   <Tag name="emote_shhh"/>
+   <Tag name="emote_lookout"/>
+   <Tag name="emote_listen"/>
+   <Tag name="emote_ponder"/>
+   <Tag name="emote_stretch"/>
+   <Tag name="emote_peng"/>
+   <Tag name="emotep_eating"/>
+   <Tag name="emotep_drinking"/>
+   <Tag name="emotep_handsup"/>
+   <Tag name="emotep_crafting"/>
+   <Tag name="emotep_building"/>
+   <Tag name="emotep_healing"/>
+   <Tag name="emotep_pickup"/>
+   <Tag name="emotep_carry_onehanded"/>
+   <Tag name="emotep_carry_onehanded_side"/>
+   <Tag name="emotep_carry_twohanded_ontop"/>
+   <Tag name="emotep_carry_twohanded_reacharound"/>
+   <Tag name="emotep_carry_overshoulder"/>
+  </Group>
+  <Group name="emote_fullbody">
+   <Tag name="emote_dance"/>
+   <Tag name="emote_bow"/>
+   <Tag name="emote_curtsey"/>
+   <Tag name="emote_noway"/>
+   <Tag name="emote_scream"/>
+   <Tag name="emote_lookaway"/>
+   <Tag name="emote_notworthy"/>
+   <Tag name="emotep_searchcontainer_low" priority="11"/>
+   <Tag name="emotep_searchcontainer_med" priority="11"/>
+   <Tag name="emotep_searchcontainer_high" priority="11"/>
+   <Tag name="emotep_search_ownbody" priority="11"/>
+   <Tag name="emotep_drinkingstream" priority="11"/>
+   <Tag name="emotep_barf"/>
+   <Tag name="emotep_beg"/>
+   <Tag name="emotep_kissfloor"/>
+   <Tag name="emotep_relax"/>
+   <Tag name="emotep_incapacitated"/>
+   <Tag name="emotep_incapacitated_full"/>
+  </Group>
+  <Group name="emotestate">
+   <Tag name="emotestate_start"/>
+   <Tag name="emotestate_stop"/>
+  </Group>
+  <Group name="proneFP">
+   <Tag name="upFP"/>
+   <Tag name="downFP"/>
+  </Group>
+  <Group name="proneFR">
+   <Tag name="leftFR"/>
+   <Tag name="rightFR"/>
+  </Group>
+  <Group name="proneBP">
+   <Tag name="upBP"/>
+   <Tag name="downBP"/>
+  </Group>
+  <Group name="proneBR">
+   <Tag name="leftBR"/>
+   <Tag name="rightBR"/>
+  </Group>
+  <Tag name="tactical"/>
+  <Tag name="holdbreath"/>
+  <Tag name="stabilized"/>
+  <Tag name="aimBlocked"/>
+  <Tag name="aiming"/>
+  <Tag name="throwing"/>
+  <Tag name="outOfAmmo" priority="1"/>
+  <Tag name="slave"/>
+  <Tag name="slaveHuman"/>
+  <Tag name="localClient"/>
+  <Tag name="forceFeedback" priority="2"/>
+  <Tag name="scope_weaponPose"/>
+ </Tags>
+</TagDefinition>

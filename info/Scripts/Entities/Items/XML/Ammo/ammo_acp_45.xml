@@ -20,7 +20,7 @@
 	<!-- https://en.wikipedia.org/wiki/.45_ACP -->
 	<physics type="particle">
 		<param name="mass" value="0.015" /> <!-- 230 grain / 15 grams -->
-		<param name="speed" value="350" /> <!-- 483J energy -->
+		<param name="speed" value="450" /> <!-- 483J energy -->
 		<param name="radius" value="0.00575" /> <!-- 11.5mm diameter -->
 		<param name="air_resistance" value="1.3066" />
 		<param name="water_resistance" value="10.0" />

@@ -1,0 +1,37 @@
+<Graph Description="" Group="MM_Display" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="25" Name="Show_some_loading_screen" Class="_commentbox" pos="-420,-289.85522,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1320" Height="500"/>
+   <NodeSize Width="1320" Height="527.81885"/>
+  </Node>
+  <Node Id="75" Class="UI:MovieClip:Visible" pos="600,-220,0" flags="0">
+   <Inputs uiMovieclips_MovieClips="MainMenu:Cursor" instanceID="-1" Visible="0" Alpha="0"/>
+  </Node>
+  <Node Id="76" Class="UI:Action:Start" pos="-400,-40,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="77" Class="UI:Action:End" pos="260,100,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="78" Class="UI:Display:Display" pos="-100,-220,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="83" Class="UI:Display:Config" pos="260,-220,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1" cursor="0" mouseEvents="0" keyEvents="0" consoleMouse="0" consoleCursor="0" controllerInput="0" eventsExclusive="0" fixedProjDepth="0" forceNoUnload="0" alpha="1" layer="3"/>
+  </Node>
+  <Node Id="86" Class="UI:Action:Control" pos="-100,100,0" flags="0">
+   <Inputs uiActions_UIAction="MM_LoadingScreen" Strict="0" Args=""/>
+  </Node>
+  <Node Id="87" Name="Shouldn&apos;t_be_needed_as_main_menu_is_already_being_displayed" Class="_comment" pos="-100,-250,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="78" nodeOut="76" portIn="show" portOut="StartAction" enabled="0"/>
+  <Edge nodeIn="86" nodeOut="76" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="76" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="83" nodeOut="78" portIn="set" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="75" nodeOut="83" portIn="Set" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="77" nodeOut="86" portIn="EndAction" portOut="OnStart" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

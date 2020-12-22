@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_gate_lockable_3m_4mDescription"/>
 	</params>
 
-	<base_part class="door" type="1099" name="plated_gate_lockable_3m_4m" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="door" type="1099" name="plated_gate_lockable_3m_4m" max_health="22500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<door filename="objects/basebuilding/plated/plated_gate_3m_4m.cgf" rotate_base="-90" rotate_range="90" rotate_speed="30" rotate_axis="z" rotate_axis_front="y" sound_open="Play_door_wood_open" sound_opened="" sound_close="Play_door_wood_close" sound_closed="Play_door_wood_closed" sound_lock="Play_door_lock" sound_unlock="Play_door_unlock"/>
 		<base_actions>
 			<base_action class="toggle_door">

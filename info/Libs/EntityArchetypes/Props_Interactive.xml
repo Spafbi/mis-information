@@ -1,0 +1,30 @@
+<EntityPrototypeLibrary Name="Props_Interactive" SandboxVersion="3.5.0.1">
+ <EntityPrototype Name="Switches.light_switch" Id="{ECE20EEB-3A4F-4A5A-8CD8-8E57419C9296}" Library="Props_Interactive" Class="Switch" Description="">
+  <Properties bDestroyable="0" DestroyedSubObject="" fHealth="100" fileModel="objects/props/industrial/electrical/lightswitch/lightswitch_local1.cgf" fileModelDestroyed="" ModelSubObject="" Switch="Props_Interactive.switches.small_switch" bTurnedOn="0" bUsable="1" UseMessage="Use Light Switch">
+   <Breakage fExplodeImpulse="0" fLifeTime="20" bSurfaceEffects="1"/>
+   <Destruction Damage="0" Decal="" Effect="" EffectScale="0" bExplode="0" Pressure="0" Radius="0">
+    <Direction x="0" y="0" z="-1"/>
+   </Destruction>
+   <Physics Density="-1" Mass="1" bResting="1" bRigidBody="0" bRigidBodyActive="0" bRigidBodyAfterDeath="1"/>
+   <SmartSwitch Entity="" TurnedOffEvent="" TurnedOnEvent="" bUseSmartSwitch="0"/>
+   <Sound soundTurnOffSound="Sounds/weapons:scar:switch_firemode_fp" soundTurnOnSound="Sounds/weapons:scar:switch_firemode_fp"/>
+   <SwitchPos Off="-35" On="35" bShowSwitch="1"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Switches.small_switch" Id="{030417F7-5A77-4A69-B7A8-F59B9843D072}" Library="Props_Interactive" Class="BasicEntity" Description="">
+  <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/industrial/electrical/lightswitch/switch.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+   <MultiplayerOptions bNetworked="0"/>
+   <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+    <CollisionFiltering>
+     <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+     <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+    </CollisionFiltering>
+   </Physics>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

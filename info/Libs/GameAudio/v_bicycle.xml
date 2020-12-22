@@ -1,0 +1,33 @@
+<ATLConfig atl_name="v_bicycle">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_bicycle_bump">
+			<WwiseEvent wwise_name="Play_bicycle_bump"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_damage">
+			<WwiseEvent wwise_name="Play_bicycle_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_horn">
+			<WwiseEvent wwise_name="Play_bicycle_horn"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_run">
+			<WwiseEvent wwise_name="Play_bicycle_run"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_slip">
+			<WwiseEvent wwise_name="Play_bicycle_slip"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_start">
+			<WwiseEvent wwise_name="Play_bicycle_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_bicycle_stop">
+			<WwiseEvent wwise_name="Play_bicycle_stop"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_bicycle_damage">
+			<WwiseEvent wwise_name="Stop_bicycle_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_bicycle_horn">
+			<WwiseEvent wwise_name="Stop_bicycle_horn"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

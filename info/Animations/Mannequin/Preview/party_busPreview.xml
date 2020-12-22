@@ -1,0 +1,38 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/vehicleControllerDefs.xml"/>
+ <contexts>
+  <contextData name="party_bus" enabled="1" database="Animations/Mannequin/ADB/party_busAnims.adb" context="hull" model="objects/vehicles/party_bus/party_bus.cga"/>
+  <contextData name="Driver" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Driver" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger1" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger1" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger2" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger2" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger3" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger3" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger4" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger4" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger5" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger5" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger6" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger6" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger7" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger7" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger8" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger8" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger9" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger9" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger10" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger10" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger11" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger11" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger12" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger12" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger13" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger13" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger14" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger14" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger15" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger15" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger16" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger16" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger17" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger17" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger18" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger18" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger19" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger19" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger20" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger20" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger21" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger21" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger22" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger22" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger23" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger23" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger24" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger24" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger25" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger25" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger26" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger26" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger27" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger27" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger28" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger28" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger29" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger29" model="objects/characters/players/male/human_male.cdf"/>
+  <contextData name="Passenger30" enabled="1" database="Animations/Mannequin/ADB/playerVehicleAnims.adb" context="Passenger30" model="objects/characters/players/male/human_male.cdf"/> 
+ </contexts>
+ <History StartTime="-4.3160208e+008" EndTime="-4.3160208e+008"/>
+</MannequinPreview>

@@ -1,0 +1,17 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="foot">
+   <Tag name="left"/>
+   <Tag name="right"/>
+   <Tag name="loop"/>
+  </Group>
+  <Group name="direction">
+   <Tag name="up"/>
+   <Tag name="down"/>
+  </Group>
+  <Group name="idle">
+   <Tag name="leftIdle"/>
+   <Tag name="rightIdle"/>
+  </Group>
+ </Tags>
+</TagDefinition>

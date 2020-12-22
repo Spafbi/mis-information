@@ -1,0 +1,11 @@
+<MannequinPreview>
+ <controllerDef filename="Animations/Mannequin/ADB/spikerControllerDefs.xml"/>
+ <contexts>
+  <contextData name="Spiker" enabled="1" database="Animations/Mannequin/ADB/spiker.adb" context="Char3P" model="objects/characters/bandits/spiker/spiker.cdf"/>
+  <contextData name="SpikerAudio" enabled="1" database="Animations/Mannequin/ADB/spikerSounds.adb" context="Audio"/>
+  <contextData name="Weapon" context="Weapon" tags="meleeWeapon"/>
+ </contexts>
+ <History StartTime="0" EndTime="0">
+  <FragmentID Time="0" FragmentID="Motion_Idle"/>
+ </History>
+</MannequinPreview>

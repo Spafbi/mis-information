@@ -1,0 +1,41 @@
+<!-- DeathHitReactions Params
+
+	ToDo: Add params description here. For now, check Scripts/GameRules/HitDeathReactions_Defs.xml (right click 
+	on the file name in UE32 to open it) for the expected  format in this file and all the properties currently 
+	managed by the default validation and execution code
+ 
+<!DOCTYPE HitDeathReactions_humanzombie [
+]>
+-->
+
+<DeathHitReactionsParams>
+	<!-- HIT REACTIONS-->
+	<!-- 90° directions: forward, left, right, back -->
+	<!-- 180° directions: ahead, leftSide, rightSide, behind -->
+	<HitDeathReactionsConfig
+		collisionBone="Bip01 Spine1"
+		collisionRadius="0.6"
+		collisionVerticalOffset="0.0"
+		maxRagdolImpulse="3000"
+		maximumReactionTime="5.0"
+		/>
+
+	<!-- HIT REACTIONS -->  
+	<HitReactionParams>
+	</HitReactionParams>
+
+	<!-- DEATH REACTIONS -->
+	<!-- manqReaction="0" means to play a mannequin fragment -->
+	<DeathReactionParams>
+<!--
+		<DeathReactionParam shotOrigin="ahead" manqReaction="0" ragdollOnCollision="1" noRagdollOnEnd="1" />
+		<DeathReactionParam shotOrigin="rightSide" manqReaction="0" ragdollOnCollision="1" noRagdollOnEnd="1" />
+		<DeathReactionParam shotOrigin="behind" manqReaction="0" ragdollOnCollision="1" noRagdollOnEnd="1" />
+		<DeathReactionParam shotOrigin="leftSide" manqReaction="0" ragdollOnCollision="1" noRagdollOnEnd="1" />
+-->
+	</DeathReactionParams>
+
+	<CollisionReactionParams>
+	</CollisionReactionParams>
+
+</DeathHitReactionsParams>

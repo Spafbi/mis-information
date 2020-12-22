@@ -1,0 +1,48 @@
+<Graph Description="" Group="EI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-1140,-240,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Display:Config" pos="-780,-180,0" flags="0">
+   <Inputs uiElements_Element="Inventory" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="1" consoleMouse="0" consoleCursor="0" controllerInput="1" eventsExclusive="1" fixedProjDepth="0" forceNoUnload="0" alpha="0" layer="0"/>
+  </Node>
+  <Node Id="4" Class="UI:Display:Display" pos="960,-220,0" flags="0">
+   <Inputs uiElements_Element="Inventory" instanceID="-1"/>
+  </Node>
+  <Node Id="5" Class="UI:Action:End" pos="1320,-220,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="45" Class="UI:Variable:Var" pos="320,-220,0" flags="0">
+   <Inputs uiVariables_Variable="Inventory:itemData" instanceID="-1"/>
+  </Node>
+  <Node Id="47" Class="Actor:LocalPlayer" pos="-160,-180,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="51" Class="Inventory:GetEntityInventory" pos="40,-180,0" flags="0">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="52" Class="UI:Functions:Inventory:LoadItemData" pos="640,-220,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="57" Class="UI:Functions:UsableMenu:HideUsableMenu" pos="-780,-240,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="58" Name="Handle_Events" Class="_commentbox" pos="-1160,-290.51581,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2640" Height="400"/>
+   <NodeSize Width="2640" Height="427.64063"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="set" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="57" nodeOut="1" portIn="send" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="47" nodeOut="2" portIn="update" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="4" portIn="EndAction" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="52" nodeOut="45" portIn="Call" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="51" nodeOut="47" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="45" nodeOut="51" portIn="Set" portOut="Items" enabled="1"/>
+  <Edge nodeIn="45" nodeOut="51" portIn="Value" portOut="Items" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="52" portIn="show" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

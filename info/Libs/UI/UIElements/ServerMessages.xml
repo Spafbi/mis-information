@@ -1,0 +1,30 @@
+<!-- See http://freesdk.crydev.net/display/SDKDOC4/Flash+UI+System for a definition of this file -->
+<UIElements name="ServerMessages">
+
+	<UIElement name="ServerMessages"  mouseevents="0" keyevents="0" cursor="0" controller_input="0" render_lockless="1">
+
+		<GFx file="ServerMessages/ServerMessages.gfx" layer="5">
+			<Constraints>
+				<Align mode="fullscreen" scale="0" />
+			</Constraints>
+		</GFx>
+
+		<!-- Can get or set a variable -->
+		<variables>
+		</variables>
+
+		<!-- Functions that can be invoked into actionscript from lua -->
+		<functions>
+			<function name="AddMessage" funcname="_root.addMessage">
+				<param name="Message" desc="Add a new message to the list" type="string" />
+			</function>
+			<function name="ClearMessages" funcname="_root.clearMessages">
+			</function>
+		</functions>
+
+		<movieclips>
+		</movieclips>
+
+	</UIElement>
+	
+</UIElements>

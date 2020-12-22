@@ -10,7 +10,7 @@
 		<param name="description" value="@arcade_cabinetDescription"/>
 	</params>
 
-	<base_part class="static" type="2057" name="arcade_cabinet" max_health="15000" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
+	<base_part class="static" type="2057" name="arcade_cabinet" max_health="18750" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/other/arcade_cabinet/arcade_cabinet.cgf"/>
 		<base_parts>
 			<base_part class="light">

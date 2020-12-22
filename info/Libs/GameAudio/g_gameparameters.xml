@@ -1,0 +1,112 @@
+<ATLConfig atl_name="g_gameparameters">
+	<AudioRTPCs>
+
+		<!-- VEHICLES -->
+		<ATLRtpc atl_name="vehicle_rpm">
+			<WwiseRtpc wwise_name="v_rpm"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="vehicle_damage">
+			<WwiseRtpc wwise_name="v_damage"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="vehicle_speed">
+			<WwiseRtpc wwise_name="v_speed"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="vehicle_stroke">
+			<WwiseRtpc wwise_name="v_stroke"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="vehicle_slip">
+			<WwiseRtpc wwise_name="v_slip"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="vehicle_boat_splash">
+			<WwiseRtpc wwise_name="v_splash"/>
+		</ATLRtpc>
+
+		<!-- VOLUME -->
+		<ATLRtpc atl_name="volume_music">
+			<WwiseRtpc wwise_name="volume_music"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="volume_sfx">
+			<WwiseRtpc wwise_name="volume_sfx"/>
+		</ATLRtpc>
+
+		<!-- ENVIRONMENT -->
+		<ATLRtpc atl_name="wind_speed">
+			<WwiseRtpc wwise_name="wind_speed"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="weather_intensity">
+			<WwiseRtpc wwise_name="weather_intensity"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="time_of_day">
+			<WwiseRtpc wwise_name="tod"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="environment_sound">
+			<WwiseRtpc wwise_name="environment_sound"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="area_fade_distance">
+			<WwiseRtpc wwise_name="area_fade_distance"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="environment_type">
+			<WwiseRtpc wwise_name="environment_type"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="freeze_strength">
+			<WwiseRtpc wwise_name="freeze_strength"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="world_temperature">
+			<WwiseRtpc wwise_name="world_temperature"/>
+		</ATLRtpc>
+
+		<!-- PLAYER -->
+		<ATLRtpc atl_name="aim_down_sights">
+			<WwiseRtpc wwise_name="aim_down_sights"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="radiation_level">
+			<WwiseRtpc wwise_name="radiation_level"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="hunger_level">
+			<WwiseRtpc wwise_name="hunger_level"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="player_health">
+			<WwiseRtpc wwise_name="player_health"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="gear_weight">
+			<WwiseRtpc wwise_name="gear_weight"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="thirst_level">
+			<WwiseRtpc wwise_name="thirst_level"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="outside">
+			<WwiseRtpc wwise_name="outside"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="inside">
+			<WwiseRtpc wwise_name="inside"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="underground">
+			<WwiseRtpc wwise_name="underground"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="underwater">
+			<WwiseRtpc wwise_name="underwater"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="local_temperature">
+			<WwiseRtpc wwise_name="local_temperature"/>
+		</ATLRtpc>
+
+		<!-- EXPLOSIONS -->
+		<ATLRtpc atl_name="explosion_size">
+			<WwiseRtpc wwise_name="explosion_size"/>
+		</ATLRtpc>
+
+		<!-- GENERIC -->
+		<ATLRtpc atl_name="mass">
+			<WwiseRtpc wwise_name="mass"/>
+		</ATLRtpc>
+		<ATLRtpc atl_name="character_speed">
+			<WwiseRtpc wwise_name="speed"/>
+		</ATLRtpc>
+
+		<!-- OBJECT -->
+		<ATLRtpc atl_name="geiger_counter">
+			<WwiseRtpc wwise_name="geiger_counter"/>
+		</ATLRtpc>
+
+	</AudioRTPCs>
+</ATLConfig>

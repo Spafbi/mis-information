@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_ramp_0m_2m_3mDescription"/>
 	</params>
 
-	<base_part class="static" type="1058" name="plated_ramp_0m_2m_3m" max_health="15000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="static" type="1058" name="plated_ramp_0m_2m_3m" max_health="22500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/plated/plated_ramp_0m_2m_3m.cgf"/>
 
 		<damage_multipliers>

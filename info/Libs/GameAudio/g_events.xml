@@ -1,0 +1,19 @@
+<ATLConfig atl_name="g_events">
+ <AudioTriggers>
+  <ATLTrigger atl_name="get_focus">
+   <WwiseEvent wwise_name="get_focus"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="lose_focus">
+   <WwiseEvent wwise_name="lose_focus"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="mute_all">
+   <WwiseEvent wwise_name="mute_all"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="unmute_all">
+   <WwiseEvent wwise_name="unmute_all"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="do_nothing">
+   <WwiseEvent wwise_name="do_nothing"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

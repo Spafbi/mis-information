@@ -8,7 +8,7 @@
 		<param name="description" value="@plated_column_3mDescription"/>
 	</params>
 
-	<base_part class="static" type="1040" name="plated_column_3m" max_health="2500" repair_with="SheetMetal" repair_sound="Play_wall_repair">
+	<base_part class="static" type="1040" name="plated_column_3m" max_health="4000" repair_with="SheetMetal" repair_sound="Play_wall_repair">
 		<static filename="objects/basebuilding/plated/plated_column_3m.cgf"/>
 
 		<damage_multipliers>

@@ -1130,9 +1130,9 @@ Weather =
         humidity=       {0.1,     0.1,    0.1,        },
         light=          {-0.2,    -0.1,               },
         temperature=    {2,       2,                  },
-        gas_radiation=  {0.032,      0.02,            },
-        rain_radiation= {0.01,      0.0,              },
-        ray_radiation= {0.002,       0.004,           },
+        gas_radiation=  {0.332,      0.14,            },
+        rain_radiation= {0.31,      0.0,              },
+        ray_radiation= {0.112,       0.016,           },
         geigercounter=  {2,        1.75,    0.0,    1  },
       },
       entities=
@@ -1239,9 +1239,9 @@ Weather =
         light=          {-0.4,    -0.25,              },
         temperature=    {10,      5,                  },
         physical=       {0.1,       0.025,              },
-        gas_radiation=  {0.56,       0.15,              },
-        rain_radiation= {0.19,       0.0,              },
-        ray_radiation= {0.05,       0.02,              },
+        gas_radiation=  {1.0,       0.25,              },
+        rain_radiation= {0.80,       0.0,              },
+        ray_radiation= {0.40,       0.05,              },
         geigercounter=  {3,        2.75,    0.0,    1  },
       },
       entities=
@@ -1390,9 +1390,9 @@ Weather =
         humidity=       {0.1,       0.1,    0.1,        },
         light=          {-0.2,      -0.1,               },
         temperature=    {2,             2,              },
-        gas_radiation=  {0.08,       0.02,              },
-        rain_radiation= {0.02,       0.0,              },
-        ray_radiation=  {0.01,       0.005,              },
+        gas_radiation=  {0.38,       0.08,              },
+        rain_radiation= {0.32,       0.0,              },
+        ray_radiation=  {0.21,       0.015,              },
         geigercounter=  {1,        0.75,    0.0,    0.5  },
       },
       entities={
@@ -1505,9 +1505,9 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.3,       0.2,    0.15,         },
         light=          {-0.4,      -0.25,                },
-        temperature=    {-10,       -5,       -3,    -6   },
-        gas_radiation=  {0.0075,     0.002,                },
-        rain_radiation= {0.015,      0.01,                },
+        temperature=    {-20,       -8,       -3,    -6   },
+        gas_radiation=  {0.0575,     0.012,                },
+        rain_radiation= {0.055,      0.012,                },
         geigercounter=  {1,          0.75,    0.0,    1  },
       },
       entities={
@@ -1581,10 +1581,10 @@ Weather =
         --          outside, inside, underground, underwater
         humidity=       {0.3,     0.2,    0.15,       },
         light=          {-0.4,    -0.25,              },
-        temperature=    {-35,     -25,    -8,    -21  },
-        gas_radiation=  {0.05,     0.02,              },
-        rain_radiation= {0.15,     0.04,              },
-        ray_radiation=  {0.01,     0.005,              },
+        temperature=    {-40,     -25,    -8,    -21  },
+        gas_radiation=  {0.75,     0.04,              },
+        rain_radiation= {0.65,     0.07,              },
+        ray_radiation=  {0.51,     0.015,              },
         geigercounter=  {1.5,      0.75,    0.0,    1  },
       },
       entities={
@@ -1722,10 +1722,10 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.3,     0.2,    0.15,           },
         light=          {-0.4,    -0.25,                  },
-        temperature=    {-20,     -5,    -3,    -17       },
-        gas_radiation=  {0.01,       0.01,                },
-        rain_radiation= {0.02,       0.02,                },
-        ray_radiation=  {0.02,       0.02,                },
+        temperature=    {-30,     -8,    -3,    -17       },
+        gas_radiation=  {0.20,       0.02,                },
+        rain_radiation= {0.10,       0.03,                },
+        ray_radiation=  {0.08,       0.03,                },
         geigercounter=  {0.75,       0.75,    0.0,    1  },
       },
       entities={
@@ -1812,7 +1812,7 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.3,       0.2,    0.15,         },
         light=          {-0.4,      -0.25,                },
-        temperature=    {-25,       -12,      -6,    -12   },
+        temperature=    {-40,       -25,      -6,    -17   },
       },
       entities={
         {
@@ -1927,7 +1927,7 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.3,       0.2,    0.15,         },
         light=          {-0.3,      -0.2,                },
-        temperature=    {-12,       -3,       -2,    -5   },
+        temperature=    {-20,       -12,       -2,    -5   },
       },
       entities={
         {
@@ -2021,7 +2021,7 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.3,       0.2,    0.15,         },
         light=          {-0.3,      -0.2,                },
-        temperature=    {-18,       -6,       -3,    -7   },
+        temperature=    {-25,       -15,       -3,    -7   },
       },
       entities={
         {
@@ -2547,7 +2547,7 @@ Weather =
         --          outside, inside, underground, underwater
         humidity=   {0.4,    0.13,   0.1,        },
         rain=       {0.5,                         },
-        rain_acid=  {0.12,     0.0,    0.0,  0.08    },
+        rain_acid=  {1.20,     0.0,    0.0,  0.1    },
         light=      {-0.4,    -0.1,               },
         temperature={-4,      -1,                },
         wind=       {8,       3,     2,          },
@@ -2654,7 +2654,7 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.4,       0.4,    0.2,         },
         light=          {-0.5,      -0.45,                },
-        temperature=    {-30,       -19,       -6,    -15   },
+        temperature=    {-45,       -25,       -6,    -15   },
       },
       entities={
         {
@@ -2766,7 +2766,7 @@ Weather =
         --              outside, inside, underground, underwater
         humidity=       {0.4,       0.4,    0.2,         },
         light=          {-0.5,      -0.45,                },
-        temperature=    {-30,       -18,       -6,    -15   },
+        temperature=    {-45,       -25,       -6,    -15   },
       },
       entities={
         {

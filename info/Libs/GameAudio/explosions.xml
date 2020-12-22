@@ -1,0 +1,19 @@
+<ATLConfig atl_name="explosions">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_explosion_large">
+   <WwiseEvent wwise_name="Play_explosion_large"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_molotov_explosion">
+   <WwiseEvent wwise_name="Play_molotov_explosion"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_explosion">
+   <WwiseEvent wwise_name="Play_explosion_small"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_explosion_small">
+   <WwiseEvent wwise_name="Play_explosion_small"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_explosion_medium">
+   <WwiseEvent wwise_name="Play_explosion_medium"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

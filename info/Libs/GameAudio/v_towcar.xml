@@ -1,0 +1,33 @@
+<ATLConfig atl_name="v_towcar">
+	<AudioTriggers>
+		<!-- See CVehicleMovementBase::CacheAudioControlIDs -->
+		<ATLTrigger atl_name="Play_towcar_bump">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_bump_on_road"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_damage">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_horn">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_horn"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_run">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_run_ambience"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_slip">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_slip"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_start">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_start"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_towcar_stop">
+			<WwiseEvent wwise_name="Play_luggage_vehicle_stop"/>
+		</ATLTrigger>
+
+		<ATLTrigger atl_name="Stop_towcar_damage">
+			<WwiseEvent wwise_name="Stop_luggage_vehicle_damage"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Stop_towcar_horn">
+			<WwiseEvent wwise_name="Stop_luggage_vehicle_horn"/>
+		</ATLTrigger>
+	</AudioTriggers>
+</ATLConfig>

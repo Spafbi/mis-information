@@ -1,0 +1,42 @@
+<ParticleLibrary Name="Prototype" SandboxVersion="3.8.6.49" ParticleVersion="26">
+ <Particles Name="PlayerWeapon">
+  <Params Count="50" Continuous="true" ParticleLifeTime="0.05" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Color="(x=0.973,y=0.28,z=0.03)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="0.3,ParticleAge=(v=1;t=1)"/>
+ </Particles>
+ <Particles Name="AIWeapon">
+  <Params Count="50" Continuous="true" ParticleLifeTime="0.09" RandomOffset="x=0.1,y=0.1,z=0.1" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Color="(y=0.027,z=0.027)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="0.35,ParticleAge=(v=1;t=1)"/>
+ </Particles>
+ <Particles Name="Engine">
+  <Params Count="100" Continuous="true" ParticleLifeTime="0.075" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Alpha="0.1" Color="(y=0.824,z=0.373)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="0.3,ParticleAge=(;t=0.094,v=1;t=1)" Speed="35" InheritVelocity="1"/>
+ </Particles>
+ <Particles Name="Bombs">
+  <Params Count="50" Continuous="true" ParticleLifeTime="0.2" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Color="(x=0.973,y=0.28,z=0.03)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="2.5,ParticleAge=(v=1;t=1)"/>
+ </Particles>
+ <Particles Name="AIWeaponTurret">
+  <Params Count="50" Continuous="true" ParticleLifeTime="0.06" RandomOffset="x=0.1,y=0.1,z=0.1" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Color="(y=0.027,z=0.027)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="ParticleAge=(v=1;t=1)"/>
+ </Particles>
+ <Particles Name="SmallEngine">
+  <Params Count="100" Continuous="true" ParticleLifeTime="0.035" BlendType="Additive" Texture="textures/sprites/glow/glow_b.dds" Alpha="0.1" Color="(x=0.937,y=0.624,z=0.408)" DiffuseLighting="100" DiffuseBacklighting="1" EmissiveLighting="5" Size="0.3,ParticleAge=(;t=0.094,v=1;t=1)" Speed="35" InheritVelocity="1"/>
+ </Particles>
+ <Particles Name="AIMissile">
+  <Params Enabled="false" Continuous="true" ParticleLifeTime="Random=0.283" FocusGravityDir="true" EmitAngle="11.42,Random=1" Texture="textures/sprites/smoke/smoke_tiled_c.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="ParticleAge=(t=0.5,v=1;t=1)" Color="ParticleAge=(t=0.008,v=(x=1,y=0.914,z=0.616);t=0.15,v=(x=1,y=1,z=1))" DiffuseLighting="0.574" DiffuseBacklighting="0.482" Size="1.64,Random=0.317,ParticleAge=(t=0.12,v=0.57;t=1,v=1)" Stretch="0.04,ParticleAge=(t=0.16,v=1;t=0.4)" AirResistance="7.77" GravityScale="0.1" RandomAngles="x=12,y=12,z=12" RandomRotationRate="x=21,y=21,z=21"/>
+  <Childs>
+   <Particles Name="missile">
+    <Params Continuous="true" BlendType="Additive" Texture="textures/sprites/fire/explosion_a.tif" DiffuseBacklighting="1" EmissiveLighting="1" Size="0.08" SortOffset="-0.01"/>
+    <Childs>
+     <Particles Name="smoke">
+      <Params Count="150" Continuous="true" ParticleLifeTime="2,Random=0.554" PositionOffset="y=3" EmitAngle="10,Random=1" Texture="textures/sprites/smoke/smoke_tiled_d.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.3,ParticleAge=(;t=0.255,v=1;t=1)" DiffuseLighting="0.5" Size="3,Random=0.5,ParticleAge=(;t=1,v=1)" AirResistance="0.7742" GravityScale="-0.1" RandomAngles="y=359" RandomRotationRate="y=23"/>
+     </Particles>
+     <Particles Name="refraction">
+      <Params Count="5" Continuous="true" ParticleLifeTime="1" PositionOffset="y=-1.5" EmitAngle="Random=1" Texture="textures/sprites/glow/glow_a.tif" Material="materials/particle/refraction" Alpha="ParticleAge=(;t=0.24,v=1;t=0.46,v=1;t=1)" DiffuseLighting="0" NotAffectedByFog="true" Size="3,ParticleAge=(;t=1,v=1)" Stretch="7.3" Speed="5" RandomAngles="y=359"/>
+     </Particles>
+     <Particles Name="flames_ball">
+      <Params Count="10" Continuous="true" ParticleLifeTime="0.2" PositionOffset="y=-0.75" EmitAngle="2.291,Random=1" BlendType="Additive" Texture="textures/sprites/fire/explosion_b.tif" SoftParticle="true" Alpha="Random=1,ParticleAge=(;t=0.325,v=1;t=0.88,v=0.02;t=1)" Color="ParticleAge=(t=0.04,v=(x=0.99,y=0.94);t=0.694,v=(x=0.26,y=0.07,z=0.77))" DiffuseBacklighting="1" EmissiveLighting="1" Size="1.5,ParticleAge=(v=0.365;t=1,v=1)" Stretch="0.1" Speed="10" RandomAngles="y=359" RandomRotationRate="y=55" SortOffset="-0.01"/>
+     </Particles>
+     <Particles Name="flames">
+      <Params Count="10" Continuous="true" SpawnDelay="0.1" ParticleLifeTime="0.2,Random=0.517" PositionOffset="y=-1.5" BlendType="Additive" Texture="textures/sprites/glow/glow_b.tif" SoftParticle="true" Alpha="0.15,ParticleAge=(t=0.24,v=1;t=1)" Color="EmitterStrength=(t=0.016,v=(x=0.984,y=0.23,z=0.1);t=0.137,v=(y=0.1,z=0.984))" DiffuseBacklighting="1" EmissiveLighting="1" Size="2,Random=0.05,ParticleAge=(;t=1,v=1)" Stretch="0.1" Speed="15"/>
+     </Particles>
+    </Childs>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

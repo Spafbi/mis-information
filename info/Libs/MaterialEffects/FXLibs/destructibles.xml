@@ -1,0 +1,14 @@
+<FXLib>
+
+	<Effect name="body_shatter"/>
+	<Effect name="glass_shatter"/>
+	<Effect name="tree_falling"/>
+	<Effect name="vehicle_shatter"/>
+	<Effect name="vehicle_window"/>
+	<Effect name="wood_shatter"/>
+	<Effect name="metal_shatter"/>
+	<Effect name="stone_shatter"/>
+	<Effect name="ice_shatter"/>
+	<Effect name="flesh_shatter"/>
+
+</FXLib>

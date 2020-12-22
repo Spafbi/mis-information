@@ -23,7 +23,7 @@
 	<!-- https://en.wikipedia.org/wiki/7.62%C3%9751mm_NATO -->
 	<physics type="particle">
 		<param name="mass" value="0.01134" /> <!-- 175 grain / 11.34 grams -->
-		<param name="speed" value="786" /> <!-- 3506J energy -->
+		<param name="speed" value="900" /> <!-- 3506J energy -->
 		<param name="radius" value="0.00391" /> <!-- 7.82mm diameter -->
 		<param name="air_resistance" value="0.6" />
 		<param name="water_resistance" value="10.0" />

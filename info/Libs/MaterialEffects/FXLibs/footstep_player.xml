@@ -1,0 +1,143 @@
+<FXLib>
+
+	<!-- Keep the effects in alphabetical order -->
+
+	<Effect name="default">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="dirt" /> <!-- default to dirt -->
+		</Audio>
+	</Effect>
+
+	<Effect name="carpet">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="carpet" />
+		</Audio>
+	</Effect>
+
+	<Effect name="concrete">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="concrete" />
+		</Audio>
+	</Effect>
+
+	<Effect name="dirt">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="dirt" />
+		</Audio>
+		<RandEffect>
+			<Decal minscale="0.15" maxscale="0.15" lifetime="20">
+				<Material>Materials/decals/footsteps/footstep_dirt</Material>
+			</Decal>
+		</RandEffect>
+	</Effect>
+
+	<Effect name="flesh" >
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<!--<Switch name="SurfaceType" state="flesh" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="glass" >
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<!--<Switch name="SurfaceType" state="glass" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="grass" >
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="grass" />
+		</Audio>
+	</Effect>
+
+	<Effect name="gravel">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="gravel" />
+		</Audio>
+	</Effect>
+
+	<Effect name="metal">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="metal_chainlink">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="metal_thick">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="metal_thin">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="metal" />
+		</Audio>
+	</Effect>
+
+	<Effect name="mud">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="mud" />
+		</Audio>
+	</Effect>
+
+	<Effect name="plastic">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<!--<Switch name="SurfaceType" state="plastic" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="rubber">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<!--<Switch name="SurfaceType" state="rubber" />-->
+		</Audio>
+	</Effect>
+
+	<Effect name="sand">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="sand" />
+		</Audio>
+		<RandEffect>
+			<Decal minscale="0.15" maxscale="0.15" lifetime="20">
+				<Material>Materials/decals/footsteps/footstep_sand</Material>
+			</Decal>
+		</RandEffect>
+	</Effect>
+
+	<!--water_shallow & water_deep required by game code-->
+	<Effect name="water_deep">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="water_deep" />
+		</Audio>
+		<Particle>
+			<Name minscale="0.5" maxscale="0.5" maxscaledist="1">collisions.footsteps.water</Name>
+		</Particle>
+	</Effect>
+
+	<Effect name="water_shallow">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="water_shallow" />
+		</Audio>
+		<Particle>
+			<Name minscale="0.2" maxscale="0.2" maxscaledist="1">collisions.footsteps.water</Name>
+		</Particle>
+	</Effect>
+	<!--End-->
+
+	<Effect name="wood_hollow">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="wood_hollow" />
+		</Audio>
+	</Effect>
+
+	<Effect name="wood_solid">
+		<Audio trigger="Play_footstep_player" type="1p3p">
+			<Switch name="SurfaceType" state="wood_solid" />
+		</Audio>
+	</Effect>
+
+</FXLib>

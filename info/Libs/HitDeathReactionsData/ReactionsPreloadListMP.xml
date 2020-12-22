@@ -1,0 +1,10 @@
+<ReactionsPreloadList>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_MP.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_Deer.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_Pig.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_GreyWolf.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_Spiker.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_crazy.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_humanzombie.xml"/>
+	<Entry reactionsFile="Libs/HitDeathReactionsData/HitDeathReactions_TwoHeadDog.xml"/>
+</ReactionsPreloadList>

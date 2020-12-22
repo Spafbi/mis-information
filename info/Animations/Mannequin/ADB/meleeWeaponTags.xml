@@ -1,0 +1,10 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="meleeHit">
+   <Tag name="combo_left"/>
+   <Tag name="combo_right"/>
+   <Tag name="killingblow_rightuppercut"/>
+   <Tag name="killingblow_rightkick"/>
+  </Group>
+ </Tags>
+</TagDefinition>

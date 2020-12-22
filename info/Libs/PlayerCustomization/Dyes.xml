@@ -1,0 +1,28 @@
+<Dyes>
+	<!-- The item generation can pick any color from this list when a colored item is initially spawned -->
+	<!-- Index: 0 -->
+	<DefaultDyes>
+		<Dye color="142,138,120"/> <!-- 0 -->
+		<Dye color="156,126,81"/>
+		<Dye color="61,112,162"/>
+		<Dye color="102,100,85"/>
+		<Dye color="80,103,115"/>
+		<Dye color="160,75,23"/>
+		<Dye color="90,70,32"/>
+		<Dye color="102,45,108"/>
+		<Dye color="88,64,42"/>
+		<Dye color="42,92,5"/>
+		<Dye color="71,63,51"/> <!-- 10 -->
+		<Dye color="133,56,26"/>
+		<Dye color="77,62,38"/>
+		<Dye color="40,57,61"/>
+		<Dye color="53,50,40"/>
+		<Dye color="71,44,23"/>
+		<Dye color="97,10,53"/>
+		<Dye color="22,57,0"/>
+		<Dye color="48,26,77"/>
+		<Dye color="65,30,0"/>
+		<Dye color="88,8,0"/> <!-- 20 -->
+	</DefaultDyes>
+	<!-- Index: 20 -->
+</Dyes>

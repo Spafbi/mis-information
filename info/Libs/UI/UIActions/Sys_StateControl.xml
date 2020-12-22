@@ -1,0 +1,142 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Events:System:OnSystemStarted" pos="-400,-440,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="3" Name="Display_MainMenu_on_SystemStart" Class="_commentbox" pos="-420,-499.12561,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="700" Height="160"/>
+   <NodeSize Width="700" Height="196.97659"/>
+  </Node>
+  <Node Id="6" Class="UI:Events:System:OnLoadingStart" pos="580,180,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="7" Class="UI:Display:Display" pos="940,180,0" flags="0" InHideMask="1023" OutHideMask="255">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="9" Class="UI:Action:Control" pos="1140,240,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DisplayLoadingScreen" Strict="0" Args=""/>
+  </Node>
+  <Node Id="11" Class="UI:Display:Display" pos="1040,-140,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="14" Class="UI:Events:System:OnLoadingError" pos="-400,-200,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="18" Class="Logic:Any" pos="-40,-160,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="19" Class="UI:Display:Display" pos="140,240,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="20" Class="UI:Action:Control" pos="140,100,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DisplayIngameMenu" Strict="0" Args=""/>
+  </Node>
+  <Node Id="24" Class="Logic:Any" pos="900,-140,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="25" Class="Game:Start" pos="580,-120,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="34" Class="UI:Events:MenuEvents:OnStartIngameMenu" pos="-400,100,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="35" Class="UI:Events:MenuEvents:OnStopIngameMenu" pos="-400,280,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="36" Class="UI:Util:ToArray" pos="940,240,0" flags="0">
+   <Inputs Count="3"/>
+  </Node>
+  <Node Id="38" Class="Audio:Trigger" pos="1180,-500,0" flags="0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="Play_menu_ambience" audioTrigger_StopTrigger="Stop_menu_ambience"/>
+  </Node>
+  <Node Id="58" Class="UI:Action:Control" pos="-40,-440,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DisplayMenu" Strict="0" Args=""/>
+  </Node>
+  <Node Id="60" Class="UI:Events:System:OnGameplayStarted" pos="580,-200,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="62" Class="UI:Events:System:OnUnloadComplete" pos="-400,-140,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="63" Name="Level_Load_Handling" Class="_commentbox" pos="560,99.202644,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="940" Height="240"/>
+   <NodeSize Width="940" Height="276.97659"/>
+  </Node>
+  <Node Id="64" Name="Gameplay_Start" Class="_commentbox" pos="560,-280.79764,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="800" Height="320"/>
+   <NodeSize Width="800" Height="356.97659"/>
+  </Node>
+  <Node Id="65" Name="InGame_Menu" Class="_commentbox" pos="-420,20.956104,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="900" Height="400"/>
+   <NodeSize Width="900" Height="436.97659"/>
+  </Node>
+  <Node Id="66" Class="UI:Action:Control" pos="120,-160,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DisplayMenuServerConnect" Strict="0" Args=""/>
+  </Node>
+  <Node Id="67" Name="Error/Unload_Handling" Class="_commentbox" pos="-420,-279.07028,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="940" Height="240"/>
+   <NodeSize Width="940" Height="276.97659"/>
+  </Node>
+  <Node Id="69" Class="UI:Events:System:OnDisconnect" pos="-400,-80,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="71" Class="Logic:Any" pos="-40,240,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="73" Class="Logic:Any" pos="980,-460,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="75" Class="UI:Events:System:OnUnloadComplete" pos="580,-480,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="76" Name="This_is_used_when_exiting_a_game_and_going_back_to_the_main_menu" Class="_comment" pos="580,-510,0" flags="0"/>
+  <Node Id="78" Class="UI:Events:MP:OnLocalPlayerRevived" pos="-400,220,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="79" Name="Display_Main_Menu_and_goto_Server_Browser_on_LoadingError_or_Level_unload" Class="_comment" pos="-400,-230,0" flags="0"/>
+  <Node Id="80" Name="Unload_the_MainMenu_and_display_a_loadingscreen_on_level_loading" Class="_comment" pos="580,150,0" flags="0"/>
+  <Node Id="81" Name="Unload_Loadingscreen_and_start_HUD_UIAction_on_Start_Gameplay" Class="_comment" pos="580,-230,0" flags="0"/>
+  <Node Id="82" Name="Display/Hide_ingame_menu_-_Controlled_via_UIMenuEvents" Class="_comment" pos="-400,70,0" flags="0"/>
+  <Node Id="83" Name="Unload_Level" Class="_commentbox" pos="560,-560,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="520" Height="150"/>
+   <NodeSize Width="520" Height="186.97659"/>
+  </Node>
+  <Node Id="84" Name="Menu_BGM" Class="_commentbox" pos="1160,-559.98505,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="340" Height="150"/>
+   <NodeSize Width="340" Height="186.97659"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="58" nodeOut="1" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="6" portIn="unload" portOut="onEvent" enabled="0"/>
+  <Edge nodeIn="36" nodeOut="6" portIn="Val3" portOut="Image" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="6" portIn="Val1" portOut="Level" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="6" portIn="Val2" portOut="Video" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="6" portIn="Set" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="14" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="66" nodeOut="18" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="24" portIn="unload" portOut="out" enabled="0"/>
+  <Edge nodeIn="24" nodeOut="25" portIn="in2" portOut="output" enabled="0"/>
+  <Edge nodeIn="20" nodeOut="34" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="71" nodeOut="35" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="36" portIn="Args" portOut="Array" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="36" portIn="Start" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="73" nodeOut="58" portIn="in2" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="24" nodeOut="60" portIn="in1" portOut="onEvent" enabled="0"/>
+  <Edge nodeIn="38" nodeOut="60" portIn="Stop" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="62" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="69" portIn="in3" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="71" portIn="hide" portOut="out" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="73" portIn="Play" portOut="out" enabled="1"/>
+  <Edge nodeIn="73" nodeOut="75" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="71" nodeOut="78" portIn="in1" portOut="onEvent" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

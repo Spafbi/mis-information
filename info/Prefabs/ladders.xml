@@ -1,0 +1,122 @@
+<PrefabsLibrary Name="ladders">
+ <Prefab Name="sewer_ladder" Id="{DC7EBEEB-6F0A-4851-97A1-CCE81B3D33BD}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{AC5FBBDC-CCC4-4CEE-BC5B-88E5D45412B6}" Name="sewer_ladder" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="25" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="5.62" fileModel="Objects/props/misc/ladders/sewer_ladder_01.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="mp_ladder1" Id="{58F79E54-D504-424D-9E1B-24C16AB8945C}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="mil" LayerGUID="{AA84FA74-D5BB-4EF4-AC28-A8C1BD19366D}" Id="{A8B7234B-88FD-422E-8497-A60680FC7509}" Name="mp_ladder1" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MinSpec="3" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="50" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="3.89" fileModel="Objects/props/misc/ladders/mp_ladder1.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="mp_ladder1b" Id="{CD284B08-180F-491F-AE89-BD4039E3DE4D}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{F14FD236-DC95-471A-A1C9-64CE9010A25B}" Name="mp_ladder1b" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="50" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="3.06" fileModel="objects/props/misc/ladders/mp_ladder1b.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.4"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="mp_ladder1c" Id="{C46B5BB3-EC9F-404B-9EA1-B805E360415A}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{4BB51D21-423D-456C-8FE6-848FEEFBB7A9}" Name="mp_ladder1c" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="25" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="6.89" fileModel="objects/props/misc/ladders/mp_ladder1c.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="mp_ladder1d" Id="{A76603A1-FECE-4332-A9D7-FB45964380A0}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{FA244385-7FFD-4FB4-A41D-84DAF8DB443C}" Name="mp_ladder1d" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="25" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="6.88" fileModel="objects/props/misc/ladders/mp_ladder1d.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="watertower_ladder1" Id="{4D4B0C47-2ACF-42B7-9C1E-22F43AF5D293}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{E8B4A7CC-A495-4200-B673-09D0D5E8B14B}" Name="watertower_ladder1" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="10" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="32.63" fileModel="Objects/props/misc/ladders/waterTower_ladder1.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="watertower_ladder2" Id="{84BCD8E3-9547-4241-BE24-CB86047B2793}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{0D967E1C-2A78-4D14-9F68-A12558DDB565}" Name="watertower_ladder2" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="20" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="15.39" fileModel="Objects/props/misc/ladders/waterTower_ladder2.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.6"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="radiotower_ladder" Id="{09C4CBDE-AF68-481F-BCE3-8C79098B0386}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{C1CBE6C1-A3C8-4701-B83E-BDC7EFA85BBA}" Id="{DC11BB37-534F-4DE2-8AB2-553B7EA92F49}" Name="radiotower_ladder" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="15" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="42.485" fileModel="Objects/props/misc/ladders/radio_tower_ladder.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="sat_ladder" Id="{B39FCCE8-F478-4CC2-88C8-2B49591889A0}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="satdish" LayerGUID="{BF50C489-3C96-47A7-96E6-73F4E26DC1FE}" Id="{49CC6B83-877A-46E6-B669-4827F7DED0A9}" Name="sat_ladder" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="50" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="4.94" fileModel="Objects/structures/sat_dish/sat_ladder.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="2.7"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="hatch_ladder_01" Id="{B986535C-F5DB-4861-91F9-B7478FB3D1D5}" Library="ladders">
+  <Objects>
+   <Object Type="Entity" Layer="bunkers" LayerGUID="{16EAD103-A271-4D81-A77B-757471D07F33}" Id="{064C21A9-6C0D-44E7-B32F-BC7E7526DA13}" Name="hatch_ladder" Pos="0,0,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Ladder">
+    <Properties approachAngle="60" approachAngleTop="0" height="7" fileModel="objects/props/misc/ladders/hatch_ladder_01.cgf" bTopBlocked="0" bUsable="1">
+     <Camera cameraAnimFraction_getOff="0.85" cameraAnimFraction_getOn="0.85" cameraAnimFraction_onLadder="0.3" distanceBetweenRungs="0.5" bRenderLadderLast="0" bUseThirdPersonCamera="1"/>
+     <Movement movementAcceleration="5" movementInertiaDecayRate="5.5" movementSettleSpeed="0.8" movementSpeedDownwards="2.25" movementSpeedUpwards="2.5"/>
+     <Offsets getOnDistanceAwayBottom="0.54" getOnDistanceAwayTop="1.4" playerHorizontalOffset="0.38" stopClimbDistanceFromBottom="0.5" stopClimbDistanceFromTop="1.92"/>
+     <ViewLimits horizontalViewLimit="30" verticalDownViewLimit="0" verticalUpViewLimit="0"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

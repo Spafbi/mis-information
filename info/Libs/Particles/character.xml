@@ -1,0 +1,284 @@
+<ParticleLibrary Name="character" SandboxVersion="3.8.6.49" ParticleVersion="26">
+ <Particles Name="player.vomit_oneshot">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="audio">
+    <Params Count="1" ParticleLifeTime="1" StartTrigger="Play_vomit_splash"/>
+   </Particles>
+   <Particles Name="vomit">
+    <Params Count="20,EmitterStrength=(v=1;t=0.643,v=1;t=1)" Continuous="true" EmitterLifeTime="1" ParticleLifeTime="6" PositionOffset="y=0.03" Texture="textures/sprites/water/water_splash.dds" TextureTiling="TilesX=6,TilesY=6,FirstTile=1,AnimFramesCount=35,AnimFramerate=23" Material="Materials/particle/vomit" SoftParticle="true,Softness=1.37" Alpha="0.43,EmitterStrength=(v=1;t=0.79,v=1;t=1)" Color="(x=0.36130682,y=0.30498734,z=0.22322798)" DiffuseBacklighting="1" Size="0.15,EmitterStrength=(v=0.52;t=1,v=0.294)" Stretch="0.248,EmitterStrength=(v=1;t=0.753)" Speed="2.1,Random=0.5,EmitterStrength=(v=1;t=0.506)" GravityScale="0.5,EmitterStrength=(v=1,flags=32;t=1,v=0.41)" RandomAngles="y=180" RandomRotationRate="y=360" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" MaxCollisionEvents="1" SurfaceType="water" Elasticity="0.1" CameraMaxDistance="51.4"/>
+    <Childs>
+     <Particles Name="decal">
+      <Params SpawnIndirection="ParentDeath" Count="0.6,Random=1" ParticleLifeTime="60" FocusAngle="180" EmitAngle="45" Facing="Decal" Material="Materials/decals/Dirt/dirt_vomit" Alpha="ParticleAge=(;t=0.024,v=1;t=0.718,v=1;t=1)" Size="0.2,Random=0.1" Speed="Random=0.5" GravityScale="1" RandomAngles="y=100" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" SurfaceType="water" DynamicFriction="1000"/>
+     </Particles>
+    </Childs>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="player.bleeding">
+  <Params Count="1"/>
+  <Childs>
+   <Particles Name="spurt">
+    <Params Count="20,Random=0.1" MaintainDensity="1" Continuous="true" PulsePeriod="2" ParticleLifeTime="1,Random=0.5" PositionOffset="y=0.14" Texture="textures/sprites/blood/blood_anim_a.dds" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=32,AnimFramerate=32,AnimBlend=true" Alpha="ParticleAge=(;t=0.35,v=1;t=0.792,v=1;t=0.953)" Color="(x=0.4019778,y=0.00091058103,z=0.00091058103)" DiffuseBacklighting="1" ReceiveShadows="true" Size="0.15,Random=0.255,EmitterStrength=(v=0.725;t=1)" Stretch="0.067" Speed="1,Random=0.3,EmitterStrength=(v=1;t=1)" GravityScale="0.553,EmitterStrength=(flags=32;t=0.506,v=1)" RandomAngles="x=180,y=180,z=180" RotationRate="x=60,y=60,z=60"/>
+   </Particles>
+   <Particles Name="decal_spawner">
+    <Params Count="2,Random=0.1" Continuous="true" PulsePeriod="2" ParticleLifeTime="1,Random=0.5" PositionOffset="y=0.14" EmitAngle="15" Texture="textures/sprites/blood/blood_anim_a.dds" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=32,AnimFramerate=32,AnimBlend=true" Alpha="ParticleAge=(;t=0.35,v=1;t=0.792,v=1;t=0.953)" Color="(x=0.4019778,y=0.00091058103,z=0.00091058103)" DiffuseBacklighting="1" ReceiveShadows="true" Size="0.15,Random=0.255,EmitterStrength=(v=0.725;t=1)" Stretch="0.067" TailLength="10" Connection="TextureMapping=PerStream,TextureMirror=false,TextureFrequency=0.552" Speed="1,Random=0.3,EmitterStrength=(v=1;t=1)" GravityScale="0.553,EmitterStrength=(flags=32;t=0.506,v=1)" RandomAngles="x=180,y=180,z=180" RotationRate="x=60,y=60,z=60"/>
+    <Childs>
+     <Particles Name="decals">
+      <Params SpawnIndirection="ParentDeath" Count="1,Random=1" ParticleLifeTime="30" FocusAngle="180" Facing="Decal" Material="Materials/decals/blood/bloodsplat2" Alpha="0.55,ParticleAge=(;t=0.03,v=1;t=0.718,v=1;t=1)" Size="0.2,ParticleAge=(v=0.75;t=1,v=1)" Speed="Random=0.5" GravityScale="1" RandomAngles="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" SurfaceType="flesh" DynamicFriction="1000"/>
+     </Particles>
+    </Childs>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="player.water.waist_bubbles">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="main">
+    <Params Count="100" Continuous="true" ParticleLifeTime="3,Random=0.2" RandomOffset="x=0.2,z=0.2" FocusAngle="83.2" EmitAngle="180,Random=1" Facing="Water" Texture="textures/sprites/water/water_tiled_b.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="0.5,ParticleAge=(;t=0.25,v=0.976;t=1)" Color="ParticleAge=(v=(x=1,y=1,z=1);t=1,v=(x=0.447,y=0.447,z=0.447))" DiffuseLighting="0.5" Size="ParticleAge=(v=0.66;t=1,v=1)" Speed="2,Random=0.5" AirResistance="1" RandomAngles="x=99,y=99,z=99" RandomRotationRate="x=13,y=13,z=13" SortOffset="-0.01"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="player.water.arm_bubbles">
+  <Params Count="22" Continuous="true" EmitterLifeTime="0.5" ParticleLifeTime="0.8,Random=0.366" RandomOffset="x=0.1,y=0.1,z=0.1" EmitAngle="10.5,Random=1" BlendType="Additive" Texture="textures/sprites/water/bubbles_a.tif" Alpha="0.396,ParticleAge=(;t=0.114,v=1;t=1)" Color="ParticleAge=(v=(x=0.48,y=0.48,z=0.48);t=1,v=(x=1,y=1,z=1))" DiffuseBacklighting="0.7" Size="0.29,Random=0.3670886,ParticleAge=(;t=0.094,v=0.59;t=1,v=1)" Speed="Random=0.1596639" GravityScale="-0.2" TurbulenceSize="0.025" TurbulenceSpeed="229" RandomAngles="y=180" RandomRotationRate="y=50" VisibleUnderwater="If_True"/>
+  <Childs>
+   <Particles Name="2">
+    <Params Count="20" Continuous="true" EmitterLifeTime="0.5" ParticleLifeTime="0.5,Random=0.2" FocusAngle="80" EmitAngle="180,Random=1" Texture="textures/sprites/water/water_tiled_b.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="0.1,ParticleAge=(;t=0.25,v=0.976;t=1)" Color="ParticleAge=(v=(x=1,y=1,z=1);t=1,v=(x=0.447,y=0.447,z=0.447))" DiffuseLighting="0.5" DiffuseBacklighting="0.5" Size="0.2,ParticleAge=(v=0.66;t=1,v=1)" Speed="0.2,Random=0.5" RandomAngles="x=99,y=99,z=99" RandomRotationRate="x=13,y=13,z=13" SortOffset="-1"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.rock_throw">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="stones">
+    <Params Count="5" ParticleLifeTime="1,Random=0.5" EmitAngle="40,Random=1" Texture="textures/sprites/stones/stones_tiled.tif" TextureTiling="TilesX=4,TilesY=2,VariantCount=8" Alpha="ParticleAge=(t=0.5,v=1;t=1)" DiffuseLighting="0.15" DiffuseBacklighting="0.25" Size="0.04,Random=0.4708995" Speed="5,Random=0.5" GravityScale="1" RandomAngles="y=359" SortOffset="-0.01" ConfigMin="Medium"/>
+   </Particles>
+   <Particles Name="dust">
+    <Params Count="10" SpawnDelay="0.03" ParticleLifeTime="0.8,Random=0.248" EmitAngle="9.5,Random=0.178" Texture="textures/sprites/smoke/smoke_tiled_c.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.5,ParticleAge=(;t=0.03,v=1;t=1)" Color="(x=0.30946895,y=0.21586053,z=0.13843164)" DiffuseLighting="0.5" DiffuseBacklighting="0.5" Size="0.3,Random=0.423077,ParticleAge=(v=0.5,flags=32;t=1,v=1)" Speed="0.5,Random=0.7" AirResistance="0.5" RandomRotationRate="y=21"/>
+   </Particles>
+   <Particles Name="spray">
+    <Params Count="10" SpawnDelay="0.1" ParticleLifeTime="0.3" EmitAngle="60,Random=1" Texture="textures/sprites/dirt/dirt_a.tif" Alpha="0.5,ParticleAge=(;t=0.024,v=1;t=0.514,v=1;t=1)" Color="(x=0.2961383,y=0.21586053,z=0.14995982)" DiffuseBacklighting="0.5" Size="0.3,ParticleAge=(v=0.41;t=1,v=1)" Speed="2,Random=0.3" AirResistance="0.1" GravityScale="-0.01" RotationRate="y=41"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.spider_explosion">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke_blast">
+    <Params Count="30" ParticleLifeTime="6,Random=0.446" PositionOffset="y=-0.5" RandomOffset="x=1,z=1" OffsetRoundness="0.3" EmitAngle="86.3,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.713,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(v=1;t=0.165,v=1;t=0.784,v=1;t=1)" Color="(x=0.23074007,y=0.5972019,z=0.17144112)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" Size="2,Random=0.178,ParticleAge=(v=0.63;t=1,v=1)" Speed="5" AirResistance="2.4,RotationalDragScale=0.165,WindScale=0" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="flash">
+    <Params Count="1" ParticleLifeTime="0.1,Random=0.594" EmitAngle="0.23,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow_b.tif" SoftParticle="true" Color="(x=0.4232677,y=0.8713673,z=0.26635563)" DiffuseLighting="0" DiffuseBacklighting="1" EmissiveLighting="1" Size="5,Random=0.366,ParticleAge=(t=0.494,v=1;t=1)" SortOffset="1" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="blood">
+    <Params Count="20" ParticleLifeTime="1,Random=0.574" EmitAngle="35,Random=0.762" Texture="textures/sprites/blood/blood_anim_a_grey.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true" Alpha="Random=0.228,ParticleAge=(t=0.93,v=1;t=1,v=0.706)" Color="(x=0.07421357,y=0.23074007,z=0.01228649)" DiffuseBacklighting="1" EmissiveLighting="1" Size="1.5,Random=0.594" Stretch="0.1" Speed="10,Random=0.812" GravityScale="1" RandomAngles="y=270" RandomRotationRate="y=31" SortOffset="2"/>
+   </Particles>
+   <Particles Name="debris">
+    <Params Count="8" ParticleLifeTime="6,Random=0.574" EmitAngle="35,Random=0.762" Texture="textures/sprites/wood/wood_chip_tiled.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Geometry="objects/characters/animals/spider_large/spider_leg.cgf" Alpha="ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" DiffuseLighting="0.218" DiffuseBacklighting="0.565" Size="1.498,Random=0.594" Speed="10,Random=0.812" GravityScale="1" RandomAngles="y=270" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" MaxCollisionEvents="4" DynamicFriction="10" SortOffset="3"/>
+   </Particles>
+   <Particles Name="dirt">
+    <Params Count="10" ParticleLifeTime="2" RandomOffset="y=1" EmitAngle="15.8" Texture="textures/sprites/dirt/dirt_c.dds" SoftParticle="true" Alpha="0.232,ParticleAge=(t=0.64,v=1;t=1)" Color="(x=0.15896086,y=0.116970696,z=0.06301002)" DiffuseBacklighting="1" Size="1.46,ParticleAge=(v=0.39;t=1,v=1)" Speed="5" AirResistance="3" GravityScale="1" RandomAngles="y=180" RandomRotationRate="y=20"/>
+    <Childs>
+     <Particles Name="dirt2">
+      <Params Count="30" ParticleLifeTime="1.5" RandomOffset="y=0.8" EmitAngle="58.9,Random=1" Texture="textures/sprites/dirt/dirt_c.dds" SoftParticle="true,Softness=2" Alpha="0.232,ParticleAge=(t=0.64,v=1;t=1)" Color="(x=0.15896086,y=0.116970696,z=0.06301002)" DiffuseBacklighting="1" Size="ParticleAge=(v=0.39;t=0.57,v=1)" Speed="2.3" GravityScale="0.772" RandomAngles="y=180" RandomRotationRate="y=20"/>
+     </Particles>
+    </Childs>
+   </Particles>
+   <Particles Name="blast">
+    <Params Count="1" ParticleLifeTime="0.2" EmitAngle="88.4,Random=1" BlendType="Additive" Texture="textures/sprites/fire/number9_together1.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" SoftParticle="true,Softness=1.19" Alpha="ParticleAge=(t=0.85,v=1;t=1)" Color="(x=0.07818743,y=0.5520115,z=0.086500466)" DiffuseLighting="0" DiffuseBacklighting="1" EmissiveLighting="3" Size="2.05" Stretch="0.29" Speed="1.2" RandomAngles="y=359" RandomRotationRate="y=12" SortOffset="4" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="blood_ground">
+    <Params Count="1" ParticleLifeTime="5" EmitAngle="90" Facing="Terrain" Texture="textures/sprites/blood/wblood_3_grey.tif" SoftParticle="Softness=2" Alpha="0.719,ParticleAge=(;t=0.075,v=1;t=0.753,v=1;t=1)" Color="(x=0.18447502,y=0.6104957,z=0.026241222)" DiffuseBacklighting="1"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.spider_primer">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke_fume">
+    <Params Count="45" Continuous="true" EmitterLifeTime="10" ParticleLifeTime="8,Random=0.19,EmitterStrength=(v=1;t=1,v=0.63)" RandomOffset="x=0.2,z=0.2" FocusGravityDir="true" EmitAngle="28.85,Random=0.448718" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" SoftParticle="true" Alpha="0.713,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(;t=0.17,v=1;t=0.263,v=1;t=0.447)" Color="(x=0.23074007,y=0.5972019,z=0.17144112)" DiffuseLighting="0.257" DiffuseBacklighting="0.357" Size="0.449,Random=0.297,EmitterStrength=(v=1;t=1,v=0.75),ParticleAge=(v=0.57,flags=32;t=1,v=1)" Stretch="0.11" Speed="Random=0.5" AirResistance="9.14,Random=0.188,RotationalDragScale=0.235,WindScale=0" GravityScale="-0.13,Random=0.198" RandomRotationRate="y=50" VisibleUnderwater="If_False"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="player.wet">
+  <Params Count="1"/>
+  <Childs>
+   <Particles Name="drops">
+    <Params Count="3,Random=0.2" Continuous="true" SpawnDelay="0.3" ParticleLifeTime="2,EmitterStrength=(v=0.545,flags=32;t=1,v=1,flags=4)" RandomOffset="x=0.2,y=0.2,z=0.2" EmitOffsetDir="true" EmitAngle="Random=1" Curvature="0" Texture="textures/sprites/water/rain_drop_a.dds" Alpha="0.7,ParticleAge=(v=1;t=0.165,v=1;t=0.5)" DiffuseBacklighting="1" EmissiveLighting="0.08" Size="0.01,Random=0.4,EmitterStrength=(v=1,flags=32;t=1,v=0.27,flags=4)" Stretch="0.01" Speed="Random=0.5,EmitterStrength=(v=1,flags=32;t=1)" GravityScale="1,EmitterStrength=(v=1,flags=32;t=1,v=0.41)" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" MaxCollisionEvents="1" SurfaceType="water" Elasticity="0.1" CameraMaxDistance="20"/>
+    <Childs>
+     <Particles Name="splash">
+      <Params SpawnIndirection="ParentDeath" Count="1" ParticleLifeTime="0.5" RandomOffset="z=0.1" FocusGravityDir="true" Texture="textures/sprites/water/water_splash.dds" TextureTiling="TilesX=6,TilesY=6,AnimFramesCount=36,AnimFramerate=13.15,AnimBlend=true" SoftParticle="true" Alpha="0.974" DiffuseLighting="0.3" DiffuseBacklighting="0.3" EmissiveLighting="0.03" ReceiveShadows="true" Size="0.196,ParticleAge=(;t=0.298,v=1;t=0.698)" Speed="0.5" GravityScale="0.85"/>
+      <Childs>
+       <Particles Name="decal">
+        <Params SpawnIndirection="ParentDeath" Count="1,Random=1" ParticleLifeTime="25" FocusAngle="180" EmitAngle="45" Facing="Decal" Material="Materials/decals/WaterPuddle/water_puddle_wet" Alpha="0.5,ParticleAge=(;t=0.024,v=1;t=0.718,v=1;t=1)" Size="0.63,Random=0.2,ParticleAge=(v=0.16;t=0.05,v=0.43,flags=32;t=1,v=1)" Speed="Random=0.5" GravityScale="1" RandomAngles="y=100" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" DynamicFriction="1000"/>
+       </Particles>
+      </Childs>
+     </Particles>
+    </Childs>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="player.warm_breath">
+  <Params Enabled="false" Count="1" EmitterLifeTime="1.4" ParticleLifeTime="9,Random=0.1,EmitterStrength=(v=0.227;t=1,v=1)" PositionOffset="y=-0.33" EmitAngle="10" Texture="textures/sprites/smoke/smoke_roll_animated2.dds" TextureTiling="TilesX=10,TilesY=5,AnimFramesCount=50,AnimFramerate=5,AnimBlend=true" SoftParticle="true" Alpha="0.277,EmitterStrength=(v=0.48;t=1,v=1),ParticleAge=(;t=0.192,v=0.976;t=0.8,v=0.773;t=1)" DiffuseLighting="0.5" DiffuseBacklighting="0.5" EmissiveLighting="0.175" Size="0.3,Random=0.001,EmitterStrength=(;t=0.78,v=1;t=1,v=1),ParticleAge=(;t=0.78,v=1;t=1,v=1)" Stretch="0.2,EmitterStrength=(v=1;t=0.753)" Speed="0.15,Random=0.025" AirResistance="0.005" GravityScale="-0.003,Random=0.01" MoveRelativeEmitter="true" RandomAngles="y=180" RandomRotationRate="y=10" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" MaxCollisionEvents="1" SurfaceType="water" Elasticity="0.1" CameraMaxDistance="75"/>
+  <Childs>
+   <Particles Name="breath">
+    <Params Count="20" MaintainDensity="1" Continuous="true" EmitterLifeTime="1.4" ParticleLifeTime="9,Random=0.1,EmitterStrength=(v=0.227,flags=32;t=1,v=1,flags=4)" EmitAngle="10" Texture="textures/sprites/smoke/smoke_roll_animated2.dds" TextureTiling="TilesX=10,TilesY=5,AnimFramesCount=50,AnimFramerate=5,AnimBlend=true" SoftParticle="true" Alpha="0.277,EmitterStrength=(v=0.48;t=1,v=1),ParticleAge=(;t=0.184,v=1;t=0.384,v=1;t=0.592)" DiffuseLighting="0.5" DiffuseBacklighting="0.5" EmissiveLighting="0.25" Size="0.3,Random=0.001,EmitterStrength=(v=0.137;t=1,v=1),ParticleAge=(;t=0.52,v=0.725;t=1,v=1)" Stretch="0.12,EmitterStrength=(v=1;t=0.753)" Speed="0.1,Random=0.025" AirResistance="0.005" GravityScale="-0.002,Random=0.01" RandomAngles="y=180" RandomRotationRate="y=10" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" MaxCollisionEvents="1" SurfaceType="water" Elasticity="0.1" CameraMaxDistance="75"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.gibs_small">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="blood">
+    <Params Count="20" ParticleLifeTime="1,Random=0.574" PositionOffset="z=1.3" EmitAngle="35,Random=0.762" Texture="textures/sprites/blood/blood_anim_a_grey.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" Alpha="Random=0.228,ParticleAge=(t=0.93,v=1;t=1,v=0.706)" Color="(x=0.30946895,y=0.002731743,z=0.002731743)" DiffuseBacklighting="1" EmissiveLighting="1" Size="0.5,Random=0.594" Stretch="0.1" Speed="6,Random=0.812" GravityScale="1" RandomAngles="y=270" RandomRotationRate="y=31" SortOffset="2"/>
+   </Particles>
+   <Particles Name="pink_mist">
+    <Params Count="10" ParticleLifeTime="0.5,Random=0.446" PositionOffset="z=1.3" RandomOffset="x=0.1,z=0.1" OffsetRoundness="0.3" EmitAngle="86.3,Random=0.327" Texture="textures/sprites/smoke/smoke_white_tiled2_whispy.tif" TextureTiling="TilesX=2,TilesY=2,VariantCount=4" Alpha="0.713,EmitterStrength=(t=0.282,v=1,flags=32;t=1,flags=4),ParticleAge=(v=1;t=1)" Color="(x=0.7912981,y=0.09530747,z=0.09530747)" DiffuseLighting="0.366" DiffuseBacklighting="0.494" Size="Random=0.178,ParticleAge=(v=0.63;t=1,v=1)" Speed="3" AirResistance="2.4,RotationalDragScale=0.165,WindScale=0" RandomAngles="y=360" RandomRotationRate="x=45,y=45,z=45" SortOffset="-0.01" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="flash">
+    <Params Count="1" ParticleLifeTime="0.1,Random=0.594" PositionOffset="z=1.3" EmitAngle="0.23,Random=1" BlendType="Additive" Texture="textures/sprites/glow/glow_b.tif" Alpha="0.5" Color="(x=0.9046613,y=0.24620135,z=0.24620135)" DiffuseLighting="0" DiffuseBacklighting="1" EmissiveLighting="1" Size="1.5,Random=0.366,ParticleAge=(t=0.494,v=1;t=1)" SortOffset="1" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="phys_object">
+    <Params Count="4" ParticleLifeTime="6,Random=0.574" PositionOffset="z=1.3" EmitAngle="35,Random=0.762" Geometry="objects/characters/animals/spider_large/spider_leg.cgf" Alpha="ParticleAge=(t=0.61,v=1;t=1)" Color="Random=0.733" Size="Random=0.594" Speed="4,Random=0.812" GravityScale="1" RandomAngles="y=270" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" MaxCollisionEvents="4" SurfaceType="flesh" DynamicFriction="10"/>
+   </Particles>
+   <Particles Name="blood_shower">
+    <Params Enabled="false" Count="10" ParticleLifeTime="1" PositionOffset="y=1.3" RandomOffset="y=0.5" EmitAngle="16" Texture="textures/sprites/dirt/dirt_c.dds" Alpha="0.3,ParticleAge=(t=0.64,v=1;t=1)" Color="(x=0.36625263,y=0.0060488335,z=0.0060488335)" DiffuseBacklighting="1" Size="0.5,ParticleAge=(v=0.39;t=1,v=1)" Speed="3" GravityScale="0.7" RandomAngles="y=180" RandomRotationRate="y=20"/>
+   </Particles>
+   <Particles Name="blast">
+    <Params Enabled="false" Count="1" ParticleLifeTime="0.2" PositionOffset="y=1.3" EmitAngle="88.4,Random=1" BlendType="Additive" Texture="textures/sprites/fire/number9_together1.tif" TextureTiling="TilesX=4,TilesY=8,AnimFramesCount=24" Alpha="0.1,ParticleAge=(t=0.85,v=1;t=1)" Color="(x=0.6104957,y=0.059511244,z=0.059511244)" DiffuseLighting="0" DiffuseBacklighting="1" EmissiveLighting="3" Stretch="0.29" Speed="1.2" RandomAngles="y=359" RandomRotationRate="y=12" SortOffset="4" VisibleUnderwater="If_False"/>
+   </Particles>
+   <Particles Name="decal">
+    <Params Count="1" ParticleLifeTime="5" PositionOffset="z=1.3" EmitAngle="90" Facing="Terrain" Texture="textures/sprites/blood/wblood_3_grey.tif" SoftParticle="Softness=2" Alpha="0.9,ParticleAge=(;t=0.075,v=1;t=0.753,v=1;t=1)" Color="(x=0.8069524,y=0.005605392,z=0.005605392)" DiffuseBacklighting="1"/>
+   </Particles>
+   <Particles Name="dirt2">
+    <Params Enabled="false" Count="10" ParticleLifeTime="1.5" PositionOffset="y=1.3" RandomOffset="y=0.5" EmitAngle="58.9,Random=1" Texture="textures/sprites/dirt/dirt_c.dds" SoftParticle="true,Softness=0.5" Alpha="ParticleAge=(t=0.64,v=1;t=1)" Color="(x=0.29177067,y=0.015996294,z=0.015996294)" DiffuseBacklighting="1" Size="0.2,ParticleAge=(v=0.39;t=0.57,v=1)" Stretch="0.1" Speed="2.3" GravityScale="0.772" RandomAngles="y=180" RandomRotationRate="y=20"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_chest_left_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=-0.2,y=0.5,z=1.4" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_chest_left.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=-0.2,y=0.5,z=1.4" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=0.5,z=1.4" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=0.5,z=1.4" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_chest_right_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=0.1,y=0.5,z=1.4" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_chest_right.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=0.1,y=0.5,z=1.4" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.1,y=0.5,z=1.4" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.1,y=0.5,z=1.4" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_back_left_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=-0.2,y=-0.3,z=1.8" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_back_left.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=-0.2,y=-0.3,z=1.8" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=-0.3,z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=-0.3,z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_back_right_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=0.2,y=-0.3,z=1.8" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_back_right.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=0.2,y=-0.3,z=1.8" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.2,y=-0.3,z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.2,y=-0.3,z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_shin_left_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=-0.2,y=0.3,z=0.2" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_shin_left.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=-0.2,y=0.3,z=0.2" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=0.3,z=0.2" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=-0.2,y=0.3,z=0.2" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_shin_right_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="phys_geo">
+    <Params Enabled="false" Count="1" ParticleLifeTime="1" PositionOffset="x=0.2,y=0.3,z=0.2" Facing="Free" Geometry="objects/characters/mutants/brutemutant/armor_brute_shin_right.cgf" CastShadows="true" GravityScale="1" RandomRotationRate="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="metal"/>
+   </Particles>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="x=0.2,y=0.3,z=0.2" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.2,y=0.3,z=0.2" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="x=0.2,y=0.3,z=0.2" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.death">
+  <Childs>
+   <Particles Name="blood_pool">
+    <Params Count="1" ParticleLifeTime="30" FocusAngle="180" EmitAngle="45" Facing="Decal" Material="Materials/decals/blood/blood_pool_opaque" Alpha="ParticleAge=(v=1;t=0.498,v=1;t=0.95,v=0.75,flags=4;t=1,flags=4)" Size="Random=0.1,ParticleAge=(flags=32;t=0.5,v=0.91,flags=4;t=1,v=1)" Speed="Random=0.5" GravityScale="1" RandomAngles="x=360,y=360,z=360" PhysicsType="SimpleCollision" CollideTerrain="true" CollideStaticObjects="true" DynamicFriction="1000"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="mutant.brute.armor_helmet_break">
+  <Params Enabled="false"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="2" SpawnDelay="Random=0.195021" ParticleLifeTime="1,Random=0.742739" PositionOffset="z=1.8" RandomOffset="x=0.2,y=0.2,z=0.2" FocusGravityDir="true" EmitAngle="100,Random=1" Texture="textures/sprites/smoke/smoke_b.tif" SoftParticle="true" Alpha="0.2,ParticleAge=(t=0.17,v=1;t=1)" DiffuseLighting="0.2" DiffuseBacklighting="0.5" Size="Random=0.4,ParticleAge=(v=0.23;t=0.063,v=0.706;t=1,v=1)" Speed="2.3,Random=0.6" AirResistance="0.5,Random=0.277" GravityScale="0.5" RandomAngles="y=359" RandomRotationRate="x=30,y=34,z=34" SortOffset="-0.21"/>
+   </Particles>
+   <Particles Name="pieces_high">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" CastShadows="true" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="wind_force">
+    <Params Count="1" ParticleLifeTime="0.05" PositionOffset="z=1.8" EmitAngle="90" Speed="30" ForceGeneration="Wind" ConfigMin="High"/>
+   </Particles>
+   <Particles Name="pieces_low">
+    <Params Count="25" ParticleLifeTime="2" PositionOffset="z=1.8" FocusAngle="90" EmitAngle="90,Random=1" Facing="Free" Geometry="objects/effects/debris/broken_wheel.cgf" GeometryPieces="RandomPiece" Size="0.2,Random=0.85" Speed="4,Random=0.445545" GravityScale="1,Random=0.435644" InitAngles="x=90,y=90" RandomRotationRate="x=333,y=333,z=333" PhysicsType="SimpleCollision" CollideTerrain="true" SurfaceType="concrete" Elasticity="0.05" DynamicFriction="1" ConfigMax="Medium"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

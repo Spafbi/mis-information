@@ -1,0 +1,16 @@
+<TagDefinition version="2">
+ <Tags>
+  <Tag name="Motion_Idle" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="Motion_Move"/>
+  <Tag name="hitDeath" subTagDef="Animations/Mannequin/ADB/hitDeathTags.xml"/>
+  <Tag name="CODE_MT_RunToIdle"/>
+  <Tag name="CODE_MT_WalkToIdle"/>
+  <Tag name="Motion_IdleTurn"/>
+  <Tag name="AI_BecomeAlerted" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="AI_Melee" subTagDef="Animations/Mannequin/ADB/AIMeleeTags.xml"/>
+  <Tag name="AI_TargetUnreachable"/>
+  <Tag name="CODE_MT_IdleToMove"/>
+  <Tag name="AI_Stand_Alert" subTagDef="animations/mannequin/adb/tristatetags.xml"/>
+  <Tag name="AI_Stand_Relaxed"/>
+ </Tags>
+</TagDefinition>

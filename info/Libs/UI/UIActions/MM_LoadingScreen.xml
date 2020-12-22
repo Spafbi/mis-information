@@ -1,0 +1,72 @@
+<Graph Description="" Group="MM_PagesLoadingscreen" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="70" Class="UI:Events:System:OnLoadingComplete" pos="-580,140,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="83" Class="UI:Action:Start" pos="-580,-100,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="84" Class="UI:Util:FromArray" pos="-280,-20,0" flags="0">
+   <Inputs Array=""/>
+  </Node>
+  <Node Id="85" Name="Setup_Loading_Screen" Class="_commentbox" pos="-600,-149.93188,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="980" Height="360"/>
+   <NodeSize Width="980" Height="387.65289"/>
+  </Node>
+  <Node Id="90" Class="UI:Action:End" pos="-60,380,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="92" Name="Handle_events" Class="_commentbox" pos="-600,250.00011,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="720" Height="260"/>
+   <NodeSize Width="720" Height="287.65289"/>
+  </Node>
+  <Node Id="106" Class="UI:Display:UIElementListener" pos="-580,300,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="108" Class="UI:Events:System:OnLoadingError" pos="-580,460,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="109" Class="Logic:Any" pos="-200,380,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="110" Class="UI:Functions:MainMenu:SetLoadingImage" pos="80,-100,0" flags="0">
+   <Inputs instanceID="-1" image=""/>
+  </Node>
+  <Node Id="119" Name="Default_events_processing" Class="_commentbox" pos="-600,550.21533,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="940" Height="160"/>
+   <NodeSize Width="940" Height="187.65288"/>
+  </Node>
+  <Node Id="120" Class="UI:Action:Start" pos="-580,600,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="121" Class="UI:Action:Control" pos="-280,600,0" flags="0">
+   <Inputs uiActions_UIAction="MM_ConfirmationWindowEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="122" Class="UI:Action:End" pos="160,600,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="138" Class="UI:Functions:MainMenu:ShowStatusMessage" pos="-280,-100,0" flags="0">
+   <Inputs instanceID="-1" message="@ui_loadingWorld"/>
+  </Node>
+  <Node Id="139" Class="UI:Functions:MainMenu:ShowStatusMessage" pos="-280,140,0" flags="0">
+   <Inputs instanceID="-1" message="@ui_synchronizingWorld"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="139" nodeOut="70" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="84" nodeOut="83" portIn="Array" portOut="Args" enabled="1"/>
+  <Edge nodeIn="138" nodeOut="83" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="84" portIn="image" portOut="Val3" enabled="1"/>
+  <Edge nodeIn="109" nodeOut="106" portIn="in1" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="109" nodeOut="108" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="90" nodeOut="109" portIn="EndAction" portOut="out" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Args" portOut="Args" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="120" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="121" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="138" portIn="Call" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

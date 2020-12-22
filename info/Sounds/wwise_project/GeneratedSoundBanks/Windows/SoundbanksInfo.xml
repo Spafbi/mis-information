@@ -1,0 +1,4020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="9">
+	<RootPaths>
+		<ProjectRoot>C:\Users\danielmuller\Twin Raven Productions\miscreated\Wwise Implementation\miscreatedaudio\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\danielmuller\Twin Raven Productions\miscreated\Wwise Implementation\miscreatedaudio\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\danielmuller\Twin Raven Productions\miscreated\Wwise Implementation\miscreatedaudio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\danielmuller\Twin Raven Productions\miscreated\Wwise Implementation\miscreatedaudio\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents />
+	<StreamedFiles />
+	<SoundBanks>
+		<SoundBank Id="317282339" Language="SFX">
+			<ShortName>weather</ShortName>
+			<Path>weather.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2838936948" Name="Play_rain" />
+				<Event Id="1020223172" Name="Play_wind" />
+				<Event Id="3206237490" Name="Stop_rain" />
+				<Event Id="3173136834" Name="Stop_wind" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="205051012" Language="SFX">
+					<ShortName>env_rain_heavy.wav</ShortName>
+					<Path>sfx\env_rain_heavy_80875878.wem</Path>
+				</File>
+				<File Id="756761800" Language="SFX">
+					<ShortName>env_rain_indoor.wav</ShortName>
+					<Path>sfx\env_rain_indoor_91d4c1f5.wem</Path>
+				</File>
+				<File Id="764050989" Language="SFX">
+					<ShortName>env_rain_light.wav</ShortName>
+					<Path>sfx\env_rain_light_3deb61f2.wem</Path>
+				</File>
+				<File Id="877123405" Language="SFX">
+					<ShortName>env_rain_medium.wav</ShortName>
+					<Path>sfx\env_rain_medium_0b3a5af0.wem</Path>
+				</File>
+				<File Id="762720470" Language="SFX">
+					<ShortName>env_rainleaves_heavy.wav</ShortName>
+					<Path>sfx\env_rainleaves_heavy_b7219e87.wem</Path>
+				</File>
+				<File Id="1070232343" Language="SFX">
+					<ShortName>env_rainleaves_light.wav</ShortName>
+					<Path>sfx\env_rainleaves_light_f4b7a49e.wem</Path>
+				</File>
+				<File Id="606242509" Language="SFX">
+					<ShortName>env_rainleaves_medium.wav</ShortName>
+					<Path>sfx\env_rainleaves_medium_4708bd39.wem</Path>
+				</File>
+				<File Id="886804204" Language="SFX">
+					<ShortName>env_wind_bed_heavy.wav</ShortName>
+					<Path>sfx\env_wind_bed_heavy_ddc98ef4.wem</Path>
+				</File>
+				<File Id="399254324" Language="SFX">
+					<ShortName>env_wind_bed_light.wav</ShortName>
+					<Path>sfx\env_wind_bed_light_ddc98ef4.wem</Path>
+				</File>
+				<File Id="348313683" Language="SFX">
+					<ShortName>env_wind_bed_medium.wav</ShortName>
+					<Path>sfx\env_wind_bed_medium_ddc98ef4.wem</Path>
+				</File>
+				<File Id="997489201" Language="SFX">
+					<ShortName>env_wind_gust_heavy01.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="993795133" Language="SFX">
+					<ShortName>env_wind_gust_heavy02.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="93579514" Language="SFX">
+					<ShortName>env_wind_gust_heavy03.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="728912292" Language="SFX">
+					<ShortName>env_wind_gust_heavy04.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="450315372" Language="SFX">
+					<ShortName>env_wind_gust_heavy05.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="339371097" Language="SFX">
+					<ShortName>env_wind_gust_heavy06.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1060653328" Language="SFX">
+					<ShortName>env_wind_gust_heavy07.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy07_ddc98ef4.wem</Path>
+				</File>
+				<File Id="996385358" Language="SFX">
+					<ShortName>env_wind_gust_heavy08.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy08_ddc98ef4.wem</Path>
+				</File>
+				<File Id="574027204" Language="SFX">
+					<ShortName>env_wind_gust_heavy09.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy09_ddc98ef4.wem</Path>
+				</File>
+				<File Id="895438781" Language="SFX">
+					<ShortName>env_wind_gust_heavy10.wav</ShortName>
+					<Path>sfx\env_wind_gust_heavy10_ddc98ef4.wem</Path>
+				</File>
+				<File Id="778046869" Language="SFX">
+					<ShortName>env_wind_gust_light01.wav</ShortName>
+					<Path>sfx\env_wind_gust_light01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="982014756" Language="SFX">
+					<ShortName>env_wind_gust_light02.wav</ShortName>
+					<Path>sfx\env_wind_gust_light02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="131314888" Language="SFX">
+					<ShortName>env_wind_gust_light03.wav</ShortName>
+					<Path>sfx\env_wind_gust_light03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="478385838" Language="SFX">
+					<ShortName>env_wind_gust_light04.wav</ShortName>
+					<Path>sfx\env_wind_gust_light04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="505196529" Language="SFX">
+					<ShortName>env_wind_gust_light05.wav</ShortName>
+					<Path>sfx\env_wind_gust_light05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="574769896" Language="SFX">
+					<ShortName>env_wind_gust_light06.wav</ShortName>
+					<Path>sfx\env_wind_gust_light06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="398119972" Language="SFX">
+					<ShortName>env_wind_gust_light07.wav</ShortName>
+					<Path>sfx\env_wind_gust_light07_ddc98ef4.wem</Path>
+				</File>
+				<File Id="961843329" Language="SFX">
+					<ShortName>env_wind_gust_light08.wav</ShortName>
+					<Path>sfx\env_wind_gust_light08_ddc98ef4.wem</Path>
+				</File>
+				<File Id="865099516" Language="SFX">
+					<ShortName>env_wind_gust_light09.wav</ShortName>
+					<Path>sfx\env_wind_gust_light09_ddc98ef4.wem</Path>
+				</File>
+				<File Id="71713861" Language="SFX">
+					<ShortName>env_wind_gust_light10.wav</ShortName>
+					<Path>sfx\env_wind_gust_light10_ddc98ef4.wem</Path>
+				</File>
+				<File Id="443029006" Language="SFX">
+					<ShortName>env_wind_gust_medium01.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="323539471" Language="SFX">
+					<ShortName>env_wind_gust_medium02.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="895473946" Language="SFX">
+					<ShortName>env_wind_gust_medium03.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="392499838" Language="SFX">
+					<ShortName>env_wind_gust_medium04.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="983001459" Language="SFX">
+					<ShortName>env_wind_gust_medium05.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="343445512" Language="SFX">
+					<ShortName>env_wind_gust_medium06.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1045749303" Language="SFX">
+					<ShortName>env_wind_gust_medium07.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium07_ddc98ef4.wem</Path>
+				</File>
+				<File Id="435492049" Language="SFX">
+					<ShortName>env_wind_gust_medium08.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium08_ddc98ef4.wem</Path>
+				</File>
+				<File Id="749963024" Language="SFX">
+					<ShortName>env_wind_gust_medium09.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium09_ddc98ef4.wem</Path>
+				</File>
+				<File Id="367233244" Language="SFX">
+					<ShortName>env_wind_gust_medium10.wav</ShortName>
+					<Path>sfx\env_wind_gust_medium10_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="824618274" Language="SFX">
+			<ShortName>collisions</ShortName>
+			<Path>collisions.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1795012118" Name="Play_impact_dirt_default" />
+				<Event Id="1081717898" Name="Play_impact_fabric_default" />
+				<Event Id="4281066637" Name="Play_impact_flesh_default" />
+				<Event Id="3695865943" Name="Play_impact_glass_default" />
+				<Event Id="658655237" Name="Play_impact_glass_on_wood_breakable" />
+				<Event Id="3707269968" Name="Play_impact_glass_unbreakable_default" />
+				<Event Id="1400358194" Name="Play_impact_glass_unbreakable_on_dirt" />
+				<Event Id="573402529" Name="Play_impact_glass_unbreakable_on_grass" />
+				<Event Id="3980357106" Name="Play_impact_glass_unbreakable_on_rock" />
+				<Event Id="3630823810" Name="Play_impact_glass_unbreakable_on_wood" />
+				<Event Id="1456125654" Name="Play_impact_glass_unbreakable_on_wood_breakable" />
+				<Event Id="820595917" Name="Play_impact_grass_default" />
+				<Event Id="2186102618" Name="Play_impact_metal_default" />
+				<Event Id="3152434212" Name="Play_impact_metal_fence_default" />
+				<Event Id="619785640" Name="Play_impact_metal_on_dirt" />
+				<Event Id="962895809" Name="Play_impact_metal_on_glass" />
+				<Event Id="149562522" Name="Play_impact_metal_on_glass_unbreakable" />
+				<Event Id="3185011351" Name="Play_impact_metal_on_grass" />
+				<Event Id="2288008732" Name="Play_impact_metal_on_metal" />
+				<Event Id="1897958068" Name="Play_impact_metal_on_rock" />
+				<Event Id="1945865072" Name="Play_impact_metal_on_wood" />
+				<Event Id="2977858568" Name="Play_impact_metal_on_wood_breakable" />
+				<Event Id="819472073" Name="Play_impact_mud_default" />
+				<Event Id="2632815071" Name="Play_impact_plastic_default" />
+				<Event Id="3870785298" Name="Play_impact_rock_default" />
+				<Event Id="2708270448" Name="Play_impact_rock_on_dirt" />
+				<Event Id="2897111679" Name="Play_impact_rock_on_grass" />
+				<Event Id="1923186028" Name="Play_impact_rock_on_rock" />
+				<Event Id="3535958768" Name="Play_impact_rock_on_wood_breakable" />
+				<Event Id="4057426751" Name="Play_impact_rubber_default" />
+				<Event Id="1369271911" Name="Play_impact_sand_default" />
+				<Event Id="1837149597" Name="Play_impact_vegetation_default" />
+				<Event Id="189286582" Name="Play_impact_water_default" />
+				<Event Id="555363835" Name="Play_impact_wood_breakable_on_grass" />
+				<Event Id="497496045" Name="Play_impact_wood_breakable_on_sand" />
+				<Event Id="2102590478" Name="Play_impact_wood_default" />
+				<Event Id="3374342756" Name="Play_impact_wood_on_dirt" />
+				<Event Id="1873305733" Name="Play_impact_wood_on_glass" />
+				<Event Id="2906427891" Name="Play_impact_wood_on_grass" />
+				<Event Id="3459170792" Name="Play_impact_wood_on_rock" />
+				<Event Id="533172780" Name="Play_impact_wood_on_wood" />
+				<Event Id="1953316500" Name="Play_impact_wood_on_wood_breakable" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="277919915" Language="SFX">
+					<ShortName>imp_dirt_default.wav</ShortName>
+					<Path>sfx\imp_dirt_default_db50bab0.wem</Path>
+				</File>
+				<File Id="809790480" Language="SFX">
+					<ShortName>imp_fabric_default1.wav</ShortName>
+					<Path>sfx\imp_fabric_default1_db50bab0.wem</Path>
+				</File>
+				<File Id="980164802" Language="SFX">
+					<ShortName>imp_fabric_default2.wav</ShortName>
+					<Path>sfx\imp_fabric_default2_db50bab0.wem</Path>
+				</File>
+				<File Id="762555782" Language="SFX">
+					<ShortName>imp_fabric_default3.wav</ShortName>
+					<Path>sfx\imp_fabric_default3_db50bab0.wem</Path>
+				</File>
+				<File Id="169367065" Language="SFX">
+					<ShortName>imp_fence_default1.wav</ShortName>
+					<Path>sfx\imp_fence_default1_db50bab0.wem</Path>
+				</File>
+				<File Id="678112275" Language="SFX">
+					<ShortName>imp_fence_default2.wav</ShortName>
+					<Path>sfx\imp_fence_default2_db50bab0.wem</Path>
+				</File>
+				<File Id="461907816" Language="SFX">
+					<ShortName>imp_fence_default3.wav</ShortName>
+					<Path>sfx\imp_fence_default3_db50bab0.wem</Path>
+				</File>
+				<File Id="984787374" Language="SFX">
+					<ShortName>imp_flesh_default1.wav</ShortName>
+					<Path>sfx\imp_flesh_default1_db50bab0.wem</Path>
+				</File>
+				<File Id="946801241" Language="SFX">
+					<ShortName>imp_flesh_default2.wav</ShortName>
+					<Path>sfx\imp_flesh_default2_db50bab0.wem</Path>
+				</File>
+				<File Id="898631062" Language="SFX">
+					<ShortName>imp_flesh_default3.wav</ShortName>
+					<Path>sfx\imp_flesh_default3_db50bab0.wem</Path>
+				</File>
+				<File Id="213187543" Language="SFX">
+					<ShortName>imp_glass_default1.wav</ShortName>
+					<Path>sfx\imp_glass_default1_db50bab0.wem</Path>
+				</File>
+				<File Id="905450814" Language="SFX">
+					<ShortName>imp_glass_default2.wav</ShortName>
+					<Path>sfx\imp_glass_default2_db50bab0.wem</Path>
+				</File>
+				<File Id="95732837" Language="SFX">
+					<ShortName>imp_glass_default3.wav</ShortName>
+					<Path>sfx\imp_glass_default3_db50bab0.wem</Path>
+				</File>
+				<File Id="470756852" Language="SFX">
+					<ShortName>imp_glass_unbreakable_default.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_default_db50bab0.wem</Path>
+				</File>
+				<File Id="289364734" Language="SFX">
+					<ShortName>imp_glass_unbreakable_dirt.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_dirt_db50bab0.wem</Path>
+				</File>
+				<File Id="326882741" Language="SFX">
+					<ShortName>imp_glass_unbreakable_grass.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_grass_db50bab0.wem</Path>
+				</File>
+				<File Id="203091214" Language="SFX">
+					<ShortName>imp_glass_unbreakable_rock.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_rock_db50bab0.wem</Path>
+				</File>
+				<File Id="1063673964" Language="SFX">
+					<ShortName>imp_glass_unbreakable_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="348865396" Language="SFX">
+					<ShortName>imp_glass_unbreakable_wood.wav</ShortName>
+					<Path>sfx\imp_glass_unbreakable_wood_db50bab0.wem</Path>
+				</File>
+				<File Id="162578262" Language="SFX">
+					<ShortName>imp_glass_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_glass_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="716565680" Language="SFX">
+					<ShortName>imp_grass_default.wav</ShortName>
+					<Path>sfx\imp_grass_default_db50bab0.wem</Path>
+				</File>
+				<File Id="709567856" Language="SFX">
+					<ShortName>imp_grass_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_grass_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="74897307" Language="SFX">
+					<ShortName>imp_metal_default.wav</ShortName>
+					<Path>sfx\imp_metal_default_db50bab0.wem</Path>
+				</File>
+				<File Id="974238745" Language="SFX">
+					<ShortName>imp_metal_dirt.wav</ShortName>
+					<Path>sfx\imp_metal_dirt_db50bab0.wem</Path>
+				</File>
+				<File Id="947319102" Language="SFX">
+					<ShortName>imp_metal_glass.wav</ShortName>
+					<Path>sfx\imp_metal_glass_db50bab0.wem</Path>
+				</File>
+				<File Id="862136913" Language="SFX">
+					<ShortName>imp_metal_glass_unbreakable.wav</ShortName>
+					<Path>sfx\imp_metal_glass_unbreakable_db50bab0.wem</Path>
+				</File>
+				<File Id="169960774" Language="SFX">
+					<ShortName>imp_metal_grass.wav</ShortName>
+					<Path>sfx\imp_metal_grass_db50bab0.wem</Path>
+				</File>
+				<File Id="284330579" Language="SFX">
+					<ShortName>imp_metal_metal.wav</ShortName>
+					<Path>sfx\imp_metal_metal_db50bab0.wem</Path>
+				</File>
+				<File Id="261270836" Language="SFX">
+					<ShortName>imp_metal_rock.wav</ShortName>
+					<Path>sfx\imp_metal_rock_db50bab0.wem</Path>
+				</File>
+				<File Id="886575634" Language="SFX">
+					<ShortName>imp_metal_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_metal_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="794039184" Language="SFX">
+					<ShortName>imp_metal_wood.wav</ShortName>
+					<Path>sfx\imp_metal_wood_db50bab0.wem</Path>
+				</File>
+				<File Id="732193363" Language="SFX">
+					<ShortName>imp_mud_default.wav</ShortName>
+					<Path>sfx\imp_mud_default_db50bab0.wem</Path>
+				</File>
+				<File Id="807705265" Language="SFX">
+					<ShortName>imp_plastic_default.wav</ShortName>
+					<Path>sfx\imp_plastic_default_db50bab0.wem</Path>
+				</File>
+				<File Id="736735969" Language="SFX">
+					<ShortName>imp_rock_default.wav</ShortName>
+					<Path>sfx\imp_rock_default_db50bab0.wem</Path>
+				</File>
+				<File Id="197486166" Language="SFX">
+					<ShortName>imp_rock_dirt.wav</ShortName>
+					<Path>sfx\imp_rock_dirt_db50bab0.wem</Path>
+				</File>
+				<File Id="81137895" Language="SFX">
+					<ShortName>imp_rock_grass.wav</ShortName>
+					<Path>sfx\imp_rock_grass_db50bab0.wem</Path>
+				</File>
+				<File Id="1046336490" Language="SFX">
+					<ShortName>imp_rock_rock.wav</ShortName>
+					<Path>sfx\imp_rock_rock_db50bab0.wem</Path>
+				</File>
+				<File Id="488069028" Language="SFX">
+					<ShortName>imp_rock_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_rock_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="871610339" Language="SFX">
+					<ShortName>imp_rubber_default.wav</ShortName>
+					<Path>sfx\imp_rubber_default_db50bab0.wem</Path>
+				</File>
+				<File Id="417145805" Language="SFX">
+					<ShortName>imp_sand_default.wav</ShortName>
+					<Path>sfx\imp_sand_default_db50bab0.wem</Path>
+				</File>
+				<File Id="446789839" Language="SFX">
+					<ShortName>imp_sand_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_sand_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="326688849" Language="SFX">
+					<ShortName>imp_vegetation1.wav</ShortName>
+					<Path>sfx\imp_vegetation1_db50bab0.wem</Path>
+				</File>
+				<File Id="298323361" Language="SFX">
+					<ShortName>imp_vegetation2.wav</ShortName>
+					<Path>sfx\imp_vegetation2_db50bab0.wem</Path>
+				</File>
+				<File Id="97394751" Language="SFX">
+					<ShortName>imp_vegetation3.wav</ShortName>
+					<Path>sfx\imp_vegetation3_db50bab0.wem</Path>
+				</File>
+				<File Id="414806805" Language="SFX">
+					<ShortName>imp_vegetation4.wav</ShortName>
+					<Path>sfx\imp_vegetation4_db50bab0.wem</Path>
+				</File>
+				<File Id="1021193230" Language="SFX">
+					<ShortName>imp_vegetation5.wav</ShortName>
+					<Path>sfx\imp_vegetation5_db50bab0.wem</Path>
+				</File>
+				<File Id="932681744" Language="SFX">
+					<ShortName>imp_water_default1.wav</ShortName>
+					<Path>sfx\imp_water_default1_db50bab0.wem</Path>
+				</File>
+				<File Id="183418117" Language="SFX">
+					<ShortName>imp_water_default2.wav</ShortName>
+					<Path>sfx\imp_water_default2_db50bab0.wem</Path>
+				</File>
+				<File Id="565727677" Language="SFX">
+					<ShortName>imp_water_default3.wav</ShortName>
+					<Path>sfx\imp_water_default3_db50bab0.wem</Path>
+				</File>
+				<File Id="614716157" Language="SFX">
+					<ShortName>imp_wood_default.wav</ShortName>
+					<Path>sfx\imp_wood_default_db50bab0.wem</Path>
+				</File>
+				<File Id="695815204" Language="SFX">
+					<ShortName>imp_wood_dirt.wav</ShortName>
+					<Path>sfx\imp_wood_dirt_db50bab0.wem</Path>
+				</File>
+				<File Id="994315361" Language="SFX">
+					<ShortName>imp_wood_glass.wav</ShortName>
+					<Path>sfx\imp_wood_glass_db50bab0.wem</Path>
+				</File>
+				<File Id="772740354" Language="SFX">
+					<ShortName>imp_wood_grass.wav</ShortName>
+					<Path>sfx\imp_wood_grass_db50bab0.wem</Path>
+				</File>
+				<File Id="474865675" Language="SFX">
+					<ShortName>imp_wood_rock.wav</ShortName>
+					<Path>sfx\imp_wood_rock_db50bab0.wem</Path>
+				</File>
+				<File Id="302154950" Language="SFX">
+					<ShortName>imp_wood_wood_breakable.wav</ShortName>
+					<Path>sfx\imp_wood_wood_breakable_db50bab0.wem</Path>
+				</File>
+				<File Id="260113767" Language="SFX">
+					<ShortName>imp_wood_wood.wav</ShortName>
+					<Path>sfx\imp_wood_wood_db50bab0.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="993591922" Language="SFX">
+			<ShortName>particles</ShortName>
+			<Path>particles.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4030404899" Name="Play_explosion" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="255895106" Language="SFX">
+					<ShortName>imp_debris_dirt1.wav</ShortName>
+					<Path>sfx\imp_debris_dirt1_db50bab0.wem</Path>
+				</File>
+				<File Id="36600351" Language="SFX">
+					<ShortName>imp_debris_dirt2.wav</ShortName>
+					<Path>sfx\imp_debris_dirt2_db50bab0.wem</Path>
+				</File>
+				<File Id="692330615" Language="SFX">
+					<ShortName>imp_debris_dirt3.wav</ShortName>
+					<Path>sfx\imp_debris_dirt3_db50bab0.wem</Path>
+				</File>
+				<File Id="479082612" Language="SFX">
+					<ShortName>imp_debris_grass1.wav</ShortName>
+					<Path>sfx\imp_debris_grass1_db50bab0.wem</Path>
+				</File>
+				<File Id="231961456" Language="SFX">
+					<ShortName>imp_debris_grass2.wav</ShortName>
+					<Path>sfx\imp_debris_grass2_db50bab0.wem</Path>
+				</File>
+				<File Id="127111846" Language="SFX">
+					<ShortName>imp_debris_grass3.wav</ShortName>
+					<Path>sfx\imp_debris_grass3_db50bab0.wem</Path>
+				</File>
+				<File Id="652582809" Language="SFX">
+					<ShortName>imp_debris_gravel1.wav</ShortName>
+					<Path>sfx\imp_debris_gravel1_db50bab0.wem</Path>
+				</File>
+				<File Id="145206121" Language="SFX">
+					<ShortName>imp_debris_gravel2.wav</ShortName>
+					<Path>sfx\imp_debris_gravel2_db50bab0.wem</Path>
+				</File>
+				<File Id="150097921" Language="SFX">
+					<ShortName>imp_debris_gravel3.wav</ShortName>
+					<Path>sfx\imp_debris_gravel3_db50bab0.wem</Path>
+				</File>
+				<File Id="310295646" Language="SFX">
+					<ShortName>imp_debris_metal1.wav</ShortName>
+					<Path>sfx\imp_debris_metal1_db50bab0.wem</Path>
+				</File>
+				<File Id="360017247" Language="SFX">
+					<ShortName>imp_debris_metal2.wav</ShortName>
+					<Path>sfx\imp_debris_metal2_db50bab0.wem</Path>
+				</File>
+				<File Id="454466362" Language="SFX">
+					<ShortName>imp_debris_metal3.wav</ShortName>
+					<Path>sfx\imp_debris_metal3_db50bab0.wem</Path>
+				</File>
+				<File Id="631580794" Language="SFX">
+					<ShortName>imp_debris_rock1.wav</ShortName>
+					<Path>sfx\imp_debris_rock1_db50bab0.wem</Path>
+				</File>
+				<File Id="83574515" Language="SFX">
+					<ShortName>imp_debris_rock2.wav</ShortName>
+					<Path>sfx\imp_debris_rock2_db50bab0.wem</Path>
+				</File>
+				<File Id="402124369" Language="SFX">
+					<ShortName>imp_debris_rock3.wav</ShortName>
+					<Path>sfx\imp_debris_rock3_db50bab0.wem</Path>
+				</File>
+				<File Id="213304066" Language="SFX">
+					<ShortName>imp_debris_water1.wav</ShortName>
+					<Path>sfx\imp_debris_water1_db50bab0.wem</Path>
+				</File>
+				<File Id="341555920" Language="SFX">
+					<ShortName>imp_debris_water2.wav</ShortName>
+					<Path>sfx\imp_debris_water2_db50bab0.wem</Path>
+				</File>
+				<File Id="289460948" Language="SFX">
+					<ShortName>imp_debris_water3.wav</ShortName>
+					<Path>sfx\imp_debris_water3_db50bab0.wem</Path>
+				</File>
+				<File Id="166613091" Language="SFX">
+					<ShortName>imp_debris_wood1.wav</ShortName>
+					<Path>sfx\imp_debris_wood1_db50bab0.wem</Path>
+				</File>
+				<File Id="659665191" Language="SFX">
+					<ShortName>imp_debris_wood2.wav</ShortName>
+					<Path>sfx\imp_debris_wood2_db50bab0.wem</Path>
+				</File>
+				<File Id="127021321" Language="SFX">
+					<ShortName>imp_debris_wood3.wav</ShortName>
+					<Path>sfx\imp_debris_wood3_db50bab0.wem</Path>
+				</File>
+				<File Id="322667147" Language="SFX">
+					<ShortName>imp_explosion_large1.wav</ShortName>
+					<Path>sfx\imp_explosion_large1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="885407636" Language="SFX">
+					<ShortName>imp_explosion_large2.wav</ShortName>
+					<Path>sfx\imp_explosion_large2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="77411316" Language="SFX">
+					<ShortName>imp_explosion_large3.wav</ShortName>
+					<Path>sfx\imp_explosion_large3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="496397970" Language="SFX">
+					<ShortName>imp_explosion_large_distant1.wav</ShortName>
+					<Path>sfx\imp_explosion_large_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="706593746" Language="SFX">
+					<ShortName>imp_explosion_large_distant2.wav</ShortName>
+					<Path>sfx\imp_explosion_large_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="902138399" Language="SFX">
+					<ShortName>imp_explosion_large_distant3.wav</ShortName>
+					<Path>sfx\imp_explosion_large_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="570769530" Language="SFX">
+					<ShortName>imp_explosion_medium1.wav</ShortName>
+					<Path>sfx\imp_explosion_medium1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1027719791" Language="SFX">
+					<ShortName>imp_explosion_medium2.wav</ShortName>
+					<Path>sfx\imp_explosion_medium2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="524931465" Language="SFX">
+					<ShortName>imp_explosion_medium3.wav</ShortName>
+					<Path>sfx\imp_explosion_medium3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="829063133" Language="SFX">
+					<ShortName>imp_explosion_medium_distant1.wav</ShortName>
+					<Path>sfx\imp_explosion_medium_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="124579025" Language="SFX">
+					<ShortName>imp_explosion_medium_distant2.wav</ShortName>
+					<Path>sfx\imp_explosion_medium_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="626004541" Language="SFX">
+					<ShortName>imp_explosion_medium_distant3.wav</ShortName>
+					<Path>sfx\imp_explosion_medium_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="524840278" Language="SFX">
+					<ShortName>imp_explosion_small1.wav</ShortName>
+					<Path>sfx\imp_explosion_small1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="668104959" Language="SFX">
+					<ShortName>imp_explosion_small2.wav</ShortName>
+					<Path>sfx\imp_explosion_small2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="44810089" Language="SFX">
+					<ShortName>imp_explosion_small3.wav</ShortName>
+					<Path>sfx\imp_explosion_small3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="554948697" Language="SFX">
+					<ShortName>imp_explosion_small_distant1.wav</ShortName>
+					<Path>sfx\imp_explosion_small_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="369053239" Language="SFX">
+					<ShortName>imp_explosion_small_distant2.wav</ShortName>
+					<Path>sfx\imp_explosion_small_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="244617799" Language="SFX">
+					<ShortName>imp_explosion_small_distant3.wav</ShortName>
+					<Path>sfx\imp_explosion_small_distant3_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1017660616" Language="SFX">
+			<ShortName>ambiences</ShortName>
+			<Path>ambiences.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1911082204" Name="Play_cave_ambience" />
+				<Event Id="225964440" Name="Play_churchbell" />
+				<Event Id="811708576" Name="Play_forest_ambience" />
+				<Event Id="2468926846" Name="Play_shore_waves" />
+				<Event Id="3324366893" Name="Play_swamp_ambience" />
+				<Event Id="2869607918" Name="Play_trees_in_wind" />
+				<Event Id="2243031632" Name="Play_underwater_ambience" />
+				<Event Id="221660262" Name="Stop_cave_ambience" />
+				<Event Id="2966623854" Name="Stop_churchbell" />
+				<Event Id="2989050186" Name="Stop_forest_ambience" />
+				<Event Id="3087247212" Name="Stop_shore_waves" />
+				<Event Id="133811459" Name="Stop_swamp_ambience" />
+				<Event Id="2186418708" Name="Stop_trees_in_wind" />
+				<Event Id="638727314" Name="Stop_underwater_ambience" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="179435713" Language="SFX">
+					<ShortName>env_cave_ambience.wav</ShortName>
+					<Path>sfx\env_cave_ambience_ea2fd8ca.wem</Path>
+				</File>
+				<File Id="386383793" Language="SFX">
+					<ShortName>env_cave_noise01.wav</ShortName>
+					<Path>sfx\env_cave_noise01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="238331771" Language="SFX">
+					<ShortName>env_cave_noise02.wav</ShortName>
+					<Path>sfx\env_cave_noise02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="838929053" Language="SFX">
+					<ShortName>env_cave_noise03.wav</ShortName>
+					<Path>sfx\env_cave_noise03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="831254506" Language="SFX">
+					<ShortName>env_cave_noise04.wav</ShortName>
+					<Path>sfx\env_cave_noise04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="361595272" Language="SFX">
+					<ShortName>env_cave_noise05.wav</ShortName>
+					<Path>sfx\env_cave_noise05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="24221499" Language="SFX">
+					<ShortName>env_cave_noise06.wav</ShortName>
+					<Path>sfx\env_cave_noise06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="409050275" Language="SFX">
+					<ShortName>env_cave_noise07.wav</ShortName>
+					<Path>sfx\env_cave_noise07_ddc98ef4.wem</Path>
+				</File>
+				<File Id="579520142" Language="SFX">
+					<ShortName>env_cave_noise08.wav</ShortName>
+					<Path>sfx\env_cave_noise08_ddc98ef4.wem</Path>
+				</File>
+				<File Id="562858036" Language="SFX">
+					<ShortName>env_cave_noise09.wav</ShortName>
+					<Path>sfx\env_cave_noise09_ddc98ef4.wem</Path>
+				</File>
+				<File Id="125480005" Language="SFX">
+					<ShortName>env_cave_noise10.wav</ShortName>
+					<Path>sfx\env_cave_noise10_5d780846.wem</Path>
+				</File>
+				<File Id="863875526" Language="SFX">
+					<ShortName>env_cicadas.wav</ShortName>
+					<Path>sfx\env_cicadas_38cef260.wem</Path>
+				</File>
+				<File Id="173825971" Language="SFX">
+					<ShortName>env_crickets.wav</ShortName>
+					<Path>sfx\env_crickets_14c010c7.wem</Path>
+				</File>
+				<File Id="406151240" Language="SFX">
+					<ShortName>env_forest_birds.wav</ShortName>
+					<Path>sfx\env_forest_birds_597042c6.wem</Path>
+				</File>
+				<File Id="62062379" Language="SFX">
+					<ShortName>env_forest_owl1.wav</ShortName>
+					<Path>sfx\env_forest_owl1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="614643706" Language="SFX">
+					<ShortName>env_forest_owl2.wav</ShortName>
+					<Path>sfx\env_forest_owl2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="296401550" Language="SFX">
+					<ShortName>env_forest_owl3.wav</ShortName>
+					<Path>sfx\env_forest_owl3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="152820861" Language="SFX">
+					<ShortName>env_shores_waves.wav</ShortName>
+					<Path>sfx\env_shores_waves_687721a1.wem</Path>
+				</File>
+				<File Id="306842700" Language="SFX">
+					<ShortName>env_swamp_frogs1.wav</ShortName>
+					<Path>sfx\env_swamp_frogs1_db50bab0.wem</Path>
+				</File>
+				<File Id="340570476" Language="SFX">
+					<ShortName>env_swamp_frogs2.wav</ShortName>
+					<Path>sfx\env_swamp_frogs2_db50bab0.wem</Path>
+				</File>
+				<File Id="1059634360" Language="SFX">
+					<ShortName>env_swamp_frogs3.wav</ShortName>
+					<Path>sfx\env_swamp_frogs3_db50bab0.wem</Path>
+				</File>
+				<File Id="556174148" Language="SFX">
+					<ShortName>env_swamp_frogs4.wav</ShortName>
+					<Path>sfx\env_swamp_frogs4_db50bab0.wem</Path>
+				</File>
+				<File Id="1011724476" Language="SFX">
+					<ShortName>env_swamp_frogs5.wav</ShortName>
+					<Path>sfx\env_swamp_frogs5_db50bab0.wem</Path>
+				</File>
+				<File Id="512435484" Language="SFX">
+					<ShortName>env_swamp_frogs6.wav</ShortName>
+					<Path>sfx\env_swamp_frogs6_db50bab0.wem</Path>
+				</File>
+				<File Id="294382219" Language="SFX">
+					<ShortName>env_swamp_frogs7.wav</ShortName>
+					<Path>sfx\env_swamp_frogs7_db50bab0.wem</Path>
+				</File>
+				<File Id="470516356" Language="SFX">
+					<ShortName>env_swamp_mosquito1.wav</ShortName>
+					<Path>sfx\env_swamp_mosquito1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="628713753" Language="SFX">
+					<ShortName>env_swamp_mosquito2.wav</ShortName>
+					<Path>sfx\env_swamp_mosquito2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="473951395" Language="SFX">
+					<ShortName>env_swamp_mosquito3.wav</ShortName>
+					<Path>sfx\env_swamp_mosquito3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1036207570" Language="SFX">
+					<ShortName>env_town_churchbell_day.wav</ShortName>
+					<Path>sfx\env_town_churchbell_day_ddc98ef4.wem</Path>
+				</File>
+				<File Id="177917979" Language="SFX">
+					<ShortName>env_town_churchbell_night.wav</ShortName>
+					<Path>sfx\env_town_churchbell_night_cfb09c2f.wem</Path>
+				</File>
+				<File Id="393325365" Language="SFX">
+					<ShortName>env_town_day.wav</ShortName>
+					<Path>sfx\env_town_day_5e3308d0.wem</Path>
+				</File>
+				<File Id="782649711" Language="SFX">
+					<ShortName>env_trees_creak1.wav</ShortName>
+					<Path>sfx\env_trees_creak1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="818868404" Language="SFX">
+					<ShortName>env_trees_creak2.wav</ShortName>
+					<Path>sfx\env_trees_creak2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="343715398" Language="SFX">
+					<ShortName>env_trees_creak3.wav</ShortName>
+					<Path>sfx\env_trees_creak3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="766379555" Language="SFX">
+					<ShortName>env_trees_creak4.wav</ShortName>
+					<Path>sfx\env_trees_creak4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="144150172" Language="SFX">
+					<ShortName>env_trees_creak5.wav</ShortName>
+					<Path>sfx\env_trees_creak5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="973856503" Language="SFX">
+					<ShortName>env_trees_rustling_heavy1.wav</ShortName>
+					<Path>sfx\env_trees_rustling_heavy1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="89185437" Language="SFX">
+					<ShortName>env_trees_rustling_heavy2.wav</ShortName>
+					<Path>sfx\env_trees_rustling_heavy2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="119986263" Language="SFX">
+					<ShortName>env_trees_rustling_heavy3.wav</ShortName>
+					<Path>sfx\env_trees_rustling_heavy3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="367798810" Language="SFX">
+					<ShortName>env_trees_rustling_heavy4.wav</ShortName>
+					<Path>sfx\env_trees_rustling_heavy4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="211137497" Language="SFX">
+					<ShortName>env_trees_rustling_heavy5.wav</ShortName>
+					<Path>sfx\env_trees_rustling_heavy5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="749234493" Language="SFX">
+					<ShortName>env_trees_rustling_light1.wav</ShortName>
+					<Path>sfx\env_trees_rustling_light1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="864208371" Language="SFX">
+					<ShortName>env_trees_rustling_light2.wav</ShortName>
+					<Path>sfx\env_trees_rustling_light2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1034640015" Language="SFX">
+					<ShortName>env_trees_rustling_light3.wav</ShortName>
+					<Path>sfx\env_trees_rustling_light3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="589877305" Language="SFX">
+					<ShortName>env_trees_rustling_light4.wav</ShortName>
+					<Path>sfx\env_trees_rustling_light4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="316528783" Language="SFX">
+					<ShortName>env_trees_rustling_light5.wav</ShortName>
+					<Path>sfx\env_trees_rustling_light5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="499081291" Language="SFX">
+					<ShortName>env_trees_rustling_medium1.wav</ShortName>
+					<Path>sfx\env_trees_rustling_medium1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="646344982" Language="SFX">
+					<ShortName>env_trees_rustling_medium2.wav</ShortName>
+					<Path>sfx\env_trees_rustling_medium2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="476778437" Language="SFX">
+					<ShortName>env_trees_rustling_medium3.wav</ShortName>
+					<Path>sfx\env_trees_rustling_medium3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="561017867" Language="SFX">
+					<ShortName>env_trees_rustling_medium4.wav</ShortName>
+					<Path>sfx\env_trees_rustling_medium4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="298867876" Language="SFX">
+					<ShortName>env_trees_rustling_medium5.wav</ShortName>
+					<Path>sfx\env_trees_rustling_medium5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="719683872" Language="SFX">
+					<ShortName>env_underwater.wav</ShortName>
+					<Path>sfx\env_underwater_ba934434.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedEvents />
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles />
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1467963052" Language="SFX">
+			<ShortName>weapons</ShortName>
+			<Path>weapons.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2856729012" Name="Play_baseballbat_equip_3p" />
+				<Event Id="4148605579" Name="Play_baseballbat_equip_fp" />
+				<Event Id="4053564592" Name="Play_baseballbat_fire_3p" />
+				<Event Id="3332127103" Name="Play_baseballbat_fire_fp" />
+				<Event Id="2214582057" Name="Play_baseballbat_unequip_3p" />
+				<Event Id="1459589362" Name="Play_baseballbat_unequip_fp" />
+				<Event Id="974218793" Name="Play_binoculars_equip_3p" />
+				<Event Id="219226098" Name="Play_binoculars_equip_fp" />
+				<Event Id="3627882184" Name="Play_binoculars_unequip_3p" />
+				<Event Id="2906444663" Name="Play_binoculars_unequip_fp" />
+				<Event Id="2863545668" Name="Play_chemlight_equip_3p" />
+				<Event Id="1471003387" Name="Play_chemlight_equip_fp" />
+				<Event Id="1421196185" Name="Play_chemlight_unequip_3p" />
+				<Event Id="2276854850" Name="Play_chemlight_unequip_fp" />
+				<Event Id="3926989807" Name="Play_chemlight_use_3p" />
+				<Event Id="3037775936" Name="Play_chemlight_use_fp" />
+				<Event Id="1105085656" Name="Play_fists_equip_3p" />
+				<Event Id="1994299495" Name="Play_fists_equip_fp" />
+				<Event Id="640715692" Name="Play_fists_fire_3p" />
+				<Event Id="1395708611" Name="Play_fists_fire_fp" />
+				<Event Id="781419037" Name="Play_fists_unequip_3p" />
+				<Event Id="3650288878" Name="Play_fists_unequip_fp" />
+				<Event Id="3701255429" Name="Play_flashlight_equip_3p" />
+				<Event Id="2275157974" Name="Play_flashlight_equip_fp" />
+				<Event Id="3859121028" Name="Play_flashlight_off_3p" />
+				<Event Id="319146683" Name="Play_flashlight_off_fp" />
+				<Event Id="2921102554" Name="Play_flashlight_on_3p" />
+				<Event Id="2065443857" Name="Play_flashlight_on_fp" />
+				<Event Id="4022780564" Name="Play_flashlight_unequip_3p" />
+				<Event Id="1019690091" Name="Play_flashlight_unequip_fp" />
+				<Event Id="3888887522" Name="Play_g18pistol_dry_fire_3p" />
+				<Event Id="3033228857" Name="Play_g18pistol_dry_fire_fp" />
+				<Event Id="33060980" Name="Play_g18pistol_equip_3p" />
+				<Event Id="3472369611" Name="Play_g18pistol_equip_fp" />
+				<Event Id="3534122864" Name="Play_g18pistol_fire_3p" />
+				<Event Id="665253055" Name="Play_g18pistol_fire_fp" />
+				<Event Id="603200345" Name="Play_g18pistol_reload_3p" />
+				<Event Id="3606290818" Name="Play_g18pistol_reload_fp" />
+				<Event Id="3635032809" Name="Play_g18pistol_unequip_3p" />
+				<Event Id="732607794" Name="Play_g18pistol_unequip_fp" />
+				<Event Id="2111757176" Name="Play_grenadesmoke_equip_3p" />
+				<Event Id="853435527" Name="Play_grenadesmoke_equip_fp" />
+				<Event Id="3441318989" Name="Play_grenadesmoke_smoke" />
+				<Event Id="2465708349" Name="Play_grenadesmoke_unequip_3p" />
+				<Event Id="3187145870" Name="Play_grenadesmoke_unequip_fp" />
+				<Event Id="2756862056" Name="Play_hatchet_equip_3p" />
+				<Event Id="4182959511" Name="Play_hatchet_equip_fp" />
+				<Event Id="4037022876" Name="Play_hatchet_fire_3p" />
+				<Event Id="3181364435" Name="Play_hatchet_fire_fp" />
+				<Event Id="2278134285" Name="Play_hatchet_unequip_3p" />
+				<Event Id="3536455934" Name="Play_hatchet_unequip_fp" />
+				<Event Id="1180567748" Name="Play_m40a5_dry_fire_3p" />
+				<Event Id="4082992763" Name="Play_m40a5_dry_fire_fp" />
+				<Event Id="1019015914" Name="Play_m40a5_equip_3p" />
+				<Event Id="1774008577" Name="Play_m40a5_equip_fp" />
+				<Event Id="129585554" Name="Play_m40a5_fire_3p" />
+				<Event Id="3032010569" Name="Play_m40a5_fire_fp" />
+				<Event Id="92847058" Name="Play_m40a5_load_3p" />
+				<Event Id="847839753" Name="Play_m40a5_load_fp" />
+				<Event Id="1372809411" Name="Play_m40a5_reload_1_3p" />
+				<Event Id="617816492" Name="Play_m40a5_reload_1_fp" />
+				<Event Id="597388458" Name="Play_m40a5_reload_2_3p" />
+				<Event Id="3499813441" Name="Play_m40a5_reload_2_fp" />
+				<Event Id="2149814917" Name="Play_m40a5_reload_3_3p" />
+				<Event Id="723717462" Name="Play_m40a5_reload_3_fp" />
+				<Event Id="1688099995" Name="Play_m40a5_unequip_3p" />
+				<Event Id="933107300" Name="Play_m40a5_unequip_fp" />
+				<Event Id="3638873794" Name="Play_m4a1_dry_fire_3p" />
+				<Event Id="2783215129" Name="Play_m4a1_dry_fire_fp" />
+				<Event Id="4135311380" Name="Play_m4a1_equip_3p" />
+				<Event Id="1132220907" Name="Play_m4a1_equip_fp" />
+				<Event Id="3626061200" Name="Play_m4a1_fire_3p" />
+				<Event Id="757191647" Name="Play_m4a1_fire_fp" />
+				<Event Id="2980496956" Name="Play_m4a1_load_3p" />
+				<Event Id="4272373747" Name="Play_m4a1_load_fp" />
+				<Event Id="2807535991" Name="Play_m4a1_mag_in_3p" />
+				<Event Id="3528973512" Name="Play_m4a1_mag_in_fp" />
+				<Event Id="3701645312" Name="Play_m4a1_mag_out_3p" />
+				<Event Id="2443323951" Name="Play_m4a1_mag_out_fp" />
+				<Event Id="537561609" Name="Play_m4a1_unequip_3p" />
+				<Event Id="4077536210" Name="Play_m4a1_unequip_fp" />
+				<Event Id="2696044159" Name="Play_pickup_ammo_3p" />
+				<Event Id="3417481648" Name="Play_pickup_ammo_fp" />
+				<Event Id="1169263685" Name="Play_pickup_gun_3p" />
+				<Event Id="1890701206" Name="Play_pickup_gun_fp" />
+				<Event Id="3924394356" Name="Play_recurvebow_cancel_fire_3p" />
+				<Event Id="3068735691" Name="Play_recurvebow_cancel_fire_fp" />
+				<Event Id="460984937" Name="Play_recurvebow_draw_arrow_3p" />
+				<Event Id="1853527218" Name="Play_recurvebow_draw_arrow_fp" />
+				<Event Id="3710349375" Name="Play_recurvebow_equip_3p" />
+				<Event Id="2284251888" Name="Play_recurvebow_equip_fp" />
+				<Event Id="4097292865" Name="Play_recurvebow_fire_3p" />
+				<Event Id="1194867882" Name="Play_recurvebow_fire_fp" />
+				<Event Id="1115247570" Name="Play_recurvebow_unequip_3p" />
+				<Event Id="1870240265" Name="Play_recurvebow_unequip_fp" />
+				<Event Id="2015373250" Name="Play_rem870_dry_fire_3p" />
+				<Event Id="1159714585" Name="Play_rem870_dry_fire_fp" />
+				<Event Id="326976276" Name="Play_rem870_equip_3p" />
+				<Event Id="1618853099" Name="Play_rem870_equip_fp" />
+				<Event Id="4234745488" Name="Play_rem870_fire_3p" />
+				<Event Id="1365875935" Name="Play_rem870_fire_fp" />
+				<Event Id="3589181244" Name="Play_rem870_load_3p" />
+				<Event Id="586090739" Name="Play_rem870_load_fp" />
+				<Event Id="1445851838" Name="Play_rem870_pump_3p" />
+				<Event Id="2335065677" Name="Play_rem870_pump_fp" />
+				<Event Id="2292018441" Name="Play_rem870_unequip_3p" />
+				<Event Id="1537025746" Name="Play_rem870_unequip_fp" />
+				<Event Id="1384547463" Name="Play_zoom_3p" />
+				<Event Id="2642869112" Name="Play_zoom_fp" />
+				<Event Id="2420471331" Name="Stop_grenadesmoke_smoke" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="661545971" Language="SFX">
+					<ShortName>weap_bat_swing1.wav</ShortName>
+					<Path>sfx\weap_bat_swing1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="523009367" Language="SFX">
+					<ShortName>weap_bat_swing2.wav</ShortName>
+					<Path>sfx\weap_bat_swing2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="339982975" Language="SFX">
+					<ShortName>weap_bat_swing3.wav</ShortName>
+					<Path>sfx\weap_bat_swing3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="114834637" Language="SFX">
+					<ShortName>weap_bow_cancel_fire.wav</ShortName>
+					<Path>sfx\weap_bow_cancel_fire_ddc98ef4.wem</Path>
+				</File>
+				<File Id="332625623" Language="SFX">
+					<ShortName>weap_bow_equip.wav</ShortName>
+					<Path>sfx\weap_bow_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="247675674" Language="SFX">
+					<ShortName>weap_bow_unequip.wav</ShortName>
+					<Path>sfx\weap_bow_unequip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="46205909" Language="SFX">
+					<ShortName>weap_chemlight_use.wav</ShortName>
+					<Path>sfx\weap_chemlight_use_ddc98ef4.wem</Path>
+				</File>
+				<File Id="495822203" Language="SFX">
+					<ShortName>weap_fists_swing1.wav</ShortName>
+					<Path>sfx\weap_fists_swing1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="49167524" Language="SFX">
+					<ShortName>weap_fists_swing2.wav</ShortName>
+					<Path>sfx\weap_fists_swing2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="73778044" Language="SFX">
+					<ShortName>weap_fists_swing3.wav</ShortName>
+					<Path>sfx\weap_fists_swing3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="157995685" Language="SFX">
+					<ShortName>weap_flashlight_off.wav</ShortName>
+					<Path>sfx\weap_flashlight_off_ddc98ef4.wem</Path>
+				</File>
+				<File Id="63311180" Language="SFX">
+					<ShortName>weap_flashlight_on.wav</ShortName>
+					<Path>sfx\weap_flashlight_on_ddc98ef4.wem</Path>
+				</File>
+				<File Id="670275223" Language="SFX">
+					<ShortName>weap_generic_zoom.wav</ShortName>
+					<Path>sfx\weap_generic_zoom_ddc98ef4.wem</Path>
+				</File>
+				<File Id="216334906" Language="SFX">
+					<ShortName>weap_glock_fire.wav</ShortName>
+					<Path>sfx\weap_glock_fire_ddc98ef4.wem</Path>
+				</File>
+				<File Id="471671719" Language="SFX">
+					<ShortName>weap_glock_fire_distant.wav</ShortName>
+					<Path>sfx\weap_glock_fire_distant_ddc98ef4.wem</Path>
+				</File>
+				<File Id="47252393" Language="SFX">
+					<ShortName>weap_glock_reload.wav</ShortName>
+					<Path>sfx\weap_glock_reload_ddc98ef4.wem</Path>
+				</File>
+				<File Id="332403628" Language="SFX">
+					<ShortName>weap_glock_tail_close1.wav</ShortName>
+					<Path>sfx\weap_glock_tail_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="667158583" Language="SFX">
+					<ShortName>weap_glock_tail_close2.wav</ShortName>
+					<Path>sfx\weap_glock_tail_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="541216523" Language="SFX">
+					<ShortName>weap_glock_tail_close3.wav</ShortName>
+					<Path>sfx\weap_glock_tail_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="77591609" Language="SFX">
+					<ShortName>weap_glock_tail_close4.wav</ShortName>
+					<Path>sfx\weap_glock_tail_close4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="377453862" Language="SFX">
+					<ShortName>weap_glock_tail_close5.wav</ShortName>
+					<Path>sfx\weap_glock_tail_close5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="849205403" Language="SFX">
+					<ShortName>weap_glock_tail_distant1.wav</ShortName>
+					<Path>sfx\weap_glock_tail_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="646687195" Language="SFX">
+					<ShortName>weap_glock_tail_distant2.wav</ShortName>
+					<Path>sfx\weap_glock_tail_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="110324010" Language="SFX">
+					<ShortName>weap_glock_tail_distant3.wav</ShortName>
+					<Path>sfx\weap_glock_tail_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="42175105" Language="SFX">
+					<ShortName>weap_gun_empty_jammed.wav</ShortName>
+					<Path>sfx\weap_gun_empty_jammed_ddc98ef4.wem</Path>
+				</File>
+				<File Id="749097231" Language="SFX">
+					<ShortName>weap_handgun_equip.wav</ShortName>
+					<Path>sfx\weap_handgun_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="767722286" Language="SFX">
+					<ShortName>weap_handgun_unequip.wav</ShortName>
+					<Path>sfx\weap_handgun_unequip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="93334721" Language="SFX">
+					<ShortName>weap_handheld_equip.wav</ShortName>
+					<Path>sfx\weap_handheld_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="40043878" Language="SFX">
+					<ShortName>weap_handheld_unequip.wav</ShortName>
+					<Path>sfx\weap_handheld_unequip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="101067937" Language="SFX">
+					<ShortName>weap_hatchet_swing1.wav</ShortName>
+					<Path>sfx\weap_hatchet_swing1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="663869525" Language="SFX">
+					<ShortName>weap_hatchet_swing2.wav</ShortName>
+					<Path>sfx\weap_hatchet_swing2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="959984215" Language="SFX">
+					<ShortName>weap_hatchet_swing3.wav</ShortName>
+					<Path>sfx\weap_hatchet_swing3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="318229574" Language="SFX">
+					<ShortName>weap_m40a5_fire.wav</ShortName>
+					<Path>sfx\weap_m40a5_fire_ddc98ef4.wem</Path>
+				</File>
+				<File Id="250415414" Language="SFX">
+					<ShortName>weap_m40a5_fire_distant.wav</ShortName>
+					<Path>sfx\weap_m40a5_fire_distant_ddc98ef4.wem</Path>
+				</File>
+				<File Id="193402691" Language="SFX">
+					<ShortName>weap_m40a5_load.wav</ShortName>
+					<Path>sfx\weap_m40a5_load_ddc98ef4.wem</Path>
+				</File>
+				<File Id="258969471" Language="SFX">
+					<ShortName>weap_m40a5_reload_1.wav</ShortName>
+					<Path>sfx\weap_m40a5_reload_1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="763419606" Language="SFX">
+					<ShortName>weap_m40a5_reload_2.wav</ShortName>
+					<Path>sfx\weap_m40a5_reload_2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="731676762" Language="SFX">
+					<ShortName>weap_m40a5_reload_3.wav</ShortName>
+					<Path>sfx\weap_m40a5_reload_3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="144283186" Language="SFX">
+					<ShortName>weap_m40a5_tail_close1.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="84431114" Language="SFX">
+					<ShortName>weap_m40a5_tail_close2.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="18829481" Language="SFX">
+					<ShortName>weap_m40a5_tail_close3.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="264419918" Language="SFX">
+					<ShortName>weap_m40a5_tail_close4.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_close4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="147869352" Language="SFX">
+					<ShortName>weap_m40a5_tail_close5.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_close5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="737488582" Language="SFX">
+					<ShortName>weap_m40a5_tail_distant1.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="778571489" Language="SFX">
+					<ShortName>weap_m40a5_tail_distant2.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="281338463" Language="SFX">
+					<ShortName>weap_m40a5_tail_distant3.wav</ShortName>
+					<Path>sfx\weap_m40a5_tail_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="64772353" Language="SFX">
+					<ShortName>weap_m4a1_fire.wav</ShortName>
+					<Path>sfx\weap_m4a1_fire_ddc98ef4.wem</Path>
+				</File>
+				<File Id="220812634" Language="SFX">
+					<ShortName>weap_m4a1_fire_distant.wav</ShortName>
+					<Path>sfx\weap_m4a1_fire_distant_ddc98ef4.wem</Path>
+				</File>
+				<File Id="356583166" Language="SFX">
+					<ShortName>weap_m4a1_load.wav</ShortName>
+					<Path>sfx\weap_m4a1_load_ddc98ef4.wem</Path>
+				</File>
+				<File Id="18852684" Language="SFX">
+					<ShortName>weap_m4a1_mag_in.wav</ShortName>
+					<Path>sfx\weap_m4a1_mag_in_ddc98ef4.wem</Path>
+				</File>
+				<File Id="583518628" Language="SFX">
+					<ShortName>weap_m4a1_mag_out.wav</ShortName>
+					<Path>sfx\weap_m4a1_mag_out_ddc98ef4.wem</Path>
+				</File>
+				<File Id="56338258" Language="SFX">
+					<ShortName>weap_m4a1_tail_close1.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="450701935" Language="SFX">
+					<ShortName>weap_m4a1_tail_close2.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="496837169" Language="SFX">
+					<ShortName>weap_m4a1_tail_close3.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="441041756" Language="SFX">
+					<ShortName>weap_m4a1_tail_close4.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_close4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="465725236" Language="SFX">
+					<ShortName>weap_m4a1_tail_close5.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_close5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="66008958" Language="SFX">
+					<ShortName>weap_m4a1_tail_distant1.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="947989468" Language="SFX">
+					<ShortName>weap_m4a1_tail_distant2.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="273659001" Language="SFX">
+					<ShortName>weap_m4a1_tail_distant3.wav</ShortName>
+					<Path>sfx\weap_m4a1_tail_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="288817687" Language="SFX">
+					<ShortName>weap_pickup_ammo.wav</ShortName>
+					<Path>sfx\weap_pickup_ammo_ddc98ef4.wem</Path>
+				</File>
+				<File Id="161699591" Language="SFX">
+					<ShortName>weap_pickup_gun.wav</ShortName>
+					<Path>sfx\weap_pickup_gun_ddc98ef4.wem</Path>
+				</File>
+				<File Id="124049611" Language="SFX">
+					<ShortName>weap_recurvebow_3p_fire1.wav</ShortName>
+					<Path>sfx\weap_recurvebow_3p_fire1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="35880181" Language="SFX">
+					<ShortName>weap_recurvebow_3p_fire2.wav</ShortName>
+					<Path>sfx\weap_recurvebow_3p_fire2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="410145567" Language="SFX">
+					<ShortName>weap_recurvebow_fp_fire1.wav</ShortName>
+					<Path>sfx\weap_recurvebow_fp_fire1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="735445293" Language="SFX">
+					<ShortName>weap_recurvebow_fp_fire2.wav</ShortName>
+					<Path>sfx\weap_recurvebow_fp_fire2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="125720351" Language="SFX">
+					<ShortName>weap_recurvebow_pull.wav</ShortName>
+					<Path>sfx\weap_recurvebow_pull_ddc98ef4.wem</Path>
+				</File>
+				<File Id="514555214" Language="SFX">
+					<ShortName>weap_remington_fire.wav</ShortName>
+					<Path>sfx\weap_remington_fire_ddc98ef4.wem</Path>
+				</File>
+				<File Id="729646080" Language="SFX">
+					<ShortName>weap_remington_fire_distant.wav</ShortName>
+					<Path>sfx\weap_remington_fire_distant_ddc98ef4.wem</Path>
+				</File>
+				<File Id="225032025" Language="SFX">
+					<ShortName>weap_remington_load.wav</ShortName>
+					<Path>sfx\weap_remington_load_ddc98ef4.wem</Path>
+				</File>
+				<File Id="312443673" Language="SFX">
+					<ShortName>weap_remington_pump.wav</ShortName>
+					<Path>sfx\weap_remington_pump_ddc98ef4.wem</Path>
+				</File>
+				<File Id="26892857" Language="SFX">
+					<ShortName>weap_remington_tail_close1.wav</ShortName>
+					<Path>sfx\weap_remington_tail_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="573724684" Language="SFX">
+					<ShortName>weap_remington_tail_close2.wav</ShortName>
+					<Path>sfx\weap_remington_tail_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="742705751" Language="SFX">
+					<ShortName>weap_remington_tail_close3.wav</ShortName>
+					<Path>sfx\weap_remington_tail_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="282068169" Language="SFX">
+					<ShortName>weap_remington_tail_close4.wav</ShortName>
+					<Path>sfx\weap_remington_tail_close4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="437306056" Language="SFX">
+					<ShortName>weap_remington_tail_close5.wav</ShortName>
+					<Path>sfx\weap_remington_tail_close5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="990494984" Language="SFX">
+					<ShortName>weap_remington_tail_distant1.wav</ShortName>
+					<Path>sfx\weap_remington_tail_distant1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1021037513" Language="SFX">
+					<ShortName>weap_remington_tail_distant2.wav</ShortName>
+					<Path>sfx\weap_remington_tail_distant2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="507825345" Language="SFX">
+					<ShortName>weap_remington_tail_distant3.wav</ShortName>
+					<Path>sfx\weap_remington_tail_distant3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="109131698" Language="SFX">
+					<ShortName>weap_rifle_equip.wav</ShortName>
+					<Path>sfx\weap_rifle_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="60933638" Language="SFX">
+					<ShortName>weap_rifle_unequip.wav</ShortName>
+					<Path>sfx\weap_rifle_unequip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="160185031" Language="SFX">
+					<ShortName>weap_smokegrenade_smoke.wav</ShortName>
+					<Path>sfx\weap_smokegrenade_smoke_7968c2fa.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX">
+			<ShortName>ui</ShortName>
+			<Path>ui.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2805243469" Name="Play_crafting_close_3p" />
+				<Event Id="1916029630" Name="Play_crafting_close_fp" />
+				<Event Id="3580642867" Name="Play_crafting_craft_3p" />
+				<Event Id="141334268" Name="Play_crafting_craft_fp" />
+				<Event Id="3920121238" Name="Play_crafting_dismantle_3p" />
+				<Event Id="3198683717" Name="Play_crafting_dismantle_fp" />
+				<Event Id="1684602700" Name="Play_crafting_move_item_3p" />
+				<Event Id="292060387" Name="Play_crafting_move_item_fp" />
+				<Event Id="2464068123" Name="Play_crafting_open_3p" />
+				<Event Id="1709075428" Name="Play_crafting_open_fp" />
+				<Event Id="3207245039" Name="Play_hunger" />
+				<Event Id="3724798117" Name="Play_main_menu_cursor_hover" />
+				<Event Id="1404515904" Name="Play_main_menu_select" />
+				<Event Id="3188610532" Name="Play_player_catch_breath_3p" />
+				<Event Id="3943603227" Name="Play_player_catch_breath_fp" />
+				<Event Id="2870470764" Name="Play_player_death_3p" />
+				<Event Id="1477928195" Name="Play_player_death_fp" />
+				<Event Id="4218849564" Name="Play_player_drown_3p" />
+				<Event Id="3363191123" Name="Play_player_drown_fp" />
+				<Event Id="2120672549" Name="Play_player_out_of_breath_3p" />
+				<Event Id="694575094" Name="Play_player_out_of_breath_fp" />
+				<Event Id="30515514" Name="Play_player_pain_3p" />
+				<Event Id="3469824369" Name="Play_player_pain_fp" />
+				<Event Id="1021322728" Name="Play_player_sprint_off_3p" />
+				<Event Id="2447420183" Name="Play_player_sprint_off_fp" />
+				<Event Id="58938014" Name="Play_player_sprint_on_3p" />
+				<Event Id="948151853" Name="Play_player_sprint_on_fp" />
+				<Event Id="927362047" Name="Play_radiation" />
+				<Event Id="2196968073" Name="Stop_hunger" />
+				<Event Id="261117" Name="Stop_radiation" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="443152384" Language="SFX">
+					<ShortName>ui_craft_close.wav</ShortName>
+					<Path>sfx\ui_craft_close_ddc98ef4.wem</Path>
+				</File>
+				<File Id="390801376" Language="SFX">
+					<ShortName>ui_craft_craft.wav</ShortName>
+					<Path>sfx\ui_craft_craft_ddc98ef4.wem</Path>
+				</File>
+				<File Id="289911942" Language="SFX">
+					<ShortName>ui_craft_dismantle.wav</ShortName>
+					<Path>sfx\ui_craft_dismantle_ddc98ef4.wem</Path>
+				</File>
+				<File Id="554134016" Language="SFX">
+					<ShortName>ui_craft_move.wav</ShortName>
+					<Path>sfx\ui_craft_move_ddc98ef4.wem</Path>
+				</File>
+				<File Id="104717724" Language="SFX">
+					<ShortName>ui_craft_open.wav</ShortName>
+					<Path>sfx\ui_craft_open_ddc98ef4.wem</Path>
+				</File>
+				<File Id="221678248" Language="SFX">
+					<ShortName>ui_main_menu_hover.wav</ShortName>
+					<Path>sfx\ui_main_menu_hover_ddc98ef4.wem</Path>
+				</File>
+				<File Id="798887430" Language="SFX">
+					<ShortName>ui_main_menu_select.wav</ShortName>
+					<Path>sfx\ui_main_menu_select_ddc98ef4.wem</Path>
+				</File>
+				<File Id="673032076" Language="SFX">
+					<ShortName>ui_player_catchbreath.wav</ShortName>
+					<Path>sfx\ui_player_catchbreath_ddc98ef4.wem</Path>
+				</File>
+				<File Id="308494772" Language="SFX">
+					<ShortName>ui_player_death1.wav</ShortName>
+					<Path>sfx\ui_player_death1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="149848162" Language="SFX">
+					<ShortName>ui_player_death2.wav</ShortName>
+					<Path>sfx\ui_player_death2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="621578256" Language="SFX">
+					<ShortName>ui_player_death3.wav</ShortName>
+					<Path>sfx\ui_player_death3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="152455565" Language="SFX">
+					<ShortName>ui_player_drown.wav</ShortName>
+					<Path>sfx\ui_player_drown_ddc98ef4.wem</Path>
+				</File>
+				<File Id="247097301" Language="SFX">
+					<ShortName>ui_player_outofbreath.wav</ShortName>
+					<Path>sfx\ui_player_outofbreath_ddc98ef4.wem</Path>
+				</File>
+				<File Id="281657042" Language="SFX">
+					<ShortName>ui_player_pain1.wav</ShortName>
+					<Path>sfx\ui_player_pain1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="414262194" Language="SFX">
+					<ShortName>ui_player_pain2.wav</ShortName>
+					<Path>sfx\ui_player_pain2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="673193349" Language="SFX">
+					<ShortName>ui_player_pain3.wav</ShortName>
+					<Path>sfx\ui_player_pain3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="128618982" Language="SFX">
+					<ShortName>ui_player_sprint_off.wav</ShortName>
+					<Path>sfx\ui_player_sprint_off_ddc98ef4.wem</Path>
+				</File>
+				<File Id="710678623" Language="SFX">
+					<ShortName>ui_player_sprint_on.wav</ShortName>
+					<Path>sfx\ui_player_sprint_on_ddc98ef4.wem</Path>
+				</File>
+				<File Id="40855752" Language="SFX">
+					<ShortName>UI_Radiation_High.wav</ShortName>
+					<Path>sfx\ui_radiation_high_74f7f5ce.wem</Path>
+				</File>
+				<File Id="895128519" Language="SFX">
+					<ShortName>UI_Radiation_Low.wav</ShortName>
+					<Path>sfx\ui_radiation_low_e9cf497d.wem</Path>
+				</File>
+				<File Id="161927577" Language="SFX">
+					<ShortName>UI_Skin_Frying.wav</ShortName>
+					<Path>sfx\ui_skin_frying_6787a7cf.wem</Path>
+				</File>
+				<File Id="129842916" Language="SFX">
+					<ShortName>UI_StomachGrowl_01.wav</ShortName>
+					<Path>sfx\ui_stomachgrowl_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1026126563" Language="SFX">
+					<ShortName>UI_StomachGrowl_02.wav</ShortName>
+					<Path>sfx\ui_stomachgrowl_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="612627045" Language="SFX">
+					<ShortName>UI_StomachGrowl_03.wav</ShortName>
+					<Path>sfx\ui_stomachgrowl_03_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1695690031" Language="SFX">
+			<ShortName>objects</ShortName>
+			<Path>objects.bnk</Path>
+			<IncludedEvents>
+				<Event Id="586214621" Name="Play_backpack_close_3p" />
+				<Event Id="1307652142" Name="Play_backpack_close_fp" />
+				<Event Id="999250460" Name="Play_backpack_move_item_3p" />
+				<Event Id="143592019" Name="Play_backpack_move_item_fp" />
+				<Event Id="2736319947" Name="Play_backpack_open_3p" />
+				<Event Id="3591978612" Name="Play_backpack_open_fp" />
+				<Event Id="1138835028" Name="Play_backpack_place_item_3p" />
+				<Event Id="283176363" Name="Play_backpack_place_item_fp" />
+				<Event Id="4000411161" Name="Play_campfire" />
+				<Event Id="1197855215" Name="Play_clothes_equip_3p" />
+				<Event Id="308641344" Name="Play_clothes_equip_fp" />
+				<Event Id="1790379810" Name="Play_clothes_unequip_3p" />
+				<Event Id="3082256633" Name="Play_clothes_unequip_fp" />
+				<Event Id="1615836714" Name="Play_container_drink_3p" />
+				<Event Id="223294401" Name="Play_container_drink_fp" />
+				<Event Id="1929426117" Name="Play_container_fill_3p" />
+				<Event Id="2650863638" Name="Play_container_fill_fp" />
+				<Event Id="2859392951" Name="Play_door_metal_close" />
+				<Event Id="1605742593" Name="Play_door_metal_open" />
+				<Event Id="12788195" Name="Play_door_wood_close" />
+				<Event Id="3090031829" Name="Play_door_wood_open" />
+				<Event Id="4009253897" Name="Play_food_eat_3p" />
+				<Event Id="3254261202" Name="Play_food_eat_fp" />
+				<Event Id="1204816352" Name="Play_pickup_fabric_3p" />
+				<Event Id="2094029967" Name="Play_pickup_fabric_fp" />
+				<Event Id="2577379452" Name="Play_pickup_metal_3p" />
+				<Event Id="1721720755" Name="Play_pickup_metal_fp" />
+				<Event Id="3528974169" Name="Play_pickup_pastic_3p" />
+				<Event Id="114023980" Name="Play_pickup_plastic_fp" />
+				<Event Id="1089561544" Name="Play_pickup_wood_3p" />
+				<Event Id="368124023" Name="Play_pickup_wood_fp" />
+				<Event Id="3773026927" Name="Play_puptent_flap_in_wind" />
+				<Event Id="898609230" Name="Play_puptent_setup_3p" />
+				<Event Id="2324706941" Name="Play_puptent_setup_fp" />
+				<Event Id="1157865521" Name="Play_puptent_teardown_3p" />
+				<Event Id="4160956282" Name="Play_puptent_teardown_fp" />
+				<Event Id="2693810650" Name="Play_soda_open_3p" />
+				<Event Id="1838151953" Name="Play_soda_open_fp" />
+				<Event Id="2683716773" Name="Play_sunglasses_equip_3p" />
+				<Event Id="1257619318" Name="Play_sunglasses_equip_fp" />
+				<Event Id="1228259764" Name="Play_sunglasses_unequip_3p" />
+				<Event Id="2520136331" Name="Play_sunglasses_unequip_fp" />
+				<Event Id="3878502195" Name="Stop_campfire" />
+				<Event Id="3495220125" Name="Stop_puptent_flap_in_wind" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="803445932" Language="SFX">
+					<ShortName>item_backpack_close.wav</ShortName>
+					<Path>sfx\item_backpack_close_ddc98ef4.wem</Path>
+				</File>
+				<File Id="553569303" Language="SFX">
+					<ShortName>item_backpack_move.wav</ShortName>
+					<Path>sfx\item_backpack_move_ddc98ef4.wem</Path>
+				</File>
+				<File Id="768420858" Language="SFX">
+					<ShortName>item_backpack_open.wav</ShortName>
+					<Path>sfx\item_backpack_open_ddc98ef4.wem</Path>
+				</File>
+				<File Id="202776128" Language="SFX">
+					<ShortName>item_backpack_place.wav</ShortName>
+					<Path>sfx\item_backpack_place_ddc98ef4.wem</Path>
+				</File>
+				<File Id="552071881" Language="SFX">
+					<ShortName>item_campfire.wav</ShortName>
+					<Path>sfx\item_campfire_914083e7.wem</Path>
+				</File>
+				<File Id="700150665" Language="SFX">
+					<ShortName>item_canteen_drink.wav</ShortName>
+					<Path>sfx\item_canteen_drink_ddc98ef4.wem</Path>
+				</File>
+				<File Id="232383817" Language="SFX">
+					<ShortName>item_clothes_equip.wav</ShortName>
+					<Path>sfx\item_clothes_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="584498672" Language="SFX">
+					<ShortName>item_clothes_unequip.wav</ShortName>
+					<Path>sfx\item_clothes_unequip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="232442351" Language="SFX">
+					<ShortName>item_container_fill.wav</ShortName>
+					<Path>sfx\item_container_fill_ddc98ef4.wem</Path>
+				</File>
+				<File Id="794700441" Language="SFX">
+					<ShortName>item_door_metal_close1.wav</ShortName>
+					<Path>sfx\item_door_metal_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="936706928" Language="SFX">
+					<ShortName>item_door_metal_close2.wav</ShortName>
+					<Path>sfx\item_door_metal_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="644990019" Language="SFX">
+					<ShortName>item_door_metal_close3.wav</ShortName>
+					<Path>sfx\item_door_metal_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="332504655" Language="SFX">
+					<ShortName>item_door_metal_open1.wav</ShortName>
+					<Path>sfx\item_door_metal_open1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="38132333" Language="SFX">
+					<ShortName>item_door_metal_open2.wav</ShortName>
+					<Path>sfx\item_door_metal_open2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1016316657" Language="SFX">
+					<ShortName>item_door_metal_open3.wav</ShortName>
+					<Path>sfx\item_door_metal_open3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="357653955" Language="SFX">
+					<ShortName>item_door_wood_close1.wav</ShortName>
+					<Path>sfx\item_door_wood_close1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="552028729" Language="SFX">
+					<ShortName>item_door_wood_close2.wav</ShortName>
+					<Path>sfx\item_door_wood_close2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="133072183" Language="SFX">
+					<ShortName>item_door_wood_close3.wav</ShortName>
+					<Path>sfx\item_door_wood_close3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="451619071" Language="SFX">
+					<ShortName>item_door_wood_open1.wav</ShortName>
+					<Path>sfx\item_door_wood_open1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1038319012" Language="SFX">
+					<ShortName>item_door_wood_open2.wav</ShortName>
+					<Path>sfx\item_door_wood_open2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="789241406" Language="SFX">
+					<ShortName>item_door_wood_open3.wav</ShortName>
+					<Path>sfx\item_door_wood_open3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="56712027" Language="SFX">
+					<ShortName>item_food_eat.wav</ShortName>
+					<Path>sfx\item_food_eat_ddc98ef4.wem</Path>
+				</File>
+				<File Id="879993347" Language="SFX">
+					<ShortName>Item_pickup_fabric.wav</ShortName>
+					<Path>sfx\item_pickup_fabric_ddc98ef4.wem</Path>
+				</File>
+				<File Id="346022767" Language="SFX">
+					<ShortName>item_pickup_metal.wav</ShortName>
+					<Path>sfx\item_pickup_metal_ddc98ef4.wem</Path>
+				</File>
+				<File Id="383023675" Language="SFX">
+					<ShortName>item_pickup_plastic.wav</ShortName>
+					<Path>sfx\item_pickup_plastic_ddc98ef4.wem</Path>
+				</File>
+				<File Id="53599368" Language="SFX">
+					<ShortName>item_pickup_wood.wav</ShortName>
+					<Path>sfx\item_pickup_wood_ddc98ef4.wem</Path>
+				</File>
+				<File Id="127560973" Language="SFX">
+					<ShortName>item_puptent_flapping.wav</ShortName>
+					<Path>sfx\item_puptent_flapping_4008e56a.wem</Path>
+				</File>
+				<File Id="150303559" Language="SFX">
+					<ShortName>item_puptent_setup.wav</ShortName>
+					<Path>sfx\item_puptent_setup_ddc98ef4.wem</Path>
+				</File>
+				<File Id="696512554" Language="SFX">
+					<ShortName>item_puptent_teardown.wav</ShortName>
+					<Path>sfx\item_puptent_teardown_ddc98ef4.wem</Path>
+				</File>
+				<File Id="601054150" Language="SFX">
+					<ShortName>item_soda_open.wav</ShortName>
+					<Path>sfx\item_soda_open_ddc98ef4.wem</Path>
+				</File>
+				<File Id="198921529" Language="SFX">
+					<ShortName>item_sunglasses_equip.wav</ShortName>
+					<Path>sfx\item_sunglasses_equip_ddc98ef4.wem</Path>
+				</File>
+				<File Id="481726665" Language="SFX">
+					<ShortName>item_sunglasses_unequip.wav</ShortName>
+					<Path>sfx\item_sunglasses_unequip_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="2385628198" Language="SFX">
+			<ShortName>footsteps</ShortName>
+			<Path>footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1122552679" Name="Play_footsteps_3p" />
+				<Event Id="233338840" Name="Play_footsteps_fp" />
+				<Event Id="1029363406" Name="Play_footsteps_prone_3p" />
+				<Event Id="2455461117" Name="Play_footsteps_prone_fp" />
+				<Event Id="2661971642" Name="Play_jump_off_3p" />
+				<Event Id="1806313201" Name="Play_jump_off_fp" />
+				<Event Id="138035744" Name="Play_jump_on_3p" />
+				<Event Id="3174681679" Name="Play_jump_on_fp" />
+				<Event Id="135550253" Name="Play_ladder_foot_3p" />
+				<Event Id="3541303710" Name="Play_ladder_foot_fp" />
+				<Event Id="3421828196" Name="Play_ladder_hand_3p" />
+				<Event Id="4176820891" Name="Play_ladder_hand_fp" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="442087630" Language="SFX">
+					<ShortName>FS_Concrete_Prone_01.wav</ShortName>
+					<Path>sfx\fs_concrete_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="603060507" Language="SFX">
+					<ShortName>FS_Concrete_Prone_02.wav</ShortName>
+					<Path>sfx\fs_concrete_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="465053939" Language="SFX">
+					<ShortName>FS_Concrete_Prone_03.wav</ShortName>
+					<Path>sfx\fs_concrete_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="328114608" Language="SFX">
+					<ShortName>FS_Concrete_Prone_04.wav</ShortName>
+					<Path>sfx\fs_concrete_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="194249646" Language="SFX">
+					<ShortName>FS_Concrete_Prone_05.wav</ShortName>
+					<Path>sfx\fs_concrete_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="107757378" Language="SFX">
+					<ShortName>fs_dirt_jump01.wav</ShortName>
+					<Path>sfx\fs_dirt_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="315091593" Language="SFX">
+					<ShortName>fs_dirt_jump02.wav</ShortName>
+					<Path>sfx\fs_dirt_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="25517405" Language="SFX">
+					<ShortName>fs_dirt_jump03.wav</ShortName>
+					<Path>sfx\fs_dirt_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="138686553" Language="SFX">
+					<ShortName>fs_dirt_land01.wav</ShortName>
+					<Path>sfx\fs_dirt_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="420484176" Language="SFX">
+					<ShortName>fs_dirt_land02.wav</ShortName>
+					<Path>sfx\fs_dirt_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="241374433" Language="SFX">
+					<ShortName>fs_dirt_land03.wav</ShortName>
+					<Path>sfx\fs_dirt_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="184184042" Language="SFX">
+					<ShortName>FS_Dirt_Prone_01.wav</ShortName>
+					<Path>sfx\fs_dirt_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="864399517" Language="SFX">
+					<ShortName>FS_Dirt_Prone_02.wav</ShortName>
+					<Path>sfx\fs_dirt_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="849450198" Language="SFX">
+					<ShortName>FS_Dirt_Prone_03.wav</ShortName>
+					<Path>sfx\fs_dirt_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="106195186" Language="SFX">
+					<ShortName>FS_Dirt_Prone_04.wav</ShortName>
+					<Path>sfx\fs_dirt_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="234515292" Language="SFX">
+					<ShortName>FS_Dirt_Prone_05.wav</ShortName>
+					<Path>sfx\fs_dirt_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="54779888" Language="SFX">
+					<ShortName>FS_Dirt_run01.wav</ShortName>
+					<Path>sfx\fs_dirt_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="824000463" Language="SFX">
+					<ShortName>FS_Dirt_run02.wav</ShortName>
+					<Path>sfx\fs_dirt_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="231015197" Language="SFX">
+					<ShortName>FS_Dirt_run03.wav</ShortName>
+					<Path>sfx\fs_dirt_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="7531777" Language="SFX">
+					<ShortName>FS_Dirt_run04.wav</ShortName>
+					<Path>sfx\fs_dirt_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="233714673" Language="SFX">
+					<ShortName>FS_Dirt_run05.wav</ShortName>
+					<Path>sfx\fs_dirt_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="986561628" Language="SFX">
+					<ShortName>FS_Dirt_run06.wav</ShortName>
+					<Path>sfx\fs_dirt_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="565758196" Language="SFX">
+					<ShortName>FS_Dirt_run07.wav</ShortName>
+					<Path>sfx\fs_dirt_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="742592949" Language="SFX">
+					<ShortName>FS_Dirt_run08.wav</ShortName>
+					<Path>sfx\fs_dirt_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="551973471" Language="SFX">
+					<ShortName>FS_Dirt_run09.wav</ShortName>
+					<Path>sfx\fs_dirt_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="458183760" Language="SFX">
+					<ShortName>FS_Dirt_run10.wav</ShortName>
+					<Path>sfx\fs_dirt_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="49229987" Language="SFX">
+					<ShortName>FS_Dirt_sprint01.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="787986461" Language="SFX">
+					<ShortName>FS_Dirt_sprint02.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="403723420" Language="SFX">
+					<ShortName>FS_Dirt_sprint03.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="146290979" Language="SFX">
+					<ShortName>FS_Dirt_sprint04.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="278393661" Language="SFX">
+					<ShortName>FS_Dirt_sprint05.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="284544797" Language="SFX">
+					<ShortName>FS_Dirt_sprint06.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="798863696" Language="SFX">
+					<ShortName>FS_Dirt_sprint07.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="395899137" Language="SFX">
+					<ShortName>FS_Dirt_sprint08.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="130351143" Language="SFX">
+					<ShortName>FS_Dirt_sprint09.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="359978865" Language="SFX">
+					<ShortName>FS_Dirt_sprint10.wav</ShortName>
+					<Path>sfx\fs_dirt_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="291421271" Language="SFX">
+					<ShortName>FS_Dirt_walk01.wav</ShortName>
+					<Path>sfx\fs_dirt_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="5595942" Language="SFX">
+					<ShortName>FS_Dirt_walk02.wav</ShortName>
+					<Path>sfx\fs_dirt_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="116305855" Language="SFX">
+					<ShortName>FS_Dirt_walk03.wav</ShortName>
+					<Path>sfx\fs_dirt_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="213856351" Language="SFX">
+					<ShortName>FS_Dirt_walk04.wav</ShortName>
+					<Path>sfx\fs_dirt_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="715169970" Language="SFX">
+					<ShortName>FS_Dirt_walk05.wav</ShortName>
+					<Path>sfx\fs_dirt_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="213515748" Language="SFX">
+					<ShortName>FS_Dirt_walk06.wav</ShortName>
+					<Path>sfx\fs_dirt_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="385722280" Language="SFX">
+					<ShortName>FS_Dirt_walk07.wav</ShortName>
+					<Path>sfx\fs_dirt_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="546752474" Language="SFX">
+					<ShortName>FS_Dirt_walk08.wav</ShortName>
+					<Path>sfx\fs_dirt_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="197973875" Language="SFX">
+					<ShortName>FS_Dirt_walk09.wav</ShortName>
+					<Path>sfx\fs_dirt_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="51339101" Language="SFX">
+					<ShortName>FS_Dirt_walk10.wav</ShortName>
+					<Path>sfx\fs_dirt_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="83077354" Language="SFX">
+					<ShortName>fs_grass_jump01.wav</ShortName>
+					<Path>sfx\fs_grass_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="202162432" Language="SFX">
+					<ShortName>fs_grass_jump02.wav</ShortName>
+					<Path>sfx\fs_grass_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="220216257" Language="SFX">
+					<ShortName>fs_grass_jump03.wav</ShortName>
+					<Path>sfx\fs_grass_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="264447505" Language="SFX">
+					<ShortName>fs_grass_land01.wav</ShortName>
+					<Path>sfx\fs_grass_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="712838655" Language="SFX">
+					<ShortName>fs_grass_land02.wav</ShortName>
+					<Path>sfx\fs_grass_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="93616289" Language="SFX">
+					<ShortName>fs_grass_land03.wav</ShortName>
+					<Path>sfx\fs_grass_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="197486813" Language="SFX">
+					<ShortName>FS_Grass_Prone_01.wav</ShortName>
+					<Path>sfx\fs_grass_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="38537784" Language="SFX">
+					<ShortName>FS_Grass_Prone_02.wav</ShortName>
+					<Path>sfx\fs_grass_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="5846031" Language="SFX">
+					<ShortName>FS_Grass_Prone_03.wav</ShortName>
+					<Path>sfx\fs_grass_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="127250960" Language="SFX">
+					<ShortName>FS_Grass_Prone_04.wav</ShortName>
+					<Path>sfx\fs_grass_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="155991077" Language="SFX">
+					<ShortName>FS_Grass_Prone_05.wav</ShortName>
+					<Path>sfx\fs_grass_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="87801157" Language="SFX">
+					<ShortName>fs_grass_run01.wav</ShortName>
+					<Path>sfx\fs_grass_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="357090162" Language="SFX">
+					<ShortName>fs_grass_run02.wav</ShortName>
+					<Path>sfx\fs_grass_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="140113467" Language="SFX">
+					<ShortName>fs_grass_run03.wav</ShortName>
+					<Path>sfx\fs_grass_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="346913392" Language="SFX">
+					<ShortName>fs_grass_run04.wav</ShortName>
+					<Path>sfx\fs_grass_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="261510662" Language="SFX">
+					<ShortName>fs_grass_run05.wav</ShortName>
+					<Path>sfx\fs_grass_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="11986261" Language="SFX">
+					<ShortName>fs_grass_run06.wav</ShortName>
+					<Path>sfx\fs_grass_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="303824740" Language="SFX">
+					<ShortName>fs_grass_run07.wav</ShortName>
+					<Path>sfx\fs_grass_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="473993392" Language="SFX">
+					<ShortName>fs_grass_run08.wav</ShortName>
+					<Path>sfx\fs_grass_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="517155768" Language="SFX">
+					<ShortName>fs_grass_run09.wav</ShortName>
+					<Path>sfx\fs_grass_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="255455565" Language="SFX">
+					<ShortName>fs_grass_run10.wav</ShortName>
+					<Path>sfx\fs_grass_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="899825707" Language="SFX">
+					<ShortName>fs_grass_sprint01.wav</ShortName>
+					<Path>sfx\fs_grass_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="59674175" Language="SFX">
+					<ShortName>fs_grass_sprint02.wav</ShortName>
+					<Path>sfx\fs_grass_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="18539525" Language="SFX">
+					<ShortName>fs_grass_sprint03.wav</ShortName>
+					<Path>sfx\fs_grass_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="140161469" Language="SFX">
+					<ShortName>fs_grass_sprint04.wav</ShortName>
+					<Path>sfx\fs_grass_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="275636197" Language="SFX">
+					<ShortName>fs_grass_sprint05.wav</ShortName>
+					<Path>sfx\fs_grass_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="654311885" Language="SFX">
+					<ShortName>fs_grass_sprint06.wav</ShortName>
+					<Path>sfx\fs_grass_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="718441703" Language="SFX">
+					<ShortName>fs_grass_sprint07.wav</ShortName>
+					<Path>sfx\fs_grass_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="549602480" Language="SFX">
+					<ShortName>fs_grass_sprint08.wav</ShortName>
+					<Path>sfx\fs_grass_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="571839796" Language="SFX">
+					<ShortName>fs_grass_sprint09.wav</ShortName>
+					<Path>sfx\fs_grass_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="92741328" Language="SFX">
+					<ShortName>fs_grass_sprint10.wav</ShortName>
+					<Path>sfx\fs_grass_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="117531247" Language="SFX">
+					<ShortName>fs_grass_walk01.wav</ShortName>
+					<Path>sfx\fs_grass_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="559878522" Language="SFX">
+					<ShortName>fs_grass_walk02.wav</ShortName>
+					<Path>sfx\fs_grass_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="28964308" Language="SFX">
+					<ShortName>fs_grass_walk03.wav</ShortName>
+					<Path>sfx\fs_grass_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="53218065" Language="SFX">
+					<ShortName>fs_grass_walk04.wav</ShortName>
+					<Path>sfx\fs_grass_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="109304894" Language="SFX">
+					<ShortName>fs_grass_walk05.wav</ShortName>
+					<Path>sfx\fs_grass_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="630257414" Language="SFX">
+					<ShortName>fs_grass_walk06.wav</ShortName>
+					<Path>sfx\fs_grass_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="96467016" Language="SFX">
+					<ShortName>fs_grass_walk07.wav</ShortName>
+					<Path>sfx\fs_grass_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="127439402" Language="SFX">
+					<ShortName>fs_grass_walk08.wav</ShortName>
+					<Path>sfx\fs_grass_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="176074096" Language="SFX">
+					<ShortName>fs_grass_walk09.wav</ShortName>
+					<Path>sfx\fs_grass_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="138039258" Language="SFX">
+					<ShortName>fs_grass_walk10.wav</ShortName>
+					<Path>sfx\fs_grass_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="224915684" Language="SFX">
+					<ShortName>fs_gravel_jump01.wav</ShortName>
+					<Path>sfx\fs_gravel_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="769821924" Language="SFX">
+					<ShortName>fs_gravel_jump02.wav</ShortName>
+					<Path>sfx\fs_gravel_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="118822613" Language="SFX">
+					<ShortName>fs_gravel_jump03.wav</ShortName>
+					<Path>sfx\fs_gravel_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="251625619" Language="SFX">
+					<ShortName>fs_gravel_land01.wav</ShortName>
+					<Path>sfx\fs_gravel_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="47356366" Language="SFX">
+					<ShortName>fs_gravel_land02.wav</ShortName>
+					<Path>sfx\fs_gravel_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="388700879" Language="SFX">
+					<ShortName>fs_gravel_land03.wav</ShortName>
+					<Path>sfx\fs_gravel_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="113552047" Language="SFX">
+					<ShortName>fs_gravel_run01.wav</ShortName>
+					<Path>sfx\fs_gravel_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="290894643" Language="SFX">
+					<ShortName>fs_gravel_run02.wav</ShortName>
+					<Path>sfx\fs_gravel_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="599915301" Language="SFX">
+					<ShortName>fs_gravel_run03.wav</ShortName>
+					<Path>sfx\fs_gravel_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="16030066" Language="SFX">
+					<ShortName>fs_gravel_run04.wav</ShortName>
+					<Path>sfx\fs_gravel_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="643210220" Language="SFX">
+					<ShortName>fs_gravel_run05.wav</ShortName>
+					<Path>sfx\fs_gravel_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="528453384" Language="SFX">
+					<ShortName>fs_gravel_run06.wav</ShortName>
+					<Path>sfx\fs_gravel_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="655897198" Language="SFX">
+					<ShortName>fs_gravel_run07.wav</ShortName>
+					<Path>sfx\fs_gravel_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="720246490" Language="SFX">
+					<ShortName>fs_gravel_run08.wav</ShortName>
+					<Path>sfx\fs_gravel_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="134160503" Language="SFX">
+					<ShortName>fs_gravel_run09.wav</ShortName>
+					<Path>sfx\fs_gravel_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="173829537" Language="SFX">
+					<ShortName>fs_gravel_run10.wav</ShortName>
+					<Path>sfx\fs_gravel_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="871715662" Language="SFX">
+					<ShortName>fs_gravel_sprint01.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="223431856" Language="SFX">
+					<ShortName>fs_gravel_sprint02.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="26751692" Language="SFX">
+					<ShortName>fs_gravel_sprint03.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="651820595" Language="SFX">
+					<ShortName>fs_gravel_sprint04.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="878034393" Language="SFX">
+					<ShortName>fs_gravel_sprint05.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="182067847" Language="SFX">
+					<ShortName>fs_gravel_sprint06.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="152289335" Language="SFX">
+					<ShortName>fs_gravel_sprint07.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="77318959" Language="SFX">
+					<ShortName>fs_gravel_sprint08.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="250642251" Language="SFX">
+					<ShortName>fs_gravel_sprint09.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="857750764" Language="SFX">
+					<ShortName>fs_gravel_sprint10.wav</ShortName>
+					<Path>sfx\fs_gravel_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="232798223" Language="SFX">
+					<ShortName>fs_gravel_walk01.wav</ShortName>
+					<Path>sfx\fs_gravel_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="387116952" Language="SFX">
+					<ShortName>fs_gravel_walk02.wav</ShortName>
+					<Path>sfx\fs_gravel_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="52430016" Language="SFX">
+					<ShortName>fs_gravel_walk03.wav</ShortName>
+					<Path>sfx\fs_gravel_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="541869971" Language="SFX">
+					<ShortName>fs_gravel_walk04.wav</ShortName>
+					<Path>sfx\fs_gravel_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="352343763" Language="SFX">
+					<ShortName>fs_gravel_walk05.wav</ShortName>
+					<Path>sfx\fs_gravel_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="6839986" Language="SFX">
+					<ShortName>fs_gravel_walk06.wav</ShortName>
+					<Path>sfx\fs_gravel_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="425464534" Language="SFX">
+					<ShortName>fs_gravel_walk07.wav</ShortName>
+					<Path>sfx\fs_gravel_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="315172687" Language="SFX">
+					<ShortName>fs_gravel_walk08.wav</ShortName>
+					<Path>sfx\fs_gravel_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="885947288" Language="SFX">
+					<ShortName>fs_gravel_walk09.wav</ShortName>
+					<Path>sfx\fs_gravel_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="110897181" Language="SFX">
+					<ShortName>fs_gravel_walk10.wav</ShortName>
+					<Path>sfx\fs_gravel_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="299875803" Language="SFX">
+					<ShortName>fs_ladder_metal_foot1.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_foot1_db50bab0.wem</Path>
+				</File>
+				<File Id="128202942" Language="SFX">
+					<ShortName>fs_ladder_metal_foot2.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_foot2_db50bab0.wem</Path>
+				</File>
+				<File Id="930661825" Language="SFX">
+					<ShortName>fs_ladder_metal_foot3.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_foot3_db50bab0.wem</Path>
+				</File>
+				<File Id="39783579" Language="SFX">
+					<ShortName>fs_ladder_metal_hand1.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_hand1_db50bab0.wem</Path>
+				</File>
+				<File Id="965175107" Language="SFX">
+					<ShortName>fs_ladder_metal_hand2.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_hand2_db50bab0.wem</Path>
+				</File>
+				<File Id="103897620" Language="SFX">
+					<ShortName>fs_ladder_metal_hand3.wav</ShortName>
+					<Path>sfx\fs_ladder_metal_hand3_db50bab0.wem</Path>
+				</File>
+				<File Id="233923382" Language="SFX">
+					<ShortName>fs_ladder_wood_foot1.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_foot1_db50bab0.wem</Path>
+				</File>
+				<File Id="848175783" Language="SFX">
+					<ShortName>fs_ladder_wood_foot2.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_foot2_db50bab0.wem</Path>
+				</File>
+				<File Id="57894131" Language="SFX">
+					<ShortName>fs_ladder_wood_foot3.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_foot3_db50bab0.wem</Path>
+				</File>
+				<File Id="596338659" Language="SFX">
+					<ShortName>fs_ladder_wood_hands1.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_hands1_db50bab0.wem</Path>
+				</File>
+				<File Id="816303018" Language="SFX">
+					<ShortName>fs_ladder_wood_hands2.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_hands2_db50bab0.wem</Path>
+				</File>
+				<File Id="315032080" Language="SFX">
+					<ShortName>fs_ladder_wood_hands3.wav</ShortName>
+					<Path>sfx\fs_ladder_wood_hands3_db50bab0.wem</Path>
+				</File>
+				<File Id="771819871" Language="SFX">
+					<ShortName>fs_metal_jump01.wav</ShortName>
+					<Path>sfx\fs_metal_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="284395799" Language="SFX">
+					<ShortName>fs_metal_jump02.wav</ShortName>
+					<Path>sfx\fs_metal_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="429275145" Language="SFX">
+					<ShortName>fs_metal_jump03.wav</ShortName>
+					<Path>sfx\fs_metal_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="336275114" Language="SFX">
+					<ShortName>fs_metal_land01.wav</ShortName>
+					<Path>sfx\fs_metal_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="226783211" Language="SFX">
+					<ShortName>fs_metal_land02.wav</ShortName>
+					<Path>sfx\fs_metal_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="203623972" Language="SFX">
+					<ShortName>fs_metal_land03.wav</ShortName>
+					<Path>sfx\fs_metal_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="736950395" Language="SFX">
+					<ShortName>FS_Metal_Prone_01.wav</ShortName>
+					<Path>sfx\fs_metal_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="58977908" Language="SFX">
+					<ShortName>FS_Metal_Prone_02.wav</ShortName>
+					<Path>sfx\fs_metal_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="201400433" Language="SFX">
+					<ShortName>FS_Metal_Prone_03.wav</ShortName>
+					<Path>sfx\fs_metal_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="142942505" Language="SFX">
+					<ShortName>FS_Metal_Prone_04.wav</ShortName>
+					<Path>sfx\fs_metal_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="253569628" Language="SFX">
+					<ShortName>FS_Metal_Prone_05.wav</ShortName>
+					<Path>sfx\fs_metal_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="611601645" Language="SFX">
+					<ShortName>fs_metal_run01.wav</ShortName>
+					<Path>sfx\fs_metal_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="515130245" Language="SFX">
+					<ShortName>fs_metal_run02.wav</ShortName>
+					<Path>sfx\fs_metal_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="395072579" Language="SFX">
+					<ShortName>fs_metal_run03.wav</ShortName>
+					<Path>sfx\fs_metal_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="380995207" Language="SFX">
+					<ShortName>fs_metal_run04.wav</ShortName>
+					<Path>sfx\fs_metal_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="117881172" Language="SFX">
+					<ShortName>fs_metal_run05.wav</ShortName>
+					<Path>sfx\fs_metal_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="737634337" Language="SFX">
+					<ShortName>fs_metal_run06.wav</ShortName>
+					<Path>sfx\fs_metal_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="60310869" Language="SFX">
+					<ShortName>fs_metal_run07.wav</ShortName>
+					<Path>sfx\fs_metal_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="198550167" Language="SFX">
+					<ShortName>fs_metal_run08.wav</ShortName>
+					<Path>sfx\fs_metal_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="31035484" Language="SFX">
+					<ShortName>fs_metal_run09.wav</ShortName>
+					<Path>sfx\fs_metal_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="289420680" Language="SFX">
+					<ShortName>fs_metal_run10.wav</ShortName>
+					<Path>sfx\fs_metal_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="589082106" Language="SFX">
+					<ShortName>fs_metal_sprint01.wav</ShortName>
+					<Path>sfx\fs_metal_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="288983369" Language="SFX">
+					<ShortName>fs_metal_sprint02.wav</ShortName>
+					<Path>sfx\fs_metal_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="176518322" Language="SFX">
+					<ShortName>fs_metal_sprint03.wav</ShortName>
+					<Path>sfx\fs_metal_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="661094524" Language="SFX">
+					<ShortName>fs_metal_sprint04.wav</ShortName>
+					<Path>sfx\fs_metal_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="720108966" Language="SFX">
+					<ShortName>fs_metal_sprint05.wav</ShortName>
+					<Path>sfx\fs_metal_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="128663898" Language="SFX">
+					<ShortName>fs_metal_sprint06.wav</ShortName>
+					<Path>sfx\fs_metal_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="871822460" Language="SFX">
+					<ShortName>fs_metal_sprint07.wav</ShortName>
+					<Path>sfx\fs_metal_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="958818040" Language="SFX">
+					<ShortName>fs_metal_sprint08.wav</ShortName>
+					<Path>sfx\fs_metal_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="48323078" Language="SFX">
+					<ShortName>fs_metal_sprint09.wav</ShortName>
+					<Path>sfx\fs_metal_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="431154719" Language="SFX">
+					<ShortName>fs_metal_sprint10.wav</ShortName>
+					<Path>sfx\fs_metal_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="628351686" Language="SFX">
+					<ShortName>fs_metal_walk01.wav</ShortName>
+					<Path>sfx\fs_metal_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="421826423" Language="SFX">
+					<ShortName>fs_metal_walk02.wav</ShortName>
+					<Path>sfx\fs_metal_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="164868166" Language="SFX">
+					<ShortName>fs_metal_walk03.wav</ShortName>
+					<Path>sfx\fs_metal_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="69601010" Language="SFX">
+					<ShortName>fs_metal_walk04.wav</ShortName>
+					<Path>sfx\fs_metal_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="216762106" Language="SFX">
+					<ShortName>fs_metal_walk05.wav</ShortName>
+					<Path>sfx\fs_metal_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="503220090" Language="SFX">
+					<ShortName>fs_metal_walk06.wav</ShortName>
+					<Path>sfx\fs_metal_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="558678961" Language="SFX">
+					<ShortName>fs_metal_walk07.wav</ShortName>
+					<Path>sfx\fs_metal_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="118643048" Language="SFX">
+					<ShortName>fs_metal_walk08.wav</ShortName>
+					<Path>sfx\fs_metal_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="528991944" Language="SFX">
+					<ShortName>fs_metal_walk09.wav</ShortName>
+					<Path>sfx\fs_metal_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="159614007" Language="SFX">
+					<ShortName>fs_metal_walk10.wav</ShortName>
+					<Path>sfx\fs_metal_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="765947732" Language="SFX">
+					<ShortName>FS_Mud_Jump_01.wav</ShortName>
+					<Path>sfx\fs_mud_jump_01_db50bab0.wem</Path>
+				</File>
+				<File Id="430782487" Language="SFX">
+					<ShortName>FS_Mud_Jump_02.wav</ShortName>
+					<Path>sfx\fs_mud_jump_02_db50bab0.wem</Path>
+				</File>
+				<File Id="123428859" Language="SFX">
+					<ShortName>FS_Mud_Jump_03.wav</ShortName>
+					<Path>sfx\fs_mud_jump_03_db50bab0.wem</Path>
+				</File>
+				<File Id="411916913" Language="SFX">
+					<ShortName>FS_Mud_Jump_04.wav</ShortName>
+					<Path>sfx\fs_mud_jump_04_db50bab0.wem</Path>
+				</File>
+				<File Id="760192708" Language="SFX">
+					<ShortName>FS_Mud_Jump_05.wav</ShortName>
+					<Path>sfx\fs_mud_jump_05_db50bab0.wem</Path>
+				</File>
+				<File Id="133691882" Language="SFX">
+					<ShortName>FS_Mud_Land_01.wav</ShortName>
+					<Path>sfx\fs_mud_land_01_db50bab0.wem</Path>
+				</File>
+				<File Id="375423698" Language="SFX">
+					<ShortName>FS_Mud_Land_02.wav</ShortName>
+					<Path>sfx\fs_mud_land_02_db50bab0.wem</Path>
+				</File>
+				<File Id="648297177" Language="SFX">
+					<ShortName>FS_Mud_Land_03.wav</ShortName>
+					<Path>sfx\fs_mud_land_03_db50bab0.wem</Path>
+				</File>
+				<File Id="217074588" Language="SFX">
+					<ShortName>FS_Mud_Land_04.wav</ShortName>
+					<Path>sfx\fs_mud_land_04_db50bab0.wem</Path>
+				</File>
+				<File Id="196690945" Language="SFX">
+					<ShortName>FS_Mud_Land_05.wav</ShortName>
+					<Path>sfx\fs_mud_land_05_db50bab0.wem</Path>
+				</File>
+				<File Id="897616687" Language="SFX">
+					<ShortName>FS_Mud_Prone_01.wav</ShortName>
+					<Path>sfx\fs_mud_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="446315038" Language="SFX">
+					<ShortName>FS_Mud_Prone_02.wav</ShortName>
+					<Path>sfx\fs_mud_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="372610031" Language="SFX">
+					<ShortName>FS_Mud_Prone_03.wav</ShortName>
+					<Path>sfx\fs_mud_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="484532079" Language="SFX">
+					<ShortName>FS_Mud_Prone_04.wav</ShortName>
+					<Path>sfx\fs_mud_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="549708706" Language="SFX">
+					<ShortName>FS_Mud_Prone_05.wav</ShortName>
+					<Path>sfx\fs_mud_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="815141972" Language="SFX">
+					<ShortName>FS_Mud_Run_01.wav</ShortName>
+					<Path>sfx\fs_mud_run_01_db50bab0.wem</Path>
+				</File>
+				<File Id="496293850" Language="SFX">
+					<ShortName>FS_Mud_Run_02.wav</ShortName>
+					<Path>sfx\fs_mud_run_02_db50bab0.wem</Path>
+				</File>
+				<File Id="6231853" Language="SFX">
+					<ShortName>FS_Mud_Run_03.wav</ShortName>
+					<Path>sfx\fs_mud_run_03_db50bab0.wem</Path>
+				</File>
+				<File Id="29400025" Language="SFX">
+					<ShortName>FS_Mud_Run_04.wav</ShortName>
+					<Path>sfx\fs_mud_run_04_db50bab0.wem</Path>
+				</File>
+				<File Id="75424736" Language="SFX">
+					<ShortName>FS_Mud_Run_05.wav</ShortName>
+					<Path>sfx\fs_mud_run_05_db50bab0.wem</Path>
+				</File>
+				<File Id="798250974" Language="SFX">
+					<ShortName>FS_Mud_Sprint_01.wav</ShortName>
+					<Path>sfx\fs_mud_sprint_01_db50bab0.wem</Path>
+				</File>
+				<File Id="225874626" Language="SFX">
+					<ShortName>FS_Mud_Sprint_02.wav</ShortName>
+					<Path>sfx\fs_mud_sprint_02_db50bab0.wem</Path>
+				</File>
+				<File Id="320694094" Language="SFX">
+					<ShortName>FS_Mud_Sprint_03.wav</ShortName>
+					<Path>sfx\fs_mud_sprint_03_db50bab0.wem</Path>
+				</File>
+				<File Id="477502402" Language="SFX">
+					<ShortName>FS_Mud_Sprint_04.wav</ShortName>
+					<Path>sfx\fs_mud_sprint_04_db50bab0.wem</Path>
+				</File>
+				<File Id="160588006" Language="SFX">
+					<ShortName>FS_Mud_Sprint_05.wav</ShortName>
+					<Path>sfx\fs_mud_sprint_05_db50bab0.wem</Path>
+				</File>
+				<File Id="120200107" Language="SFX">
+					<ShortName>FS_Mud_Walk_01.wav</ShortName>
+					<Path>sfx\fs_mud_walk_01_db50bab0.wem</Path>
+				</File>
+				<File Id="82557388" Language="SFX">
+					<ShortName>FS_Mud_Walk_02.wav</ShortName>
+					<Path>sfx\fs_mud_walk_02_db50bab0.wem</Path>
+				</File>
+				<File Id="486677713" Language="SFX">
+					<ShortName>FS_Mud_Walk_03.wav</ShortName>
+					<Path>sfx\fs_mud_walk_03_db50bab0.wem</Path>
+				</File>
+				<File Id="898165998" Language="SFX">
+					<ShortName>FS_Mud_Walk_04.wav</ShortName>
+					<Path>sfx\fs_mud_walk_04_db50bab0.wem</Path>
+				</File>
+				<File Id="436328476" Language="SFX">
+					<ShortName>FS_Mud_Walk_05.wav</ShortName>
+					<Path>sfx\fs_mud_walk_05_db50bab0.wem</Path>
+				</File>
+				<File Id="166935310" Language="SFX">
+					<ShortName>fs_sand_jump01.wav</ShortName>
+					<Path>sfx\fs_sand_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="563087143" Language="SFX">
+					<ShortName>fs_sand_jump02.wav</ShortName>
+					<Path>sfx\fs_sand_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="130149066" Language="SFX">
+					<ShortName>fs_sand_jump03.wav</ShortName>
+					<Path>sfx\fs_sand_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="557777634" Language="SFX">
+					<ShortName>fs_sand_land01.wav</ShortName>
+					<Path>sfx\fs_sand_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="659754123" Language="SFX">
+					<ShortName>fs_sand_land02.wav</ShortName>
+					<Path>sfx\fs_sand_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="782914509" Language="SFX">
+					<ShortName>fs_sand_land03.wav</ShortName>
+					<Path>sfx\fs_sand_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="714551567" Language="SFX">
+					<ShortName>FS_Sand_Prone_01.wav</ShortName>
+					<Path>sfx\fs_sand_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="122519159" Language="SFX">
+					<ShortName>FS_Sand_Prone_02.wav</ShortName>
+					<Path>sfx\fs_sand_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="20539347" Language="SFX">
+					<ShortName>FS_Sand_Prone_03.wav</ShortName>
+					<Path>sfx\fs_sand_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="522336027" Language="SFX">
+					<ShortName>FS_Sand_Prone_04.wav</ShortName>
+					<Path>sfx\fs_sand_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="22085816" Language="SFX">
+					<ShortName>FS_Sand_Prone_05.wav</ShortName>
+					<Path>sfx\fs_sand_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="561944916" Language="SFX">
+					<ShortName>fs_sand_run01.wav</ShortName>
+					<Path>sfx\fs_sand_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="341160535" Language="SFX">
+					<ShortName>fs_sand_run02.wav</ShortName>
+					<Path>sfx\fs_sand_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="300141911" Language="SFX">
+					<ShortName>fs_sand_run03.wav</ShortName>
+					<Path>sfx\fs_sand_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="541121978" Language="SFX">
+					<ShortName>fs_sand_run04.wav</ShortName>
+					<Path>sfx\fs_sand_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="692620777" Language="SFX">
+					<ShortName>fs_sand_run05.wav</ShortName>
+					<Path>sfx\fs_sand_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="256234033" Language="SFX">
+					<ShortName>fs_sand_run06.wav</ShortName>
+					<Path>sfx\fs_sand_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="657941491" Language="SFX">
+					<ShortName>fs_sand_run07.wav</ShortName>
+					<Path>sfx\fs_sand_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="511115782" Language="SFX">
+					<ShortName>fs_sand_run08.wav</ShortName>
+					<Path>sfx\fs_sand_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="643401337" Language="SFX">
+					<ShortName>fs_sand_run09.wav</ShortName>
+					<Path>sfx\fs_sand_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="627021566" Language="SFX">
+					<ShortName>fs_sand_run10.wav</ShortName>
+					<Path>sfx\fs_sand_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="193959876" Language="SFX">
+					<ShortName>fs_sand_sprint01.wav</ShortName>
+					<Path>sfx\fs_sand_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="323547867" Language="SFX">
+					<ShortName>fs_sand_sprint02.wav</ShortName>
+					<Path>sfx\fs_sand_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="924011867" Language="SFX">
+					<ShortName>fs_sand_sprint03.wav</ShortName>
+					<Path>sfx\fs_sand_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="566391919" Language="SFX">
+					<ShortName>fs_sand_sprint04.wav</ShortName>
+					<Path>sfx\fs_sand_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="109929067" Language="SFX">
+					<ShortName>fs_sand_sprint05.wav</ShortName>
+					<Path>sfx\fs_sand_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="867680806" Language="SFX">
+					<ShortName>fs_sand_sprint06.wav</ShortName>
+					<Path>sfx\fs_sand_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="743449069" Language="SFX">
+					<ShortName>fs_sand_sprint07.wav</ShortName>
+					<Path>sfx\fs_sand_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="17205485" Language="SFX">
+					<ShortName>fs_sand_sprint08.wav</ShortName>
+					<Path>sfx\fs_sand_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="207369955" Language="SFX">
+					<ShortName>fs_sand_sprint09.wav</ShortName>
+					<Path>sfx\fs_sand_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="80248042" Language="SFX">
+					<ShortName>fs_sand_sprint10.wav</ShortName>
+					<Path>sfx\fs_sand_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="308039758" Language="SFX">
+					<ShortName>fs_sand_walk01.wav</ShortName>
+					<Path>sfx\fs_sand_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="39178424" Language="SFX">
+					<ShortName>fs_sand_walk02.wav</ShortName>
+					<Path>sfx\fs_sand_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="513116695" Language="SFX">
+					<ShortName>fs_sand_walk03.wav</ShortName>
+					<Path>sfx\fs_sand_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="252937852" Language="SFX">
+					<ShortName>fs_sand_walk04.wav</ShortName>
+					<Path>sfx\fs_sand_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="826558054" Language="SFX">
+					<ShortName>fs_sand_walk05.wav</ShortName>
+					<Path>sfx\fs_sand_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="112918167" Language="SFX">
+					<ShortName>fs_sand_walk06.wav</ShortName>
+					<Path>sfx\fs_sand_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="705369037" Language="SFX">
+					<ShortName>fs_sand_walk07.wav</ShortName>
+					<Path>sfx\fs_sand_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="254200036" Language="SFX">
+					<ShortName>fs_sand_walk08.wav</ShortName>
+					<Path>sfx\fs_sand_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="611626434" Language="SFX">
+					<ShortName>fs_sand_walk09.wav</ShortName>
+					<Path>sfx\fs_sand_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="241966960" Language="SFX">
+					<ShortName>fs_sand_walk10.wav</ShortName>
+					<Path>sfx\fs_sand_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="618027804" Language="SFX">
+					<ShortName>fs_stone_jump1.wav</ShortName>
+					<Path>sfx\fs_stone_jump1_db50bab0.wem</Path>
+				</File>
+				<File Id="499834809" Language="SFX">
+					<ShortName>fs_stone_jump2.wav</ShortName>
+					<Path>sfx\fs_stone_jump2_db50bab0.wem</Path>
+				</File>
+				<File Id="453508973" Language="SFX">
+					<ShortName>fs_stone_jump3.wav</ShortName>
+					<Path>sfx\fs_stone_jump3_db50bab0.wem</Path>
+				</File>
+				<File Id="738516582" Language="SFX">
+					<ShortName>fs_stone_land1.wav</ShortName>
+					<Path>sfx\fs_stone_land1_db50bab0.wem</Path>
+				</File>
+				<File Id="115818558" Language="SFX">
+					<ShortName>fs_stone_land2.wav</ShortName>
+					<Path>sfx\fs_stone_land2_db50bab0.wem</Path>
+				</File>
+				<File Id="648350968" Language="SFX">
+					<ShortName>fs_stone_land3.wav</ShortName>
+					<Path>sfx\fs_stone_land3_db50bab0.wem</Path>
+				</File>
+				<File Id="252972152" Language="SFX">
+					<ShortName>fs_stone_run10.wav</ShortName>
+					<Path>sfx\fs_stone_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="162795119" Language="SFX">
+					<ShortName>fs_stone_run1.wav</ShortName>
+					<Path>sfx\fs_stone_run1_db50bab0.wem</Path>
+				</File>
+				<File Id="352559037" Language="SFX">
+					<ShortName>fs_stone_run2.wav</ShortName>
+					<Path>sfx\fs_stone_run2_db50bab0.wem</Path>
+				</File>
+				<File Id="486551735" Language="SFX">
+					<ShortName>fs_stone_run3.wav</ShortName>
+					<Path>sfx\fs_stone_run3_db50bab0.wem</Path>
+				</File>
+				<File Id="615177798" Language="SFX">
+					<ShortName>fs_stone_run4.wav</ShortName>
+					<Path>sfx\fs_stone_run4_db50bab0.wem</Path>
+				</File>
+				<File Id="72509060" Language="SFX">
+					<ShortName>fs_stone_run5.wav</ShortName>
+					<Path>sfx\fs_stone_run5_db50bab0.wem</Path>
+				</File>
+				<File Id="425809118" Language="SFX">
+					<ShortName>fs_stone_run6.wav</ShortName>
+					<Path>sfx\fs_stone_run6_db50bab0.wem</Path>
+				</File>
+				<File Id="688708113" Language="SFX">
+					<ShortName>fs_stone_run7.wav</ShortName>
+					<Path>sfx\fs_stone_run7_db50bab0.wem</Path>
+				</File>
+				<File Id="209715093" Language="SFX">
+					<ShortName>fs_stone_run8.wav</ShortName>
+					<Path>sfx\fs_stone_run8_db50bab0.wem</Path>
+				</File>
+				<File Id="154547112" Language="SFX">
+					<ShortName>fs_stone_run9.wav</ShortName>
+					<Path>sfx\fs_stone_run9_db50bab0.wem</Path>
+				</File>
+				<File Id="950301204" Language="SFX">
+					<ShortName>fs_stone_sprint10.wav</ShortName>
+					<Path>sfx\fs_stone_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="655433652" Language="SFX">
+					<ShortName>fs_stone_sprint1.wav</ShortName>
+					<Path>sfx\fs_stone_sprint1_db50bab0.wem</Path>
+				</File>
+				<File Id="147966533" Language="SFX">
+					<ShortName>fs_stone_sprint2.wav</ShortName>
+					<Path>sfx\fs_stone_sprint2_db50bab0.wem</Path>
+				</File>
+				<File Id="161898454" Language="SFX">
+					<ShortName>fs_stone_sprint3.wav</ShortName>
+					<Path>sfx\fs_stone_sprint3_db50bab0.wem</Path>
+				</File>
+				<File Id="249902999" Language="SFX">
+					<ShortName>fs_stone_sprint4.wav</ShortName>
+					<Path>sfx\fs_stone_sprint4_db50bab0.wem</Path>
+				</File>
+				<File Id="100389991" Language="SFX">
+					<ShortName>fs_stone_sprint5.wav</ShortName>
+					<Path>sfx\fs_stone_sprint5_db50bab0.wem</Path>
+				</File>
+				<File Id="214813207" Language="SFX">
+					<ShortName>fs_stone_sprint6.wav</ShortName>
+					<Path>sfx\fs_stone_sprint6_db50bab0.wem</Path>
+				</File>
+				<File Id="662381617" Language="SFX">
+					<ShortName>fs_stone_sprint7.wav</ShortName>
+					<Path>sfx\fs_stone_sprint7_db50bab0.wem</Path>
+				</File>
+				<File Id="492244266" Language="SFX">
+					<ShortName>fs_stone_sprint8.wav</ShortName>
+					<Path>sfx\fs_stone_sprint8_db50bab0.wem</Path>
+				</File>
+				<File Id="186900929" Language="SFX">
+					<ShortName>fs_stone_sprint9.wav</ShortName>
+					<Path>sfx\fs_stone_sprint9_db50bab0.wem</Path>
+				</File>
+				<File Id="17539948" Language="SFX">
+					<ShortName>fs_stone_walk10.wav</ShortName>
+					<Path>sfx\fs_stone_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="604911330" Language="SFX">
+					<ShortName>fs_stone_walk1.wav</ShortName>
+					<Path>sfx\fs_stone_walk1_db50bab0.wem</Path>
+				</File>
+				<File Id="530537296" Language="SFX">
+					<ShortName>fs_stone_walk2.wav</ShortName>
+					<Path>sfx\fs_stone_walk2_db50bab0.wem</Path>
+				</File>
+				<File Id="380977957" Language="SFX">
+					<ShortName>fs_stone_walk3.wav</ShortName>
+					<Path>sfx\fs_stone_walk3_db50bab0.wem</Path>
+				</File>
+				<File Id="549595686" Language="SFX">
+					<ShortName>fs_stone_walk4.wav</ShortName>
+					<Path>sfx\fs_stone_walk4_db50bab0.wem</Path>
+				</File>
+				<File Id="574653170" Language="SFX">
+					<ShortName>fs_stone_walk5.wav</ShortName>
+					<Path>sfx\fs_stone_walk5_db50bab0.wem</Path>
+				</File>
+				<File Id="155986191" Language="SFX">
+					<ShortName>fs_stone_walk6.wav</ShortName>
+					<Path>sfx\fs_stone_walk6_db50bab0.wem</Path>
+				</File>
+				<File Id="182065137" Language="SFX">
+					<ShortName>fs_stone_walk7.wav</ShortName>
+					<Path>sfx\fs_stone_walk7_db50bab0.wem</Path>
+				</File>
+				<File Id="100343446" Language="SFX">
+					<ShortName>fs_stone_walk8.wav</ShortName>
+					<Path>sfx\fs_stone_walk8_db50bab0.wem</Path>
+				</File>
+				<File Id="138190798" Language="SFX">
+					<ShortName>fs_stone_walk9.wav</ShortName>
+					<Path>sfx\fs_stone_walk9_db50bab0.wem</Path>
+				</File>
+				<File Id="229933022" Language="SFX">
+					<ShortName>fs_water_deep_jump01.wav</ShortName>
+					<Path>sfx\fs_water_deep_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="15266109" Language="SFX">
+					<ShortName>fs_water_deep_jump02.wav</ShortName>
+					<Path>sfx\fs_water_deep_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="550205363" Language="SFX">
+					<ShortName>fs_water_deep_jump03.wav</ShortName>
+					<Path>sfx\fs_water_deep_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="317316977" Language="SFX">
+					<ShortName>fs_water_deep_land01.wav</ShortName>
+					<Path>sfx\fs_water_deep_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="145341533" Language="SFX">
+					<ShortName>fs_water_deep_land02.wav</ShortName>
+					<Path>sfx\fs_water_deep_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="803539937" Language="SFX">
+					<ShortName>fs_water_deep_land03.wav</ShortName>
+					<Path>sfx\fs_water_deep_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="298723580" Language="SFX">
+					<ShortName>fs_water_deep_run01.wav</ShortName>
+					<Path>sfx\fs_water_deep_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="340137324" Language="SFX">
+					<ShortName>fs_water_deep_run02.wav</ShortName>
+					<Path>sfx\fs_water_deep_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="124890865" Language="SFX">
+					<ShortName>fs_water_deep_run03.wav</ShortName>
+					<Path>sfx\fs_water_deep_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="326199426" Language="SFX">
+					<ShortName>fs_water_deep_run04.wav</ShortName>
+					<Path>sfx\fs_water_deep_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="56514754" Language="SFX">
+					<ShortName>fs_water_deep_run05.wav</ShortName>
+					<Path>sfx\fs_water_deep_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="490232773" Language="SFX">
+					<ShortName>fs_water_deep_run06.wav</ShortName>
+					<Path>sfx\fs_water_deep_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="409407825" Language="SFX">
+					<ShortName>fs_water_deep_run07.wav</ShortName>
+					<Path>sfx\fs_water_deep_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="27803882" Language="SFX">
+					<ShortName>fs_water_deep_run08.wav</ShortName>
+					<Path>sfx\fs_water_deep_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="344710144" Language="SFX">
+					<ShortName>fs_water_deep_run09.wav</ShortName>
+					<Path>sfx\fs_water_deep_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="236756400" Language="SFX">
+					<ShortName>fs_water_deep_run10.wav</ShortName>
+					<Path>sfx\fs_water_deep_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="370771630" Language="SFX">
+					<ShortName>fs_water_deep_sprint01.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="532480875" Language="SFX">
+					<ShortName>fs_water_deep_sprint02.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="156382698" Language="SFX">
+					<ShortName>fs_water_deep_sprint03.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="24870616" Language="SFX">
+					<ShortName>fs_water_deep_sprint04.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="521695410" Language="SFX">
+					<ShortName>fs_water_deep_sprint05.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="89363606" Language="SFX">
+					<ShortName>fs_water_deep_sprint06.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="219776567" Language="SFX">
+					<ShortName>fs_water_deep_sprint07.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="154406758" Language="SFX">
+					<ShortName>fs_water_deep_sprint08.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="308543847" Language="SFX">
+					<ShortName>fs_water_deep_sprint09.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="276109108" Language="SFX">
+					<ShortName>fs_water_deep_sprint10.wav</ShortName>
+					<Path>sfx\fs_water_deep_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="120463276" Language="SFX">
+					<ShortName>fs_water_deep_walk01.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="113953122" Language="SFX">
+					<ShortName>fs_water_deep_walk02.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="599900427" Language="SFX">
+					<ShortName>fs_water_deep_walk03.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="366784450" Language="SFX">
+					<ShortName>fs_water_deep_walk04.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="460760578" Language="SFX">
+					<ShortName>fs_water_deep_walk05.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="817149288" Language="SFX">
+					<ShortName>fs_water_deep_walk06.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="32010172" Language="SFX">
+					<ShortName>fs_water_deep_walk07.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="285742762" Language="SFX">
+					<ShortName>fs_water_deep_walk08.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="186853190" Language="SFX">
+					<ShortName>fs_water_deep_walk09.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="676611234" Language="SFX">
+					<ShortName>fs_water_deep_walk10.wav</ShortName>
+					<Path>sfx\fs_water_deep_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="533146586" Language="SFX">
+					<ShortName>fs_water_shallow_jump01.wav</ShortName>
+					<Path>sfx\fs_water_shallow_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="177268123" Language="SFX">
+					<ShortName>fs_water_shallow_jump02.wav</ShortName>
+					<Path>sfx\fs_water_shallow_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="8538897" Language="SFX">
+					<ShortName>fs_water_shallow_jump03.wav</ShortName>
+					<Path>sfx\fs_water_shallow_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="56823603" Language="SFX">
+					<ShortName>fs_water_shallow_land01.wav</ShortName>
+					<Path>sfx\fs_water_shallow_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="495548929" Language="SFX">
+					<ShortName>fs_water_shallow_land02.wav</ShortName>
+					<Path>sfx\fs_water_shallow_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="362966783" Language="SFX">
+					<ShortName>fs_water_shallow_land03.wav</ShortName>
+					<Path>sfx\fs_water_shallow_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="154293889" Language="SFX">
+					<ShortName>fs_water_shallow_run01.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="340430189" Language="SFX">
+					<ShortName>fs_water_shallow_run02.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="152354242" Language="SFX">
+					<ShortName>fs_water_shallow_run03.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="408948761" Language="SFX">
+					<ShortName>fs_water_shallow_run04.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="683521355" Language="SFX">
+					<ShortName>fs_water_shallow_run05.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="364033340" Language="SFX">
+					<ShortName>fs_water_shallow_run06.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="131887817" Language="SFX">
+					<ShortName>fs_water_shallow_run07.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="100142079" Language="SFX">
+					<ShortName>fs_water_shallow_run08.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="975542060" Language="SFX">
+					<ShortName>fs_water_shallow_run09.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="52299536" Language="SFX">
+					<ShortName>fs_water_shallow_run10.wav</ShortName>
+					<Path>sfx\fs_water_shallow_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="190445226" Language="SFX">
+					<ShortName>fs_water_shallow_sprint01.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="312348295" Language="SFX">
+					<ShortName>fs_water_shallow_sprint02.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="68912619" Language="SFX">
+					<ShortName>fs_water_shallow_sprint03.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="554315320" Language="SFX">
+					<ShortName>fs_water_shallow_sprint04.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="11455049" Language="SFX">
+					<ShortName>fs_water_shallow_sprint05.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="650043133" Language="SFX">
+					<ShortName>fs_water_shallow_sprint06.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="167545986" Language="SFX">
+					<ShortName>fs_water_shallow_sprint07.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="208581813" Language="SFX">
+					<ShortName>fs_water_shallow_sprint08.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="746623687" Language="SFX">
+					<ShortName>fs_water_shallow_sprint09.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="591430973" Language="SFX">
+					<ShortName>fs_water_shallow_sprint10.wav</ShortName>
+					<Path>sfx\fs_water_shallow_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="793511968" Language="SFX">
+					<ShortName>fs_water_shallow_walk01.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="266262418" Language="SFX">
+					<ShortName>fs_water_shallow_walk02.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="326813761" Language="SFX">
+					<ShortName>fs_water_shallow_walk03.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="193189707" Language="SFX">
+					<ShortName>fs_water_shallow_walk04.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="808893928" Language="SFX">
+					<ShortName>fs_water_shallow_walk05.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="487988047" Language="SFX">
+					<ShortName>fs_water_shallow_walk06.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="30831375" Language="SFX">
+					<ShortName>fs_water_shallow_walk07.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="131043450" Language="SFX">
+					<ShortName>fs_water_shallow_walk08.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="427641395" Language="SFX">
+					<ShortName>fs_water_shallow_walk09.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="741648500" Language="SFX">
+					<ShortName>fs_water_shallow_walk10.wav</ShortName>
+					<Path>sfx\fs_water_shallow_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="91087365" Language="SFX">
+					<ShortName>fs_wood_hollow_jump01.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="161806699" Language="SFX">
+					<ShortName>fs_wood_hollow_jump02.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="758921433" Language="SFX">
+					<ShortName>fs_wood_hollow_jump03.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="23579479" Language="SFX">
+					<ShortName>fs_wood_hollow_land01.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="316591549" Language="SFX">
+					<ShortName>fs_wood_hollow_land02.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="600568180" Language="SFX">
+					<ShortName>fs_wood_hollow_land03.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="220551271" Language="SFX">
+					<ShortName>fs_wood_hollow_run01.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="401067297" Language="SFX">
+					<ShortName>fs_wood_hollow_run02.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="119092111" Language="SFX">
+					<ShortName>fs_wood_hollow_run03.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="440175040" Language="SFX">
+					<ShortName>fs_wood_hollow_run04.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="829439256" Language="SFX">
+					<ShortName>fs_wood_hollow_run05.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="37475852" Language="SFX">
+					<ShortName>fs_wood_hollow_run06.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="179533697" Language="SFX">
+					<ShortName>fs_wood_hollow_run07.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="634827044" Language="SFX">
+					<ShortName>fs_wood_hollow_run08.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="228759197" Language="SFX">
+					<ShortName>fs_wood_hollow_run09.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="95912615" Language="SFX">
+					<ShortName>fs_wood_hollow_run10.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="69280703" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint01.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="87067483" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint02.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="67459422" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint03.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="112870417" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint04.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="291188887" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint05.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="184133669" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint06.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="538643100" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint07.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="271537839" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint08.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="450998021" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint09.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="441958676" Language="SFX">
+					<ShortName>fs_wood_hollow_sprint10.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="83286609" Language="SFX">
+					<ShortName>fs_wood_hollow_walk01.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="978727637" Language="SFX">
+					<ShortName>fs_wood_hollow_walk02.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="113279506" Language="SFX">
+					<ShortName>fs_wood_hollow_walk03.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="786824630" Language="SFX">
+					<ShortName>fs_wood_hollow_walk04.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="231556854" Language="SFX">
+					<ShortName>fs_wood_hollow_walk05.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="689044198" Language="SFX">
+					<ShortName>fs_wood_hollow_walk06.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="39266353" Language="SFX">
+					<ShortName>fs_wood_hollow_walk07.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="892827904" Language="SFX">
+					<ShortName>fs_wood_hollow_walk08.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="86075189" Language="SFX">
+					<ShortName>fs_wood_hollow_walk09.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="161614897" Language="SFX">
+					<ShortName>fs_wood_hollow_walk10.wav</ShortName>
+					<Path>sfx\fs_wood_hollow_walk10_db50bab0.wem</Path>
+				</File>
+				<File Id="64522350" Language="SFX">
+					<ShortName>FS_Wood_Prone_01.wav</ShortName>
+					<Path>sfx\fs_wood_prone_01_db50bab0.wem</Path>
+				</File>
+				<File Id="955296186" Language="SFX">
+					<ShortName>FS_Wood_Prone_02.wav</ShortName>
+					<Path>sfx\fs_wood_prone_02_db50bab0.wem</Path>
+				</File>
+				<File Id="686923653" Language="SFX">
+					<ShortName>FS_Wood_Prone_03.wav</ShortName>
+					<Path>sfx\fs_wood_prone_03_db50bab0.wem</Path>
+				</File>
+				<File Id="676387092" Language="SFX">
+					<ShortName>FS_Wood_Prone_04.wav</ShortName>
+					<Path>sfx\fs_wood_prone_04_db50bab0.wem</Path>
+				</File>
+				<File Id="506371600" Language="SFX">
+					<ShortName>FS_Wood_Prone_05.wav</ShortName>
+					<Path>sfx\fs_wood_prone_05_db50bab0.wem</Path>
+				</File>
+				<File Id="204914703" Language="SFX">
+					<ShortName>fs_wood_solid_jump01.wav</ShortName>
+					<Path>sfx\fs_wood_solid_jump01_db50bab0.wem</Path>
+				</File>
+				<File Id="324699729" Language="SFX">
+					<ShortName>fs_wood_solid_jump02.wav</ShortName>
+					<Path>sfx\fs_wood_solid_jump02_db50bab0.wem</Path>
+				</File>
+				<File Id="202340989" Language="SFX">
+					<ShortName>fs_wood_solid_jump03.wav</ShortName>
+					<Path>sfx\fs_wood_solid_jump03_db50bab0.wem</Path>
+				</File>
+				<File Id="66626166" Language="SFX">
+					<ShortName>fs_wood_solid_land01.wav</ShortName>
+					<Path>sfx\fs_wood_solid_land01_db50bab0.wem</Path>
+				</File>
+				<File Id="204398328" Language="SFX">
+					<ShortName>fs_wood_solid_land02.wav</ShortName>
+					<Path>sfx\fs_wood_solid_land02_db50bab0.wem</Path>
+				</File>
+				<File Id="58151283" Language="SFX">
+					<ShortName>fs_wood_solid_land03.wav</ShortName>
+					<Path>sfx\fs_wood_solid_land03_db50bab0.wem</Path>
+				</File>
+				<File Id="396953632" Language="SFX">
+					<ShortName>fs_wood_solid_run01.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run01_db50bab0.wem</Path>
+				</File>
+				<File Id="360539614" Language="SFX">
+					<ShortName>fs_wood_solid_run02.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run02_db50bab0.wem</Path>
+				</File>
+				<File Id="670719802" Language="SFX">
+					<ShortName>fs_wood_solid_run03.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run03_db50bab0.wem</Path>
+				</File>
+				<File Id="25378847" Language="SFX">
+					<ShortName>fs_wood_solid_run04.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run04_db50bab0.wem</Path>
+				</File>
+				<File Id="161363865" Language="SFX">
+					<ShortName>fs_wood_solid_run05.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run05_db50bab0.wem</Path>
+				</File>
+				<File Id="263067368" Language="SFX">
+					<ShortName>fs_wood_solid_run06.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run06_db50bab0.wem</Path>
+				</File>
+				<File Id="76214779" Language="SFX">
+					<ShortName>fs_wood_solid_run07.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run07_db50bab0.wem</Path>
+				</File>
+				<File Id="64872271" Language="SFX">
+					<ShortName>fs_wood_solid_run08.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run08_db50bab0.wem</Path>
+				</File>
+				<File Id="427338633" Language="SFX">
+					<ShortName>fs_wood_solid_run09.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run09_db50bab0.wem</Path>
+				</File>
+				<File Id="108821619" Language="SFX">
+					<ShortName>fs_wood_solid_run10.wav</ShortName>
+					<Path>sfx\fs_wood_solid_run10_db50bab0.wem</Path>
+				</File>
+				<File Id="76507584" Language="SFX">
+					<ShortName>fs_wood_solid_sprint01.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint01_db50bab0.wem</Path>
+				</File>
+				<File Id="61277347" Language="SFX">
+					<ShortName>fs_wood_solid_sprint02.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint02_db50bab0.wem</Path>
+				</File>
+				<File Id="332944826" Language="SFX">
+					<ShortName>fs_wood_solid_sprint03.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint03_db50bab0.wem</Path>
+				</File>
+				<File Id="124180197" Language="SFX">
+					<ShortName>fs_wood_solid_sprint04.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint04_db50bab0.wem</Path>
+				</File>
+				<File Id="521019060" Language="SFX">
+					<ShortName>fs_wood_solid_sprint05.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint05_db50bab0.wem</Path>
+				</File>
+				<File Id="755131088" Language="SFX">
+					<ShortName>fs_wood_solid_sprint06.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint06_db50bab0.wem</Path>
+				</File>
+				<File Id="164273997" Language="SFX">
+					<ShortName>fs_wood_solid_sprint07.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint07_db50bab0.wem</Path>
+				</File>
+				<File Id="136143604" Language="SFX">
+					<ShortName>fs_wood_solid_sprint08.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint08_db50bab0.wem</Path>
+				</File>
+				<File Id="602060648" Language="SFX">
+					<ShortName>fs_wood_solid_sprint09.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint09_db50bab0.wem</Path>
+				</File>
+				<File Id="166916138" Language="SFX">
+					<ShortName>fs_wood_solid_sprint10.wav</ShortName>
+					<Path>sfx\fs_wood_solid_sprint10_db50bab0.wem</Path>
+				</File>
+				<File Id="388309857" Language="SFX">
+					<ShortName>fs_wood_solid_walk01.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk01_db50bab0.wem</Path>
+				</File>
+				<File Id="213148482" Language="SFX">
+					<ShortName>fs_wood_solid_walk02.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk02_db50bab0.wem</Path>
+				</File>
+				<File Id="609482735" Language="SFX">
+					<ShortName>fs_wood_solid_walk03.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk03_db50bab0.wem</Path>
+				</File>
+				<File Id="136377679" Language="SFX">
+					<ShortName>fs_wood_solid_walk04.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk04_db50bab0.wem</Path>
+				</File>
+				<File Id="47066458" Language="SFX">
+					<ShortName>fs_wood_solid_walk05.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk05_db50bab0.wem</Path>
+				</File>
+				<File Id="558516570" Language="SFX">
+					<ShortName>fs_wood_solid_walk06.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk06_db50bab0.wem</Path>
+				</File>
+				<File Id="645237560" Language="SFX">
+					<ShortName>fs_wood_solid_walk07.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk07_db50bab0.wem</Path>
+				</File>
+				<File Id="10406865" Language="SFX">
+					<ShortName>fs_wood_solid_walk08.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk08_db50bab0.wem</Path>
+				</File>
+				<File Id="448010733" Language="SFX">
+					<ShortName>fs_wood_solid_walk09.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk09_db50bab0.wem</Path>
+				</File>
+				<File Id="105129464" Language="SFX">
+					<ShortName>fs_wood_solid_walk10.wav</ShortName>
+					<Path>sfx\fs_wood_solid_walk10_db50bab0.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="3008122820" Language="SFX">
+			<ShortName>bullets</ShortName>
+			<Path>bullets.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1224077233" Name="Play_bullet_impact_dirt" />
+				<Event Id="2623658597" Name="Play_bullet_impact_fabric" />
+				<Event Id="2762841648" Name="Play_bullet_impact_flesh" />
+				<Event Id="779003454" Name="Play_bullet_impact_glass" />
+				<Event Id="3580521460" Name="Play_bullet_impact_grass" />
+				<Event Id="2746572440" Name="Play_bullet_impact_head" />
+				<Event Id="2709891647" Name="Play_bullet_impact_metal" />
+				<Event Id="1435704704" Name="Play_bullet_impact_mud" />
+				<Event Id="3490464726" Name="Play_bullet_impact_plastic" />
+				<Event Id="3639551309" Name="Play_bullet_impact_rock" />
+				<Event Id="2509177552" Name="Play_bullet_impact_rubber" />
+				<Event Id="1881373040" Name="Play_bullet_impact_sand" />
+				<Event Id="3418765326" Name="Play_bullet_impact_vegetation" />
+				<Event Id="3004066819" Name="Play_bullet_impact_water" />
+				<Event Id="2762553311" Name="Play_bullet_impact_wheel" />
+				<Event Id="3210128621" Name="Play_bullet_impact_wood" />
+				<Event Id="3921736461" Name="Play_bullet_shell_concrete" />
+				<Event Id="3036970959" Name="Play_bullet_shell_dirt" />
+				<Event Id="722482984" Name="Play_bullet_shell_glass" />
+				<Event Id="3679101930" Name="Play_bullet_shell_grass" />
+				<Event Id="646369017" Name="Play_bullet_shell_gravel" />
+				<Event Id="2493365197" Name="Play_bullet_shell_metal" />
+				<Event Id="2265413746" Name="Play_bullet_shell_sand" />
+				<Event Id="2219942081" Name="Play_bullet_shell_water" />
+				<Event Id="3542735171" Name="Play_bullet_shell_wood" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="584017958" Language="SFX">
+					<ShortName>imp_bullet_dirt1.wav</ShortName>
+					<Path>sfx\imp_bullet_dirt1_db50bab0.wem</Path>
+				</File>
+				<File Id="1026232501" Language="SFX">
+					<ShortName>imp_bullet_dirt2.wav</ShortName>
+					<Path>sfx\imp_bullet_dirt2_db50bab0.wem</Path>
+				</File>
+				<File Id="245121336" Language="SFX">
+					<ShortName>imp_bullet_dirt3.wav</ShortName>
+					<Path>sfx\imp_bullet_dirt3_db50bab0.wem</Path>
+				</File>
+				<File Id="916408477" Language="SFX">
+					<ShortName>imp_bullet_fabric1.wav</ShortName>
+					<Path>sfx\imp_bullet_fabric1_db50bab0.wem</Path>
+				</File>
+				<File Id="1001637198" Language="SFX">
+					<ShortName>imp_bullet_fabric2.wav</ShortName>
+					<Path>sfx\imp_bullet_fabric2_db50bab0.wem</Path>
+				</File>
+				<File Id="573673735" Language="SFX">
+					<ShortName>imp_bullet_fabric3.wav</ShortName>
+					<Path>sfx\imp_bullet_fabric3_db50bab0.wem</Path>
+				</File>
+				<File Id="763753374" Language="SFX">
+					<ShortName>imp_bullet_flesh1.wav</ShortName>
+					<Path>sfx\imp_bullet_flesh1_db50bab0.wem</Path>
+				</File>
+				<File Id="253718996" Language="SFX">
+					<ShortName>imp_bullet_flesh2.wav</ShortName>
+					<Path>sfx\imp_bullet_flesh2_db50bab0.wem</Path>
+				</File>
+				<File Id="710535631" Language="SFX">
+					<ShortName>imp_bullet_flesh3.wav</ShortName>
+					<Path>sfx\imp_bullet_flesh3_db50bab0.wem</Path>
+				</File>
+				<File Id="795125163" Language="SFX">
+					<ShortName>imp_bullet_glass1.wav</ShortName>
+					<Path>sfx\imp_bullet_glass1_db50bab0.wem</Path>
+				</File>
+				<File Id="761800660" Language="SFX">
+					<ShortName>imp_bullet_glass2.wav</ShortName>
+					<Path>sfx\imp_bullet_glass2_db50bab0.wem</Path>
+				</File>
+				<File Id="406832278" Language="SFX">
+					<ShortName>imp_bullet_glass3.wav</ShortName>
+					<Path>sfx\imp_bullet_glass3_db50bab0.wem</Path>
+				</File>
+				<File Id="124233028" Language="SFX">
+					<ShortName>imp_bullet_grass1.wav</ShortName>
+					<Path>sfx\imp_bullet_grass1_db50bab0.wem</Path>
+				</File>
+				<File Id="533302209" Language="SFX">
+					<ShortName>imp_bullet_grass2.wav</ShortName>
+					<Path>sfx\imp_bullet_grass2_db50bab0.wem</Path>
+				</File>
+				<File Id="966779927" Language="SFX">
+					<ShortName>imp_bullet_grass3.wav</ShortName>
+					<Path>sfx\imp_bullet_grass3_db50bab0.wem</Path>
+				</File>
+				<File Id="952498744" Language="SFX">
+					<ShortName>imp_bullet_head1.wav</ShortName>
+					<Path>sfx\imp_bullet_head1_db50bab0.wem</Path>
+				</File>
+				<File Id="215939513" Language="SFX">
+					<ShortName>imp_bullet_head2.wav</ShortName>
+					<Path>sfx\imp_bullet_head2_db50bab0.wem</Path>
+				</File>
+				<File Id="375865005" Language="SFX">
+					<ShortName>imp_bullet_head3.wav</ShortName>
+					<Path>sfx\imp_bullet_head3_db50bab0.wem</Path>
+				</File>
+				<File Id="265053484" Language="SFX">
+					<ShortName>imp_bullet_metal1.wav</ShortName>
+					<Path>sfx\imp_bullet_metal1_db50bab0.wem</Path>
+				</File>
+				<File Id="752509080" Language="SFX">
+					<ShortName>imp_bullet_metal2.wav</ShortName>
+					<Path>sfx\imp_bullet_metal2_db50bab0.wem</Path>
+				</File>
+				<File Id="407957889" Language="SFX">
+					<ShortName>imp_bullet_metal3.wav</ShortName>
+					<Path>sfx\imp_bullet_metal3_db50bab0.wem</Path>
+				</File>
+				<File Id="176271544" Language="SFX">
+					<ShortName>imp_bullet_mud1.wav</ShortName>
+					<Path>sfx\imp_bullet_mud1_db50bab0.wem</Path>
+				</File>
+				<File Id="579325136" Language="SFX">
+					<ShortName>imp_bullet_mud2.wav</ShortName>
+					<Path>sfx\imp_bullet_mud2_db50bab0.wem</Path>
+				</File>
+				<File Id="681166991" Language="SFX">
+					<ShortName>imp_bullet_mud3.wav</ShortName>
+					<Path>sfx\imp_bullet_mud3_db50bab0.wem</Path>
+				</File>
+				<File Id="267470861" Language="SFX">
+					<ShortName>imp_bullet_plastic1.wav</ShortName>
+					<Path>sfx\imp_bullet_plastic1_db50bab0.wem</Path>
+				</File>
+				<File Id="65876475" Language="SFX">
+					<ShortName>imp_bullet_plastic2.wav</ShortName>
+					<Path>sfx\imp_bullet_plastic2_db50bab0.wem</Path>
+				</File>
+				<File Id="329104340" Language="SFX">
+					<ShortName>imp_bullet_plastic3.wav</ShortName>
+					<Path>sfx\imp_bullet_plastic3_db50bab0.wem</Path>
+				</File>
+				<File Id="287076144" Language="SFX">
+					<ShortName>imp_bullet_rock1.wav</ShortName>
+					<Path>sfx\imp_bullet_rock1_db50bab0.wem</Path>
+				</File>
+				<File Id="467485306" Language="SFX">
+					<ShortName>imp_bullet_rock2.wav</ShortName>
+					<Path>sfx\imp_bullet_rock2_db50bab0.wem</Path>
+				</File>
+				<File Id="678550137" Language="SFX">
+					<ShortName>imp_bullet_rock3.wav</ShortName>
+					<Path>sfx\imp_bullet_rock3_db50bab0.wem</Path>
+				</File>
+				<File Id="1065363828" Language="SFX">
+					<ShortName>imp_bullet_rubber1.wav</ShortName>
+					<Path>sfx\imp_bullet_rubber1_db50bab0.wem</Path>
+				</File>
+				<File Id="9315473" Language="SFX">
+					<ShortName>imp_bullet_rubber2.wav</ShortName>
+					<Path>sfx\imp_bullet_rubber2_db50bab0.wem</Path>
+				</File>
+				<File Id="737036672" Language="SFX">
+					<ShortName>imp_bullet_rubber3.wav</ShortName>
+					<Path>sfx\imp_bullet_rubber3_db50bab0.wem</Path>
+				</File>
+				<File Id="102871807" Language="SFX">
+					<ShortName>imp_bullet_sand1.wav</ShortName>
+					<Path>sfx\imp_bullet_sand1_db50bab0.wem</Path>
+				</File>
+				<File Id="575261809" Language="SFX">
+					<ShortName>imp_bullet_sand2.wav</ShortName>
+					<Path>sfx\imp_bullet_sand2_db50bab0.wem</Path>
+				</File>
+				<File Id="376402425" Language="SFX">
+					<ShortName>imp_bullet_sand3.wav</ShortName>
+					<Path>sfx\imp_bullet_sand3_db50bab0.wem</Path>
+				</File>
+				<File Id="647922318" Language="SFX">
+					<ShortName>imp_bullet_vegetation1.wav</ShortName>
+					<Path>sfx\imp_bullet_vegetation1_db50bab0.wem</Path>
+				</File>
+				<File Id="49305493" Language="SFX">
+					<ShortName>imp_bullet_vegetation2.wav</ShortName>
+					<Path>sfx\imp_bullet_vegetation2_db50bab0.wem</Path>
+				</File>
+				<File Id="232354549" Language="SFX">
+					<ShortName>imp_bullet_vegetation3.wav</ShortName>
+					<Path>sfx\imp_bullet_vegetation3_db50bab0.wem</Path>
+				</File>
+				<File Id="110163078" Language="SFX">
+					<ShortName>imp_bullet_water1.wav</ShortName>
+					<Path>sfx\imp_bullet_water1_db50bab0.wem</Path>
+				</File>
+				<File Id="1067230826" Language="SFX">
+					<ShortName>imp_bullet_water2.wav</ShortName>
+					<Path>sfx\imp_bullet_water2_db50bab0.wem</Path>
+				</File>
+				<File Id="783828006" Language="SFX">
+					<ShortName>imp_bullet_water3.wav</ShortName>
+					<Path>sfx\imp_bullet_water3_db50bab0.wem</Path>
+				</File>
+				<File Id="48367517" Language="SFX">
+					<ShortName>imp_bullet_wheel1.wav</ShortName>
+					<Path>sfx\imp_bullet_wheel1_db50bab0.wem</Path>
+				</File>
+				<File Id="900463989" Language="SFX">
+					<ShortName>imp_bullet_wheel2.wav</ShortName>
+					<Path>sfx\imp_bullet_wheel2_db50bab0.wem</Path>
+				</File>
+				<File Id="69377825" Language="SFX">
+					<ShortName>imp_bullet_wheel3.wav</ShortName>
+					<Path>sfx\imp_bullet_wheel3_db50bab0.wem</Path>
+				</File>
+				<File Id="847492427" Language="SFX">
+					<ShortName>imp_bullet_wood1.wav</ShortName>
+					<Path>sfx\imp_bullet_wood1_db50bab0.wem</Path>
+				</File>
+				<File Id="401383679" Language="SFX">
+					<ShortName>imp_bullet_wood2.wav</ShortName>
+					<Path>sfx\imp_bullet_wood2_db50bab0.wem</Path>
+				</File>
+				<File Id="803376838" Language="SFX">
+					<ShortName>imp_bullet_wood3.wav</ShortName>
+					<Path>sfx\imp_bullet_wood3_db50bab0.wem</Path>
+				</File>
+				<File Id="81037438" Language="SFX">
+					<ShortName>imp_shell_dirt1.wav</ShortName>
+					<Path>sfx\imp_shell_dirt1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="333492208" Language="SFX">
+					<ShortName>imp_shell_dirt2.wav</ShortName>
+					<Path>sfx\imp_shell_dirt2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="306557134" Language="SFX">
+					<ShortName>imp_shell_dirt3.wav</ShortName>
+					<Path>sfx\imp_shell_dirt3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="312821188" Language="SFX">
+					<ShortName>imp_shell_glass1.wav</ShortName>
+					<Path>sfx\imp_shell_glass1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="422095794" Language="SFX">
+					<ShortName>imp_shell_glass2.wav</ShortName>
+					<Path>sfx\imp_shell_glass2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="862447660" Language="SFX">
+					<ShortName>imp_shell_glass3.wav</ShortName>
+					<Path>sfx\imp_shell_glass3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="530910307" Language="SFX">
+					<ShortName>imp_shell_grass1.wav</ShortName>
+					<Path>sfx\imp_shell_grass1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="360573962" Language="SFX">
+					<ShortName>imp_shell_grass2.wav</ShortName>
+					<Path>sfx\imp_shell_grass2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="94206158" Language="SFX">
+					<ShortName>imp_shell_grass3.wav</ShortName>
+					<Path>sfx\imp_shell_grass3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="278862609" Language="SFX">
+					<ShortName>imp_shell_gravel1.wav</ShortName>
+					<Path>sfx\imp_shell_gravel1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="424054918" Language="SFX">
+					<ShortName>imp_shell_gravel2.wav</ShortName>
+					<Path>sfx\imp_shell_gravel2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="45093168" Language="SFX">
+					<ShortName>imp_shell_gravel3.wav</ShortName>
+					<Path>sfx\imp_shell_gravel3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="831348933" Language="SFX">
+					<ShortName>imp_shell_metal1.wav</ShortName>
+					<Path>sfx\imp_shell_metal1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="947299804" Language="SFX">
+					<ShortName>imp_shell_metal2.wav</ShortName>
+					<Path>sfx\imp_shell_metal2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="348978207" Language="SFX">
+					<ShortName>imp_shell_metal3.wav</ShortName>
+					<Path>sfx\imp_shell_metal3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1001758367" Language="SFX">
+					<ShortName>imp_shell_rock1.wav</ShortName>
+					<Path>sfx\imp_shell_rock1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="985705645" Language="SFX">
+					<ShortName>imp_shell_rock2.wav</ShortName>
+					<Path>sfx\imp_shell_rock2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="746214662" Language="SFX">
+					<ShortName>imp_shell_rock3.wav</ShortName>
+					<Path>sfx\imp_shell_rock3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="708102535" Language="SFX">
+					<ShortName>imp_shell_water1.wav</ShortName>
+					<Path>sfx\imp_shell_water1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="734337149" Language="SFX">
+					<ShortName>imp_shell_water2.wav</ShortName>
+					<Path>sfx\imp_shell_water2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="884951169" Language="SFX">
+					<ShortName>imp_shell_water3.wav</ShortName>
+					<Path>sfx\imp_shell_water3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="516916046" Language="SFX">
+					<ShortName>imp_shell_wood1.wav</ShortName>
+					<Path>sfx\imp_shell_wood1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="217743088" Language="SFX">
+					<ShortName>imp_shell_wood2.wav</ShortName>
+					<Path>sfx\imp_shell_wood2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1071366079" Language="SFX">
+					<ShortName>imp_shell_wood3.wav</ShortName>
+					<Path>sfx\imp_shell_wood3_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="3567116701" Language="SFX">
+			<ShortName>creatures</ShortName>
+			<Path>creatures.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3228178909" Name="Play_deer_bush_movement" />
+				<Event Id="3471791822" Name="Play_deer_footsteps" />
+				<Event Id="1879588097" Name="Play_deer_grunt" />
+				<Event Id="3136494978" Name="Play_skinner_player_spotted" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="716984317" Language="SFX">
+					<ShortName>crtr_deer_fs_dirt1.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_dirt1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="985005549" Language="SFX">
+					<ShortName>crtr_deer_fs_dirt2.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_dirt2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="742256412" Language="SFX">
+					<ShortName>crtr_deer_fs_dirt3.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_dirt3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="122738041" Language="SFX">
+					<ShortName>crtr_deer_fs_grass1.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_grass1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="784682562" Language="SFX">
+					<ShortName>crtr_deer_fs_grass2.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_grass2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="943102309" Language="SFX">
+					<ShortName>crtr_deer_fs_grass3.wav</ShortName>
+					<Path>sfx\crtr_deer_fs_grass3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="970722746" Language="SFX">
+					<ShortName>crtr_deer_grunt1.wav</ShortName>
+					<Path>sfx\crtr_deer_grunt1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1025442026" Language="SFX">
+					<ShortName>crtr_deer_grunt2.wav</ShortName>
+					<Path>sfx\crtr_deer_grunt2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="528541764" Language="SFX">
+					<ShortName>crtr_deer_grunt3.wav</ShortName>
+					<Path>sfx\crtr_deer_grunt3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="716069009" Language="SFX">
+					<ShortName>crtr_deer_grunt4.wav</ShortName>
+					<Path>sfx\crtr_deer_grunt4_ddc98ef4.wem</Path>
+				</File>
+				<File Id="386740658" Language="SFX">
+					<ShortName>crtr_deer_grunt5.wav</ShortName>
+					<Path>sfx\crtr_deer_grunt5_ddc98ef4.wem</Path>
+				</File>
+				<File Id="44479308" Language="SFX">
+					<ShortName>crtr_skinner_roar1.wav</ShortName>
+					<Path>sfx\crtr_skinner_roar1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1041953259" Language="SFX">
+					<ShortName>crtr_skinner_roar2.wav</ShortName>
+					<Path>sfx\crtr_skinner_roar2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="845400556" Language="SFX">
+					<ShortName>crtr_skinner_roar3.wav</ShortName>
+					<Path>sfx\crtr_skinner_roar3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="769385146" Language="SFX">
+					<ShortName>imp_vegetation1.wav</ShortName>
+					<Path>sfx\imp_vegetation1_ddc98ef4.wem</Path>
+				</File>
+				<File Id="574641091" Language="SFX">
+					<ShortName>imp_vegetation2.wav</ShortName>
+					<Path>sfx\imp_vegetation2_ddc98ef4.wem</Path>
+				</File>
+				<File Id="301925887" Language="SFX">
+					<ShortName>imp_vegetation3.wav</ShortName>
+					<Path>sfx\imp_vegetation3_ddc98ef4.wem</Path>
+				</File>
+				<File Id="536181702" Language="SFX">
+					<ShortName>imp_vegetation4.wav</ShortName>
+					<Path>sfx\imp_vegetation4_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ShortName>music</ShortName>
+			<Path>music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2895168921" Name="Play_main_menu_music" />
+				<Event Id="2829915331" Name="Stop_main_menu_music" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="62244546" Language="SFX">
+					<ShortName>mx_main_menu.wav</ShortName>
+					<Path>sfx\mx_main_menu_e13a779a.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="4035004657" Language="SFX">
+			<ShortName>foleys</ShortName>
+			<Path>foleys.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3547638588" Name="Play_binocs_3p" />
+				<Event Id="544548083" Name="Play_binocs_fp" />
+				<Event Id="3737752624" Name="Play_crouch_off_3p" />
+				<Event Id="3016315135" Name="Play_crouch_off_fp" />
+				<Event Id="16009670" Name="Play_crouch_on_3p" />
+				<Event Id="905223509" Name="Play_crouch_on_fp" />
+				<Event Id="2661971642" Name="Play_jump_off_3p" />
+				<Event Id="1806313201" Name="Play_jump_off_fp" />
+				<Event Id="138035744" Name="Play_jump_on_3p" />
+				<Event Id="3174681679" Name="Play_jump_on_fp" />
+				<Event Id="199159985" Name="Play_movement_3p" />
+				<Event Id="3202250746" Name="Play_movement_fp" />
+				<Event Id="4223531656" Name="Play_prone_off_3p" />
+				<Event Id="1354662071" Name="Play_prone_off_fp" />
+				<Event Id="2812229950" Name="Play_prone_on_3p" />
+				<Event Id="3701443789" Name="Play_prone_on_fp" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="26004416" Language="SFX">
+					<ShortName>fol_jump1.wav</ShortName>
+					<Path>sfx\fol_jump1_db50bab0.wem</Path>
+				</File>
+				<File Id="859048125" Language="SFX">
+					<ShortName>fol_jump2.wav</ShortName>
+					<Path>sfx\fol_jump2_db50bab0.wem</Path>
+				</File>
+				<File Id="387250785" Language="SFX">
+					<ShortName>fol_jump3.wav</ShortName>
+					<Path>sfx\fol_jump3_db50bab0.wem</Path>
+				</File>
+				<File Id="608809286" Language="SFX">
+					<ShortName>fol_jump4.wav</ShortName>
+					<Path>sfx\fol_jump4_db50bab0.wem</Path>
+				</File>
+				<File Id="575401025" Language="SFX">
+					<ShortName>fol_jump5.wav</ShortName>
+					<Path>sfx\fol_jump5_db50bab0.wem</Path>
+				</File>
+				<File Id="167551278" Language="SFX">
+					<ShortName>fol_land1.wav</ShortName>
+					<Path>sfx\fol_land1_db50bab0.wem</Path>
+				</File>
+				<File Id="313870396" Language="SFX">
+					<ShortName>fol_land2.wav</ShortName>
+					<Path>sfx\fol_land2_db50bab0.wem</Path>
+				</File>
+				<File Id="262133809" Language="SFX">
+					<ShortName>fol_land3.wav</ShortName>
+					<Path>sfx\fol_land3_db50bab0.wem</Path>
+				</File>
+				<File Id="757874749" Language="SFX">
+					<ShortName>fol_land4.wav</ShortName>
+					<Path>sfx\fol_land4_db50bab0.wem</Path>
+				</File>
+				<File Id="546737449" Language="SFX">
+					<ShortName>fol_land5.wav</ShortName>
+					<Path>sfx\fol_land5_db50bab0.wem</Path>
+				</File>
+				<File Id="473115758" Language="SFX">
+					<ShortName>Foley_Clothes_Run_01.wav</ShortName>
+					<Path>sfx\foley_clothes_run_01_db50bab0.wem</Path>
+				</File>
+				<File Id="1163080" Language="SFX">
+					<ShortName>Foley_Clothes_Run_02.wav</ShortName>
+					<Path>sfx\foley_clothes_run_02_db50bab0.wem</Path>
+				</File>
+				<File Id="62932659" Language="SFX">
+					<ShortName>Foley_Clothes_Run_03.wav</ShortName>
+					<Path>sfx\foley_clothes_run_03_db50bab0.wem</Path>
+				</File>
+				<File Id="912844438" Language="SFX">
+					<ShortName>Foley_Clothes_Run_04.wav</ShortName>
+					<Path>sfx\foley_clothes_run_04_db50bab0.wem</Path>
+				</File>
+				<File Id="249868014" Language="SFX">
+					<ShortName>Foley_Clothes_Run_05.wav</ShortName>
+					<Path>sfx\foley_clothes_run_05_db50bab0.wem</Path>
+				</File>
+				<File Id="588977461" Language="SFX">
+					<ShortName>Foley_Clothes_Sprint1.wav</ShortName>
+					<Path>sfx\foley_clothes_sprint1_db50bab0.wem</Path>
+				</File>
+				<File Id="98805180" Language="SFX">
+					<ShortName>Foley_Clothes_Sprint2.wav</ShortName>
+					<Path>sfx\foley_clothes_sprint2_db50bab0.wem</Path>
+				</File>
+				<File Id="17098967" Language="SFX">
+					<ShortName>Foley_Clothes_Sprint3.wav</ShortName>
+					<Path>sfx\foley_clothes_sprint3_db50bab0.wem</Path>
+				</File>
+				<File Id="3835053" Language="SFX">
+					<ShortName>Foley_Clothes_Sprint4.wav</ShortName>
+					<Path>sfx\foley_clothes_sprint4_db50bab0.wem</Path>
+				</File>
+				<File Id="162110990" Language="SFX">
+					<ShortName>Foley_Clothes_Sprint5.wav</ShortName>
+					<Path>sfx\foley_clothes_sprint5_db50bab0.wem</Path>
+				</File>
+				<File Id="113038209" Language="SFX">
+					<ShortName>Foley_Clothes_Walk_01.wav</ShortName>
+					<Path>sfx\foley_clothes_walk_01_db50bab0.wem</Path>
+				</File>
+				<File Id="77675804" Language="SFX">
+					<ShortName>Foley_Clothes_Walk_02.wav</ShortName>
+					<Path>sfx\foley_clothes_walk_02_db50bab0.wem</Path>
+				</File>
+				<File Id="300319807" Language="SFX">
+					<ShortName>Foley_Clothes_Walk_03.wav</ShortName>
+					<Path>sfx\foley_clothes_walk_03_db50bab0.wem</Path>
+				</File>
+				<File Id="12408951" Language="SFX">
+					<ShortName>Foley_Clothes_Walk_04.wav</ShortName>
+					<Path>sfx\foley_clothes_walk_04_db50bab0.wem</Path>
+				</File>
+				<File Id="67493223" Language="SFX">
+					<ShortName>Foley_Clothes_Walk_05.wav</ShortName>
+					<Path>sfx\foley_clothes_walk_05_db50bab0.wem</Path>
+				</File>
+				<File Id="833726506" Language="SFX">
+					<ShortName>Foley_Gear_Run_01.wav</ShortName>
+					<Path>sfx\foley_gear_run_01_db50bab0.wem</Path>
+				</File>
+				<File Id="385686512" Language="SFX">
+					<ShortName>Foley_Gear_Run_02.wav</ShortName>
+					<Path>sfx\foley_gear_run_02_db50bab0.wem</Path>
+				</File>
+				<File Id="229356570" Language="SFX">
+					<ShortName>Foley_Gear_Run_03.wav</ShortName>
+					<Path>sfx\foley_gear_run_03_db50bab0.wem</Path>
+				</File>
+				<File Id="290683946" Language="SFX">
+					<ShortName>Foley_Gear_Run_04.wav</ShortName>
+					<Path>sfx\foley_gear_run_04_db50bab0.wem</Path>
+				</File>
+				<File Id="510864197" Language="SFX">
+					<ShortName>Foley_Gear_Run_05.wav</ShortName>
+					<Path>sfx\foley_gear_run_05_db50bab0.wem</Path>
+				</File>
+				<File Id="62535935" Language="SFX">
+					<ShortName>Foley_Gear_Sprint_01.wav</ShortName>
+					<Path>sfx\foley_gear_sprint_01_db50bab0.wem</Path>
+				</File>
+				<File Id="195555144" Language="SFX">
+					<ShortName>Foley_Gear_Sprint_02.wav</ShortName>
+					<Path>sfx\foley_gear_sprint_02_db50bab0.wem</Path>
+				</File>
+				<File Id="145533380" Language="SFX">
+					<ShortName>Foley_Gear_Sprint_03.wav</ShortName>
+					<Path>sfx\foley_gear_sprint_03_db50bab0.wem</Path>
+				</File>
+				<File Id="121542410" Language="SFX">
+					<ShortName>Foley_Gear_Sprint_04.wav</ShortName>
+					<Path>sfx\foley_gear_sprint_04_db50bab0.wem</Path>
+				</File>
+				<File Id="223156736" Language="SFX">
+					<ShortName>Foley_Gear_Sprint_05.wav</ShortName>
+					<Path>sfx\foley_gear_sprint_05_db50bab0.wem</Path>
+				</File>
+				<File Id="148318482" Language="SFX">
+					<ShortName>Foley_Gear_Walk_01.wav</ShortName>
+					<Path>sfx\foley_gear_walk_01_db50bab0.wem</Path>
+				</File>
+				<File Id="685390311" Language="SFX">
+					<ShortName>Foley_Gear_Walk_02.wav</ShortName>
+					<Path>sfx\foley_gear_walk_02_db50bab0.wem</Path>
+				</File>
+				<File Id="636512716" Language="SFX">
+					<ShortName>Foley_Gear_Walk_03.wav</ShortName>
+					<Path>sfx\foley_gear_walk_03_db50bab0.wem</Path>
+				</File>
+				<File Id="238347390" Language="SFX">
+					<ShortName>Foley_Gear_Walk_04.wav</ShortName>
+					<Path>sfx\foley_gear_walk_04_db50bab0.wem</Path>
+				</File>
+				<File Id="95208536" Language="SFX">
+					<ShortName>Foley_Gear_Walk_05.wav</ShortName>
+					<Path>sfx\foley_gear_walk_05_db50bab0.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

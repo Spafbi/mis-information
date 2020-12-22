@@ -1,0 +1,13 @@
+<DeathHitReactionsParams>
+	<HitReactionParams>
+	</HitReactionParams>
+	
+	<DeathReactionParams>
+		<DeathReactionParam reactionFunc="MeleeDeath_Reaction">
+			<AllowedHitTypes>
+				<HitType value="melee"/>
+			</AllowedHitTypes>
+		</DeathReactionParam>
+	</DeathReactionParams>
+	
+</DeathHitReactionsParams>

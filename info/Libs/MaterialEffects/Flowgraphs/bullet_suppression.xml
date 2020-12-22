@@ -1,0 +1,84 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="MaterialFX:HUDStartFX" pos="700,280,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="2" Class="MaterialFX:HUDEndFX" pos="2280,340,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="6" Class="Actor:LocalPlayer" pos="1100,60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="16" Class="Interpol:Float" pos="1980,340,0" flags="0">
+   <Inputs StartValue="0" EndValue="0" Time="1" UpdateFrequency="0"/>
+  </Node>
+  <Node Id="20" Class="Image:FilterBlur" pos="2280,60,0" flags="0">
+   <Inputs entityId="0" Enabled="0" Disabled="1" FilterBlurring_Type="0" FilterBlurring_Amount="0"/>
+  </Node>
+  <Node Id="25" Class="Math:SetNumber" pos="1320,260,0" flags="0">
+   <Inputs in="2"/>
+  </Node>
+  <Node Id="55" Class="Math:InRange" pos="1100,260,0" flags="0">
+   <Inputs In="0" Min="0" Max="0.75"/>
+  </Node>
+  <Node Id="56" Class="Math:InRange" pos="1100,340,0" flags="0">
+   <Inputs In="0" Min="0.75" Max="1.25"/>
+  </Node>
+  <Node Id="57" Class="Math:InRange" pos="1100,420,0" flags="0">
+   <Inputs In="0" Min="1.25" Max="2"/>
+  </Node>
+  <Node Id="58" Class="Math:InRange" pos="1100,500,0" flags="0">
+   <Inputs In="0" Min="2" Max="3"/>
+  </Node>
+  <Node Id="59" Class="Logic:Any" pos="1580,340,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="60" Class="Math:SetNumber" pos="1320,340,0" flags="0">
+   <Inputs in="1.5"/>
+  </Node>
+  <Node Id="61" Class="Math:SetNumber" pos="1320,420,0" flags="0">
+   <Inputs in="1"/>
+  </Node>
+  <Node Id="62" Class="Math:SetNumber" pos="1320,500,0" flags="0">
+   <Inputs in="0.5"/>
+  </Node>
+  <Node Id="77" Class="Multiplayer:CheckCVar" pos="1100,140,0" flags="0">
+   <Inputs CVar="g_suppressionEffects"/>
+  </Node>
+  <Node Id="85" Name="." Class="_commentbox" pos="1090,211.02937,0" flags="0">
+   <Inputs TextSize="1" Color="0.346704,0.577581,0.571125" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="590" Height="330"/>
+   <NodeSize Width="590" Height="366.91449"/>
+  </Node>
+  <Node Id="86" Name="Scale_intensity_with_distance" Class="_comment" pos="1460,540,0" flags="0"/>
+  <Node Id="87" Name="Only_enable_if_CVar_is_enabled" Class="_comment" pos="1100,110,0" flags="0"/>
+  <Node Id="90" Class="Math:Mul" pos="1780,380,0" flags="0">
+   <Inputs A="0" B="2"/>
+  </Node>
+  <Node Id="91" Name="Total_multiplier" Class="_comment" pos="1780,440,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="6" nodeOut="1" portIn="update" portOut="Started" enabled="1"/>
+  <Edge nodeIn="55" nodeOut="1" portIn="In" portOut="Distance" enabled="1"/>
+  <Edge nodeIn="56" nodeOut="1" portIn="In" portOut="Distance" enabled="1"/>
+  <Edge nodeIn="57" nodeOut="1" portIn="In" portOut="Distance" enabled="1"/>
+  <Edge nodeIn="58" nodeOut="1" portIn="In" portOut="Distance" enabled="1"/>
+  <Edge nodeIn="77" nodeOut="1" portIn="Get" portOut="Started" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="6" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="16" portIn="Trigger" portOut="Done" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="16" portIn="FilterBlurring_Amount" portOut="Value" enabled="1"/>
+  <Edge nodeIn="59" nodeOut="25" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="25" nodeOut="55" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="60" nodeOut="56" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="57" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="62" nodeOut="58" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="59" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="90" nodeOut="59" portIn="A" portOut="out" enabled="1"/>
+  <Edge nodeIn="59" nodeOut="60" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="59" nodeOut="61" portIn="in3" portOut="out" enabled="1"/>
+  <Edge nodeIn="59" nodeOut="62" portIn="in4" portOut="out" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="77" portIn="Enabled" portOut="BoolValue" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="90" portIn="StartValue" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

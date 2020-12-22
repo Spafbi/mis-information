@@ -1,0 +1,20 @@
+<TagDefinition version="2">
+ <Tags>
+  <Group name="Health">
+   <Tag name="Alive" priority="5"/>
+   <Tag name="Dead" priority="5"/>
+  </Group>
+  <Group name="Stance">
+   <Tag name="Relaxed" priority="3"/>
+   <Tag name="Alerted" priority="3"/>
+   <Tag name="Stand" priority="3"/>
+  </Group>
+  <Group name="Gait">
+   <Tag name="NoGait"/>
+   <Tag name="Walk"/>
+   <Tag name="Run"/>
+   <Tag name="Sprint"/>
+  </Group>
+  <Tag name="Disabled"/>
+ </Tags>
+</TagDefinition>

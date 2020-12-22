@@ -23,7 +23,7 @@
 		<param name="curedItem" value="DonkeyMeatSteakCured"/>
 		<param name="curedTime" value="300"/>
 		<param name="foodAmount" value="200"/>
-		<param name="poisonChance" value="35"/>
+		<param name="poisonChance" value="100"/>
 		<param name="soundConsumed" value="Play_food_soft_eat"/>
 	</consumable>
 

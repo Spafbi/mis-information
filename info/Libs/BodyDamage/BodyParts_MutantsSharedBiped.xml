@@ -1,0 +1,47 @@
+<BodyDamage>
+	<Parts>
+		<Part name="armLeft" flags="arm">
+			<Bone name="Bip01 L Forearm"/>
+			<Bone name="Bip01 L UpperArm"/>
+		</Part>
+		<Part name="armRight" flags="arm">
+			<Bone name="Bip01 R Forearm"/>
+			<Bone name="Bip01 R UpperArm"/>
+		</Part>
+		<Part name="handLeft" flags="hand">
+			<Bone name="Bip01 L Hand"/>
+		</Part>
+		<Part name="handRight" flags="hand">
+			<Bone name="Bip01 R Hand"/>
+		</Part>
+		<Part name="head" flags="headshot">
+			<Bone name="Bip01 Head"/>
+			<Bone name="Bip01 Neck"/>
+		</Part>
+		<Part name="footLeft" flags="foot">
+			<Bone name="Bip01 L Foot"/>
+		</Part>
+		<Part name="footRight" flags="foot">
+			<Bone name="Bip01 R Foot"/>
+		</Part>
+		<Part name="legLeft" flags="knee">
+			<Bone name="Bip01 L Calf"/>
+			<Bone name="Bip01 L Thigh"/>
+		</Part>
+		<Part name="legRight" flags="knee">
+			<Bone name="Bip01 R Calf"/>
+			<Bone name="Bip01 R Thigh"/>
+		</Part>
+		<Part name="torso">
+			<Bone name="Bip01 Spine"/>
+			<Bone name="Bip01 Spine1"/>
+			<Bone name="Bip01 Spine2"/>
+			<Bone name="Bip01 Spine3"/>
+			<Bone name="Bip01 L Clavicle"/>
+			<Bone name="Bip01 R Clavicle"/>
+		</Part>
+		<Part name="pelvis" flags="pelvis">
+			<Bone name="Bip01 Pelvis"/>
+		</Part>
+	</Parts>
+</BodyDamage>
