@@ -803,8 +803,8 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "ChristmasPresentRare",
 			classes =
 			{
-				{ class = "snowman", percent = 20 },
-				{ class = "christmas_rug_03", percent = 20 },
+				{ class = "snowman", percent = 18 },
+				{ class = "christmas_rug_03", percent = 18 },
 				{ class = "SweaterChristmasGreen2", percent = 15 },
 				{ class = "SweaterChristmasRed2", percent = 15 },
 				{ class = "christmas_wreath", percent = 12 },
@@ -813,6 +813,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "ScavengerHelmet", percent = 2 },
 				{ class = "EggNog", percent = 0.5 },
 				{ class = "GingerBreadMan", percent = 0.5 },
+				{ class = "SpaceHelmet", percent = 4 },
 			},
 		},
 		
@@ -886,6 +887,15 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomEpicWeaponTrader", percent = 0.5 },
 				{ class = "SpaceHelmet", percent = 0.5 },
 				{ class = "wood_coffin", percent = 9.6 },
+			},
+		},
+		
+		{
+			category = "EventHelmets",
+			classes =
+			{
+				{ class = "SpaceHelmet", percent = 50 },
+				{ class = "ScavengerHelmet", percent = 50 },
 			},
 		},
 		
@@ -4523,9 +4533,9 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "ChristmasHat", percent = 100 },
 				{ category = "RandomAmmoBox", percent = 100 },
 				{ category = "RandomAmmoBox", percent = 100 },
-				{ class = "AmmoBox_357", percent = 100 },
-				{ class = "ScavengerHelmet", percent = 100 },
-				{ class = "Peacemaker", percent = 100 },
+				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
+				{ category = "EventHelmets", percent = 100 },
+				{ category = "RandomEpicWeaponPure", percent = 50 },
 				{ class = "EggNog", percent = 100 },
 				{ class = "EggNog", percent = 100 },
 				{ class = "GingerBreadMan", percent = 100, min = 2, max = 5 },

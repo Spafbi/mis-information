@@ -21,7 +21,7 @@
   <Node Id="302" Class="Image:EffectGhosting" pos="1600,640,0" flags="0">
    <Inputs entityId="0" Enabled="0" Disabled="1" ImageGhosting_Amount="0"/>
   </Node>
-  <Node Id="303" Class="Image:ColorCorrection" pos="1600,750,0" flags="0" InHideMask="2047">
+  <Node Id="303" Class="Image:ColorCorrection" pos="1600,740,0" flags="0" InHideMask="2047">
    <Inputs entityId="0" Enabled="0" Disabled="1" Global_User_ColorC="0" Global_User_ColorM="0" Global_User_ColorY="0" Global_User_ColorK="0" Global_User_Brightness="1" Global_User_Contrast="1" Global_User_Saturation="1" Global_User_ColorHue="0"/>
   </Node>
   <Node Id="305" Class="Image:EffectAlienInterference" pos="1600,520,0" flags="0">
@@ -30,10 +30,10 @@
   <Node Id="317" Class="Math:Less" pos="1260,540,0" flags="0">
    <Inputs A="0" B="1"/>
   </Node>
-  <Node Id="318" Name="." Class="_commentbox" pos="1240,470.00006,0" flags="0">
+  <Node Id="318" Name="." Class="_commentbox" pos="1240,442.31433,0" flags="0">
    <Inputs TextSize="1" Color="0.745404,0.701102,0.238398" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="580" Height="390"/>
-   <NodeSize Width="580" Height="417.64063"/>
+   <NodeSize Width="580" Height="445.32635"/>
   </Node>
   <Node Id="322" Class="Image:ScreenFader" pos="2120,280,0" flags="0" InHideMask="1023" OutHideMask="7">
    <Inputs FadeGroup="0" UseCurColor="1" FadeInTime="2" FadeOutTime="2" color_FadeColor="0,0,0" tex_TextureName="textures/defaults/white.dds" UpdateAlways="0" StopFader="0"/>
@@ -91,10 +91,10 @@
   <Node Id="398" Class="Math:BooleanFrom" pos="1900,-460,0" flags="0">
    <Inputs Value="0"/>
   </Node>
-  <Node Id="399" Name="." Class="_commentbox" pos="1240,-689.69568,0" flags="0">
+  <Node Id="399" Name="." Class="_commentbox" pos="1240,-717.38141,0" flags="0">
    <Inputs TextSize="1" Color="0.223228,0.386429,0.502886" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1440" Height="340"/>
-   <NodeSize Width="1440" Height="367.64063"/>
+   <NodeSize Width="1440" Height="395.32635"/>
   </Node>
   <Node Id="411" Class="Logic:Any" pos="2060,-260,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
@@ -103,16 +103,16 @@
    <Inputs />
   </Node>
   <Node Id="416" Name="Stop_sound_on_Death_else_continues_waiting_respawn" Class="_comment" pos="2300,-650,0" flags="0"/>
-  <Node Id="417" Name="." Class="_commentbox" pos="1240,870.03564,0" flags="0">
+  <Node Id="417" Name="." Class="_commentbox" pos="1240,842.34979,0" flags="0">
    <Inputs TextSize="1" Color="0.396755,0.552011,0.3564" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="920" Height="200"/>
-   <NodeSize Width="920" Height="227.64063"/>
+   <NodeSize Width="920" Height="255.32635"/>
   </Node>
   <Node Id="447" Name="Torpidity" Class="_comment" pos="1260,1130,0" flags="0"/>
-  <Node Id="448" Name="." Class="_commentbox" pos="1240,1090.2709,0" flags="0">
+  <Node Id="448" Name="." Class="_commentbox" pos="1240,1062.5835,0" flags="0">
    <Inputs TextSize="1" Color="0.318547,0.617207,0.603827" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="520" Height="620"/>
-   <NodeSize Width="520" Height="647.64063"/>
+   <NodeSize Width="520" Height="675.32635"/>
   </Node>
   <Node Id="449" Class="Logic:Any" pos="1020,640,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
@@ -122,18 +122,18 @@
    <Inputs />
   </Node>
   <Node Id="455" Name="Radiation" Class="_comment" pos="1260,510,0" flags="0"/>
-  <Node Id="456" Name="." Class="_commentbox" pos="1240,210.30362,0" flags="0">
+  <Node Id="456" Name="." Class="_commentbox" pos="1240,182.61786,0" flags="0">
    <Inputs TextSize="1" Color="0.508881,0.327778,0.603827" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1140" Height="140"/>
-   <NodeSize Width="1140" Height="167.64063"/>
+   <NodeSize Width="1140" Height="195.32635"/>
   </Node>
   <Node Id="457" Class="Logic:Any" pos="1260,-420,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
   </Node>
-  <Node Id="463" Name="." Class="_commentbox" pos="1240,-330.63876,0" flags="0">
+  <Node Id="463" Name="." Class="_commentbox" pos="1240,-358.32458,0" flags="0">
    <Inputs TextSize="1" Color="0.686685,0.274677,0.274677" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
    <ResizeBorder X="0" Y="0" Width="1440" Height="520"/>
-   <NodeSize Width="1440" Height="547.64063"/>
+   <NodeSize Width="1440" Height="575.32635"/>
   </Node>
   <Node Id="465" Name="Death_effects" Class="_comment" pos="1260,-90,0" flags="0"/>
   <Node Id="466" Name="THIS_SHOULD_BE_IN_CODE!" Class="_comment" pos="2360,-290,0" flags="0"/>
@@ -202,8 +202,8 @@
   </Node>
   <Node Id="557" Name="Wait_2s_then_open_Respawn_Menu" Class="_comment" pos="2060,50,0" flags="0"/>
   <Node Id="558" Name="FadeGroup_2_used_for_unconscious\n_1_is_used_by_HUD_hits\n_0_is_used_for_respawn" Class="_comment" pos="1470,1520,0" flags="0"/>
-  <Node Id="561" Class="Math:Div" pos="1260,660,0" flags="1">
-   <Inputs A="0" B="300"/>
+  <Node Id="561" Class="Math:Div" pos="1260,660,0" flags="0">
+   <Inputs A="0" B="150"/>
   </Node>
   <Node Id="565" Class="Logic:Any" pos="1020,-240,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
@@ -237,6 +237,9 @@
   <Edge nodeIn="556" nodeOut="288" portIn="in" portOut="True" enabled="1"/>
   <Edge nodeIn="302" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
   <Edge nodeIn="302" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
+  <Edge nodeIn="303" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
+  <Edge nodeIn="305" nodeOut="317" portIn="Enabled" portOut="false" enabled="1"/>
   <Edge nodeIn="305" nodeOut="317" portIn="Disabled" portOut="true" enabled="1"/>
   <Edge nodeIn="331" nodeOut="323" portIn="Dof_User_Active" portOut="IsHeadUnderwater" enabled="1"/>
   <Edge nodeIn="331" nodeOut="323" portIn="Enabled" portOut="IsHeadUnderwater" enabled="1"/>

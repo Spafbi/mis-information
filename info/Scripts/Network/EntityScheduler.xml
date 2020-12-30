@@ -1249,7 +1249,6 @@
 	<Class name="DeerStew" policy="cons" />
 	<Class name="DeerStewRaw" policy="cons" />
 	<Class name="DeerSandwich" policy="cons" />
-	<Class name="DeerStew" policy="cons" />
 	<Class name="DogFoodCan" policy="cons"/>
 	<Class name="DonkeyMeatSteakBurned" policy="cons" />
 	<Class name="DonkeyMeatSteakCooked" policy="cons" />
@@ -2170,8 +2169,9 @@
 	<Class name="ForbiddenArea" policy="capt"/>
 	<Class name="FireHeatArea" policy="obj"/>
 	<Class name="FireDamageArea" policy="obj"/>
+  <Class name="NPCTeleportToBase" policy="obj"/>
 
-	<Class name="AIAnchor" policy="obj"/>
+  <Class name="AIAnchor" policy="obj"/>
 	<Class name="CameraSource" policy="obj"/>
 	<Class name="Fog" policy="obj"/>
 	<Class name="ParticleEffect" policy="obj"/>
