@@ -3,8 +3,8 @@
 	<params>
 		<param name="selectable" value="0"/>
 		<param name="mass" value="1.0"/>
-		<param name="display_name" value="Jack-o lantern 04"/>
-		<param name="description" value="A jack-o lantern."/>
+		<param name="display_name" value="@pumpkin_4"/>
+		<param name="description" value="@pumpkin_4Description"/>
 	</params>
 
 	<base_part class="static" type="404" name="pumpkin_4" max_health="1000" repair_with="DuctTape">
