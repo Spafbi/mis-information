@@ -6,8 +6,8 @@
 		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
 		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
 		<param name="no_icon" value="1"/>
-		<param name="display_name" value="Metal platform"/>
-		<param name="description" value="A large and strudy metal platform."/>
+		<param name="display_name" value="@metal_platform_3m_4m_4m"/>
+		<param name="description" value="@metal_platform_3m_4m_4mDescription"/>
 	</params>
 
 	<base_part class="static" type="2061" name="metal_platform_3m_4m_4m" max_health="37500" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">

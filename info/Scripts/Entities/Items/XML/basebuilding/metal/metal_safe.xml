@@ -6,8 +6,8 @@
 		<param name="physics" value="0"/> <!-- eIPhys_PhysicalizedRigid (see Item.h) -->
 		<param name="view_dist_min" value="100"/> <!-- minimum 100m draw distance -->
 		<param name="no_icon" value="1"/>
-		<param name="display_name" value="Safe"/>
-		<param name="description" value="A sturdy metal safe."/>
+		<param name="display_name" value="@metal_safe"/>
+		<param name="description" value="@metal_safeDescription"/>
 	</params>
 
 	<base_part class="static" type="2060" name="metal_safe" max_health="37500" limit="2" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">

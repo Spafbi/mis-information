@@ -4,8 +4,8 @@
 		<param name="selectable" value="0"/>
 		<param name="mass" value="4"/>
 		<param name="stack_size" value="5"/>
-		<param name="display_name" value="Wood Coffin"/>
-		<param name="description" value="An old wooden coffin, used to store items inside"/>
+		<param name="display_name" value="@wood_coffin"/>
+		<param name="description" value="@wood_coffinDescription"/>
 	</params>
 
 	<base_part class="static" type="385" name="wood_coffin" max_health="2000" repair_sound="Play_wall_repair">
