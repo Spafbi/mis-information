@@ -434,7 +434,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomConsumable", percent = 20 },
 				{ category = "RandomConsumable", percent = 20 },
 				{ category = "RandomAccessory", percent = 2 },
-				--{ category = "RandomEggs", percent = 10 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 10 },-- disabled until easter event
 			},
 		},
 
@@ -460,7 +460,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "AmcoinLedger", percent = 10, min = 1, max = 5},
 				{category = "RandomAccessory", percent = 3 },
 				{category = "RandomArmorTier2", percent = 20 },
-				--{category = "RandomEggs", percent = 25 },-- disabled until easter event
+				{category = "RandomEggs", percent = 25 },-- disabled until easter event
 				--{ class = "HalloweenBagBrute", percent = 30 }, -- halloween event.
 				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
 			},
@@ -487,7 +487,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAmmo", percent = 100 },
 				{ category = "RandomAccessory", percent = 2 },
 				{ category = "RandomArmorTier3", percent = 20 },
-				--{category = "RandomEggs", percent = 25 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 25 },-- disabled until easter event
 				--{ class = "HalloweenBagSpider", percent = 30 },-- Halloween event
 				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
 			},
@@ -542,7 +542,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomBackpackContents",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 3 },---- disabled until easter event
+				{ category = "RandomEggs", percent = 3 },---- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 3 },-- Halloween event
 				--{ category = "RandomChristmasPresent", percent = 3 }, -- Christmas event
 				{ category = "Map", percent = 2 },
@@ -2420,12 +2420,12 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomClothes",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
 				{ category = "RandomCraftingGuide", percent = 9 },
-				{ category = "RandomEyes", percent = 7 },
-				{ category = "RandomFace", percent = 7 },
+				{ category = "RandomEyes", percent = 6 },
+				{ category = "RandomFace", percent = 6 },
 				{ category = "RandomHands", percent = 12 },
 				{ category = "RandomHat", percent = 12 },
 				{ category = "RandomLegs", percent = 15 },
@@ -3089,10 +3089,10 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "RavioliCan", percent = 0.5 },
 				{ class = "SoupCan", percent = 0.5 },
 				{ class = "TunaCan", percent = 0.5 },
-				{ class = "ChocolateBox", percent = 3 }, -- Valentine's
-				{ class = "Champagne", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 3 }, -- Valentine's
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				--{ class = "ChocolateBox", percent = 3 }, -- Valentine's
+				--{ class = "Champagne", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 3 }, -- Valentine's
+				{ category = "RandomEggs", percent = 0.5 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 1 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 1 },-- Christmas event
 			},
@@ -3307,13 +3307,13 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomCrafting",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
-				{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
-				{ class = "flower_vase", percent = 3 }, -- Valentine's
-				{ class = "heart_candle", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 2 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
+				--{ class = "flower_vase", percent = 3 }, -- Valentine's
+				--{ class = "heart_candle", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 2 }, -- Valentine's
 				{ category = "RandomIncapacition", percent = 4 },
 				{ category = "RandomPaintCan", percent = 3 },
 				{ category = "RandomFireStarter", percent = 4 },
@@ -3425,11 +3425,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "painting_map_canyonlands", percent = 3 },
 				{ class = "poster_vertical_01", percent = 3 },
 				{ class = "painting_map", percent = 5 },
-				{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
-				{ class = "flower_vase", percent = 3 }, -- Valentine's
-				{ class = "heart_candle", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 3 }, -- Valentine's
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				--{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
+				--{ class = "flower_vase", percent = 3 }, -- Valentine's
+				--{ class = "heart_candle", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 3 }, -- Valentine's
+				{ category = "RandomEggs", percent = 3 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
 			},
@@ -3880,7 +3880,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "acp_45x7", percent = 3 },
 				{ class = "762x30", percent = 3 },
 				{ class = "Arrowx8", percent = 2.5 },
-				{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
 				{ class = "Boltx5_0000", percent = 2 },
 				{ class = "M40x5", percent = 0.99 },
 				{ class = "556x100", percent = 0.01 },
@@ -4180,11 +4180,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomMilitaryFootlockerContent",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
-				{ category = "RandomMilitaryClothing", percent = 6 },
-				{ category = "RandomWeaponRepairKit", percent = 5 },
+				{ category = "RandomMilitaryClothing", percent = 5 },
+				{ category = "RandomWeaponRepairKit", percent = 4 },
 				{ category = "RandomMedical", percent = 5 },
 				{ category = "RandomHospitalBandage", percent = 1 },
 				{ category = "RandomMilitaryGrenade", percent = 3 },
@@ -4216,10 +4216,10 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomArmorTier2", percent = 5 },
 				{ category = "RandomArmorTier1", percent = 8 },
 				{ category = "RandomAmmo", percent = 9 },
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 3 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 3 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 3 },-- Christmas event
-				{ category = "RandomRangedPure", percent = 24 },
+				{ category = "RandomRangedPure", percent = 20 },
 				{ category = "RandomAmmoBox", percent = 6 },
 				{ category = "RandomAccessory", percent = 1 },
 				{ category = "RandomMilitaryFootlockerContent", percent = 14 },
@@ -4293,7 +4293,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "Oil", percent = 5 },
 				{ class = "DuctTape", percent = 5 },
 				{ class = "DogFoodCan", percent = 0.5 },
-				{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
 			},
 		},
 
@@ -4316,7 +4316,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAmmo", percent = 5 },
 				{ category = "RandomSeeds", percent = 5 },
 				{ class = "WaterPurificationTablets", percent = 0.5 },
-				{ class = "CupidArrowx8", percent = 2 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2 }, -- Valentine's
 			},
 		},
 
@@ -4590,13 +4590,13 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
 				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
 				{ class = "WaterPurificationTablets", percent = 100, min = 3, max = 3 },
-				{ class = "MRE", percent = 100 },
-				{ class = "MRE", percent = 100 },
+				--{ class = "MRE", percent = 100 },
+				--{ class = "MRE", percent = 100 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
-				--{ class = "EggBlue", percent = 100, min = 1, max = 5 },
-				--{ class = "EggGreen", percent = 100, min = 1, max = 5 },
-				--{ class = "EggPink", percent = 100, min = 1, max = 5 },
-				{ class = "MRE", percent = 100 },
+				{ class = "EggBlue", percent = 100, min = 1, max = 5 },
+				{ class = "EggGreen", percent = 100, min = 1, max = 5 },
+				{ class = "EggPink", percent = 100, min = 1, max = 5 },
+				--{ class = "MRE", percent = 100 },
 				{ category = "RandomEpicWeaponTrader", percent = 25 },
 			},
 		},
@@ -4670,18 +4670,18 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAccessory", percent = 100 },
 				{ class = "FootballPads", percent = 100 },
 				{ category = "RandomCivilianHelmet", percent = 100 },
-				{ class = "RainJacketYellow", percent = 100 },
-				{ class = "RuckSack", percent = 100 },
+				--{ class = "RainJacketYellow", percent = 100 },
+				--{ class = "RuckSack", percent = 100 },
 				{ class = "GrenadeMolotovPickup", percent = 100 },
 				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
 				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
-				{ class = "AppleFresh", percent = 100, min = 5, max = 5 },
+				--{ class = "AppleFresh", percent = 100, min = 5, max = 5 },
 				{ class = "PipebombPickup", percent = 100 },
-				--{ class = "EggBlue", percent = 100, min = 1, max = 5 },
-				--{ class = "EggGreen", percent = 100, min = 1, max = 5 },
-				--{ class = "EggPink", percent = 100, min = 1, max = 5 },
+				{ class = "EggBlue", percent = 100, min = 1, max = 5 },
+				{ class = "EggGreen", percent = 100, min = 1, max = 5 },
+				{ class = "EggPink", percent = 100, min = 1, max = 5 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
-				{ category = "RandomTent", percent = 10 },
+				--{ category = "RandomTent", percent = 10 },
 
 			},
 		},
@@ -4860,6 +4860,82 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "VendorShotgun", percent = 20 },
 				{ category = "VendorSMG", percent = 20 },
 			},	
+		},
+		
+		{
+			-- Will select a random themed inventory from the array.
+			category = "RandomVendorClothing",
+			classes =
+			{
+				{ category = "VendorClothingMilitary", percent = 35 },
+				{ category = "VendorClothingCivilian", percent = 65 },
+			},	
+		},
+		
+		{
+			category = "VendorClothingMilitary",
+			group =
+			{
+				-- If you use a category it must only spawn 1 item from it
+				-- For example, it can't spawn a weapon and ammo
+				{ category = "RandomMilitaryJacket", percent = 100 },
+				{ category = "RandomMilitaryJacket", percent = 100 },
+				{ category = "RandomMilitaryJacket", percent = 100 },
+				{ category = "RandomCamoGloves", percent = 100 },
+				{ category = "RandomCamoShirts", percent = 100 },
+				{ category = "RandomCamoShirts", percent = 100 },
+				{ category = "RandomCamoFace", percent = 100 },
+				{ category = "RandomCamoFace", percent = 100 },
+				{ category = "RandomCargoPants", percent = 100 },
+				{ category = "RandomCargoPants", percent = 100 },
+				{ category = "RandomMilitaryShoes", percent = 100 },
+				{ category = "RandomMilitaryHelmet", percent = 20 },
+				{ category = "RandomMilitaryHelmet", percent = 20 },
+				{ category = "RandomMilitaryArmor", percent = 20 },
+				{ category = "RandomMilitaryArmor", percent = 20 },
+				{ category = "RandomPolicebodyArmor", percent = 20 },
+				{ category = "RandomTacticalVestPure", percent = 20 },
+				{ class = "SwatHelmet", percent = 20 },
+			},
+		},
+		
+		{
+			category = "VendorClothingCivilian",
+			group =
+			{
+				-- If you use a category it must only spawn 1 item from it
+				-- For example, it can't spawn a weapon and ammo
+				{ category = "RandomBlueJeans2", percent = 100 },
+				{ category = "RandomBlueJeans2", percent = 100 },
+				{ category = "RandomCargoShorts", percent = 100 },
+				{ category = "RandomCargoShorts", percent = 100 },
+				{ category = "RandomTrackPants", percent = 100 },
+				{ category = "RandomWandererPants", percent = 100 },
+				{ category = "RandomRainJacket", percent = 100 },
+				{ category = "RandomRainJacket", percent = 100 },
+				{ category = "RandomPuffyJacket", percent = 100 },
+				{ category = "RandomPuffyJacket", percent = 100 },
+				{ category = "RandomButtonUpShirt", percent = 100 },
+				{ category = "RandomButtonUpShirt", percent = 100 },
+				{ category = "RandomTshirt", percent = 100 },
+				{ category = "RandomTshirt", percent = 100 },
+				{ category = "RandomShoes", percent = 100 },
+				{ category = "RandomShoes", percent = 100 },
+				{ category = "RandomLeatherJacket", percent = 100 },
+				{ category = "RandomEyes", percent = 100 },
+				{ category = "RandomFace", percent = 100 },
+				{ category = "RandomHands", percent = 100 },
+				{ category = "RandomHat", percent = 100 },
+				{ category = "RandomNeck", percent = 100 },
+				{ category = "RandomWaist", percent = 100 },
+				{ category = "RandomSweater", percent = 100 },
+				{ category = "RandomCottonShirt", percent = 100 },
+				{ category = "RandomHoodie", percent = 100 },
+				{ category = "RandomHoodie", percent = 100 },
+				{ category = "RandomFootballPads", percent = 100 },
+				{ category = "RandomTacticalVest", percent = 25 },
+				{ category = "RandomBackpack", percent = 100 },
+			},
 		},
 
 		{
