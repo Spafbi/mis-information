@@ -891,7 +891,7 @@
 							</item>
 						</items>
 					</subcat>
-					<!-- Removed Easter items
+					
 					<subcat name="Easter">
 						<items>
 							<item class="KatanaBlackWidow" time="10">
@@ -909,6 +909,31 @@
 									<material class="EggBlue" count="10" />
 								</materials>
 							</item>
+							<item class="T1Micro" time="10">
+								<materials>
+									<material class="EggBlue" count="10" />
+								</materials>
+							</item>
+							<item class="ReflexSightBow" time="5">
+								<materials>
+									<material class="EggBlue" count="10" />
+								</materials>
+							</item>
+							<item class="LaserSight" time="10">
+								<materials>
+									<material class="EggBlue" count="3" />
+								</materials>
+							</item>
+							<item class="LaserSightGreen" time="10">
+								<materials>
+									<material class="EggBlue" count="3" />
+								</materials>
+							</item>
+							<item class="LaserSightBlue" time="10">
+								<materials>
+									<material class="EggBlue" count="3" />
+								</materials>
+							</item>
 							<item class="ColtPythonGrimeyRick" time="20">
 								<materials>
 									<material class="EggGreen" count="10" />
@@ -922,6 +947,26 @@
 							<item class="AKMGold" time="20">
 								<materials>
 									<material class="EggGreen" count="15" />
+								</materials>
+							</item>
+							<item class="ReddotSight" time="20">
+								<materials>
+									<material class="EggGreen" count="10" />
+								</materials>
+							</item>
+							<item class="PistolSilencer" time="20">
+								<materials>
+									<material class="EggGreen" count="20" />
+								</materials>
+							</item>
+							<item class="ReflexSight" time="10">
+								<materials>
+									<material class="EggGreen" count="10" />
+								</materials>
+							</item>
+							<item class="FlashlightMounted" time="10">
+								<materials>
+									<material class="EggGreen" count="5" />
 								</materials>
 							</item>
 							<item class="VSS" time="30">
@@ -944,9 +989,39 @@
 									<material class="EggPink" count="5" />
 								</materials>
 							</item>
+							<item class="OpticScope" time="10">
+								<materials>
+									<material class="EggPink" count="10" />
+								</materials>
+							</item>
+							<item class="R3Sight" time="10">
+								<materials>
+									<material class="EggPink" count="5" />
+								</materials>
+							</item>
+							<item class="ext_762x30" time="10">
+								<materials>
+									<material class="EggPink" count="20" />
+								</materials>
+							</item>
+							<item class="ext_762x75" time="10">
+								<materials>
+									<material class="EggPink" count="25" />
+								</materials>
+							</item>
+							<item class="ext_556x75" time="10">
+								<materials>
+									<material class="EggPink" count="25" />
+								</materials>
+							</item>
+							<item class="RifleSilencer" time="10">
+								<materials>
+									<material class="EggPink" count="35" />
+								</materials>
+							</item>
 						</items>
 					</subcat>
-					-->
+					
 					<subcat name="Decorations">
 						<types>
 							<type name="Flags">
