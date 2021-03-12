@@ -49,8 +49,8 @@
 			<fire>
 				<param name="hit_type" value="ammo_5_56x45"/>
 				<param name="ammo_type" value="ammo_5_56x45"/>
-				<param name="rate" value="500"/>
-				<param name="damage" value="57"/>
+				<param name="rate" value="400"/>
+				<param name="damage" value="65"/>
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
 				<param name="min_damage_for_knockDown" value="300"/>
