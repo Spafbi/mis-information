@@ -160,7 +160,7 @@ Weather =
 --------------------------------------------------------------------------------------------
     {
       name="ClearSky",
-      probability=18, -- probabilities need to be 100 in total, everything over that will never get selected
+      probability=23, -- probabilities need to be 100 in total, everything over that will never get selected
       danger=-8,
       duration={15, 19},
       audio=
@@ -1797,15 +1797,15 @@ Weather =
 --------------------------------------------------------------------------------------------
     {
       name="Snow",
-      probability=13,
+      probability=8,
       danger=15,
       dangerlimit=20,
       duration={10, 20},
       continue={
-        ["Blizzard"] = 15,
-        ["BlizzardThunder"] = 15, 
+        ["Blizzard"] = 10,
+        ["BlizzardThunder"] = 10, 
         ["ClearSkyWindySnow_Outro"] = { probability = 20, stage = 1, }, -- jump directly to peak
-        ["Snow_Outro"] = 50, -- Continue pattern starts at fade out of this pattern, so blending works
+        ["Snow_Outro"] = 60, -- Continue pattern starts at fade out of this pattern, so blending works
       }, 
       ramp={0.1, 0.1}, -- use 10% fade-in and 10% fade-out
       modifiers = { -- values added to current baseline (faded in and out)
