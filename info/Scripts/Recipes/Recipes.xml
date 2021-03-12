@@ -984,6 +984,11 @@
 									<material class="EggPink" count="17" />
 								</materials>
 							</item>
+							<item class="M4V5" time="30">
+								<materials>
+									<material class="EggPink" count="30" />
+								</materials>
+							</item>
 							<item class="PSOScope" time="10">
 								<materials>
 									<material class="EggPink" count="5" />
