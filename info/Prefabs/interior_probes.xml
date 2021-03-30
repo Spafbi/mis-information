@@ -1,0 +1,30 @@
+<PrefabsLibrary Name="interior_probes">
+ <Prefab Name="industrial.dock_building_02" Id="{74F58FFE-27D3-4BB2-BF6D-C2CB1EAF1FF9}" Library="interior_probes">
+  <Objects>
+   <Object Type="EnvironmentProbe" Layer="interior_probes" LayerGUID="{258F1189-8539-4FCB-BFFE-4CC0384A9832}" Id="{356FCC3D-DB0D-42F9-AC53-A104B7B52B81}" Name="dock_building_2_night" Pos="1.5550537,2.0080566,3.6899986" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="19.15" BoxSizeY="15.99" BoxSizeZ="7.24" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="2"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" SortPriority="255" nTimeGroup="1" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="textures/cubemaps/canyonlands/dock_building_2_p_night_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+   <Object Type="EnvironmentProbe" Layer="interior_probes" LayerGUID="{258F1189-8539-4FCB-BFFE-4CC0384A9832}" Id="{6A7BB947-E6AA-42D5-80AF-A541AFF37598}" Name="dock_building_2_twilight" Pos="1.5550537,2.0080566,3.6899986" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="19.15" BoxSizeY="15.99" BoxSizeZ="7.24" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="2"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" SortPriority="255" nTimeGroup="2" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="textures/cubemaps/canyonlands/dock_building_2_p_twilight_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+   <Object Type="EnvironmentProbe" Layer="interior_probes" LayerGUID="{258F1189-8539-4FCB-BFFE-4CC0384A9832}" Id="{895C916D-D061-4684-8A15-63C6FC2DB2FE}" Name="dock_building_2_day" Pos="1.5550537,2.0080566,3.6899986" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" GlobalInSegmentedWorld="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="19.15" BoxSizeY="15.99" BoxSizeZ="7.24" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="2"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" SortPriority="255" nTimeGroup="3" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="textures/cubemaps/canyonlands/dock_building_2_day_p_cm.tif"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

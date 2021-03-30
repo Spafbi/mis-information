@@ -434,7 +434,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomConsumable", percent = 20 },
 				{ category = "RandomConsumable", percent = 20 },
 				{ category = "RandomAccessory", percent = 2 },
-				--{ category = "RandomEggs", percent = 10 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 10 },-- disabled until easter event
 			},
 		},
 
@@ -460,7 +460,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "AmcoinLedger", percent = 10, min = 1, max = 5},
 				{category = "RandomAccessory", percent = 3 },
 				{category = "RandomArmorTier2", percent = 20 },
-				--{category = "RandomEggs", percent = 25 },-- disabled until easter event
+				{category = "RandomEggs", percent = 25 },-- disabled until easter event
 				--{ class = "HalloweenBagBrute", percent = 30 }, -- halloween event.
 				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
 			},
@@ -487,7 +487,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAmmo", percent = 100 },
 				{ category = "RandomAccessory", percent = 2 },
 				{ category = "RandomArmorTier3", percent = 20 },
-				--{category = "RandomEggs", percent = 25 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 25 },-- disabled until easter event
 				--{ class = "HalloweenBagSpider", percent = 30 },-- Halloween event
 				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
 			},
@@ -542,7 +542,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomBackpackContents",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 3 },---- disabled until easter event
+				{ category = "RandomEggs", percent = 3 },---- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 3 },-- Halloween event
 				--{ category = "RandomChristmasPresent", percent = 3 }, -- Christmas event
 				{ category = "Map", percent = 2 },
@@ -1714,7 +1714,6 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "SweaterPink", contents="RandomTorsoContents", percent = 15 },
 				{ class = "SweaterRed", contents="RandomTorsoContents", percent = 15 },
 			}
-
 		},
 
 		{
@@ -2420,12 +2419,12 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomClothes",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
 				{ category = "RandomCraftingGuide", percent = 9 },
-				{ category = "RandomEyes", percent = 7 },
-				{ category = "RandomFace", percent = 7 },
+				{ category = "RandomEyes", percent = 6 },
+				{ category = "RandomFace", percent = 6 },
 				{ category = "RandomHands", percent = 12 },
 				{ category = "RandomHat", percent = 12 },
 				{ category = "RandomLegs", percent = 15 },
@@ -3089,10 +3088,10 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "RavioliCan", percent = 0.5 },
 				{ class = "SoupCan", percent = 0.5 },
 				{ class = "TunaCan", percent = 0.5 },
-				{ class = "ChocolateBox", percent = 3 }, -- Valentine's
-				{ class = "Champagne", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 3 }, -- Valentine's
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				--{ class = "ChocolateBox", percent = 3 }, -- Valentine's
+				--{ class = "Champagne", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 3 }, -- Valentine's
+				{ category = "RandomEggs", percent = 0.5 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 1 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 1 },-- Christmas event
 			},
@@ -3307,13 +3306,13 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomCrafting",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
-				{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
-				{ class = "flower_vase", percent = 3 }, -- Valentine's
-				{ class = "heart_candle", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 2 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
+				--{ class = "flower_vase", percent = 3 }, -- Valentine's
+				--{ class = "heart_candle", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 2 }, -- Valentine's
 				{ category = "RandomIncapacition", percent = 4 },
 				{ category = "RandomPaintCan", percent = 3 },
 				{ category = "RandomFireStarter", percent = 4 },
@@ -3424,12 +3423,12 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "painting_vertical_landscape_06", percent = 3 },
 				{ class = "painting_map_canyonlands", percent = 3 },
 				{ class = "poster_vertical_01", percent = 3 },
-				{ class = "painting_map", percent = 5 },
-				{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
-				{ class = "flower_vase", percent = 3 }, -- Valentine's
-				{ class = "heart_candle", percent = 3 }, -- Valentine's
-				{ class = "heart_balloon", percent = 3 }, -- Valentine's
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				{ class = "painting_map", percent = 4 },
+				--{ class = "CupidArrowx8", percent = 3 }, -- Valentine's
+				--{ class = "flower_vase", percent = 3 }, -- Valentine's
+				--{ class = "heart_candle", percent = 3 }, -- Valentine's
+				--{ class = "heart_balloon", percent = 3 }, -- Valentine's
+				{ category = "RandomEggs", percent = 3 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
 			},
@@ -3880,7 +3879,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "acp_45x7", percent = 3 },
 				{ class = "762x30", percent = 3 },
 				{ class = "Arrowx8", percent = 2.5 },
-				{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
 				{ class = "Boltx5_0000", percent = 2 },
 				{ class = "M40x5", percent = 0.99 },
 				{ class = "556x100", percent = 0.01 },
@@ -4180,11 +4179,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomMilitaryFootlockerContent",
 			classes =
 			{
-				--{ category = "RandomEggs", percent = 2 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 2 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 2 },
 				--{ category = "RandomChristmasPresent", percent = 2 },-- Christmas event
-				{ category = "RandomMilitaryClothing", percent = 6 },
-				{ category = "RandomWeaponRepairKit", percent = 5 },
+				{ category = "RandomMilitaryClothing", percent = 5 },
+				{ category = "RandomWeaponRepairKit", percent = 4 },
 				{ category = "RandomMedical", percent = 5 },
 				{ category = "RandomHospitalBandage", percent = 1 },
 				{ category = "RandomMilitaryGrenade", percent = 3 },
@@ -4216,10 +4215,10 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomArmorTier2", percent = 5 },
 				{ category = "RandomArmorTier1", percent = 8 },
 				{ category = "RandomAmmo", percent = 9 },
-				--{ category = "RandomEggs", percent = 3 },-- disabled until easter event
+				{ category = "RandomEggs", percent = 3 },-- disabled until easter event
 				--{ category = "halloweenBagCommon", percent = 3 },-- halloween
 				--{ category = "RandomChristmasPresent", percent = 3 },-- Christmas event
-				{ category = "RandomRangedPure", percent = 24 },
+				{ category = "RandomRangedPure", percent = 20 },
 				{ category = "RandomAmmoBox", percent = 6 },
 				{ category = "RandomAccessory", percent = 1 },
 				{ category = "RandomMilitaryFootlockerContent", percent = 14 },
@@ -4293,7 +4292,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "Oil", percent = 5 },
 				{ class = "DuctTape", percent = 5 },
 				{ class = "DogFoodCan", percent = 0.5 },
-				{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2.5 }, -- Valentine's
 			},
 		},
 
@@ -4316,7 +4315,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAmmo", percent = 5 },
 				{ category = "RandomSeeds", percent = 5 },
 				{ class = "WaterPurificationTablets", percent = 0.5 },
-				{ class = "CupidArrowx8", percent = 2 }, -- Valentine's
+				--{ class = "CupidArrowx8", percent = 2 }, -- Valentine's
 			},
 		},
 
@@ -4590,13 +4589,13 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
 				{ class = "PotassiumIodidePills", percent = 100, min = 3, max = 3 },
 				{ class = "WaterPurificationTablets", percent = 100, min = 3, max = 3 },
-				{ class = "MRE", percent = 100 },
-				{ class = "MRE", percent = 100 },
+				--{ class = "MRE", percent = 100 },
+				--{ class = "MRE", percent = 100 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
-				--{ class = "EggBlue", percent = 100, min = 1, max = 5 },
-				--{ class = "EggGreen", percent = 100, min = 1, max = 5 },
-				--{ class = "EggPink", percent = 100, min = 1, max = 5 },
-				{ class = "MRE", percent = 100 },
+				{ class = "EggBlue", percent = 100, min = 1, max = 5 },
+				{ class = "EggGreen", percent = 100, min = 1, max = 5 },
+				{ class = "EggPink", percent = 100, min = 1, max = 5 },
+				--{ class = "MRE", percent = 100 },
 				{ category = "RandomEpicWeaponTrader", percent = 25 },
 			},
 		},
@@ -4670,18 +4669,18 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomAccessory", percent = 100 },
 				{ class = "FootballPads", percent = 100 },
 				{ category = "RandomCivilianHelmet", percent = 100 },
-				{ class = "RainJacketYellow", percent = 100 },
-				{ class = "RuckSack", percent = 100 },
+				--{ class = "RainJacketYellow", percent = 100 },
+				--{ class = "RuckSack", percent = 100 },
 				{ class = "GrenadeMolotovPickup", percent = 100 },
 				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
 				{ class = "Gunpowder", percent = 100, min = 64, max = 64 },
-				{ class = "AppleFresh", percent = 100, min = 5, max = 5 },
+				--{ class = "AppleFresh", percent = 100, min = 5, max = 5 },
 				{ class = "PipebombPickup", percent = 100 },
-				--{ class = "EggBlue", percent = 100, min = 1, max = 5 },
-				--{ class = "EggGreen", percent = 100, min = 1, max = 5 },
-				--{ class = "EggPink", percent = 100, min = 1, max = 5 },
+				{ class = "EggBlue", percent = 100, min = 1, max = 5 },
+				{ class = "EggGreen", percent = 100, min = 1, max = 5 },
+				{ class = "EggPink", percent = 100, min = 1, max = 5 },
 				{ class = "AmcoinLedger", percent = 100, min = 5, max = 20 },
-				{ category = "RandomTent", percent = 10 },
+				--{ category = "RandomTent", percent = 10 },
 
 			},
 		},
@@ -4860,6 +4859,85 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "VendorShotgun", percent = 20 },
 				{ category = "VendorSMG", percent = 20 },
 			},	
+		},
+		
+		{
+			-- Will select a random themed inventory from the array.
+			category = "RandomVendorClothing",
+			classes =
+			{
+				{ category = "VendorClothingMilitary", percent = 35 },
+				{ category = "VendorClothingCivilian", percent = 65 },
+			},	
+		},
+		
+		{
+			category = "VendorClothingMilitary",
+			group =
+			{
+				-- If you use a category it must only spawn 1 item from it
+				-- For example, it can't spawn a weapon and ammo
+				{ category = "RandomVendorMilitaryJacket", percent = 100 },
+				{ category = "RandomVendorMilitaryJacket", percent = 100 },
+				{ category = "RandomVendorMilitaryJacket", percent = 100 },
+				{ category = "RandomCamoGloves", percent = 100 },
+				{ category = "RandomCamoFace", percent = 100 },
+				{ category = "RandomCamoFace", percent = 100 },
+				{ category = "RandomVendorCargoPants", percent = 100 },
+				{ category = "RandomVendorCargoPants", percent = 100 },
+				{ category = "RandomMilitaryShoes", percent = 100 },
+				{ category = "RandomMilitaryHelmet", percent = 20 },
+				{ category = "RandomMilitaryHelmet", percent = 20 },
+				{ category = "RandomMilitaryArmor", percent = 20 },
+				{ category = "RandomMilitaryArmor", percent = 20 },
+				{ category = "RandomPolicebodyArmor", percent = 20 },
+				{ category = "RandomTacticalVestPure", percent = 20 },
+				{ category = "RandomVendorBackpackMilitary", percent = 20 },
+				{ class = "SwatHelmet", percent = 20 },
+			},
+		},
+		
+		{
+			category = "VendorClothingCivilian",
+			group =
+			{
+				-- If you use a category it must only spawn 1 item from it
+				-- For example, it can't spawn a weapon and ammo
+				{ category = "RandomVendorCargoShorts", percent = 100 },
+				{ category = "RandomVendorCargoShorts", percent = 100 },
+				{ category = "RandomVendorWandererPants", percent = 100 },
+				{ category = "RandomVendorWandererPants", percent = 100 },
+				{ category = "RandomVendorRainJacket", percent = 100 },
+				{ category = "RandomVendorRainJacket", percent = 100 },
+				{ category = "RandomVendorPuffyJacket", percent = 100 },
+				{ category = "RandomVendorPuffyJacket", percent = 100 },
+				{ category = "RandomVendorShoes", percent = 100 },
+				{ category = "RandomVendorShoes", percent = 100 },
+				{ category = "RandomVendorLeatherJacket", percent = 100 },
+				{ category = "RandomVendorFace", percent = 100 },
+				{ category = "RandomVendorFace", percent = 100 },
+				{ category = "RandomVendorGloves", percent = 100 },
+				{ category = "RandomVendorGloves", percent = 100 },
+				{ category = "RandomBeanie", percent = 100 },
+				{ category = "RandomBeret", percent = 100 },
+				{ category = "RandomBeret", percent = 100 },
+				{ category = "RandomBikeHelmet", percent = 70 },
+				{ category = "RandomCowboyHat", percent = 100 },
+				{ category = "RandomFlexCap", percent = 100 },
+				{ category = "RandomFlexCap", percent = 100 },
+				{ category = "RandomMotorcycleHelmet", percent = 50 },
+				{ category = "RandomFootballHelmet", percent = 50 },
+				{ class = "DorfmanPacific", percent = 100 },
+				{ class = "WeldersMask", percent = 50 },
+				{ category = "RandomVendorWaist", percent = 100 },
+				{ category = "RandomVendorWaist", percent = 100 },
+				{ category = "RandomVendorSweater", percent = 100 },
+				{ category = "RandomVendorSweater", percent = 100 },
+				{ category = "RandomVendorHoodie", percent = 100 },
+				{ category = "RandomVendorHoodie", percent = 100 },
+				{ category = "RandomFootballPads", percent = 70 },
+				{ category = "RandomVendorBackpack", percent = 60 },
+			},
 		},
 
 		{
@@ -5134,6 +5212,353 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ class = "Bread", percent = 100 },
 			},
 		},
+		
+		{
+			category = "RandomVendorCargoShorts",
+			classes =
+			{
+				{ class = "CargoShortsBlack", percent = 6 },
+				{ class = "CargoShortsBlue", percent = 6 },
+				{ class = "CargoShortsBrightBlue", percent = 6 },
+				{ class = "CargoShortsBrightGreen", percent = 6 },
+				{ class = "CargoShortsBrightPink", percent = 6 },
+				{ class = "CargoShortsBrightRed", percent = 6 },
+				{ class = "CargoShortsBrown", percent = 6 },
+				{ class = "CargoShortsCamo1", percent = 7 },
+				{ class = "CargoShortsCamo2", percent = 7 },
+				{ class = "CargoShortsCamo3", percent = 6 },
+				{ class = "CargoShortsCamo4", percent = 7 },
+				{ class = "CargoShortsDarkGrey", percent = 6 },
+				{ class = "CargoShortsGreen", percent = 6 },
+				{ class = "CargoShortsGrey", percent = 7 },
+				{ class = "CargoShortsTan", percent = 6 },
+				{ class = "CargoShortsYellow", percent = 6 },
+			},
+		},
+		
+		{
+			category = "RandomVendorHoodie",
+			classes = 
+			{
+				{class = "Hoodie", percent = 4},
+				{class = "HoodieBlackGreyDesign1", percent = 4},
+				{class = "HoodieBlackWhiteDesign4", percent = 4},
+				{class = "HoodieBlueBlackDesign4", percent = 4},
+				{class = "HoodieBlueDesign2", percent = 3},
+				{class = "HoodieBlueWhiteDesign4", percent = 4},
+				{class = "HoodieCapitalMunch", percent = 3},
+				{class = "HoodieEagle", percent = 3},
+				{class = "HoodieGreenBlackDesign4", percent = 4},
+				{class = "HoodieGreenDesign2", percent = 3},
+				{class = "HoodieGreenWhiteDesign4", percent = 4},
+				{class = "HoodieGrey", percent = 3},
+				{class = "HoodieGreyDarkGreyDesign1", percent = 3},
+				{class = "HoodieOrangeBlackDesign4", percent = 3},
+				{class = "HoodiePinkDesign2", percent = 4},
+				{class = "HoodiePixel", percent = 3},
+				{class = "HoodiePixelBlackGreyDesign5", percent = 4},
+				{class = "HoodiePixelBlueBlackDesign5", percent = 3},
+				{class = "HoodiePixelGreenBlackDesign5", percent = 3},
+				{class = "HoodiePixelGreyBlueDesign5", percent = 3},
+				{class = "HoodiePixelGreyDesign5", percent = 4},
+				{class = "HoodiePixelGreyGreenDesign5", percent = 3},
+				{class = "HoodiePixelGreyOrangeDesign5", percent = 3},
+				{class = "HoodiePixelGreyRedDesign5", percent = 3},
+				{class = "HoodiePixelOrangeBlackDesign5", percent = 3},
+				{class = "HoodiePixelRedBlackDesign5", percent = 3},
+				{class = "HoodieRedBlackDesign4", percent = 3},
+				{class = "HoodieRedDesign2", percent = 3},
+				{class = "HoodieRedWhiteDesign4", percent = 3},
+				{class = "HoodieSerk", percent = 3},
+			},
+		},
+		
+		{
+			category = "RandomVendorFace",
+			classes =
+			{
+				{ class = "GasMask", percent = 4.5 },
+				{ class = "DustMask", percent = 4.5 },
+				{ class = "HeadSack", percent = 4.5 },
+				{ class = "HockeyMask", percent = 4.5 },
+				{ class = "HockeyMaskDp", percent = 4.5 },
+				{ class = "BalaclavaBlack", percent = 4.5 },
+				{ class = "BalaclavaGray", percent = 4.5 },
+				{ class = "BalaclavaGreen", percent = 4.5 },
+				{ class = "BalaclavaPink", percent = 4.5 },
+				{ class = "BalaclavaYellow", percent = 4.5 },
+				{ class = "BandanaBlack", percent = 4.5 },
+				{ class = "BandanaBrown", percent = 4.5 },
+				{ class = "BandanaCamo1", percent = 4.5 },
+				{ class = "BandanaCamo2", percent = 4.5 },
+				{ class = "BandanaCamo3", percent = 4.5 },
+				{ class = "BandanaCamo4", percent = 4.5 },
+				{ class = "BandanaGray", percent = 4.5 },
+				{ class = "BandanaGreen", percent = 4.5 },
+				{ class = "BandanaKhaki", percent = 4.5 },
+				{ class = "BandanaOrange", percent = 4.5 },
+				{ class = "BandanaPink", percent = 4.5 },
+				{ class = "BandanaRed", percent = 5.5 },
+			},
+		},
+		
+		{
+			category = "RandomVendorSweater",
+			classes = 
+			{
+				{ class = "Sweater", percent = 10 },
+				{ class = "SweaterBlack", percent = 15 },
+				{ class = "SweaterBlue", percent = 15 },
+				{ class = "SweaterGreen", percent = 15 },
+				{ class = "SweaterOrange", percent = 15 },
+				{ class = "SweaterPink", percent = 15 },
+				{ class = "SweaterRed", percent = 15 },
+			}
+		},
+		
+		{
+			category = "RandomVendorGloves",
+			classes =
+			{
+				{ class = "WoolGlovesBlack", percent = 15 },
+				{ class = "WoolGlovesBlue", percent = 20 },
+				{ class = "WoolGlovesBrown", percent = 20 },
+				{ class = "WoolGlovesGreen", percent = 10 },
+				{ class = "WoolGlovesCamo1", percent = 5 },
+				{ class = "WoolGlovesCamo2", percent = 5 },
+				{ class = "WoolGlovesCamo3", percent = 5 },
+				{ class = "WoolGlovesCamo4", percent = 5 },
+				{ class = "WoolGlovesWhite", percent = 15 },
+			},
+		},
+		
+		{
+			category = "RandomVendorBackpack",
+			classes =
+			{
+				{ class = "RuggedPack", percent = 5.5 },
+				{ class = "RuggedPackBlack", percent = 4.5 },
+				{ class = "RuggedPackBrown", percent = 4.5 },
+				{ class = "RuggedPackCamo1", percent = 4.5 },
+				{ class = "RuggedPackCamo2", percent = 4.5 },
+				{ class = "RuggedPackCamo3", percent = 4.5 },
+				{ class = "RuggedPackCamo4", percent = 4.5 },
+				{ class = "RuggedPackGreen", percent = 4.5 },
+				{ class = "RuggedPackGreenCamo1", percent = 4.5 },
+				{ class = "RuggedPackGreenCamo2", percent = 4.5 },
+				{ class = "RuggedPackGreenCamo3", percent = 4.5 },
+				{ class = "RuggedPackGreenCamo4", percent = 4.5 },
+				{ class = "StowPackBlack", percent = 4.5 },
+				{ class = "StowPackBlue", percent = 4.5 },
+				{ class = "StowPackGreen", percent = 4.5 },
+				{ class = "StowPackOrange", percent = 4.5 },
+				{ class = "StowPackPink", percent = 4.5 },
+				{ class = "StowPackPurple", percent = 4.5 },
+				{ class = "StowPackRed", percent = 4.5 },
+				{ class = "StowPackWhite", percent = 4.5 },
+				{ class = "StowPackYellow", percent = 4.5 },
+				{ class = "RuckSack", percent = 4.5 },
+			},
+		},
+		
+		{
+			category = "RandomVendorBackpackMilitary",
+			classes =
+			{
+				{ class = "DuffelBag", percent = 6 },
+				{ class = "DuffelBagBlack", percent = 6 },
+				{ class = "DuffelBagGreen", percent = 6 },
+				{ class = "DuffelBagGreenCamo1", percent = 6 },
+				{ class = "DuffelBagGreenCamo2", percent = 6 },
+				{ class = "DuffelBagGreenCamo3", percent = 7 },
+				{ class = "DuffelBagGreenCamo4", percent = 7 },
+				{ class = "DuffelBagTanCamo1", percent = 7 },
+				{ class = "DuffelBagTanCamo2", percent = 7 },
+				{ class = "DuffelBagTanCamo3", percent = 7 },
+				{ class = "DuffelBagTanCamo4", percent = 7 },
+				{ class = "DuffelBagUrbanCamo1", percent = 7 },
+				{ class = "DuffelBagUrbanCamo2", percent = 7 },
+				{ class = "DuffelBagUrbanCamo3", percent = 7 },
+				{ class = "DuffelBagUrbanCamo4", percent = 7 },
+			},
+		},
+		
+		{
+			category = "RandomVendorWaist",
+			classes =
+			{
+				{ class = "FannyPackBlack", percent = 9 },
+				{ class = "FannyPackBlueOrange", percent = 9 },
+				{ class = "FannyPackCamo1", percent = 8 },
+				{ class = "FannyPackCamo2", percent = 8 },
+				{ class = "FannyPackCamo3", percent = 8 },
+				{ class = "FannyPackGray", percent = 9 },
+				{ class = "FannyPackGreenGray", percent = 9 },
+				{ class = "FannyPackMaroonGray", percent = 8 },
+				{ class = "FannyPackPurplePink", percent = 8 },
+				{ class = "FannyPackRed", percent = 8 },
+				{ class = "FannyPackRedBlue", percent = 8 },
+				{ class = "FannyPackYellow", percent = 8 },
+			},
+		},
+		
+		{
+			category = "RandomVendorLeatherJacket",
+			classes =
+			{
+				{ class = "LeatherJacketBrown", percent = 25},
+				{ class = "LeatherJacketBlack", percent = 25},
+				{ class = "LeatherJacketYellow", percent = 25},
+				{ class = "LeatherJacketRed", percent = 25},
+			},
+		},
+		
+		{
+			category = "RandomVendorPuffyJacket",
+			classes =
+			{
+				{ class = "PuffyJacketEaster", percent = 0.5 },
+				{ class = "PuffyJacketGold", percent = 1.0 },
+				{ class = "PuffyJacketSilver", percent = 1 },
+				{ class = "PuffyJacketAmerica", percent = 1 },
+				{ class = "PuffyJacketCanada", percent = 1 },
+				{ class = "PuffyJacketCamo1", percent = 4 },
+				{ class = "PuffyJacketCamo2", percent = 4 },
+				{ class = "PuffyJacketCamo3", percent = 4 },
+				{ class = "PuffyJacketWhiteCamo1", percent = 4 },
+				{ class = "PuffyJacketBlack", percent = 4.5 },
+				{ class = "PuffyJacketBlueWhite", percent = 5 },
+				{ class = "PuffyJacketGreenWhite", percent = 5 },
+				{ class = "PuffyJacketGrey", percent = 5 },
+				{ class = "PuffyJacketGreyBlack", percent = 5 },
+				{ class = "PuffyJacketGreyBlack2", percent = 5 },
+				{ class = "PuffyJacketKaki", percent = 5 },
+				{ class = "PuffyJacketOrangeGreen", percent = 5 },
+				{ class = "PuffyJacketOrangeTeal", percent = 5 },
+				{ class = "PuffyJacketOrangeWhite", percent = 5 },
+				{ class = "PuffyJacketPinkWhite", percent = 6 },
+				{ class = "PuffyJacketPurpleFushia", percent = 6 },
+				{ class = "PuffyJacketRedBlue", percent = 6 },
+				{ class = "PuffyJacketRedWhite", percent = 6 },
+				{ class = "PuffyJacketWhite", percent = 6 },
+			},
+		},
+		
+		{
+			category = "RandomVendorWandererPants",
+			classes =
+			{
+				{ class = "WandererPantsBlack", percent = 17 },
+				{ class = "WandererPantsBlue", percent = 17 },
+				{ class = "WandererPantsBrown", percent = 17 },
+				{ class = "WandererPantsGreen", percent = 17 },
+				{ class = "WandererPantsRed", percent = 16 },
+				{ class = "WandererPantsTan", percent = 16 },
+			},
+		},
+		
+		{
+			category = "RandomVendorShoes",
+			classes =
+			{
+				{ class = "HitopsBlack", percent = 5 },
+				{ class = "HitopsBlue", percent = 5 },
+				{ class = "HitopsGreen", percent = 5 },
+				{ class = "HitopsPink", percent = 5 },
+				{ class = "HitopsPurple", percent = 5 },
+				{ class = "HitopsRed", percent = 5 },
+				{ class = "HitopsYellow", percent = 5 },
+				{ class = "Sneakers", percent = 5 },
+				{ class = "SneakersBlack", percent = 4 },
+				{ class = "SneakersBlackBlue", percent = 4 },
+				{ class = "SneakersBlackGreen", percent = 4 },
+				{ class = "SneakersBlackPink", percent = 4 },
+				{ class = "SneakersBlackRed", percent = 4 },
+				{ class = "SneakersBlueBlack", percent = 4 },
+				{ class = "SneakersBrown", percent = 4 },
+				{ class = "SneakersGreenBlack", percent = 4 },
+				{ class = "SneakersPinkBlack", percent = 4 },
+				{ class = "SneakersRedBlack", percent = 4 },
+				{ class = "SneakersSilver", percent = 4 },
+				{ class = "SneakersWhite", percent = 4 },
+				{ class = "SneakersWhiteBlue", percent = 4 },
+				{ class = "SneakersWhiteGreen", percent = 4 },
+				{ class = "SneakersWhitePink", percent = 4 },
+			},
+		},
+		
+		{
+			category = "RandomVendorCargoPants",
+			classes =
+			{
+				{ class = "CargoPantsBlack", percent = 7 },
+				{ class = "CargoPantsCamo1", percent = 7 },
+				{ class = "CargoPantsCamo2", percent = 7 },
+				{ class = "CargoPantsCamo3", percent = 7 },
+				{ class = "CargoPantsCamo4", percent = 6 },
+				{ class = "CargoPantsGreen", percent = 7 },
+				{ class = "CargoPantsGreenCamo1", percent = 7 },
+				{ class = "CargoPantsGreenCamo2", percent = 7 },
+				{ class = "CargoPantsGreenCamo3", percent = 7 },
+				{ class = "CargoPantsGreenCamo4", percent = 6 },
+				{ class = "CargoPantsTan", percent = 7 },
+				{ class = "CargoPantsUrbanCamo1", percent = 6 },
+				{ class = "CargoPantsUrbanCamo2", percent = 6 },
+				{ class = "CargoPantsUrbanCamo3", percent = 7 },
+				{ class = "CargoPantsUrbanCamo4",percent = 6 },
+			},
+		},
+		
+		{
+			category = "RandomVendorRainJacket",
+			classes =
+			{
+				{ class = "RainJacketBlack", percent = 5},
+				{ class = "RainJacketBlue", percent = 5},
+				{ class = "RainJacketBlueGrey", percent = 5},
+				{ class = "RainJacketCamo1", percent = 5},
+				{ class = "RainJacketCamo2", percent = 5},
+				{ class = "RainJacketCamo3", percent = 5},
+				{ class = "RainJacketDarkGrey", percent = 5},
+				{ class = "RainJacketGreen", percent = 5},
+				{ class = "RainJacketGreenGrey", percent = 5},
+				{ class = "RainJacketGrey", percent = 5},
+				{ class = "RainJacketGreyBlack", percent = 5},
+				{ class = "RainJacketKaki", percent = 5},
+				{ class = "RainJacketLightDarkGrey", percent = 5},
+				{ class = "RainJacketMarine", percent = 5},
+				{ class = "RainJacketOrangeBlue", percent = 5},
+				{ class = "RainJacketPinkPurple", percent = 5},
+				{ class = "RainJacketRed", percent = 5},
+				{ class = "RainJacketRedBlue", percent = 5},
+				{ class = "RainJacketRedGrey", percent = 5},
+				{ class = "RainJacketYellow", percent = 5},
+				
+			},
+		},
+		
+		{
+			category = "RandomVendorMilitaryJacket",
+			classes = 
+			{
+				{ class = "MilitaryJacketBlack", percent = 6 },
+				{ class = "MilitaryJacketGreen", percent = 7 },
+				{ class = "MilitaryJacketGreenCamo1", percent = 6 },
+				{ class = "MilitaryJacketGreenCamo2", percent = 6 },
+				{ class = "MilitaryJacketGreenCamo3", percent = 6 },
+				{ class = "MilitaryJacketGreenCamo4", percent = 6 },
+				{ class = "MilitaryJacketTan", percent = 7 },
+				{ class = "MilitaryJacketTanCamo1", percent = 7 },
+				{ class = "MilitaryJacketTanCamo2", percent = 7 },
+				{ class = "MilitaryJacketTanCamo3", percent = 7 },
+				{ class = "MilitaryJacketTanCamo4", percent = 7 },
+				{ class = "MilitaryJacketUrbanCamo1", percent = 7 },
+				{ class = "MilitaryJacketUrbanCamo2", percent = 7 },
+				{ class = "MilitaryJacketUrbanCamo3", percent = 7 },
+				{ class = "MilitaryJacketUrbanCamo4", percent = 7 },
+			},
+		},
+		
 		
 		{
 			category = "RandomEpicWeaponTrader",

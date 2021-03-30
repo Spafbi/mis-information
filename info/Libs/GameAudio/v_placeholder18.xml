@@ -1,0 +1,31 @@
+<ATLConfig atl_name="v_placeholder18">
+  <AudioTriggers>
+    <ATLTrigger atl_name="Play_placeholder18_bump">
+      <WwiseEvent wwise_name="Play_atv_bump_on_road" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_damage">
+      <WwiseEvent wwise_name="Play_atv_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_horn">
+      <WwiseEvent wwise_name="Play_atv_horn" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_run">
+      <WwiseEvent wwise_name="Play_atv_run_ambience" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_slip">
+      <WwiseEvent wwise_name="Play_atv_slip" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_start">
+      <WwiseEvent wwise_name="Play_atv_start" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Play_placeholder18_stop">
+      <WwiseEvent wwise_name="Play_atv_stop" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder18_damage">
+      <WwiseEvent wwise_name="Stop_atv_damage" />
+    </ATLTrigger>
+    <ATLTrigger atl_name="Stop_placeholder18_horn">
+      <WwiseEvent wwise_name="Stop_atv_horn" />
+    </ATLTrigger>
+  </AudioTriggers>
+</ATLConfig>
