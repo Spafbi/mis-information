@@ -431,8 +431,8 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			{
 				{ category = "Map", percent = 10 },
 				{ class = "AmcoinLedger", percent = 15, min = 1, max = 3},
-				{ category = "RandomConsumable", percent = 20 },
-				{ category = "RandomConsumable", percent = 20 },
+				{ category = "RandomVeggie", percent = 10 },
+				{ category = "RandomVeggie", percent = 10 },
 				{ category = "RandomAccessory", percent = 2 },
 				--{ category = "RandomEggs", percent = 10 },-- disabled until easter event
 			},
@@ -453,10 +453,10 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomBruteLoot",
 			group =
 			{
-				{ category = "RandomConsumable", percent = 100 },
+				{ category = "RandomVeggie", percent = 100 },
 				{ category = "RandomCraftingGuide", percent = 30 },
 				{ category = "RandomAmmo", percent = 100 },
-				{ category = "RandomGnome", percent = 25 },
+				--{ category = "RandomGnome", percent = 25 },--
 				{ class = "AmcoinLedger", percent = 10, min = 1, max = 5},
 				{category = "RandomAccessory", percent = 3 },
 				{category = "RandomArmorTier2", percent = 20 },
@@ -483,7 +483,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			{
 				{ category = "RandomCraftingGuide", percent = 25 },
 				{ class = "AmcoinLedger", percent = 20, min = 1, max = 5},
-				{ category = "RandomConsumable", percent = 100 },
+				{ category = "RandomVeggie", percent = 100 },
 				{ category = "RandomAmmo", percent = 100 },
 				{ category = "RandomAccessory", percent = 2 },
 				{ category = "RandomArmorTier3", percent = 20 },
@@ -550,7 +550,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 				{ category = "RandomClothes", percent = 3 },
 				{ category = "RandomCrafting", percent = 1 },
 				{ category = "RandomFlashlight", percent = 1 },
-				{ category = "RandomConsumable", percent = 8, min = 1, max = 2 },
+				--{ category = "RandomConsumable", percent = 8, min = 1, max = 2 },-- Disabled for easter
 				{ category = "RandomMaintenance", percent = 2 },
 				{ category = "RandomMedical", percent = 2 },
 				{category = "RandomArmorTier2", percent = 2 },
