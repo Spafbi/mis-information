@@ -282,7 +282,9 @@ AISpawnerManager = {
 			pack = true, min = 1, max = 3,
 			classes =
 			{
-				{ category = "DeerSingle", percent = 100 }
+				{ category = "DeerSingle", percent = 70 },
+				{ category = "Donkey",     percent = 20 },
+				{ category = "Ram",        percent = 10 },
 			},
 		},
 

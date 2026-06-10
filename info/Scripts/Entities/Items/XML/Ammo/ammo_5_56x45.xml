@@ -24,7 +24,7 @@
 		<param name="mass" value="0.0041" /> <!-- 63 grain / 4.1 grams -->
 		<param name="speed" value="936" /> <!-- 1796J energy -->
 		<param name="radius" value="0.0029" /> <!-- 5.7mm diameter -->
-		<param name="air_resistance" value="1.4133" />
+		<param name="air_resistance" value="0.90" />
 		<param name="water_resistance" value="10.0" />
 		<param name="gravity" value="0, 0, -9.81" />
 		<param name="water_gravity" value="0, 0, -9.81" />

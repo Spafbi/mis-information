@@ -233,7 +233,7 @@ safezone:				true if usable in safezones as well (defaults to false) - damagesca
 			safezone = true,
 		},
 		{
-			text = "drink_dirty_water",
+			text = "@drink_dirty_water",
 			fail = "@drink_water_contaminated",
 			surface = { "mat_irradiated_water" },
 			sound = "Play_drinkStream_waterScoop",
@@ -2100,7 +2100,61 @@ safezone:				true if usable in safezones as well (defaults to false) - damagesca
 			safezone = true,
 		},
 
-		-- more ideas: nothing atm
+		--------------------------------------------------
+		-- Search Wooden Barrel
+		--------------------------------------------------
+		{
+			text = "@search",
+			fail = "@nothing_was_found",
+			model = {
+				"Objects/props/woodenBarrel/woodenBarrel.cgf",
+				"Objects/props/maritime/wooden_barrel/wooden_bucket_a.cgf",
+				"Objects/props/maritime/wooden_barrel/wooden_bucket_b.cgf",
+				"Objects/props/maritime/wooden_barrel/wooden_bucket_c.cgf",
+			},
+			sound = "Play_pickup_metal",
+			uses = 1,
+			regenerate = 240,
+			percentage = 20,
+			spawn = "RandomConsumable",
+			safezone = true,
+		},
+
+		--------------------------------------------------
+		-- Search Lobster Cage
+		--------------------------------------------------
+		{
+			text = "@search",
+			fail = "@nothing_was_found",
+			model = {
+				"Objects/props/maritime/lobster_cage/lobster_cage.cgf",
+			},
+			sound = "Play_pickup_metal",
+			uses = 1,
+			regenerate = 360,
+			percentage = 40,
+			spawn = "ClamSingle",
+			safezone = true,
+		},
+
+		--------------------------------------------------
+		-- Search Shopping Cart
+		--------------------------------------------------
+		{
+			text = "@search",
+			fail = "@nothing_was_found",
+			model = {
+				"Objects/props/shopping_cart/shopping_cart.cgf",
+				"Objects/props/shopping_cart/shopping_cart_folded.cgf",
+			},
+			sound = "Play_pickup_metal",
+			uses = 1,
+			regenerate = 150,
+			percentage = 15,
+			spawn = "RandomTrashContent",
+			safezone = true,
+		},
+
 	}
 }
 

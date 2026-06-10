@@ -400,22 +400,23 @@
 	</Seats>
 
 	<MovementParams> <!-- steerSpeed = top speed steering speed, steerSpeedMin = stationary steering speed -->
-		<ArcadeWheeled steerSpeed="70" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="33" steerRelaxation="500" vMaxSteerMax="30" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="0.5">
+		<ArcadeWheeled steerSpeed="50" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="33" steerRelaxation="400" vMaxSteerMax="30" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="0.5">
 			<Handling>  <!-- v0SteerMax = stationary max angle in degrees, kvSteerMax = reduction amount in degrees when vehicle reaches vMaxSteerMax speed -->
-				<Power acceleration="5" decceleration="1" topSpeed="11" reverseSpeed="10"/> <!-- Decceleration is off-pedal slow rate -->
-				<WheelSpin grip1="10" grip2="15" gripRecoverSpeed="0.5" accelMultiplier1="2.0" accelMultiplier2="1"/>
-				<HandBrake decceleration="20" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="3.0" backFrictionScale="0.8" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
+				<Power acceleration="6" decceleration="1" topSpeed="11" reverseSpeed="10"/> <!-- Decceleration is off-pedal slow rate -->
+				<WheelSpin grip1="2.0" grip2="3.5" gripRecoverSpeed="0.5" accelMultiplier1="1.5" accelMultiplier2="0.5"/>
+				<HandBrake decceleration="15" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="1.5" backFrictionScale="0.8" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
 				<SpeedReduction reductionAmount="0.2" reductionRate="2"/> <!-- slow vehicle when turning -->
-				<Friction back="6" front="6" offset="-2.0"/>
-				<Correction lateralSpring="1" angSpring="1"/> <!-- Higher number will cause vehicle to respond more quickly to turning inputs -->
+				<Friction back="4.5" front="5.0" offset="-1.5"/>
+				<Correction lateralSpring="0.6" angSpring="0.5"/> <!-- Higher number will cause vehicle to respond more quickly to turning inputs -->
 				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
 				<Inertia radius="4"/> <!-- General physics feel, size, roll, weight of vehicle -->
+				<Weather gripScale="0.7" frictionScale="0.75" windResistance="0.35" engineScale="0.65" />
 			</Handling>
 			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
 				<Ratios>
-					<Ratio value="0.5"/>
-					<Ratio value="0.8"/>
-					<Ratio value="0.95"/>
+					<Ratio value="0.45"/>
+					<Ratio value="0.7"/>
+					<Ratio value="0.9"/>
 				</Ratios>
 			</FakeGears>
 			<WheeledLegacy damping="0.01" engineIdleRPM="500" engineMaxRPM="3000" engineMinRPM="500" stabilizer="0" maxTimeStep="0.02" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>
@@ -452,9 +453,9 @@
 			<DamageEffect name="BlownTirePFX" helper="" effect="vehicles.Common.Ground.Blown_Tire" gravityDirection="0,0,1"/>
 		</DamageEffects>
 		<EnvironmentLayers>
-			<EnvironmentLayer 
-					minSpeed="5"  minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
-					maxSpeed="12" maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
+			<EnvironmentLayer
+					minSpeed="5"  minSpeedSizeScale="0.4" minSpeedCountScale="0.4" minSpeedSpeedScale="0.5"
+					maxSpeed="12" maxSpeedSizeScale="0.85" maxSpeedCountScale="0.85" maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels>
@@ -489,9 +490,9 @@
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
 			</EnvironmentLayer>-->
-			<EnvironmentLayer name="rims" 
-					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
-					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
+			<EnvironmentLayer name="rims"
+					minSpeed="3"  minSpeedSizeScale="0.2" minSpeedCountScale="0.2" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="0.85"  maxSpeedCountScale="0.85"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>

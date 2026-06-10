@@ -46,6 +46,7 @@
 
 	<ai>
 		<param name="bKytheraEnabled" value="1"/>
+		<param name="bRadiationBuff" value="1"/>
 		<param name="esKytheraProfile" value="Spiker"/>
 	</ai>
 

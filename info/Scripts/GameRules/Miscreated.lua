@@ -1,3 +1,4 @@
+Script.ReloadScript("Scripts/Spawners/HolidayManager.lua")
 Script.ReloadScript("scripts/gamerules/GameRulesUtils.lua");
 
 Miscreated = {
@@ -13,6 +14,7 @@ GameRulesSetStandardFuncs(Miscreated);
 
 function Miscreated.Server:OnInit()
 	self:CreateWorldEventTimer()
+	HolidayManager.StartPolling()
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -25,35 +27,24 @@ function Miscreated:CreateWorldEventTimer()
 end
 
 SpawnWorldEvent = function(self)
-	--Log("Miscreated:SpawnWorldEvent")
+    local holiday  = HolidayManager.GetActiveHoliday()
+    local rnd      = random(1, 10)
+    local eventName
 
-	local eventName
-	local rnd = random(1, 10)
+    if holiday == "halloween" then
+        eventName = (rnd <= 7) and "AirPlaneCrash" or "UFOCrash"
+    elseif holiday == "christmas" then
+        eventName = (rnd <= 5) and "AirDropChristmas" or "AirPlaneCrash"
+    else
+        eventName = (rnd <= 5) and "AirDropPlane" or "AirPlaneCrash"
+    end
 
-	if rnd <= 5 then
-		eventName = "AirDropPlane"
-	else
-		eventName = "AirPlaneCrash"	
-	--elseif rnd <= 9 then
-		--eventName = "AirPlaneCrash"
-	--else
-		--eventName = "UFOCrash"
-		--eventName = "AirDropChristmas"
-	end
+    local spawnParams = { class = eventName, name = eventName }
+    if not System.SpawnEntity(spawnParams) then
+        Log("Miscreated:SpawnWorldEvent - entity could not be spawned")
+    end
 
-	local spawnParams = {}
-	spawnParams.class = eventName
-	spawnParams.name = spawnParams.class
-
-	--Log("Miscreated:SpawnWorldEvent - Spawning Event")
-	local spawnedEntity = System.SpawnEntity(spawnParams)
-
-	if not spawnedEntity then
-		Log("Miscreated:SpawnWorldEvent - entity could not be spawned")
-	end
-
-	-- set timer up for the next world event
-	self:CreateWorldEventTimer()
+    self:CreateWorldEventTimer()
 end
 
 ----------------------------------------------------------------------------------------------------

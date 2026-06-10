@@ -911,22 +911,23 @@
 	</Seats>
 
 	<MovementParams> <!-- steerSpeed = top speed steering speed, steerSpeedMin = stationary steering speed -->
-		<ArcadeWheeled steerSpeed="15" steerSpeedMin="30" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="33" steerRelaxation="100" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="1" engineIgnitionTime="1.25">
+		<ArcadeWheeled steerSpeed="15" steerSpeedMin="30" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="33" steerRelaxation="80" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="1" engineIgnitionTime="1.25">
 			<Handling>
-				<Power acceleration="5" decceleration="0.001" topSpeed="15" reverseSpeed="12"/> <!-- Decceleration is off-pedal slow rate -->
+				<Power acceleration="5" decceleration="1.5" topSpeed="15" reverseSpeed="8"/> <!-- Decceleration is off-pedal slow rate -->
 				<WheelSpin grip1="2" grip2="3" gripRecoverSpeed="0.5" accelMultiplier1="1" accelMultiplier2="0.2"/>
-				<HandBrake decceleration="12" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="2" backFrictionScale="0.8" angCorrectionScale="6"/> <!-- Also applies for standard brake (S) -->
+				<HandBrake decceleration="12" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="1.5" backFrictionScale="0.8" angCorrectionScale="6"/> <!-- Also applies for standard brake (S) -->
 				<SpeedReduction reductionAmount="0.2" reductionRate="1"/> <!-- Slow vehicle when turning -->
-				<Friction back="3.2" front="4" offset="-2"/>
-				<Correction lateralSpring="0.45" angSpring="0.25"/> <!-- Higher number will cause vehicle to respond more quickly to turning inputs -->
+				<Friction back="4.5" front="5.0" offset="-1.5"/>
+				<Correction lateralSpring="0.6" angSpring="0.45"/> <!-- Higher number will cause vehicle to respond more quickly to turning inputs -->
 				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
 				<Inertia radius="7"/> <!-- General physics feel, size, roll, weight of vehicle -->
+				<Weather gripScale="0.9" frictionScale="0.95" windResistance="0.5" engineScale="0.8" />
 			</Handling>
 			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
 				<Ratios>
 					<Ratio value="0.5"/>
-					<Ratio value="0.8"/>
-					<Ratio value="0.95"/>
+					<Ratio value="0.75"/>
+					<Ratio value="0.9"/>
 				</Ratios>
 			</FakeGears>
 			<WheeledLegacy damping="0.01" engineIdleRPM="500" engineMaxRPM="3000" engineMinRPM="500" stabilizer="0" maxTimeStep="0.02" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>

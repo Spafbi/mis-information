@@ -52,6 +52,7 @@
 				<param name="damage" value="0"/> <!-- not used - ammo param -->
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
+				<param name="tube_capacity" value="8"/>
 				<param name="knocks_target" value=""/> <!-- not used - ammo param -->
 				<param name="min_damage_for_knockDown" value=""/> <!-- not used - ammo param -->
 				<param name="min_damage_for_knockDown_leg" value=""/> <!-- not used - ammo param -->
@@ -115,6 +116,11 @@
 			<shotgun>
 				<param name="spread" value="1.0"/> <!-- Defined in accessory below -->
 				<param name="fully_automated" value="1"/>
+				<param name="spread_crouch_m" value="0.8"/>
+				<param name="spread_jump_m" value="1.4"/>
+				<param name="spread_speed_m" value="1.15"/>
+				<param name="spread_ironsight_m" value="0.6"/>
+				<param name="spread_holdbreath_m" value="0.4"/>
 			</shotgun>
 		</firemode>
 
@@ -170,7 +176,7 @@
 				<param name="crouchScale" value=""/>
 				<param name="proneScale" value=""/>
 			</zoomSway>
-			<spreadMod> <!-- This whole block doesn't seem to work! -->
+			<spreadMod> <!-- CRecoil spread - zeroed for shotguns. Pellet spread uses <shotgun> block instead -->
 				<param name="min_mod" value="0.001"/>
 				<param name="max_mod" value="0.1"/>
 				<param name="attack_mod" value="1.2"/>
@@ -328,7 +334,7 @@
 			<location category="primary"/>
 		</locations>
 		<types>
-			<type category="mag_12gauge" capacity="1"/>
+			<type category="mag_12gauge" capacity="1" hidden="1"/>
 			<type category="barrel_right" capacity="1" visible="1"/>
 		</types>
 	</storage>

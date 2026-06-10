@@ -9,8 +9,10 @@
 	<Class name="armored_truck_army" policy="car" own="own"/>
 	<Class name="armored_truck_police" policy="car" own="own"/>
 	<Class name="bicycle" policy="car" own="own"/>
+	<Class name="bicycle2" policy="car" own="own"/>
 	<Class name="beetle" policy="car" own="own"/>
 	<Class name="dirtbike" policy="car" own="own"/>
+	<Class name="dirtbike2" policy="car" own="own"/>
 	<Class name="dune_buggy" policy="car" own="own"/>
 	<Class name="f100truck" policy="car" own="own"/>
 	<Class name="fishing_boat" policy="car" own="own"/>

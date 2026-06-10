@@ -240,7 +240,7 @@
 			<location category="primary"/>
 		</locations>
 		<types> <!-- Categories cannot be longer than 14 char! -->
-			<type category="grenade_mag" capacity="1"/>
+			<type category="grenade_mag" capacity="1" hidden="1"/>
 		</types>
 	</storage>
 

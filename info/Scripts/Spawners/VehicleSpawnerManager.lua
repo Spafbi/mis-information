@@ -81,23 +81,7 @@ VehicleSpawnerManager = {
 			category = "bicycle",
 			classes =
 			{
-				{
-					-- All bicycle spawners now just spawn a quadbike
-					class = "quadbike", contents = "RandomQuadBikeContents",
-					skins =
-					{
-						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
-						{ name = "Quadbike_Black", percent = 11.0 },
-						{ name = "Quadbike_Blue", percent = 11.0 },
-						{ name = "Quadbike_Green", percent = 11.0 },
-						{ name = "Quadbike_Orange", percent = 12.0 }, -- Default??
-						{ name = "Quadbike_Pink", percent = 11.0 },
-						{ name = "Quadbike_Purple", percent = 11.0 },
-						{ name = "Quadbike_Red", percent = 11.0 },
-						{ name = "Quadbike_White", percent = 11.0 },
-						{ name = "Quadbike_Yellow", percent = 11.0 },
-					},
-				},
+				{ class = "bicycle" },
 			},
 			initialMinVehicles = 10,
 			abandonedTimer = 21600,  -- six hours
@@ -112,23 +96,7 @@ VehicleSpawnerManager = {
 			category = "dirtbike",
 			classes =
 			{
-				{
-					-- All dirtbike spawners now just spawn a quadbike
-					class = "quadbike", contents = "RandomQuadBikeContents",
-					skins =
-					{
-						-- If the total doesn't equal 100% then the remainder will spawn with the default skin
-						{ name = "Quadbike_Black", percent = 11.0 },
-						{ name = "Quadbike_Blue", percent = 11.0 },
-						{ name = "Quadbike_Green", percent = 11.0 },
-						{ name = "Quadbike_Orange", percent = 12.0 }, -- Default??
-						{ name = "Quadbike_Pink", percent = 11.0 },
-						{ name = "Quadbike_Purple", percent = 11.0 },
-						{ name = "Quadbike_Red", percent = 11.0 },
-						{ name = "Quadbike_White", percent = 11.0 },
-						{ name = "Quadbike_Yellow", percent = 11.0 },
-					},
-				},
+				{ class = "dirtbike" },
 			},
 			initialMinVehicles = 4,
 			abandonedTimer = 21600,  -- six hours

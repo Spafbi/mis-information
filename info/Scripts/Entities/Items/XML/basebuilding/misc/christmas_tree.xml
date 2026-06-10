@@ -10,7 +10,7 @@
 		<param name="description" value="@christmas_treeDescription"/>
 	</params>
 
-	<base_part class="static" type="2999" name="christmas_tree" towable="1">
+	<base_part class="static" type="2999" name="christmas_tree" towable="1" tow_offset="0,-0.5,0.2">
 		<static filename="objects/natural/vegetation/Trees/christmas_tree/christmas_tree.cgf"/>
 		<envareas>
 			<envarea enabled="1" scaleEffectsFromCenter="1" bb1="-3.5,-3.5,-1" bb2="3.5,3.5,3.0" temperature="2" light="0.1"/>

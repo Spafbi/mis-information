@@ -122,13 +122,15 @@
 		<PrimaryProjectileInaccuracyDegrees type="float">0.0</PrimaryProjectileInaccuracyDegrees>
 		<PrimaryProjectileAmmoType type="string">ammo_rock_sml</PrimaryProjectileAmmoType>
 		<!-- PackMaxDistanceFromAlpha: If mutant is in a pack, will be removed from pack if more than this distance away from the alpha -->
-		<PackMaxDistanceFromAlpha type="float">30.0</PackMaxDistanceFromAlpha>
+		<PackMaxDistanceFromAlpha type="float">75.0</PackMaxDistanceFromAlpha>
 		<!-- Evasive approach currently limited to MutantDefaultBehavior. Affects behavior when players point guns at them -->
 		<EvasiveApproach type="bb">
 			<Probability type="float">0.4</Probability>
 			<ApproachDirectness type="float">0.9</ApproachDirectness>
 			<DirectionBias type="float">1.0</DirectionBias>
 		</EvasiveApproach>
+		<!-- DangerRating: Used by pack system to weight threat priority -->
+		<DangerRating type="float">3.0</DangerRating>
 	</Mutant>
 
 	<!-- Spiker variant is slower, but does more damage and sticks to current target more -->
@@ -223,6 +225,11 @@
 		<MeleeLungeDuration type="float">0.83</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
 		<PrimaryProjectileAmmoType type="string">ammo_rock_lge</PrimaryProjectileAmmoType>
+		<!-- Pack system attributes -->
+		<PackRoarRadius type="float">50.0</PackRoarRadius>
+		<PackMaxSize type="int">20</PackMaxSize>
+		<WaveSize type="int">3</WaveSize>
+		<DangerRating type="float">10.0</DangerRating>
 	</Brute>
 
 	<Deer id="110" inheritanceParent="100" type="bb">
@@ -231,6 +238,8 @@
 			<Visual type="bb">
 				<PrimaryFOV type="float">235.0</PrimaryFOV>
 				<SecondaryFOV type="float">300.0</SecondaryFOV>
+				<BasePerceptionScale type="float">1.0</BasePerceptionScale>
+				<ObjectQueryRate type="float">1.0</ObjectQueryRate>
 			</Visual>
 			<Audio type="bb">
 				<BasePerceptionScale type="float">1.0</BasePerceptionScale>
@@ -242,7 +251,7 @@
 		<DefaultBehavior type="string">DeerDefaultBehavior</DefaultBehavior>
 		<TargetSelector type="string">TS_DeerDefault</TargetSelector>
 		<CharacterType type="string">Deer</CharacterType>
-		<TargetFleeMaxPathLength type="float">100.0</TargetFleeMaxPathLength>
+		<TargetFleeMaxPathLength type="float">280.0</TargetFleeMaxPathLength>
 		<!-- Target Selection -->
 		<!-- TargetBiasMultiplier: Multiply target distance by this value, the lower the value, the more the current target will be preferred over closer targets -->
 		<TargetBiasMultiplier type="float">0.6</TargetBiasMultiplier>
@@ -277,6 +286,7 @@
 		<GroundObstacleHeightModifier type="float">1.0</GroundObstacleHeightModifier>
 		<BodyTargetSmoothingMaxDegrees type="float">90.0</BodyTargetSmoothingMaxDegrees>
 		<BodyTargetSmoothingDecayRate type="float">0.075</BodyTargetSmoothingDecayRate>
+		<VelocitySmoothingDecayRate type="float">0.0</VelocitySmoothingDecayRate>
 		<!-- Behavior -->
 		<DefaultBehavior type="string">WolfDefaultBehavior</DefaultBehavior>
 		<TargetSelector type="string">TS_WolfDefault</TargetSelector>
@@ -334,6 +344,21 @@
 		<MeleeLungeSpeed type="float">5.17</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.77</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
+		<!-- Territorial Patrol -->
+		<TerritoryRadius type="float">120.0</TerritoryRadius>
+		<PatrolSegmentLengthMin type="float">30.0</PatrolSegmentLengthMin>
+		<PatrolSegmentLengthMax type="float">60.0</PatrolSegmentLengthMax>
+		<WaypointPauseTimeMin type="float">5.0</WaypointPauseTimeMin>
+		<WaypointPauseTimeMax type="float">15.0</WaypointPauseTimeMax>
+		<!-- GrabHoldDuration: How long the Biter wolf holds onto prey -->
+		<GrabHoldDuration type="float">2.0</GrabHoldDuration>
+		<!-- PileOnConfidenceThreshold: Confidence above this triggers simultaneous pile-on attacks -->
+		<PileOnConfidenceThreshold type="float">0.75</PileOnConfidenceThreshold>
+		<!-- DistressHowlDamageThreshold: Single-hit damage above this triggers a distress howl -->
+		<DistressHowlDamageThreshold type="float">40.0</DistressHowlDamageThreshold>
+		<!-- PreyWeaknessAssessment: Distance bias for wounded prey targeting -->
+		<PreyWeaknessBiasHalfHealth type="float">0.7</PreyWeaknessBiasHalfHealth>
+		<PreyWeaknessBiasQuarterHealth type="float">0.4</PreyWeaknessBiasQuarterHealth>
 	</GreyWolf>
 
 	<MutantDog id="130" inheritanceParent="100" type="bb">
@@ -376,6 +401,7 @@
 		<MeleeLungeSpeed type="float">4.88</MeleeLungeSpeed>
 		<MeleeLungeDuration type="float">0.8</MeleeLungeDuration>
 		<MeleeLungeDamageEvent type="float">0.4</MeleeLungeDamageEvent>
+		<DangerRating type="float">1.0</DangerRating>
 	</MutantDog>
 
 	<Bear id="140" inheritanceParent="100" type="bb">

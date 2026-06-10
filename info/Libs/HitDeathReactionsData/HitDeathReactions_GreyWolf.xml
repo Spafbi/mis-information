@@ -54,6 +54,18 @@
 
 	<!-- HIT REACTIONS -->
 	<HitReactionParams>
+		<!-- Minor hit: damage < 25, no locomotion interrupt -->
+		<HitReactionParam manqReaction="0" metaTag="AI_HitReact_Small" maximumDamage="24.99" pauseAI="0" />
+
+		<!-- Major hit: damage >= 25, interrupt locomotion, 0.3s recovery via fragment -->
+		<HitReactionParam manqReaction="0" metaTag="AI_HitReact_Large" minimumDamage="25" pauseAI="1" />
+
+		<!-- Headshot: damage >= 25, interrupt locomotion, 0.5s recovery, set HeadshotStaggered -->
+		<HitReactionParam manqReaction="0" metaTag="AI_HitReact_Large" minimumDamage="25" pauseAI="1" AISignal="HeadshotStaggered">
+			<AllowedParts>
+				<Part value="Def_Head_jnt"/>
+			</AllowedParts>
+		</HitReactionParam>
 	</HitReactionParams>
 
 	<!-- DEATH REACTIONS -->

@@ -727,13 +727,6 @@
 									<material class="ScrapMetal" count="2" />
 								</materials>
 							</item>
-							<!-- Halloween -->
-
-							<item class="JackOLanternHelmet" time="5">
-								<materials>
-									<material class="Pumpkin" />
-								</materials>
-							</item>
 						</items>
 					</subcat>
 				</subcats>
@@ -1348,13 +1341,6 @@
 											<material class="AnimalFat" count="4"/>
 											<material class="Rope" />
 									 </materials>
-									</item>
-									<!-- Halloween -->
-									<item class="jack_o_lantern" time="5">
-										<materials>
-											<material class="Pumpkin" />
-											<material class="candle_animal_fat_small" />
-										</materials>
 									</item>
 									<item class="powered_work_light" time="5">
 										<materials>

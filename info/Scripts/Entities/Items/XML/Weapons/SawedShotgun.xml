@@ -50,6 +50,7 @@
 				<param name="damage" value="0"/> <!-- not used - ammo param -->
 				<param name="helper_tp" value="weapon_term"/>
 				<param name="bullet_chamber" value="1"/>
+				<param name="tube_capacity" value="4"/>
 				<param name="knocks_target" value=""/> <!-- not used - ammo param -->
 				<param name="min_damage_for_knockDown" value=""/> <!-- not used - ammo param -->
 				<param name="min_damage_for_knockDown_leg" value=""/> <!-- not used - ammo param -->
@@ -89,7 +90,7 @@
 					<hint x="0.1" y="0.2"/>
 				</hints>
 			</recoil>
-			<spread> <!-- This whole block doesn't seem to work! -->
+			<spread> <!-- CRecoil spread - zeroed for shotguns. Pellet spread uses <shotgun> block instead -->
 				<param name="min" value="0.0"/> <!-- Bullet spread is set to zero as the pellet spread is used. -->
 				<param name="max" value="0.0"/>
 				<param name="attack" value="0.0"/>
@@ -112,6 +113,12 @@
 			</reject>
 			<shotgun>
 				<param name="spread" value="1.0"/> <!-- not used, set in accessory below -->
+				<param name="spread_crouch_m" value="0.85"/>
+				<param name="spread_jump_m" value="1.6"/>
+				<param name="spread_speed_m" value="1.3"/>
+				<param name="spread_ironsight_m" value="0.8"/>
+				<param name="spread_holdbreath_m" value="0.6"/>
+				<param name="loadShellOnEndModes" value="1"/>
 			</shotgun>
 		</firemode>
 
@@ -119,6 +126,7 @@
 			<fire>
 				<param name="rate" value="50"/>
 				<param name="health_reduction_per_shot" value="1"/>
+				<param name="no_cock" value="0"/>
 			</fire>
 		</firemode>
 
@@ -161,7 +169,7 @@
 				<param name="crouchScale" value=""/>
 				<param name="proneScale" value=""/>
 			</zoomSway>
-			<spreadMod> <!-- This whole block doesn't seem to work! -->
+			<spreadMod> <!-- CRecoil spread - zeroed for shotguns. Pellet spread uses <shotgun> block instead -->
 				<param name="min_mod" value="0.001"/>
 				<param name="max_mod" value="0.1"/>
 				<param name="attack_mod" value="1.2"/>
@@ -312,7 +320,7 @@
 			<location category="any"/>
 		</locations>
 		<types>
-			<type category="12gauge_mag" capacity="1"/>
+			<type category="12gauge_mag" capacity="1" hidden="1"/>
 		</types>
 	</storage>
 

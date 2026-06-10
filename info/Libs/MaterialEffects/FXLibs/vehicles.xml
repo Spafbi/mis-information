@@ -27,6 +27,9 @@
 		<Particle>
 			<Name>vehicles.Common.Ground.Light.Grass</Name>
 		</Particle>
+		<Particle>
+			<Name userdata="slip">vehicles.Common.Ground.Slip_Grass</Name>
+		</Particle>
 		<Sound>
 			<Name>soil</Name>
 		</Sound>
@@ -58,6 +61,9 @@
 			<Name>vehicles.Common.Ground.Light.Rock</Name>
 		</Particle>
 		<Particle>
+			<Name userdata="slip">vehicles.Common.Ground.Slip_Road</Name>
+		</Particle>
+		<Particle>
 			<Name userdata="rims">vehicles.Common.Ground.Rim_Sparks</Name>
 		</Particle>
 		<Sound>
@@ -69,6 +75,9 @@
 		<Particle>
 			<Name>vehicles.Common.Ground.Light.Sand</Name>
 		</Particle>
+		<Particle>
+			<Name userdata="slip">vehicles.Common.Ground.Slip_Sand</Name>
+		</Particle>
 		<Sound>
 			<Name>soil</Name>
 		</Sound>
@@ -77,6 +86,9 @@
 	<Effect name="light_soil">
 		<Particle>
 			<Name>vehicles.Common.Ground.Light.Soil</Name>
+		</Particle>
+		<Particle>
+			<Name userdata="slip">vehicles.Common.Ground.Slip_Soil</Name>
 		</Particle>
 		<Sound>
 			<Name>soil</Name>

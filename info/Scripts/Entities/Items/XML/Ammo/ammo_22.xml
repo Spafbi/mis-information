@@ -22,7 +22,7 @@
 
 	<!-- https://en.wikipedia.org/wiki/.22_Long_Rifle -->
 	<physics type="particle">
-		<param name="mass" value="0.002" /> <!-- 32 grain / 2.1 grams -->
+		<param name="mass" value="0.002" /> <!-- 32 grain / 2.07 grams - hyper-velocity load (CCI Stinger-class) -->
 		<param name="speed" value="440" /> <!-- 191J energy -->
 		<param name="radius" value="0.0028" /> <!-- 5.7mm diameter -->
 		<param name="air_resistance" value="1.4133" />

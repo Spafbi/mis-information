@@ -76,6 +76,7 @@
   <idle_lastGrenade scopes="Weapon"/>
   <jump scopes="Torso1P+Weapon+Audio1+AttachmentTop+AttachmentBottom"/>
   <fire scopes="Torso1P+Torso3P+Weapon+Audio1+Audio2"/>
+  <fire_cock scopes="Torso1P+Torso3P+Weapon+Audio1+Audio2"/>
   <throw scopes="Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom">
    <Override tags="throwable+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
    <Override tags="chemlight+prone" scopes="FullBody3P+AimPose+Torso3P+Weapon+WeaponForceFeedback+Audio1+AttachmentTop+AttachmentBottom"/>
