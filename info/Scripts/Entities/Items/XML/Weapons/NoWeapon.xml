@@ -11,6 +11,10 @@
 
 	<MovementModifiers speedScaleTactical="1.0" speedScale="1.0" rotationScale="1.0"/>
 
+	<animPrecache>
+		<precache DBAFile="animations/human/male/weapons/nw/nw_3p.dba" thirdPerson="1"/>
+	</animPrecache>
+
 	<firemodes>
 		<firemode name="melee" type="Melee">
 			<melee>

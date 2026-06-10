@@ -160,7 +160,7 @@ Weather =
 --------------------------------------------------------------------------------------------
     {
       name="ClearSky",
-      probability=23, -- probabilities need to be 100 in total, everything over that will never get selected
+      probability=15, -- probabilities need to be 100 in total, everything over that will never get selected
       danger=-8,
       duration={15, 19},
       audio=
@@ -847,6 +847,7 @@ Weather =
         humidity=   {0.15,    0.1,    0.1,        },
         light=      {-0.2,    -0.1,               },
         temperature={-4,      -1,                 },
+        fog=        {0.3,     0,      0,          },
       },
       entities={
         {
@@ -905,6 +906,7 @@ Weather =
         humidity=   {0.2,     0.15,   0.1,        },
         light=      {-0.3,    -0.2,               },
         temperature={-4,      -1,                 },
+        fog=        {0.6,     0,      0,          },
       },
       entities={
         {
@@ -917,7 +919,15 @@ Weather =
           },
         },
       },
-      audio={},
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.1,
+        },
+      },
       tod=
       {
         [etod.PARAM_SUN_INTENSITY]=						{0.2, method=emix.MULTIPLY, min=100}, -- lux is logaritmic so half it by decreasing by factor 10
@@ -954,6 +964,7 @@ Weather =
         humidity=   {0.3,     0.2,    0.15,       },
         light=      {-0.4,    -0.25,              },
         temperature={-5,      -2,                 },
+        fog=        {1.0,     0,      0,          },
       },
       entities={
         {
@@ -966,7 +977,15 @@ Weather =
           },
         },
       },
-      audio={},
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.2,
+        },
+      },
       tod=
       {
         [etod.PARAM_SUN_INTENSITY]=						{0.2, method=emix.MULTIPLY, min=100}, -- lux is logaritmic so half it by decreasing by factor 10
@@ -1005,6 +1024,7 @@ Weather =
         humidity=   {0.4,     0.3,    0.2,        },
         light=      {-0.6,    -0.3,               },
         temperature={-9,      -6,                 },
+        fog=        {0.8,     0,      0,          },
       },
       entities={
         {
@@ -1130,9 +1150,9 @@ Weather =
         humidity=       {0.1,     0.1,    0.1,        },
         light=          {-0.2,    -0.1,               },
         temperature=    {2,       2,                  },
-        gas_radiation=  {0.332,      0.14,            },
-        rain_radiation= {0.31,      0.0,              },
-        ray_radiation= {0.112,       0.016,           },
+        gas_radiation=  {0.166,      0.07,            },
+        rain_radiation= {0.155,      0.0,              },
+        ray_radiation= {0.056,       0.008,           },
         geigercounter=  {2,        1.75,    0.0,    1  },
       },
       entities=
@@ -1239,9 +1259,9 @@ Weather =
         light=          {-0.4,    -0.25,              },
         temperature=    {10,      5,                  },
         physical=       {0.1,       0.025,              },
-        gas_radiation=  {1.0,       0.25,              },
-        rain_radiation= {0.80,       0.0,              },
-        ray_radiation= {0.40,       0.05,              },
+        gas_radiation=  {0.5,       0.125,              },
+        rain_radiation= {0.40,       0.0,              },
+        ray_radiation= {0.20,       0.025,              },
         geigercounter=  {3,        2.75,    0.0,    1  },
       },
       entities=
@@ -1390,9 +1410,9 @@ Weather =
         humidity=       {0.1,       0.1,    0.1,        },
         light=          {-0.2,      -0.1,               },
         temperature=    {2,             2,              },
-        gas_radiation=  {0.38,       0.08,              },
-        rain_radiation= {0.32,       0.0,              },
-        ray_radiation=  {0.21,       0.015,              },
+        gas_radiation=  {0.19,       0.04,              },
+        rain_radiation= {0.16,       0.0,              },
+        ray_radiation=  {0.105,       0.0075,              },
         geigercounter=  {1,        0.75,    0.0,    0.5  },
       },
       entities={
@@ -1506,9 +1526,10 @@ Weather =
         humidity=       {0.3,       0.2,    0.15,         },
         light=          {-0.4,      -0.25,                },
         temperature=    {-20,       -8,       -3,    -6   },
-        gas_radiation=  {0.0575,     0.012,                },
-        rain_radiation= {0.055,      0.012,                },
+        gas_radiation=  {0.02875,     0.006,                },
+        rain_radiation= {0.0275,      0.006,                },
         geigercounter=  {1,          0.75,    0.0,    1  },
+        blizzard=       {0.5,        0,       0,       0  },
       },
       entities={
         {
@@ -1582,10 +1603,11 @@ Weather =
         humidity=       {0.3,     0.2,    0.15,       },
         light=          {-0.4,    -0.25,              },
         temperature=    {-40,     -25,    -8,    -21  },
-        gas_radiation=  {0.75,     0.04,              },
-        rain_radiation= {0.65,     0.07,              },
-        ray_radiation=  {0.51,     0.015,              },
+        gas_radiation=  {0.375,     0.02,              },
+        rain_radiation= {0.325,     0.035,              },
+        ray_radiation=  {0.255,     0.0075,              },
         geigercounter=  {1.5,      0.75,    0.0,    1  },
+        blizzard=       {1.0,      0,       0,       0  },
       },
       entities={
         {
@@ -1723,9 +1745,9 @@ Weather =
         humidity=       {0.3,     0.2,    0.15,           },
         light=          {-0.4,    -0.25,                  },
         temperature=    {-30,     -8,    -3,    -17       },
-        gas_radiation=  {0.20,       0.02,                },
-        rain_radiation= {0.10,       0.03,                },
-        ray_radiation=  {0.08,       0.03,                },
+        gas_radiation=  {0.10,       0.01,                },
+        rain_radiation= {0.05,       0.015,                },
+        ray_radiation=  {0.04,       0.015,                },
         geigercounter=  {0.75,       0.75,    0.0,    1  },
       },
       entities={
@@ -1797,7 +1819,7 @@ Weather =
 --------------------------------------------------------------------------------------------
     {
       name="Snow",
-      probability=8,
+      probability=6,
       danger=15,
       dangerlimit=20,
       duration={10, 20},
@@ -2092,7 +2114,7 @@ Weather =
 --------------------------------------------------------------------------------------------
     {
       name="ClearSkyWindy",
-      probability=43, 
+      probability=30,
       danger=-7,
       duration={5, 19},
       continue={
@@ -2648,13 +2670,14 @@ Weather =
       duration={8, 13},
       continue={
         ["Snow"] = { probability = 100, stage = 1, }, -- jump directly to peak
-      }, 
+      },
       ramp={0.1, 0.1}, -- use 10% fade-in and 10% fade-out
       modifiers = { -- values added to current baseline (faded in and out)
         --              outside, inside, underground, underwater
         humidity=       {0.4,       0.4,    0.2,         },
         light=          {-0.5,      -0.45,                },
         temperature=    {-45,       -25,       -6,    -15   },
+        blizzard=       {1.0,       0,       0,       0   },
       },
       entities={
         {
@@ -2760,13 +2783,14 @@ Weather =
       duration={8, 13},
       continue={
         ["Snow"] = { probability = 100, stage = 1, }, -- jump directly to peak
-      }, 
+      },
       ramp={0.1, 0.1}, -- use 10% fade-in and 10% fade-out
       modifiers = { -- values added to current baseline (faded in and out)
         --              outside, inside, underground, underwater
         humidity=       {0.4,       0.4,    0.2,         },
         light=          {-0.5,      -0.45,                },
         temperature=    {-45,       -25,       -6,    -15   },
+        blizzard=       {1.0,       0,       0,       0   },
       },
       entities={
         {
@@ -2896,6 +2920,1556 @@ Weather =
         -- Colorgrading
         [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=    {{ x=4/255, y=2/255, z=62/255 }, }, -- dark blue
         [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]=  {0.3, undergroundFactor=_ufc, insideFactor=_ifc},
+      },
+    },
+
+--------------------------------------------------------------------------------------------
+    {
+      name="Fireflies",
+      probability=3,
+      danger=-10,
+      duration={8, 14},
+      todlimit={20,5},
+      ramp={0.3, 0.3},
+      modifiers = {
+        --          outside, inside, underground, underwater
+        humidity=   {0.05,   0,      0,          },
+        temperature={-2,     0,                  },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.fireflies"},
+            PulsePeriod= {30},
+            Strength={0.0, 1.0},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio={},
+    },
+--------------------------------------------------------------------------------------------
+    -- ApproachingStorm: Ominous buildup - sky darkens, wind rises, distant flickering lightning
+    -- Players get a warning window to find shelter before the storm hits
+    {
+      name="ApproachingStorm",
+      probability=1,
+      danger=3,
+      dangerlimit=30,
+      duration={4, 7},
+      continue={
+        ["HeavyRainThunder"] = 40,
+        ["HeavyStorm"] = 30,
+        ["MediumRain"] = 20,
+        ["ClearSkyStormy"] = 10,
+      },
+      ramp={0.4, 0.15},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.08,    0.04,   0.02,       },
+        light=          {-0.15,   -0.08,              },
+        temperature=    {-3,      -1,                 },
+        wind=           {12,      3,      1,          },
+      },
+      entities=
+      {
+        BellTriggers[1],BellTriggers[2],BellTriggers[3],
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.approaching_storm"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.debris_wind"},
+            PulsePeriod= {15},
+            Strength={1.0},
+          },
+        },
+        {
+          class="Lightning",
+          properties=
+          {
+            bActive= {1},
+            fDistance= {900,850},
+            bRelativeToPlayer= {1},
+            ["Timing.fDelay"]= {40},
+            ["Timing.fDelayVariation"]= {0.8},
+            ["Timing.fLightningDuration"]= {0.1},
+            ["Effects.LightIntensity"]= {0.02,0.05},
+            ["Effects.ParticleEffect"]= {"weather.lightning.lightningbolt1"},
+            ["Effects.ParticleScale"]= {0.4},
+            ["Effects.SkyHighlightVerticalOffset"]= {350,300},
+            ["Effects.SkyHighlightMultiplier"]= {0.02,0.04},
+            ["Audio.audioTriggerPlayTrigger"]= {"Play_thunder"},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {1.5},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=0.5,z=-0.3 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=2.0,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.7, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=80/255, y=85/255, z=95/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_FOG_COLOR2_MULTIPLIER]=               {0.5},
+        [etod.PARAM_SKYLIGHT_SUN_INTENSITY_MULTIPLIER]=   {25},
+        [etod.PARAM_CLOUDSHADING_SUNLIGHT_MULTIPLIER]=    {0.4},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {600, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.15, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- MorningMist: Terrain-hugging fog at dawn with crepuscular rays breaking through
+    -- Reduced ground visibility but clear sky above - eerie forest encounters
+    {
+      name="MorningMist",
+      probability=1,
+      danger=8,
+      dangerlimit=30,
+      duration={6, 10},
+      todlimit={4,9},
+      ramp={0.3, 0.5},
+      continue={
+        ["LightFog"] = 15,
+        ["ClearSky"] = 50,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.25,    0.15,   0.1,        },
+        light=          {-0.15,   -0.05,              },
+        temperature=    {-6,      -2,                 },
+        fog=            {0.4,     0,      0,          },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.morning_mist_drift"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0, 0.3},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.crepuscular_rays"},
+            PulsePeriod= {0},
+            Strength={0.0, 0.8},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.4, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.05, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_RAMP_INFLUENCE]=               {0.8, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_HEIGHT_OFFSET]=                {-0.5, undergroundFactor=_uff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.02, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_COLOR1]=                      {{ x=220/255, y=210/255, z=180/255 }, constraint=econ.NONE,},
+        [etod.PARAM_SUN_SHAFTS_VISIBILITY]=               {1.5},
+        [etod.PARAM_SUN_RAYS_VISIBILITY]=                 {1.5},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.15},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {300, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.12, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- AuroraBorealis: Rare nighttime spectacle - shimmering green/purple sky curtains
+    -- Nuclear fallout in the upper atmosphere makes aurora visible at low latitudes
+    -- Peaceful and beautiful - a respite from the harshness of survival
+    {
+      name="AuroraBorealis",
+      probability=1,
+      danger=-5,
+      duration={10, 20},
+      todlimit={21,4},
+      ramp={0.4, 0.4},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.05,    0.0,                },
+        temperature=    {-8,      -3,     0,     -2   },
+      },
+      --entities= Instead of this we need a custom shader/skybox
+      --{
+        --{
+          --class="ParticleEffect",
+          --pos={ x=4096, y=5500, z=600 },
+          --properties=
+          --{
+            --ParticleEffect= {"weather.aurora_borealis"},
+            --PulsePeriod= {0},
+            --Strength={1.0},
+          --},
+        --},
+      --},
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR]=               {{ x=20/255, y=180/255, z=80/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR_MULTIPLIER]=    {1.5},
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR]=                {{ x=60/255, y=20/255, z=140/255 }},
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR_MULTIPLIER]=     {1.2},
+        [etod.PARAM_NIGHSKY_MOON_OUTERCORONA_COLOR]=      {{ x=50/255, y=200/255, z=100/255 }},
+        [etod.PARAM_SKYBOX_MULTIPLIER]=                   {2.0},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=30/255, y=200/255, z=100/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.08, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_AURORA_COLOR]=                        {{ x=20/255, y=180/255, z=80/255 }},
+        [etod.PARAM_AURORA_INTENSITY]=                    {1.0},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- DustStorm: High wind drives dust and debris through the ruins
+    -- Amber-brown visibility reduction, wind pushes player, flying debris hazard
+    {
+      name="DustStorm",
+      probability=1,
+      danger=18,
+      dangerlimit=35,
+      duration={8, 15},
+      ramp={0.25, 0.35},
+      continue={
+        ["LightFog"] = 20,
+        ["ClearSkyWindy"] = 30,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {-0.05,   0.0,    0.0,        },
+        light=          {-0.4,    -0.15,              },
+        temperature=    {3,       1,                  },
+        wind=           {45,      8,      2,      1   },
+        dust=           {1.0,     0,      0,      0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.dust_devil"},
+            PulsePeriod= {25},
+            Strength={0.0, 0.7},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.debris_wind"},
+            PulsePeriod= {10},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {4.5},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=0.8,z=-0.3 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=7.0,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.2, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.15},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {2.0, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_RAMP_INFLUENCE]=               {0.1, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_FOG_COLOR]=                           {{ x=160/255, y=120/255, z=60/255 }, constraint=econ.DARKEN },
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=180/255, y=140/255, z=70/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {1.5, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=210/255, y=160/255, z=60/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.4, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.3},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {150, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.45, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- VolcanicHaze: Distant eruption pushes warm amber haze across the island
+    -- Sun becomes a dim red disc, temperature rises, slight radiation from particulate
+    {
+      name="VolcanicHaze",
+      probability=1,
+      danger=15,
+      dangerlimit=35,
+      duration={12, 25},
+      ramp={0.3, 0.4},
+      continue={
+        ["DustStorm"] = 10,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {-0.05,   0.0,    0.0,        },
+        light=          {-0.3,    -0.1,               },
+        temperature=    {8,       4,      1,     2    },
+        gas_radiation=  {0.025,    0.005,               },
+        geigercounter=  {0.5,     0.25,   0.0,   0   },
+        dust=           {0.7,     0,      0,      0   },
+        fog=            {0.6,     0,      0,      0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.volcanic_haze"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.ash.volcanic_ash"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.heat_shimmer"},
+            PulsePeriod= {0},
+            Strength={0.0, 0.6},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.8,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.15, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_SUN_COLOR]=                           {{ x=255/255, y=100/255, z=30/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_FOG_COLOR]=                           {{ x=140/255, y=80/255, z=30/255 }, constraint=econ.DARKEN },
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=170/255, y=100/255, z=40/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_FOG_COLOR_MULTIPLIER]=                {0.6},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {1.2, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.8, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=220/255, y=130/255, z=40/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.35, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.25},
+        [etod.PARAM_SUN_RAYS_VISIBILITY]=                 {0.2},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {400, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.2, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- FreezingRain: Rain freezes on contact - surfaces ice over, hypothermia risk
+    -- Rapid temperature drop with glinting ice particles
+    {
+      name="FreezingRain",
+      probability=1,
+      danger=20,
+      dangerlimit=35,
+      duration={6, 12},
+      ramp={0.2, 0.3},
+      continue={
+        ["Snow"] = 40,
+        ["Snow_Outro"] = 30,
+        ["LightFog"] = 10,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.5,     0.2,    0.1,        },
+        rain=           {0.4,                         },
+        light=          {-0.35,   -0.15,              },
+        temperature=    {-25,     -10,    -3,    -8   },
+        wind=           {8,       2,      1,          },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.freezing_rain"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.frost_crystals"},
+            PulsePeriod= {20},
+            Strength={0.0, 0.8},
+          },
+        },
+        {
+          class="Rain",
+          properties=
+          {
+            bEnabled=             {1},
+            fAmount=              {0,    1.5},
+            fDiffuseDarkening=    {0,    0.6},
+            fPuddlesAmount=       {0,    1.5},
+            fPuddlesMaskAmount=   {0.7},
+            fPuddlesRippleAmount= {0,    1.0},
+            fRainDropsAmount=     {0,    0.04},
+            fRainDropsLighting=   {3.0},
+            fRainDropsSpeed=      {0.6},
+            fSplashesAmount=      {0,    0.8},
+          },
+        },
+        {
+          class="Snow",
+          pos={ x=4096, y=4096, z=450 },
+          properties=
+          {
+            bEnabled= {1},
+            fRadius= {8000},
+            ["SnowFall.nSnowFlakeCount"]= {0},
+            ["Surface.fSnowAmount"]= {0.0},
+            ["Surface.fFrostAmount"]= {0.0, 0.9},
+            ["Surface.fSurfaceFreezing"]= {0.0, 0.15},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {1.5},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=1,z=-0.5 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_rain",
+          rtpc="weather_intensity",
+          rtpcValue=1.8,
+        },
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=1.5,
+        },
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_nuclear_winter",
+          rtpc="freeze_strength",
+          rtpcValue=0.5,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.3, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.15},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.4, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.35, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_COLOR1]=                      {{ x=160/255, y=175/255, z=210/255 }, constraint=econ.NONE,},
+        [etod.PARAM_SKYLIGHT_SUN_INTENSITY_MULTIPLIER]=   {15},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=150/255, y=180/255, z=220/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.15, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.2},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {280, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.3, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- SwampGas: Glowing methane pockets and eerie luminescent fog
+    -- Mutated swamp biology creates alien atmosphere with slight radiation
+    {
+      name="SwampGas",
+      probability=0,
+      danger=12,
+      dangerlimit=30,
+      duration={8, 16},
+      todlimit={19,6},
+      ramp={0.35, 0.4},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.3,     0.15,   0.1,        },
+        light=          {-0.1,    -0.05,              },
+        temperature=    {2,       1,                  },
+        gas_radiation=  {0.04,    0.01,               },
+        geigercounter=  {0.5,     0.25,   0.0,   0.3 },
+        fog=            {0.5,     0,      0,      0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.marsh_gas"},
+            PulsePeriod= {15},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.swamp_bubbles"},
+            PulsePeriod= {10},
+            Strength={0.5, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.fog.fog_light"},
+            PulsePeriod= {20},
+            Strength={0.0, 0.7},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.4, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.8, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_RAMP_INFLUENCE]=               {0.6, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_HEIGHT_OFFSET]=                {-0.3, undergroundFactor=_uff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.5, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_COLOR1]=                      {{ x=80/255, y=180/255, z=60/255 }, constraint=econ.NONE,},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR]=               {{ x=40/255, y=100/255, z=30/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR_MULTIPLIER]=    {0.8},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=100/255, y=200/255, z=80/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.12, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.25},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- NuclearSunset: Upper-atmosphere nuclear particulate creates vivid red/orange sky
+    -- Harmless but stunning - the sky looks like it is on fire
+    {
+      name="NuclearSunset",
+      probability=1,
+      danger=-3,
+      duration={4, 7},
+      todlimit={16,20},
+      ramp={0.3, 0.5},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        temperature=    {2,       1,                  },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          pos={ x=4096, y=4096, z=450 },
+          properties=
+          {
+            ParticleEffect= {"weather.nuclear_sunset_particles"},
+            PulsePeriod= {0},
+            Strength={1.0},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.4,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_COLOR]=                           {{ x=255/255, y=80/255, z=20/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_FOG_COLOR]=                           {{ x=255/255, y=100/255, z=30/255 }},
+        [etod.PARAM_FOG_COLOR_MULTIPLIER]=                {1.2},
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=255/255, y=60/255, z=10/255 }},
+        [etod.PARAM_FOG_COLOR2_MULTIPLIER]=               {0.8},
+        [etod.PARAM_FOG_RADIAL_COLOR]=                    {{ x=255/255, y=120/255, z=40/255 }},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {1.5},
+        [etod.PARAM_SKYBOX_MULTIPLIER]=                   {1.8},
+        [etod.PARAM_SUN_RAYS_VISIBILITY]=                 {1.5},
+        [etod.PARAM_CLOUDSHADING_SUNLIGHT_MULTIPLIER]=    {2.0},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=255/255, y=120/255, z=40/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.2, undergroundFactor=_ufc, insideFactor=_ifc},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- RadMist: Insidious low-lying radioactive fog rolls in from contaminated zones
+    -- Less dramatic than RadStorm but persistent and dangerous - sirens warn players
+    {
+      name="RadMist",
+      probability=1,
+      danger=30,
+      dangerlimit=40,
+      duration={5, 10},
+      continue={
+        ["RadMist_Peak"] = 100,
+      },
+      ramp={0.4, 0.1},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.2,     0.1,    0.1,        },
+        light=          {-0.25,   -0.1,               },
+        temperature=    {3,       2,                  },
+        gas_radiation=  {0.075,    0.02,               },
+        ray_radiation=  {0.025,    0.004,              },
+        geigercounter=  {1.5,     1.0,    0.0,   0.5 },
+        fog=            {0.5,     0,      0,      0   },
+      },
+      entities=
+      {
+        NukeSirenTriggers[1],NukeSirenTriggers[2],NukeSirenTriggers[3],NukeSirenTriggers[4],NukeSirenTriggers[5],NukeSirenTriggers[6],NukeSirenTriggers[7],NukeSirenTriggers[8],NukeSirenTriggers[9],NukeSirenTriggers[10],NukeSirenTriggers[11],
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.rad_motes"},
+            PulsePeriod= {0},
+            Strength={0.0, 0.6},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.fog.fog_medium"},
+            PulsePeriod= {20},
+            Strength={0.0, 1.0},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.5,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.3, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {2.0, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_RAMP_INFLUENCE]=               {0.3, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_HEIGHT_OFFSET]=                {0.2, undergroundFactor=_uff},
+        [etod.PARAM_FOG_COLOR]=                           {{ x=70/255, y=90/255, z=35/255 }, constraint=econ.DARKEN },
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=100/255, y=110/255, z=45/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {1.5, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=160/255, y=220/255, z=70/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.2, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.3},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {200, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.3, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- RadMist_Peak: Radioactive fog at full density - lethal radiation outdoors
+    -- Visibility severely reduced, must shelter or die
+    {
+      name="RadMist_Peak",
+      probability=0,
+      danger=25,
+      duration={4, 8},
+      continue={
+        ["LightFog"] = 30,
+        ["ClearSky"] = 40,
+      },
+      ramp={0.1, 0.5},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.35,    0.15,   0.1,        },
+        light=          {-0.5,    -0.2,               },
+        temperature=    {5,       3,                  },
+        gas_radiation=  {0.275,    0.05,                },
+        rain_radiation= {0.125,    0.0,                },
+        ray_radiation=  {0.09,    0.01,               },
+        geigercounter=  {2.5,     1.5,    0.0,   0.8 },
+        fog=            {0.7,     0,      0,      0   },
+      },
+      entities=
+      {
+        BellTriggers[1],BellTriggers[2],BellTriggers[3],
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.rad_motes"},
+            PulsePeriod= {0},
+            Strength={1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.fog.fog_heavy"},
+            PulsePeriod= {20},
+            Strength={1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.ash.slow_ash"},
+            PulsePeriod= {0},
+            Strength={0.5},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.4,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.1, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.05},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {8.0, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_RAMP_INFLUENCE]=               {0.25, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG_HEIGHT_OFFSET]=                {0.3, undergroundFactor=_uff},
+        [etod.PARAM_VOLFOG_FINAL_DENSITY_CLAMP]=          {0.95, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_FOG_COLOR]=                           {{ x=50/255, y=70/255, z=25/255 }, constraint=econ.DARKEN },
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=80/255, y=100/255, z=35/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {5.0, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=140/255, y=200/255, z=60/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.6, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.7},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {30, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.6, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_SUN_RAYS_VISIBILITY]=                 {0.0},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- HeatWave: Oppressive heat with shimmering distortion - dehydration danger
+    -- Bright, washed-out visuals, temperature soars - find shade and water
+    {
+      name="HeatWave",
+      probability=1,
+      danger=10,
+      dangerlimit=30,
+      duration={15, 30},
+      todlimit={10,17},
+      ramp={0.3, 0.3},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {-0.1,    -0.05,  0.0,        },
+        light=          {0.05,    0.02,               },
+        temperature=    {15,      6,      1,     3    },
+        wind=           {-5,      0,      0,          },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.heat_shimmer"},
+            PulsePeriod= {5},
+            Strength={0.0, 5.0},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {1.5, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR]=                    {{ x=255/255, y=240/255, z=200/255 }},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.8},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.08, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_SKYLIGHT_SUN_INTENSITY_MULTIPLIER]=   {5},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=255/255, y=230/255, z=180/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.15, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.4},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {600, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.3, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- BallLightning: Extremely rare electrical anomaly - luminous energy spheres
+    -- Sporadic lightning, St. Elmo's fire on structures - short and dangerous
+    {
+      name="BallLightning",
+      probability=1,
+      danger=35,
+      dangerlimit=45,
+      duration={3, 6},
+      continue={
+        ["StormyDistantThunder"] = 40,
+        ["ClearSkyStormy"] = 30,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.1,     0.05,               },
+        light=          {-0.15,   -0.05,              },
+        temperature=    {-3,      -1,                 },
+        wind=           {5,       1,      0,          },
+        ray_radiation=  {0.03,    0.005,               },
+        geigercounter=  {1.0,     0.5,    0.0,   0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.ball_lightning"},
+            PulsePeriod= {20},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.st_elmos_fire"},
+            PulsePeriod= {15},
+            Strength={0.0, 0.8},
+          },
+        },
+        {
+          class="Lightning",
+          properties=
+          {
+            bActive= {1},
+            fDistance= {200,50},
+            bRelativeToPlayer= {1},
+            ["Timing.fDelay"]= {8},
+            ["Timing.fDelayVariation"]= {0.9},
+            ["Timing.fLightningDuration"]= {0.5},
+            ["Effects.LightIntensity"]= {0.6,1.5},
+            ["Effects.color_SkyHighlightColor"]= {{ x=180/255, y=200/255, z=255/255 }},
+            ["Effects.ParticleEffect"]= {"weather.lightning.lightningbolt1"},
+            ["Effects.ParticleScale"]= {2,1},
+            ["Effects.SkyHighlightVerticalOffset"]= {100,40},
+            ["Effects.SkyHighlightMultiplier"]= {0.5,1.2},
+            ["Audio.audioTriggerPlayTrigger"]= {"Play_thunder"},
+          },
+        },
+        {
+          class="Lightning",
+          properties=
+          {
+            bActive= {1},
+            fDistance= {400,150},
+            bRelativeToPlayer= {1},
+            ["Timing.fDelay"]= {12},
+            ["Timing.fDelayVariation"]= {0.7},
+            ["Timing.fLightningDuration"]= {0.3},
+            ["Effects.LightIntensity"]= {0.3,0.8},
+            ["Effects.color_SkyHighlightColor"]= {{ x=200/255, y=220/255, z=255/255 }},
+            ["Effects.ParticleEffect"]= {"weather.lightning.lightningbolt2"},
+            ["Effects.ParticleScale"]= {3,2},
+            ["Effects.SkyHighlightVerticalOffset"]= {150,60},
+            ["Effects.SkyHighlightMultiplier"]= {0.3,0.8},
+            ["Audio.audioTriggerPlayTrigger"]= {"Play_thunder"},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {1.0},
+            Size=         {{ x=200,y=200,z=200 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=1.5,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.6, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.2, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.4},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {500, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.15, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- EmberDrift: Hot embers and ash drift from a distant wildfire
+    -- Orange glow on horizon, rising temperature, degraded air quality
+    {
+      name="EmberDrift",
+      probability=1,
+      danger=12,
+      dangerlimit=30,
+      duration={10, 20},
+      ramp={0.2, 0.4},
+      continue={
+        ["VolcanicHaze"] = 15,
+        ["DustStorm"] = 10,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {-0.05,   0.0,    0.0,        },
+        light=          {-0.1,    -0.05,              },
+        temperature=    {6,       3,      0,     1    },
+        gas_radiation=  {0.015,    0.0025,              },
+        geigercounter=  {0.3,     0.15,   0.0,   0   },
+        dust=           {0.5,     0,      0,      0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.ember_drift"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.ash.slow_ash"},
+            PulsePeriod= {0},
+            Strength={0.0, 0.8},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {1.5},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=0.3,z=-0.2 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=1.2,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.5, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_COLOR]=                           {{ x=180/255, y=90/255, z=30/255 }, constraint=econ.DARKEN },
+        [etod.PARAM_FOG_COLOR_MULTIPLIER]=                {0.5},
+        [etod.PARAM_FOG_RADIAL_COLOR]=                    {{ x=220/255, y=100/255, z=20/255 }},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.6},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.6, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.4, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR]=               {{ x=200/255, y=80/255, z=15/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR_MULTIPLIER]=    {1.0},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=230/255, y=140/255, z=50/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.2, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.2},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- LightSnowFlurry: Gentle meandering flakes - melancholy atmospheric mood
+    -- Modest temperature drop, no accumulation, peaceful transition weather
+    {
+      name="LightSnowFlurry",
+      probability=2,
+      danger=5,
+      dangerlimit=25,
+      duration={8, 18},
+      ramp={0.2, 0.3},
+      continue={
+        ["Snow"] = 20,
+        ["ClearSky"] = 30,
+        ["MorningMist"] = 10,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.1,     0.05,   0.02,       },
+        light=          {-0.1,    -0.05,              },
+        temperature=    {-12,     -5,     -1,    -3   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.light_snow_flurry"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0, 0.0},
+          },
+        },
+        {
+          class="Snow",
+          pos={ x=4096, y=4096, z=450 },
+          properties=
+          {
+            bEnabled= {1},
+            fRadius= {8000},
+            ["SnowFall.fBrightness"]= {15},
+            ["SnowFall.fGravityScale"]= {0.05, 0.3, 0.1},
+            ["SnowFall.nSnowFlakeCount"]= {10, 80, 5},
+            ["Surface.fSnowAmount"]= {0.0},
+            ["Surface.fFrostAmount"]= {0.0, 0.2, 0.0},
+            ["Surface.fSurfaceFreezing"]= {0.0},
+          },
+          OnCustomUpdate=windMover,
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {0.5},
+            Size=         {{ x=200,y=200,z=200 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.4,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.7, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.15, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.1, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_SKYLIGHT_SUN_INTENSITY_MULTIPLIER]=   {8},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=180/255, y=200/255, z=230/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.08, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {500, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.1, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- MidnightGale: Powerful sustained nighttime wind - near-zero visibility in darkness
+    -- Howling wind, flying debris, an endurance test in the dark
+    {
+      name="MidnightGale",
+      probability=1,
+      danger=15,
+      dangerlimit=35,
+      duration={8, 15},
+      todlimit={22,4},
+      ramp={0.2, 0.3},
+      continue={
+        ["ClearSky"] = 50,
+        ["LightFog"] = 20,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.05,    0.02,               },
+        light=          {-0.5,    -0.2,               },
+        temperature=    {-8,      -3,     -1,    -2   },
+        wind=           {60,      12,     3,     2    },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.debris_wind"},
+            PulsePeriod= {8},
+            Strength={0.0, 1.0},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {5.0},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=0.5,z=-0.4 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=8.0,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.05, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_NIGHSKY_MOON_COLOR]=                  {{ x=30/255, y=30/255, z=40/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR]=                {{ x=5/255, y=5/255, z=10/255 }},
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR_MULTIPLIER]=     {0.3},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.3, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.5},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {400, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.3, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- AcidDrizzle: Persistent low-intensity acid drizzle - no siren warning
+    -- Yellowish tint, slow health drain for exposed players over long duration
+    {
+      name="AcidDrizzle",
+      probability=1,
+      danger=10,
+      dangerlimit=30,
+      duration={12, 25},
+      ramp={0.3, 0.3},
+      continue={
+        ["AcidRain"] = 15,
+        ["LightRain"] = 20,
+        ["ClearSky"] = 30,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.2,     0.08,   0.05,       },
+        rain=           {0.2,                         },
+        rain_acid=      {0.35,    0.0,    0.0,   0.02 },
+        light=          {-0.15,   -0.05,              },
+        temperature=    {-2,      -1,                 },
+        wind=           {3,       1,      0,          },
+      },
+      entities=
+      {
+        {
+          class="Rain",
+          properties=
+          {
+            bEnabled=             {1},
+            fAmount=              {0,    0.8},
+            fDiffuseDarkening=    {0,    0.3},
+            fPuddlesAmount=       {0,    1.0},
+            fPuddlesMaskAmount=   {0.75},
+            fPuddlesRippleAmount= {0,    0.8},
+            fRainDropsAmount=     {0,    0.03},
+            fRainDropsLighting=   {2.5},
+            fRainDropsSpeed=      {0.7},
+            fSplashesAmount=      {0,    0.4},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"weather.fog.acid_rain"},
+            PulsePeriod= {25},
+            Strength={0.0, 0.5},
+          },
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.rain_puddle_ripples"},
+            PulsePeriod= {0},
+            Strength={0.0, 0.6},
+          },
+        },
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {0.8},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=1,z=-0.5 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_rain",
+          rtpc="weather_intensity",
+          rtpcValue=1.0,
+        },
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.5,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.5, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.2},
+        [etod.PARAM_FOG_COLOR]=                           {{ x=140/255, y=170/255, z=40/255 }, constraint=econ.NONE,},
+        [etod.PARAM_FOG_COLOR2]=                          {{ x=120/255, y=150/255, z=30/255 }, constraint=econ.NONE,},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.35, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.25, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_COLOR1]=                      {{ x=160/255, y=200/255, z=40/255 }, constraint=econ.NONE,},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=230/255, y=210/255, z=70/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.18, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.1},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {400, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.2, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- FireflySwarm: Dense cloud of bioluminescent insects across the landscape
+    -- Enhanced version of Fireflies - wider coverage, warmer atmosphere
+    {
+      name="FireflySwarm",
+      probability=1,
+      danger=-8,
+      duration={10, 18},
+      todlimit={20,4},
+      ramp={0.35, 0.35},
+      continue={
+        ["MorningMist"] = 20,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.1,     0.02,   0.0,        },
+        temperature=    {-1,      0,                  },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.firefly_swarm_large"},
+            PulsePeriod= {25},
+            Strength={0.0, 1.0, 0.0},
+          },
+          OnCustomUpdate=windMover,
+        },
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.fireflies"},
+            PulsePeriod= {30},
+            Strength={0.0, 0.8},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR]=               {{ x=20/255, y=40/255, z=15/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR_MULTIPLIER]=    {0.5},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=180/255, y=220/255, z=100/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.04, undergroundFactor=_ufc, insideFactor=_ifc},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- GloomyOvercast: Persistent dreary overcast - flat light, oppressive cloud ceiling
+    -- Common mood weather that makes everything feel abandoned and hopeless
+    {
+      name="GloomyOvercast",
+      probability=2,
+      danger=2,
+      dangerlimit=20,
+      duration={15, 30},
+      ramp={0.3, 0.3},
+      continue={
+        ["LightRain"] = 15,
+        ["MediumRain"] = 10,
+        ["ApproachingStorm"] = 5,
+        ["MediumFog"] = 5,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.1,     0.05,   0.02,       },
+        light=          {-0.25,   -0.1,               },
+        temperature=    {-3,      -1,                 },
+        wind=           {5,       1,      0,          },
+        fog=            {0.3,     0,      0,          },
+      },
+      entities=
+      {
+        {
+          class="WindArea",
+          properties=
+          {
+            bActive=      {1},
+            bEllipsoidal= {0},
+            Speed=        {0.8},
+            Size=         {{ x=200,y=200,z=200 }},
+            Dir=          {{ x=1,y=0.5,z=-0.2 }},
+          },
+          OnCustomUpdate=windMover,
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.6,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.3, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.15},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.15, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_GLOBAL_DENSITY]=              {0.1, method=emix.QUART, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_SKYLIGHT_SUN_INTENSITY_MULTIPLIER]=   {30},
+        [etod.PARAM_CLOUDSHADING_SUNLIGHT_MULTIPLIER]=    {0.3},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=160/255, y=170/255, z=180/255 }, constraint=econ.DARKEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.1, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_SUN_SHAFTS_VISIBILITY]=               {0.1},
+        [etod.PARAM_SUN_RAYS_VISIBILITY]=                 {0.1},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {600, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.12, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- EarlyFrost: Dawn cold snap - frost crystals sparkle on every surface
+    -- Beautiful but dangerous - rapid heat loss for exposed players at dawn
+    {
+      name="EarlyFrost",
+      probability=1,
+      danger=12,
+      dangerlimit=25,
+      duration={5, 10},
+      todlimit={4,8},
+      ramp={0.2, 0.4},
+      continue={
+        ["LightSnowFlurry"] = 20,
+        ["ClearSky"] = 40,
+        ["MorningMist"] = 15,
+      },
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.15,    0.05,   0.02,       },
+        light=          {-0.05,   -0.02,              },
+        temperature=    {-18,     -8,     -2,    -5   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.frost_crystals"},
+            PulsePeriod= {0},
+            Strength={0.0, 1.0, 0.0},
+          },
+        },
+        {
+          class="Snow",
+          pos={ x=4096, y=4096, z=450 },
+          properties=
+          {
+            bEnabled= {1},
+            fRadius= {8000},
+            ["SnowFall.nSnowFlakeCount"]= {0},
+            ["Surface.fSnowAmount"]= {0.0},
+            ["Surface.fFrostAmount"]= {0.0, 0.7, 0.0},
+            ["Surface.fSurfaceFreezing"]= {0.0, 0.05, 0.0},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.3,
+        },
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_nuclear_winter",
+          rtpc="freeze_strength",
+          rtpcValue=0.15,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_SUN_INTENSITY]=                       {0.6, method=emix.MULTIPLY, min=100},
+        [etod.PARAM_FOG_RADIAL_COLOR]=                    {{ x=200/255, y=220/255, z=255/255 }},
+        [etod.PARAM_FOG_RADIAL_COLOR_MULTIPLIER]=         {0.5},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=180/255, y=210/255, z=255/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.1, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_DOF_FOCUSRANGE]=         {600, undergroundFactor=_ufd, insideFactor=_ifd},
+        [etod.PARAM_COLORGRADING_DOF_BLURAMOUNT]=         {0.1, method=emix.ADDITIVE, undergroundFactor=_ufd, insideFactor=_ifd},
+      },
+    },
+--------------------------------------------------------------------------------------------
+    -- BloodMoon: Rare terrifying night - deep red moon bathes landscape in crimson
+    -- Nuclear debris scatters red wavelengths - the quintessential apocalyptic night
+    {
+      name="BloodMoon",
+      probability=1,
+      danger=5,
+      dangerlimit=20,
+      duration={10, 20},
+      todlimit={21,3},
+      ramp={0.4, 0.4},
+      modifiers = {
+        --              outside, inside, underground, underwater
+        humidity=       {0.05,    0.0,                },
+        temperature=    {-5,      -2,     0,     -1   },
+        gas_radiation=  {0.01,    0.0025,              },
+        geigercounter=  {0.3,     0.15,   0.0,   0   },
+      },
+      entities=
+      {
+        {
+          class="ParticleEffect",
+          properties=
+          {
+            ParticleEffect= {"environment_fx.rad_motes"},
+            PulsePeriod= {30},
+            Strength={0.0, 0.3},
+          },
+        },
+      },
+      audio=
+      {
+        {
+          class="AudioAreaAmbience",
+          trigger="Play_wind",
+          rtpc="wind_speed",
+          rtpcValue=0.4,
+        },
+      },
+      tod=
+      {
+        [etod.PARAM_NIGHSKY_MOON_COLOR]=                  {{ x=255/255, y=30/255, z=10/255 }},
+        [etod.PARAM_NIGHSKY_MOON_COLOR_MULTIPLIER]=       {3.0},
+        [etod.PARAM_NIGHSKY_MOON_INNERCORONA_COLOR]=      {{ x=255/255, y=50/255, z=20/255 }},
+        [etod.PARAM_NIGHSKY_MOON_OUTERCORONA_COLOR]=      {{ x=200/255, y=20/255, z=5/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR]=               {{ x=100/255, y=10/255, z=5/255 }},
+        [etod.PARAM_NIGHSKY_HORIZON_COLOR_MULTIPLIER]=    {1.2},
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR]=                {{ x=30/255, y=5/255, z=15/255 }},
+        [etod.PARAM_NIGHSKY_ZENITH_COLOR_MULTIPLIER]=     {0.8},
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_COLOR]=  {{ x=255/255, y=40/255, z=20/255 }, constraint=econ.BRIGTHEN, },
+        [etod.PARAM_COLORGRADING_FILTERS_PHOTOFILTER_DENSITY]= {0.15, undergroundFactor=_ufc, insideFactor=_ifc},
+        [etod.PARAM_COLORGRADING_FILTERS_GRAIN]=          {0.35},
+        [etod.PARAM_VOLFOG_GLOBAL_DENSITY]=               {0.15, undergroundFactor=_uff, insideFactor=_iff},
+        [etod.PARAM_VOLFOG2_COLOR1]=                      {{ x=120/255, y=20/255, z=10/255 }, constraint=econ.NONE,},
+        [etod.PARAM_SKYBOX_MULTIPLIER]=                   {1.5},
       },
     },
   }

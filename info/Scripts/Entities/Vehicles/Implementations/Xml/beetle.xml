@@ -415,21 +415,22 @@
 	</Seats>
 
 	<MovementParams> <!-- steerSpeed = top speed steering speed, steerSpeedMin = stationary steering speed -->
-		<ArcadeWheeled steerSpeed="45" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="15" v0SteerMax="30" steerRelaxation="100" vMaxSteerMax="19" pedalLimitMax="0.1" rpmGearShiftSpeed="1" engineIgnitionTime="1.5">
+		<ArcadeWheeled steerSpeed="45" steerSpeedMin="100" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="8" v0SteerMax="30" steerRelaxation="80" vMaxSteerMax="19" pedalLimitMax="0.1" rpmGearShiftSpeed="1" engineIgnitionTime="1.5">
 			<Handling> <!-- v0SteerMax = stationary max angle in degrees, kvSteerMax = reduction amount in degrees when vehicle reaches vMaxSteerMax speed -->
-				<Power acceleration="15" decceleration="0.1" topSpeed="17" reverseSpeed="12"/> <!-- Decceleration is off-pedal slow rate -->
-				<WheelSpin grip1="1.0" grip2="2" gripRecoverSpeed="0.5" accelMultiplier1="1" accelMultiplier2="0.2"/>
-				<HandBrake decceleration="5" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="1" backFrictionScale="0.1" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
+				<Power acceleration="10" decceleration="1.5" topSpeed="17" reverseSpeed="12"/> <!-- Decceleration is off-pedal slow rate -->
+				<WheelSpin grip1="1.5" grip2="2.5" gripRecoverSpeed="0.5" accelMultiplier1="0.7" accelMultiplier2="0.2"/>
+				<HandBrake decceleration="15" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="1" backFrictionScale="0.1" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
 				<SpeedReduction reductionAmount="0.2" reductionRate="1.0"/> <!-- slow vehicle when turning -->
-				<Friction back="4.0" front="5.0" offset="-2"/>
+				<Friction back="4.5" front="5.0" offset="-1.5"/>
 				<Correction lateralSpring="0.65" angSpring="0.5"/>
 				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
-				<Inertia radius="3.75"/> <!-- general physics feel, size, roll, weight of vehicle -->
+				<Inertia radius="3.5"/> <!-- general physics feel, size, roll, weight of vehicle -->
+				<Weather gripScale="1.0" frictionScale="1.0" windResistance="0.0" engineScale="1.0" />
 			</Handling>
 			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
 				<Ratios>
-					<Ratio value="0.5"/>
-					<Ratio value="0.8"/>
+					<Ratio value="0.45"/>
+					<Ratio value="0.75"/>
 					<Ratio value="0.95"/>
 				</Ratios>
 			</FakeGears>

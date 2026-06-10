@@ -603,22 +603,23 @@
 	</Seats>
 
 	<MovementParams>
-		<ArcadeWheeled steerSpeed="30" steerSpeedMin="75" steerSpeedScale="0.75" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="45" steerRelaxation="150" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="1.5">
+		<ArcadeWheeled steerSpeed="30" steerSpeedMin="75" steerSpeedScale="0.75" steerSpeedScaleMin="1" kvSteerMax="5" v0SteerMax="45" steerRelaxation="180" vMaxSteerMax="25" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="1.5">
 			<Handling>
-				<Power acceleration="5" decceleration="0.1" topSpeed="14" reverseSpeed="5"/> <!-- Decceleration is off-pedal slow rate -->
-				<WheelSpin grip1="5" grip2="8" gripRecoverSpeed="15" accelMultiplier1="2" accelMultiplier2="1"/>
-				<HandBrake decceleration="15" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="3.0" backFrictionScale="0.1" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
+				<Power acceleration="6" decceleration="2" topSpeed="15" reverseSpeed="5"/> <!-- Decceleration is off-pedal slow rate -->
+				<WheelSpin grip1="6" grip2="10" gripRecoverSpeed="15" accelMultiplier1="2" accelMultiplier2="1"/>
+				<HandBrake decceleration="15" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="2.0" backFrictionScale="0.1" angCorrectionScale="6"/> <!-- also applies for standard brake (S) -->
 				<SpeedReduction reductionAmount="0.1" reductionRate="1"/> <!-- slow vehicle when turning -->
 				<Friction back="5" front="5" offset="-2.0"/>
 				<Correction lateralSpring="1" angSpring="1"/>
 				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
-				<Inertia radius="6.0"/> <!-- general physics feel, size, roll, weight of vehicle -->
+				<Inertia radius="5.5"/> <!-- general physics feel, size, roll, weight of vehicle -->
+				<Weather gripScale="0.55" frictionScale="0.6" windResistance="0.55" engineScale="0.45" />
 			</Handling>
 			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
 				<Ratios>
-					<Ratio value="0.5"/>
-					<Ratio value="0.8"/>
-					<Ratio value="0.95"/>
+					<Ratio value="0.25"/>
+					<Ratio value="0.55"/>
+					<Ratio value="0.85"/>
 				</Ratios>
 			</FakeGears>
 			<WheeledLegacy damping="0.01" engineIdleRPM="500" engineMaxRPM="3000" engineMinRPM="500" stabilizer="0" maxTimeStep="0.02" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>

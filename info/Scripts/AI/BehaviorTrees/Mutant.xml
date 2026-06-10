@@ -488,7 +488,7 @@
 
 								<PullDownThreatLevel/>
 
-									<Loop>
+									<Loop count="5">
 
 										<SuppressFailure>
 

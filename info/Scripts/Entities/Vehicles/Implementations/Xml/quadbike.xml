@@ -294,7 +294,7 @@
 	</Actions>
 
 	<Seats>
-		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver">
+		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="1" actionMap="vehicle_driver" tpCameraDistance="5">
 			<Views>
 				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" rotationMax="10,0,60" hidePlayer="0" followSpeed="16">
 					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0.0"/>
@@ -351,7 +351,7 @@
 				</SeatAction>
 			</SeatActions>
 		</Seat>
-		<Seat name="passenger1" part="hull" enterHelper="passenger_enter_02" sitHelper="passenger_seat_02" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="2">
+		<Seat name="passenger1" part="hull" enterHelper="passenger_enter_02" sitHelper="passenger_seat_02" ragdollOnDeath="1" isPassengerExposed="1" seatGroupIndex="2" tpCameraDistance="5">
 			<Views>
 				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" hidePlayer="0" rotationMax="20,0,70" followSpeed="16">
 					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0.0"/>
@@ -372,14 +372,15 @@
 	<MovementParams> <!-- steerSpeed = top speed steering speed, steerSpeedMin = stationary steering speed -->
 		<ArcadeWheeled steerSpeed="15" steerSpeedMin="50" steerSpeedScale="1" steerSpeedScaleMin="1" kvSteerMax="20" v0SteerMax="30" steerRelaxation="200" vMaxSteerMax="20" pedalLimitMax="0.1" rpmGearShiftSpeed="2" engineIgnitionTime="1.0"> <!-- v0SteerMax = stationary max angle in degrees, kvSteerMax = reduction amount in degrees when vehicle reaches vMaxSteerMax speed -->
 			<Handling>
-				<Power acceleration="8" decceleration="5" topSpeed="18" reverseSpeed="9"/> <!-- Decceleration is off-pedal slow rate -->
-				<WheelSpin grip1="10" grip2="15" gripRecoverSpeed="1" accelMultiplier1="1" accelMultiplier2="1"/>
-				<HandBrake decceleration="30" deccelerationPowerLock="3" lockBack="10" lockFront="10" frontFrictionScale="1" backFrictionScale="0.5" angCorrectionScale="1"/> <!-- also applies for standard brake (S) -->
+				<Power acceleration="9" decceleration="4" topSpeed="18" reverseSpeed="9"/> <!-- Decceleration is off-pedal slow rate -->
+				<WheelSpin grip1="2.5" grip2="4" gripRecoverSpeed="1" accelMultiplier1="1.0" accelMultiplier2="0.5"/>
+				<HandBrake decceleration="18" deccelerationPowerLock="3" lockBack="1" lockFront="0" frontFrictionScale="1" backFrictionScale="0.5" angCorrectionScale="4"/> <!-- also applies for standard brake (S) -->
 				<SpeedReduction reductionAmount="0.25" reductionRate="0.1"/> <!-- slow vehicle when turning -->
-				<Friction back="7.5" front="6.5" offset="-2.0"/>
+				<Friction back="5.0" front="5.5" offset="-2.0"/>
 				<Correction lateralSpring="0.75" angSpring="0.75"/> <!-- Higher number will cause vehicle to respond more quickly to turning inputs -->
 				<Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
 				<Inertia radius="4.0"/> <!-- general physics feel, size, roll, weight of vehicle -->
+				<Weather gripScale="0.8" frictionScale="0.8" windResistance="0.4" engineScale="0.7" />
 			</Handling>
 			<FakeGears minChangeUpTime="0.7" minChangeDownTime="0.5">
 				<Ratios>
@@ -422,9 +423,9 @@
 			<DamageEffect name="SmokeStack" helper="vehicleCenterPos" effect="vehicles.Quadbike.Damage.SmokeStack"/>
 		</DamageEffects>
 		<EnvironmentLayers>
-			<EnvironmentLayer 
-					minSpeed="5"  minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
-					maxSpeed="18" maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
+			<EnvironmentLayer
+					minSpeed="5"  minSpeedSizeScale="0.15" minSpeedCountScale="0.15" minSpeedSpeedScale="0.25"
+					maxSpeed="18" maxSpeedSizeScale="0.5" maxSpeedCountScale="0.5" maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels>
@@ -452,16 +453,16 @@
 					</WheelGroups>
 				</Wheels>
 			</EnvironmentLayer>
-			<!--<EnvironmentLayer name="slip" 
-					minSpeed="5"  minSpeedSizeScale="0.5" minSpeedCountScale="0.5" minSpeedSpeedScale="0.5" 
-					maxSpeed="18" maxSpeedSizeScale="1.0" maxSpeedCountScale="1.0" maxSpeedSpeedScale="1.0">
+			<EnvironmentLayer name="slip"
+					minSpeed="1"  minSpeedSizeScale="0.1" minSpeedCountScale="0.1" minSpeedSpeedScale="0.4"
+					maxSpeed="12" maxSpeedSizeScale="0.5" maxSpeedCountScale="0.5" maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>
-			</EnvironmentLayer>-->
-			<EnvironmentLayer name="rims" 
-					minSpeed="3"  minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5"
-					maxSpeed="10" maxSpeedSizeScale="1.0"  maxSpeedCountScale="1.0"  maxSpeedSpeedScale="1.0">
+			</EnvironmentLayer>
+			<EnvironmentLayer name="rims"
+					minSpeed="3"  minSpeedSizeScale="0.15" minSpeedCountScale="0.15" minSpeedSpeedScale="0.5"
+					maxSpeed="10" maxSpeedSizeScale="0.5"  maxSpeedCountScale="0.5"  maxSpeedSpeedScale="1.0">
 				<Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
 				<Emitters />
 				<Wheels all="1" allActive="0"/>

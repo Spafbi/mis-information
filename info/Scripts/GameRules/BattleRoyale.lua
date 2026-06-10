@@ -1,8 +1,90 @@
 Script.ReloadScript("scripts/gamerules/GameRulesUtils.lua");
 
-BattleRoyale= {};
+BattleRoyale = {
+	Properties = {
+		WorldEvent = {
+			fMinTime = 3600, -- min time to spawn an event (in seconds)
+			fMaxTime = 7200, -- max time to spawn an event (in seconds)
+		}
+	}
+}
 
 GameRulesSetStandardFuncs(BattleRoyale);
+
+function BattleRoyale.Server:OnInit()
+	self:CreateWorldEventTimer()
+end
+
+----------------------------------------------------------------------------------------------------
+-- Support for the world events to spawn
+----------------------------------------------------------------------------------------------------
+
+function BattleRoyale:CreateWorldEventTimer()
+	--Log("BattleRoyale.CreateWorldEventTimer")
+	Script.SetTimerForFunction(randomF(self.Properties.WorldEvent.fMinTime*1000, self.Properties.WorldEvent.fMaxTime*1000), "SpawnWorldEvent", self)
+end
+
+SpawnWorldEvent = function(self)
+    local holiday  = HolidayManager.GetActiveHoliday()
+    local rnd      = random(1, 10)
+    local eventName
+
+    if holiday == "halloween" then
+        eventName = (rnd <= 7) and "AirPlaneCrash" or "UFOCrash"
+    elseif holiday == "christmas" then
+        eventName = (rnd <= 5) and "AirDropChristmas" or "AirPlaneCrash"
+    else
+        eventName = (rnd <= 5) and "AirDropPlane" or "AirPlaneCrash"
+    end
+
+    local spawnParams = { class = eventName, name = eventName }
+    if not System.SpawnEntity(spawnParams) then
+        Log("BattleRoyale:SpawnWorldEvent - entity could not be spawned")
+    end
+
+    self:CreateWorldEventTimer()
+end
+
+----------------------------------------------------------------------------------------------------
+-- Support for custom chat command mods
+----------------------------------------------------------------------------------------------------
+
+-- Table for custom chat commands to use
+ChatCommands = { }
+
+-- Load custom chat commands (mods)
+Script.LoadScriptFolder("Scripts/GameRules/ChatCommands", true, true)
+
+-- Receives all unhandled, by the core game, chat commands
+-- Do not add custom chat commands directly here
+-- Add new chat commands to a file in the Scripts/GameRules/ChatCommands folder,
+-- so they can be uploaded as mods to Steam
+function BattleRoyale:ChatCommand(playerId, command)
+	--Log(">> BattleRoyale:ChatCommand");
+
+	-- player is an entity
+	local player = System.GetEntity(playerId)
+
+	if not player.actor then
+		Log("BattleRoyale:ChatCommand - playerId is not a valid player")
+		return
+	end
+
+	-- Find the requested chat command and execute it
+	local index = string.find(command, " ")
+
+	if not index then
+		if ChatCommands[command] then
+			ChatCommands[command](playerId, "")
+		end
+	else
+		local cmd = string.sub(command, 1, index - 1)
+		if ChatCommands[cmd] then
+			ChatCommands[cmd](playerId, string.sub(command, index + 1))
+		end
+	end
+end
+
 
 ----------------------------------------------------------------------------------------------------
 

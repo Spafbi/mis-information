@@ -569,7 +569,7 @@ end
 
 ------------------------------------------------------------------------------------------------------
 function NPCTeleportToBase:SendSyncToClient( channelId )
-	if( self.animstarted==1 ) then
+	if( self.animstarted==1 and self.onClient ) then
 		animTime = self:GetAnimationTime(0,0);
 		self.onClient:ClSync( channelId, animTime, self.startTime, CryAction.GetServerTime() )
 	end

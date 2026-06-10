@@ -149,6 +149,9 @@ etod  = {
 
   PARAM_TOTAL = 120,
   ]]--
+
+  PARAM_AURORA_COLOR     = 120,
+  PARAM_AURORA_INTENSITY = 121,
 }
 
 -- interpolation method

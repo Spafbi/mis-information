@@ -10,7 +10,7 @@
 		<param name="description" value="@metal_safeDescription"/>
 	</params>
 
-	<base_part class="static" type="2060" name="metal_safe" max_health="37500" limit="2" repair_with="SheetMetal" towable="1" repair_sound="Play_wall_repair">
+	<base_part class="static" type="2060" name="metal_safe" max_health="37500" limit="2" repair_with="SheetMetal" towable="1" tow_offset="0,-0.3,0.2" repair_sound="Play_wall_repair">
 		<static filename="objects/props/residential_assets/safe/safe_base.cgf"/>
 
 		<damage_multipliers>

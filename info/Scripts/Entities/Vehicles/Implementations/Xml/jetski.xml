@@ -111,7 +111,7 @@
 	</Actions>
 
 	<Seats>
-		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" isPassengerExposed="1" ragdollOnDeath="1" seatGroupIndex="1" actionMap="vehicle_driver">
+		<Seat name="driver" part="hull" enterHelper="passenger_enter_01" sitHelper="passenger_seat_01" isDriver="1" isPassengerExposed="1" ragdollOnDeath="1" seatGroupIndex="1" actionMap="vehicle_driver" tpCameraDistance="5">
 			<Views>
 				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" rotationMax="10,0,60" hidePlayer="0" followSpeed="16">
 					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0.0"/>
@@ -134,7 +134,7 @@
 			</SeatActions>
 			<Sounds inout="0" mood="0.6"/>
 		</Seat>
-		<Seat name="passenger1" part="hull" enterHelper="passenger_enter_02" sitHelper="passenger_seat_02" isPassengerExposed="1" ragdollOnDeath="1" seatGroupIndex="2">
+		<Seat name="passenger1" part="hull" enterHelper="passenger_enter_02" sitHelper="passenger_seat_02" isPassengerExposed="1" ragdollOnDeath="1" seatGroupIndex="2" tpCameraDistance="5">
 			<Views>
 				<View class="FirstPerson" canRotate="1" relaxTimeMax="0.1" rotationMin="-40,0,-60" hidePlayer="0" rotationMax="20,0,70" followSpeed="16">
 					<FirstPerson offset="0,0,0" characterBone="Bip01 Camera" relativeToHorizon="0.0"/>

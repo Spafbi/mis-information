@@ -74,7 +74,7 @@
 	<Attr name="VOIPVolume" preview="1" value="0.9"/>
  <Attr name="VOIPEnabled" value="1"/>
 
- <Attr name="ViewDistance" cvar="e_maxviewdistance" value="2048"/>
+ <Attr name="ViewDistance" cvar="e_maxviewdistance" value="4096"/>
  <Attr name="FoV" value="55"/>
  <Attr name="MaxFPS" cvar="sys_MaxFPS" value="60"/>
  <Attr name="ZoomToggle" cvar="cl_zoomToggle" value="0"/>

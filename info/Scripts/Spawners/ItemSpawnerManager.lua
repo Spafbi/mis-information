@@ -1,3 +1,5 @@
+Script.ReloadScript("Scripts/Spawners/HolidayManager.lua")
+
 ItemSpawnerManager =
 {
 
@@ -149,6 +151,7 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 		},
 
 		-- A random epic spawn for hard to reach areas. Use sparingly.
+		-- Percentages total ~14% intentionally - ~86% chance of nothing. Kept rare by design.
 		{
 			category = "RandomEpicWeapon",
 			classes =
@@ -427,15 +430,17 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 		-- AI
 		{
 			category = "RandomMutantLoot",
-			group =
+			group = HolidayManager.BuildGroup(
 			{
-				{ category = "Map", percent = 10 },
-				{ class = "AmcoinLedger", percent = 15, min = 1, max = 3},
-				{ category = "RandomVeggie", percent = 10 },
-				{ category = "RandomVeggie", percent = 10 },
+				{ category = "Map",            percent = 10 },
+				{ class    = "AmcoinLedger",   percent = 15, min = 1, max = 3 },
+				{ category = "RandomVeggie",   percent = 10 },
+				{ category = "RandomVeggie",   percent = 10 },
 				{ category = "RandomAccessory", percent = 2 },
-				--{ category = "RandomEggs", percent = 10 },-- disabled until easter event
 			},
+			{
+				easter = { { category = "RandomEggs", percent = 10 } },
+			}),
 		},
 
 		{
@@ -451,19 +456,20 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 
 		{
 			category = "RandomBruteLoot",
-			group =
+			group = HolidayManager.BuildGroup(
 			{
-				{ category = "RandomVeggie", percent = 100 },
-				{ category = "RandomCraftingGuide", percent = 30 },
-				{ category = "RandomAmmo", percent = 100 },
-				--{ category = "RandomGnome", percent = 25 },--
-				{ class = "AmcoinLedger", percent = 10, min = 1, max = 5},
-				{category = "RandomAccessory", percent = 3 },
-				{category = "RandomArmorTier2", percent = 20 },
-				--{category = "RandomEggs", percent = 25 },-- disabled until easter event
-				--{ class = "HalloweenBagBrute", percent = 30 }, -- halloween event.
-				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
+				{ category = "RandomVeggie",        percent = 100 },
+				{ category = "RandomCraftingGuide", percent = 30  },
+				{ category = "RandomAmmo",          percent = 100 },
+				{ class    = "AmcoinLedger",        percent = 10, min = 1, max = 5 },
+				{ category = "RandomAccessory",     percent = 3   },
+				{ category = "RandomArmorTier2",    percent = 20  },
 			},
+			{
+				easter    = { { category = "RandomEggs",        percent = 25 } },
+				halloween = { { class    = "HalloweenBagBrute", percent = 30 } },
+				christmas = { { class    = "ChristmasPresentRare", percent = 30 } },
+			}),
 		},
 
 		{
@@ -479,18 +485,20 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 
 		{
 			category = "RandomHumanSpiderLoot",
-			group =
+			group = HolidayManager.BuildGroup(
 			{
-				{ category = "RandomCraftingGuide", percent = 25 },
-				{ class = "AmcoinLedger", percent = 20, min = 1, max = 5},
-				{ category = "RandomVeggie", percent = 100 },
-				{ category = "RandomAmmo", percent = 100 },
-				{ category = "RandomAccessory", percent = 2 },
-				{ category = "RandomArmorTier3", percent = 20 },
-				--{ category = "RandomEggs", percent = 25 },-- disabled until easter event
-				--{ class = "HalloweenBagSpider", percent = 30 },-- Halloween event
-				--{ class = "ChristmasPresentRare", percent = 30 },-- Christmas event
+				{ category = "RandomCraftingGuide", percent = 25  },
+				{ class    = "AmcoinLedger",        percent = 20, min = 1, max = 5 },
+				{ category = "RandomVeggie",        percent = 100 },
+				{ category = "RandomAmmo",          percent = 100 },
+				{ category = "RandomAccessory",     percent = 2   },
+				{ category = "RandomArmorTier3",    percent = 20  },
 			},
+			{
+				easter    = { { category = "RandomEggs",          percent = 25 } },
+				halloween = { { class    = "HalloweenBagSpider",  percent = 30 } },
+				christmas = { { class    = "ChristmasPresentRare", percent = 30 } },
+			}),
 		},
 
 		{
@@ -540,22 +548,25 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 
 		{
 			category = "RandomBackpackContents",
-			classes =
+			classes = HolidayManager.BuildClasses(
 			{
-				--{ category = "RandomEggs", percent = 3 },---- disabled until easter event
-				--{ category = "halloweenBagCommon", percent = 3 },-- Halloween event
-				--{ category = "RandomChristmasPresent", percent = 3 }, -- Christmas event
-				{ category = "Map", percent = 2 },
+				{ category = "Map",                 percent = 2 },
 				{ category = "RandomCraftingGuide", percent = 2 },
-				{ category = "RandomClothes", percent = 5 },
-				{ category = "RandomCrafting", percent = 2 },
-				{ category = "RandomFlashlight", percent = 1 },
-				--{ category = "RandomConsumable", percent = 8, min = 1, max = 2 },-- Disabled for easter
-				{ category = "RandomMaintenance", percent = 3 },
-				{ category = "RandomMedical", percent = 2 },
-				{category = "RandomArmorTier2", percent = 2 },
-				{class = "AmcoinLedger", percent = 3 },
+				{ category = "RandomClothes",       percent = 5 },
+				{ category = "RandomCrafting",      percent = 2 },
+				{ category = "RandomFlashlight",    percent = 1 },
+				{ category = "RandomConsumable",    percent = 8, min = 1, max = 2 },
+				{ category = "RandomMaintenance",   percent = 3 },
+				{ category = "RandomMedical",       percent = 2 },
+				{ category = "RandomArmorTier2",    percent = 2 },
+				{ class    = "AmcoinLedger",        percent = 3 },
 			},
+			{
+				easter    = { add    = { { category = "RandomEggs",             percent = 3 } },
+				              remove = { "RandomConsumable" } },
+				halloween = { add    = { { category = "halloweenBagCommon",     percent = 3 } } },
+				christmas = { add    = { { category = "RandomChristmasPresent", percent = 3 } } },
+			}),
 		},
 
 		{
@@ -3038,21 +3049,20 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomDrink",
 			classes =
 			{
-				-- To reduce food/water in the world these only add up to 50%
-				{ category = "RandomRottenVeggie", percent = 7 }, 
-				{ category = "RandomSeeds", percent = 2 }, 
-				{ category = "RandomAlcohol", percent = 2},
-				{ class = "WaterPurificationTablets", percent = 0.5 },
-				{ class = "CivCanteen01", percent = 2 },
-				{ class = "CokeCan", percent = 1.5 },
-				{ class = "DrPepperCan", percent = 1.5 },
-				{ class = "EnergyDrinkCan", percent = 1 },
-				{ class = "MilitaryCanteenPlastic", percent = 1 },
-				{ class = "MilitaryCanteenMetal", percent = 1 },
-				{ class = "PepsiCan", percent = 1.5 },
-				{ class = "SpriteCan", percent = 1.5 },
-				{ class = "TomatoJuiceCan", percent = 1 },
-				{ class = "WaterBottle", percent = 1.5 },
+				{ category = "RandomRottenVeggie", percent = 5 }, 
+				{ category = "RandomSeeds", percent = 3 }, 
+				{ category = "RandomAlcohol", percent = 3},
+				{ class = "WaterPurificationTablets", percent = 1.5 },
+				{ class = "CivCanteen01", percent = 3 },
+				{ class = "CokeCan", percent = 2.5 },
+				{ class = "DrPepperCan", percent = 2.5 },
+				{ class = "EnergyDrinkCan", percent = 2 },
+				{ class = "MilitaryCanteenPlastic", percent = 2 },
+				{ class = "MilitaryCanteenMetal", percent = 2 },
+				{ class = "PepsiCan", percent = 2.5 },
+				{ class = "SpriteCan", percent = 2.5 },
+				{ class = "TomatoJuiceCan", percent = 2 },
+				{ class = "WaterBottle", percent = 4 },
 			},
 		},
 
@@ -3071,23 +3081,22 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomFood",
 			classes =
 			{
-				-- To reduce food/water in the world these only add up to 50%
 				{ category = "RandomRottenVeggie", percent = 10 }, 
 				{ category = "RandomSeeds", percent = 2.5 }, 
-				{ category = "SaltAndPepper", percent = 1 },
-				{ class = "BeefStew", percent = 0.5 },
-				{ class = "CannedMeat", percent = 0.5 },
-				{ class = "CerealBox", percent = 0.5 },
-				{ class = "CornCan", percent = 0.5 },
-				{ class = "DogFoodCan", percent = 0.5 },
-				{ class = "HersheysBar", percent = 0.5 },
-				{ class = "NutSpread", percent = 0.5 },
-				{ class = "PeachesCan", percent = 0.5 },
-				{ class = "PearsCan", percent = 0.5 },
-				{ class = "PeasCan", percent = 0.5 },
-				{ class = "RavioliCan", percent = 0.5 },
-				{ class = "SoupCan", percent = 0.5 },
-				{ class = "TunaCan", percent = 0.5 },
+				{ category = "SaltAndPepper", percent = 2 },
+				{ class = "BeefStew", percent = 1.5 },
+				{ class = "CannedMeat", percent = 1.5 },
+				{ class = "CerealBox", percent = 1.5 },
+				{ class = "CornCan", percent = 1.5 },
+				{ class = "DogFoodCan", percent = 1.5 },
+				{ class = "HersheysBar", percent = 1.5 },
+				{ class = "NutSpread", percent = 1.5 },
+				{ class = "PeachesCan", percent = 1.5 },
+				{ class = "PearsCan", percent = 1.5 },
+				{ class = "PeasCan", percent = 1.5 },
+				{ class = "RavioliCan", percent = 1.5 },
+				{ class = "SoupCan", percent = 1.5 },
+				{ class = "TunaCan", percent = 1.5 },
 				--{ class = "ChocolateBox", percent = 3 }, -- Valentine's
 				--{ class = "Champagne", percent = 3 }, -- Valentine's
 				--{ class = "heart_balloon", percent = 3 }, -- Valentine's
@@ -3132,11 +3141,11 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomConsumable", 
 			classes = 
 			{
-				{category = "RandomDrink", percent = 5}, 
-				{category = "RandomFood", percent = 5}, 
+				{category = "RandomDrink", percent = 10}, 
+				{category = "RandomFood", percent = 10}, 
 				{category = "RandomRottenVeggie", percent = 10}, 
-				{category = "RandomVeggie", percent = 3},
-				{category = "RandomSeeds", percent = 20}, 
+				{category = "RandomVeggie", percent = 5},
+				{category = "RandomSeeds", percent = 5}, 
 			}, 
 		}, 
 
@@ -3373,9 +3382,9 @@ If fred_islands does not exist, then it will use fred_default instead. This allo
 			category = "RandomFuel",
 			classes =
 			{
-				{ class = "JerryCanDiesel", percent = 90 },
+				{ class = "JerryCanDiesel", percent = 50 },
 				{ class = "PropaneTank", percent = 8 },
-				{ class = "small_generator", percent = 2 },
+				{ class = "small_generator", percent = 5 },
 			},
 		},
 
